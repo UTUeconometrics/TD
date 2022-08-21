@@ -1,56 +1,70 @@
 --- 
-title: "Tilastotiede ja data"
-author: "John Doe"
+title: "TILM 3701 - Tilastotiede ja Data 2022"
+author:
+  - Koonneet
+  - Henri Nyberg^[Turun Yliopisto, matematiikan ja tilastotieteen laitos, henri.nyberg@utu.fi]
+  - Roope Rihtamo^[Turun Yliopisto, matematiikan ja tilastotieteen laitos, roope.rihtamo@utu.fi]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
+description: "Tilastotieteen ensimmäinen kurssi."
 ---
 
-# About
+# Tilastotiede ja kurssin idea {-}
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+- Tämän tilastotieteen ensimmäisen kurssin ideana on (ainakin)
+  - Esitellä ja johdatella __tilastolliseen ja tieteelliseen ajatteluun__ ja sen hyödyntämiseen eri tyyppisissä tutkimusongelmissa.
+  - Esitellä tilastotieteen roolia __empiirisen tutkimusaineiston keräämisessä ja analyysissä__ sekä tarkastella tieteentekemisen ja tilastotieteen suhdetta.
+  - Pohtia __tilastotieteen olemusta tieteenalana__ ja tarkastella tilastotieteen ja datatieteiden (data sciencen) samankaltaisuuksia ja eroja.
+  - Pohtia __sattuman ja satunnaisuuden roolia__ jokapäiväisessä elämässä ja erityisesti osana tieteellistä tutkimusprosessia. 
+  - Oppia tilastotieteen peruskäsitteitä ja (tilastollisen) tutkimuksenteon alkeita ja siihen liittyviä mahdollisia ongelmia esimerkiksi tilastollisten aineistojen keräämisessä.
+  - Oppia tilastollisten aineistojen __kuvaamisen ja käsittelyn__ alkeita sekä tilasto(tieteellisen)llisen __mallintamisen__ ja __koeasetelmien__ peruskäsitteitä.
+  
+  
+\vspace{0.75cm}
 
-## Usage 
+- Kurssilla käsitellään myös __tilastollisen päättelyn__ peruskäsitteitä ja perusteita kuten
+  - Mitä on __todennäköisyys__ ja miten sen tulkitaan tilastotieteessä sekä laajemmin tieteessä. Erityisesti tilastotieteen osalta keskiössä on tämän kurssin osalta __satunnaismuuttujat__ sekä niihin liitettävät käsitteet
+    - __Odotusarvo__, __varianssi__ ja kahden (tai useamman) satunnaismuuttujan __korrelaatio__.
+    - Satunnaismuuttujien __todennäköisyysjakaumien__ perusteita ja niiden yhteyksiä mm. normaalijakaumaan ja muutamiin muihin keskeisiin jakaumiin.
+    - Tilastollinen malli työkaluna satunnaismuuttujien formaalissa mallintamisessa ja päättelyssä. Tilastollisen malliin liittyy (usein) __parametreja__ joihin tilastollinen päättely kohdistuu.
+    - Tilastollisten mallien __estimoinnin__ perusidea, eli miten tilastollisen mallin parametreille muodostetaan arvot käytettävissä olevan aineiston pohjalta. Esimerkiksi: mitä tarkoittaa tilastollisen mallin parametrin __estimaattori__ ja sen __harhattomuus__?
+    - Alustavia tarkasteluja tilastollisen mallin uskottavuuden käsitteelle ja __luottamusväleille__ tilastollisen mallin estimoiduille parametreille.
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+\vspace{0.75cm}
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+- Toinen kurssin keskeisistä teemoista on tarkastella tieteellistä tutkimusprosessia teoriassa ja käytännössä. Tämä sisältää mm. seuraavia aiheita (joita siis käsitellään tällä kurssilla päällisin puolin ja varsin yleisestä näkökulmasta katsoen): tarkemmat yksityiskohdat jäävät tätä kurssia seuraavien tilastotieteen kurssien aihepiireiksi):
+  - __Tutkimusongelman__ asettaminen: mitä halutaan tutkia?  
+  - Tutkimusongelman täsmentäminen ja __tutkimusstrategian__ laatiminen: millä keinoin asetettuun tutkimusongelmaan voidaan vastata?
+  - __Tutkimusaineiston__ (tai vain lyhyemmin __aineiston__ eli __datan__) kerääminen
+    - __Aineiston ennakkoehdot__: mitkä ehdot tulee täyttyä, jotta asetettuun tutkimusongelmaan voidaan vastata?
+    - __Otanta__ (ja mittaaminen): miten tutkimusaineisto kerätään niin, että se täyttää aineiston ennakkoehdot? Erilaisissa tutkimuksissa käytetään erilaisia aineistoja kuten:
+      - Survey- ja rekisteriaineistot
+      - Havaintoarvojen välistä korrelaatiota esiintyy mm. aikasarja-aineistojen tai pitkittäisaineistojen tapauksessa
+- __Aineiston kuvaaminen__: minkälaista aineistoa on kerätty ja vastaako se ennakkoehtoja? 
+- __Aineiston analyysin__ lähtökohtia   
+  - Mitä tilastollista mallia/malleja käytetään?
+  - Mitä tarkoitetaan mallien tuntemattomien parametrien arvojen estimoinnilla?
+  - Tilastollinen päättely (estimointitulosten pohjalta)
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+- __Johtopäätelmien__ tekeminen tilastollisen päättelyn pohjalta: saatiinko tutkimusongelmaan vastaus ja kuinka luotettava saatu vastaus on?
 
-## Render book
+## Tilastotieteen asema tutkimusyhteisön ulkopuolella {-}
 
-You can render the HTML version of this example book without changing anything:
+- Tilastotiede on oppiaineena usein varsin tuntematon toisen asteen opinnoista valmistuneelle, sillä sitä ei juurikaan opeteta lukioissa tai ammattikouluissa huolimatta sen keskeisestä ja kasvavasta roolista tiedemaailman kentillä.
+- Tiedeyhteisön ulkopuolellakin __tilastotiedettä ja tilastotieteilijöitä arvostetaan laajalti__. 
+- __Tilastotiede onkin nostanut profiiliaan viimeisten vuosikymmenien aikana__ tietoteknisen kehityksen tuotua laajat tietoaineistot ja kehittyneet laskennalliset menetelmät lähes jokaisen kansalaisen saataville. 
+- Tämä "datavallankumous" näkyy tilastotieteilijöiden kysynnässä työmarkkinoilla: erilaisten aineistojen määrän lisääntyessä kasvaa myös kysyntä työntekijöistä, jotka osaavat ammatitaitoisesti käsitellä, tulkita ja mallintaa tilastollisia aineistoja.
+- Ei siis liene ihmekään, että erilaisten "data"-alkuisten työpaikkojen, kuten __datatieteilijä__ (eng. __data scientist__) tai __data-analyytikko__ ( __data-analyst__) määrä on kasvanut voimakkaasti jo pidempään. Kaikkia tieto- ja datainensiivisten ammattien tekijöitä yhdistää yksi tekijä: __heidän tulee hallita ja osata tilastotiedettä!__ Karkeistettuna mitä paremmin ja enemmän (laajemmin), sen parempi palkka ja monipuolisemmat työtehtävät!
 
-1. Find the **Build** pane in the RStudio IDE, and
+## Kurssin luonne tilastotieteen (ja datatieteen/data-analytiikan) opintojen esittelijänä {-}
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
-
-```{r, eval=FALSE}
-bookdown::render_book()
-```
-
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
-```
-
+Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi __miten TY:ssa tilastotieteen opinnoissa syvennytään__ tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -58,3 +72,4 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+

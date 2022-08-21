@@ -1,5 +1,6 @@
 delete_merged_file: true
+rmd_files: ["index.Rmd", "02-tieto_tilastot.Rmd"] 
 output_dir: "docs/b348b88835af29ea5545269f8d2327d5f7f117d2"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Luku "

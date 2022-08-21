@@ -36,51 +36,11 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Tilastotiede ja data},
-  pdfauthor={John Doe},
+  pdftitle={TILM 3701 - Tilastotiede ja Data 2022},
+  pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -109,33 +69,53 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\usepackage{color}
+\usepackage{framed}
+\setlength{\fboxsep}{.8em}
+
+\usepackage{tcolorbox}
+
+\newtcolorbox{blackbox}{
+  colback=black,
+  colframe=orange,
+  coltext=white,
+  boxsep=5pt,
+  arc=4pt}
+
+%\newenvironment{infobox}[1]
+%  {\begin{itemize}
+%    \renewcommand{\labelitemi}{
+%    \raisebox{-.7\height}[0pt][0pt]{
+%      {\setkeys{Gin}{width=3em,keepaspectratio}
+%        \includegraphics{images/mikko.PNG}}
+%    }
+%  }
+%  \setlength{\fboxsep}{1em}
+%  \begin{blackbox}
+%  \item}
+%  {
+%  \end{blackbox}
+%  \end{itemize}
+%}
+\usepackage{awesomebox}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike}
 
-\title{Tilastotiede ja data}
-\author{John Doe}
-\date{2022-08-19}
+\title{TILM 3701 - Tilastotiede ja Data 2022}
+\author{Koonneet \and Henri Nyberg\footnote{Turun Yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:henri.nyberg@utu.fi}{\nolinkurl{henri.nyberg@utu.fi}}} \and Roope Rihtamo\footnote{Turun Yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:roope.rihtamo@utu.fi}{\nolinkurl{roope.rihtamo@utu.fi}}}}
+\date{2022-08-21}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -143,264 +123,218 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
+\hypertarget{tilastotiede-ja-kurssin-idea}{%
+\chapter*{Tilastotiede ja kurssin idea}\label{tilastotiede-ja-kurssin-idea}}
+\addcontentsline{toc}{chapter}{Tilastotiede ja kurssin idea}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
-
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
-
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
-
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
-
-You can render the HTML version of this example book without changing anything:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Find the \textbf{Build} pane in the RStudio IDE, and
-\item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
-
-Or build the book from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\begin{itemize}
 \tightlist
 \item
-  git init
-\item
-\end{enumerate}
-
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
-
-There are two steps to cross-reference any heading:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+  Tämän tilastotieteen ensimmäisen kurssin ideana on (ainakin)
 
   \begin{itemize}
   \tightlist
   \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
+    Esitellä ja johdatella \textbf{tilastolliseen ja tieteelliseen ajatteluun} ja sen hyödyntämiseen eri tyyppisissä tutkimusongelmissa.
   \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
+    Esitellä tilastotieteen roolia \textbf{empiirisen tutkimusaineiston keräämisessä ja analyysissä} sekä tarkastella tieteentekemisen ja tilastotieteen suhdetta.
+  \item
+    Pohtia \textbf{tilastotieteen olemusta tieteenalana} ja tarkastella tilastotieteen ja datatieteiden (data sciencen) samankaltaisuuksia ja eroja.
+  \item
+    Pohtia \textbf{sattuman ja satunnaisuuden roolia} jokapäiväisessä elämässä ja erityisesti osana tieteellistä tutkimusprosessia.
+  \item
+    Oppia tilastotieteen peruskäsitteitä ja (tilastollisen) tutkimuksenteon alkeita ja siihen liittyviä mahdollisia ongelmia esimerkiksi tilastollisten aineistojen keräämisessä.
+  \item
+    Oppia tilastollisten aineistojen \textbf{kuvaamisen ja käsittelyn} alkeita sekä tilasto(tieteellisen)llisen \textbf{mallintamisen} ja \textbf{koeasetelmien} peruskäsitteitä.
   \end{itemize}
+\end{itemize}
+
+\vspace{0.75cm}
+
+\begin{itemize}
+\tightlist
 \item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+  Kurssilla käsitellään myös \textbf{tilastollisen päättelyn} peruskäsitteitä ja perusteita kuten
 
   \begin{itemize}
   \tightlist
   \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
+    Mitä on \textbf{todennäköisyys} ja miten sen tulkitaan tilastotieteessä sekä laajemmin tieteessä. Erityisesti tilastotieteen osalta keskiössä on tämän kurssin osalta \textbf{satunnaismuuttujat} sekä niihin liitettävät käsitteet
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Odotusarvo}, \textbf{varianssi} ja kahden (tai useamman) satunnaismuuttujan \textbf{korrelaatio}.
+    \item
+      Satunnaismuuttujien \textbf{todennäköisyysjakaumien} perusteita ja niiden yhteyksiä mm. normaalijakaumaan ja muutamiin muihin keskeisiin jakaumiin.
+    \item
+      Tilastollinen malli työkaluna satunnaismuuttujien formaalissa mallintamisessa ja päättelyssä. Tilastollisen malliin liittyy (usein) \textbf{parametreja} joihin tilastollinen päättely kohdistuu.
+    \item
+      Tilastollisten mallien \textbf{estimoinnin} perusidea, eli miten tilastollisen mallin parametreille muodostetaan arvot käytettävissä olevan aineiston pohjalta. Esimerkiksi: mitä tarkoittaa tilastollisen mallin parametrin \textbf{estimaattori} ja sen \textbf{harhattomuus}?
+    \item
+      Alustavia tarkasteluja tilastollisen mallin uskottavuuden käsitteelle ja \textbf{luottamusväleille} tilastollisen mallin estimoiduille parametreille.
+    \end{itemize}
   \end{itemize}
-\end{enumerate}
+\end{itemize}
 
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
+\vspace{0.75cm}
 
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+\begin{itemize}
+\tightlist
+\item
+  Toinen kurssin keskeisistä teemoista on tarkastella tieteellistä tutkimusprosessia teoriassa ja käytännössä. Tämä sisältää mm. seuraavia aiheita (joita siis käsitellään tällä kurssilla päällisin puolin ja varsin yleisestä näkökulmasta katsoen): tarkemmat yksityiskohdat jäävät tätä kurssia seuraavien tilastotieteen kurssien aihepiireiksi):
 
-See Figure \ref{fig:nice-fig}.
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Tutkimusongelman} asettaminen: mitä halutaan tutkia?\\
+  \item
+    Tutkimusongelman täsmentäminen ja \textbf{tutkimusstrategian} laatiminen: millä keinoin asetettuun tutkimusongelmaan voidaan vastata?
+  \item
+    \textbf{Tutkimusaineiston} (tai vain lyhyemmin \textbf{aineiston} eli \textbf{datan}) kerääminen
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{Aineiston ennakkoehdot}: mitkä ehdot tulee täyttyä, jotta asetettuun tutkimusongelmaan voidaan vastata?
+    \item
+      \textbf{Otanta} (ja mittaaminen): miten tutkimusaineisto kerätään niin, että se täyttää aineiston ennakkoehdot? Erilaisissa tutkimuksissa käytetään erilaisia aineistoja kuten:
 
-\begin{figure}
+      \begin{itemize}
+      \tightlist
+      \item
+        Survey- ja rekisteriaineistot
+      \item
+        Havaintoarvojen välistä korrelaatiota esiintyy mm. aikasarja-aineistojen tai pitkittäisaineistojen tapauksessa
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Aineiston kuvaaminen}: minkälaista aineistoa on kerätty ja vastaako se ennakkoehtoja?
+\item
+  \textbf{Aineiston analyysin} lähtökohtia
 
-{\centering \includegraphics[width=0.8\linewidth]{_main_files/figure-latex/nice-fig-1} 
+  \begin{itemize}
+  \tightlist
+  \item
+    Mitä tilastollista mallia/malleja käytetään?
+  \item
+    Mitä tarkoitetaan mallien tuntemattomien parametrien arvojen estimoinnilla?
+  \item
+    Tilastollinen päättely (estimointitulosten pohjalta)
+  \end{itemize}
+\item
+  \textbf{Johtopäätelmien} tekeminen tilastollisen päättelyn pohjalta: saatiinko tutkimusongelmaan vastaus ja kuinka luotettava saatu vastaus on?
+\end{itemize}
 
-}
+\hypertarget{tilastotieteen-asema-tutkimusyhteisuxf6n-ulkopuolella}{%
+\section*{Tilastotieteen asema tutkimusyhteisön ulkopuolella}\label{tilastotieteen-asema-tutkimusyhteisuxf6n-ulkopuolella}}
+\addcontentsline{toc}{section}{Tilastotieteen asema tutkimusyhteisön ulkopuolella}
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\begin{itemize}
+\tightlist
+\item
+  Tilastotiede on oppiaineena usein varsin tuntematon toisen asteen opinnoista valmistuneelle, sillä sitä ei juurikaan opeteta lukioissa tai ammattikouluissa huolimatta sen keskeisestä ja kasvavasta roolista tiedemaailman kentillä.
+\item
+  Tiedeyhteisön ulkopuolellakin \textbf{tilastotiedettä ja tilastotieteilijöitä arvostetaan laajalti}.
+\item
+  \textbf{Tilastotiede onkin nostanut profiiliaan viimeisten vuosikymmenien aikana} tietoteknisen kehityksen tuotua laajat tietoaineistot ja kehittyneet laskennalliset menetelmät lähes jokaisen kansalaisen saataville.
+\item
+  Tämä ``datavallankumous'' näkyy tilastotieteilijöiden kysynnässä työmarkkinoilla: erilaisten aineistojen määrän lisääntyessä kasvaa myös kysyntä työntekijöistä, jotka osaavat ammatitaitoisesti käsitellä, tulkita ja mallintaa tilastollisia aineistoja.
+\item
+  Ei siis liene ihmekään, että erilaisten ``data''-alkuisten työpaikkojen, kuten \textbf{datatieteilijä} (eng. \textbf{data scientist}) tai \textbf{data-analyytikko} ( \textbf{data-analyst}) määrä on kasvanut voimakkaasti jo pidempään. Kaikkia tieto- ja datainensiivisten ammattien tekijöitä yhdistää yksi tekijä: \textbf{heidän tulee hallita ja osata tilastotiedettä!} Karkeistettuna mitä paremmin ja enemmän (laajemmin), sen parempi palkka ja monipuolisemmat työtehtävät!
+\end{itemize}
 
-Don't miss Table \ref{tab:nice-tab}.
+\hypertarget{kurssin-luonne-tilastotieteen-ja-datatieteendata-analytiikan-opintojen-esittelijuxe4nuxe4}{%
+\section*{Kurssin luonne tilastotieteen (ja datatieteen/data-analytiikan) opintojen esittelijänä}\label{kurssin-luonne-tilastotieteen-ja-datatieteendata-analytiikan-opintojen-esittelijuxe4nuxe4}}
+\addcontentsline{toc}{section}{Kurssin luonne tilastotieteen (ja datatieteen/data-analytiikan) opintojen esittelijänä}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi \textbf{miten TY:ssa tilastotieteen opinnoissa syvennytään} tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin.
 
-\begin{table}
+\hypertarget{luku2}{%
+\chapter{Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa}\label{luku2}}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+Tässä luvussa tarkastellaan tieteen ja tieteellisen tutkimusprosessin luonnetta erityisesti uuden \textbf{tutkitun} tiedon tuottamisen näkökulmasta. Tiedelukutaidon merkitys on kasvanut nyky-yhteiskunnassa, kun tiedejulkaisujen saavutettavuus ja tunnettuus on lisääntynyt mm. tieteen popularisoinnin ja median laajemman tiedeuutisoinnin vuoksi. Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla tietoinen tieteellisen tutkimuksen luonteesta: miten tutkimusartikkeleja luetaan, mitä niiltä voidaan odottaa ja minkälaiset tulokset ovat uskottavia. \textbf{Tilastotiede näyttelee keskeistä roolia lähes kaikessa tutkimuksessa ja erityisesti erilaisten tutkimuskysymysten ja niitä vastaavien hypoteesien testauksessa}. Aloitetaankin kurssin oppimateriaalin käsittely määrittelemällä ensimmäinen tilastotieteen perustermi: hypoteesi.
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+\begin{noteblock}{}
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+\textbf{Hypoteesi}
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\begin{itemize}
+\tightlist
+\item
+  Hypoteesi tarkoittaa (tausta)teorioista johdettua tai aikaisemman tutkimuksen perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan ongelmaan.
+\item
+  Hypoteesi ilmaistaan väitteenä, jonka paikkansapitävyyttä halutaan tutkia
+\item
+  Kokeelliset tiedot voivat osoittaa hypoteesin vääräksi
+\item
+  Nollahypoteesi vastaa tavallisesti tyypillistä, odotettavissa olevaa tulosta, esimerkiksi ettei kahden mitatun ilmiön välillä ole yhteyttä tai että tietty hoito on tehotonta
+\item
+  Nollahypoteesia ei todisteta (``hyväksytä''), vaan voidaan ainoastaan sanoa, ettei aineisto tarjoa todistusaineistoa (``evidenssiä'') nollahypoteesin hylkäämiselle -- ts. sille tulemalle, että emme hylkää nollahypoteesia.
+\item
+  Vastahypoteesi sisältää usein mielenkiinnon kohteena olevan tapahtuman, kuten ``on eroa'' tai ``on vaikutusta''
+\item
+  Tutkijoilla on usein taipumus jättää julkaisematta tutkimustuloksia, joissa nollahypoteesi jää voimaan. Yleensä tämä tilanne syntyy, kun lopputulos ei eroa jo aikaisemmin otaksutusta. (Toki ajoittain tilanne on myös toisinpäin)
+\end{itemize}
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+\end{noteblock}
 
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+Tähän joku esimerkki vielä?
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+\hypertarget{tieteellinen-ajattelu-tietoyhteiskunnan-perustana}{%
+\section{Tieteellinen ajattelu tietoyhteiskunnan perustana}\label{tieteellinen-ajattelu-tietoyhteiskunnan-perustana}}
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+Kesken vielä.
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+\hypertarget{tilastojen-yleisestuxe4-roolista-yhteiskunnassa}{%
+\section{Tilastojen yleisestä roolista yhteiskunnassa}\label{tilastojen-yleisestuxe4-roolista-yhteiskunnassa}}
 
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
+Kesken vielä.
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\hypertarget{mituxe4-on-tiede}{%
+\section{Mitä on tiede?}\label{mituxe4-on-tiede}}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+Kesken vielä.
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+\hypertarget{mituxe4-on-tutkimus}{%
+\section{Mitä on tutkimus?}\label{mituxe4-on-tutkimus}}
 
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
+Kesken vielä.
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\hypertarget{tieteellisen-menetelmuxe4n-kriteereituxe4}{%
+\section{Tieteellisen menetelmän kriteereitä}\label{tieteellisen-menetelmuxe4n-kriteereituxe4}}
 
-Here is an equation.
+Kesken vielä.
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+\hypertarget{tieteellinen-tutkimuksen-vaiheet-ja-tulosten-julkaiseminen}{%
+\section{Tieteellinen tutkimuksen vaiheet ja tulosten julkaiseminen}\label{tieteellinen-tutkimuksen-vaiheet-ja-tulosten-julkaiseminen}}
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+Tieteellinen tutkimus ja asiantuntijatyö tuottavat valtavan määrän perusteltua, luotettavaa tutkimustietoa. Ks. tarkemmin tieteellisestä julkaisemisesta linkin tapauksessa erityisesti yhteiskuntatieteiden alalla, mutta perusperiaatteet pätevät myös muiden tieteenalojen tapauksessa
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+\vspace{0.5cm}
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+\vspace{0.5cm}
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+Vastuullisen tieteen
+\vspace{0.5cm}
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+\url{https://vastuullinentiede.fi/fi/julkaiseminen}
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\vspace{0.5cm}
 
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
+\noindent artikkelit tarjoavat tietoa siitä, kuinka tutkittua tietoa tuotetaan, julkaistaan ja arvioidaan luotettavasti ja yhteisesti hyväksytyllä tavalla. Jotta tiede vaikuttaa koko yhteiskunnan hyväksi, toiminnan on oltava vastuullista tutkimuksen jokaisessa vaiheessa.
 
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
+\begin{itemize}
+\item
+  Julkisuus ja avoimuus tekevät tutkimuksesta tiedettä.
+\item
+  Tiedeviestintä on tiedeyhteisöjen sisäistä ja ulkoista tiedonvälitystä ja vuorovaikutusta. Tutkimuksesta viestiminen ei ole vain tutkimustuloksista viestimistä. Vastuullinen tiedeviestintä lisää luottamusta tieteelliseen tietoon.
+\item
+  Tieteellinen julkaiseminen on tutkijoille tärkeä meritoitumisen tapa, ja siksi on tärkeää, että tekijyys määritellään niin, että se palkitsee tutkijat oikeudenmukaisesti.
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 

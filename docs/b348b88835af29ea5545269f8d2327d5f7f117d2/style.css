@@ -12,3 +12,18 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.noteblock {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px DarkBlue;
+  border-radius: 10px;
+  background: LightBlue 5px center/3em no-repeat;
+}
+
+.mikko {
+  background-image: url("images/omega.png");
+}
+.center {
+  text-align: center;
+}

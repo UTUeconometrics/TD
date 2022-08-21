@@ -1,12 +1,13 @@
 bookdown::gitbook:
   css: style.css
+  split_by: section
   config:
     toc:
       before: |
-        <li><a href="./">Tilastotiede ja data</a></li>
+        <li><a href="./">TILM3701 - Tilastotiede ja data 2022</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf"]
 bookdown::pdf_book:
   includes:
@@ -14,4 +15,6 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
+  extra_dependencies: awesomebox
+
 
