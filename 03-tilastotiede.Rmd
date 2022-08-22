@@ -14,10 +14,59 @@ tai matematiikalla höystettyä tietojenkäsittelyä?
 musyhteisön ulkopuolella?
 - Tilastotieteelle tyypillistä kritiikkiä?
 
-<<<<<<< HEAD
 ## Lisää tilastotieteen perustermejä
 
-Seuraavia tilastotieteen esittelyä ja karakterisointeja ajate
-=======
-tehdään virhe
->>>>>>> 5eb9b232ffea6f2c9a276ff72b5720e6b5c3cebe
+Seuraavia tilastotieteen esittelyä ja karakterisointeja ajatellen määritellään seuraavassa lisää tilastotieteellisen tutkimuksen peruskäsitteitä. Näihin käsitteisiin paneudutaan osaltaan tarkemmin mm. luvussa ?? [otantaluku].
+
+- Tilastotieteellinen tutkimus tarkastelee reaalimaailman ilmiöitä. Täten tutkimuskohteena on tavallisessa elämässä tavattavia asioita, ihmisiä tai tapahtumia. Tutkimuskohteita kutsutaan tilastoyksiköiksi ja niiden joukkoa kutsutaan populaatioksi (perusjoukoksi). Esimerkiksi jos tutkitaan kuntavaaleissa äänestävien tuloja niin jokainen äänestysikäinen muodostaa oman tilastoyksikkönsä (ks. alla) ja täten populaationa (perusjoukkona) toimii kaikki
+äänestysikäiset kansalaiset. Jos taas tutkitaan äänestysaktiivisuutta eri kunnissa, muodostaa jokainen kunta oman tilastoyksikkönsä ja kaikki Suomen kunnat muodostavat populaation.
+
+::: {.noteblock .mikko data-latex="{}"}
+**Populaatio**  
+
+Konkreettinen tai hypoteettinen tutkimuskohteiden joukko, joka
+koostuu kaikista tilastoyksiköistä
+:::
+
+- Populaation muodostavilta tilastoyksiköiltä tarkastellaan niiden ominaisuuksia, eli **tilastollisia muuttujia**. Edellisissä esimerkeissä nämä olisivat esim. äänestäjien tulot ja kuntien äänestysprosentti. Mielenkiinnon kohteena olevia tilastollisia muuttujia kutsutaan **tutkimusmuuttujiksi** (tulot ja kuntien äänestysprosentti) ja niiden lisäksi voidaan kerätä ylimääräistä tietoa eli **taustamuuttujia** (näitä voisi olla esimerkiksi asuinpaikka ja kunnan väkiluku).
+
+- Tilastoyksiköiden tilastollisilla muuttujilla on tietty mahdollisten arvojen joukko, ja näillä arvoilla on jokin **jakauma** populaatiossa. Esimerkiksi tulot voivat määritelmästä riippuen saada minkä tahansa positiivisen arvon mutta äänestysprosentti on luonnollisesti rajattu nollan ja sadan prosentin väliin.
+
+::: {.noteblock .mikko data-latex="{}"}
+**Tilastoyksikkö ja tilastollinen muuttuja**  
+
+Populaation muodostavilta tilastoyksiköiltä (populaation alkioilta) tarkastellaan  tilastollisia muuttujia, joita voidaan mitata tai havaita.
+:::
+
+- Kun tarkasteltavien tilastoyksikön tilastollisten muuttujien (numeeriset) arvot havaitaan, kutsutaan näiden arvojen joukkoa **havainnoksi**
+
+
+::: {.noteblock .mikko data-latex="{}"}
+**Havainto**  
+
+Havainto muodostuu tilastoyksikön tarkasteltavien tilastollisten muuttujien havaitusta arvoista.
+:::
+
+- Populaatio koostuu tilastoyksiköistä, joilla on tilastollisia muuttujia. Tarkasteltavista tilastollisista muuttujista kerätään havaintoja, joiden pohjalta tutkitaan **populaation ominaisuuksia**.
+
+- Kerättyjen havaintojen joukko muodostaa **havaintoaineiston**, eli **datan**.
+
+
+::: {.noteblock .mikko data-latex="{}"}
+**Havaintoaineisto/data**  
+
+Havaintoaineisto, data, on tilastoyksiköiden tilastollisista muuttujista kerätty havaintojen joukko.
+:::
+
+Tiivistettynä: 
+
+- Populaatio tutkimuksen kohteena olevia tilastoyksiköitä.
+- Havaitaan tilastoyksiköistä tutkimuksen kannalta mielenkiintoisia tilastollisten muuttujien numeerisia arvoja.
+- Nämä havainnot muodostavat havaintoaineiston, eli datan, jota voidaan käyttää tutkimuksessa.
+
+
+
+
+
+
+
