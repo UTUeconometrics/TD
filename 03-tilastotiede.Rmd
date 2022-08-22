@@ -13,3 +13,5 @@ tai matematiikalla höystettyä tietojenkäsittelyä?
 - Mihin tilastotiedettä käytetään? Onko tilastotieteellä käyttöä ns. “akatemian” eli tutki-
 musyhteisön ulkopuolella?
 - Tilastotieteelle tyypillistä kritiikkiä?
+
+tehdään virhe
