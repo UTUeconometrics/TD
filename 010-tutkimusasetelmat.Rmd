@@ -1,2 +1,14 @@
-# Aineisto- ja tutkimustyypit ja koeasetelmat
+# Aineisto- ja tutkimustyypit ja koeasetelmat {#luku10}
+
+## Tutkimustyypit {#alaluku101}
+
+## Tutkimusstrategiat {#alaluku102}
+
+## Erilaisia aineistoja ja aineistolähteitä {#alaluku103}
+
+### Rekisteriaineistot {#alaluku104}
+
+### Aikasarjat ja paneeliaineistot {#alaluku105}
+
+### Survey eli haastattelu- tai kyselytutkimus {#alaluku106}
 

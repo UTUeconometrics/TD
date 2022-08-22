@@ -1,2 +1,5 @@
-# Tilastollisesta ennustamisesta
+# Tilastollisesta ennustamisesta {#luku11}
 
+## Tilastollinen selittäminen vs. ennustaminen {#alaluku111}
+
+## Tilastolliseen ennustamiseen liittyviä huomioita {#alaluku112}
