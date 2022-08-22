@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>6.5 Muita tunnuslukuja | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="6.5 Muita tunnuslukuja | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="6.5 Muita tunnuslukuja | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="alaluku64.html"/>
+<link rel="next" href="alaluku66.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,19 +189,32 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="alaluku65" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Muita tunnuslukuja<a href="alaluku65.html#alaluku65" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Tilastollisia analyysejä tehtäessä johtopäätösten ja objektiivisten tulkintojen tueksi tarvitaan tunnuslukuja, joita muodostetaan tarkasteltavasta jakaumasta ja mm. otoskeskiarvon osalta jo sivuttiin edellä. Tunnuslukuja on paljon, ja jokainen niistä valottaa muuttujan jakaumaa eri näkökulmista.</p>
+<p>Jakaumien tunnusluvut voidaan jakaa sijaintilukuihin, hajontalukuihin ja muihin tunnuslukuihin. Kahdesta ensimmäisestä esimerkkejä ovat keskiarvo ja varianssi tai keskihajonta (välimatka- ja suhdeasteikon havaintojen tapauksessa). Esitellään seuraavassa vielä lyhyesti muutamia muita tunnuslukuja.</p>
+<ul>
+<li><p><strong>Moodi</strong>: Moodi eli tyyppiarvo on havaintoaineiston yleisin muuttujan arvo tai se on luokka, jolla on suurin frekvenssi.</p></li>
+<li><p><strong>Mediaani</strong>: Mediaani on järjestetyn havaintoaineiston keskimmäinen arvo (jos havaintoarvoja on pariton määrä, parillisessa tapauksessa esitetään jompikumpi keskimmäisistä arvoista). Mediaani siis jakaa järjestetyn havaintoaineiston kahteen osaan siten, että puolet arvoista on mediaania pienempiä ja puolet arvoltaan mediaania suurempia.</p>
+<ul>
+<li>Luokitteluasteikolla mitattaville muuttujille ei ole olemassa luontevia sijaintilukuja keskilukujen yhteydessä pl. moodi.</li>
+</ul></li>
+<li><p>Järjestysasteikolla mitatuille muuttujille voidaan mediaanin lisäksi määrittää <strong>fraktiileja</strong>: pp%:n fraktiili jakaa tilastoaineiston kahteen osaan siten, että kyseistä fraktiilia pienempiä havaintoarvoja on pp%.</p>
+<ul>
+<li>Eniten käytettyjä fraktiileja ovat <strong>kvartiilit</strong>. <strong>Alakvartiili</strong> <span class="math inline">\(Q_1\)</span> on 25%:n fraktiili, ja <strong>yläkvartiili</strong> <span class="math inline">\(Q_3\)</span> on 75% fraktiili.</li>
+<li>Tietyistä fraktiileista käytetään nimitystä <strong>desiili</strong>. Ensimmäinen desiili <span class="math inline">\(D_1\)</span> on 10% fraktiili ja esim. yhdeksäs fraktiili <span class="math inline">\(D_9\)</span> on 90% fraktiili.</li>
+</ul></li>
+<li><p>Hajontalukuja: Varianssin/keskihajonnan lisäksi, jos muuttuja on mitattu vähintään järjestysasteikolla, sille voidaan määrittää vaihteluväli ja kvartiiliväli. <strong>Vaihteluväli</strong> kuvaa aineiston kokonaispeittoa ja siinä ilmoitetaan aineiston pienin havainto ja suurin havainto. Ts. vaihteluväli=(pienin havainto, suurin havainto). <strong>Kvartiiliväli</strong> = (<span class="math inline">\(Q_1, Q_3\)</span>).</p></li>
+<li><p>Muita tunnuslukuja: Tilastollisen päätöksenteon yhteydessä käytettäviä tunnuslukuja ovat <strong>vinous</strong> ja <strong>huipukkuus</strong>. Vinous ja huipukkuus voidaan määrittää välimatka- ja suhdeasteikon muuttujille. Vinous ja huipukkuus mittaavat kumpikin omalla tavallaan jakauman poikkeamaa normaalijakaumasta. Normaalijakauman vinous on 0 ja huipukkuus on 3.</p></li>
+</ul>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="alaluku64.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="alaluku66.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -232,7 +245,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-tilppa.Rmd",
 "text": "Edit"
 },
 "history": {

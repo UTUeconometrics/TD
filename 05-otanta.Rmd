@@ -319,7 +319,7 @@ jossa siis $N$ on perusjoukon alkioiden lukumäärä. Toisin sanoen, kaikilla pe
   - Käytännössä yksinkertainen satunnaisotanta etenee vaiheittain:
     - Tutkimuksen alussa tutkijalla tulisi olla käytettävänään (ts. tulisi koostaa) lista kaikista perusjoukon havaintoyksiköistä (alkioista). Tämä muodostaa tutkimuksen __otantakehikon__.
     - Tämän jälkeen jokaiseen perusjoukon alkioon voidaan liittää numeeriset tunnukset.
-    - Sitten valitaan haluttu otoksen koko. Otoskoon määrittäminen on keskeinen osa koesuunnittelua, ks. luvut \@ref(luku66)
+    - Sitten valitaan haluttu otoksen koko. Otoskoon määrittäminen on keskeinen osa koesuunnittelua, ks. luvut \@ref(alaluku66)
     - Otantakehikosta arvotaan perusjoukon alkiot otokseen yksi kerrallaan.
     - Käytännössä arvonta voidaan toteuttaa satunnaislukuja generoimalla (tuottamalla).\footnote{{} Satunnaislukujen generointia käsitellään ja opetellaan mm. R-kurssilla ja kurssilla \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3705/92210}{TILM3705 Johdatus laskennalliseen tilastotieteeseen.}} 
 
@@ -462,7 +462,7 @@ päätöksenteon tukena.
 
 - Jos poimitaan tutkimukseen ne perusjoukon alkiot, jotka ovat tutkimuksen tekemishetkellä 'saatavilla', niin kyseessä on __näyte__. Näyte ei siis kata ilmiön koko vaihtelua edustavan satunnaisotoksen tapaan.
   - Esimerkiksi perinteiset katukyselyt eivät ole hyvä otantatapa, sillä kadulla liikkujat eivät välttämättä kovin hyvin edusta tutkittavaa perusjoukkoa, ellei perusjoukkona ole kyseisellä kadulla kyseiseen aikaan liikkuvat ihmiset.
-  - Jos TV:n ajankohtaisohjelma pyytää katsojia twiittaamaan mielipiteensä ajankohtaisesta asiasta, kyseessä on itse valikoituva näyte (osallistujat valitsevat itse itsensä).
+  - Jos television ajankohtaisohjelma pyytää katsojia twiittaamaan mielipiteensä ajankohtaisesta asiasta, kyseessä on itse valikoituva näyte (osallistujat valitsevat itse itsensä).
 
 - Vajaapeittävyys: Populaation alkioista ei ole välttämättä täydellistä luetteloa
 

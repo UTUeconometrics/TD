@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>6.1 Satunnaisotos, yhteisjakauma ja tilastollinen malli | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="6.1 Satunnaisotos, yhteisjakauma ja tilastollinen malli | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="6.1 Satunnaisotos, yhteisjakauma ja tilastollinen malli | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="luku6.html"/>
+<link rel="next" href="alaluku62.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,19 +189,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="alaluku61" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Satunnaisotos, yhteisjakauma ja tilastollinen malli<a href="alaluku61.html#alaluku61" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on satunnaisilmiöt, joita kuvataan satunnaismuuttujilla. Satunnaismuuttujilla on todennäköisyysjakaumat, joita tilastotieteessä kuvataan todennäköisyys- eli tiheysfunktion avulla.
+<ul>
+<li>Merkitään satunnaismuuttujia isolla kirjaimella, <span class="math inline">\(Y\)</span>, ja yksittäisen satunnaismuuttuja realisaatiota pienellä kirjaimella <span class="math inline">\(y\)</span>. Otoskokoa, eli otokseen osallistuvien tilastoyksiköiden määrää merkitään <span class="math inline">\(n\)</span>:llä ja tilastoyksiköitä indeksöidään alaindeksillä <span class="math inline">\(i=1,\ldots,n\)</span>.</li>
+<li>Otoksen poimimisen jälkeen satunnaismuuttujat <span class="math inline">\(Y_1, \ldots, Y_n\)</span> saavat havaituiksi arvoikseen havaintoarvot <span class="math inline">\(y_1, \ldots, y_n\)</span> (ts. <span class="math inline">\(Y_1=y_1, \ldots, Y_n = y_n\)</span>).</li>
+<li>Näin havaintoaineisto on siis <strong>satunnaisotos</strong>, joka voidaan määritellä tarkemmin seuraavasti.</li>
+</ul></li>
+</ul>
+<div class="noteblock mikko">
+<p><strong>Satunnaisotos</strong></p>
+<p>Olkoot <span class="math inline">\(Y_1, \ldots, Y_n\)</span> riippumattomia ja samoinjakautuneita satunnaismuuttujia, joiden tiheysfunktiota (tf., tai pistetoden-näköisyysfunktiota (ptnf)) merkitään <span class="math inline">\(f(y, \theta)\)</span>:llä, jossa <span class="math inline">\(y\)</span>:n on yksittäisen sm:jan <span class="math inline">\(Y\)</span> reaalisaatio ja <span class="math inline">\(\theta\)</span> on jokin jakauman muodon määräävä parametri (tai parametrit).<br />
+- Parametrin <span class="math inline">\(\theta\)</span> arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, <strong>estimoida</strong>, sen arvoa lopulta käytettävää aineistoa käyttäen.</p>
+</div>
+<p><br />
+<br />
+<br />
+<br />
+</p>
+<p><strong>Satunnaisotoksen tilastollinen malli</strong></p>
+<ul>
+<li>Havaintoarvot <span class="math inline">\(y_1, \ldots, y_n\)</span> ovat kiinteitä lukuja, mutta ne vaihtelevat satunnaisesti otoksesta toiseen. Satunnaisotannassa <strong>satunnaisuus liittyy siis havaintoarvojen vaihteluun satunnaisesti otoksesta toiseen</strong>.
+<ul>
+<li>Satunnaisuus ei siis liity otannan tuloksena saatuihin havaintoarvoihin, vaan otoksen poimintaan.</li>
+</ul></li>
+<li>Satunnaismuuttujien <span class="math inline">\(Y_1, \ldots, Y_n\)</span> <strong>yhteisjakauma</strong> muodostaa (tiettyjen lisäoletusten jälkeen) <strong>tilastollisen mallin</strong> havaintoarvojen satunnaiselle vaihtelulle eri otoksissa.
+<ul>
+<li>Koska tällä kurssilla satunnaismuuttujat <span class="math inline">\(Y_1, \ldots, Y_n\)</span> oletetaan <strong>riippumattomiksi toisiinsa nähden</strong>, niiden yhteisjakauma on tulomuotoa <span class="math inline">\(f(y_1, \ldots, y_n; \theta) = f(y_1; \theta)\)</span> <span class="math inline">\(f(y_n; \theta)\)</span>.</li>
+</ul></li>
+<li>Oletetaan, että <span class="math inline">\(Y_1, \ldots, Y_n\)</span> ovat aiempien oletusten pätiessä riippumattomia sm:jia ja, että ne muodostavat satunnaisotoksen jakaumasta, jonka odotusarvo on <span class="math inline">\(\mu\)</span> ja varianssi on <span class="math inline">\(\sigma^2\)</span>.
+<ul>
+<li>Ts. oletamme</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\text{E}(Y_i) = \mu, \quad i=1,\ldots,n,  \\
+\mathrm{Var}(Y_i) = \sigma^2, \quad i=1,\ldots,n.
+\]</span>
+- Tässä tapauksessa mielenkiinnon kohteena olevat parametrit ovat siis <span class="math inline">\(\mu\)</span> ja <span class="math inline">\(\sigma^2\)</span> eli <span class="math inline">\(\theta = (\mu \quad \sigma^2)\)</span>.
+- Tilastollisten mallien tehtävänä on siis estimoida nämä todennäköisyysjakaumien parametrit havaitun aineiston perusteella, joten keskeinen tilastollinen kysymys on että miten estimointi suoritetaan luotettavasti.</p>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: satunnaisotos normaalijakaumasta</strong></p>
+<p>Normaalijakautuneiden satunnaismuuttujien satunnaisotokselle pätee <span class="math inline">\(Y_1\)</span>, , <span class="math inline">\(Y_n\)</span> , ,, <span class="math inline">\(Y_i\)</span> <span class="math inline">\(\text{N}(\mu, \sigma^2)\)</span>,,, i=1,,n.</p>
+<ul>
+<li>Esimerkiksi R-ohjelmassa voidaan generoida 10 havainnon (<span class="math inline">\(n=10\)</span>) satunnaisotos standardoidusta normaalijakaumasta (ts. <span class="math inline">\(Y_i \thicksim \text{N}(0,1),\, i=1,\ldots,10\)</span>) komennolla rnorm(10).</li>
+</ul>
+</div>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: miesten pituus</strong></p>
+<ul>
+<li><p>Kerätään havaintoja miesten pituuksista yksinkertaisella satunnaisotannalla (takaisinpalauttaen) <span class="math inline">\(n\)</span> kappaletta.</p></li>
+<li><p>Tällöin havaintoarvoja <span class="math inline">\(Y_1, \ldots, Y_n\)</span> voidaan pitää riippumattomina satunnaismuuttujina, joista jokainen noudattaa tehdyn jakaumaoletuksen mukaan normaalijakaumaa <span class="math inline">\(\text{N}(\mu, \sigma^2)\)</span>.</p></li>
+<li><p>Estimoinnin tehtävänä on muodostaa parhaat mahdolliset arviot parametreille <span class="math inline">\(\mu\)</span> ja <span class="math inline">\(\sigma^2\)</span>, ja mahdollisesti testata esimerkiksi odotusarvolle <span class="math inline">\(\mu\)</span> asetettua hypoteesia.</p></li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="luku6.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="alaluku62.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -232,7 +283,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-tilppa.Rmd",
 "text": "Edit"
 },
 "history": {

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>6.6 Luottamusvälit | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="6.6 Luottamusvälit | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="6.6 Luottamusvälit | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="alaluku65.html"/>
+<link rel="next" href="alaluku67.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,19 +189,205 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="alaluku66" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Luottamusvälit<a href="alaluku66.html#alaluku66" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Satunnaisesti saadusta aineistosta laskettujen tunnuslukujen luotettavuus on tilastollisen mallin parametrien estimoinnissa keskeinen tilastollinen kysymys.
+<ul>
+<li>Otoksen poimintaan liittyvän satunnaisvaihtelun vuoksi emme voi varmuudella tietää onko saatu otokseen perustuva parametriestimaatti “lähellä” vai “kaukana” sen todellisesta arvosta.</li>
+<li>Täten tarvitaan jokin tapa, jolla saadun parametriestimaatin luotettavuutta voidaan arvioida.</li>
+</ul></li>
+</ul>
+<div class="noteblock mikko">
+<p><strong>Luottamusväli</strong></p>
+<p>Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsemalla todennäköisyydellä (luottamustasolla) peittää tarkasteltavan tilastollisen mallin <span class="math inline">\(f(y;\theta)\)</span> parametrin <span class="math inline">\(\theta\)</span> tuntemattoman todellisen arvon. Se perustetaan otostunnusluvun, estimaattorin, otosjakaumaan.</p>
+</div>
+<ul>
+<li><p>Otoskoko on luottamusvälejä koskevissa tarkasteluissa keskeinen ja luottamusväleihin palataankin otoskoon käsittelyn yhteydessä.</p></li>
+<li><p>Valittua luottamustasoa merkitään usein <span class="math inline">\(1-\alpha\)</span>:lla, jossa <strong>merkitsevyystaso</strong> ( <strong>riskitaso</strong> ) <span class="math inline">\(\alpha\)</span> on esimerkiksi <span class="math inline">\(\alpha=0.05\)</span>.</p></li>
+<li><p>Tulkinta: Jos <strong>otantaa</strong> jakaumasta <span class="math inline">\(f(y;\theta)\)</span> toistetaan, niin keskimäärin <span class="math inline">\(100 \times (1-\alpha)\%\)</span> otoksista kontstruloiduista luottamusväleistä peittää parametrin <span class="math inline">\(\theta\)</span> todellisen arvon.</p></li>
+<li><p>Oletetaan, että olemme tehneet johtopäätöksen, että konstruloitu luottamusväli peittää parametrin <span class="math inline">\(\theta\)</span> tuntemattoman todellisen arvon.</p>
+<ul>
+<li>Tällöin otantaa toistettaessa luottamusvälin konstruktiosta seuraa, että tehty johtopäätös on oikea keskimäärin <span class="math inline">\(100 \times (1-\alpha)\%\)</span> tapauksista.</li>
+<li>Vastaavasti taas <span class="math inline">\(100 \times alpha \%\)</span> ei peitä parametrin todellista arvoa.</li>
+</ul></li>
+<li><p>Luottamusväli on kenties tunnetumpi kansankieliseltä nimitykseltään <strong>virhemarginaali</strong>, joka on itseasiassa luottamusvälin puolikas: todellinen parametriarvo kuuluu saadun estimaatin ja virhemarginaalien sisään jäävälle osuudelle.</p>
+<ul>
+<li>Normaalisti mm. otoskoon kasvu pienentää virhemarginaalia.</li>
+<li>Kuten jatkossa tullaan havaitsemaan, virhemarginaalin suuruuteen vaikuttavat otosasetelma, otoskoko, luottamustaso ja tutkittavan tilastollisen tunnusluvun jakauma.</li>
+</ul></li>
+<li><p>Luottamusväleissä ei kuitenkaan varsinaisesti ole kyse “virheestä” vaan saadun/muodostetun tiedon tarkkuudesta.</p>
+<ul>
+<li>Luottamusvälit, eli virhemarginaalit, siis (yleisesti) riippuvat valittavasta luottamustasosta <span class="math inline">\(1-\alpha\)</span> ja näin ollen samasta aineistosta on saatavissa useita virhemarginaaleja.
+<ul>
+<li>Täten on tarkalleen ottaen virheellistä sanoa, että “tutkimuksen virhemarginaali on 3,5 puoleen tai toiseen.”</li>
+<li>Oikeammin olisi sanoa esimerkiksi “tutkimuksessa saadun kannatuksen virhemarginaali on 3,5 puoleen tai toiseen 95% luottamustasolla.”</li>
+<li>Virhemarginaali kasvaa, kun aineistoa lohkotaan: jos tuhannen hengen otoksesta esitetään tietoja, jotka kuvaavat erikseen miesten ja naisten ominaisuuksia, sukupuolittain lasketut ovat estimaatit epävarmempia kuin koko otoksesta esitetyt.</li>
+</ul></li>
+<li>Vastaavasti on virheellistä sanoa että tutkimuksella olisi virhemarginaali, sillä virhemarginaali liittyy aina vain tutkimuksen antamiin numeerisiin arvoihin.</li>
+<li>Aitoja virhelähteitä ovat mm. otantatutkimukseen liittyvien kysymysten muotoilu, käsitteiden monitulkintaisuus, vastaajien valikoituminen ja vastauskato.</li>
+</ul></li>
+</ul>
+<p><strong>Normaalijakauman odotusarvon luottamusväli</strong></p>
+<ul>
+<li>Käsittelemme seuraavassa (normaalijakauman) odotusarvon <span class="math inline">\(\mu\)</span> luottamusvälejä ja jatkossa oletetaan (ellei toisin mainita), että taustalla oleva populaatio, <span class="math inline">\(N\)</span>, on “iso” (ääretön).
+<ul>
+<li>Näin ollen ns. äärellisyyskorjausta ei käytetä (yksinkertaisuuden vuoksi).</li>
+</ul></li>
+<li>Tarkastellaan satunnaisotosta normaalijakaumasta
+<span class="math inline">\(Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\, i=1,\ldots,n\)</span>.
+<ul>
+<li>Merkintä <span class="math inline">\(\indep\)</span> tarkoittaa, että sm:t <span class="math inline">\(Y_1,\ldots,Y_n\)</span> ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti <span class="math inline">\(iid\)</span>, joka tulee englannin kielen ilmaisusta “independent and identically distributed”).</li>
+</ul></li>
+<li>Tarkastellaan normaalijakauman odotusarvon <span class="math inline">\(\mu\)</span> luottamusvälin määräämistä otannan avulla olettaen että jakauman varianssi <span class="math inline">\(\sigma^2\)</span> on tunnettu.
+<ul>
+<li>Muistetaan että normaalijakauman odotusarvoparametrin <span class="math inline">\(\text{E}(Y_i) = \mu\)</span> __harhaton estimaattori} on aritmeettinen keskiarvo</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i.
+\]</span></p>
+<ul>
+<li><p>Valitaan <strong>luottamustasoksi</strong> <span class="math inline">\(1-\alpha\)</span>, eli <span class="math inline">\(\alpha\)</span> määrää todennäköisyyden, jolla luottamusväli peittää odotusarvon <span class="math inline">\(\mu\)</span> todellisen arvon: yleinen valinta ihmistieteissä on <span class="math inline">\(\alpha = 0.05\)</span> tai <span class="math inline">\(\alpha = 0.1\)</span> vastaten 95% ja 90% prosentin luottamustasoa. Luonnontieteissä <span class="math inline">\(\alpha\)</span> on usein paljon pienempi.</p></li>
+<li><p>Määrätään <strong>luottamuskertoimet</strong> <span class="math inline">\(-z_{\alpha/2}\)</span> ja <span class="math inline">\(z_{\alpha/2}\)</span> (luottamusväli on kaksisuuntainen), joille pätee
+<span class="math display">\[
+\text{P}(-z_{\alpha/2} \le Z \le z_{\alpha/2}) = 1-\alpha,
+\]</span>
+jossa standardoitu satunnaismuuttuja
+<span class="math display">\[
+Z = \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}} = \sqrt{n} \Big( \frac{\bar{Y} - \mu}{\sigma} \Big),  
+\]</span>
+(ks. aiemmat jaksot <a href="luku6.html#luku6">6</a>) noudattaa <span class="math inline">\(\text{N}(0,1)\)</span>-jakaumaa.</p>
+<ul>
+<li><span class="math inline">\(\text{P}(\cdot)\)</span>:llä merkitään todennäköisyysjakaumaa, ts. se on normaalijakauman jakaumafunktio ja <span class="math inline">\(z_{\alpha/2}\)</span> on jakaumafunktion arvo pisteessä <span class="math inline">\(\alpha/2\)</span>.</li>
+</ul></li>
+<li><p>Tällöin etsitään odotusarvoparametrille <span class="math inline">\(\mu\)</span> sellainen arvo, jolla oheinen epäyhtälö pätee ja päädytään luottamusväliin.</p></li>
+<li><p>Nyt epäyhtälöketju voidaan kirjoittaa muodossa
+<span class="math display">\[
+-z_{\alpha/2} \le  \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}}  \le z_{\alpha/2}.
+\]</span></p></li>
+<li><p>Joka voidaan kirjoittaa uudelleen muodossa
+<span class="math display">\[
+\bar{Y} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \le   \mu  \le 
+\bar{Y} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}},
+\]</span>
+kertomalla nimittäjällä puolittain ja vähentämällä sm:jien keskiarvo molemmin puolin.</p></li>
+<li><p>Normaalijakauman odotusarvon <span class="math inline">\((1-\alpha) \times 100\)</span>% luottamusväli on siis
+<span class="math display">\[
+\Big(\bar{Y} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}}, 
+\bar{Y} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \Big).
+\]</span></p></li>
+<li><p>Luottamusväli on symmetrinen keskipisteensä <span class="math inline">\(\bar{Y}\)</span> suhteen. Siksi luottamusväli esitetään usein
+<span class="math display">\[
+\bar{Y} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+\]</span></p></li>
+<li><p>Luottamusvälin pituus
+<span class="math display">\[
+2 \cdot z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+\]</span></p></li>
+<li><p><strong>Virhemarginaali</strong> on luottamusvälin pituuden puolikas eli
+<span class="math display">\[
+z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+\]</span></p></li>
+<li><p>Edellä tiettyyn otokseen liittyvä luottamusväli perustetaan realisoituneeseen otoskeskiarvoon <span class="math inline">\(\bar{y}=\frac{1}{n} \sum_{i=1}^{n} y_i\)</span>.</p></li>
+<li><p>Olisi toivottavaa pystyä konstruoimaan parametrille <span class="math inline">\(\mu\)</span> mahdollisimman lyhyt luottamusväli, johon liittyvä luottamustaso olisi samanaikaisesti mahdollisimman korkea. Molempien vaatimusten samanaikainen täyttäminen ei ole kuitenkaan mahdollista, jos otoskoko <span class="math inline">\(n\)</span> pidetään kiinteänä:</p>
+<ul>
+<li>Luottamustason kasvattaminen pidentää luottamusväliä, jolloin tieto parametrin <span class="math inline">\(\mu\)</span> todellisesta arvosta tulee epätarkemmaksi.</li>
+<li>Luottamusvälin lyhentäminen pienentää luottamustasoa, jolloin tieto parametrin <span class="math inline">\(\mu\)</span> todellisesta arvosta tulee epävarmemmaksi.</li>
+</ul></li>
+</ul>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-9"></span>
+<img src="images/gaussian-distribution.jpg" alt="Standardoitu normaalijakauma: Virhemarginaaleja" width="200" />
+<p class="caption">
+Figure 6.1: Standardoitu normaalijakauma: Virhemarginaaleja
+</p>
+</div>
+<p><br />
+<br />
+<br />
+<br />
+</p>
+<p><strong>Normaalijakauman odotusarvon luottamusväli (<span class="math inline">\(\sigma^2\)</span> tuntematon)</strong></p>
+<ul>
+<li><p>Tarkastellaan edelleen satunnaisotosta normaalijakaumasta, mutta oletetaan nyt että varianssi <span class="math inline">\(\sigma^2\)</span> tuntematon.</p></li>
+<li><p>Normaalijakauman odotusarvon <span class="math inline">\((1-\alpha) \times 100\)</span>% luottamusväli:
+<span class="math display">\[
+\Big(\bar{Y} - t_{\alpha/2} \frac{S}{\sqrt{n}}, 
+\bar{Y} + t_{\alpha/2} \frac{S}{\sqrt{n}} \Big),
+\]</span>
+jossa <strong>luottamuskertoimet</strong> <span class="math inline">\(-t_{\alpha/2}\)</span> ja <span class="math inline">\(t_{\alpha/2}\)</span>
+saadaan nyt __<span class="math inline">\(t\)</span>-jakaumasta} <span class="math inline">\(t_{n-1}\)</span>, jossa <span class="math inline">\(S^2\)</span> on varianssin <span class="math inline">\(\sigma^2\)</span> harhaton estimaattori ja vapausasteiden lukumäärä on <span class="math inline">\(n-1\)</span>.</p>
+<ul>
+<li><p>(Studentin) <span class="math inline">\(t\)</span>-jakauma muistuttaa silmämääräisesti normaalijakaumaa, mutta se on paksuhäntäisempi. Vapausasteluvun kasvaesssa <span class="math inline">\(t\)</span>-jakauma lähestyy normaalijakaumaa.</p></li>
+<li><p>Suurissa otoksissa (<span class="math inline">\(n\)</span> iso) luottamuskertoimet voidaan poimia (approksimatiivisesti) myös normaalijakaumasta eli korvata edellä kertoimet <span class="math inline">\(t_{\alpha/2}\)</span> aiemmin käytetyillä kertoimilla <span class="math inline">\(z_{\alpha/2}\)</span>.</p></li>
+<li><p>Normaalijakauman odotusarvon luottamusväli (<span class="math inline">\(\sigma^2\)</span> tuntematon), <span class="math inline">\(t\)</span>-jakauma eri vapausastein <span class="math inline">\(df\)</span></p></li>
+</ul></li>
+</ul>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-10"></span>
+<img src="images/NjaT-jakauma.jpg" alt="Standardoitu normaalijakauma: Virhemarginaaleja" width="726" />
+<p class="caption">
+Figure 6.2: Standardoitu normaalijakauma: Virhemarginaaleja
+</p>
+</div>
+<p><br />
+<br />
+<br />
+<br />
+</p>
+<p><strong>Luottamusväli: Suhteellisen osuuden odotusarvo</strong></p>
+<ul>
+<li><p>Käsittelemme seuraavassa suhteellisen osuuden <span class="math inline">\(p\)</span> luottamusvälejä.</p></li>
+<li><p>Tarkastellaan satunnaisotosta Bernoulli-jakaumasta
+<span class="math inline">\(Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim B(p),\, i=1,\ldots,n\)</span>,
+jossa merkitään <span class="math inline">\(Y_i=1\)</span> jos tapahtuma A tapahtuu ja <span class="math inline">\(Y_i=0\)</span> jos tapahtuma A ei tapahdu.</p></li>
+<li><p>Bernoulli-jakauman odotusarvoparametrin <span class="math inline">\(p=\text{E}(Y_i)\)</span> harhaton estimaattori on tapahtuman A suhteellinen otosfrekvenssi
+<span class="math display">\[
+\widehat{p} = \frac{1}{n} \sum_{i=1}^{n} Y_i.
+\]</span></p></li>
+<li><p>Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien
+perusteella <span class="math inline">\(\text{E}(Y_i)=p\)</span> ja <span class="math inline">\(\mathrm{Var}(Y_i)=pq\)</span>, jossa
+<span class="math inline">\(q=1-p\)</span>.</p></li>
+<li><p>Näin ollen voimme normaalijakauman odotusarvoparametrin
+luottamusvälin konstruloinnin tapaan määritellä satunnaismuuttujan <span class="math inline">\(Z\)</span>:
+<span class="math display">\[
+Z = \frac{\widehat{p} - p}{\sqrt{\frac{p (1-p)}{n}}} = 
+\sqrt{n} \Big(\frac{\widehat{p} - p}{\sqrt{p (1-p)}} \Big),  
+\]</span>
+joka noudattaa (suurissa otoksissa) <span class="math inline">\(\text{N}(0,1)\)</span>-jakaumaa.</p></li>
+<li><p>Suhteellisen frekvenssin hajonnan estimaattori on siis
+<span class="math display">\[
+\sqrt{\frac{\widehat{p} (1-\widehat{p})}{n}},
+\]</span>
+jossa tuntematon <span class="math inline">\(p\)</span> on korvattu sen estimaattorilla (otosvastineella) <span class="math inline">\(\widehat{p}\)</span>.</p></li>
+<li><p>Luottamuskertoimet määrätään aiempaan tapaan:
+<span class="math display">\[
+\text{P}(-z_{\alpha/2} \le Z \le z_{\alpha/2}) = 1-\alpha,
+\]</span></p></li>
+<li><p>Näin ollen odotusarvoparametrin (suhteellisen osuuden) <span class="math inline">\(p\)</span> <span class="math inline">\((1-\alpha)\)</span>% luottamusväliksi
+saadaan
+<span class="math display">\[
+\Big(
+\widehat{p} - z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}},
+\widehat{p} + z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}} 
+\Big)
+\]</span></p></li>
+<li><p>Luottamusväli voidaan kirjoittaa
+<span class="math display">\[
+\widehat{p} \pm z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}
+\]</span>
+ja luottamusvälin pituus on
+<span class="math display">\[
+2 \times z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}.
+\]</span></p></li>
+</ul>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="alaluku65.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="alaluku67.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -232,7 +418,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-tilppa.Rmd",
 "text": "Edit"
 },
 "history": {

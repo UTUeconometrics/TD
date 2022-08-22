@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>6.4 Suhteellisen frekvenssin otosjakauma | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="6.4 Suhteellisen frekvenssin otosjakauma | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="6.4 Suhteellisen frekvenssin otosjakauma | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="alaluku63.html"/>
+<link rel="next" href="alaluku65.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,19 +189,96 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="alaluku64" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Suhteellisen frekvenssin otosjakauma<a href="alaluku64.html#alaluku64" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Frekvenssi ja suhteellinen frekvenssi</strong></p>
+<ul>
+<li><p>Oletetaan, että tapahtuman <span class="math inline">\(A\)</span> todennäköisyys on
+<span class="math display">\[
+\text{P}(A) = p,
+\]</span>
+jolloin tapahtuman <span class="math inline">\(A\)</span> komplementtitapahtuman (vastatapahtuman) <span class="math inline">\(A^c\)</span> todennäköisyys on
+<span class="math display">\[
+\text{P}(A^c) = 1- p = q.
+\]</span></p></li>
+<li><p>Poimitaan satunnaisotos, jonka koko on <span class="math inline">\(n\)</span>. Tällöin <span class="math inline">\(A\)</span>-tyyppisten alkioiden frekvenssi eli lukumäärä kyseisessä otoksessa on <span class="math inline">\(f\)</span>.</p></li>
+<li><p>Suhteellinen frekvenssi eli osuus on tällöin
+<span class="math display">\[
+\widehat{p} = \frac{f}{n}.
+\]</span></p></li>
+<li><p>Sekä frekvenssi (lukumäärä) <span class="math inline">\(f\)</span> ja (täten myös) suhteellinen frekvenssi <span class="math inline">\(\widehat{p}\)</span> ovat satunnaismuuttujia, joiden saamat arvot vaihtelevat satunnaisesti otoksesta toiseen.</p></li>
+</ul>
+<p><strong>Frekvenssin otosjakauma</strong></p>
+<ul>
+<li>Frekvenssillä <span class="math inline">\(f\)</span> on odotusarvo
+<span class="math display">\[
+\text{E}(f) = np,
+\]</span>
+ja varianssi
+<span class="math display">\[
+\mathrm{Var}(f) = npq = np(1-p).
+\]</span></li>
+<li>Frekvenssi <span class="math inline">\(f\)</span> noudattaa binomijakaumaa parametrein <span class="math inline">\(n\)</span> ja <span class="math inline">\(p\)</span>:
+<span class="math display">\[
+f \thicksim \mathrm{Bin}(n,p).
+\]</span></li>
+</ul>
+<p><strong>Suhteellinen frekvenssi: Odotusarvo ja varianssi</strong></p>
+<ul>
+<li><p>Suhteellisen frekvenssin <span class="math inline">\(\widehat{p}\)</span> odotusarvo
+<span class="math display">\[
+\text{E}(\widehat{p}) = \text{E} \Big(\frac{f}{n} \Big) = p,
+\]</span>
+ja varianssi
+<span class="math display">\[
+\mathrm{Var}(\widehat{p}) = \frac{pq}{n} = \frac{p(1-p)}{n}.
+\]</span></p></li>
+<li><p>Suhteellisen frekvenssin <span class="math inline">\(\widehat{p}\)</span> standardipoikkeamaa
+<span class="math display">\[
+\text{D}(\widehat{p}) = \sqrt{\mathrm{Var} (\widehat{p})} =  \sqrt{\frac{pq}{n}}
+\]</span>
+voidaan kutsua <strong>suhteellisen frekvenssin keskivirheeksi</strong> ja se kuvaa suhteellisen frekvenssin otosvaihtelua odotusarvon <span class="math inline">\(p\)</span> ympärillä.</p></li>
+</ul>
+<p><strong>Suhteellisen frekvenssin otosjakauma</strong></p>
+<ul>
+<li><p>Koska <span class="math inline">\(\text{E}(\widehat{p}) = p\)</span> ja <span class="math inline">\(\mathrm{Var}(\widehat{p}) = \frac{pq}{n}\)</span>,
+niin suhteellisen frekvenssin otosjakauma keskittyy yhä voimakkaammin tapahtuman A
+todennäköisyyden <span class="math inline">\(\text{P}(A) = p\)</span> ympärille, kun otoskoko <span class="math inline">\(n\)</span> kasvaa.</p></li>
+<li><p>Jälleen suurten otosten tapauksessa voidaan osoittaa, että suhteellinen frekvenssi noudattaa em. oletusten pätiessä normaalijakaumaa:
+<span class="math display">\[
+\widehat{p} \thicksim \text{N} \Big(p, \frac{pq}{n} \Big).
+\]</span></p></li>
+<li><p>Aritmeettisen keskiarvon tapaan standardoitu sm.
+<span class="math display">\[
+Z = \frac{\widehat{p} - p}{\sqrt{\frac{pq}{n}}} \thicksim \text{N}(0,1)
+\]</span>
+noudattaa suurissa otoksissa approksimatiivisesti standardoitua normaalijakaumaa.</p></li>
+</ul>
+<div class="eblock kimmo">
+<p><strong>EU-kansanäänestys</strong></p>
+<ul>
+<li><p>Suomen EU-kansanäänestyksessä vuonna 1994 jäsenyyttä kannattaneiden suhteellinen osuus oli 0,54 (54%).</p></li>
+<li><p>Mikä olisi ollut tällöin tn., että ennen äänestystä 200 havainnon otoksessa kyllä-osuus olisi ollut alle 50%?</p></li>
+<li><p>Suhteellisen frekvenssin otosjakauman perusteella kyllä-kannatusosuuden jakauma olisi
+<span class="math display">\[
+%\widehat{p} \stackrel{as}{\thicksim} \text{N} \Big(0.54, \frac{0.54 \times (1-0.54)}{200} \Big),
+\widehat{p} \thicksim \text{N} \Big(0.54, \frac{0.54 \times (1-0.54)}{200} \Big),
+\]</span>
+jossa <span class="math inline">\(\frac{0.54 \times (1-0.54)}{200} = 0.0352^2\)</span>.</p></li>
+<li><p>Näin ollen haluttu todennäköisyys (ts. saada sellainen satunnaismuuttujan <span class="math inline">\(Z \thicksim \text{N}(0,1)\)</span> arvo että suhteellinen osuus on pienempi kuin 0.5)
+<span class="math display">\[
+P \Big(Z &lt; \frac{0.5-0.54}{0.0352} \Big) = P (Z &lt; -1.14) \approx 0.127.
+\]</span></p></li>
+</ul>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="alaluku63.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="alaluku65.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -232,7 +309,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-tilppa.Rmd",
 "text": "Edit"
 },
 "history": {

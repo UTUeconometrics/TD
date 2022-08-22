@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>3.2 Mitä tilastotiede on ja mitä se ei ole? | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="3.2 Mitä tilastotiede on ja mitä se ei ole? | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="3.2 Mitä tilastotiede on ja mitä se ei ole? | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="lisää-tilastotieteen-perustermejä.html"/>
+<link rel="next" href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -189,19 +189,98 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="mitä-tilastotiede-on-ja-mitä-se-ei-ole" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Mitä tilastotiede on ja mitä se ei ole?<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#mitä-tilastotiede-on-ja-mitä-se-ei-ole" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Aloitetaan tarkastelemalla erinäisiä <strong>tilastotieteen “karakterisointeja”</strong> eri tahojen ja tutkijoiden toimesta:
+<ul>
+<li><strong><em>Tilastotiede on tietotuotannon teknologiaa</em></strong>, <em>jonka avulla voidaan suorittaa kvantitatiivisten tietojen joukkotuotantoa ja havaintoihin perustuvia tieteellisiä ja käytännöllisiä päätöksiä. Tilastotiede on siis yksikköjen muodostamaan joukkoon liittyvän numeerisen tietoaineiston keräämistä, analysointia ja tulkintaa koskeva tiede</em>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+<li><strong><em>Tilastotiede on yleinen menetelmätiede</em></strong>, <em>jota sovelletaan, jos reaalimaailman ilmiöstä halutaan tehdä johtopäätöksiä ilmiötä kuvaavien kvantitatiivisten tai numeeristen tietojen perusteella sellaisissa tilanteissa, joissa tietoihin liittyy epävarmuutta tai satunnaisuutta</em>.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+<li><strong><em>Tilastotiede on yleinen menetelmätiede</em></strong>, <em>jota sovelletaan, jos reaalimaailman ilmiöstä halutaan tehdä johtopäätöksiä ilmiötä kuvaavien kvantitatiivisten tai numeeristen tietojen perusteella sellaisissa tilanteissa, joissa tietoihin liittyy epävarmuutta tai satunnaisuutta.</em></li>
+<li><em>Vale, emävale, tilasto</em>.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></li>
+<li><em>Statistics concerns what can be learned from data</em>.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></li>
+<li><em>“Maalaisjärjen tehostamista”</em>.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></li>
+</ul></li>
+<li>Tilastotiede siis <strong>kehittää</strong> ja <strong>soveltaa menetelmiä</strong> ja (tilastollisia) <strong>malleja</strong>, joiden avulla reaalimaailman ilmiöistä voidaan tehdä johtopäätöksiä ilmiöitä kuvaavien numeeristen tai kvantitatiivisten tietojen perusteella tilanteissa, joissa tietoihin liittyy <strong>epävarmuutta ja satunnaisuutta</strong>.
+<ul>
+<li>Tilastollisten menetelmien avulla pyritään löytämään reaalimaailman satunnaisia ilmiöitä kuvaavista numeerisista (eli kvantitatiivisista) tiedoista <strong>systemaattisia piirteitä</strong> joita jalostetaan sellaiseen muotoon, että ilmiöistä voidaan tehdä päätelmiä.
+<ul>
+<li>Vrt. signaalin ja kohinan erottaminen (ks. Silver, 2014).</li>
+</ul></li>
+<li>Tilastolliset mallit perustuvat todennäköisyyslaskentaan ja niillä mallinnetaan reaalielämän ilmiöiden alla piileviä prosesseja tai mekanismeja. Näiden prosessien tuottamia tietoja (aineistoja) tiivistetään usein graafisiksi esityksiksi ja tunnusluvuiksi sekä tilastollisten mallien parametreiksi, joiden pohjalta johtopäätöksiä tehdään.</li>
+<li>Tässä onnistuakseen tilastollisten menetelmien tuleekin pyrkiä erottelemaan <strong>sattuma</strong> ja <strong>systemaattisuus</strong> tarkasteltavissa ilmiöissä tai, tarkemmin, niitä kuvaavissa aineistoissa, jotta johtopäätökset olisivat luotettavia.</li>
+</ul></li>
+</ul>
+<p><strong>Voidaan sanoa, että saadakseen tarkemmin selville mitä tilastotiede on, pitää opiskella tilastotiedettä ja sen käyttöä!</strong></p>
+<ul>
+<li><p>Edellisten tilastotieteen yleismaailmallisten luonnehdintojen jälkeen onkin sopivaa kysyä <strong>mitä tilastotiede ei ole</strong>.</p>
+<ul>
+<li>Vaikka sana <strong>tilasto</strong> tuo useimmille ensimmäisenä mieleen yhteiskuntaa ja sen toimintaa kuvaavat <strong>numeeristen tietojen järjestelmälliset kokoelmat</strong>, tilastotiede ei suinkaan ole ainoastaan tilastojen ja niiden tekemisen oppia.
+<ul>
+<li>Tämä siitäkin huolimatta, että niiden menetelmien konstruointi, joilla näitä tilastoja tuotetaan, jalostetaan ja analysoidaan on keskeinen osa tilastotiedettä. Tilastot ovat siis usein tilastotieteen soveltajan tutkimuskohteena ja tilastojen laadinnassa käytetään apuna tilastotieteen menetelmiä.</li>
+<li>Suomessa <a href="https://www.stat.fi/">Tilastokeskus</a> toimii virallisena tilastoviranomaisena ja tilastotuottajana. Tätä <strong>tilastotuotannon</strong> kokonaisuutta nimitetään ajoittain <strong>tilastotoimeksi</strong>. <strong>Tilastotieteen käyttöalue on paljon tätä laajempi</strong>.</li>
+</ul></li>
+<li>Tilastotieteen kannalta mikä tahansa reaalimaailman ilmiötä kuvaava <strong>numeeristen tai kvantitatiivisten tietojen järjestelmällinen kokoelma</strong> voi muodostaa <strong>tilastollisen aineiston</strong> ja siten tilastollisen tutkimuksen mahdollisen kohteen.</li>
+<li>Esimerkiksi kaikki <strong>empiirisen</strong> tai <strong>kvantitatiivisen</strong>
+tutkimuksen tutkimus- tai havaintoaineistot ovat tilastotieteen kannalta tilastollisia aineistoja.</li>
+</ul></li>
+<li><p>Tilastotiede sijoittuu tieteiden kentässä matematiikan, filosofian ja tietojenkäsittelytieteen rinnalle. Tästä huolimatta se ei kuitenkaan ole yksiselitteisesti minkään näiden osa-alue.</p>
+<ul>
+<li><strong>Tilastotiede ei ole matematiikan osa-alue</strong>, sillä tilastotiede lähestyy tieteellistä ongelmanratkaisua eri tavoin: matematiikka on tietyllä tavallaan aina eksaktia ja sen tulokset perustuvat formaaliin deduktioon ja loogisiin todistuksiin, johtaen usein ``eksaktiin’’ ratkaisuun tai matemaattisesti formaaliin ratkaisun esitystapaan. Tilastotiede sen sijaan on aina konteksti- ja aineistopohjaista ja perustuu induktiiviseen päättelyyn. Saadut tulokset ovat aina epävarmoja - koska ne kuvailevat epävarmaa tietoa generoivia prosesseja!
+<ul>
+<li>Tilastotiede on siis hyvä nähdä omana tieteenalanaan matemaattisesta esitystavastaan huolimatta. Eihän esimerkiksi myöskään fysiikkaa (sentään) pidetä matematiikan osa-alueena!</li>
+</ul></li>
+<li><strong>Tilastotiede ei ole myöskään tietojenkäsittelytieteen osa-alue</strong>, vaikkakin useiden laskennallisten menetelmien ja tehokkaan tietojenkäsittelyn rooli tilastollisissa analyyseissä on jatkuvasti kasvanut. Tietojenkäsittelytieteen teoria ei rakennu tilastotieteen tavoin ajatukselle epävarmoista ja satunnaisista reaalimaailman ilmiöistä.</li>
+<li>Vaikka nämä ja jotkin muut alat jakavat tilastotieteen kanssa useita piirteitä ja ominaisuuksia, on tilastotiede kuitenkin siis perustellusti oma tieteenalansa. Tämä erottelun vaikeus jo itsessään todistaa kuinka keskeinen rooli tilastotieteellä on eri aloilla!</li>
+</ul></li>
+<li><p>Tilastotiede ei siis kuulu yksiselitteisesti sen lähitietieden alle, vaan muodostaa oman tieteenalan omine teorioineen ja tieteellisine premisseineen. Käsittelemme myöhemmin tilastotieteen roolia matematiikan ja/tai datatieteiden (“data science”) kokonaisuudessa ja keskustelemme tarkemmin näiden erojen luonteesta.</p></li>
+<li><p><strong>Tilastotiede yleisenä menetelmätieteenä</strong></p>
+<ul>
+<li>Tieteellistä tietoa ympäröivästä maailmasta hankitaan tieteellisillä <strong>menetelmillä/metodeilla</strong> (Ks. tieteellisen menetelmän kriteerit [Luku ?? 2])), joiden avulla tutkitaan jotain ilmiötä tai sen generoimaa kvantitatiivista mutta epävarmaa tietoa sisältävää aineistoa.</li>
+<li>Tilastotieteessä kehitetyt ja kehitettävät menetelmät antavat tutkijoille yhtenevät ja tiedeyhteisön hyväksymät raamit, jotka mahdollistavat (tilastollisen) päättelyn ja päätöksenteon epävarman tiedon vallitessa. Näin voidaan uskottavasti ja luotettavasti tiivistää tietoa, jota erilaiset aineistot sisältävät, perustaa johtopäätöksiä näille tiivistyksille ja saavuttaa uusia tieteellisiä löytöjä.
+<ul>
+<li>Tilastotieteen menetelmien käyttö ja soveltaminen onkin siis aina alakohtaista. Tästä huolimatta tilastollisia menetelmiä sovelletaan aina johonkin <strong>aineistoon</strong>!</li>
+</ul></li>
+<li>Tilastotieteen nähdäänkin usein kuuluvan ns. <strong>menetelmätieteisiin</strong>, joissa mm.:
+<ul>
+<li>Kehitetään työkaluja muiden tieteiden tutkimusongelmien ratkaisuksi</li>
+<li>On myös oma sovelluksista vapaa teorianmuodostuksensa</li>
+</ul></li>
+<li>Menetelmäkehityksen näkökulma tilastotieteeseen: <em>tilastotiede kehittää matemaattisia</em> <strong><em>malleja</em></strong> <em>satunnaisilmiöitä kuvaavia kvantitatiivisia tietoja generoiville prosesseille.</em> Koska tietoihin liittyy <strong>epävarmuutta</strong> tai <strong>satunnaisuutta</strong>, <strong>tilastolliset mallit</strong> perustuvat <strong>todennäköisyyslaskentaan</strong>.</li>
+<li>Juuri sattuman ja epävarmuuden huomioiminen tutkimusasetelmissa erottaa tilastotieteen muista menetelmätieteistä!</li>
+</ul></li>
+<li><p><strong>Aineisto:</strong> Tilastotieteessä lähtökohtana ja ratkaisevassa asemassa on siis aina jonkin satunnaisilmiön generoima aineisto, josta haluamme oppia tai tietää lisää, kenties voidaksemme tehdä suuria yhteiskunnallisia päätöksiä sen pohjalta!</p>
+<ul>
+<li>Tämä aineistokeskeisyys osaltaan erottaa tilastotieteen rajatieteistään ja osaltaan tuo sen lähemmäksi niitä ja sovellusalojaan. (Näitä tarkastellaan myöhemmin luvussa ?.?).</li>
+<li>Aineistoa analysoidaan, kuvaillaan ja mallinnetaan tilastollisin menetelmin, joiden kehittäminen on keskeinen osa tilastotiedettä.</li>
+<li>Pelkkä menetelmien kehittäminen kuuluu pitkälti matemaattisen tai teoreettisen tilastotieteen osa-alueelle.</li>
+<li>Pelkkä ainestoon keskittyminen ja (mekaaninen) analysointi voi sen sijaan olla joissain tilanteissa pitkälti tietojenkäsittelyä.</li>
+<li><strong>Tilastollinen “mallintaminen”</strong> löytyykin näiden välistä ja se sisältää eri alojen sovelluksista kumpuavan tarpeen uusien menetelmien kehittämiseen.
+<ul>
+<li>Tämä vuoropuhelu muodostaa tilastotieteelle luonnollisen “takaisinkytkennän” teoreettisen ja soveltavan puolen välillä: uudet teoreettiset menetelmät vastaavat soveltavan tilastotieteen ongelmiin mutta herättävät aina uusia kysymyksiä, jotka palautuvat taas teoreetikon pöydälle!</li>
+</ul></li>
+<li>Luonnollisesti valtaosa tilastotieteilijöistä ja lähitieteiden harrastajista asettuvat näiden äärimmäisten luonnehdintojen välimaastoon eikä tarkkaa luokittelua ole sinänsä tarpeen tehdä ja korostaa.</li>
+<li>Joka tapauksessa tilastotieteen kehityksen keskiössä ovat aina sovellusalakohtaiset ongelmat, joista useat palautuvat yleisemmälle tasolle teoreettisen tilastotieteen kehityspolkuihin.</li>
+</ul></li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p><a href="https://fi.wikipedia.org/wiki/Leo_T%C3%B6rnqvist">Leo Törnqvistin</a>, Suomen ensimmäisen tilastotieteen professorin, esittämä luonnehdinta (Vartia, 1989).<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Mellin, (2005).<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://fi.wikipedia.org/wiki/Mark_Twain">Mark Twain</a> popularisoi tämän lausahduksen teoksessaan <em>Chapters from My Autobiography</em> jo vuonna 1907. <a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>(A.C. Davison)<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>(Sund, 2003)<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html#fnref7" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="lisää-tilastotieteen-perustermejä.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -232,7 +311,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/%s",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-tilastotiede.Rmd",
 "text": "Edit"
 },
 "history": {
