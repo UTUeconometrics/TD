@@ -1,1 +1,15 @@
 # Tilastotiede tieteenalana
+
+Tässä luvussa hahmottelemme tilastotieteen piirteitä tieteenalana. Käymme läpi tilastotieteelle
+ominaisia piirteitä, jotka erottavat sen niin lähitieteistä, kuten matematiikasta ja tietojenkäsit-
+telytieteestä, kuin myös sovellusaloista. Usein näkee tilastotieteen typistettävän vain työkaluksi
+eri sovellusalojen empiiriseen tutkimukseen siitäkin huolimatta että tilastotieteellä on oma rikas
+teoriapohjansa sekä kiistaton asema omana tieteenalanaan.
+Tieteenalan määritteleminen lyhyesti on aina hieman hankalaa. Tästä huolimatta seuraavassa
+yritämme osaltaan vastata seuraaviin kysymyksiin:
+
+- Mitä tilastotiede on ja mitä se ei ole? Miksi tilastotiede ei ole vain sovellettua matematiikkaa
+tai matematiikalla höystettyä tietojenkäsittelyä?
+- Mihin tilastotiedettä käytetään? Onko tilastotieteellä käyttöä ns. “akatemian” eli tutki-
+musyhteisön ulkopuolella?
+- Tilastotieteelle tyypillistä kritiikkiä?
