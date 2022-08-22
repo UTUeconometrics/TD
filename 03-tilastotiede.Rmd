@@ -14,6 +14,10 @@ tai matematiikalla höystettyä tietojenkäsittelyä?
 musyhteisön ulkopuolella?
 - Tilastotieteelle tyypillistä kritiikkiä?
 
+<<<<<<< HEAD
 ## Lisää tilastotieteen perustermejä
 
 Seuraavia tilastotieteen esittelyä ja karakterisointeja ajate
+=======
+tehdään virhe
+>>>>>>> 5eb9b232ffea6f2c9a276ff72b5720e6b5c3cebe
