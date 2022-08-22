@@ -1,87 +1,14 @@
 # Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa {#luku2}
 
-Tässä luvussa tarkastellaan tieteen ja tieteellisen tutkimusprosessin luonnetta erityisesti uuden __tutkitun__ tiedon tuottamisen näkökulmasta. Tiedelukutaidon merkitys on kasvanut nyky-yhteiskunnassa, kun tiedejulkaisujen saavutettavuus ja tunnettuus on lisääntynyt mm. tieteen popularisoinnin ja median laajemman tiedeuutisoinnin vuoksi. Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla tietoinen tieteellisen tutkimuksen luonteesta: miten tutkimusartikkeleja luetaan, mitä niiltä voidaan odottaa ja minkälaiset tulokset ovat uskottavia. __Tilastotiede näyttelee keskeistä roolia lähes kaikessa tutkimuksessa ja erityisesti erilaisten tutkimuskysymysten ja niitä vastaavien hypoteesien testauksessa__. Aloitetaankin kurssin oppimateriaalin käsittely määrittelemällä ensimmäinen tilastotieteen perustermi: hypoteesi.
+## Mitä on tiede? {#alaluku21}
 
+## Tieteellinen menetelmä {#alaluku22}
 
-::: {.noteblock .mikko data-latex="{}"}
-**Hypoteesi**  
+## Tilastojen yleisestä roolista yhteiskunnassa {#alaluku23}
 
-- Hypoteesi tarkoittaa (tausta)teorioista johdettua tai aikaisemman tutkimuksen perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan ongelmaan. 
-- Hypoteesi ilmaistaan väitteenä, jonka paikkansapitävyyttä halutaan tutkia
-- Kokeelliset tiedot voivat osoittaa hypoteesin vääräksi
-- Nollahypoteesi vastaa tavallisesti tyypillistä, odotettavissa olevaa tulosta, esimerkiksi ettei kahden mitatun ilmiön välillä ole yhteyttä tai että tietty hoito on tehotonta
-- Nollahypoteesia ei todisteta ("hyväksytä"), vaan voidaan ainoastaan sanoa, ettei aineisto tarjoa todistusaineistoa ("evidenssiä") nollahypoteesin hylkäämiselle – ts. sille tulemalle, että emme hylkää nollahypoteesia.
-- Vastahypoteesi sisältää usein mielenkiinnon kohteena olevan tapahtuman, kuten "on eroa" tai "on vaikutusta"
-- Tutkijoilla on usein taipumus jättää julkaisematta tutkimustuloksia, joissa nollahypoteesi jää voimaan. Yleensä tämä tilanne syntyy, kun lopputulos ei eroa jo aikaisemmin otaksutusta. (Toki ajoittain tilanne on myös toisinpäin)
-:::
+## Mitä on tutkimus? {#alaluku24}
 
-Tähän joku esimerkki vielä?
-
-
-
-## Tieteellinen ajattelu tietoyhteiskunnan perustana
-
-Kesken vielä.
-
-
-## Tilastojen yleisestä roolista yhteiskunnassa
-
-Kesken vielä.
-
-
-## Mitä on tiede?
-
-Kesken vielä.
-
-
-## Mitä on tutkimus?
-
-Kesken vielä.
-
-
-## Tieteellisen menetelmän kriteereitä
-
-Kesken vielä.
-
-
-
-## Tieteellinen tutkimuksen vaiheet ja tulosten julkaiseminen
-
-Tieteellinen tutkimus ja asiantuntijatyö tuottavat valtavan määrän perusteltua, luotettavaa tutkimustietoa. Ks. tarkemmin tieteellisestä julkaisemisesta linkin tapauksessa erityisesti yhteiskuntatieteiden alalla, mutta perusperiaatteet pätevät myös muiden tieteenalojen tapauksessa
-
-\vspace{0.5cm}
-
-\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}
-
-\vspace{0.5cm}
-
-
-Vastuullisen tieteen 
-\vspace{0.5cm}
-
-\url{https://vastuullinentiede.fi/fi/julkaiseminen}
-
-\vspace{0.5cm}
-
-\noindent artikkelit tarjoavat tietoa siitä, kuinka tutkittua tietoa tuotetaan, julkaistaan ja arvioidaan luotettavasti ja yhteisesti hyväksytyllä tavalla. Jotta tiede vaikuttaa koko yhteiskunnan hyväksi, toiminnan on oltava vastuullista tutkimuksen jokaisessa vaiheessa.
-
-- Julkisuus ja avoimuus tekevät tutkimuksesta tiedettä. 
-    
-- Tiedeviestintä on tiedeyhteisöjen sisäistä ja ulkoista tiedonvälitystä ja vuorovaikutusta. Tutkimuksesta viestiminen ei ole vain tutkimustuloksista viestimistä. Vastuullinen tiedeviestintä lisää luottamusta tieteelliseen tietoon. 
-    
-- Tieteellinen julkaiseminen on tutkijoille tärkeä meritoitumisen tapa, ja siksi on tärkeää, että tekijyys määritellään niin, että se palkitsee tutkijat oikeudenmukaisesti.
-
-
-```{r, include=FALSE}
-# Laatikon tekemiseksi:
-# - noteblock: reagoi suoraan pdf_book ja yo. muotoilulla on vastaava jos lataat pdf tuon gitbookin kautta kuvakkeella
-# - noteblock on awesomeboxia hyödyntävä suora viittaus, eli tarvitsee "extra_dependencies: awesomebox" tuonne _output.yml
-# - voi siis kiertää nimeämällä style.css tiedostoon gitbookille oman laatikon suoraan nimellä "noteblock" ja yo. .mikko sisällyttää nyt Mikko Alatalon kuvan laatikkoon gitbookiin mutta ei pdf_bookiin
-# You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(johdanto).
-```
-
-
-
+## Tieteellisen tutkimuksen vaiheet ja tulosten julkaiseminen {#alaluku25}
 
 ```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', include=FALSE}
 par(mar = c(4, 4, .1, .1))

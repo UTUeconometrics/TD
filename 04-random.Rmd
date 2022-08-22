@@ -5,7 +5,7 @@
 
 ## Tilastotieteen suhde satunnaisuuteen ja todennäköisyyksiin {#alaluku42}
 
-## Tilastolliset mallit, jakaumat ja parametrit {#alaluku44}
+## Tilastolliset mallit, jakaumat ja parametrit {#alaluku43}
 
 ## Odotusarvo ja varianssi {#alaluku44}
 

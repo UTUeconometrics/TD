@@ -1,6 +1,67 @@
 # Tilastolliset aineistot, niiden kerääminen ja mittaaminen {#luku5}
 
-## Aineisto: Kertausta {#alaluku51}
+Edellisessä luvussa käsiteltiin tilastotieteen suhtautumista satunnaisilmiöihin. Tässä luvussa tarkastelemme lähemmin miten reaalimaailman satunnaisilmiöistä kerätään tietoa ja miten niitä voidaan mitata. Tilastotieteen perusoppimäärä rakentuu ajatukselle ilmiöiden tutkimisesta rajallisen ja epävarman tiedon vallitessa. Käytännössä tämä tarkoittaa sitä, että tutkimuksen kohteena olevat rajalliset aineistot sisältävät niin systemaattista kuin satunnaisuudesta johtuvaa vaihtelua. Tilastollisten menetelmien avulla pyrimme erottamaan systemaattisen vaihtelun satunnaisesta sekä tekemään tilastollista päättelyä aineiston generoimasta mekanismista. Lyhyesti tämä tarkoittaa aineiston systemaattisen vaihtelun tilastollista mallintamista ja sen parametrien estimointia otoksesta, joka kattaa vain (pienen) osajoukon koko populaation (perusjoukon) tilastoyksiköistä. 
+
+Voidaksemme tehdä uskottavaa päättelyä "havainnoista parametreihin", tulee otoksen olla riittävän __edustava__. Tämän luvun keskeisin oppi onkin, että miten otanta tulisi suorittaa, jotta havaintoaineisto olisi __edustava otos__ populaatiosta, silloin kun aineisto kerätään otannalla. Vaikka aineiston hankinta vaatii yleensä runsaasti käytännön työtä, kannattaa se tehdä huolellisesti, sillä huonosti toteutetun otannan vuoksi tutkimusongelman kannalta keskeisiä johtopäätöksiä ei voida tehdä! 
+
+## Kertausta: Data eli aineisto {#alaluku51}
+
+- __Tilastollinen tutkimus__ aloitetaan tutkimusaineiston keruun suunnittelulla.
+- Kertauksen vuoksi: tilastollinen tutkimusaineisto (havaintoaineisto) kostuu tilastoyksiköiden populaatiosta havaituista tilastoyksiköiden muuttujien arvoista. 
+
+```{r, include=FALSE, fig.cap="Populaatiosta havaintoon."}
+knitr::include_graphics("images/populaatiostahavaintoon.jpg")
+```
+
+- Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu $n$ tilastoyksiköstä, joista jokaisesta on kerätty esim. $m$ tilastomuuttujasta havainnot, niin havainnot voidaan kirjoittaa taulukon muotoon
+
+
+
+Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja $j$ sarakkeessa on $j$. tilastollisesta muuttujasta havaitut arvot $x_{i,j}$. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.
+
+- Usein (varsinkin parhaillaan kiihtyvällä vauhdilla) kerättävät havaintoaineistot ovat niin suuria, ettei edellisenkaltaisesta havaintotaulukosta voida usein suoraan tarkastelemalla nähdä aineiston pääpiirteitä. 
+    - Tällöin on tarpeen luokitella aineistoa taulukon muodostamiseksi.  
+    - Luokittelussa on kysymys aineiston tiivistämisestä kohtuullisen kokoiseksi ja havainnollisempaan             muotoon. Luokittelussa tilastomuuttujan arvot sijoitetaan eri luokkiin siten, että yhden                     tilastomuuttujan arvo voi kuulua vain yhteen luokkaan. Luokka ilmoitetaan yleensä luokkavälinä, kuten        reaalilukuvälinä. Esimerkiksi henkilön ikä on tapana luokitella ikäjakauman kuvaamisessa                     10-vuotisluokkiin (15-24, 25-34, ...), vaikka periaatteessa ikä voitaisiin ilmoittaa minuutinkin             tarkkuudella.  
+    - Luokkien lukumäärään vaikuttavat muun muassa tilastomuuttujan arvojen vaihteluväli ja havaintoaineiston       laajuus. Luokittelussa pyritään siihen, että luokkien lukumäärä saadaan tarvittaessa luokkia                 yhdistämällä kohtuulliseksi ja että luokat valitaan tasavälisesti eli siten, että kahden peräkkäisen         luokan alarajojen erotus on vakio. Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta            toisaalta osa tiedoista menetetään eivätkä yksittäiset havaintoarvot ole enää tiedossa.  
+    - Emme vielä tällä kurssilla etene tämän pidemmälle tilastografiikan esittämisessä ja siihen liittyvissä       pohdinnoissa. Muun muassa tilastollisen päättelyn peruskurssi (TILM3555) vastaa näihin kysymyksiin           tarkemmin. Graafiset menetelmät ovat joka tapauksessa erittäin tärkeä osa aineiston                          havainnollistamista. Kuvat helpottavat aineiston tulkitsemista ja toimivat usein perusteltuna                lähtökohtana monimutkaisempien tilastollisten mallien (ja algoritmien) sovittamiselle.  
+
+- Kvantitatiivisen tutkimuksen aineistoksi kelpaa periaatteessa kaikki havaintoihin perustuva informaatio, joka on __mittauksen__ avulla muutettavissa numeeriseen muotoon. 
+  - Havaintoyksiköiden tilastollisten muuttujien numeerisia arvoja kutsutaan __havaintoarvoiksi__ tai     __havainnoiksi__.
+  - Kaikki havaitut tilastolliset muuttujat eivät ole aina mielenkiintoisia. Tutkimuksen kannalta        mielenkiintoisia muuttujia kutsutaan __tutkimusmuuttujiksi__, joiden lisäksi havaintoaineisto        pitää mahdollisesti sisällään __taustamuuttujia__.
+    - Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen aikuisväestön mielipiteistä,              havaintoyksikköinä ovat aikuisväestöön kuuluvat henkilöt. Jos halutaan tietoa suomalaisista          kunnista, havaintoyksikköinä ovat Suomen kunnat jne.
+    - Ensimmäisessä tapauksessa tilastollisina muuttujina on aikuisväestön mielipiteet, joita voidaan       selvittää esimerkiksi kyselytutkimuksella. Toisaalta voidaan myös kerätä taustamuuttujiksi           haastatelluista muita tietoja, kuten asuinpaikka, ikä ja ammatti. 
+  - Kaikkia mielenkiintoisia muuttujia ei kuitenkaan välttämättä voida havaita, eli niille ei voida      määrittää numeerista arvoa. 
+  - Tällöin puhutaan nk. __latenteista muuttujista__, eli muuttujista joita ei suoraan havaita mutta     joiden oletetaan vaikuttavan havaittavien muuttujien taustalla. Latentteja muuttujia voidaan         rakentaa tilastollisten mallien avulla käyttäen hyödyksi niihin liittyviä havaittuja muuttujia.
+  - Latentteja muuttujia ovat esimerkiksi elämänlaatu, onnellisuus, konservatiivisuus, yms.
+
+- Tilastollinen tutkimus voi olla joko \textbf{kokonaistutkimus} tai \textbf{otantatutkimus}.
+
+  - __Kokonaistutkimuksessa__ tutkitaan kaikkia ajateltavissa olevia kohteita (kaikki perusjoukon        alkiot tutkitaan).
+    - Esimerkiksi jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat.
+    - Tai jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin tutkitaan jokainen ihminen           erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa. 
+  - __Otantatutkimuksessa__ tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon ja      johtopäätelmiä populaatiosta/perusjoukosta tehdään otokseen perustuen.
+    - Perusjoukosta otokseen poimittuja alkioita kutsutaan \textbf{otosyksiköiksi} ja niiden               muodostama osajoukko, eli \textbf{otos}, on se osa perusjoukkoa, joka tutkitaan                      tutkimusaineiston keräämisen jälkeen.
+    - Lääketutkimusta tehdäänkin poikkeuksetta otantatutkimuksena (ja kontrolloituina kokeina, ks.         alempaa), jolloin lääkettä testataan vain osajoukolla koko ihmispopulaatiosta ja tämän               osajoukon alkiot ovat otosyksiköitä.
+    - Näin toimimalla, ja riittävän edustavalla otoksella, saadaan kuitenkin tarpeeksi tietoa              lääkeaineen vaikutuksista ja tulokset voidaan yleistää populaatiotasolle ja lääke ottaa              käyttöön.
+    - Otantatutkimus on halvempi kuin kokonaistutkimus ja tulokset saadaan nopeammin!
+
+- Usein on kuitenkin niin, että koko populaation tutkiminen ei ole mahdollista tai kannattavaa. Tällöin tehtävä tutkimus on otantatutkimus ja tutkittavaksi valitaan perusjoukon osajoukko sopivaa __otantamenetelmää__ (ks. alaluku \@ref(alaluku55)) käyttäen. 
+    - Esimerkkinä aseiden patruunoita valmistava tehtailija, joka haluaisi tutkia toimivatko kaikki        ammukset tai kaikkien suomalaisten haastatteleminen suomalaisten mielipiteitä kartoitettaessa.       Myöskään valaisimien valmistaja tuskin tekee kokonaistutkimuksia valmistamiensa tuotteiden           kestoajan selvittämiseksi.
+
+```{r, eval=FALSE, include=FALSE}
+#Jos perusjoukko on ääretön, kokonaistutkimuksen tekeminen on periaatteessa mahdotonta.
+```
+
+- Tämän vuoksi useimmiten keskitytään perusjoukkoa edustavan pienemmän, mieluusti satunnaisesti valitun osajoukon eli __otoksen__ tutkimiseen.
+  - Otantatutkimuksissa tiedot kerätään useimmiten haastattelemella, kirjallisella/sähköisellä           kyselyllä tai suoraan tietorekistereistä. Tiedonkeruun toteuttaminen (eri sovelluksissa) määrää      osaltaan käytettävän otantamenetelmän.
+  - Teoriassa äärelliseen perusjoukkoon kohdistuvat kokonaistutkimukset voidaan aina tulkita             otantatutkimuksiksi (perusjoukko tulkitaan otokseksi hypoteettisesta äärettömästä perusjoukosta)!
+    - Esimerkiksi Galilein tekemät painovoiman vaikutusta kappaleiden putoamisaikaan liittyneet             mittaukset. Koetuloksia (mittauksia) voidaan pitää otoksena äärettömästä mahdollisten                 koetulosten joukosta. Tällöin ainoa mahdollisuus ilmiön tutkimiseen on käyttää otantaa.
+
+- Otantatutkimuksen tulokset voivat olla luotettavampia kuin kokonaistutkimuksen.
+  - Otantatutkimuksessa voidaan panostaa enemmän huolelliseen ja tarkkaan mittaamiseen sekä valitun       otoksen tavoittamiseen.
+  - Kokonaistutkimuksessa vastauskato ja tarkasteltavan populaation valintavirhe ovat mahdollisia         siinä kuin otantatutkimuksessakin.
+  
+- Otantateoria on yksi tilastotieteen keskeisimpiä oppeja ja tarjoaa teoreettisen kehikon empiiristen tutkimusten tulosten yleistämiseen. Tarkastellaan siis tarkemmin otannan ideaa ja toteuttamista seuraavassa alaluvussa.
 
 ## Otannan idea {#alaluku52}
 
