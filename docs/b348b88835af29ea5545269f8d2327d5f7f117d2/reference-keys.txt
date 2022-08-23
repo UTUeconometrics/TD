@@ -1,3 +1,4 @@
+fig:datasc
 fig:random
 fig:poisson
 fig:normpdf
@@ -36,6 +37,7 @@ tilastotiede-tieteenalana
 lisää-tilastotieteen-perustermejä
 mitä-tilastotiede-on-ja-mitä-se-ei-ole
 tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science
+tilastotieteen-osa-alueet
 luku4
 alaluku41
 alaluku42

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.3 Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science) | TILM 3701 - Tilastotiede ja Data 2022</title>
+  <title>3.4 Tilastotieteen osa-alueet | TILM 3701 - Tilastotiede ja Data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.3 Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science) | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta property="og:title" content="3.4 Tilastotieteen osa-alueet | TILM 3701 - Tilastotiede ja Data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.3 Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science) | TILM 3701 - Tilastotiede ja Data 2022" />
+  <meta name="twitter:title" content="3.4 Tilastotieteen osa-alueet | TILM 3701 - Tilastotiede ja Data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html"/>
-<link rel="next" href="tilastotieteen-osa-alueet.html"/>
+<link rel="prev" href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html"/>
+<link rel="next" href="luku4.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -196,71 +196,57 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science)<a href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html#tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="tilastotieteen-osa-alueet" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Tilastotieteen osa-alueet<a href="tilastotieteen-osa-alueet.html#tilastotieteen-osa-alueet" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><p>Kuvio <a href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html#fig:datasc">3.1</a> tarjoaa karkean yleistyksen tietojenkäsittelytieteen (Computer Science) ja sovellusalan (Application domain) sekä tilastotieteen (Statistics) ja matematiikan (Mathematics) välisistä yhteyksistä. On selvää että tilastotieteellä on paljon päällekäisyyksiä lähitieteidensä kanssa ja joskus näkeekin (huolimatta edellä tehdyistä huomioista) että tilastotiede niputetaan yhteen matematiikan tai tietojenkäsittelytieteen kanssa.</p></li>
-<li><p>Yritetään siis vielä hahmotella tilastotiedettä lähimpänä olevaa (soveltavaa) matematiikkaa.</p></li>
+<li>Tilastotiede jakautuu moniin osa-alueisiin. Osa-alueita on niin paljon, että alan huiputkaan eivät voi hallita niitä kaikkia!</li>
+<li>Tästä huolimatta tilastotiede voidaan karkeasti jakaa teoreettiseen ja soveltavaan osa-alueeseen, jotka toimivat alituisessa vuoropuhelussa.</li>
 </ul>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:datasc"></span>
-<img src="images/data_science.jpg" alt="Tilastotieteen ja rajatieteiden yhteyksiä kuvaava Venn-diagrammi" width="150%" />
-<p class="caption">
-Kuvio 3.1: Tilastotieteen ja rajatieteiden yhteyksiä kuvaava Venn-diagrammi
-</p>
+<div class="noteblock mikko">
+<p><strong>Soveltava tilastotiede</strong></p>
+<p>on nimensä mukaisesti teoreettisen tilastotieteen kehittämien menetelmien soveltamista jonkin tutkimusalan empiiriseen ongelmaan. Suurin osa tilastotieteen menetelmistä on alun perin kehitetty jonkin konkreettisen tutkimusongelman innoittamana.</p>
 </div>
 <ul>
-<li>Tilastotieteessä olennaisen otantateorian (Luku ?.?) voisi ajatella olevan matemaattisesti määritelty teoria, jossa myös on aineiston käsite, mutta se ei tee siitä vielä varsinaisesti tilastotiedettä.</li>
-<li>Matematiikassa kuvataan ongelma ja esitetään se teorian muodossa, malli on “parametreista havaintoihin”</li>
-<li>Tilastotieteessä ongelma on käänteinen, edetään “havainnoista parametreihin,” mutta ongelman matemaattinen kuvaus vaaditaan ensin</li>
-<li>Tilastotiede esittää menetelmiä ja käsitteitä käänteisen ongelman ratkaisemiseen
+<li>Yleisesti ottaen eri tieteenaloilla kohdattavat menetelmäsuuntaukset voidaan jakaa kahteen luokkaan tutkimusaineistojen tyypin perusteella:</li>
+<li><strong>Kvantitatiivinen</strong>: eli määrällinen tutkimus on tutkimusta, jossa tutkimusongelma on muotoiltu tarkasti etukäteen ja tutkimuskysymyksiin vastataan käyttäen tilastollisia menetelmiä pyrkien <strong>selittämään ja ennustamaan</strong> tutkimuksen kohteena olevaa ilmiötä.
 <ul>
-<li>Karkeasti erotellen tilastotieteessä käsiteltävät ongelmat lähtevät aina havainnoista eli aineistosta ja matematiikassa suunta on teoriasta aineistoon.</li>
-<li>Voidaankin siis sanoa, että tilastotieteen erottaa puhtaasta matematiikasta se, että siinä tutkitaan metodeja, jotka mahdollistavat päättelyn/tiedon hankinnan puutteellisesta tai epävarmasta tiedosta.<br />
+<li>Täsmällisten ja laskennallisten tilastollisten menetelmien käyttäminen on kvantitatiiviselle tutkimukselle ehkä ominaisin piirre.</li>
+<li>Perustuu yleensä satunnaisotokseen (kts. luvut 4, 5 ja 6) ja tutkimusaineisto on tiivistetty numeeriseksi havaintomatriisiksi, jolle oleellinen vaatimus on sen totuudellisuus.</li>
+<li>Kritiikki: määrällinen tutkimus on (paikoin) sokea tutkittavien ilmiöiden sellaiselle luonteelle, jota ei pystytä kvantifioimaan, eli muuntamaan numeeriseen muotoon. Näihin voidaan katsoa lukeutuvan mm. tunteet, merkitykset ja kokemukset, ellei tutkija keksi niiden numeeriselle mittaamiselle uskottavaa keinoa.<br />
+</li>
+</ul></li>
+<li><strong>Kvalitatiivinen</strong>: eli laadullinen tutkimus on tutkimusta, jossa tutkimuksen kohteena olevaa ilmiötä ja sen merkitystä sekä tarkoitusta pyritään <strong>ymmärtämään</strong> kokonaisvaltaisella tavalla.
+<ul>
+<li>Laadullisessa tutkimuksessa annetaan usein tilaa tutkimuksen kohteena olevien ilmiöiden ja/tai ihmisten näkökulmille, vaikuttimille, kokemuksille ja tuntemuksille. Tutkimusyksikköjen otanta on täten usein harkinnanvaraista.</li>
+<li>Laadullisessa tutkimuksessa tutkimusongelma muotoutuu tutkimuksen edetessä ja sille tyypillistä on hypoteesittomuus, eli tutkimus on tarkoitus aloittaa mahdollisimman vähin ennakko-oletuksin. Ennakko-oletuksista on kuitenkin mahdotonta täysin irtautua, joten niiden ilmi tuominen esioletuksina tai “tutkimushypoteeseina” eli arvauksina tuloksista on osa tutkimusta.</li>
+<li>Kritiikkiä: laadullinen tutkimus ei pysty vastaamaan kysymykseen miksi, sillä ilman määrällisiä (numeraalisia) aineistoja ei ilmiöiden välisiä riippuvuuksia kyetä tutkimaan: laadullisessa tutkimuksessa menetetäänkin mahdollisuus tutkia ilmiöiden todellisia syitä.</li>
+<li>Usein pyritään vastaamaan kysymyksiin “miksi?” “miten?” ja “millainen?”</li>
+</ul></li>
+<li>Yleisenä menetelmätieteenä tilastotiedettä voidaan (ja myös pitäisi) soveltaa kaikilla reaalimaailmaa tutkivilla tieteenaloilla, joiden tutkimusaineistot voidaan esittää kvantitatiivisessa muodossa.<br />
 <br />
 <br />
 </li>
-</ul></li>
-<li>Ilmiöiden kuvaamiseen ja käyttäytymisen ennakoimiseen käytetään usein <strong>mallia</strong>. Mallit (matemaattiset/tilastolliset mallit) voidaan jakaa <strong>deterministisiin</strong> ja <strong>stokastisiin</strong> malleihin.
-<ul>
-<li>Deterministisen mallin tapauksessa, tiettyjen alkuehtojen (alkuarvojen) vallitessa voidaan määrittää tarkaltevan ilmiön lopputulos. Esimerkkejä ovat esim. monet fysikan lait.</li>
-<li>Stokastiset mallit perustuvat todennäköisyyslaskentaan. Stokastisia malleja käytetään kun alkuehtojen perusteella ei voida varmasti määrittää tarkasteltavan ilmiön lopputulosta. Tällöin eri vaihtoehtoihin liittyvät tietyt esiintymistodennäköisyydet. Esimerkkejä ovat esim. rahanheitto tai sään ennustaminen.</li>
-<li>Kun jotain ilmiötä kuvataan stokastisen mallin avulla, voidaan käyttää (joudutaan käyttämään) tilastollisia menetelmiä. Vaikka käytännössä laskenta hoidetaan tietokoneohjelmien avulla, meidän tilastotieteen tutkijoina ja käyttäjinä on huolehdittava tutkimusprosessin onnistuneesta toteutuksesta muilta osin.<br />
+<li>Tilastotiede on saanut alkunsa siitä, että yhteiskunnan modernisoituessa on tarvittu yhä enemmän tietoja erilaisiin hallinnollisiin tarpeisiin. Samalla on syntynyt tarve kehittää menetelmiä joiden avulla tilastojen luotettavuutta on voitu parantaa.</li>
+<li>Kehitys oli pitkään ns. ongelmasta menetelmään!<br />
 <br />
 <br />
 </li>
-</ul></li>
-<li>Tarkastellaan seuraavaksi tilastotieteen suhdetta viime vuosien aikana paljon suosiota keränneeseen datatieteeseen (data science)
+<li>Tilastollisia menetelmiä voidaan soveltaa tietojen keruun, jalostuksen ja analysoinnin jokaisessa vaiheessa. Päämääränä on jalostaa tiedot muotoon, joka mahdollistaa tutkittavaa reaalimaailman ilmiötä koskevien johtopäätösten tekemisen käytettyjen menetelmien pohjalta, eli ns. <strong>tilastollisen päättelyn</strong>.
 <ul>
-<li>Tilastollinen tietojenkäsittely</li>
-<li>Data-analyysi</li>
-<li>Koneoppiminen<br />
-<br />
-<br />
-</li>
+<li>Tutkimuksessa on pystyttävä valitsemaan ja käyttämään menetelmiä, jotka antavat aineistosta vastauksia haluttuihin kysymyksiin. Tämä vaatii yhtä lailla sovellusalakohtaista osaamista (ns. substanssiosaamista) kuin myös kattavaa menetelmäosaamista.</li>
 </ul></li>
-<li>Tilastotiede = tietojenkäsittelytiede? vai Tilastotiede = datatiede (data science)?
-<ul>
-<li>Hyödyllisen tiedon survomista aineistosta. Suomen kielessä tietojenkäsittely ymmärretään kuitenkin laajemmassa mielessä ohjelmoitavissa olevaksi automatisoimiseksi, jota tilastotiede ei perusolemukseltaan suinkaan ole.<br />
-<br />
-<br />
-</li>
-</ul></li>
-<li>“Danger zone”
-<ul>
-<li>Kuvan <a href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html#fig:datasc">3.1</a> “danger zone” kuvaaa tilannetta, jossa ilmiöiden/mallien tilastotieteellinen perusta unohdetaan.</li>
-<li>Tilastotieteen näkökulman ohittava (laiminlyövä) soveltaja ei aina kykene ajattelemaan kriittisesti muodostuvaa ennustemallia, tai ennen muuta vain esilletulevaa ennustetulosta, kohtaan eikä päädy parhaisiin mahdollisiin (tarkimpiin) ennustetuloksiin tilanteessa, jossa jokin toinen malli kuvaisi ilmiötä annettua mallia paremmin.</li>
-<li>Ko. soveltaja ottaa mallin sekä sen antaman ennustetuloksen annettuna, eikä mieti mistä kyseinen ennustetulos johtuu. Jotta tarkat ennustetulokset toteutuvat jatkossakin (kun uutta aineistoa, dataa, tulee saataville), on ennustajan oleellista huomioida mitkä tekijät johtivat tarkkaan ennustulokseen.</li>
-<li>Eri menetelmät sopivat eri sovelluskohteisiin. Tilastotieteilijä osaa useimmiten tunnistaa eri sovelluskohteisiin sopivat menetelmät paremmin kuin tietojenkäsittelijä. Vastaavasti tehokkaan/onnistuneen ohjelmointikoodin kirjoittamisessa tilanne on usein toisinpäin.</li>
-</ul></li>
+<li>Menetelmien käytön tarkoituksena on (voi olla) <strong><em>(i) kuvailla ja tiivistää tietoa</em></strong>, jota havaittu aineisto sisältää <strong><em>(ii)</em></strong> tilastotieteen oman ja jonkin toisen tieteenalan <strong>teorian empiirinen testaus</strong> tai <strong><em>(iii)</em></strong> edellisten pohjalta <strong>tilastollinen päättely</strong>.</li>
 </ul>
+
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="mitä-tilastotiede-on-ja-mitä-se-ei-ole.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="tilastotieteen-osa-alueet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="tilastotieteen-suhde-matematiikkaan-tietojenkäsittelytieteeseen-ja-datatieteeseen-data-science.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="luku4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
