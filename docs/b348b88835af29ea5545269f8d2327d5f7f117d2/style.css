@@ -40,3 +40,15 @@ pre code {
 .center {
   text-align: center;
 }
+
+.book.with-summary .book-header.fixed {
+    left: 650px;
+}
+
+.book.with-summary .book-body {
+    left: 650px;
+}
+
+.book .book-summary {
+    width: 650px;
+}

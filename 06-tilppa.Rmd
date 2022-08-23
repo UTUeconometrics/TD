@@ -442,8 +442,6 @@ knitr::include_graphics("images/gaussian-distribution.jpg")
 
 \
 \
-\
-\
 
 __Normaalijakauman odotusarvon luottamusväli ($\sigma^2$ tuntematon)__
 
