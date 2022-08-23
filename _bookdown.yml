@@ -5,3 +5,5 @@ output_dir: "docs/b348b88835af29ea5545269f8d2327d5f7f117d2"
 language:
   ui:
     chapter_name: "Luku "
+  label:
+    fig: "Kuvio " 
