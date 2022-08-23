@@ -94,12 +94,9 @@ $$
 
 \
 \
-\
-\
 
 __Estimaattorin ominaisuudet__
 
-\begin{itemize}
 - Merkitään seuraavassa parametrin $\theta$ estimaattoria $\widehat{\theta}$:lla ja siltä voidaan toivoa seuraavia ominaisuuksia:
 
 ::: {.noteblock .mikko data-latex="{}"}
@@ -439,7 +436,7 @@ $$
   - Luottamustason kasvattaminen pidentää luottamusväliä, jolloin tieto parametrin $\mu$ todellisesta arvosta tulee epätarkemmaksi.
   - Luottamusvälin lyhentäminen pienentää luottamustasoa, jolloin tieto parametrin $\mu$ todellisesta arvosta tulee epävarmemmaksi.
 
-```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja"}
+```{r foo, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja", fig.align='center', out.width = "150%"}
 knitr::include_graphics("images/gaussian-distribution.jpg")
 ```
 
@@ -530,6 +527,8 @@ ja luottamusvälin pituus on
 $$
 2 \times z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}.
 $$
+- Ks. kuvio \@ref(fig:foo)
 
 ## Otoskoko {#alaluku67}
 
+  
