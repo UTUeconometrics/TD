@@ -24,8 +24,7 @@ Seuraavia tilastotieteen esittelyä ja karakterisointeja ajatellen määritellä
 ::: {.noteblock .mikko data-latex="{}"}
 **Populaatio**  
 
-Konkreettinen tai hypoteettinen tutkimuskohteiden joukko, joka
-koostuu kaikista tilastoyksiköistä
+Konkreettinen tai hypoteettinen tutkimuskohteiden joukko, joka koostuu kaikista tilastoyksiköistä
 :::
 
 - Populaation muodostavilta tilastoyksiköiltä tarkastellaan niiden ominaisuuksia, eli **tilastollisia muuttujia**. Edellisissä esimerkeissä nämä olisivat esim. äänestäjien tulot ja kuntien äänestysprosentti. Mielenkiinnon kohteena olevia tilastollisia muuttujia kutsutaan **tutkimusmuuttujiksi** (tulot ja kuntien äänestysprosentti) ja niiden lisäksi voidaan kerätä ylimääräistä tietoa eli **taustamuuttujia** (näitä voisi olla esimerkiksi asuinpaikka ja kunnan väkiluku).

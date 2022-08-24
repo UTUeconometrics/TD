@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-08-23" />
+<meta name="date" content="2022-08-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -113,7 +113,7 @@
 <ul>
 <li class="chapter" data-level="5.1" data-path="alaluku51.html"><a href="alaluku51.html"><i class="fa fa-check"></i><b>5.1</b> Kertausta: Data eli aineisto</a></li>
 <li class="chapter" data-level="5.2" data-path="alaluku52.html"><a href="alaluku52.html"><i class="fa fa-check"></i><b>5.2</b> Otannan idea</a></li>
-<li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Mittaaminen, mitta-asteikot ja tilastolliset muuttujat</a></li>
+<li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Tilastollisten muuttujien mittaaminen ja mitta-asteikot</a></li>
 <li class="chapter" data-level="5.4" data-path="alaluku54.html"><a href="alaluku54.html"><i class="fa fa-check"></i><b>5.4</b> Kontrolloidut kokeet ja suorat havainnot</a></li>
 <li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a>
 <ul>
@@ -198,6 +198,71 @@
             <section class="normal" id="section-">
 <div id="alaluku22" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Tieteellinen menetelmä<a href="alaluku22.html#alaluku22" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Milloin tutkimus sitten on tieteellistä? Tiede on tiedonhankintaa, jossa käytetään erityistä, mahdollisesti tilanteesta (sovelluksesta) riippuen, tieteellistä <strong>menetelmää</strong> eli <strong>metodia</strong>.</li>
+</ul>
+<div class="noteblock mikko">
+<p><strong>Tieteellinen menetelmä</strong>: Tieteellinen menetelmä on kullakin tieteen alalla vallitseva, ajan myötä kehittynyt ja nykyisten paradigmojen muovaama menettelytapa, jolla uutta tietoa tuotetaan ja vanhaa, mutta epävarmaa tietoa vahvistetaan. Se ei ole selkeä työvaiheiden luettelo tai menetelmähakemisto, vaan yleisesti hyväksytty ja hyväksi todettu tapa pyrkiä totuuteen erilaisten tutkimusongelmien ratkomisessa. Hyvälle tieteelliselle menetelmälle voidaan lukea seuraavia kriteerejä.</p>
+<ul>
+<li><strong>Objektiivisuus ja loogisuus</strong>
+<ul>
+<li>Tutkimuskohteen ominaisuudet ovat tutkijan mielipiteistä riippumattomia.</li>
+<li>Tieteellinen tieto tutkimuskohteesta syntyy tutkijan ja tutkimuskohteen vuorovaikutuksen tuloksena.</li>
+<li>Tiedon lähteenä on tutkimuskohteesta saatava kokemus.</li>
+<li>Tutkimuskohteesta voidaan saada totuudellista tietoa, jonka laadusta myös tutkijayhteisö voi olla yhtä mieltä.</li>
+</ul></li>
+<li><strong>Kriittisyys</strong>
+<ul>
+<li>Ilmenee niinä vaatimuksina, joita <strong>hypoteesin</strong> asettamiselle, testaamiselle ja hyväksymiselle on asetettu.</li>
+<li>Tieteellisten hypoteesien tulee olla intersubjektiivisesti testattavissa eli niillä täytyy olla yhdessä sopivien lisäoletusten kanssa sellaisia seurauksia, joiden totuus tai virheellisyys voidaan julkisesti tarkistaa.</li>
+</ul></li>
+<li><strong>Autonomisuus</strong>
+<ul>
+<li>Tieteen tulosten arvioiminen on (tiukasti ottaen) tieteellisen yhteisön oma asia, johon tieteen ulkopuolella olevat ryhmät eivät saa vaikuttaa.</li>
+<li>Ei ole hyväksyttävää vedota siihen, että väitteen totuus olisi toivottavaa tai epätoivottavaa esimerkiksi poliittisista, uskonnollisista tai moraalisista syistä.</li>
+</ul></li>
+<li><strong>Edistyvyys</strong>
+<ul>
+<li>Tieteen edistyminen merkitsee kasvun eli tulosten määrällisen lisääntymisen ohella sitä, että virheellisiä hypoteeseja tai teorioita korvataan uusilla tuloksilla, jotka ovat tosia tai ainakin vähemmän virheellisiä kuin aikaisemmat.</li>
+</ul></li>
+<li><strong>Toistettavuus ja yleistettävyys</strong>
+<ul>
+<li>Tieteen tulokset tulee olla muiden tutkijoiden toistettavissa eli replikoitavissa. Toistettavuudelle (paikoin myös uusittavuudelle, joskin merkitys vaihtelee) on erilaisia määritelmiä. Esittelemme tässä Hamermeshin (2007)<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> esittämän erilaisten taloustieteellisten tutkimusten replikointien jaottelun:
+<ul>
+<li><strong>Puhdas replikointi</strong>: toinen tutkija, käyttäen täysin samaa tutkimusaineistoa ja samaa tilastollista menetelmää kuin alkuperäisessä tutkimuksessa, saa täsmälleen samat tutkimustulokset.</li>
+<li><strong>Tilastollinen replikointi</strong>: toinen tutkija, käyttäen eri tutkimusaineistoa (joka on kuitenkin poimittu populaatiosta, ks. Luku 5) mutta samaa menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.</li>
+<li><strong>Tieteellinen replikointi</strong>: toinen tutkija, käyttäen samoja asioita mittaavaa tutkimusaineistoa, joka on kuitenkin kerätty eri populaatiosta, ja käyttäen samankaltaista, mutta ei identtistä menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<p><br />
+<br />
+</p>
+<ul>
+<li>Teorioiden sisältämiä väitteitä voidaan muotoilla tieteellisiksi malleiksi, joihin voidaan liittää hypoteeseja, joita testataan tieteellisin menetelmin käyttäen ilmiö(i)stä mitattua havaintoaineistoa.
+<ul>
+<li>Tieteelliset mallit ovat yksinkertaistuksia reaalimaailmasta ja ne kuvaavat tutkimuksen aihetta jostain näkökulmasta tarkasteltavana systeeminä.</li>
+<li>Mallit hyödyntävät matemaattista esitystapaa, sillä se tarjoaa formaalin ja objektiivisen tutkimusaiheen kuvauksen sekä mahdollistaa siihen liittyvän loogisen päättelyn havaitun, empiirisen aineiston pohjalta.</li>
+<li>Tilastolliset mallit ovat käytännössä tieteellisten mallien formaaleja matemaattisia esityksiä, jotka lisäksi mahdollistavat mallia koskevan tilastollisen päättelyn esimerkiksi hypoteesien testaamisen avulla. Päättely perustuu tilastotieteen teoriaan, joka mahdollistaa päättelyn epävarman ja satunnaisen aineiston tapauksissa.</li>
+<li>Hypoteesien testaamisen voidaan ajatella tutkittavaa ilmiötä koskeviksi ennusteiksi, joita verrataan havaittuun aineistoon. Mikäli havaittu aineisto ei sovi testattavaan teoriaan tai siihen liittyviin hypoteeseihin, voidaan teoriaa kehittää paremmaksi. Tämä vuoropuhelu vie tiedettä eteenpäin ja tuottaa lisää tutkittua tietoa ympäröivästä maailmasta.</li>
+</ul></li>
+</ul>
+<p><br />
+<br />
+</p>
+<ul>
+<li>Hypoteesien testaaminen on yhtäältä tieteellisten teorioiden kehittämisen ja vahvistamisen ja toisaalta kritiikin keskiössä.
+<ul>
+<li>Metodologinen pluralismi: Kaikkia menetelmiä voi soveltaa hyvin tai huonosti, mutta niitä voi käyttää myös luovasti väärin.</li>
+</ul></li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p>Hamermesh, D. S. (2007). Replication in economics Canadian Journal of Economics/Revue canadienne d’ ́economique 40 (3), 715–733.<a href="alaluku22.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 

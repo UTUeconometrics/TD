@@ -100,7 +100,7 @@ jonkinlaisessa yhteydessä siten, että niiden voidaan ajatella muodostavan erit
 \
 \
 
-__Esimerkkejä tilastollisista tutkimusasetelmista__: Näitä käsitellään vielä tarkemmin myöhemmin luvussa \@ref(luku010).
+__Esimerkkejä tilastollisista tutkimusasetelmista__: Näitä käsitellään vielä tarkemmin myöhemmin luvussa \@ref(luku10).
 
 - __Kyselytutkimukset__
     - Päätöksentekijät ja tiedotusvälineet kartoittavat säännöllisin välein suomalaisten mielipiteet erilaisista yhteiskuntaa koskevista kysymyksistä.

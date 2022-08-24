@@ -13,29 +13,28 @@ pre code {
   white-space: inherit;
 }
 
-.noteblock {
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  border: 2px DarkBlue;
-  border-radius: 10px;
-  background: LightBlue 5px center/3em no-repeat;
-}
-
-.mikko {
-  background-image: url("images/omega.png");
-}
-
 .eblock {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   border: 2px SaddleBrown;
   border-radius: 10px;
-  background: Moccasin 5px center/3em no-repeat;
-}
-
-.kimmo {
+  background: DarkOrange 5px center/3em no-repeat;
   background-image: url("images/sigma.png");
 }
+
+.defblock {
+  color: white;
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  border: 2px DarkBlue;
+  border-radius: 10px;
+  background: BlueViolet 5px center/3em no-repeat;
+  background-image: url("images/delta.png");
+}
+
+
+
+
 
 .center {
   text-align: center;

@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-08-23" />
+<meta name="date" content="2022-08-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -113,7 +113,7 @@
 <ul>
 <li class="chapter" data-level="5.1" data-path="alaluku51.html"><a href="alaluku51.html"><i class="fa fa-check"></i><b>5.1</b> Kertausta: Data eli aineisto</a></li>
 <li class="chapter" data-level="5.2" data-path="alaluku52.html"><a href="alaluku52.html"><i class="fa fa-check"></i><b>5.2</b> Otannan idea</a></li>
-<li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Mittaaminen, mitta-asteikot ja tilastolliset muuttujat</a></li>
+<li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Tilastollisten muuttujien mittaaminen ja mitta-asteikot</a></li>
 <li class="chapter" data-level="5.4" data-path="alaluku54.html"><a href="alaluku54.html"><i class="fa fa-check"></i><b>5.4</b> Kontrolloidut kokeet ja suorat havainnot</a></li>
 <li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a>
 <ul>
@@ -200,7 +200,7 @@
 <h2><span class="header-section-number">5.1</span> Kertausta: Data eli aineisto<a href="alaluku51.html#alaluku51" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><strong>Tilastollinen tutkimus</strong> aloitetaan tutkimusaineiston keruun suunnittelulla.</p></li>
-<li><p>Kertauksen vuoksi: tilastollinen tutkimusaineisto (havaintoaineisto) kostuu tilastoyksiköiden populaatiosta havaituista tilastoyksiköiden muuttujien arvoista.</p></li>
+<li><p>Kertauksen vuoksi: tilastollinen tutkimusaineisto (havaintoaineisto) kostuu tilastoyksiköiden populaatiosta havaituista tilastomuuttujien arvoista.</p></li>
 <li><p>Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu <span class="math inline">\(n\)</span> tilastoyksiköstä, joista jokaisesta on kerätty esim. <span class="math inline">\(m\)</span> tilastomuuttujasta havainnot, niin havainnot voidaan kirjoittaa taulukon muotoon</p></li>
 </ul>
 <table>
@@ -244,11 +244,11 @@
 </tr>
 </tbody>
 </table>
-<p>Tässä siis rivillä <span class="math inline">\(i\)</span> on <span class="math inline">\(i\)</span>. <strong>tilastoyksikön</strong> havainto ja <span class="math inline">\(j\)</span> sarakkeessa on <span class="math inline">\(j\)</span>. tilastollisesta muuttujasta havaitut arvot <span class="math inline">\(x_{i,j}\)</span>. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.</p>
+<p>Tässä siis rivillä <span class="math inline">\(i\)</span> on <span class="math inline">\(i\)</span>. <strong>tilastoyksikön</strong> havainto ja sarakkeessa <span class="math inline">\(j\)</span> on <span class="math inline">\(j\)</span>. tilastollisesta muuttujasta havaitut arvot <span class="math inline">\(x_{i,j}\)</span>. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.</p>
 <ul>
 <li>Usein (varsinkin parhaillaan kiihtyvällä vauhdilla) kerättävät havaintoaineistot ovat niin suuria, ettei edellisenkaltaisesta havaintotaulukosta voida usein suoraan tarkastelemalla nähdä aineiston pääpiirteitä.
 <ul>
-<li>Tällöin on tarpeen luokitella aineistoa taulukon muodostamiseksi.<br />
+<li>Tällöin voi olla tarpeen luokitella aineistoa taulukon muodostamiseksi.<br />
 </li>
 <li>Luokittelussa on kysymys aineiston tiivistämisestä kohtuullisen kokoiseksi ja havainnollisempaan muotoon. Luokittelussa tilastomuuttujan arvot sijoitetaan eri luokkiin siten, että yhden tilastomuuttujan arvo voi kuulua vain yhteen luokkaan. Luokka ilmoitetaan yleensä luokkavälinä, kuten reaalilukuvälinä. Esimerkiksi henkilön ikä on tapana luokitella ikäjakauman kuvaamisessa 10-vuotisluokkiin (15-24, 25-34, …), vaikka periaatteessa ikä voitaisiin ilmoittaa minuutinkin tarkkuudella.<br />
 </li>
@@ -256,6 +256,10 @@
 </li>
 <li>Emme vielä tällä kurssilla etene tämän pidemmälle tilastografiikan esittämisessä ja siihen liittyvissä pohdinnoissa. Muun muassa tilastollisen päättelyn peruskurssi (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset menetelmät ovat joka tapauksessa erittäin tärkeä osa aineiston havainnollistamista. Kuvat helpottavat aineiston tulkitsemista ja toimivat usein perusteltuna lähtökohtana monimutkaisempien tilastollisten mallien (ja algoritmien) sovittamiselle.</li>
 </ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
 <li>Kvantitatiivisen tutkimuksen aineistoksi kelpaa periaatteessa kaikki havaintoihin perustuva informaatio, joka on <strong>mittauksen</strong> avulla muutettavissa numeeriseen muotoon.
 <ul>
 <li>Havaintoyksiköiden tilastollisten muuttujien numeerisia arvoja kutsutaan <strong>havaintoarvoiksi</strong> tai <strong>havainnoiksi</strong>.</li>
@@ -268,26 +272,42 @@
 <li>Tällöin puhutaan nk. <strong>latenteista muuttujista</strong>, eli muuttujista joita ei suoraan havaita mutta joiden oletetaan vaikuttavan havaittavien muuttujien taustalla. Latentteja muuttujia voidaan rakentaa tilastollisten mallien avulla käyttäen hyödyksi niihin liittyviä havaittuja muuttujia.</li>
 <li>Latentteja muuttujia ovat esimerkiksi elämänlaatu, onnellisuus, konservatiivisuus, yms.</li>
 </ul></li>
-<li>Tilastollinen tutkimus voi olla joko <strong>kokonaistutkimus</strong> tai <strong>otantatutkimus</strong>.
+</ul>
+<p><br />
+</p>
 <ul>
-<li><strong>Kokonaistutkimuksessa</strong> tutkitaan kaikkia ajateltavissa olevia kohteita (kaikki perusjoukon alkiot tutkitaan).
+<li>Tilastollinen tutkimus voi olla joko <strong>kokonaistutkimus</strong> tai <strong>otantatutkimus</strong>.</li>
+</ul>
+<div class="noteblock mikko">
+<p><strong>Kokonaistutkimus</strong></p>
+<p>Kokonaistutkimus on tutkimus, jossa tutkitaan kaikki tutkimuksen kohteena olevan perusjoukon alkiot, ts. kaikki ajateltavissa olevat kohteet tutkitaan.</p>
 <ul>
-<li>Esimerkiksi jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat.</li>
-<li>Tai jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin tutkitaan jokainen ihminen erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa.</li>
+<li>Kokonaistutkimus on yleinen tutkimustapa silloin, kun kohdeperusjoukko on selvästi määritelty ja sen alkioita koskevat tilastolliset muuttujat ovat helposti mitattavissa.</li>
+<li>Esimerkiksi jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat, joista on helppoa kerätä mielenkiinnon kohteena olevia tilastollisia muuttujia useimmissa tilanteissa.</li>
+<li>Toisaalta jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin kokonaistutkimuksessa tutkittaisiin jokainen ihminen erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa.</li>
+</ul>
+</div>
+<div class="noteblock mikko">
+<p><strong>Otantatutkimus</strong></p>
+<p><strong>Otantatutkimuksessa</strong> tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon, joka pooimitaan sopivaa <strong>otantamenetelmää</strong> käyttäen (ks. alaluku <a href="alaluku55.html#alaluku55">5.5</a>) ja populaatiota/perusjoukkoa koskevat johtopäätelmät tehdään tähän otokseen perustuen.</p>
+<ul>
+<li>Otantatutkimus on usein luonnollinen valinta, sillä koko populaation tutkiminen ei useinkaan ole mahdollista tai kannattavaa.
+<ul>
+<li>Esimerkiksi aseiden patruunoita valmistava tehtailija ei voi tutkia toimivatko kaikki ammukset. Myöskään valaisimien valmistaja tuskin tekee kokonaistutkimuksia valmistamiensa tuotteiden kestoajan selvittämiseksi.<br />
+</li>
 </ul></li>
-<li><strong>Otantatutkimuksessa</strong> tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon ja johtopäätelmiä populaatiosta/perusjoukosta tehdään otokseen perustuen.
+<li>Perusjoukosta otokseen poimittuja alkioita kutsutaan <strong>otosyksiköiksi</strong> ja niiden muodostama osajoukko, eli <strong>otos</strong>, on se osa perusjoukkoa, joka tutkitaan tutkimusaineiston keräämisen jälkeen.
 <ul>
-<li>Perusjoukosta otokseen poimittuja alkioita kutsutaan <strong>otosyksiköiksi</strong> ja niiden muodostama osajoukko, eli <strong>otos</strong>, on se osa perusjoukkoa, joka tutkitaan tutkimusaineiston keräämisen jälkeen.</li>
 <li>Lääketutkimusta tehdäänkin poikkeuksetta otantatutkimuksena (ja kontrolloituina kokeina, ks. alempaa), jolloin lääkettä testataan vain osajoukolla koko ihmispopulaatiosta ja tämän osajoukon alkiot ovat otosyksiköitä.</li>
 <li>Näin toimimalla, ja riittävän edustavalla otoksella, saadaan kuitenkin tarpeeksi tietoa lääkeaineen vaikutuksista ja tulokset voidaan yleistää populaatiotasolle ja lääke ottaa käyttöön.</li>
+</ul></li>
 <li>Otantatutkimus on halvempi kuin kokonaistutkimus ja tulokset saadaan nopeammin!</li>
-</ul></li>
-</ul></li>
-<li>Usein on kuitenkin niin, että koko populaation tutkiminen ei ole mahdollista tai kannattavaa. Tällöin tehtävä tutkimus on otantatutkimus ja tutkittavaksi valitaan perusjoukon osajoukko sopivaa <strong>otantamenetelmää</strong> (ks. alaluku <a href="alaluku55.html#alaluku55">5.5</a>) käyttäen.
+</ul>
+</div>
+<p><br />
+</p>
 <ul>
-<li>Esimerkkinä aseiden patruunoita valmistava tehtailija, joka haluaisi tutkia toimivatko kaikki ammukset tai kaikkien suomalaisten haastatteleminen suomalaisten mielipiteitä kartoitettaessa. Myöskään valaisimien valmistaja tuskin tekee kokonaistutkimuksia valmistamiensa tuotteiden kestoajan selvittämiseksi.</li>
-</ul></li>
-<li>Tämän vuoksi useimmiten keskitytään perusjoukkoa edustavan pienemmän, mieluusti satunnaisesti valitun osajoukon eli <strong>otoksen</strong> tutkimiseen.
+<li>Otantatutkimuksessa keskitytään siis perusjoukkoa edustavan pienemmän, mieluusti satunnaisesti valitun otoksen tutkimiseen.
 <ul>
 <li>Otantatutkimuksissa tiedot kerätään useimmiten haastattelemella, kirjallisella/sähköisellä kyselyllä tai suoraan tietorekistereistä. Tiedonkeruun toteuttaminen (eri sovelluksissa) määrää osaltaan käytettävän otantamenetelmän.</li>
 <li>Teoriassa äärelliseen perusjoukkoon kohdistuvat kokonaistutkimukset voidaan aina tulkita otantatutkimuksiksi (perusjoukko tulkitaan otokseksi hypoteettisesta äärettömästä perusjoukosta)!

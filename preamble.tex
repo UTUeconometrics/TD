@@ -12,28 +12,30 @@
 \usepackage{color}
 \usepackage{framed}
 \setlength{\fboxsep}{.8em}
+\usepackage[most]{tcolorbox}
+\usepackage{blindtext}
 
-\usepackage{tcolorbox}
+\usepackage{xstring}     % Used for \IfEqCase
 
-\newtcolorbox{blackbox}{
-  colback=black,
-  colframe=orange,
-  coltext=white,
-  boxsep=5pt,
-  arc=4pt}
 
-%\newenvironment{infobox}[1]
-%  {\begin{itemize}
-%    \renewcommand{\labelitemi}{
-%    \raisebox{-.7\height}[0pt][0pt]{
-%      {\setkeys{Gin}{width=3em,keepaspectratio}
-%        \includegraphics{images/mikko.PNG}}
-%    }
-%  }
-%  \setlength{\fboxsep}{1em}
-%  \begin{blackbox}
-%  \item}
-%  {
-%  \end{blackbox}
-%  \end{itemize}
-%}
+
+\definecolor{myboxcolor}{named}{blue} % Default box color
+
+
+\newtcolorbox{defblock}[1]{%
+    breakable,
+    enhanced,
+    colback=myboxcolor!10!purple,      % Box color is used here
+    colframe=myboxcolor!25!black,     % Box color is used here
+    coltitle=black,
+    title=\textbf{#1}        % Box title is used here 
+}
+
+\newtcolorbox{eblock}[1]{%
+    breakable,
+    enhanced,
+    colback=myboxcolor!10!orange,      % Box color is used here
+    colframe=myboxcolor!25!black,     % Box color is used here
+    coltitle=black,
+    title=\textbf{#1}        % Box title is used here 
+}
