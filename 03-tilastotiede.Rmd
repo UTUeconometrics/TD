@@ -199,14 +199,62 @@ on nimensä mukaisesti teoreettisen tilastotieteen kehittämien menetelmien sove
 - Yleisenä menetelmätieteenä tilastotiedettä voidaan (ja myös pitäisi) soveltaa kaikilla reaalimaailmaa tutkivilla tieteenaloilla, joiden tutkimusaineistot voidaan esittää kvantitatiivisessa muodossa.
 \
 \
-\
 - Tilastotiede on saanut alkunsa siitä, että yhteiskunnan modernisoituessa on tarvittu yhä enemmän tietoja erilaisiin hallinnollisiin tarpeisiin. Samalla on syntynyt tarve kehittää menetelmiä joiden avulla tilastojen luotettavuutta on voitu parantaa.
 - Kehitys oli pitkään ns. ongelmasta menetelmään!
 \
 \
-\
 - Tilastollisia menetelmiä voidaan soveltaa tietojen keruun, jalostuksen ja analysoinnin jokaisessa vaiheessa. Päämääränä on jalostaa tiedot muotoon, joka mahdollistaa tutkittavaa reaalimaailman ilmiötä koskevien johtopäätösten tekemisen käytettyjen menetelmien pohjalta, eli ns. **tilastollisen päättelyn**.
   - Tutkimuksessa on pystyttävä valitsemaan ja käyttämään menetelmiä, jotka antavat aineistosta vastauksia haluttuihin kysymyksiin. Tämä vaatii yhtä lailla sovellusalakohtaista osaamista (ns. substanssiosaamista) kuin myös kattavaa menetelmäosaamista.
-- Menetelmien käytön tarkoituksena on (voi olla) __*(i) kuvailla ja tiivistää tietoa*__, jota havaittu aineisto sisältää __*(ii)*__ tilastotieteen oman ja jonkin toisen tieteenalan **teorian empiirinen testaus** tai __*(iii)*__ edellisten pohjalta **tilastollinen päättely**. 
+\
+\
+- Menetelmien käytön tarkoituksena on (voi olla) __*(i) kuvailla ja tiivistää tietoa*__, jota havaittu aineisto sisältää __*(ii)*__ tilastotieteen oman ja jonkin toisen tieteenalan **teorian empiirinen testaus** tai __*(iii)*__ edellisten pohjalta **tilastollinen päättely**.
+  - **Deskriptiivinen eli kuvaileva tilastotiede** kehittää ja soveltaa menetelmiä, joiden avulla havaintoaineistosta voidaan esimerkiksi laskea tunnuslukuja, kuvata havaintomuuttujien jakaumia ja visualisoida aineiston generoimaa ilmiötä tai siitä johdettuja tunnuslukuja.
+  - **Teorian testaaminen** voi johtaa joko teorian vahvistumiseen (*verifiointiin*) tai sen vääräksi osoittamiseen (*falsifioimiseen*).^[Lienee kuitenkin tieteenfilosofinen kysymys, onko falsifioinnin vastakohta juuri verifiointi tai että onko kumpikaan ylipäätään mahdollista. Jätämme kuitenkin semantiikan muille kursseille ja käytämme näitä termejä löyhästi, tavan kansalaisen ymmärtämin sisällöin.] On myös syytä muistaa, että yksi tutkimus ei vielä osoita teoriaa oikeaksi tai vääräksi vaan siihen tarvitaan useita tutkimuksia sekä erilaisia tutkimusasetelmia ja -menetelmiä. 
+  - **Tilastollinen päättely** on sen sijaan aineiston tarkasteluun/kuvailuun sekä mallintamiseen perustuvaa päätöksentekoa, jossa kvantitatiiviseen aineistoon kuuluva epävarmuus ja satunnaisuus on otettu huomioon. Tilastollisia päättely voidaan pohjata näiden mallien testaamiseen - hypoteesien testaaminen!
+  - Kuvaileva tilastotiede ja tilastollinen päättely kulkevat tilastollisessa tutkimuksessa käsi kädessä.
+\
+\
+- Useimmiten kuitenkin ajatellaan, että on käytettävä niin yksinkertaisia menetelmiä kuin mahdollista, mutta ei yhtään yksinkertaisempia. Ns. **parsimoonisuusperiaate** eli **vähäparametrisuus-** tai **säästeliäisyysperiaate**.
+  - Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns.[Occamin partaveitsen -periaatteeseen](https://fi.wikipedia.org/wiki/Occamin_partaveitsi), jonka mukaan *"ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen"*, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
+  - Tämä periaate ja sen suhde ns. **varianssin ja harhan väliseen kompromissiin** on erityisen tärkeä erityisesti tilastollisen ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen (kone)oppimisen sovellutuksissa (ks. tarkemmin alaluku 3.?? ja luku ?? (estimaattoriluku)).
+  
+:::{.noteblock .mikko data-latex="{}"}
+**Teoreettinen tilastotiede** kehittää (tilasto)matemaattisia malleja kuvaamaan satunnaisilmiöitä- ja prosesseja, jotka generoivat reaalimaailman ilmiöitä kuvaavia numeerisia tai kvantitatiivisia tietoja, joihin liittyy epävarmuutta ja satunnaisuutta.
+:::
+
+- Teoreettinen tilastotiede luo pohjan tilastollisten menetelmien ymmärtämiselle, soveltamiselle ja kehittämiselle.
+  - Ilman riittävää ymmärrystä tilastollisten menetelmien toimintaperiaatteista niiden soveltaja on vaarassa tehdä virhepäätelmiä! (Ks. alaluku 3.?? tilastotieteen kritiikistä)
+
+```{r soveltava, echo=FALSE, fig.cap="Soveltava tilastotiede", fig.align='center', out.width = "150%"}
+knitr::include_graphics("images/soveltava.jpg")
+```
+
+- Mallit perustuvat todennäköisyyslaskentaan, ja niitä kutsutaan tilastollisiksi malleiksi, stokastisiksi malleiksi tai todennäköisyysmalleiksi.
+  - Tilastolliset mallit perustuvat laajalti niin kutsuttuun uskottavuusfunktioon. Se on malli, joka riippuu havaintoaineiston lisäksi yhdestä tai useammasta parametrista.
+  - Uskottavuusfunktion arvo kertoo kuinka todennäköisenä voidaan havaittua aineistoa pitää, mikäli sen oletetaan olevan peräisin vastaavasta mallista jollain parametriarvoilla.
+  - Uskottavuuspäättelyn perusajatuksena on, että se tai ne parametriarvot, joilla uskottavuusfunktion arvo maksimoituu kuvaa aineiston generoimaa prosessia parhaiten.
+  - Aineistoa koskevia hypoteeseja voidaan testata käyttäen uskottavuusfunktion maksimia vastaavaa tilastollista mallia!
+  -*"Kaikki mallit ovat vääriä, mutta jotkut ovat käyttökelpoisia."*(Box, 1976).
+\
+\
+- Uskottavuusfunktiot perustuvat aina satunnaisilmiöiden mahdollisia arvoja kuvaaviin nk. **tiheysfunktioihin** tai todennäköisyysfunktioihin.
+  - Tiheysfunktiot kuvaavat jonkin satunnaismuuttujan (satunnaisilmiön) saamien arvojen jakaumaa.
+  - Esimerkiksi kolikonheitto on satunnaisilmiö ja sillä on vain kaksi arvoa^[Kolikon kantilleen jäämistä ei tässä lasketa mahdolliseksi tapahtumaksi.] ja kolikonheittoa voidaan kuvata nk. binomijakaumalla, merkitään $\text{Bin}(n,p)$ missä $n$ on heittojen lukumäärä ja $p$ on kruunan todennäköisyys.
+  - Esimerkki: heitetään kolikkoa 40 kertaa ja saadaan kruuna 40/40 tapauksessa. Onko tämän havaintoaineiston perusteella uskottavaa, että kolikonheitto noudattaa binomijakaumaa $\text{Bin}(40, 0.5)$? Eli kuinka uskottavan voidaan pitää että kyseinen kolikko on tavallinen, painottamaton kolikko??
+\
+\
+- Todennäköisyyslaskenta luo tilastotieteelliselle epävarmuuden mallintamiselle vahvan ja uskottavan matemaattisen perustan. 
+  - Todennäköisyyslaskentaa opetetaan tarkemmin (tätä kurssia seuraavilla) kursseilla [https://opas.peppi.utu.fi/fi/opintojakso/TILM3553/1734) (pääaineopiskelijoille](TILM3553 Todennäköisyyslaskennan peruskurssi), [https://opas.peppi.utu.fi/fi/opintojakso/TILM3568/3385](TILM3568 Todennäköisyyslaskenta sivuaineopiskelijoille) ja [https://opas.peppi.utu.fi/fi/opintojakso/SMAT5306/4400](SMAT5306 Todennäköisyyslaskennan jatkokurssi).
 
 
+```{r teoreettinen, echo=FALSE, fig.cap="Teoreettinen tilastotiede", fig.align='center', out.width = "150%"}
+knitr::include_graphics("images/teoreettinen.jpg")
+```
+
+```{r statmath, echo=FALSE, fig.cap="Matemaattinen tilastotiede", fig.align='center', out.width = "150%"}
+knitr::include_graphics("images/statmath.jpg")
+```
+
+```{r perus, echo=FALSE, fig.cap="Tilastotiede ja todennäköisyys", fig.align='center', out.width = "150%"}
+knitr::include_graphics("images/perustuu.jpg")
+```
