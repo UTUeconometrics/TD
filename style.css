@@ -38,13 +38,13 @@ pre code {
 }
 
 .book.with-summary .book-header.fixed {
-    left: 650px;
+    left: 400px;
 }
 
 .book.with-summary .book-body {
-    left: 650px;
+    left: 400px;
 }
 
 .book .book-summary {
-    width: 650px;
+    width: 400px;
 }

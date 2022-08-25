@@ -126,8 +126,7 @@ tutkimuksen tutkimus- tai havaintoaineistot ovat tilastotieteen kannalta tilasto
   
   
   
-## Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science)
-
+## Tilastotieteen suhde lähitieteisiin
 
 - Kuvio \@ref(fig:datasc) tarjoaa karkean yleistyksen tietojenkäsittelytieteen (Computer Science) ja sovellusalan (Application domain) sekä tilastotieteen (Statistics) ja matematiikan (Mathematics) välisistä yhteyksistä. On selvää että tilastotieteellä on paljon päällekäisyyksiä lähitieteidensä kanssa ja joskus näkeekin (huolimatta edellä tehdyistä huomioista) että tilastotiede niputetaan yhteen matematiikan tai tietojenkäsittelytieteen kanssa. 
 
