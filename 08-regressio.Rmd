@@ -87,7 +87,7 @@ $$
     - Huomautus: Regressiokertoimet $\beta_0$ ja $\beta_1$ on oletettu samoiksi kaikille havaintoyksiköille $i$. 
 
 - Virhetermeistä $\varepsilon_i$ tehtävät ns. standardioletukset ovat seuraavat:
-  - (i) $\E(\varepsilon_i) = 0, \, i=1,2,\ldots,n$
+  - (i) $\text{E}(\varepsilon_i) = 0, \, i=1,2,\ldots,n$
   - (ii) Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia: $\mathrm{Var}(\varepsilon_i)= \sigma^2, \, i=1,\ldots,n$. Virhetermien $\varepsilon_i$ tässä yhteiseksi oletettua varianssia kutsutaan ajoittain jäännösvarianssiksi.
   - (iii) Jäännöstermit ovat korreloimattomia: $\mathrm{Cov}(\varepsilon_i, \varepsilon_l)=0, \, i \neq l$
   - (iv) Lisäksi tehdään ajoittain normaalisuusoletus eli että virhetermit ovat normaalisti jakautuneita: $\varepsilon_i \thicksim \N(0, \sigma^2), \, i=1,2,\ldots,n$.
@@ -187,16 +187,17 @@ $$
 **Esimerkki: isän ja poikien pituus, tarkemmin**
 
 Jatketaan isän ja heidän poikiensa pituutta koskevan aineiston tarkastelua. Periytyykö isän pituus heidän pojilleen? Käytännössä jo aiemmin tarkastelimme 300 havainnon havaintoaineistoa isän ja heidän poikiensa pituuksien muodostamista lukupareista.
-```{r, echo=FALSE, fig.cap="Isien ja poikien pituudet: regressiosuoran sovite"}
-knitr::include_graphics("images/Sovite-isien-poikien-pituudet-Mellin.jpg")
-```
 
-Estimoidun regressiosuoran yhtälö on (ks. oheinen kuva)
+Estimoidun regressiosuoran yhtälö on (ks. oheinen kuva \@ref(fig:isatjapojat2))
 $$
 y = 97.391+ 0.4707 x
 $$
 Suoran kulmakertoimen $\widehat{\beta}_1$ = 0.4707 tulkinta on siis, että jos isä A on 1 cm pitempi kuin isä B, isä A:n poika on keskimäärin 0.4707 cm pitempi kuin isä B:n poika.
 :::
+
+```{r isatjapojat2, echo=FALSE, fig.cap="Isien ja poikien pituudet: regressiosuoran sovite", fig.align='center', out.width = "100%"}
+knitr::include_graphics("images/Sovite-isien-poikien-pituudet-Mellin.jpg")
+```
 
 \
 \

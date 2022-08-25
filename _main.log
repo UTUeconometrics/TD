@@ -1,23 +1,24 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.24)  24 AUG 2022 18:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.25)  25 AUG 2022 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **_main.tex
 (./_main.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-23> (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+L3 programming layer <2022-08-23> (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
-\c@section=\count182
-\c@subsection=\count183
-\c@subsubsection=\count184
-\c@paragraph=\count185
-\c@subparagraph=\count186
-\c@figure=\count187
-\c@table=\count188
+\c@chapter=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -37,14 +38,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count189
+\inf@bad=\count190
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count190
-\leftroot@=\count191
+\uproot@=\count191
+\leftroot@=\count192
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count192
-\DOTSCASE@=\count193
+\classnum@=\count193
+\DOTSCASE@=\count194
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -57,20 +58,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count194
+\macc@depth=\count195
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count195
+\c@MaxMatrixCols=\count196
 \dotsspace@=\muskip16
-\c@parentequation=\count196
-\dspbrk@lvl=\count197
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
 \tag@help=\toks17
-\row@=\count198
-\column@=\count199
-\maxfields@=\count266
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
 \andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -137,11 +138,11 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 Package: expl3 2022-08-23 L3 programming layer (loader) 
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-08-23 L3 backend support: XeTeX
-\g__graphics_track_int=\count267
+\g__graphics_track_int=\count268
 \l__pdf_internal_box=\box53
-\g__pdf_backend_object_int=\count268
-\g__pdf_backend_annotation_int=\count269
-\g__pdf_backend_link_int=\count270
+\g__pdf_backend_object_int=\count269
+\g__pdf_backend_annotation_int=\count270
+\g__pdf_backend_link_int=\count271
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
@@ -154,17 +155,17 @@ Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count271
-\l__fontspec_language_int=\count272
-\l__fontspec_strnum_int=\count273
-\l__fontspec_tmp_int=\count274
-\l__fontspec_tmpa_int=\count275
-\l__fontspec_tmpb_int=\count276
-\l__fontspec_tmpc_int=\count277
-\l__fontspec_em_int=\count278
-\l__fontspec_emdef_int=\count279
-\l__fontspec_strong_int=\count280
-\l__fontspec_strongdef_int=\count281
+\l__fontspec_script_int=\count272
+\l__fontspec_language_int=\count273
+\l__fontspec_strnum_int=\count274
+\l__fontspec_tmp_int=\count275
+\l__fontspec_tmpa_int=\count276
+\l__fontspec_tmpb_int=\count277
+\l__fontspec_tmpc_int=\count278
+\l__fontspec_em_int=\count279
+\l__fontspec_emdef_int=\count280
+\l__fontspec_strong_int=\count281
+\l__fontspec_strongdef_int=\count282
 \l__fontspec_tmpa_dim=\dimen148
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
@@ -176,9 +177,9 @@ Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\g__um_fam_int=\count282
-\g__um_fonts_used_int=\count283
-\l__um_primecount_int=\count284
+\g__um_fam_int=\count283
+\g__um_fonts_used_int=\count284
+\l__um_primecount_int=\count285
 \g__um_primekern_muskip=\muskip17
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
@@ -233,11 +234,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count285
+\c@section@level=\count286
 )
 \@linkdim=\dimen151
-\Hy@linkcounter=\count286
-\Hy@pagecounter=\count287
+\Hy@linkcounter=\count287
+\Hy@pagecounter=\count288
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -245,7 +246,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count288
+\Hy@SavedSpaceFactor=\count289
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
 )
@@ -257,7 +258,7 @@ Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4408.
-\c@Hy@tempcnt=\count289
+\c@Hy@tempcnt=\count290
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -269,7 +270,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count290
+\Fld@menulength=\count291
 \Field@Width=\dimen153
 \Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6024.
@@ -283,9 +284,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6054.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count291
-\c@Item=\count292
-\c@Hfootnote=\count293
+\Hy@abspage=\count292
+\c@Item=\count293
+\c@Hfootnote=\count294
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -294,10 +295,10 @@ File: hxetex.def 2022-06-20 v7.00s Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \pdfm@box=\box54
-\c@Hy@AnnotLevel=\count294
-\HyField@AnnotCount=\count295
-\Fld@listcount=\count296
-\c@bookmark@seq@number=\count297
+\c@Hy@AnnotLevel=\count295
+\HyField@AnnotCount=\count296
+\Fld@listcount=\count297
+\c@bookmark@seq@number=\count298
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -309,88 +310,71 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip52
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count298
-\Gm@cntv=\count299
-\c@Gm@tempcnt=\count300
-\Gm@bindingoffset=\dimen155
-\Gm@wd@mp=\dimen156
-\Gm@odd@mp=\dimen157
-\Gm@even@mp=\dimen158
-\Gm@layoutwidth=\dimen159
-\Gm@layoutheight=\dimen160
-\Gm@layouthoffset=\dimen161
-\Gm@layoutvoffset=\dimen162
-\Gm@dimlist=\toks22
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip53
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count301
-\LTcapwidth=\dimen163
+\LTchunksize=\count299
+\LTcapwidth=\dimen155
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
 \LT@lastfoot=\box58
 \LT@gbox=\box59
-\LT@cols=\count302
-\LT@rows=\count303
-\c@LT@tables=\count304
-\c@LT@chunks=\count305
-\LT@p@ftn=\toks23
+\LT@cols=\count300
+\LT@rows=\count301
+\c@LT@tables=\count302
+\c@LT@chunks=\count303
+\LT@p@ftn=\toks22
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen164
-\lightrulewidth=\dimen165
-\cmidrulewidth=\dimen166
-\belowrulesep=\dimen167
-\belowbottomsep=\dimen168
-\aboverulesep=\dimen169
-\abovetopsep=\dimen170
-\cmidrulesep=\dimen171
-\cmidrulekern=\dimen172
-\defaultaddspace=\dimen173
-\@cmidla=\count306
-\@cmidlb=\count307
-\@aboverulesep=\dimen174
-\@belowrulesep=\dimen175
-\@thisruleclass=\count308
-\@lastruleclass=\count309
-\@thisrulewidth=\dimen176
+\heavyrulewidth=\dimen156
+\lightrulewidth=\dimen157
+\cmidrulewidth=\dimen158
+\belowrulesep=\dimen159
+\belowbottomsep=\dimen160
+\aboverulesep=\dimen161
+\abovetopsep=\dimen162
+\cmidrulesep=\dimen163
+\cmidrulekern=\dimen164
+\defaultaddspace=\dimen165
+\@cmidla=\count304
+\@cmidlb=\count305
+\@aboverulesep=\dimen166
+\@belowrulesep=\dimen167
+\@thisruleclass=\count306
+\@lastruleclass=\count307
+\@thisrulewidth=\dimen168
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen177
+\col@sep=\dimen169
 \ar@mcellbox=\box60
-\extrarowheight=\dimen178
-\NC@list=\toks24
+\extrarowheight=\dimen170
+\NC@list=\toks23
 \extratabsurround=\skip57
 \backup@length=\skip58
 \ar@cellbox=\box61
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count310
-\calc@Bcount=\count311
-\calc@Adimen=\dimen179
-\calc@Bdimen=\dimen180
+\calc@Acount=\count308
+\calc@Bcount=\count309
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count312
+\calc@Ccount=\count310
 \calc@Cskip=\skip61
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count313
+\etb@tempcnta=\count311
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box62
-\fn@width=\dimen181
+\fn@width=\dimen173
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -402,19 +386,19 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
-\Gin@req@height=\dimen182
-\Gin@req@width=\dimen183
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
 \thm@preskip=\skip62
 \thm@postskip=\skip63
 \thm@headsep=\skip64
-\dth@everypar=\toks30
+\dth@everypar=\toks29
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/awesomebox/awesomebox.sty
@@ -440,16 +424,16 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip72
-\fb@frw=\dimen184
-\fb@frh=\dimen185
-\FrameRule=\dimen186
-\FrameSep=\dimen187
+\fb@frw=\dimen176
+\fb@frh=\dimen177
+\FrameRule=\dimen178
+\FrameSep=\dimen179
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen188
-\pgfutil@tempdimb=\dimen189
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen180
+\pgfutil@tempdimb=\dimen181
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box63
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -459,31 +443,31 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen190
-\pgf@y=\dimen191
-\pgf@xa=\dimen192
-\pgf@ya=\dimen193
-\pgf@xb=\dimen194
-\pgf@yb=\dimen195
-\pgf@xc=\dimen196
-\pgf@yc=\dimen197
-\pgf@xd=\dimen198
-\pgf@yd=\dimen199
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count314
-\c@pgf@countb=\count315
-\c@pgf@countc=\count316
-\c@pgf@countd=\count317
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count318
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count316
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -495,62 +479,62 @@ File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )
-\pgfsys@objnum=\count319
+\pgfsys@objnum=\count317
 ))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count320
-\pgfsyssoftpath@bigbuffer@items=\count321
+\pgfsyssoftpath@smallbuffer@items=\count318
+\pgfsyssoftpath@bigbuffer@items=\count319
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen256
-\pgfmath@count=\count322
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count320
 \pgfmath@box=\box64
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count323
+\c@pgfmathroundto@lastzeros=\count321
 )) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen257
-\pgf@picmaxx=\dimen258
-\pgf@picminy=\dimen259
-\pgf@picmaxy=\dimen260
-\pgf@pathminx=\dimen261
-\pgf@pathmaxx=\dimen262
-\pgf@pathminy=\dimen263
-\pgf@pathmaxy=\dimen264
-\pgf@xx=\dimen265
-\pgf@xy=\dimen266
-\pgf@yx=\dimen267
-\pgf@yy=\dimen268
-\pgf@zx=\dimen269
-\pgf@zy=\dimen270
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen271
-\pgf@path@lasty=\dimen272
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen273
-\pgf@shorten@start@additional=\dimen274
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box65
 \pgf@hbox=\box66
 \pgf@layerbox@main=\box67
-\pgf@picture@serial@count=\count324
+\pgf@picture@serial@count=\count322
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen275
+\pgflinewidth=\dimen267
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen276
-\pgf@pt@y=\dimen277
-\pgf@pt@temp=\dimen278
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -559,12 +543,12 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen279
+\pgfarrowsep=\dimen271
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen280
-\pgf@sys@shading@range@num=\count325
-\pgf@shadingcount=\count326
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count323
+\pgf@shadingcount=\count324
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -585,14 +569,14 @@ File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen281
-\pgf@nodesepend=\dimen282
+\pgf@nodesepstart=\dimen273
+\pgf@nodesepend=\dimen274
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks41
-\verbatim@line=\toks42
+\every@verbatim=\toks40
+\verbatim@line=\toks41
 \verbatim@in@stream=\read3
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -603,58 +587,58 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box71
 \tcb@lowerbox=\box72
 \tcb@phantombox=\box73
-\c@tcbbreakpart=\count327
-\c@tcblayer=\count328
-\c@tcolorbox@number=\count329
+\c@tcbbreakpart=\count325
+\c@tcblayer=\count326
+\c@tcolorbox@number=\count327
 \tcb@temp=\box74
 \tcb@temp=\box75
 \tcb@temp=\box76
 \tcb@temp=\box77
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
-\c@tcbrastercolumn=\count330
-\c@tcbrasterrow=\count331
-\c@tcbrasternum=\count332
-\c@tcbraster=\count333
+\c@tcbrastercolumn=\count328
+\c@tcbrasterrow=\count329
+\c@tcbrasternum=\count330
+\c@tcbraster=\count331
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen283
-\pgffor@skip=\dimen284
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
+\pgffor@iter=\dimen275
+\pgffor@skip=\dimen276
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 )) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count334
-\pgfplotmarksize=\dimen285
+\pgf@plot@mark@count=\count332
+\pgfplotmarksize=\dimen277
 )
-\tikz@lastx=\dimen286
-\tikz@lasty=\dimen287
-\tikz@lastxsaved=\dimen288
-\tikz@lastysaved=\dimen289
-\tikz@lastmovetox=\dimen290
-\tikz@lastmovetoy=\dimen291
-\tikzleveldistance=\dimen292
-\tikzsiblingdistance=\dimen293
+\tikz@lastx=\dimen278
+\tikz@lasty=\dimen279
+\tikz@lastxsaved=\dimen280
+\tikz@lastysaved=\dimen281
+\tikz@lastmovetox=\dimen282
+\tikz@lastmovetoy=\dimen283
+\tikzleveldistance=\dimen284
+\tikzsiblingdistance=\dimen285
 \tikz@figbox=\box78
 \tikz@figbox@bg=\box79
 \tikz@tempbox=\box80
 \tikz@tempbox@bg=\box81
-\tikztreelevel=\count335
-\tikznumberofchildren=\count336
-\tikznumberofcurrentchild=\count337
-\tikz@fig@count=\count338
+\tikztreelevel=\count333
+\tikznumberofchildren=\count334
+\tikznumberofcurrentchild=\count335
+\tikz@fig@count=\count336
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count339
-\pgfmatrixcurrentcolumn=\count340
-\pgf@matrix@numberofcolumns=\count341
+\pgfmatrixcurrentrow=\count337
+\pgfmatrixcurrentcolumn=\count338
+\pgf@matrix@numberofcolumns=\count339
 )
-\tikz@expandcount=\count342
+\tikz@expandcount=\count340
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
@@ -677,31 +661,31 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen294
-\tcb@lowerfitdim=\dimen295
-\tcb@upperfitdim=\dimen296
-\tcb@cur@hbadness=\count343
+\tcbfitdim=\dimen286
+\tcb@lowerfitdim=\dimen287
+\tcb@upperfitdim=\dimen288
+\tcb@cur@hbadness=\count341
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count344
+\lst@mode=\count342
 \lst@gtempboxa=\box86
-\lst@token=\toks45
-\lst@length=\count345
-\lst@currlwidth=\dimen297
-\lst@column=\count346
-\lst@pos=\count347
-\lst@lostspace=\dimen298
-\lst@width=\dimen299
-\lst@newlines=\count348
-\lst@lineno=\count349
-\lst@maxwidth=\dimen300
+\lst@token=\toks44
+\lst@length=\count343
+\lst@currlwidth=\dimen289
+\lst@column=\count344
+\lst@pos=\count345
+\lst@lostspace=\dimen290
+\lst@width=\dimen291
+\lst@newlines=\count346
+\lst@lineno=\count347
+\lst@maxwidth=\dimen292
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count350
-\lst@skipnumbers=\count351
+\c@lstnumber=\count348
+\lst@skipnumbers=\count349
 \lst@framebox=\box87
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -715,7 +699,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count352
+\c@tcblisting=\count350
 ))
 Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. Library `listings` is loaded instead. on input line 29.
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
@@ -735,27 +719,76 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count353
-\c@Blindtext=\count354
-\c@blind@countparstart=\count355
-\blind@countxx=\count356
-\blindtext@numBlindtext=\count357
-\blind@countyy=\count358
-\c@blindlist=\count359
-\c@blindlistlevel=\count360
-\c@blindlist@level=\count361
-\blind@listitem=\count362
-\c@blind@listcount=\count363
-\c@blind@levelcount=\count364
-\blind@mathformula=\count365
-\blind@Mathformula=\count366
-\c@blind@randomcount=\count367
-\c@blind@randommax=\count368
-\c@blind@pangramcount=\count369
-\c@blind@pangrammax=\count370
+\c@blindtext=\count351
+\c@Blindtext=\count352
+\c@blind@countparstart=\count353
+\blind@countxx=\count354
+\blindtext@numBlindtext=\count355
+\blind@countyy=\count356
+\c@blindlist=\count357
+\c@blindlistlevel=\count358
+\c@blindlist@level=\count359
+\blind@listitem=\count360
+\c@blind@listcount=\count361
+\c@blind@levelcount=\count362
+\blind@mathformula=\count363
+\blind@Mathformula=\count364
+\c@blind@randomcount=\count365
+\c@blind@randommax=\count366
+\c@blind@pangramcount=\count367
+\c@blind@pangrammax=\count368
+) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/07/20 3.78 The Babel package
+\babel@savecnt=\count369
+\U@D=\dimen293
+\l@unhyphenated=\language5
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read4
+\bbl@dirlevel=\count370
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-finnish/finnish.ldf
+Language: finnish 2021/02/06 v1.3s Finnish support from the babel system
+Package babel Info: Making " an active character on input line 85.
+)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/fi/babel-finnish.tex
+Package babel Info: Importing font and identification data for finnish
+(babel)             from babel-fi.ini. Reported on input line 11.
+) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/overpic/overpic.sty
+Package: overpic 2020/02/22 1.3 picture overlays (RN)
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count371
+\d@lta=\count372
+\@delta=\dimen294
+\@@delta=\dimen295
+\@gridcnt=\count373
+\@joinkind=\count374
+\@dotgap=\dimen296
+\@ddotgap=\dimen297
+\@x@diff=\count375
+\@y@diff=\count376
+\x@diff=\dimen298
+\y@diff=\dimen299
+\@dotbox=\box88
+\num@segments=\count377
+\num@segmentsi=\count378
+\@datafile=\read5
+)
+\OVP@box=\box89
+) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen300
+\epsfysize=\dimen301
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count371
-\decimalpart=\count372
+\integerpart=\count379
+\decimalpart=\count380
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 ) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
@@ -763,44 +796,44 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip73
 \bibsep=\skip74
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count373
+\c@NAT@ctr=\count381
 ) (./_main.aux)
 \openout1 = `_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 120.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 120.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 120.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 120.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 120.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 120.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 170.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 120.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 170.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -826,7 +859,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 10.0pt on input line 170.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -858,15 +891,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 10.0pt on input line 170.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 120.
+(Font)              `operators' in the math version `normal' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 120.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 170.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 120.
+(Font)              `operators' in the math version `bold' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 120.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 170.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -945,13 +978,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 120.
+(Font)              `symbols' in the math version `normal' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 120.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 170.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 120.
+(Font)              `symbols' in the math version `bold' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 120.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 170.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1012,274 +1045,298 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 120.
+(Font)              `largesymbols' in the math version `normal' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 120.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 170.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 120.
+(Font)              `largesymbols' in the math version `bold' on input line 170.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 120.
-Package hyperref Info: Link coloring OFF on input line 120.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 170.
+Package hyperref Info: Link coloring OFF on input line 170.
 (./_main.out) (./_main.out)
 \@outlinefile=\write4
 \openout4 = `_main.out'.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
-*geometry* verbose mode - [ preamble ] result:
-* driver: xetex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\c@lstlisting=\count374
-(./_main.toc
+\c@lstlisting=\count382
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 2.
+(Font)              scaled to size 12.0pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 2.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2.
+(Font)              scaled to size 8.0pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 172.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 172.
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 2.
+(Font)              scaled to size 12.0011pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 2.
+(Font)              scaled to size 8.00073pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 2.
+(Font)              scaled to size 6.00055pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 2.
+(Font)              scaled to size 11.99872pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 2.
+(Font)              scaled to size 7.99915pt on input line 172.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+(Font)              scaled to size 5.99936pt on input line 172.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172.
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172.
 (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 172.
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 172.
+(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00082pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 172.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 172.
+[1
+
+
+] [2
+
+] (./_main.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 4.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 4.
+[3] [4])
 \tf@toc=\write5
 \openout5 = `_main.toc'.
 
-File: images/im_so_random.jpg Graphic file (type bmp)
-<images/im_so_random.jpg>
+[5] [6
 
-Underfull \hbox (badness 1694) in paragraph at lines 140--141
-\TU/lmr/m/n/10 usein tilastollinen tarkastelu paljastaakin ilmiön todellisen, alkuperäisestä kuvitelmasta poikkeavan
- []
-
-[1
+] [7] [8]
+Luku 1.
+[9
 
 ]
-Underfull \hbox (badness 1173) in paragraph at lines 148--150
-\TU/lmr/m/n/10 toyksikköjen tutkimusmuuttujista koostuva havaintoaineisto, jonka pohjalta tehdään päätelmiä
- []
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 291.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 291.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 291.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 291.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 291.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 291.
-
-Underfull \hbox (badness 1072) in paragraph at lines 291--291
-[]\TU/lmr/m/n/8 TILM3553 Todennäköisyyslaskennan peruskurssi[] ja (erityisesti sivuaineopiskelijoille) []TILM3568 Todennäköisyyslaskenta
- []
-
-[3]
-Underfull \hbox (badness 1231) in paragraph at lines 303--304
-[]\TU/lmr/m/n/10 Todennäköisyyslaskennan tehtävä on tuottaa \TU/lmr/bx/n/10 matemaattisia ja tilastollisia malleja \TU/lmr/m/n/10 satun-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--347
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--347
-
- []
-
-[4]
-
-LaTeX Warning: Reference `luku6' on page 5 undefined on input line 365.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
-
- []
-
-
-Underfull \hbox (badness 2707) in paragraph at lines 396--398
-[]\TU/lmr/m/n/10 Bayesilaiset perustavat sen sijaan hypoteesien testaamisen tutkimuskysymystä koskevien
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 398--399
-[]\TU/lmr/m/n/10 Nämä ennakkokäsitykset voidaan kuvata todennäköisyysjakaumana, priorijakaumana, jota
- []
-
-[5]
-Underfull \hbox (badness 1874) in paragraph at lines 429--430
-\TU/lmr/m/n/10 tahansa arvon tietyltä reaalilukuväliltä (tällöin käytettäisiin jatkuviin sm:jiin perustuvia
- []
-
-File: images/poisson.jpg Graphic file (type bmp)
-<images/poisson.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
-
- []
-
-
-LaTeX Warning: Reference `luku6' on page 6 undefined on input line 502.
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 511--512
-[]\TU/lmr/m/n/10 Satunnaismuuttujan todennäköisyysjakauman tietoa voidaan tiivistää tunnuslukuihin, joista
- []
-
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 539--541
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 539--541
-
- []
-
-[8]
-File: images/normpdf.jpg Graphic file (type bmp)
-<images/normpdf.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 708--710
-[]\TU/lmr/m/n/10 |Miesten lkm. ($[]$)|0|1|2|3|4|5|6|7|8|9|10|11|12| |Perheiden lkm.
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 717--719
+Underfull \hbox (badness 1067) in paragraph at lines 356--358
+\TU/lmr/m/n/10 markkinoilla: erilaisten aineistojen määrän lisääntyessä kasvaa myös
+ []
+
+
+Overfull \hbox (41.46707pt too wide) in paragraph at lines 362--362
+[]\TU/lmr/bx/n/14.4 Kurssin luonne tilastotieteen (ja datatieteen/data-
+ []
+
+
+Overfull \hbox (12.82336pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 1.2.  TILASTOTIETEEN ASEMA TUTKIMUSYHTEISÖN ULKOPUOLELLA \TU/lmr/m/n/10 11
+ []
+
+[11] [12]
+Luku 2.
+[13
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--719
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 774--775
-[]\TU/lmr/m/n/10 Tuloksista voidaan siis päätellä, että kotijoukkueen (odotettavissa oleva) maalimäärä on
- []
-
-[11]
-
-LaTeX Warning: Reference `luku6' on page 12 undefined on input line 795.
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 800--801
-[]\TU/lmr/m/n/10 Yliopistoyhteisössä kuitenkin luonnollisesti luotamme kumuloituneeseen tutkittuun tietoon ja
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 864--866
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--868
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
-[13]
-Underfull \hbox (badness 1122) in paragraph at lines 868--870
-[]\TU/lmr/m/n/10 Luokkien lukumäärään vaikuttavat muun muassa tilastomuuttujan arvojen vaihteluväli ja
+
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 14 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--870
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
+
+ []
+
+[15]
+Underfull \hbox (badness 3088) in paragraph at lines 531--532
+[]\TU/lmr/m/n/10 Paradigmojen ei pidä ajatella olevan kaavoihin kangistuneita
+ []
+
+
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 16 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[16]
+File: images/Arkitieto-tieteellinentieto.jpg Graphic file (type bmp)
+<images/Arkitieto-tieteellinentieto.jpg>
+
+Overfull \hbox (172.53374pt too wide) in paragraph at lines 559--560
+ [][] 
+ []
+
+[17]
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 18 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 693--696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--718
+
+ []
+
+
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 20 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[20]
+File: images/Are-women-really-more-talkative.jpg Graphic file (type bmp)
+<images/Are-women-really-more-talkative.jpg>
+
+Overfull \hbox (172.53374pt too wide) in paragraph at lines 783--784
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21]
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 22 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 807--809
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 807--809
+
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 818--820
+[]\TU/lmr/bx/n/10 Riippuvuuden kuvaus\TU/lmr/m/n/10 : Ovatko paljon mainostavat yritykset
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--820
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--830
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 852--854
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--854
 
  []
 
@@ -1289,120 +1346,1489 @@ Underfull \hbox (badness 10000) in paragraph at lines 874--875
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--905
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 944--945
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 952--954
-[]\TU/lmr/m/n/10 Lääketutkimusta tehdäänkin poikkeuksetta otantatutkimuksena (ja kontrolloituina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 962--963
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
-[15]
 
-LaTeX Warning: Reference `@' on page 16 undefined on input line 1054.
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 24 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 932--935
+
+ []
 
 
-LaTeX Warning: Reference `luku6' on page 16 undefined on input line 1080.
+Overfull \hbox (47.27115pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.5.  TIETEELLISEN TUTKIMUKSEN VAIHEET JA TULOSTEN JULKAISEMINEN \TU/lmr/m/n/10 25
+ []
 
-[16]
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 938--943
+
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 938--943
+\TU/lmr/m/n/10 - Julkisuus ja avoimuus tekevät tutkimuksesta tiedettä. - Tiedeviestintä
+ []
+
+
+Overfull \hbox (49.88225pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 26 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
+ []
+
+[26]
+Luku 3.
+[27
+
+] [28] [29]
+Underfull \hbox (badness 1484) in paragraph at lines 1081--1083
+\TU/lmr/m/n/10 usein graafisiksi esityksiksi ja tunnusluvuiksi sekä tilastollisten
+ []
+
+[30]
+Underfull \hbox (badness 1694) in paragraph at lines 1137--1139
+\TU/lmr/bx/n/10 menetelmillä/metodeilla \TU/lmr/m/n/10 (Ks. tieteellisen menetelmän kritee-
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 1137--1139
+\TU/lmr/m/n/10 generoimaa kvantitatiivista mutta epävarmaa tietoa sisältävää
+ []
+
+[31]
+Underfull \vbox (badness 5119) has occurred while \output is active []
+
+[32]
+File: images/data_science.jpg Graphic file (type bmp)
+<images/data_science.jpg>
+
+Overfull \hbox (172.51909pt too wide) in paragraph at lines 1201--1202
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1241
+
+ []
+
+
+Overfull \hbox (289.13004pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  TILASTOTIETEEN SUHDE MATEMATIIKKAAN, TIETOJENKÄSITTELYTIETEESEEN JA DATATIETEESEEN (DATA SCIENCE) \TU/lmr/m/n/10 33
+ []
+
+[33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
+
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 1262--1265
+[]\TU/lmr/m/n/10 Hyödyllisen tiedon survomista aineistosta. Suomen kielessä tie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+\TU/lmr/m/n/10 tojenkäsittely ymmärretään kuitenkin laajemmassa mielessä
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 1262--1265
+\TU/lmr/m/n/10 ohjelmoitavissa olevaksi automatisoimiseksi, jota tilastotiede ei
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+
+ []
+
+
+Overfull \hbox (289.13004pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  TILASTOTIETEEN SUHDE MATEMATIIKKAAN, TIETOJENKÄSITTELYTIETEESEEN JA DATATIETEESEEN (DATA SCIENCE) \TU/lmr/m/n/10 35
+ []
+
+[35]
+Underfull \hbox (badness 1137) in paragraph at lines 1314--1315
+[]\TU/lmr/m/n/10 Kritiikki: määrällinen tutkimus on (paikoin) sokea tutkittavien
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1315
+
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 1324--1326
+\TU/lmr/m/n/10 on tarkoitus aloittaa mahdollisimman vähin ennakko-oletuksin.
+ []
+
+[36]
+Underfull \hbox (badness 1107) in paragraph at lines 1331--1334
+[]\TU/lmr/m/n/10 Yleisenä menetelmätieteenä tilastotiedettä voidaan (ja myös pitäisi)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1331--1334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1331--1334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1346
+
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 1353--1355
+\TU/lmr/m/n/10 menetelmiä, joiden avulla havaintoaineistosta voidaan esimer-
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 1353--1355
+\TU/lmr/m/n/10 kiksi laskea tunnuslukuja, kuvata havaintomuuttujien jakaumia
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
+
+ []
+
+
+Overfull \hbox (4.32pt too wide) in paragraph at lines 1368--1370
+[]\TU/lmr/m/n/10 Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns.[]Occamin
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 1368--1370
+\TU/lmr/m/n/10 partaveitsen -periaatteeseen[], jonka mukaan \TU/lmr/m/it/10 “ilmiöitä selittävien
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 1368--1370
+\TU/lmr/m/n/10 lastotieteessä menetelmien (mallien) tulee olla mahdollisimman
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 1370--1371
+\TU/lmr/m/n/10 ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen
+ []
+
+File: images/soveltava.jpg Graphic file (type bmp)
+<images/soveltava.jpg>
+
+Overfull \hbox (172.50113pt too wide) in paragraph at lines 1393--1394
+ [][] 
+ []
+
+[38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1414--1417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1414--1417
+
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 1428--1430
+\TU/lmr/m/n/10 että kolikonheitto noudattaa binomijakaumaa $[][][][][] [][][][]$? Eli
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1430
+
+ []
+
+
+Overfull \hbox (23.06996pt too wide) in paragraph at lines 1437--1438
+\TU/lmr/m/n/10 villa) kursseilla []https://opas.peppi.utu.fi/fi/opintojakso/TILM3553/1734)
+ []
+
+
+Overfull \hbox (47.16109pt too wide) in paragraph at lines 1437--1438
+\TU/lmr/m/n/10 (pääaineopiskelijoille[], []https://opas.peppi.utu.fi/fi/opintojakso/TILM3568/3385[]
+ []
+
+File: images/teoreettinen.jpg Graphic file (type bmp)
+<images/teoreettinen.jpg>
+
+Overfull \hbox (172.5087pt too wide) in paragraph at lines 1443--1444
+ [][] 
+ []
+
+File: images/statmath.jpg Graphic file (type bmp)
+<images/statmath.jpg>
+
+Overfull \hbox (172.51022pt too wide) in paragraph at lines 1452--1453
+ [][] 
+ []
+
+File: images/perustuu.jpg Graphic file (type bmp)
+<images/perustuu.jpg>
+
+Overfull \hbox (172.51445pt too wide) in paragraph at lines 1461--1462
+ [][] 
+ []
+
+[40] [41] [42] [43] [44
+
+]
+Luku 4.
+File: images/im_so_random.jpg Graphic file (type bmp)
+<images/im_so_random.jpg>
+[45] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1559
+
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 1565--1566
+[]\TU/lmr/m/n/10 Satunnaisilmiöitä koskevan tutkimuksen kohteena olevat tilastolliset
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1595
+
+ []
+
+
+Overfull \hbox (26.56335pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.1.  SATUNNAISILMIÖT JA SATUNNAISMUUTTUJAT TILASTOTIETEESSÄ \TU/lmr/m/n/10 47
+ []
+
+[47]
+Underfull \hbox (badness 1552) in paragraph at lines 1640--1642
+[]\TU/lmr/m/n/10 Yksinkertaisimmillaan esimerkiksi yksinkertaiseen satunnaisotan-
+ []
+
+[48]
+Overfull \hbox (54.63225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.2.  TILASTOTIETEEN SUHDE SATUNNAISUUTEEN JA TODENNÄKÖISYYKSIIN \TU/lmr/m/n/10 49
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1687--1689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1687--1689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1723
+
+ []
+
+[50]
+Underfull \hbox (badness 5985) in paragraph at lines 1731--1732
+[]\TU/lmr/m/n/10 Bayesilainen tilastotiede ulottaa todennäköisyyskäsityksen, eli tn-
+ []
+
+[51]
+Underfull \hbox (badness 2799) in paragraph at lines 1779--1781
+\TU/lmr/m/n/10 tää taulukkomuodossa. Eri arvojen todennäköisyydet muodos-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1779--1781
+\TU/lmr/m/n/10 tavat kyseisen satunnaismuuttujan todennäköisyysjakauman
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 1779--1781
+\TU/lmr/m/n/10 (\TU/lmr/bx/n/10 pistetodennäköisyysfunktion\TU/lmr/m/n/10 ), jota voidaan havainnollistaa
+ []
+
+File: images/poisson.jpg Graphic file (type bmp)
+<images/poisson.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1802--1804
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1802--1804
+
+ []
+
+[52]
+Underfull \hbox (badness 1783) in paragraph at lines 1853--1854
+\TU/lmr/m/n/10 tunnuslukuihin, joista keskeisimpiä ovat \TU/lmr/bx/n/10 odotusarvo\TU/lmr/m/n/10 , \TU/lmr/bx/n/10 varianssi \TU/lmr/m/n/10 ja
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1883
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1883
+
+ []
+
+[54]
+File: images/normpdf.jpg Graphic file (type bmp)
+<images/normpdf.jpg>
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1977--1979
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1977--1979
+
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 2012--2014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2012--2014
+
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 2023--2025
+[]\TU/lmr/m/n/10 Olkoon $[][][] [] [] [][]$ riippumattomia satunnaismuuttujia ja $[][] \U/msb/m/n/10 s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2052
+[]\TU/lmr/m/n/10 |Miesten lkm. ($[]$)|0|1|2|3|4|5|6|7|8|9|10|11|12| |Perheiden lkm.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2059--2061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2059--2061
+
+ []
+
+[57]
+Underfull \hbox (badness 1755) in paragraph at lines 2073--2074
+[]\TU/lmr/m/n/10 Odotusarvo ja varianssi ovat Poisson-jakauman tapauksessa samat:
+ []
+
+
+Underfull \vbox (badness 2253) has occurred while \output is active []
+
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[59] [60]
+Overfull \hbox (4.48442pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.6.  SATTUMAN ROOLI TIETEENTEOSSA: VALE-EMÄVALE-TILASTO? \TU/lmr/m/n/10 61
+ []
+
+[61] [62
+
+]
+Luku 5.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[63]
+Overfull \hbox (10.9101pt too wide) in alignment at lines 2184--2188
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (10.9101pt too wide) in alignment at lines 2188--2194
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2206--2208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2208--2210
+
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 2210--2212
+\TU/lmr/m/n/10 Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2210--2212
+
+ []
+
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 64 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 2216--2217
+
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 2233--2235
+[]\TU/lmr/m/n/10 Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 2233--2235
+\TU/lmr/m/n/10 aikuisväestön mielipiteistä, havaintoyksikköinä ovat aikuis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2246--2247
+
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 2286--2287
+
+ []
+
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 66 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 2304--2305
+
+ []
+
+[67]
+
+LaTeX Warning: Reference `@' on page 68 undefined on input line 2396.
+
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 68 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[68]
 File: images/otanta.jpg Graphic file (type bmp)
 <images/otanta.jpg>
+[69]
 File: images/tuloerot.jpg Graphic file (type bmp)
 <images/tuloerot.jpg>
-[17]
 
-LaTeX Warning: Reference `luku6' on page 18 undefined on input line 1188.
+Underfull \hbox (badness 1728) in paragraph at lines 2482--2482
+[]\TU/lmr/bx/n/14.4 Tilastollisten muuttujien mittaaminen ja
+ []
 
-[18]
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 70 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[70]
+Overfull \hbox (30.71223pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 5.3.  TILASTOLLISTEN MUUTTUJIEN MITTAAMINEN JA MITTA-ASTEIKOT \TU/lmr/m/n/10 71
+ []
+
+[71]
 File: images/luottamus.jpg Graphic file (type bmp)
 <images/luottamus.jpg>
 
-Underfull \hbox (badness 1769) in paragraph at lines 1258--1260
-[]\TU/lmr/m/n/10 Annettiin C-vitamiinia 100 terminaalivaiheen syöpäpotilaalle ja seurattiin kuolleisuutta
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 72 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 1296--1299
+[72]
+Underfull \hbox (badness 10000) in paragraph at lines 2638--2641
 
  []
 
-[20]
 
-LaTeX Warning: Reference `luku10' on page 21 undefined on input line 1372.
-
-
-Underfull \hbox (badness 4279) in paragraph at lines 1402--1404
-[]\TU/lmr/m/n/10 Näistä tutkimusasetelmista kontrolloidut kokeet ovat tietenkin ihanteellisempia tutkimuksen
+Overfull \hbox (30.71223pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 5.3.  TILASTOLLISTEN MUUTTUJIEN MITTAAMINEN JA MITTA-ASTEIKOT \TU/lmr/m/n/10 73
  []
 
-[21]
-
-LaTeX Warning: Reference `luku7' on page 22 undefined on input line 1424.
-
-[22]
-
-LaTeX Warning: Reference `luku6' on page 23 undefined on input line 1480.
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 1480--1481
-[]\TU/lmr/m/n/10 Tilastollisen päättelyn avulla voidaan muodostaa esimerkiksi jakaumien ja tilastollisten
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 2657--2658
+[]\TU/lmr/bx/n/10 Laatueroasteikko/luokitteluasteikko \TU/lmr/m/n/10 (nominaaliasteikko):
  []
 
-[23]
 
-LaTeX Warning: Reference `alaluku66' on page 24 undefined on input line 1602.
+Underfull \hbox (badness 1122) in paragraph at lines 2686--2688
+\TU/lmr/m/n/10 kien tai havaintoarvojen ero. Esimerkiksi: Lämpötilan mit-
+ []
 
-[24]
+
+Underfull \hbox (badness 6775) in paragraph at lines 2686--2688
+\TU/lmr/m/n/10 taaminen esim. celcius-asteina. Pystymme numeroarvoina
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 2686--2688
+\TU/lmr/m/n/10 ilmoittamaan onko tänään lämpimämpi, yhtä lämmin vai
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 2690--2692
+\TU/lmr/m/n/10 valittavissa. Samoin voidaan valita käytettävä mittayksik-
+ []
+
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 74 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[74] [75]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 76 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[76]
+Underfull \hbox (badness 2486) in paragraph at lines 2810--2811
+[]\TU/lmr/m/n/10 Satunnaistaminen poistaa otannasta valikoitumisharhan, sillä
+ []
+
+[77]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 78 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[78] [79]
+Underfull \hbox (badness 1132) in paragraph at lines 2948--2948
+[][][]\TU/lmr/m/n/8 Satunnaislukujen generointia käsitellään ja opetellaan mm. R-kurssilla ja kurssilla
+ []
+
+
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 80 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[80]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 1678.
+(amsmath)                 on input line 3020.
 
-[25] [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1839--1841
+[81]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 82 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[82] [83]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 84 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 3181--3183
+
+ []
+
+[85]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 86 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 3273--3275
 
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 1866--1868
-[]\TU/lmr/m/n/10 Poimitaan oppilaitoksen opiskelijoista otos arpomalla ensin otos luokkahuoneista
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 1931--1933
+Underfull \hbox (badness 10000) in paragraph at lines 3273--3275
 
  []
 
+[87]
+Overfull \hbox (57.11224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 88 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 1931--1933
+[88]
+Luku 6.
+[89
+
+]
+Underfull \hbox (badness 1430) in paragraph at lines 3351--3352
+[]\TU/lmr/m/n/10 Olkoot $[][][] [] [] [][]$ riippumattomia ja samoinjakautuneita satunnais-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3357--3359
 
  []
 
-[29] [30] (./_main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 3357--3359
+
+ []
+
+
+Overfull \hbox (83.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 90 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[90] [91]
+Underfull \hbox (badness 10000) in paragraph at lines 3500--3502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3500--3502
+
+ []
+
+
+Overfull \hbox (83.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 92 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[92]
+File: images/unbiased.jpg Graphic file (type bmp)
+<images/unbiased.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[93]
+Underfull \hbox (badness 7081) in paragraph at lines 3567--3568
+[]\TU/lmr/m/n/10 Estimaattoreiden kehittäminen erilaisten tilastollisten mallien
+ []
+
+
+Overfull \hbox (83.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 94 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[94] [95]
+Underfull \hbox (badness 10000) in paragraph at lines 3685--3689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3685--3689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3685--3689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3685--3689
+
+ []
+
+
+Overfull \hbox (83.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 96 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[96] [97]
+Underfull \hbox (badness 10000) in paragraph at lines 3814--3815
+[]\TU/lmr/m/n/10 Suhteellisen frekvenssin otosjakauman perusteella kyllä-
+ []
+
+
+Overfull \hbox (83.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 98 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[98] [99]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 100 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[100] [101]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 102 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[102]
+File: images/gaussian-distribution.jpg Graphic file (type bmp)
+<images/gaussian-distribution.jpg>
+
+Overfull \hbox (56.51125pt too wide) in paragraph at lines 4043--4044
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4050--4052
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4050--4052
+
+ []
+
+[103]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 104 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[104]
+File: images/NjaT-jakauma.jpg Graphic file (type bmp)
+<images/NjaT-jakauma.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4086--4088
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4086--4088
+
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 4104--4108
+[]\TU/lmr/m/n/10 Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien perusteella
+ []
+
+[105]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 106 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[106]
+Luku 7.
+[107
+
+]
+Underfull \hbox (badness 4013) in paragraph at lines 4196--4198
+\TU/lmr/m/n/10 takin lainalaisuuksia. Esimerkkejä tällaisista ovat riskin ja
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 4196--4198
+\TU/lmr/m/n/10 tuoton välinen suhde osakesijoittamisessa, hajauttaminen pie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4196--4198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4198--4200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4200--4202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4202--4204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4204--4206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4211--4213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4211--4213
+
+ []
+
+[108]
+Underfull \hbox (badness 1237) in paragraph at lines 4261--4261
+[]\TU/lmr/bx/n/14.4 Kahden muuttujan havaintoaineiston ku-
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 4265--4267
+[]\TU/lmr/m/n/10 Kuten yhden muuttujan havaintoaineistojen tapauksessa, lähtökoh-
+ []
+
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 4288--4290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4288--4290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4309--4311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4309--4311
+
+ []
+
+[110]
+File: images/Isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
+<images/Isien-poikien-pituudet-Mellin.jpg>
+[111]
+Underfull \hbox (badness 10000) in paragraph at lines 4381--4383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4381--4383
+
+ []
+
+[112]
+Underfull \hbox (badness 1210) in paragraph at lines 4404--4406
+[]\TU/lmr/m/n/10 Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4410--4412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4410--4412
+
+ []
+
+
+Overfull \hbox (20.80406pt too wide) detected at line 4439
+[][] [] [][][][] [] [][][][][] [] [][][][] [] [][][][][][] [][] [] [][][][] [] [][][][][] [] [][][][] [] [][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4442--4443
+
+ []
+
+[113]
+Underfull \hbox (badness 2932) in paragraph at lines 4491--4493
+\TU/lmr/m/n/10 jossa $[][]$ on $[]$- ja $[]$-havaintoarvojen otoskovarianssi, $[][]$ on $[]$-
+ []
+
+[114]
+File: images/Pearson-korr-Mellin.jpg Graphic file (type bmp)
+<images/Pearson-korr-Mellin.jpg>
+
+Overfull \hbox (573.75pt too wide) in paragraph at lines 4572--4572
+[]\TU/lmtt/m/n/10 ## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4575--4577
+
+ []
+
+[115]
+File: images/causality.jpg Graphic file (type bmp)
+<images/causality.jpg>
+File: images/causality2.jpg Graphic file (type bmp)
+<images/causality2.jpg>
+File: images/simpson.jpg Graphic file (type bmp)
+<images/simpson.jpg>
+
+Underfull \hbox (badness 1014) in paragraph at lines 4652--4659
+\TU/lmr/m/n/10 vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4652--4659
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4652--4659
+
+ []
+
+[116] [117]
+Underfull \hbox (badness 10000) in paragraph at lines 4677--4679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4677--4679
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[118] [119] [120
+
+]
+Luku 8.
+[121]
+Underfull \hbox (badness 6575) in paragraph at lines 4760--4761
+[]\TU/lmr/m/n/10 Epälineaariset regressiomallit muodostavat oman tilastollisten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4764--4766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4764--4766
+
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 4770--4771
+[]\TU/lmr/m/n/10 Regressiomalleja käytetään apuvälineinä monilla tilastotieteen osa-
+ []
+
+[122] [123]
+Underfull \hbox (badness 10000) in paragraph at lines 4884--4886
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4884--4886
+
+ []
+
+[124]
+Underfull \hbox (badness 1320) in paragraph at lines 4973--4974
+\TU/lmr/m/n/10 tässä vaiheessa), että selittävän muuttujan arvojen satunnaisuus ei
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4984--4986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4984--4986
+
+ []
+
+[125]
+Overfull \hbox (4.9154pt too wide) detected at line 5041
+[] [] [][] [][][][] [] [][] [] [][][][][] [] [][] [] [] [][] [][][][] [] [][] [] [][][][][][][] [] [][]
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 5041--5043
+\TU/lmr/m/n/10 regressiokertoimien $[][]$ ja $[][]$ pienimmän neliösumman (PNS-) estimaat-
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 5041--5043
+\TU/lmr/m/n/10 toreihin (ja lopulta käytännössä analysoitavasta aineistosta laskettaviin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5069--5071
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5069--5071
+
+ []
+
+[126]
+Underfull \hbox (badness 10000) in paragraph at lines 5131--5133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5131--5133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5158--5160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5158--5160
+
+ []
+
+[127]
+Underfull \hbox (badness 10000) in paragraph at lines 5179--5181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5179--5181
+
+ []
+
+File: images/Sovite-isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
+<images/Sovite-isien-poikien-pituudet-Mellin.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 5204--5206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5204--5206
+
+ []
+
+
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+[128] [129] [130]
+Luku 9.
+[131
+
+]
+Underfull \hbox (badness 4927) in paragraph at lines 5269--5271
+\TU/lmr/m/n/10 vaatii substanssiosaamisen lisäksi menetelmäosaamista sekä hyvää
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 5305--5306
+\TU/lmr/m/n/10 nk. dimension pienennyksen alalla. Nämä menetelmät pyrkivät
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 5305--5306
+\TU/lmr/m/n/10 eli aineistosta jossa jokaiselta tutkimusyksiköltä mitataan jopa
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 5305--5306
+\TU/lmr/m/n/10 miljoonia eri muuttujia, kuten DNA-tutkimuksessa genomitie-
+ []
+
+
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 132 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[132]
+Underfull \hbox (badness 10000) in paragraph at lines 5315--5317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5337--5338
+
+ []
+
+[133]
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 134 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[134] [135]
+Underfull \hbox (badness 10000) in paragraph at lines 5524--5526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5524--5526
+
+ []
+
+
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 136 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[136]
+Underfull \hbox (badness 1533) in paragraph at lines 5590--5591
+[]\TU/lmr/m/n/10 Kyselytutkimusten suunnittelussa, toteutuksessa ja tulosten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5595--5597
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5595--5597
+
+ []
+
+[137]
+Underfull \hbox (badness 4995) in paragraph at lines 5641--5642
+[]\TU/lmr/m/n/10 Rasituskokeen kohteiden poiminta kaikkien valmistettujen
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 5641--5642
+\TU/lmr/m/n/10 sulkimien muodostamasta perusjoukosta arpomalla merkit-
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 5641--5642
+\TU/lmr/m/n/10 poimittua perusjoukon osa toimii muodostettavana (satun-
+ []
+
+
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 138 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[138]
+Luku 10.
+File: images/tutkimusasetelma.jpg Graphic file (type bmp)
+<images/tutkimusasetelma.jpg>
+[139
+
+] [140]
+Underfull \hbox (badness 10000) in paragraph at lines 5735--5737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5735--5737
+
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 5759--5761
+[]\TU/lmr/bx/n/10 Korrelaatiotutkimuksissa \TU/lmr/m/n/10 pyritään löytämään ilmiöiden vä-
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 5759--5761
+\TU/lmr/m/n/10 lisiä yhteyksiä tutkimalla kohdejoukkoa kokonaisuutena, jolloin
+ []
+
+[141]
+File: images/co2.jpg Graphic file (type bmp)
+<images/co2.jpg>
+
+Underfull \hbox (badness 2111) in paragraph at lines 5893--5895
+[]\TU/lmr/m/n/10 Tällöin mahdolliset erot parantuneiden suhteellisissa
+ []
+
+[142] [143]
+Underfull \hbox (badness 10000) in paragraph at lines 5928--5930
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5928--5930
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[144]
+Underfull \hbox (badness 1436) in paragraph at lines 5983--5984
+[]\TU/lmr/bx/n/10 Esimerkki: raskauden keskeytyksen ja rintasyövän välinen
+ []
+
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+[145]
+Underfull \hbox (badness 10000) in paragraph at lines 5999--6001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5999--6001
+
+ []
+
+[146]
+File: images/cross.jpg Graphic file (type bmp)
+<images/cross.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6076--6078
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6076--6078
+
+ []
+
+[147]
+File: images/long.jpg Graphic file (type bmp)
+<images/long.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6121--6123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6121--6123
+
+ []
+
+[148] [149]
+Underfull \hbox (badness 10000) in paragraph at lines 6158--6160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6158--6160
+
+ []
+
+[150]
+File: images/hiroshima.jpg Graphic file (type bmp)
+<images/hiroshima.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6218--6220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6218--6220
+
+ []
+
+[151]
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
+[152]
+File: images/tali.jpg Graphic file (type bmp)
+<images/tali.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6284--6286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6284--6286
+
+ []
+
+[153]
+File: images/block.jpg Graphic file (type bmp)
+<images/block.jpg>
+
+Underfull \hbox (badness 2707) in paragraph at lines 6328--6330
+[]\TU/lmr/m/n/10 Kolmoissokkoutetussa tutkimuksessa edes havaintojen analysoi-
+ []
+
+
+Underfull \vbox (badness 1377) has occurred while \output is active []
+
+[154] [155] [156] [157]
+Underfull \hbox (badness 10000) in paragraph at lines 6522--6523
+
+ []
+
+File: images/diab.jpg Graphic file (type bmp)
+<images/diab.jpg>
+[158]
+File: images/rekist.jpg Graphic file (type bmp)
+<images/rekist.jpg>
+[159] [160]
+File: images/kuluttaja.jpg Graphic file (type bmp)
+<images/kuluttaja.jpg>
+[161] [162]
+File: images/time.jpg Graphic file (type bmp)
+<images/time.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6718--6720
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6718--6720
+
+ []
+
+[163]
+Underfull \hbox (badness 2635) in paragraph at lines 6740--6741
+\TU/lmr/m/n/10 kuukausittain tai vuosittain, ja yksittäisen ajanhetken
+ []
+
+[164]
+File: images/survey.jpg Graphic file (type bmp)
+<images/survey.jpg>
+File: images/survey2.jpg Graphic file (type bmp)
+<images/survey2.jpg>
+File: images/survey3.jpg Graphic file (type bmp)
+<images/survey3.jpg>
+[165] [166] [167] [168
+
+]
+Luku 11.
+[169]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[170]
+Underfull \hbox (badness 1552) in paragraph at lines 6911--6912
+[]\TU/lmr/m/n/10 Pörssikurssien voimakas lasku, Lehman Brothersin kaltaisia aikoi-
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 6911--6912
+\TU/lmr/m/n/10 naan arvostettuja yhtiöitä meni vararikkoon, luottomarkkinat oli-
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 6911--6912
+\TU/lmr/m/n/10 vat käytännössä “jäätyneet”, Las Vegasissa asuntojen hinnat las-
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 6911--6912
+\TU/lmr/m/n/10 kivat 40 prosenttia (osoittaen osaltaan vallinnutta laajempaakin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6913--6914
+
+ []
+
+[171] [172]
+Underfull \hbox (badness 10000) in paragraph at lines 6943--6945
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6943--6945
+
+ []
+
+[173] [174]
+Luku 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6984--6986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6984--6986
+
+ []
+
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+[175
+
+]
+No file _main.bbl.
+[176] (./_main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: 7BB292D417A17530B92BF9DB2CF5CA17;3610.
+(rerunfilecheck)             Checksum: D48A617F555B96904EC708D0659D00A8;14475.
  ) 
 Here is how much of TeX's memory you used:
- 36152 strings out of 477847
- 742632 string characters out of 5844844
- 1221043 words of memory out of 5000000
- 56512 multiletter control sequences out of 15000+600000
- 474773 words of font info for 78 fonts, out of 8000000 for 9000
+ 37928 strings out of 477829
+ 781646 string characters out of 5843767
+ 1263563 words of memory out of 5000000
+ 58189 multiletter control sequences out of 15000+600000
+ 502001 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,9n,121p,896b,1024s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,11n,121p,1300b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on _main.pdf (30 pages).
+Output written on _main.pdf (176 pages).

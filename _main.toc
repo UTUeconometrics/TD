@@ -1,21 +1,73 @@
-\contentsline {section}{\numberline {1}Sattuma ja satunnaisuus}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Satunnaisilmiöt ja satunnaismuuttujat tilastotieteessä}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Tilastotieteen suhde satunnaisuuteen ja todennäköisyyksiin}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Tilastolliset mallit, jakaumat ja parametrit}{5}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Odotusarvo ja varianssi}{8}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Joitain jakaumia}{8}{subsection.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.1}Normaalijakauma}{9}{subsubsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.2}Bernoulli-, binomi- ja Poisson-jakauma}{10}{subsubsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.6}Sattuman rooli tieteenteossa: Vale-emävale-tilasto?}{12}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Tilastolliset aineistot, niiden kerääminen ja mittaaminen}{13}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Kertausta: Data eli aineisto}{13}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Otannan idea}{16}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Tilastollisten muuttujien mittaaminen ja mitta-asteikot}{18}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Kontrolloidut kokeet ja suorat havainnot}{21}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Otantamenetelmät}{23}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Yksinkertainen satunnaisotanta}{24}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Systemaattinen otanta}{26}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}Ositettu otanta}{27}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}Ryväsotanta}{27}{subsubsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.6}Otantaesimerkkejä}{29}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Otannan haasteita vielä kootusti}{30}{subsection.2.7}%
+\babel@toc {finnish}{}\relax 
+\contentsline {chapter}{Kurssin rakenne}{7}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Johdantoa ja johdattelua tilastotieteeseen}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tilastotiede ja kurssin idea}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Tilastotieteen asema tutkimusyhteisön ulkopuolella}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Kurssin luonne tilastotieteen (ja datatieteen/data-analytiikan) opintojen esittelijänä}{12}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Mitä on tiede?}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Tieteellinen menetelmä}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tilastojen yleisestä roolista yhteiskunnassa}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Mitä on tutkimus?}{23}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Tieteellisen tutkimuksen vaiheet ja tulosten julkaiseminen}{25}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Tilastotiede tieteenalana}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lisää tilastotieteen perustermejä}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Mitä tilastotiede on ja mitä se ei ole?}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tilastotieteen suhde matematiikkaan, tietojenkäsittelytieteeseen ja datatieteeseen (data science)}{33}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Tilastotieteen osa-alueet}{36}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Sattuma ja satunnaisuus}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Satunnaisilmiöt ja satunnaismuuttujat tilastotieteessä}{46}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tilastotieteen suhde satunnaisuuteen ja todennäköisyyksiin}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tilastolliset mallit, jakaumat ja parametrit}{51}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Odotusarvo ja varianssi}{54}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Joitain jakaumia}{55}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Normaalijakauma}{55}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Bernoulli-, binomi- ja Poisson-jakauma}{56}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Sattuman rooli tieteenteossa: Vale-emävale-tilasto?}{60}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Tilastolliset aineistot, niiden kerääminen ja mittaaminen}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kertausta: Data eli aineisto}{64}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Otannan idea}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Tilastollisten muuttujien mittaaminen ja mitta-asteikot}{70}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Kontrolloidut kokeet ja suorat havainnot}{75}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Otantamenetelmät}{78}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Yksinkertainen satunnaisotanta}{79}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Systemaattinen otanta}{83}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Ositettu otanta}{84}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Ryväsotanta}{84}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Otantaesimerkkejä}{86}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Otannan haasteita vielä kootusti}{87}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma}{89}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Satunnaisotos, yhteisjakauma ja tilastollinen malli}{89}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Otosjakauma: Estimaattori ja estimaatti}{91}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Otoskeskiarvo ja otosvarianssi (estimaattoreinta)}{94}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Suhteellisen frekvenssin otosjakauma}{97}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Muita tunnuslukuja}{99}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Luottamusvälit}{100}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Otoskoko}{106}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Tilastollinen riippuvuus ja korrelaatio}{107}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Muuttujien väliset riippuvuudet tilastollisen tutkimuksen kohteena}{107}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Kahden muuttujan havaintoaineiston kuvaaminen}{109}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Tunnusluvut}{111}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Satunnaismuuttujien kovarianssi ja korrelaatio}{113}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Regressioanalyysi}{121}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Johdatus regressioanalyysin ideaan}{121}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Yhden selittäjän lineaarinen regressiomalli}{123}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Muita regressiomalleja}{130}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Tilastotieteen rooli uuden tiedon tuottamisessa}{131}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Tilastollisen tutkimuksen yhteisiä elementtejä}{131}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Tutkimusprosessi}{134}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Aineisto- ja tutkimustyypit ja koeasetelmat}{139}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Tutkimustyypit}{140}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Tutkimusstrategiat}{146}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}\textbf {Poikittaistutkimus} tai \textbf {poikkileikkaustutkimus}}{147}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}\textbf {Pitkittäistutkimus}}{148}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}\textbf {Kohorttitutkimus}}{150}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}\textbf {Tapaus-verrokkitutkimus}}{151}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}Erilaisia aineistoja ja aineistolähteitä}{155}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Rekisteriaineistot}{155}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Aikasarjat ja paneeliaineistot}{159}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Survey- eli haastattelu- tai kyselytutkimus}{164}{subsection.10.3.3}%
+\contentsline {chapter}{\numberline {11}Tilastollisesta ennustamisesta}{169}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Tilastollinen selittäminen vs.~ennustaminen}{169}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Tilastolliseen ennustamiseen liittyviä huomioita}{171}{section.11.2}%
+\contentsline {chapter}{\numberline {12}Tilastotieteen kehityksen nykytrendejä}{175}{chapter.12}%

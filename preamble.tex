@@ -14,28 +14,74 @@
 \setlength{\fboxsep}{.8em}
 \usepackage[most]{tcolorbox}
 \usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[finnish]{babel}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{overpic}
+\usepackage{lmodern}
+\usepackage{epsfig}
 
 \usepackage{xstring}     % Used for \IfEqCase
 
-
+\newcommand{\indep}{\perp \!\!\! \perp}
 
 \definecolor{myboxcolor}{named}{blue} % Default box color
 
-
+\definecolor{my-purple}{RGB}{138, 43, 226}
 \newtcolorbox{defblock}[1]{%
     breakable,
     enhanced,
-    colback=myboxcolor!10!purple,      % Box color is used here
+    coltext=white,
+    colback=my-purple,      % Box color is used here
+    colframe=myboxcolor!25!black,     % Box color is used here
+    title=\textbf{#1}        % Box title is used here 
+}
+
+
+\definecolor{my-orange}{RGB}{255, 140, 0}
+\newtcolorbox{eblock}[1]{%
+    breakable,
+    enhanced,
+    colback=my-orange,      % Box color is used here
     colframe=myboxcolor!25!black,     % Box color is used here
     coltitle=black,
     title=\textbf{#1}        % Box title is used here 
 }
 
-\newtcolorbox{eblock}[1]{%
-    breakable,
-    enhanced,
-    colback=myboxcolor!10!orange,      % Box color is used here
-    colframe=myboxcolor!25!black,     % Box color is used here
-    coltitle=black,
-    title=\textbf{#1}        % Box title is used here 
-}
+
+
+\newcommand{\Rspace}{\mathcal{R}}
+
+\newcommand{\N}{\mathsf{N}}
+\newcommand{\Cov}{\mathsf{Cov}}
+
+\newcommand{\Prob}{\mathsf{P}}
+
+\newcommand{\X}{\textbf{X}} 
+\newcommand{\Y}{\textbf{Y}} 
+\newcommand{\x}{\textbf{x}}                                   
+\newcommand{\y}{\textbf{y}}  
+\newcommand{\boldc}{\textbf{c}} 
+\newcommand{\boldd}{\textbf{d}}  
+\newcommand{\bolda}{\textbf{a}}  
+\newcommand{\THETA}{\mx{\theta}}
+\newcommand{\PHI}{\mx{\phi}}                                   
+\newcommand{\VAREPSILON}{\mx{\varepsilon}}                                   
+\newcommand{\hatVAREPSILON}{\mx{\hat{\VAREPSILON}}}
+\newcommand{\boldP}{\textbf{P}}
+\newcommand{\boldM}{\textbf{M}}
+\newcommand{\z}{\mx{z}}
+\newcommand{\A}{\textbf{A}}
+\newcommand{\C}{\textbf{C}}
+\newcommand{\hatMU}{\mx{\hat{\mu}}}
+\newcommand{\SIGMA}{\mx{\Sigma}}
+\newcommand{\ZERO}{\mx{0}}
+\newcommand{\ONE}{\mx{1}}
+\newcommand{\diag}{\textbf{I}}
+
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+\newcommand{\rd}[1]{\textcolor{red}{#1}}
+\newcommand{\gr}[1]{\textcolor{darkgreenx}{#1}}

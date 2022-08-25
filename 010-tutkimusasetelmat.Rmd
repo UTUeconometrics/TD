@@ -63,11 +63,11 @@ Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tu
 - Hiilidioksidipitoisuuden kasvu tehostaa kasvien yhteyttämistä
 - Kasvit eroavat toisistaan siinä, millä tavalla ne sitovat hiilidioksidia ilmasta yhteyttämistä varten $\rightarrow$ muutokset vaikuttavat eri tavalla eri kasveihin
 - Vaikuttaako ilmastonmuutos sadonmuodostukseen? Onko vaikutus suurempi joillain tietyillä kasveilla?
+:::
 
 ```{r co2, echo=FALSE, fig.cap="Hiilidioksidipitoisuuden kasvun vaikutus satomääriin.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/co2.jpg")
 ```
-:::
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Lääketieteelliset kokeet**  
@@ -109,7 +109,7 @@ knitr::include_graphics("images/co2.jpg")
     - Sopii sekä määrällisen että laadullisen aineiston hankkimiseen.
     - Erinomainen menetelmä muun muassa vuorovaikutuksen tutkimisessa, ja silloin kun tilanteet ovat vaikeasti ennakoitavia ja nopeasti muuttuvia.
     - Sopii myös silloin, kun tutkittavilla on kielellisiä vaikeuksia (kuten lapset) tai kun halutaan saada selville sellaista tietoa, jota tutkittavat eivät halua suoraan kertoa tutkijalle.
-  - __Havainnoivan tutkimuksen haitat}
+  - __Havainnoivan tutkimuksen haitat__
     - tutkija saattaa häiritä tilannetta tai muuttaa sen kulkua.
     - Tutkija saattaa sitoutua emotionaalisesti tutkittavaan ryhmään tai tilanteeseen.
 
@@ -141,17 +141,18 @@ Erilaiset tutkimusasetelmat voidaan jakaa edelleen kahteen __tutkimusstrategiaan
 
 Eri tutkimusstrategiat hyödyntävät eri aineistotyyppejä sen mukaan, miten ne sopivat tutkimuskysymykseen ja valittuun menetelmään. Tarkastellaan seuraavaksi mitä em. kaksi tutkimusttrategiaa tarkoittavat, miten ne eroavat ja minkälaisia tutkimustyyppejä-, asetelmia- ja aineistoja kumpaankin kuuluu.
 
-### __Poikittaistutkimukseksi__ tai __poikkileikkaustutkimukseksi__ kutsutaan tutkimusstrategiaa, jossa tarkoituksena on tutkia kohdetta tai ilmiötä laaja-alaisesti tiettynä ajankohtana käyttäen poikkileikkausaineistoja.
-- Voidaan tarkastella useita ryhmiä, joissa on esimerkiksi eri-ikäisiä henkilöitä ja ryhmistä saatua tietoa vertaillaan toisiinsa.
-- Voidaan käyttää kuvailemaan riskisuhteita (odds ratio) tai kuvailemaan tiettyyn populaation osaan kohdistuvaa ilmiötä tai riskiä (esimerkiksi sydän- ja verisuonitaudit).
-  - Esimerkiksi tutkittaessa sydän- ja verisuonitauteja binäärisellä vastemuuttujalla käyttäen aineistoa, joka koostuu eri ikäisistä ja kuntoisista ihmisistä voidaan arvioida iän ja muiden muuttujien vaikutuksia sydän- ja verisuonitauteihin sairastumisen riskitekijöinä.
-- Poikittaistutkimuksessa ei saada tietoa tilastoyksikön mielenkiinnon kohteena olevien muuttujien arvojen muutoksesta yli ajan mutta tutkimuksessa voidaan kuitenkin kerätä tietoa menneisyyteen liittyen. 
-- Eri ikäryhmiä vertailtaessa ongelmana on myös niin sanottu kohorttivaikutus: tiettynä aikana syntyneiden, eli tietyn kohortin, elinolosuhteet saattavat olla täysin erilaiset kuin jonakin toisena aikana syntyneiden, minkä vuoksi ikäryhmien väliset erot saattavat johtua esimerkiksi yhteiskunnallisista olosuhteista.
-- Poikittaistutkimukseen osallistutaan vain yhden kerran, jolloin tietoa saadaan kerralla paljon.
-  - Tämä on kuitenkin usein työlästä ja suuren poikkileikkausaineston kerääminen voi olla kallista.
-  - Poikittaistutkimuksessa hyödynnetäänkin usein rutiinitoimenpiteinä kerättyjä aineistoja (esimerkiksi tietyn ikävuoden terveystarkastuksista)
-  - Näin voidaan selvittää korrelaatioita ilmiöiden välillä (esimerkiksi alkoholin käyttö ja maksakirroosi) ja siten luoda hypoteeseja tarkemmille jatkotutkimuksille
-  - Tällöin on kuitenkin taas vaara sekoittavista tekijöistä, jos aineistoa ei ole kerätty varta vasten tätä tarkoitusta varten
+### __Poikittaistutkimus__ tai __poikkileikkaustutkimus__ 
+- Poikittaistutkimukseksi kutsutaan tutkimusstrategiaa, jossa tarkoituksena on tutkia kohdetta tai ilmiötä laaja-alaisesti tiettynä ajankohtana käyttäen poikkileikkausaineistoja.
+  - Voidaan tarkastella useita ryhmiä, joissa on esimerkiksi eri-ikäisiä henkilöitä ja ryhmistä saatua tietoa vertaillaan toisiinsa.
+  - Voidaan käyttää kuvailemaan riskisuhteita (odds ratio) tai kuvailemaan tiettyyn populaation osaan kohdistuvaa ilmiötä tai riskiä (esimerkiksi sydän- ja verisuonitaudit).
+    - Esimerkiksi tutkittaessa sydän- ja verisuonitauteja binäärisellä vastemuuttujalla käyttäen aineistoa, joka koostuu eri ikäisistä ja kuntoisista ihmisistä voidaan arvioida iän ja muiden muuttujien vaikutuksia sydän- ja verisuonitauteihin sairastumisen riskitekijöinä.
+  - Poikittaistutkimuksessa ei saada tietoa tilastoyksikön mielenkiinnon kohteena olevien muuttujien arvojen muutoksesta yli ajan mutta tutkimuksessa voidaan kuitenkin kerätä tietoa menneisyyteen liittyen. 
+  - Eri ikäryhmiä vertailtaessa ongelmana on myös niin sanottu kohorttivaikutus: tiettynä aikana syntyneiden, eli tietyn kohortin, elinolosuhteet saattavat olla täysin erilaiset kuin jonakin toisena aikana syntyneiden, minkä vuoksi ikäryhmien väliset erot saattavat johtua esimerkiksi yhteiskunnallisista olosuhteista.
+  - Poikittaistutkimukseen osallistutaan vain yhden kerran, jolloin tietoa saadaan kerralla paljon.
+    - Tämä on kuitenkin usein työlästä ja suuren poikkileikkausaineston kerääminen voi olla kallista.
+    - Poikittaistutkimuksessa hyödynnetäänkin usein rutiinitoimenpiteinä kerättyjä aineistoja (esimerkiksi tietyn ikävuoden terveystarkastuksista)
+    - Näin voidaan selvittää korrelaatioita ilmiöiden välillä (esimerkiksi alkoholin käyttö ja maksakirroosi) ja siten luoda hypoteeseja tarkemmille jatkotutkimuksille
+    - Tällöin on kuitenkin taas vaara sekoittavista tekijöistä, jos aineistoa ei ole kerätty varta vasten tätä tarkoitusta varten
 
 ```{r cross, echo=FALSE, fig.cap="Esimerkki poikkileikkaustutkimuksesta", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/cross.jpg")
@@ -160,13 +161,14 @@ knitr::include_graphics("images/cross.jpg")
 \
 \
 
-### __Pitkittäistutkimuksessa__ seurataan usein samoja tilastoyksiköitä "yli ajan", eli mittauspisteitä on useita ja pitkältä aikaväliltä.
-- Pitkittäistutkimuksessa hyödynnetään niin aikasarja- kuin paneeliaineistojakin.
-- Yleinen tutkimuskysymys pitkittäistutkimuksessa on jonkin __käsittelyn vaikutuksen arviointi__. Tällaisia ovat esimerkiksi lääkeainetutkimus, poliittisten päätösten arviointi tai markkinointitutkimus.
-  - Pitkittäistutkimuksessa voidaan siis tarkastella __muutosta__ mutta on tärkeä muistaa, että pitkittäistutkimuksen eri mittauskerrat eivät ole toisistaan __riippumattomia__ ja tämä tulee ottaa tilastollisessa mallissa huomioon!
-- Pitkittäistutkimuksen hyvänä puolena on __ryhmien homogeenisyys__
-  - Tutkittavan ryhmän henkilöt ovat eläneet saman historiallisen ajan sekä käyneet läpi samat yhteiskunnalliset muutokset, jolloin muutoksen tutkiminen on luotettavaa, sillä tutkimusta vääristävät tilastoyksiköiden ominaisuuksista erilliset ympäristön haittamuuttujat ovat kaikille samat.
-  - Pitkittäistutkimuksen pitkän keston vuoksi tutkittavien määrää kuitenkin yleensä vähenee ja tutkimuksen valmistumisessa kestää kauan, jopa vuosikymmeniä.
+### __Pitkittäistutkimus__ 
+- Pitkttäistutkimuksessa seurataan usein samoja tilastoyksiköitä "yli ajan", eli mittauspisteitä on useita ja pitkältä aikaväliltä.
+  - Hyödyntää niin aikasarja- kuin paneeliaineistojakin.
+  - Yleinen tutkimuskysymys pitkittäistutkimuksessa on jonkin __käsittelyn vaikutuksen arviointi__. Tällaisia ovat esimerkiksi lääkeainetutkimus, poliittisten päätösten arviointi tai markkinointitutkimus.
+    - Pitkittäistutkimuksessa voidaan siis tarkastella __muutosta__ mutta on tärkeä muistaa, että pitkittäistutkimuksen eri mittauskerrat eivät ole toisistaan __riippumattomia__ ja tämä tulee ottaa tilastollisessa mallissa huomioon!
+  - Pitkittäistutkimuksen hyvänä puolena on __ryhmien homogeenisyys__
+    - Tutkittavan ryhmän henkilöt ovat eläneet saman historiallisen ajan sekä käyneet läpi samat yhteiskunnalliset muutokset, jolloin muutoksen tutkiminen on luotettavaa, sillä tutkimusta vääristävät tilastoyksiköiden ominaisuuksista erilliset ympäristön haittamuuttujat ovat kaikille samat.
+    - Pitkittäistutkimuksen pitkän keston vuoksi tutkittavien määrää kuitenkin yleensä vähenee ja tutkimuksen valmistumisessa kestää kauan, jopa vuosikymmeniä.
 
 ```{r long, echo=FALSE, fig.cap="Esimerkki pitkittäistutkimuksesta", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/long.jpg")
@@ -191,53 +193,56 @@ knitr::include_graphics("images/long.jpg")
 \
 \
 
-### __Kohorttitutkimus__ on altistelähtöinen tapa toteuttaa pitkittäistutkimus.
-- Kohortti on suljettu väestö (syntymäkohortti, tietyn työpaikan työntekijät, yms.), jota tutkimuksessa seurataan ja joka on valittu jonkin yhteisen ominaisuuden perusteella (syntymävuosi, työpaikka, yms.).
-  - Kohortti voidaan jakaa myös alakohortteihin, mikäli se on alkujaankin riittävän suuri.
-  - Valitun kohortin tilastoyksiköst pyritään pitämään täysin samana koko tutkimuksen ajan, ts. kohortit ovat kiinteitä.
-- Tutkimuksessa voidaan valita esimerkiksi jollekkin käsittelymuuttujalle altistunut ja altistumattomien ryhmä.
-  - Kohortin seuranta-aikana tutkitaan ryhmien välillä ilmeneviä eroja mielenkiinnon kohteena olevassa muuttujassa.
-  - Näitä voi olla esimerkiksi ryhmien väliset erot sairastuvuudessa, kun käsittely on ollut jokin lääke kuten rokote tms. Vastaava esimerkki olisi em. työllisyyden kuntakokeilun osalta työllisyysaste eri kunnissa ja erojen tutkiminen kuntakokeiluun osallistuvien ja osallistumattomien välillä. 
-- Kohorttitukimus voi olla __taannehtiva__: tutkija määrittelee kohortin menneisyydessä, ja seuraa olemassaolevien rekisterien avulla, mitä kohortin jäsenille on tapahtunut myöhemmin.
-- Kohorttitutkimuksessa voidaan yleensä tutkia kerrallaan vain __yhtä altistetta/käsittelyä__, mutta __useita tilastollisia muuttujia__.
-- Tutkimukset saattavat olla hyvin pitkäkestoisia, jos tutkitaan ilmiötä, joka ilmenee vasta pitkä ajan kuluttua altistuksesta (kuten sairaus tai työllisyyden paraneminen)
-- Kohorttitutkimus voi vastata kysymykseen: "Mitkä ilmiöt johtuvat tästä altisteesta?"
+### __Kohorttitutkimus__ 
+- Kohorttitutkimus on altistelähtöinen tapa toteuttaa pitkittäistutkimus.
+  - Kohortti on suljettu väestö (syntymäkohortti, tietyn työpaikan työntekijät, yms.), jota tutkimuksessa seurataan ja joka on valittu jonkin yhteisen ominaisuuden perusteella (syntymävuosi, työpaikka, yms.).
+    - Kohortti voidaan jakaa myös alakohortteihin, mikäli se on alkujaankin riittävän suuri.
+    - Valitun kohortin tilastoyksiköst pyritään pitämään täysin samana koko tutkimuksen ajan, ts. kohortit ovat kiinteitä.
+  - Tutkimuksessa voidaan valita esimerkiksi jollekkin käsittelymuuttujalle altistunut ja altistumattomien ryhmä.
+    - Kohortin seuranta-aikana tutkitaan ryhmien välillä ilmeneviä eroja mielenkiinnon kohteena olevassa muuttujassa.
+    - Näitä voi olla esimerkiksi ryhmien väliset erot sairastuvuudessa, kun käsittely on ollut jokin lääke kuten rokote tms. Vastaava esimerkki olisi em. työllisyyden kuntakokeilun osalta työllisyysaste eri kunnissa ja erojen tutkiminen kuntakokeiluun osallistuvien ja osallistumattomien välillä. 
+  - Kohorttitukimus voi olla __taannehtiva__: tutkija määrittelee kohortin menneisyydessä, ja seuraa olemassaolevien rekisterien avulla, mitä kohortin jäsenille on tapahtunut myöhemmin.
+  - Kohorttitutkimuksessa voidaan yleensä tutkia kerrallaan vain __yhtä altistetta/käsittelyä__, mutta __useita tilastollisia muuttujia__.
+  - Tutkimukset saattavat olla hyvin pitkäkestoisia, jos tutkitaan ilmiötä, joka ilmenee vasta pitkä ajan kuluttua altistuksesta (kuten sairaus tai työllisyyden paraneminen)
+  - Kohorttitutkimus voi vastata kysymykseen: "Mitkä ilmiöt johtuvat tästä altisteesta?"
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki kohorttitutkimuksesta**  
 
 Toisen maailmansodan aikana räjäytettiin Japanissa kaksi atomipommia. Tämän traagisen tapahtuman jälkeen tutkijat alkoivat selvittää, mitä terveysvaikutuksia ionisoiva säteily aiheuttaisi altistuneille. Tutkimuksessa seurattiin altistuneiden ja altistumattomien sairastumista vuodesta 1945 vuoteen 1970. Tutkimuksen mukaan ionisoiva säteily aiheutti etupäässä monenlaisia kasvaimia; mm. keuhkosyöpää, rintasyöpää ja kilpirauhasen syöpää.
-
-```{r hiroshima, echo=FALSE, fig.cap="Esimerkki pitkittäistutkimuksesta", fig.align='center', out.width = "100%"}
-knitr::include_graphics("images/hiroshima.jpg")
-```
 :::
 
+```{r hiroshima, echo=FALSE, fig.cap="Yhdysvaltain räjäyttämä atomipommi Japanin Hiroshimassa aiheutti mittaamattomia tuhoja.", fig.align='center', out.width = "100%"}
+knitr::include_graphics("images/hiroshima.jpg")
+```
+
 \
 \
 
-### __Tapaus-verrokkitutkimus__ on __retrospektiivinen havainnoiva__ pitkittäistutkimusmenetelmä, jossa tutkimukseen valitaan esimerkiksi tutkittavaan sairauteen (tai muulle altisteelle/käsittelylle altistuneita) potilaita ( __tapaukset__) ja lisäksi henkilöitä, jotka eivät ole sairastuneita tähän sairauteen ( __verrokit__) (tai altistuneet altisteelle/käsittelylle).
-- Tavoitteena on tutkia miten tutkimusyksiköt reagoivat altistuttuaan jollekin altisteelle tai käsittelylle. Soveltuu erityisesti harvinaisten ilmiöiden aiheuttajien selvittämiseen.
-  - Esimerkkinä altistuminen Covid-19 virukselle: retrospektiivisesti (jälkikäteen) voidaan tarkastella viruksen kantajan kanssa samassa tilassa olleita (virukselle altistuneita (virus on altiste)) kyseisessä tilassa olleet olisivat tapauksia ja hypoteettinen toinen tila ilman virusta toimisi verrokkina (ts. ei yhtäkään tartuntatapausta). Mielenkiinnon kohteena olisi tarkastella kuinka monta henkilöä sai tartunnan (ja minkälaiset olosuhteet olivat). 
-  - Toisena esimerkkinä voitaisiin jälleen pitää em. työllisyyden kuntakokeilua: ne kunnat jotka (satunnaisesti) valikoituisivat työllisyyskokeiluun tulisivat altistetuksi politiikkamuutokselle eli olisivat tapauskuntia. Näitä kuntia voidaan sitten verrata verrokkikuntiin, joissa kys. politiikkamuutosta ei toteutettaisi. Mielenkiinnon kohteena olisi työllisyyden kehitys altistumisen jälkeen.
-- Käsittelyn tai altistuksen seurauksia, esimerkiksi sairauden, syitä etsitään vertaamalla tapausten ja verrokkien aikaisempaa altistumista erityisesti mielenkiinnon kohteena oleville altisteille. 
-- Tapaus-verrokkitutkimus eroaa kohorttitutkimuksesta siten että siinä voidaan tutkia __yhtä tilastollista muuttujaa__ (kuten sairastumista), mutta __useita altisteita__: mistä altisteesta sairaus on seuraus, ts. mikä on taudinaiheuttaja?
-  - Altistumishistoriaa voidaan selvitettää mm. mittauksilla, malleilla tai kyselylomakkeilla.
-  - Esimerkki: tapauksien ja verrokkien altistumiseroista saadaan epäsuora arvio altistuneiden riskistä sairastua kyseiseen sairauteen suhteessa altistumattomien riskiin.
-- Tapaus-verrokkitutkimukset ovat yleensä suhteellisen yksinkertaisia ja halpoja toteuttaa niiden retrospektiivisestä luonteesta johtuen: tutkimuskysymys määrittelee aineistotarpeen, jonka jälkeen se tarvitsee vain kerätä.
-  - Verrokien valinta kuitenkin kriittinen, sillä valitsemalla verrokit/kontrollitapaukset väärin mikään tilastollinen testi tai menetelmä ei korjaa tai kvantifioi tätä virhettä!
-  - Esimerkki verrokkiryhmän epäkelvosta valinnasta on huonosti mitattu aiempi altistuminen ja/tai jos jokin tutkimuksen kannalta keskeinen taustamuuttuja sivuutetaan: mitä jos tauti tai sen vakavuus riippuukin sairastuneen muusta terveydentilasta?
-- Eroaa poikittaistutkimuksesta siinä, että poikittaistutkimus pyrkii yleistämään tulokset koko kohdepopulaatioon, kun taas tapaus-verrokkitutkimus keskittyy hyvin spesifiin populaation osaan
+### __Tapaus-verrokkitutkimus__ 
+
+- On __retrospektiivinen havainnoiva__ pitkittäistutkimusmenetelmä, jossa tutkimukseen valitaan esimerkiksi tutkittavaan sairauteen (tai muulle altisteelle/käsittelylle altistuneita) potilaita ( __tapaukset__) ja lisäksi henkilöitä, jotka eivät ole sairastuneita tähän sairauteen ( __verrokit__) (tai altistuneet altisteelle/käsittelylle).
+  - Tavoitteena on tutkia miten tutkimusyksiköt reagoivat altistuttuaan jollekin altisteelle tai käsittelylle. Soveltuu erityisesti harvinaisten ilmiöiden aiheuttajien selvittämiseen.
+    - Esimerkkinä altistuminen Covid-19 virukselle: retrospektiivisesti (jälkikäteen) voidaan tarkastella viruksen kantajan kanssa samassa tilassa olleita (virukselle altistuneita (virus on altiste)) kyseisessä tilassa olleet olisivat tapauksia ja hypoteettinen toinen tila ilman virusta toimisi verrokkina (ts. ei yhtäkään tartuntatapausta). Mielenkiinnon kohteena olisi tarkastella kuinka monta henkilöä sai tartunnan (ja minkälaiset olosuhteet olivat). 
+    - Toisena esimerkkinä voitaisiin jälleen pitää em. työllisyyden kuntakokeilua: ne kunnat jotka (satunnaisesti) valikoituisivat työllisyyskokeiluun tulisivat altistetuksi politiikkamuutokselle eli olisivat tapauskuntia. Näitä kuntia voidaan sitten verrata verrokkikuntiin, joissa kys. politiikkamuutosta ei toteutettaisi. Mielenkiinnon kohteena olisi työllisyyden kehitys altistumisen jälkeen.
+  - Käsittelyn tai altistuksen seurauksia, esimerkiksi sairauden, syitä etsitään vertaamalla tapausten ja verrokkien aikaisempaa altistumista erityisesti mielenkiinnon kohteena oleville altisteille. 
+  - Tapaus-verrokkitutkimus eroaa kohorttitutkimuksesta siten että siinä voidaan tutkia __yhtä tilastollista muuttujaa__ (kuten sairastumista), mutta __useita altisteita__: mistä altisteesta sairaus on seuraus, ts. mikä on taudinaiheuttaja?
+    - Altistumishistoriaa voidaan selvitettää mm. mittauksilla, malleilla tai kyselylomakkeilla.
+    - Esimerkki: tapauksien ja verrokkien altistumiseroista saadaan epäsuora arvio altistuneiden riskistä sairastua kyseiseen sairauteen suhteessa altistumattomien riskiin.
+  - Tapaus-verrokkitutkimukset ovat yleensä suhteellisen yksinkertaisia ja halpoja toteuttaa niiden retrospektiivisestä luonteesta johtuen: tutkimuskysymys määrittelee aineistotarpeen, jonka jälkeen se tarvitsee vain kerätä.
+    - Verrokien valinta kuitenkin kriittinen, sillä valitsemalla verrokit/kontrollitapaukset väärin mikään tilastollinen testi tai menetelmä ei korjaa tai kvantifioi tätä virhettä!
+    - Esimerkki verrokkiryhmän epäkelvosta valinnasta on huonosti mitattu aiempi altistuminen ja/tai jos jokin tutkimuksen kannalta keskeinen taustamuuttuja sivuutetaan: mitä jos tauti tai sen vakavuus riippuukin sairastuneen muusta terveydentilasta?
+  - Eroaa poikittaistutkimuksesta siinä, että poikittaistutkimus pyrkii yleistämään tulokset koko kohdepopulaatioon, kun taas tapaus-verrokkitutkimus keskittyy hyvin spesifiin populaation osaan
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki tapaus-verrokkitutkimuksesta**  
 
 Länsi-Saksassa tuotiin 50-luvun lopulla markkinoille talidomidi-niminen uni- ja rauhoittava lääke. Varsin pian markkinoille tulon jälkeen tietyntyyppisten synnynnäisten epämuodostumien määrä alkoi lisääntyä rajusti. Talidomidin ja lasten raajojen muodostumishäiriöiden yhteys paljastettiin tapaus-verrokkitutkimuksilla. Tutkimuksissa selvitettiin sekä sairaiden lasten (tapaukset) että terveiden lasten (verrokkien) äitien altistuminen talidomidille raskauden kriittisten viikkojen aikana. Melkein kaikki sairaiden lasten äidit olivat saaneet talidomidia ensimmäisten raskausviikkojen aikana (talidomidin oli myös havaittu helpottavan odottavien äitien raskauspahoinvointia). Talidomidi poistettiin markkinoilta ja epämuodostumatapausten määrä putosi jyrkästi.
+:::
 
-```{r tali, echo=FALSE, fig.cap="Esimerkki pitkittäistutkimuksesta", fig.align='center', out.width = "100%"}
+```{r tali, echo=FALSE, fig.cap="Esimerkki tapaus-verrokkitutkimuksesta", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/tali.jpg")
 ```
-:::
 
 \
 \
@@ -329,10 +334,6 @@ Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tut
 
 - Vaihe 1: Diabeteskohtortin identifiointi (Tilastokeskus: kuolinsyyt, THL: diagnoosit, Kela: erityiskorvaukset, reseptit)
 
-```{r diab, echo=FALSE, fig.cap="Vaihe 1: Diabeteskohortin identifiointi", fig.align='center', out.width = "100%"}
-knitr::include_graphics("images/diab.jpg")
-```
-
 - Vaihe 2: Seurantatiedot (syöpärekisteri, sairaspäivärahat,  eläkerekisteri...)
 
 \
@@ -347,6 +348,9 @@ knitr::include_graphics("images/diab.jpg")
   - Rakennetaan algoritmi, jolla identifioidaan tyypin 1 diabeetikot lääkeostojen luokkien ja säännöllisyyden perusteella
 :::
 
+```{r diab, echo=FALSE, fig.cap="Vaihe 1: Diabeteskohortin identifiointi", fig.align='center', out.width = "100%"}
+knitr::include_graphics("images/diab.jpg")
+```
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: rekisteritutkimus pitkäaikaisen laitoshoivan käytöstä**  
@@ -364,11 +368,11 @@ knitr::include_graphics("images/diab.jpg")
   - Kärsivät seurantakadosta ja seurannan puutteellisuudesta
   - Perustuvat pieniin aineistoihin
   - Eivät mahdollista perhevaikutusten tutkimista
+:::
 
 ```{r rekist, echo=FALSE, fig.cap="Vaihe 1: Diabeteskohortin identifiointi", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/rekist.jpg")
 ```
-:::
 
 ### Aikasarjat ja paneeliaineistot
 
@@ -390,11 +394,11 @@ knitr::include_graphics("images/rekist.jpg")
   - Tilastokeskuksen laskema kuluttajahintojen vuosimuutos oli marraskuussa 2014 oli 1,0 prosenttia
   - Marraskuussa kuluttajahintoja nostivat viime vuodesta eniten vuokrankorotukset, tupakkatuotteiden ja alkoholijuomien vähittäishintojen ja ravintola- ja kahvilapalvelujen sekä kerrostalojen kunnossapitopalvelujen kallistuminen
   -  Kuluttajahintojen nousua vuoden takaisesta hillitsi marraskuussa eniten elintarvikkeiden, polttonesteiden ja viihde-elektroniikan halpeneminen
-  
-```{r kuluttaja, echo=FALSE, fig.cap="Esimerkki: Kansainvälisten lentomatkustajien lkm vuosina 1949-1960", fig.align='center', out.width = "100%"}
+:::
+
+```{r kuluttaja, echo=FALSE, fig.cap="Esimerkki: kuluttajahintaindeksit", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/kuluttaja.jpg")
 ```
-:::
 
 - __Aikasarjojen tilastollinen analyysi__ perustuu siihen, että sarja tulkitaan jonkin __stokastisen prosessin__ eli satunnaisprosessin realisaatioksi
   - Jos aikasarjan generoinut prosessi saadaan selville, voidaan tietoja prosessista käyttää aikasarjan käyttäytymisen kuvaamiseen ja selittämiseen sekä aikasarjan tulevan käyttäytymisen ennustamiseen.
@@ -418,7 +422,6 @@ knitr::include_graphics("images/time.jpg")
     - Paneeliaineisto on terminä käytetympi yhteiskuntatieteissä kun taas pitkittäisaineisto esimerkiksi lääketieteessä.
     - Havaintoyksiköt voivat olla esimerkiksi yrityksiä, ihmisiä, kuntia tai kouluja. Ns. "täydellisessä" paneeliaineistossa kaikista havaintoyksiköistä on havaittu kaikki muuttujat kaikkina ajanhetkinä. "Kiertävä" paneeli on vastaavasti sellainen, jossa osa havaintoyksiköistä vaihtuu ajan kuluessa.
       - Tyypillisesti havaintoja kerätään tasaisin väliajoin, kuten kuukausittain tai vuosittain, ja yksittäisen ajanhetken havainto on poikkileikkausaineisto ja kustakin havaintoyksiköstä on oma usean muuttujan aikasarjansa. 
-  \end{itemize}
   - Paneeliaineisto mahdollistaa vastaamisen kysymykseen miksi? Yleisesti ottaen paneeliaineistoja käytetäänkin erityisesti ns. kausaalipäättelyyn tähtäävissä malleissa.^[Kausaalimalleja opetetaan kurssilla [TILM3529 Kausaalipäättely havainnoivissa tutkimuksissa](https://opas.peppi.utu.fi/fi/opintojakso/TILM3529/5080)]
 
 

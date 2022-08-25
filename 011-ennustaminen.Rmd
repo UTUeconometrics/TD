@@ -30,7 +30,7 @@ Käytännössä tilastotieteen ja sen sovellusalueiden tutkimuksessa tulisi osat
   - Ajoittain ennustetarkkuutta on helpompi ja toisaalta sitten vaikeampi tarkkailla. Esim. taloustieteessä on paljon helpompi arvioida työttömyyttä koskevaa ennustetta kuin esimerkiksi ennustetta (jopa väitettä) velkaelvytyksen tehokkuudesta. Toisaalta valtio-opissa voidaan arvioida vaalitulosta koskevia ennusteita suoraviivaisesti, mutta saattaa kulua vuosikymmeniä nähdä miten poliittisten instituutioiden ennusteisiin perustuvat ennakoidut muutokset vaikuttavat poliittisten päätösten tuloksiin.
 
 ::: {.eblock .kimmo data-latex="{}"}
-**Esimerkki: Naten kirjan luvun 1 pohdintaa ennustevirheestä _finanssikriisiin_ ( _rahoituskriisiin_) vuoden 2008 aikana (finanssikriisin voidaan katsoa koskeneen lopulta vuosia 2007-2009).**  
+**Esimerkki: Naten kirjan luvun 1 pohdintaa ennustevirheestä _finanssikriisiin_ (_rahoituskriisiin_) vuoden 2008 aikana (finanssikriisin voidaan katsoa koskeneen lopulta vuosia 2007-2009).**  
 
 Pörssikurssien voimakas lasku, Lehman Brothersin kaltaisia aikoinaan arvostettuja yhtiöitä meni vararikkoon, luottomarkkinat olivat käytännössä "jäätyneet", Las Vegasissa asuntojen hinnat laskivat 40 prosenttia (osoittaen osaltaan vallinnutta laajempaakin " __asuntokuplaa__" (perusteettoman korkeita asuntojen hintoja), työttömyys kasvoi räjähdysmäisesti jne. 
 

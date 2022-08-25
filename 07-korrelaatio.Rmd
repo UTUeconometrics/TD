@@ -75,7 +75,7 @@ __Pistediagrammi (hajontakuvio)__
 
 - Pistediagrammi sopii erityisesti kahden muuttujan välisen riippuvuuden havainnollistamiseen. Se on keskeinen työväline korrelaatio- ja regressioanalyysissa.
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Pistediagrammi**  
 
 Olkoot $X$ ja $Y$ järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joiden havaitut arvot ovat $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$. Havaintoarvojen parien $(x_i, y_i)$ pistediagrammi saadaan esittämällä lukuparit niiden määrittelemien pisteiden tasokoordinaatistossa.
@@ -95,7 +95,7 @@ Olkoot $X$ ja $Y$ järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joi
 - Tällaisten tilastollisten riippuvuuksien analysoimista lineaaristen regressiomallien avulla tarkastellaan myöhemmin luvussa \@ref(luku8) Yksinkertainen lineaarinen regressiomalli. 
 :::
 
-```{r, echo=FALSE, fig.cap="Isien ja poikien pituudet. Lähde: Mellin (2006)."}
+```{r isatjapojat1, echo=FALSE, fig.cap="Isien ja poikien pituudet. Lähde: Mellin (2006).", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/Isien-poikien-pituudet-Mellin.jpg")
 ```
 
@@ -152,19 +152,20 @@ jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde (o
 
 - Jälleen kerran, lisätietoja ja tarkempia yksityiskohtia moniulotteisista satunnaismuuttujista ja jakaumista tarkastellaan todennäköisyyslaskennan kursseilla.
 
-::: {.noteblock .miko data-latex="{}"}
+::: {.defblock .miko data-latex="{}"}
 **Satunnaismuuttujien kovarianssi ja korrelaatio**  
 
  Olkoon $(X, Y)$ satunnaismuuttujien $X$ ja $Y$ muodostama järjestetty pari. Olkoot 
 $$
-    \mu_X = \text{E}(X) \qquad \mathrm{and} \qquad  \mu_Y = \text{E}(Y)
+\mu_X = \text{E}(X) \qquad \mathrm{and} \qquad  \mu_Y = \text{E}(Y)
 $$
 satunnaismuuttujien $X$ ja $Y$ odotusarvot ja
 $$
-   \sigma^2_X = \mathrm{Var}(X) = \text{D}^2(X) = \text{E}[(X- \mu_X)^2] \\
-   \sigma^2_Y = \mathrm{Var}(Y) = \text{D}^2(Y) = \text{E}[(Y- \mu_Y)^2]
+\sigma^2_X = \mathrm{Var}(X) = \text{D}^2(X) = \text{E}[(X - \mu_X)^2] \\
+\sigma^2_Y = \mathrm{Var}(Y) = \text{D}^2(Y) = \text{E}[(Y - \mu_Y)^2]
 $$
 satunnaismuuttujien $X$ ja $Y$ varianssit. 
+
 \
 
 Määritellään satunnaismuuttujien $X$ ja $Y$ kovarianssi $\sigma_{XY}$ kaavalla
@@ -192,7 +193,7 @@ r_{XY} = \frac{s_{XY}}{s_X s_Y}
 $$
 Estimaattori $r_{XY}$ voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
 
-::: {.noteblock .miko data-latex="{}"}
+::: {.defblock .miko data-latex="{}"}
 **Pearsonin otoskorrelaatiokerroin**
 
 Havaintoarvojen $(x_i, y_i)$ pareista laskettu __otoskovarianssi__ on
@@ -228,7 +229,7 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
 
 - __Havainnollistus__: Kuviot alla havainnollistavat kahden muuttujan havaittujen arvojen ($n = 30$) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
 
-```{r, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006)."}
+```{r korrelaatioMellin, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006).", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/Pearson-korr-Mellin.jpg")
 ```
 
@@ -247,7 +248,7 @@ knitr::include_url("http://guessthecorrelation.com/")
     - muuttujissa $x$ ja $y$ tapahtuvien muuttujien välillä on riippuvuutta
     - muuttujassa $y$ tapahtunutta muutosta ei voida selittää millään muilla tekjöillä
 
-```{r, echo=FALSE, fig.cap=""}
+```{r causality, echo=FALSE, fig.cap="Kausaalisuus: kumpi tuli ensin?", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/causality.jpg")
 ```
 
@@ -257,18 +258,18 @@ knitr::include_graphics("images/causality.jpg")
 
 - Yhteisvaihtelu voi johtua myös kolmannen muuttujan vaikutuksesta molempiin muuttujiin tai virheellisestä otannasta, vaikka muuttujat olisivatkin perusjoukossa toisistaan riippumattomia
 
-```{r, echo=FALSE, fig.cap="Esimerkkejä: luomuruoka syypää lisääntyneisiin autismitapauksiin?"}
+```{r, echo=FALSE, fig.cap="Esimerkkejä: luomuruoka syypää lisääntyneisiin autismitapauksiin?", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/causality2.jpg")
 ```
 
 - Simpsonin paradoksi
   - Simpsonin paradoksi syntyy, kun kahden muuttujan välinen korrelaatio muuttuu päinvastaiseksi, otettaessa huomioon jokin kolmas muuttuja, joka korreloi molempien muuttujien kanssa
 
-```{r, echo=FALSE, fig.cap="Simpsonin paradoksi"}
+```{r simpson, echo=FALSE, fig.cap="Simpsonin paradoksi", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/simpson.jpg")
 ```
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Esimerkki: Berkeleyn sukupuolisyrjintä**
 
 Yksi tunnetuimmista esimerkeistä Simpsonin paradoksista on Berkeleyn yliopiston sukupuolisyrjintätapaus. Yliopisto haastettiin oikeuteen vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi miesten helpompi päästä kuin naisten.

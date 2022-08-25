@@ -38,7 +38,7 @@ Tässä luvussa tarkastellaan tieteen ja tieteellisen tutkimusprosessin luonnett
 \
 \
 
-:::{.noteblock .mikko data-latex="{}"}
+:::{.defblock .mikko data-latex="{}"}
 **Hypoteesi**  
 
   - Hypoteesi tarkoittaa (tausta)teorioista johdettua tai aikaisemman tutkimuksen perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan ongelmaan. 
@@ -53,7 +53,7 @@ Tässä luvussa tarkastellaan tieteen ja tieteellisen tutkimusprosessin luonnett
 - Uuden tieteellisen tiedon tuottaminen ja jo tuotetun tiedon ymmärtäminen vaatii **tieteellisen ajattelutavan** omaksumista, jonka **perustana on lähes aina tilastollinen päättely**.
   - Tieteelliselle ajattelulle ja tiedon tuottamiselle on tunnusomaista, että se pohtii ja kehittelee **paradigmojaan** eli oman toimintansa perusteita. 
 
-:::{.noteblock .mikko data-latex="{}"}
+:::{.defblock .mikko data-latex="{}"}
 
 **Paradigma** on tietyn alan oman tieteellisen toiminnan oppirakennelma, ajattelutapa ja peruste, joka mm. ohjaa tutkimuskysymysten asettelua, käytettäviä menetelmiä ja tulosten tulkintoja. Paradigmat elävät jatkuvassa muutoksessa tieteen kehityksen myötä. Esimerkkinä toimii taloustieteen nk. "[uskottavuusvallankumous](https://www.taloustieteellinenyhdistys.fi/wp-content/uploads/2019/10/KAK_3_2019_nettiin-5-8.pdf)", jossa tilastollisten menetelmien myötä taloustieteellisen tutkimuksen painopiste tuntuu siirtyneen vahvemmin empiirisen kausaalitutkimuksen puolelle.
 
@@ -81,7 +81,7 @@ knitr::include_graphics("images/Arkitieto-tieteellinentieto.jpg")
 
 - Milloin tutkimus sitten on tieteellistä? Tiede on tiedonhankintaa, jossa käytetään erityistä, mahdollisesti tilanteesta (sovelluksesta) riippuen, tieteellistä **menetelmää** eli **metodia**.
 
-:::{.noteblock .mikko data-latex="{}"}
+:::{.defblock .mikko data-latex="{}"}
 
 **Tieteellinen menetelmä**: Tieteellinen menetelmä on kullakin tieteen alalla vallitseva, ajan myötä kehittynyt ja nykyisten paradigmojen muovaama menettelytapa, jolla uutta tietoa tuotetaan ja vanhaa, mutta epävarmaa tietoa vahvistetaan. Se ei ole selkeä työvaiheiden luettelo tai menetelmähakemisto, vaan yleisesti hyväksytty ja hyväksi todettu tapa pyrkiä totuuteen erilaisten tutkimusongelmien ratkomisessa. Hyvälle tieteelliselle menetelmälle voidaan lukea seuraavia kriteerejä.
 
@@ -99,12 +99,13 @@ knitr::include_graphics("images/Arkitieto-tieteellinentieto.jpg")
   - **Edistyvyys**
     - Tieteen edistyminen merkitsee kasvun eli tulosten määrällisen lisääntymisen ohella sitä, että virheellisiä hypoteeseja tai teorioita korvataan uusilla tuloksilla, jotka ovat tosia tai ainakin vähemmän virheellisiä kuin aikaisemmat.
   - **Toistettavuus ja yleistettävyys**
-    - Tieteen tulokset tulee olla muiden tutkijoiden toistettavissa eli replikoitavissa. Toistettavuudelle (paikoin myös uusittavuudelle, joskin merkitys vaihtelee) on erilaisia määritelmiä. Esittelemme tässä Hamermeshin (2007)  ^[Hamermesh, D. S. (2007). Replication in economics Canadian Journal of Economics/Revue canadienne d’ ́economique 40 (3), 715–733.] esittämän erilaisten taloustieteellisten tutkimusten replikointien jaottelun:
-      - **Puhdas replikointi**: toinen tutkija, käyttäen täysin samaa tutkimusaineistoa ja samaa tilastollista menetelmää kuin alkuperäisessä tutkimuksessa, saa täsmälleen samat tutkimustulokset.
-      - **Tilastollinen replikointi**: toinen tutkija, käyttäen eri tutkimusaineistoa (joka on kuitenkin poimittu populaatiosta, ks. Luku 5) mutta samaa menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.
-      - **Tieteellinen replikointi**: toinen tutkija, käyttäen samoja asioita mittaavaa tutkimusaineistoa, joka on kuitenkin kerätty eri populaatiosta, ja käyttäen samankaltaista, mutta ei identtistä menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.
-      
+    - Tieteen tulokset tulee olla muiden tutkijoiden toistettavissa eli replikoitavissa. Toistettavuudelle (paikoin myös uusittavuudelle, joskin merkitys vaihtelee) on erilaisia määritelmiä. 
 :::  
+
+- Tarkastellaan lähemmin erästä määritelmää erilaisille toistettavuuden lajeille. Esittelemme tässä Hamermeshin (2007)^[Hamermesh, D. S. (2007). Replication in economics _Canadian Journal of Economics/Revue canadienne d’ ́economique_ 40 (3), 715–733.] esittämän erilaisten taloustieteellisten tutkimusten replikointien jaottelun:
+  - **Puhdas replikointi**: toinen tutkija, käyttäen täysin samaa tutkimusaineistoa ja samaa tilastollista menetelmää kuin alkuperäisessä tutkimuksessa, saa täsmälleen samat tutkimustulokset.
+  - **Tilastollinen replikointi**: toinen tutkija, käyttäen eri tutkimusaineistoa (joka on kuitenkin poimittu populaatiosta, ks. Luku 5) mutta samaa menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.
+  - **Tieteellinen replikointi**: toinen tutkija, käyttäen samoja asioita mittaavaa tutkimusaineistoa, joka on kuitenkin kerätty eri populaatiosta, ja käyttäen samankaltaista, mutta ei identtistä menetelmää, saa vastaavanlaisia tuloksia, jotka vahvistavat alkuperäisen tutkimuksen perustulokset.
 
 \
 \

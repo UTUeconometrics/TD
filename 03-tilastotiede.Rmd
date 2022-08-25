@@ -21,7 +21,7 @@ Seuraavia tilastotieteen esittelyä ja karakterisointeja ajatellen määritellä
 - Tilastotieteellinen tutkimus tarkastelee reaalimaailman ilmiöitä. Täten tutkimuskohteena on tavallisessa elämässä tavattavia asioita, ihmisiä tai tapahtumia. Tutkimuskohteita kutsutaan tilastoyksiköiksi ja niiden joukkoa kutsutaan populaatioksi (perusjoukoksi). Esimerkiksi jos tutkitaan kuntavaaleissa äänestävien tuloja niin jokainen äänestysikäinen muodostaa oman tilastoyksikkönsä (ks. alla) ja täten populaationa (perusjoukkona) toimii kaikki
 äänestysikäiset kansalaiset. Jos taas tutkitaan äänestysaktiivisuutta eri kunnissa, muodostaa jokainen kunta oman tilastoyksikkönsä ja kaikki Suomen kunnat muodostavat populaation.
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Populaatio**  
 
 Konkreettinen tai hypoteettinen tutkimuskohteiden joukko, joka koostuu kaikista tilastoyksiköistä
@@ -31,7 +31,7 @@ Konkreettinen tai hypoteettinen tutkimuskohteiden joukko, joka koostuu kaikista 
 
 - Tilastoyksiköiden tilastollisilla muuttujilla on tietty mahdollisten arvojen joukko, ja näillä arvoilla on jokin **jakauma** populaatiossa. Esimerkiksi tulot voivat määritelmästä riippuen saada minkä tahansa positiivisen arvon mutta äänestysprosentti on luonnollisesti rajattu nollan ja sadan prosentin väliin.
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Tilastoyksikkö ja tilastollinen muuttuja**  
 
 Populaation muodostavilta tilastoyksiköiltä (populaation alkioilta) tarkastellaan  tilastollisia muuttujia, joita voidaan mitata tai havaita.
@@ -40,7 +40,7 @@ Populaation muodostavilta tilastoyksiköiltä (populaation alkioilta) tarkastell
 - Kun tarkasteltavien tilastoyksikön tilastollisten muuttujien (numeeriset) arvot havaitaan, kutsutaan näiden arvojen joukkoa **havainnoksi**
 
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Havainto**  
 
 Havainto muodostuu tilastoyksikön tarkasteltavien tilastollisten muuttujien havaitusta arvoista.
@@ -51,7 +51,7 @@ Havainto muodostuu tilastoyksikön tarkasteltavien tilastollisten muuttujien hav
 - Kerättyjen havaintojen joukko muodostaa **havaintoaineiston**, eli **datan**.
 
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Havaintoaineisto/data**  
 
 Havaintoaineisto, data, on tilastoyksiköiden tilastollisista muuttujista kerätty havaintojen joukko.
@@ -179,7 +179,7 @@ knitr::include_graphics("images/data_science.jpg")
 - Tilastotiede jakautuu moniin osa-alueisiin. Osa-alueita on niin paljon, että alan huiputkaan eivät voi hallita niitä kaikkia! 
 - Tästä huolimatta tilastotiede voidaan karkeasti jakaa teoreettiseen ja soveltavaan osa-alueeseen, jotka toimivat alituisessa vuoropuhelussa.
 
-:::{.noteblock .mikko data-latex="{}"}
+:::{.defblock .mikko data-latex="{}"}
 **Soveltava tilastotiede**  
 
 on nimensä mukaisesti teoreettisen tilastotieteen kehittämien menetelmien soveltamista jonkin tutkimusalan empiiriseen ongelmaan. Suurin osa tilastotieteen menetelmistä on alun perin kehitetty jonkin konkreettisen tutkimusongelman innoittamana. 
@@ -217,7 +217,7 @@ on nimensä mukaisesti teoreettisen tilastotieteen kehittämien menetelmien sove
   - Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns.[Occamin partaveitsen -periaatteeseen](https://fi.wikipedia.org/wiki/Occamin_partaveitsi), jonka mukaan *"ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen"*, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
   - Tämä periaate ja sen suhde ns. **varianssin ja harhan väliseen kompromissiin** on erityisen tärkeä erityisesti tilastollisen ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen (kone)oppimisen sovellutuksissa (ks. tarkemmin alaluku 3.?? ja luku ?? (estimaattoriluku)).
   
-:::{.noteblock .mikko data-latex="{}"}
+:::{.defblock .mikko data-latex="{}"}
 **Teoreettinen tilastotiede** kehittää (tilasto)matemaattisia malleja kuvaamaan satunnaisilmiöitä- ja prosesseja, jotka generoivat reaalimaailman ilmiöitä kuvaavia numeerisia tai kvantitatiivisia tietoja, joihin liittyy epävarmuutta ja satunnaisuutta.
 :::
 

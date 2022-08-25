@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma {#luku6}
 
 Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edellisten lukujen erityisesti otantaa koskevan johdannon yhteydessä. Tilastollinen päättely on keskeinen osa tilastotiedettä, sillä se mahdollistaa päätelmien yleistämisen otoksesta populaatioon/perusjoukkoon. Tämä luku toimii esimerkkinä formaaliin matemaattiseen esitykseen perustuvan tilastollisen päättelyn perusteista (otannan ja otantajakaumien näkökulmasta), jonka ideana on yleisesti tehdä luotettavia johtopäätöksiä perusjoukosta otoksen perusteella. Tällä kurssilla käydään läpi (vain) tarvittavia yksityiskohtia sekä rakennetaan pohjia tn-laskennan kurssin jälkeiselle tilastollisen päättelyn peruskurssille (TILM3555).
@@ -9,7 +14,7 @@ Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edell
   - Otoksen poimimisen jälkeen satunnaismuuttujat $Y_1, \ldots, Y_n$ saavat havaituiksi arvoikseen havaintoarvot $y_1, \ldots, y_n$ (ts. $Y_1=y_1, \ldots, Y_n = y_n$).
   - Näin havaintoaineisto on siis __satunnaisotos__, joka voidaan määritellä tarkemmin seuraavasti.
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Satunnaisotos**  
 
 Olkoot $Y_1, \ldots, Y_n$ riippumattomia ja samoinjakautuneita satunnaismuuttujia, joiden tiheysfunktiota (tf., tai pistetoden\-näköisyysfunktiota (ptnf)) merkitään $f(y, \theta)$:llä, jossa $y$:n on yksittäisen sm:jan $Y$ reaalisaatio ja $\theta$ on jokin jakauman muodon määräävä parametri (tai parametrit).  
@@ -19,12 +24,10 @@ Parametrin $\theta$ arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, 
 
 \
 \
-\
-\
 
 __Satunnaisotoksen tilastollinen malli__
 
-- Havaintoarvot $y_1, \ldots, y_n$ ovat kiinteitä lukuja, mutta ne vaihtelevat satunnaisesti otoksesta toiseen. Satunnaisotannassa __satunnaisuus liittyy siis havaintoarvojen vaihteluun satunnaisesti otoksesta toiseen__. 
+- Havaintoarvot $y_1, \dots, y_n$ ovat kiinteitä lukuja, mutta ne vaihtelevat satunnaisesti otoksesta toiseen. Satunnaisotannassa __satunnaisuus liittyy siis havaintoarvojen vaihteluun satunnaisesti otoksesta toiseen__. 
   - Satunnaisuus ei siis liity otannan tuloksena saatuihin havaintoarvoihin, vaan otoksen poimintaan.
 
 - Satunnaismuuttujien $Y_1, \ldots, Y_n$ __yhteisjakauma__ muodostaa (tiettyjen lisäoletusten jälkeen) __tilastollisen mallin__ havaintoarvojen satunnaiselle vaihtelulle eri otoksissa.
@@ -37,6 +40,7 @@ $$
 \text{E}(Y_i) = \mu, \quad i=1,\ldots,n,  \\
 \mathrm{Var}(Y_i) = \sigma^2, \quad i=1,\ldots,n.
 $$
+
   - Tässä tapauksessa mielenkiinnon kohteena olevat parametrit ovat siis $\mu$ ja $\sigma^2$ eli $\theta = (\mu \quad \sigma^2)$.
   - Tilastollisten mallien tehtävänä on siis estimoida nämä todennäköisyysjakaumien parametrit havaitun aineiston perusteella, joten keskeinen tilastollinen kysymys on että miten estimointi suoritetaan luotettavasti.
 
@@ -99,7 +103,7 @@ __Estimaattorin ominaisuudet__
 
 - Merkitään seuraavassa parametrin $\theta$ estimaattoria $\widehat{\theta}$:lla ja siltä voidaan toivoa seuraavia ominaisuuksia:
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Harhattomuus**  
 
 Estimaattorin odotettavissa oleva arvo yhtyy tuntemattoman parametrin $\theta$ todelliseen arvoon eli $\text{E}(\widehat{\theta}) = \theta$.
@@ -108,23 +112,23 @@ Estimaattorin odotettavissa oleva arvo yhtyy tuntemattoman parametrin $\theta$ t
 - Estimaattorin tuottama arvo parametrille saattaa tietylle otokselle poiketa paljonkin parametrin todellisesta arvosta, mutta odotusarvon frekvenssitulkinnan mukaan estimaattorin tuottamat otoskohtaiset arvot parametrille jakautuvat otantaa toistettaessa (symmetrisesti) parametrin todellisen arvon ympärille
 :::
 
-```{r, include=FALSE, fig.cap=""}
+```{r unbiased, echo=FALSE, fig.cap="Harhaton estimaattori", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/unbiased.jpg")
 ```
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Tyhjentävyys**  
 
 Tyhjentävä estimaattori käyttää kaiken otokseen sisältyvän parametria $\theta$ koskevan informaation.
 :::
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Tehokkuus**  
 
 Kahdesta saman parametrin $\theta$ estimaattorista tehokkaampi on se, jonka varianssi on pienempi. Ts. $\widehat{\theta}^{(1)}$ on tehokkaampi kuin $\widehat{\theta}^{(2)}$, jos  $\mathrm{Var}(\widehat{\theta}^{(1)}) \le \mathrm{Var}(\widehat{\theta}^{(2)})$.
 :::
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Tarkentuvuus**  
 
 Tarkentuvan estimaattorin $\widehat{\theta}$ arvot lähestyvät parametrin $\theta$ oikeaa arvoa otoskoon kasvaessa.
@@ -337,7 +341,7 @@ Jakaumien tunnusluvut voidaan jakaa sijaintilukuihin, hajontalukuihin ja muihin 
   - Otoksen poimintaan liittyvän satunnaisvaihtelun vuoksi emme voi varmuudella tietää onko saatu otokseen perustuva parametriestimaatti "lähellä" vai "kaukana" sen todellisesta arvosta.
   - Täten tarvitaan jokin tapa, jolla saadun parametriestimaatin luotettavuutta voidaan arvioida.
 
-::: {.noteblock .mikko data-latex="{}"}
+::: {.defblock .mikko data-latex="{}"}
 **Luottamusväli**  
 
 Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsemalla todennäköisyydellä (luottamustasolla) peittää tarkasteltavan tilastollisen mallin $f(y;\theta)$ parametrin $\theta$ tuntemattoman todellisen arvon. Se perustetaan otostunnusluvun, estimaattorin, otosjakaumaan. 
@@ -461,12 +465,10 @@ saadaan nyt __$t$-jakaumasta} $t_{n-1}$, jossa $S^2$ on varianssin $\sigma^2$ ha
 
   - Normaalijakauman odotusarvon luottamusväli ($\sigma^2$ tuntematon), $t$-jakauma eri vapausastein $df$
 
-```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja"}
+```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/NjaT-jakauma.jpg")
 ```
 
-\
-\
 \
 \
 
