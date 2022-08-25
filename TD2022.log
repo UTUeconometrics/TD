@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.25)  25 AUG 2022 09:46
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.25)  25 AUG 2022 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,11 +1145,6 @@ Underfull \hbox (badness 1067) in paragraph at lines 356--358
  []
 
 
-Overfull \hbox (41.46707pt too wide) in paragraph at lines 362--362
-[]\TU/lmr/bx/n/14.4 Kurssin luonne tilastotieteen (ja datatieteen/data-
- []
-
-
 Overfull \hbox (12.82336pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 1.2.  TILASTOTIETEEN ASEMA TUTKIMUSYHTEISÖN ULKOPUOLELLA \TU/lmr/m/n/10 11
  []
@@ -1445,11 +1440,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1238--1241
 
  []
 
-
-Overfull \hbox (289.13004pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 3.3.  TILASTOTIETEEN SUHDE MATEMATIIKKAAN, TIETOJENKÄSITTELYTIETEESEEN JA DATATIETEESEEN (DATA SCIENCE) \TU/lmr/m/n/10 33
- []
-
 [33] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
 
@@ -1493,11 +1483,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
 
 Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
 
- []
-
-
-Overfull \hbox (289.13004pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 3.3.  TILASTOTIETEEN SUHDE MATEMATIIKKAAN, TIETOJENKÄSITTELYTIETEESEEN JA DATATIETEESEEN (DATA SCIENCE) \TU/lmr/m/n/10 35
  []
 
 [35]
@@ -2820,12 +2805,12 @@ No file TD2022.bbl.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TD2022.out' has not changed.
-(rerunfilecheck)             Checksum: D48A617F555B96904EC708D0659D00A8;14475.
+(rerunfilecheck)             Checksum: C2033F40EB5E0588D116272ADA301077;13962.
  ) 
 Here is how much of TeX's memory you used:
  37928 strings out of 477829
- 781669 string characters out of 5843767
- 1263569 words of memory out of 5000000
+ 781579 string characters out of 5843767
+ 1263960 words of memory out of 5000000
  58189 multiletter control sequences out of 15000+600000
  502001 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
