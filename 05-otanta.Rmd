@@ -146,7 +146,7 @@ knitr::include_graphics("images/otanta.jpg")
 knitr::include_graphics("images/tuloerot.jpg")
 ```
 
-## Tilastollisten muuttujien mittaaminen ja mitta-asteikot {#alaluku53}
+## Mittaaminen ja mitta-asteikot {#alaluku53}
 
 __Mittaaminen__ 
 

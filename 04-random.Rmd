@@ -1,4 +1,4 @@
-# Sattuma ja satunnaisuus {#luku4}
+# Sattuma ja satunnaisuus tilastotieteessä {#luku4}
 
 ```{r random, echo=FALSE, fig.cap="Hauska kuva satunnaisuudesta.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/im_so_random.jpg")
@@ -87,7 +87,7 @@ Ihmisen pituutta voidaan pitää (ennen mittaukseen tulemista) satunnaismuuttuja
   - Satunnaisuus perustuu siihen, että satunnaismuuttujien toteutuvat arvot (ja niistä lasketut tunnusluvut kuten keskiarvo) vaihtelevat satunnaisesti otoksesta toiseen. 
 - Todennäköisyyslaskennan tehtävä on tuottaa __matemaattisia ja tilastollisia malleja__ satunnaisilmiöissä havaittavalle tilastolliselle stabiliteetille.
 
-## Tilastotieteen suhde satunnaisuuteen ja todennäköisyyksiin {#alaluku42}
+## Satunnaisuus ja todennäköisyydet {#alaluku42}
 
 - Tilastotieteessä __tutkimusaineiston keräämistä__ voidaan pitää hyvänä esimerkkinä satunnaisilmiöstä.
   - Voimme ajatella, että tilastollisen tutkimuksen kohteet on aina valittu arpomalla.

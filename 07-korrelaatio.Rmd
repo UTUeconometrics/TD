@@ -12,7 +12,7 @@
 
 - Käsittelemme myös jatkossa regressioanalyysia yhden selittäjän lineaarisen regressiomallin tapauksessa. Pitemmälle meneviä regressioanalyysin kysymyksiä käsitellään koko tilastotieteen opinto-ohjelman lävitse, kuten perusteellisesti Lineaariset ja yleistetyt lineaariset mallit -kurssin myötä.
 
-## Muuttujien väliset riippuvuudet tilastollisen tutkimuksen kohteena {#alaluku71}
+## Muuttujien väliset riippuvuudet {#alaluku71}
 
 - Tieteellisen tutkimuksen tärkeimmät ja mielenkiintoisimmat kysymykset liittyvät tavallisesti __tutkimuksen kohteena olevaa ilmiötä kuvaavien muuttujien välisiin riippuvuuksiin__.
 

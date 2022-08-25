@@ -18,17 +18,17 @@ pre code {
   margin-bottom: 10px;
   border: 2px SaddleBrown;
   border-radius: 10px;
-  background: DarkOrange 5px center/3em no-repeat;
+  background: rgb(255,205,138) 5px center/3em no-repeat;
   background-image: url("images/sigma.png");
 }
 
 .defblock {
-  color: white;
+  color: black;
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   border: 2px DarkBlue;
   border-radius: 10px;
-  background: BlueViolet 5px center/3em no-repeat;
+  background: rgb(204,180,225) 5px center/3em no-repeat;
   background-image: url("images/delta.png");
 }
 
@@ -38,13 +38,13 @@ pre code {
 }
 
 .book.with-summary .book-header.fixed {
-    left: 300px;
+    left: 450px;
 }
 
 .book.with-summary .book-body {
-    left: 300px;
+    left: 450px;
 }
 
 .book .book-summary {
-    width: 300px;
+    width: 450px;
 }

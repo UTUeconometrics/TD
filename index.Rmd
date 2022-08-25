@@ -1,9 +1,9 @@
 --- 
-title: "TILM 3701 - Tilastotiede ja Data 2022"
+title: "TILM3701 - Tilastotiede ja data 2022"
 author:
   - Koonneet
-  - Henri Nyberg^[Turun Yliopisto, matematiikan ja tilastotieteen laitos, henri.nyberg@utu.fi]
-  - Roope Rihtamo^[Turun Yliopisto, matematiikan ja tilastotieteen laitos, roope.rihtamo@utu.fi]
+  - Henri Nyberg^[Turun yliopisto, matematiikan ja tilastotieteen laitos, henri.nyberg@utu.fi]
+  - Roope Rihtamo^[Turun yliopisto, matematiikan ja tilastotieteen laitos, roope.rihtamo@utu.fi]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -41,3 +41,39 @@ description: "Tilastotieteen ensimmäinen kurssi."
     - Tilastotieteen sanasto suomi-englanti-suomi, ks. Juha Alho, Elja Arjas, Esa Läärä ja Pekka Pere (2021). [Tilastotieteen sanasto. Suomen Tilastoseuran julkaisuja 8.](https://tilastoseura.fi/)
 
 Suuret kiitokset Visa Kuntzelle ja Emil Lehdelle kommenteista ja avusta materiaalin työstämisessä. Kaikki jäljelle jääneet painovirheet ovat materiaalin kokoajien.
+
+## Kurssimateriaali {-}
+
+Kurssin materiaali on koostettu em. lähteistä ja pyrkii paikoin pelkistettyyn esitysmuotoon mutta kuitenkin niin että materiaalin opiskelemalla kurssin osaamistavoitteet täyttyvät kokonaisuudessaan. Osaamistavoitteet on listattu Turun yliopiston opinto-oppaassa matematiikan ja tilastotieteen laitoksen opintotarjonnasta [kurssikuvauksen alta](https://opas.peppi.utu.fi/fi/opintojakso/TILM3701/90798) ja ne löytyvät alta vielä laajemmin. 
+
+- Opintojakson suoritettuaan opiskelija:
+  - On saanut kokonaiskuvan tilastotieteestä ja sen perusteista
+  - Osaa hahmottaa tilastotieteen roolin omana tieteenalana ja eri sovellusalueiden yhteydessä
+  - Tunnistaa erilaiset tutkimusasetelmat ja aineistotyypit
+  - On sisäistänyt tilastotieteen keskeisiä käsitteitä ja osaa niiden avulla tarkastella kriittisesti tieteellisiä tutkimuksia
+  - Pystyy erottamaan edustavan otoksen ja näytteen
+
+Lisäksi on avattu opinto-oppaassa ja vielä laajemmin alla. Tämä listaus toimii hyvänä luettelona kurssin keskeisistä teemoista.
+
+- Kurssin sisältöä:
+  - Tilastotiede tieteenalana ja sen suhde lähitieteisiin, kuten datatieteeseen (data science)
+  - Tilastotieteen rooli uuden tieteellisen tiedon tuottamisessa
+  - Tilastolliset aineistot (data), niiden kerääminen ja mittaaminen
+  - Tilastollisen päättelyn perusteita
+  - Otannan perusteet
+  - Tilastotieteen sovellusten ja sovellusalueiden esittelyä
+  - Osaamistavoitteet: Opintojakson suoritettuaan opiskelija
+
+Materiaalin seassa on eritelty väärikoodatuin tietolaatikoin erinäisiä tärkeitä tilastotieteellisiä konsepteja ja termejä sekä esimerkkejä tilastotieteen sovelluksista. Näistä ensin mainitut löytyvät Deltan violeteista laatikoista ja jälkimmäiset Statistikan oransseista.^[Toim. Huom. värit eivät täysin alkuperäisten värien kanssa yhteneväisiä.] Alla esimerkkilaatikot.
+
+::: {.defblock data-latex="{}"}
+**Konsepti tai termi**
+
+Konseptin tai termin löyhä määritelmä.
+:::
+
+::: {.eblock data-latex="{}"}
+**Esimerkki**
+
+Aihetta koskeva esimerkki.
+:::
