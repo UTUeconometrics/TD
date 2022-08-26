@@ -238,7 +238,7 @@ on nimensä mukaisesti teoreettisen tilastotieteen kehittämien menetelmien sove
   - Kuvaileva tilastotiede ja tilastollinen päättely kulkevat soveltavassa tilastollisessa tutkimuksessa käsi kädessä.
 
 
-```{r soveltava, echo=FALSE, fig.cap="Soveltava tilastotiede", fig.align='center', out.width = "150%"}
+```{r soveltava, echo=FALSE, fig.cap="Soveltava tilastotiede", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/soveltava.jpg")
 ```
 
@@ -269,7 +269,7 @@ __Teoreettinen tilastotiede__
   - Esimerkiksi kolikonheitto on satunnaisilmiö ja sillä on vain kaksi arvoa^[Kolikon kantilleen jäämistä ei tässä lasketa mahdolliseksi tapahtumaksi.] ja kolikonheittoa voidaan kuvata nk. binomijakaumalla, merkitään $\text{Bin}(n,p)$ missä $n$ on heittojen lukumäärä ja $p$ on kruunan todennäköisyys.
   - Esimerkki: heitetään kolikkoa 40 kertaa ja saadaan kruuna 40/40 tapauksessa. Onko tämän havaintoaineiston perusteella uskottavaa, että kolikonheitto noudattaa binomijakaumaa $\text{Bin}(40, 0.5)$? Eli kuinka uskottavan voidaan pitää että kyseinen kolikko on tavallinen, painottamaton kolikko?
 
-```{r perus, echo=FALSE, fig.cap="Tilastotiede ja todennäköisyys", fig.align='center', out.width = "150%"}
+```{r perus, echo=FALSE, fig.cap="Tilastotiede ja todennäköisyys", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/perustuu.jpg")
 ```
 
@@ -280,7 +280,7 @@ knitr::include_graphics("images/perustuu.jpg")
   - Todennäköisyyslaskentaa opetetaan tarkemmin (tätä kurssia seuraavilla) kursseilla [TILM3553 Todennäköisyyslaskennan peruskurssi pääaineopiskelijoille](https://opas.peppi.utu.fi/fi/opintojakso/TILM3553/1734), [TILM3568 Todennäköisyyslaskenta sivuaineopiskelijoille](https://opas.peppi.utu.fi/fi/opintojakso/TILM3568/3385) ja [SMAT5306 Todennäköisyyslaskennan jatkokurssi](https://opas.peppi.utu.fi/fi/opintojakso/SMAT5306/4400).
 
 
-```{r teoreettinen, echo=FALSE, fig.cap="Teoreettinen tilastotiede", fig.align='center', out.width = "150%"}
+```{r teoreettinen, echo=FALSE, fig.cap="Teoreettinen tilastotiede", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/teoreettinen.jpg")
 ```
 
