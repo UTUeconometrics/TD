@@ -1,0 +1,9 @@
+# Tilastollinen riippuvuus ja korrelaatio {#luku7}
+
+## Muuttujien väliset riippuvuudet {#alaluku71}
+
+## Kahden muuttujan havaintoaineiston kuvaaminen {#alaluku72}
+
+## Tunnusluvut {#alaluku73}
+
+## Satunnaismuuttujien kovarianssi ja korrelaatio {#alaluku74}

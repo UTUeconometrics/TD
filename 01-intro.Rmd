@@ -18,7 +18,7 @@ Holopainen ja Pulkkinen, 2008
 \vspace{0.75cm}
 
 - Kurssilla käsitellään myös __tilastollisen päättelyn__ peruskäsitteitä ja perusteita kuten
-  - Mitä on __todennäköisyys__ ja miten sen tulkitaan tilastotieteessä sekä laajemmin tieteessä. Erityisesti tilastotieteen osalta keskiössä on tämän kurssin osalta __satunnaismuuttujat__ sekä niihin liitettävät käsitteet
+  - Mitä on __todennäköisyys__ ja miten se tulkitaan tilastotieteessä sekä laajemmin tieteessä. Erityisesti tilastotieteen osalta keskiössä on tämän kurssin osalta __satunnaismuuttujat__ sekä niihin liitettävät käsitteet
     - __Odotusarvo__, __varianssi__ ja kahden (tai useamman) satunnaismuuttujan __korrelaatio__.
     - Satunnaismuuttujien __todennäköisyysjakaumien__ perusteita ja niiden yhteyksiä mm. normaalijakaumaan ja muutamiin muihin keskeisiin jakaumiin.
     - Tilastollinen malli työkaluna satunnaismuuttujien formaalissa mallintamisessa ja päättelyssä. Tilastollisen malliin liittyy (usein) __parametreja__ joihin tilastollinen päättely kohdistuu.
@@ -27,14 +27,16 @@ Holopainen ja Pulkkinen, 2008
 
 \vspace{0.75cm}
 
-- Toinen kurssin keskeisistä teemoista on tarkastella tieteellistä tutkimusprosessia teoriassa ja käytännössä. Tämä sisältää mm. seuraavia aiheita (joita siis käsitellään tällä kurssilla päällisin puolin ja varsin yleisestä näkökulmasta katsoen): tarkemmat yksityiskohdat jäävät tätä kurssia seuraavien tilastotieteen kurssien aihepiireiksi):
+- Toinen kurssin keskeisistä teemoista on tarkastella tieteellistä tutkimusprosessia teoriassa ja käytännössä. Tämä sisältää mm. seuraavia aiheita (joita siis käsitellään tällä kurssilla päällisin puolin varsin yleisestä näkökulmasta katsoen ja tarkemmat yksityiskohdat jätetään tätä kurssia seuraavien tilastotieteen kurssien aihepiireiksi):
   - __Tutkimusongelman__ asettaminen: mitä halutaan tutkia?  
   - Tutkimusongelman täsmentäminen ja __tutkimusstrategian__ laatiminen: millä keinoin asetettuun tutkimusongelmaan voidaan vastata?
   - __Tutkimusaineiston__ (tai vain lyhyemmin __aineiston__ eli __datan__) kerääminen
     - __Aineiston ennakkoehdot__: mitkä ehdot tulee täyttyä, jotta asetettuun tutkimusongelmaan voidaan vastata?
     - __Otanta__ (ja mittaaminen): miten tutkimusaineisto kerätään niin, että se täyttää aineiston ennakkoehdot? Erilaisissa tutkimuksissa käytetään erilaisia aineistoja kuten:
-      - Survey- ja rekisteriaineistot
-      - Havaintoarvojen välistä korrelaatiota esiintyy mm. aikasarja-aineistojen tai pitkittäisaineistojen tapauksessa
+      - Survey- eli haastatteluaineistot: aineisto kerätään haastattelemalla tutkimuskohteita
+      - Rekisteriaineistot: aineisto on kerätty valmiiksi rekisteriin ja sitä käytetään tutkimukseen 
+      - Aikasarja-aineistot tai pitkittäisaineistot: useita mahdollisesti korreloituneita havaintoja samoista tutkimuskohteista
+      - Ynnä muita, ks. \@ref(luku10)
 - __Aineiston kuvaaminen__: minkälaista aineistoa on kerätty ja vastaako se ennakkoehtoja? 
 - __Aineiston analyysin__ lähtökohtia   
   - Mitä tilastollista mallia/malleja käytetään?
@@ -45,16 +47,16 @@ Holopainen ja Pulkkinen, 2008
 
 ## Tilastotieteen asema tutkimusyhteisön ulkopuolella
 
-- Tilastotiede on oppiaineena usein varsin tuntematon toisen asteen opinnoista valmistuneelle, sillä sitä ei juurikaan opeteta lukioissa tai ammattikouluissa huolimatta sen keskeisestä ja kasvavasta roolista tiedemaailman kentillä.
+- Tilastotiede on oppiaineena usein varsin tuntematon toisen asteen opinnoista valmistuneelle, sillä sitä ei juurikaan opeteta lukioissa tai ammattikouluissa huolimatta sen keskeisestä ja kasvavasta roolista tieteenteossa.
 - Tiedeyhteisön ulkopuolellakin __tilastotiedettä ja tilastotieteilijöitä arvostetaan laajalti__. 
 - __Tilastotiede onkin nostanut profiiliaan viimeisten vuosikymmenien aikana__ tietoteknisen kehityksen tuotua laajat tietoaineistot ja kehittyneet laskennalliset menetelmät lähes jokaisen kansalaisen saataville. 
-- Tämä "datavallankumous" näkyy tilastotieteilijöiden kysynnässä työmarkkinoilla: erilaisten aineistojen määrän lisääntyessä kasvaa myös kysyntä työntekijöistä, jotka osaavat ammatitaitoisesti käsitellä, tulkita ja mallintaa tilastollisia aineistoja.
+- Tämä "_datavallankumous_" näkyy tilastotieteilijöiden kysynnässä työmarkkinoilla: erilaisten aineistojen määrän lisääntyessä kasvaa myös kysyntä työntekijöistä, jotka osaavat ammatitaitoisesti käsitellä, tulkita ja mallintaa tilastollisia aineistoja.
 - Ei siis liene ihmekään, että erilaisten "data"-alkuisten työpaikkojen, kuten __datatieteilijä__ (eng. __data scientist__) tai __data-analyytikko__ (__data analyst__) määrä on kasvanut voimakkaasti jo pidempään. Kaikkia tieto- ja datainensiivisten ammattien tekijöitä yhdistää yksi tekijä: __heidän tulee hallita ja osata tilastotiedettä!__ 
   - Karkeistettuna mitä paremmin ja enemmän (laajemmin), sen parempi palkka ja monipuolisemmat työtehtävät!
 
 ## Kurssin luonne tilastotieteen opintojen esittelijänä
 
-Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi __miten TY:ssa tilastotieteen opinnoissa syvennytään__ tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin. Tilastotieteen opintotarjonta löytyy [Turun yliopiston opinto-oppaasta](https://opas.peppi.utu.fi/fi/ohjelma/89589)!
+Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi __miten TY:ssa tilastotieteen opinnoissa syvennytään__ tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin. Tilastotieteen opintotarjontaan voi perehtyä [Turun yliopiston opinto-oppaan avulla](https://opas.peppi.utu.fi/fi/ohjelma/89589)!
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

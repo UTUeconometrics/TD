@@ -1,0 +1,17 @@
+# Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma {#luku6}
+
+## Satunnaisotos, yhteisjakauma ja tilastollinen malli {#alaluku61}
+
+## Otosjakauma: Estimaattori ja estimaatti {#alaluku62}
+
+## Otoskeskiarvo ja otosvarianssi (estimaattoreinta) {#alaluku63}
+
+## Suhteellisen frekvenssin otosjakauma {#alaluku64}
+
+## Muita tunnuslukuja {#alaluku65}
+
+## Luottamusvälit {#alaluku66}
+
+## Otoskoko {#alaluku67}
+
+  

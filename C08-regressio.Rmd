@@ -1,0 +1,7 @@
+# Regressioanalyysi {#luku8}
+
+## Johdatus regressioanalyysin ideaan {#alaluku81}
+
+## Yhden selittäjän lineaarinen regressiomalli {#alaluku82}
+
+## Muita regressiomalleja {#alaluku83}

@@ -1,0 +1,13 @@
+# Sattuma ja satunnaisuus tilastotieteessä {#luku4}
+
+## Satunnaisilmiöt ja satunnaismuuttujat tilastotieteessä {#alaluku41}
+
+## Satunnaisuus ja todennäköisyydet {#alaluku42}
+
+## Tilastolliset mallit, jakaumat ja parametrit {#alaluku43}
+
+## Odotusarvo ja varianssi {#alaluku44}
+
+## Joitain jakaumia {#alaluku45}
+
+## Sattuman rooli tieteenteossa: Vale-emävale-tilasto? {#alaluku46}

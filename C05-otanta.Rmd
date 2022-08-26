@@ -1,0 +1,16 @@
+# Tilastolliset aineistot, niiden kerääminen ja mittaaminen {#luku5}
+
+## Kertausta: Data eli aineisto {#alaluku51}
+
+## Otannan idea {#alaluku52}
+
+## Mittaaminen ja mitta-asteikot {#alaluku53}
+
+## Kontrolloidut kokeet ja suorat havainnot {#alaluku54}
+
+## Otantamenetelmät {#alaluku55}
+
+## Otantaesimerkkejä {#alaluku56}
+
+## Otannan haasteita vielä kootusti {#alaluku57}
+

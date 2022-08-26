@@ -30,27 +30,27 @@
 
 \definecolor{myboxcolor}{named}{blue} % Default box color
 
-\definecolor{my-purple}{RGB}{138, 43, 226}
+\definecolor{my-purple}{RGB}{204,180,225}
 \newtcolorbox{defblock}[1]{%
     breakable,
     enhanced,
-    coltext=white,
+    coltext=black,
     colback=my-purple,      % Box color is used here
-    colframe=myboxcolor!25!black,     % Box color is used here
-    title=\textbf{#1}        % Box title is used here 
+    colframe=myboxcolor!25!my-purple,     % Box color is used here
+    detach title,
+    after upper={\par\hfill\tcbtitle}        % Box title is used here 
 }
 
-
-\definecolor{my-orange}{RGB}{255, 140, 0}
+\definecolor{my-orange}{RGB}{255,205,138}
 \newtcolorbox{eblock}[1]{%
     breakable,
     enhanced,
+    coltext=black,
     colback=my-orange,      % Box color is used here
-    colframe=myboxcolor!25!black,     % Box color is used here
-    coltitle=black,
-    title=\textbf{#1}        % Box title is used here 
+    colframe=myboxcolor!25!my-orange,     % Box color is used here
+    detach title,
+    after upper={\par\hfill\tcbtitle}        % Box title is used here 
 }
-
 
 
 \newcommand{\Rspace}{\mathcal{R}}
