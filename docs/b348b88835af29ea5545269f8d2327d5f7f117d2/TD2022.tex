@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
 ]{book}
@@ -38,7 +39,11 @@
 \hypersetup{
   pdftitle={TILM3701 - Tilastotiede ja data 2022},
   pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
-  hidelinks,
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
@@ -171,6 +176,7 @@
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }

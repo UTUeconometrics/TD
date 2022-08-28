@@ -11,6 +11,9 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
+colorlinks: yes
+urlcolor: blue
+linkcolor: blue
 github-repo: rstudio/bookdown-demo
 description: "Tilastotieteen ensimmäinen kurssi."
 ---
