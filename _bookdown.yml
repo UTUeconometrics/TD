@@ -8,3 +8,6 @@ language:
   label:
     fig: "Kuvio " 
 book_filename: "TD2022"
+colorlinks: true
+urlcolor: blue
+linkcolor: blue

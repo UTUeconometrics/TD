@@ -1,6 +1,7 @@
 bookdown::gitbook:
   css: style.css
   split_by: section
+  highlight: espresso
   config:
     toc:
       before: |
@@ -15,3 +16,6 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
   extra_dependencies: ["amsmath", "amssymb"]
+  colorlinks: true
+  urlcolor: blue
+  linkcolor: blue

@@ -2,7 +2,7 @@
 
 _Ihmisellä on luontainen pyrkimys ymmärtää, mitä hänen ympärillään tapahtuu. Ymmärrys perustuu ihmisen tekemiin havaintoihin, joita luokittelemalla tai seuraamalla hän pyrkii löytämään säännönmukaisuuksia. Näiden säännönmukaisuuksien löytäminen vaatii loogisten johtopäätösten tekoa. Pelkän uteliaisuuden tyydyttämiseen ja älyllisen mielihyvän lisäksi ihminen pyrkii ennakoimaan tulevaa ja siten varautumaan tuleviin tapahtumiin... Edellä kuvattuja taitoja voi oppia._
 
-Holopainen ja Pulkkinen, 2008
+Holopainen ja Pulkkinen (2008)
 
 ## Tilastotiede ja kurssin idea 
 
@@ -21,14 +21,14 @@ Holopainen ja Pulkkinen, 2008
   - Mitä on __todennäköisyys__ ja miten se tulkitaan tilastotieteessä sekä laajemmin tieteessä. Erityisesti tilastotieteen osalta keskiössä on tämän kurssin osalta __satunnaismuuttujat__ sekä niihin liitettävät käsitteet
     - __Odotusarvo__, __varianssi__ ja kahden (tai useamman) satunnaismuuttujan __korrelaatio__.
     - Satunnaismuuttujien __todennäköisyysjakaumien__ perusteita ja niiden yhteyksiä mm. normaalijakaumaan ja muutamiin muihin keskeisiin jakaumiin.
-    - Tilastollinen malli työkaluna satunnaismuuttujien formaalissa mallintamisessa ja päättelyssä. Tilastollisen malliin liittyy (usein) __parametreja__ joihin tilastollinen päättely kohdistuu.
+    - Tilastollinen malli työkaluna satunnaismuuttujien formaalissa mallintamisessa ja päättelyssä. Tilastolliseen malliin liittyy (usein) __parametreja__ joihin tilastollinen päättely kohdistuu.
     - Tilastollisten mallien __estimoinnin__ perusidea, eli miten tilastollisen mallin parametreille muodostetaan arvot käytettävissä olevan aineiston pohjalta. Esimerkiksi: mitä tarkoittaa tilastollisen mallin parametrin __estimaattori__ ja sen __harhattomuus__?
     - Alustavia tarkasteluja tilastollisen mallin uskottavuuden käsitteelle ja __luottamusväleille__ tilastollisen mallin estimoiduille parametreille.
 
 \vspace{0.75cm}
 
 - Toinen kurssin keskeisistä teemoista on tarkastella tieteellistä tutkimusprosessia teoriassa ja käytännössä. Tämä sisältää mm. seuraavia aiheita (joita siis käsitellään tällä kurssilla päällisin puolin varsin yleisestä näkökulmasta katsoen ja tarkemmat yksityiskohdat jätetään tätä kurssia seuraavien tilastotieteen kurssien aihepiireiksi):
-  - __Tutkimusongelman__ asettaminen: mitä halutaan tutkia?  
+  - __Tutkimusongelman__ asettaminen: mitä halutaan tutkia?
   - Tutkimusongelman täsmentäminen ja __tutkimusstrategian__ laatiminen: millä keinoin asetettuun tutkimusongelmaan voidaan vastata?
   - __Tutkimusaineiston__ (tai vain lyhyemmin __aineiston__ eli __datan__) kerääminen
     - __Aineiston ennakkoehdot__: mitkä ehdot tulee täyttyä, jotta asetettuun tutkimusongelmaan voidaan vastata?
@@ -56,7 +56,7 @@ Holopainen ja Pulkkinen, 2008
 
 ## Kurssin luonne tilastotieteen opintojen esittelijänä
 
-Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi __miten TY:ssa tilastotieteen opinnoissa syvennytään__ tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin. Tilastotieteen opintotarjontaan voi perehtyä [Turun yliopiston opinto-oppaan avulla](https://opas.peppi.utu.fi/fi/ohjelma/89589)!
+Kurssin mittaan esitellään tilastotieteen perusteiden lisäksi __miten Turun yliopistossa tilastotieteen opinnoissa syvennytään__ tällä kurssilla esiteltäviin menetelmiin, aineistotyyppeihin ja mallinnuskokonaisuuksiin. Tilastotieteen opintotarjontaan voi perehtyä [TY:n opinto-oppaan avulla](https://opas.peppi.utu.fi/fi/ohjelma/89589)!
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

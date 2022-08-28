@@ -53,7 +53,7 @@ Kurssin materiaali on koostettu em. lähteistä ja pyrkii paikoin pelkistettyyn 
   - On sisäistänyt tilastotieteen keskeisiä käsitteitä ja osaa niiden avulla tarkastella kriittisesti tieteellisiä tutkimuksia
   - Pystyy erottamaan edustavan otoksen ja näytteen
 
-Lisäksi on avattu opinto-oppaassa ja vielä laajemmin alla. Tämä listaus toimii hyvänä luettelona kurssin keskeisistä teemoista.
+Kurssin sisältöä on listattu opinto-oppaassa ja laajemmin alla. Tämä listaus toimii hyvänä luettelona kurssin keskeisistä teemoista.
 
 - Kurssin sisältöä:
   - Tilastotiede tieteenalana ja sen suhde lähitieteisiin, kuten datatieteeseen (data science)
@@ -62,7 +62,6 @@ Lisäksi on avattu opinto-oppaassa ja vielä laajemmin alla. Tämä listaus toim
   - Tilastollisen päättelyn perusteita
   - Otannan perusteet
   - Tilastotieteen sovellusten ja sovellusalueiden esittelyä
-  - Osaamistavoitteet: Opintojakson suoritettuaan opiskelija
 
 Materiaalin seassa on eritelty väärikoodatuin tietolaatikoin erinäisiä tärkeitä tilastotieteellisiä konsepteja ja termejä sekä esimerkkejä tilastotieteen sovelluksista. Näistä ensin mainitut löytyvät Deltan violeteista laatikoista ja jälkimmäiset Statistikan oransseista.^[Toim. Huom. värit eivät täysin alkuperäisten värien kanssa yhteneväisiä.] Alla esimerkkilaatikot.
 
