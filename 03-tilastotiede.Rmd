@@ -141,11 +141,12 @@ Havaintoaineisto, data, on tilastoyksiköiden tilastollisista muuttujista kerät
   
 ## Tilastotieteen suhde lähitieteisiin {#alaluku33}
 
-- Kuvio \@ref(fig:datasc) tarjoaa karkean yleistyksen tietojenkäsittelytieteen (Computer Science) ja sovellusalan (Application domain) sekä tilastotieteen (Statistics) ja matematiikan (Mathematics) välisistä yhteyksistä. On selvää että tilastotieteellä on paljon päällekäisyyksiä lähitieteidensä kanssa ja joskus näkeekin (huolimatta edellä tehdyistä huomioista) että tilastotiede niputetaan yhteen matematiikan tai tietojenkäsittelytieteen kanssa. 
+- Kuvio \@ref(fig:datasc)^[Kuvan lähde: [Duchesnay (2020)](https://duchesnay.github.io/pystatsml/introduction/machine_learning.html)] tarjoaa karkean yleistyksen tietojenkäsittelytieteen (Computer Science) ja sovellusalan (Application domain) sekä tilastotieteen (Statistics) ja matematiikan (Mathematics) välisistä yhteyksistä. On selvää että tilastotieteellä on paljon päällekäisyyksiä lähitieteidensä kanssa ja joskus näkeekin (huolimatta edellä tehdyistä huomioista) että tilastotiede niputetaan yhteen matematiikan tai tietojenkäsittelytieteen kanssa. 
 
-```{r datasc, echo=FALSE, fig.cap="Tilastotieteen ja rajatieteiden yhteyksiä kuvaava Venn-diagrammi. ([Duchesnay, 2020](https://duchesnay.github.io/pystatsml/introduction/machine_learning.html))", fig.align='center', out.width = "100%"}
+```{r datasc, echo=FALSE, fig.cap="Tilastotieteen ja rajatieteiden yhteyksiä kuvaava Venn-diagrammi. (Duchesnay, 2020)", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/data_science.jpg")
 ```
+
 
 - Yritetään siis vielä hahmotella tilastotieteen suhdetta sitä lähimpänä olevaan (soveltavaan) matematiikkaan.
   - Tilastotieteessä olennaisen otantateorian (Luku \@ref(luku5)) voisi ajatella olevan matemaattisesti määritelty teoria, jossa myös on aineiston käsite, mutta se ei tee siitä vielä varsinaisesti tilastotiedettä.
