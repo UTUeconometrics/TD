@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4.2 Satunnaisuus ja todennäköisyydet | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4.2 Satunnaisuus ja todennäköisyydet | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -54,6 +54,10 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -210,8 +214,8 @@
 <p><strong>Frekventistinen tilastotiede</strong></p>
 <ul>
 <li><p>Klassisessa eli frekventistisessä tilastotieteessä ajatellaan että hypoteesien testaaminen tulee perustua yksinomaan havaittuun aineistoon ja siihen liitettävään tilastolliseen malliin.</p></li>
-<li><p>Nimi “frekventistinen” juontuu siitä, että tämä todennäköisyysjakauma määrittää satunnaismuuttujan mahdollisten arvojen todennäköisyydeksi niiden suhteellisen osuuden äärettömästä määrästä realisaatioita, ts. niiden suhteellisen frekvenssin.</p></li>
-<li><p>Klassisessa tilastotieteessä havaittuun aineistoon <em>sovitetaan</em> sitä kuvaavaan todennäköisyysjakaumaan perustuva tilastollinen malli, joka vastaa saatua aineistoa parhaiten.</p>
+<li><p>Nimi “frekventistinen” juontuu siitä, että tilastollisen mallin perustana oleva todennäköisyysjakauma määrittää satunnaismuuttujan mahdollisten arvojen todennäköisyydeksi niiden suhteellisen osuuden äärettömästä määrästä realisaatioita, ts. niiden suhteellisen frekvenssin.</p></li>
+<li><p>Klassisessa tilastotieteessä havaittuun aineistoon <em>sovitetaan</em> sitä tilastollinen malli, joka vastaa saatua aineistoa parhaiten.</p>
 <ul>
 <li>Tämä tilastollinen malli perustuu nk. <strong>uskottavuusfunktioon</strong>, joka on <em>aineiston</em> sekä yhden tai useamman <em>parametrin</em> funktio ja joka saavuttaa suurimman arvonsa nk. “suurimman uskottavuuden pisteessä.”</li>
 <li>Uskottavuusfunktio kertoo kuinka todennäköisenä havaittua aineistoa voidaan pitää, mikäli sen oletetaan olevan peräisin vastaavasta mallista jollain parametriarvolla. Täten ne parametriarvot, joilla uskottavuusfunktion arvo maksimoituu, kuvaavat aineiston generoimaa prosessia parhaiten, annettuna malli- eli jakaumaoletus.</li>
