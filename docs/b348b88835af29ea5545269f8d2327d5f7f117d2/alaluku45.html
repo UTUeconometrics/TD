@@ -269,6 +269,9 @@ jossa <span class="math inline">\(y\)</span> on sm:n <span class="math inline">\
 <p><strong>Esimerkki: Miesten lukumäärä Saksin osavaltion perheissä 1876–1885</strong><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
 <p>Vuosien 1876–1885 aikana Saksin osavaltiossa rekisteröitiin yli neljä miljoonaa syntynyttä lasta. Tällöin vanhempien tuli ilmoittaa lapsen sukupuoli (mies tai nainen) heidän syntymätodistuksessaan. Myöhemmässä tutkimuksessa tutkittiin tarkemmin 6115 perhettä, joissa asui 12 lasta ja tarkemmin miesten (poikien) lukumäärää näissä perheissä.</p>
 <p>Seuraavassa taulukossa taulukoidaan miesten (poikien) lukumäärät näissä 12 lapseen perheissä:</p>
+</div>
+<div class="eblock kimmo">
+<strong>Esimerkki (jatkuu): Miesten lukumäärä Saksin osavaltion perheissä 1876–1885</strong>
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -432,6 +435,7 @@ Kuvio 4.4: Miesten lukumäärä Saksin osavaltiossa 12 lapsen perheissä.
 <p>Tarkastellaan Englannin Valioliigakauden 1995–1996 otteluissa tehtyjä maalimääriä. Valioliiga (The F.A. Premier League) on korkein Englannin jalkapalloliigan sarjataso, jossa ensi kerran juuri kaudella 1995-1996 20 joukkuetta (aiemmin Valioliigan perustamisen kauden 1992–1993 alussa 22 joukkuetta) pelasivat keskenään kerran toisiaan vastaan koti- ja vieraskentällä. Otteluita oli siis yhteensä 380.</p>
 <p>Tämä esimerkki perustuu edellä mainittuun Friendlyn ja Meyerin (2015) kirjan esimerkkiin 3.9 (s. 78-79), joka vastaavasti perustuu Alan J. Leen (1997) artikkeliin<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>, jonka esittämään kysymykseen (hypoteesiin) vastaus on tietenkin ilmeinen! Näin ollen seuraavassa tarkastellaankin kotijoukkueiden ja vierasjoukkueiden maalintekointensiteettiä Poisson-jakaumaan perustuen. Seuraavassa emme siis pyri mallintamaan tietyn spesifin ottelun lopputulosta vaan tarkastelemme “keskimääräisen” kotijoukkueen ja vierasjoukkueen “edustavaa” ottelua.</p>
 <p>Seuraava taulukko raportoi tehtyjen maalimäärien jakaumat pelatuissa 380 ottelussa. Neljän tai yli neljän maalin tapaukset kirjataan 4+:nä maalina. Ts. esim. kys. kauden lopputulokset <em>Blackburn Rovers</em>- <em>Nottingham Forest</em> 7-0 ja <em>Bolton Wanderers</em> - <em>Manchester United</em> 0-6 tulevat aineistoon tuloksina 4+ vs. 0 ja 0 vs. 4+.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -615,8 +619,13 @@ Yht.
 </tr>
 </tbody>
 </table>
+<div class="eblock kimmo">
+<p><strong>Esimerkki (jatkuu): Poisson-jakauma</strong></p>
 <p>Olettamalla, että koti- ja vierasjoukkueen todennäköisyys tehdä maali ottelun aikana on vakio, niin tällöin koti- ja vierasjoukkueen ottelun aikana tekemien maalien lukumäärää (ilman edellä käytettyä maalimäärien “katkaisua” neljään) voidaan melko hyvin approksimoida oletuksella, että nämä lukumäärät ovat Poisson-jakautuneita. Ts. <span class="math inline">\(Y^H_i \thicksim P(\lambda_H)\)</span> on sm., joka kuvaa <span class="math inline">\(i\)</span>:n ottelun kotijoukkueen tekemien maalien lukumäärää ja intensiteettiparametrin <span class="math inline">\(\lambda_H\)</span> arvon määrittäminen kuuluu tilastollisen päättelyn ja erityisesti estimointiteorian piiriin. Vastaavasti vierasjoukkueen maalimäärät: <span class="math inline">\(Y^A_i \thicksim P(\lambda_A)\)</span>.</p>
 <p>Osoittautuu, että parametreille <span class="math inline">\(\lambda_H\)</span> ja <span class="math inline">\(\lambda_A\)</span> saatavat estimaatit ovat <span class="math inline">\(\lambda_H = 1,49\)</span> ja <span class="math inline">\(\lambda_A = 1,06\)</span> ja ne vastaavat tässä yksinkertaistetussa tilanteessa koti- ja vierasjoukkueen keskimääräisiä maalimääriä:</p>
+<p>Tuloksista voidaan siis päätellä, että kotijoukkueen (odotettavissa oleva) maalimäärä on vierasjoukkuetta korkeampi (osoittaen osaltaan kotiedun merkitystä jalkapallossa). Lisäksi edellä todetun Poisson-jakauman teoreettisten ominaisuuksien mukaisesti keskimääräiset maalimäärät ovat lähellä niiden variansseja, mikä osoittaa osaltaan tarkasteltavassa yksinkertaisessa tilanteessa, että Poisson-jakaumaan perustuva jakaumaoletus on kelvollinen.</p>
+<p>On syytä todeta lopuksi, että tämän vahvasti yksinkertaistetun tilanteen sijaan tilastotieteessä on laaja ja kasvava kirjallisuuden haara jalkapalloa ja muuta urheilua koskevien tilastollisen menetelmien saralla. Nämä vaativat kuitenkin syvällisemmän ymmärryksen kannalta jälleen huomattavasti laajempia tilastotieteen (aine- ja syventäviä) opintoja.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -664,9 +673,6 @@ Varianssi
 </tr>
 </tbody>
 </table>
-<p>Tuloksista voidaan siis päätellä, että kotijoukkueen (odotettavissa oleva) maalimäärä on vierasjoukkuetta korkeampi (osoittaen osaltaan kotiedun merkitystä jalkapallossa). Lisäksi edellä todetun Poisson-jakauman teoreettisten ominaisuuksien mukaisesti keskimääräiset maalimäärät ovat lähellä niiden variansseja, mikä osoittaa osaltaan tarkasteltavassa yksinkertaisessa tilanteessa, että Poisson-jakaumaan perustuva jakaumaoletus on kelvollinen.</p>
-<p>On syytä todeta lopuksi, että tämän vahvasti yksinkertaistetun tilanteen sijaan tilastotieteessä on laaja ja kasvava kirjallisuuden haara jalkapalloa ja muuta urheilua koskevien tilastollisen menetelmien saralla. Nämä vaativat kuitenkin syvällisemmän ymmärryksen kannalta jälleen huomattavasti laajempia tilastotieteen (aine- ja syventäviä) opintoja.</p>
-</div>
 </div>
 </div>
 <div class="footnotes">
