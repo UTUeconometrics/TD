@@ -7,7 +7,7 @@ Käytännössä tilastotieteen ja sen sovellusalueiden tutkimuksessa tulisi osat
 ## Tilastollinen selittäminen vs. ennustaminen {#alaluku111}
 
 - (Tilastollinen) __selittäminen__ tarkoittaa esim. kahden muuttujan välisen yhteyden tutkimista (tämän kurssin yksinkertainen tilanne lineaarisen regressiomallin yhteydessä, jota voidaan laajentaa useisiin muuttujiin). Tutkijaa saattaa kiinnostaa esimerkiksi tupakoinnin vaikutus sepelvaltimotautikuolleisuuteen tai ylipainon vaikutus leikkauksen jälkeisiin infektioihin. 
-  - Tällöin __pyrkimyksenä__ on rakentaa " __selitysmalli__", jossa on perustellut syy-seuraussuhteet selittävästä (selittävistä) muuttujista selitettävään muuttujaan. %Tarvittaessa mukaan otetaan sekoittavia tekijöitä, joilla tiedetään olevan syy-seuraus-suhde kumpaankin.
+  - Tällöin __pyrkimyksenä__ on rakentaa " __selitysmalli__", jossa on perustellut syy-seuraussuhteet selittävästä (selittävistä) muuttujista selitettävään muuttujaan. 
 - (Tilastollinen) __ennustaminen__ tarkoittaa, että tietyillä selittävän tai selittävien (tai "ennustavien") muuttujien yhdistelmillä tai arvoilla voidaan ennustaa ennustettavan muuttujan arvoa.
   - Ts. siis ennustettavana muuttujana toimii tilastollisen mallin näkökulmasta katsoen vastemuuttujan arvo, jota pyritään ennustemallin avulla ennustamaan.
   - Ennustemalleja tutkittaessa varsinaisilla selityssuhteilla ei välttämättä ole merkitystä. Tärkeintä on mallin ennustekyky, ei niinkään esim. yksittäisen regressiokertoimen arvo ja siihen liittyvät tarkemmat tulkinnat. Tilastollisesti merkitsevä regressiokerroin ei tarkoita, että muuttujalla olisi välttämättä ennustekykyä.

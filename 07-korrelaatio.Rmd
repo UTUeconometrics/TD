@@ -217,9 +217,9 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
   - Otoskovarianssilla on taipumus saada positiivisia (negatiivisia) arvoja, jos havaintopisteiden muodostama "pistepilvi (pisteparvi)" näyttää nousevalta (laskevalta) oikealle mentäessä; ks. pistediagrammin ilmeen ja Pearsonin otoskorrelaatiokertoimen yhteys, jota käsitellään seuraavaksi.
 
 - Pearsonin otoskorrelaatiokertoimella $r_{xy}$ on seuraavat ominaisuudet:
-  - (i) $-1 \le r_{xy} \le 1$
-  - (ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$  ovat reaalisia vakiota ja $\beta \neq 0$
-  - (iii)	Korrelaatiokertoimella $r_{xy}$ ja kovarianssilla $s_{xy}$ on aina sama etumerkki
+  i) $-1 \le r_{xy} \le 1$
+  ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$  ovat reaalisia vakiota ja $\beta \neq 0$
+  iii)	Korrelaatiokertoimella $r_{xy}$ ja kovarianssilla $s_{xy}$ on aina sama etumerkki
 
 - Pearsonin otoskorrelaatiokerroin $r_{xy}$: Tulkinta/tulkintoja:
   - Havaintoarvojen pareista $(x_i, y_i), i = 1,2, \ldots, n$ laskettu Pearsonin otoskorrelaatiokerroin $r_{xy}$ mittaa $x$- ja $y$-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuutta.
@@ -233,7 +233,7 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
 knitr::include_graphics("images/Pearson-korr-Mellin.jpg")
 ```
 
-- Toinen havainnollistus: Ks. seuraavasta linkistä lisää havainnollistuksia. Arvio korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: \url{}
+- Toinen havainnollistus: Ks. seuraavasta linkistä lisää havainnollistuksia. Arvio korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: 
 
 ```{r, echo = FALSE}
 knitr::include_url("http://guessthecorrelation.com/")
@@ -273,28 +273,45 @@ knitr::include_graphics("images/simpson.jpg")
 **Esimerkki: Berkeleyn sukupuolisyrjintä**
 
 Yksi tunnetuimmista esimerkeistä Simpsonin paradoksista on Berkeleyn yliopiston sukupuolisyrjintätapaus. Yliopisto haastettiin oikeuteen vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi miesten helpompi päästä kuin naisten.
-|  | Hakijat | Hyväksytyt |
-|-----|-----|-----|
-|Miehet|8442| __44%__ |
-|Naiset|4321| 35% |
-\
+:::
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+m = c(8442, "44%")
+n = c(4321, "35%")
+library(kableExtra)
+library(tidyverse)
+library(knitr)
+taulukko = rbind.data.frame(m,n)
+rownames(taulukko) = c("Miehet", "Naiset")
+colnames(taulukko) = c("Hakijat", "Hyväksytyt")
+kable(taulukko, booktabs = TRUE) %>% 
+  kable_styling(font_size = 12, latex_options = "scale_down")
+```
+
+::: {.defblock .mikko data-latex="{}"}
+
 Taulukosta nähdään, että mieshakijoista on päässyt 9 prosenttiyksikköä enemmän sisälle kuin naisista.
-\
+
 \
 
 - Tarkasteltaessa erikseen eri tiedekuntia huomataan, että itseasissa useammassa tiedekunnissa naisia on päässyt sisälle isompi osuus hakijoista. Aineisto kuudesta isoimmasta tiedekunnasta on listattu alla olevaan taulukkoon.
-| | Miehet | | | Naiset | | |
-|Tdk|Hakijat|Hyväksytyt|%|Hakijat|Hyväksytyt|%|
-|--|--|--|--|--|--|--|
-|A|825|62|108| __82__|
-|B|560|63|25| __68__|
-|C|325| __37__|593|34|
-|D|417|33|375| __35__|
-|E|191| __28__|393|24|
-|F|373|6|341| __7__|
+
 :::
 
-\
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+A = c("A", 825,62,108, 82)
+B = c("B", 560,63,25, 68)
+C = c("C", 325, 37,593,34)
+D = c("D", 417,33,375, 35)
+E = c("E", 191,28,393,24)
+Fe = c("F", 373,6,341, 7)
+taulukko = rbind.data.frame(A,B,C,D,E,Fe)
+colnames(taulukko) = c("Tiedekunta", "Hakijat", "Hyväksytyt %", "Hakijat", "Hyväksytyt %")
+kable(taulukko, booktabs = TRUE) %>% 
+  kable_styling(font_size = 12, latex_options = "scale_down") %>% 
+  add_header_above(c("Miehet" = 2, "Naiset" = 3))
+```
+
 \
 
 - Vielä tiivistäen korrelaatiokertoimen tulkintavirheitä aiheuttavat useimmiten seuraavat seikat:

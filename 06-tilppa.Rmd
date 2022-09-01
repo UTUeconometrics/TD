@@ -5,7 +5,7 @@ output:
 ---
 # Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma {#luku6}
 
-Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edellisten lukujen erityisesti otantaa koskevan johdannon yhteydessä. Tilastollinen päättely on keskeinen osa tilastotiedettä, sillä se mahdollistaa päätelmien yleistämisen otoksesta populaatioon/perusjoukkoon. Tämä luku toimii esimerkkinä formaaliin matemaattiseen esitykseen perustuvan tilastollisen päättelyn perusteista (otannan ja otantajakaumien näkökulmasta), jonka ideana on yleisesti tehdä luotettavia johtopäätöksiä perusjoukosta otoksen perusteella. Tällä kurssilla käydään läpi (vain) tarvittavia yksityiskohtia sekä rakennetaan pohjia tn-laskennan kurssin jälkeiselle tilastollisen päättelyn peruskurssille (TILM3555).
+Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edellisten lukujen erityisesti otantaa koskevan johdannon yhteydessä. Tilastollinen päättely on keskeinen osa tilastotiedettä, sillä se mahdollistaa päätelmien yleistämisen otoksesta populaatioon/perusjoukkoon. Tämä luku toimii esimerkkinä formaaliin matemaattiseen esitykseen perustuvan tilastollisen päättelyn perusteista (otannan ja otantajakaumien näkökulmasta), jonka ideana on yleisesti tehdä luotettavia johtopäätöksiä perusjoukosta otoksen perusteella. Tällä kurssilla käydään läpi (vain) tarvittavia yksityiskohtia sekä rakennetaan pohjia tn-laskennan kurssin jälkeiselle tilastollisen päättelyn peruskurssille ([TILM3555](https://opas.peppi.utu.fi/fi/opintojakso/TILM3555/1731)).
 
 ## Satunnaisotos, yhteisjakauma ja tilastollinen malli {#alaluku61}
 
@@ -163,13 +163,16 @@ $$
 $$
 \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i.
 $$
-    - Otoskeskiarvo on satunnaismuutuja, jonka saama arvo vaihtelee satunnaisesti otoksesta toiseen johtuen satunnaisotannasta.
-    - Kun satunnaismuuttujat ovat samoin jakautuneet odotusarvonaan $\mu$, on otoskeskiarvo jakauman odotusarvon harhaton estimaattori, ts. 
+
+  - Otoskeskiarvo on satunnaismuutuja, jonka saama arvo vaihtelee satunnaisesti otoksesta toiseen johtuen satunnaisotannasta.
+  - Kun satunnaismuuttujat ovat samoin jakautuneet odotusarvonaan $\mu$, on otoskeskiarvo jakauman odotusarvon harhaton estimaattori, ts. 
 
 $$\text{E}(\bar{Y}) = \mu$$
-    - Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa, ts. $\text{E}(\bar{Y}) = \text{E}(\widehat{\theta}) = \theta = \mu$
+
+  - Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa, ts. $\text{E}(\bar{Y}) = \text{E}(\widehat{\theta}) = \theta = \mu$
 
 __Aritmeettisen keskiarvon ominaisuuksia__
+
 - Aiempien oletusten pätiessä aritmeettisella keskiarvolla $\bar{Y}$ on seuraava odotusarvo ja varianssi:
 $$
 \text{E}(\bar{Y}) = \mu,  \\
@@ -177,25 +180,30 @@ $$
 $$
 
 - Aritmeettisen keskiarvon $\bar{Y}$ __standardipoikkeama__
+
 $$
 \text{D}(\bar{Y}) = \sqrt{\mathrm{Var}(\bar{Y})} = \frac{\sigma}{\sqrt{n}}.
 $$
+
 - Standardipoikkeamaa kutsutaan myös __keskiarvon keskivirheeksi__ ja se kuvaa otoskeskiarvon otosvaihtelua odotusarvon $\mu$ ympärillä.
 
 - Aritmeettisen keskiarvon otosjakauma keskittyy yhä voimakkaammin havaintojen yhteisen odotusarvon $\mu$ ympärille, kun otoskoko $n$ kasvaa. 
   - Ts. otoskoon $n$ kasvaessa $\mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}$ pienenee.
 
 __Otosvarianssi__
+
 - Aineiston sisältämää vaihtelua kuvataan __otosvarianssilla__
 $$
 S^2= \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2.
 $$
+
   - Vastaavasti sm:jien vaihtelua perusjoukon tasolla kuvataan __populaatiovarianssilla__
 
 $$
 \sigma^2= \frac{1}{N} \sum_{j=1}^{N} (Y_j - \mu)^2,
 $$
 jota otosvarianssi harhattomasti estimoi.
+
 - Huomioi, että __otosvarianssi__ on eri asia kuin __otoskeskiarvon varianssi__.
 
 - Otoskeskiarvo $\bar{Y}$ ja otosvarianssi $S^2$ ovat siis satunnaismuuttujia, joiden saamat arvot vaihtelevat satunnaisesti otoksesta toiseen.
@@ -209,7 +217,7 @@ $$
 $$
 
 - Itse asiassa ns. __asymptoottiseen teoriaan__ vedoten (suurten otosten tapauksessa) voidaan osoittaa, että edellämainittu tulos pätee myös ilman normaalisuusoletusta. 
-    - Nämä tarkastelut vaativat jälleen selvästi enemmän käytyjä tilastotieteen (ja matematiikan) opintoja.
+  - Nämä tarkastelut vaativat jälleen selvästi enemmän käytyjä tilastotieteen (ja matematiikan) opintoja.
 
 \
 \
@@ -360,13 +368,13 @@ Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsema
 
 - Oletetaan, että olemme tehneet johtopäätöksen, että konstruloitu luottamusväli peittää parametrin $\theta$ tuntemattoman todellisen arvon. 
   - Tällöin otantaa toistettaessa luottamusvälin konstruktiosta seuraa, että tehty johtopäätös on oikea keskimäärin $100 \times (1-\alpha)\%$ tapauksista.
-  - Vastaavasti taas $100 \times alpha \%$ ei peitä parametrin todellista arvoa.
+  - Vastaavasti taas $100 \times \alpha \%$ ei peitä parametrin todellista arvoa.
 
-- Luottamusväli on kenties tunnetumpi kansankieliseltä nimitykseltään __virhemarginaali__, joka on itseasiassa luottamusvälin puolikas: todellinen parametriarvo kuuluu saadun estimaatin ja virhemarginaalien sisään jäävälle osuudelle. 
+- Luottamusväli on kenties tunnetumpi kansankieliseltä nimitykseltään __virhemarginaali__, joka on itseasiassa luottamusvälin puolikas: todellinen parametriarvo kuuluu saadun estimaatin ja virhemarginaalien sisään jäävälle osuudelle.
   - Normaalisti mm. otoskoon kasvu pienentää virhemarginaalia.
   - Kuten jatkossa tullaan havaitsemaan, virhemarginaalin suuruuteen vaikuttavat otosasetelma, otoskoko, luottamustaso ja tutkittavan tilastollisen tunnusluvun jakauma.
 
-- Luottamusväleissä ei kuitenkaan varsinaisesti ole kyse "virheestä" vaan saadun/muodostetun tiedon tarkkuudesta. 
+- Luottamusväleissä ei kuitenkaan varsinaisesti ole kyse "virheestä" vaan saadun/muodostetun tiedon tarkkuudesta.
   - Luottamusvälit, eli virhemarginaalit, siis (yleisesti) riippuvat valittavasta luottamustasosta $1-\alpha$ ja näin ollen samasta aineistosta on saatavissa useita virhemarginaaleja.
     - Täten on tarkalleen ottaen virheellistä sanoa, että "tutkimuksen virhemarginaali on 3,5 puoleen tai toiseen".
     - Oikeammin olisi sanoa esimerkiksi "tutkimuksessa saadun kannatuksen virhemarginaali on 3,5 puoleen tai toiseen 95% luottamustasolla."
@@ -384,7 +392,7 @@ $Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\, i=1,\ldo
   - Merkintä $\indep$ tarkoittaa, että sm:t $Y_1,\ldots,Y_n$ ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti $iid$, joka tulee englannin kielen ilmaisusta "independent and identically distributed"). 
 
 - Tarkastellaan normaalijakauman odotusarvon $\mu$ luottamusvälin määräämistä otannan avulla olettaen että jakauman varianssi $\sigma^2$ on tunnettu.
-  - Muistetaan että normaalijakauman odotusarvoparametrin $\text{E}(Y_i) = \mu$ __harhaton estimaattori} on aritmeettinen keskiarvo
+  - Muistetaan että normaalijakauman odotusarvoparametrin $\text{E}(Y_i) = \mu$ __harhaton estimaattori__ on aritmeettinen keskiarvo
 
 $$
 \bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i.
@@ -462,7 +470,7 @@ $$
 \bar{Y} + t_{\alpha/2} \frac{S}{\sqrt{n}} \Big),
 $$
 jossa __luottamuskertoimet__ $-t_{\alpha/2}$ ja $t_{\alpha/2}$
-saadaan nyt __$t$-jakaumasta} $t_{n-1}$, jossa $S^2$ on varianssin $\sigma^2$ harhaton estimaattori ja vapausasteiden lukumäärä on $n-1$.
+saadaan nyt $t$__-jakaumasta__ $t_{n-1}$, jossa $S^2$ on varianssin $\sigma^2$ harhaton estimaattori ja vapausasteiden lukumäärä on $n-1$.
 
   - (Studentin) $t$-jakauma muistuttaa silmämääräisesti normaalijakaumaa, mutta se on paksuhäntäisempi. Vapausasteluvun kasvaesssa $t$-jakauma lähestyy normaalijakaumaa.
 
@@ -536,4 +544,174 @@ $$
 
 ## Otoskoko {#alaluku67}
 
-  
+- Yksi tilastollisen päättelyn keskeisiä tavoitteita on yleistää otoksen pohjalta tehty päättely koskemaan koko perusjoukkoa. Seuraavaksi käymme läpi seikkoja, jotka tulee ottaa huomioon otoskokoa miettiessä.
+- Kun on päätetty, millainen tutkimusaineisto halutaan kerätä, on päätettävä, kuinka suuri otoksen on oltava, jotta se edustaa tutkittavaa joukkoa kattavasti
+  - Liian pieni __otoskoko__, eli pieni määrä otokseen poimittuja tilastoyksiköitä, voi __sattumalta__ poiketa paljonkin perusjoukosta.
+    - Tämä niin kutsuttu __otantavirhe__ on sitä suurempi mitä pienempää otosta käytetään.
+    - Liian pienen otoksen vuoksi muuten hyvin toteuttu tutkimus- ja otanta-asetelma saattaa epäonnistua vastaamaan tutkimuksen mielenkiinnon kohteena olevaan kysymykseen.
+  - Todella suuren otoksen koostaminen voi olla __työlästä__, __kallista__ tai joskus jopa täysin mahdotonta esimerkiksi siksi että käytettävissä olevat tutkimusyksiköt eivät ole käytettävissä ajallisten rajoitteiden vuoksi (kuten harvinaisten tautien kantajat). 
+    - Toisaalta perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa paremmin esille, vaikka yksittäisten otosyksiköiden tilastolliset muuttujat saattavat vaihdella suuresti.
+  - __Otoskoko__ siis vaikuttaa keskeisesti siihen, miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa!
+
+\
+
+- Optimaalinen, tai ainakin tutkimusongelmaan vastaamisen kannalta vähintään riittävä arvio, otoskoosta voidaan usein määrätä etukäteen.
+
+__Perusjoukon rooli otoskoon määrittämisessä__
+
+- Ensiksi tulee kuitenkin pohtia käsillä olevaa tutkimusongelmaa esimerkiksi kysymällä: __Millainen on perusjoukkosi?__
+  - Onko tutkittavan muuttujan arvoissa paljon vaihtelua? Jos on, niin tämä täytyy huomioida kasvattamalla otoskokoa.
+    - Esimerkiksi otosten keskiarvot alkavat käyttäytyä riittävän siististi vasta noin otoskoosta $n=30$ alkaen.
+    - Kyseinen otoskoko ei kuitenkaan ole missään tapauksessa yleinen ja pätevä peukalosääntö otoskoon koolle, vaan se tulee aina päättää tutkimusongelmakohtaisesti.
+  - Kuuluuko tutkimukseesi esimerkiksi otoksen sisällä olevien ryhmien keskiarvojen vertailua tai muita otoksen osajoukkojen tunnuslukujen vertailua? Jos kuuluu, niin otoskoko tulee valita pienimmän ryhmäkoon mukaan, jotta siitäkin saadaan tarpeeksi edustajia.
+    - Mitä isompaa otosta käytetään, sitä pienempi perusjoukossa esiintyvä ryhmien välinen ero pystytään otoksella tunnistamaan. 
+
+__Tulosten vaaditun tarkkuuden vaikutus otoskokoon__
+
+- Tarkastelemme pian esimerkin avulla, kuinka tarvittavaa otoskokoa voidaan approksimoida tulosten halutun tarkkuuden avulla. 
+- Tarkastellaan kuitenkin ensin minkälaiset kysymykset liittyvät otoskoon pohdintaan tulosten tarkkuuden osalta. 
+  - Kuinka varma sinun on oltava, että tulokset vastaavat joukon mielipiteitä? Tämä on virhemarginaalisi. 
+    - Esimerkiksi puoluekannatuksen arvioimiseen 2% virhemarginaalilla riittää huomattavasti pienempi otoskoko kuin 0.2% virhemarginaalilla. Politiikan tutkija voisikin kasvattaa otoskokoa vaalien lähestyessä, mikäli mielii tarkempia tuloksia.
+  - Kuinka varma haluat olla, että otos edustaa joukkoa oikein? Tämä on luotettavuustaso. 
+    - Luotettavuustaso on todennäköisyys sille, että valitsemasi otos on tulosten kannalta oleellinen.
+    - Jos joukosta poimitaan 30 otosta sattumanvaraisesti, kuinka usein yhdestä otoksesta saadut tulokset eroavat merkittävästi muista 30 otoksesta? Jos luotettavuustaso on 95%, samat tulokset saadaan 95 prosentissa tapauksista. 
+
+__Odotetun vastauskadon vaikutus otoskokoon__
+
+- Kuinka suuri vastauskato tulee mahdollisesti olemaan?
+  - Yleensä osa kyselytutkimukseen valituista jättää vastaamatta. Tätä kutsutaan kadoksi. Kato vinouttaa otosta, jos vastaamatta jättäneet ovat mielipiteiltään erilaisia kuin vastanneet.
+  - Otoskoon kasvattaminen ei paranna kadon aiheuttamaa vinoutumista.
+- Esimerkki: Jos Alkon myymälän asiakastutkimus suoritetaan ovensuukyselynä maanantaina aamupäivällä, niin vastaajat eivät luultavasti edusta myymälän koko asiakaskuntaa. Otantakehikko on tässä liian suppea ja seurauksena on todennäköisesti vinoutunut otos. Vinoutuma ei korjaannu vaikka otosta kasvatetaan maanantai-aamupäivän asiakkailla.
+
+\
+\
+
+::: {.eblock .kimmo data-latex="{}"}
+**Esimerkki: otoskoko normaalijakauman odotusarvon estimoinnissa**  
+
+
+- Palautetaan mieleen normaalijakauman $\text{N}(\mu,\sigma^2)$ odotusarvon luottamusvälin määräminen (kun varianssi $\sigma^2$ oletetaan tunnetuksi).
+
+- Luottamusväliksi saatiin
+$$
+\bar{Y} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}},
+$$
+ja luottamusvälin symmetrisyydestä johtuen luottamusvälin pituus
+$$
+2 \times z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+$$
+
+- Oletetaan, että normaalijakauman odotusarvoparametrille $\mu$ halutaan konstruoida luottamusväli, jonka toivottu pituus on $2d$ (huom. symmetrisyys).
+
+- Luottamusvälin lausekkeesta saadaan täten järjestelemällä
+$$
+n = \Big(\frac{z_{\alpha/2} \, \sigma}{d} \Big)^2.
+$$
+
+- Jos varianssi $\sigma^2$ on tuntematon, se voidaan kaavassa korvata havaitulla otosvarianssilla $s^2$, jolloin
+$$
+n = \Big(\frac{z_{\alpha/2} \, s}{d} \Big)^2.
+$$
+- Pitäydytään (yksinkertaisuuden vuoksi) luottamuskertoimissa $z_{\alpha/2}$ vaikka varianssi $\sigma^2$ olisikin tuntematon. 
+:::
+
+
+
+::: {.eblock .kimmo data-latex="{}"}
+**Esimerkki: otoskoko**
+
+- Oletetaan, että haluamme määrätä otoskoon niin, että otoskeskiarvo poikkeaa populaatiokeskiarvosta korkeintaan yhden yksikön ($d = 1$) todennäköisyydellä $0.05$. Oletetaan, että varianssi on aiemmissa tutkimuksissa ollut $\sigma^2 = 5$. Oletetaan lisäksi, että taustallaoleva perusjoukko on iso (ääretön).
+
+- Tällöin otoskoon tulisi olla
+$$
+n \ge \Big(\frac{z_{\alpha/2} \, \sigma}{d} \Big)^2 = \Big(1.96 \sqrt{5} \Big)^2 \approx 19.2.
+$$
+
+- Tarvittavan otoskoon tulisi siis olla tässä tapauksessa noin 20.
+:::
+
+
+__Äärellisyyskorjaus__:
+
+- Äärellisyyskorjausta käytetään, jos otos poimitaan äärellisestä perusjoukosta palauttamatta ja (nyrkkisääntönä)
+$$
+\frac{n}{N} > 0.05,
+$$
+jossa $n$ on edelleen otoskoko, $N$ perusjoukon koko ja $n < N$.
+
+- Jos suhde $n/N$ on lähellä arvoa 1, tarkoittaa se, että perusjoukosta
+huomattava osa kuuluu otokseen. 
+  - Tällöin otoskeskiarvon poikkeama populaatiokeskiarvosta on luonnollisesti pienempi kuin pienemmän otoksen tilanteessa. 
+  - Otoskoon kasvattaminen lisää siis estimoinnin tarkkuutta, ja juuri äärellisyyskertoimen avulla hajonta "korjataan" vastaamaan käytettyä otoskokoa.
+
+
+
+__Otoskoko, äärellisyyskorjaus: Normaalijakauman odotusarvon estimointi__
+
+
+- Oletetaan, että otannan taustalla oleva perusjoukko on äärellinen (pieni).
+
+- Tällöin luottamusvälin konstruloinnissa huomioidaan äärellisyyskorjaus
+(vrt. aiemmat kaavat):
+$$
+\bar{Y} \pm z_{\alpha/2} \sqrt{\Big(\frac{N-n}{N}\Big)\frac{\sigma^2}{n}}.
+$$
+
+- Tarvittava otoskoko on tällöin välivaiheiden jälkeen
+$$
+n =\frac{1}{\frac{d^2}{z^2_{\alpha/2} \sigma^2} + \frac{1}{N}}.
+$$
+
+\
+
+
+::: {.eblock .kimmo data-latex="{}"}
+**Esimerkki: otoskoko (jatkoa)**
+
+- Oletetaan aiemman esimerkin tilanne kuitenkin siten, että perusjoukon koko on nyt $N=100$.
+
+- Tällöin otoskooon tulisi olla
+$$
+n  \ge \frac{1}{\frac{1}{1.96^2 \times 5} + \frac{1}{100}} \approx 16.11.
+$$
+- Tarvittava otoskoko on siis noin 17.
+:::
+
+\
+
+__Otoskoko: Suhteellinen osuus__
+
+- Palautetaan mieleen Bernoulli-jakauman odotusarvoparametrin $p$ luottamusvälin muodostaminen.
+  - Kuten normaalijakauman odotusarvoparametrin tapauksessa, pyrimme muodostamaan mahdollisimman lyhyen luottamusvälin, johon liittyvä luottamustaso olisi samanaikaisesti mahdollisimman korkea.
+- Oletetaan aiempaan tapaan, että $p$:lle halutaan muodostaa luottamusväli, jonka toivottu pituus on $2d$.
+- Tarvittava otoskoko saadaan kaavasta (kun perusjoukko oletetaan äärettömäksi)
+
+$$
+n = \Big(\frac{z_{\alpha/2} \,\, \sqrt{p(1-p)}}{d} \Big)^2.
+$$
+
+__Suhteellinen osuus, äärellisyyskorjaus:__
+
+- Tarvittava otoskoko saadaan  äärellisyyskorjausta käytettäessä kaavasta
+$$
+n = \frac{N p (1-p)}{\frac{(N-1) d^2}{z^2_{\alpha/2}} + p(1-p)}.
+$$
+  - Voidaan osoittaa, että jos perusjoukko $N$ on iso (ääretön), niin tällöin edellinen lauseke supistuu aiempaan otoskokoa osoittavaan lausekkeeseen.
+- Usein otoskokoa määrättäessä suhteellisesta osuudesta ei ole olemassa arviota.
+- Tällöin suhteellisen osuuden $p$ arvoksi asetetaan useimmiten $p=0.5$, jolloin suhteellisen osuuden varianssi on suurin.
+
+::: {.eblock .kimmo data-latex="{}"}
+**Esimerkki: Otoskoko ja suhteellinen osuus**
+
+- Geologi haluaa arvioida kallion kultapitoisuuden ottamalla kivinäytteen $n$ eri pisteestä. Jokaisesta näytteestä havaitaan sisältyykö siihen kultaa. Kuinka suuri otos on poimittava, jotta kultapitoisuuden estimointivirheen $d$ arvo on korkeintaan $0.05$ todennäköisyydellä 0.95?
+
+- Tässä kullan suhteellinen osuus on tuntematon, joten $p$:lle asetetaan $p=0.5$.
+
+- Äärellisyyskorjaus voidaan unohtaa, sillä näytteenottopisteiden pinta-alat ovat pieniä (eli niitä on äärettömän paljon, ts. tarkasteltavaan populaatioon niitä sisältyy
+hyvin suuri määrä).
+
+- Tällöin otoskoko
+$$
+n = \frac{1.96^2 \cdot 0.5 \cdot 0.5}{0.05^2} \approx 384.16.
+$$
+:::

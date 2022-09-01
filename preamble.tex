@@ -23,10 +23,9 @@
 \usepackage{overpic}
 \usepackage{lmodern}
 \usepackage{epsfig}
-
+\usepackage{placeins}
 \usepackage{xstring}     % Used for \IfEqCase
 
-\newcommand{\indep}{\perp \!\!\! \perp}
 
 \definecolor{myboxcolor}{named}{blue} % Default box color
 
@@ -85,3 +84,6 @@
 \newcommand{\bl}[1]{\textcolor{blue}{#1}}
 \newcommand{\rd}[1]{\textcolor{red}{#1}}
 \newcommand{\gr}[1]{\textcolor{darkgreenx}{#1}}
+
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
