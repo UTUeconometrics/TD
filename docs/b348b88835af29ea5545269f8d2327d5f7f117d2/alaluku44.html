@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-01" />
+<meta name="date" content="2022-09-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,10 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -107,7 +111,11 @@
 <li class="chapter" data-level="4.2" data-path="alaluku42.html"><a href="alaluku42.html"><i class="fa fa-check"></i><b>4.2</b> Satunnaisuus ja todennäköisyydet</a></li>
 <li class="chapter" data-level="4.3" data-path="alaluku43.html"><a href="alaluku43.html"><i class="fa fa-check"></i><b>4.3</b> Tilastolliset mallit, jakaumat ja parametrit</a></li>
 <li class="chapter" data-level="4.4" data-path="alaluku44.html"><a href="alaluku44.html"><i class="fa fa-check"></i><b>4.4</b> Odotusarvo ja varianssi</a></li>
-<li class="chapter" data-level="4.5" data-path="alaluku45.html"><a href="alaluku45.html"><i class="fa fa-check"></i><b>4.5</b> Joitain jakaumia</a></li>
+<li class="chapter" data-level="4.5" data-path="alaluku45.html"><a href="alaluku45.html"><i class="fa fa-check"></i><b>4.5</b> Joitain jakaumia</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="alaluku45.html"><a href="alaluku45.html#normaalijakauma"><i class="fa fa-check"></i><b>4.5.1</b> Normaalijakauma</a></li>
+<li class="chapter" data-level="4.5.2" data-path="alaluku45.html"><a href="alaluku45.html#bernoulli--binomi--ja-poisson-jakauma"><i class="fa fa-check"></i><b>4.5.2</b> Bernoulli-, binomi- ja Poisson-jakauma</a></li>
+</ul></li>
 <li class="chapter" data-level="4.6" data-path="alaluku46.html"><a href="alaluku46.html"><i class="fa fa-check"></i><b>4.6</b> Sattuman rooli tieteenteossa: Vale-emävale-tilasto?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="luku5.html"><a href="luku5.html"><i class="fa fa-check"></i><b>5</b> Tilastolliset aineistot, niiden kerääminen ja mittaaminen</a>
@@ -182,6 +190,46 @@
             <section class="normal" id="section-">
 <div id="alaluku44" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Odotusarvo ja varianssi<a href="alaluku44.html#alaluku44" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Satunnaismuuttujan todennäköisyysjakauman tietoa voidaan tiivistää tunnuslukuihin, joista keskeisimpiä ovat <strong>odotusarvo</strong>, <strong>varianssi</strong> ja <strong>keskihajonta</strong>.</li>
+</ul>
+<div class="defblock mikko">
+<p><strong>Odotusarvo</strong></p>
+<p>Satunnaismuuttujan <span class="math inline">\(Y\)</span> odotusarvo <span class="math inline">\(\text{E}(Y)\)</span> kuvaa satunnaismuuttujan odotettavissa olevaa arvoa.</p>
+<ul>
+<li>Muodostamalla satunnaiskokeen tulosten <strong>painotettu keskiarvo</strong>, jossa kunkin tuloksen painona on vastaavan tapauksen todennäköisyys, niin saatua arvoa sanotaan odotusarvoksi <span class="math inline">\(\text{E}(Y)\)</span>.</li>
+<li>Odotusarvo kuvaa jakauman painopistettä.</li>
+<li>Merkinnän <span class="math inline">\(\text{E}(Y)\)</span> käyttö juontaa juurensa englannin kielen sanoihin “odotus,” expectation, ja ‘odotusarvo,’ expected value.</li>
+</ul>
+</div>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: Odotusarvo</strong></p>
+<p>Perinteikäs esimerkki odotusarvosta on tavallisen kuusitahoisen nopan silmäluvun odotusarvo. Nopanheitto on diskreetti satunnaisilmiö ja tavallisen painottamattoman nopan tapauksessa jokaisen silmäluvun todennäköisyys on yhtä suuri. Merkitään nopan silmälukua (sm) <span class="math inline">\(Y\)</span> ja sen realisaatiota <span class="math inline">\(y\)</span>. Nopan silmäluvun realisaatioiden mahdolliset arvot ovat <span class="math inline">\(Y = \{1,2,3,4,5,6\}\)</span> ja niiden todennäköisyydet ovat <span class="math inline">\(P(Y=y) = \frac{1}{6}\)</span>.</p>
+<p>Nopanheiton silmäluvun odotusarvo määritetään siis painotettuna keskiarvona <span class="math display">\[E(X) = \sum_{i=1}^6 y \cdot P(Y=y)  = 1 \cdot \frac{1}{6} + 2 \cdot \frac{1}{6} + 3 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 5 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6} = \frac{7}{2} = 3.5\]</span></p>
+</div>
+<p><br />
+</p>
+<ul>
+<li>Odotusarvon lisäksi kiinnostuksen kohteena on usein jakauman keskittyneisyys (hajaantuneisuus). Ts. kun halutaan puolestaan kuvata satunnaismuuttujan arvojen vaihtelua, tutkitaan todennäköisyysjakauman <strong>varianssia</strong> ja <strong>keskihajontaa</strong>.</li>
+</ul>
+<div class="defblock mikko">
+<p><strong>Varianssi</strong></p>
+<p>Satunnaismuuttujan <span class="math inline">\(Y\)</span> hajontaa voidaan mitata varianssilla
+<span class="math display">\[
+\mathrm{Var}(Y) = \text{E}\Big[\Big(Y-\text{E}(Y)\Big)^2\Big],
+\]</span>
+tai sen neliöjuuren eli <strong>keskihajonnan</strong> avulla
+<span class="math display">\[
+\text{D}(Y) = \sqrt{\mathrm{Var}(Y)}.
+\]</span></p>
+<ul>
+<li>Mitä lähempänä nollaa keskihajonta ja varianssi ovat, sitä todennäköisempää on, että satunnaismuuttujan arvo on lähellä odotusarvoa.</li>
+<li>Merkintöjen <span class="math inline">\(\mathrm{Var}(Y)\)</span> ja <span class="math inline">\(\text{D}(Y)\)</span> taustalla on englannin kielen sanat variance (varianssi) ja deviation, joka tarkoittaa poikkeamaa, hajontaa.</li>
+</ul>
+</div>
+<ul>
+<li>Odotusarvon ja varianssin (keskihajonnan) tavanomaiset estimaattorit ovat otoskeskiarvo ja otosvarianssi (otoshajonta), joihin palataan vielä myöhemmin.</li>
+</ul>
 </div>
             </section>
 
