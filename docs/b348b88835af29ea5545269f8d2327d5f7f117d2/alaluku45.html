@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4.5 Joitain jakaumia | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4.5 Joitain jakaumia | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-02" />
+<meta name="date" content="2022-09-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -197,15 +197,20 @@
 <li><p>Jos satunnaismuuttuja <span class="math inline">\(Y\)</span> noudattaa <strong>normaalijakaumaa</strong> odotusarvolla <span class="math inline">\(\text{E}(Y)= \mu\)</span> ja varianssilla <span class="math inline">\(\mathrm{Var}(Y) = \sigma^2\)</span>, niin tällöin merkitään <span class="math inline">\(Y \thicksim \text{N}(\mu, \sigma^2)\)</span>.</p></li>
 <li><p><span class="math inline">\(Y\)</span>:n tiheysfunktio on muotoa (ks. kuva alla)
 <span class="math display">\[
-f(y; \mu, \sigma^2) = \frac{1}{\sqrt{2 \pi \sigma^2}} \, e^{-\frac{1}{2} \Big(\frac{y- \mu}{\sigma} \Big)^2}, 
+f(y; \mu, \sigma^2) = \frac{1}{\sqrt{2 \pi \sigma^2}} \, e^{-\frac{1}{2} \Big(\frac{y- \mu}{\sigma} \Big)^2},
 \]</span></p></li>
 </ul>
-<p>jossa <span class="math inline">\(e\)</span> viittaa Neperin lukuun <span class="math inline">\(e \approx 2,71828\)</span>
-- Ylläoleva tf. määrittelee parven normaalijakaumia kun parametreille (vakioille) <span class="math inline">\(\mu\)</span> ja <span class="math inline">\(\sigma^2\)</span> annetaan erilaisia arvoja. Nämä kaksi parametria määräävät normaalijakauman tarkemman muodon. Alla olevassa kuvassa <a href="alaluku45.html#fig:normaalijakauma">4.3</a> on kuvattu erilaisia normaalijakauman muotoja eri parametriarvoille.</p>
+<p>jossa <span class="math inline">\(e\)</span> viittaa Neperin lukuun <span class="math inline">\(e \approx 2,71828\)</span>.</p>
+<ul>
+<li>Ylläoleva tiheysfunktio määrittelee parven normaalijakaumia kun parametreille (vakioille) <span class="math inline">\(\mu\)</span> ja <span class="math inline">\(\sigma^2\)</span> annetaan erilaisia arvoja. Nämä kaksi parametria määräävät normaalijakauman tarkemman muodon.
+<ul>
+<li>Alla olevassa kuvassa <a href="alaluku45.html#fig:normaalijakauma">4.3</a> on kuvattu erilaisia normaalijakauman tiheysfunktion muotoja eri parametriarvoille.</li>
+</ul></li>
+</ul>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:normaalijakauma"></span>
-<img src="TD2022_files/figure-html/normaalijakauma-1.png" alt="Normaalijakaumien muotoja eri parametriarvoilla" width="100%" />
+<img src="TD2022_files/figure-html/normaalijakauma-1.png" alt="Normaalijakaumien muotoja eri parametriarvoilla." width="100%" />
 <p class="caption">
-Kuvio 4.3: Normaalijakaumien muotoja eri parametriarvoilla
+Kuvio 4.3: Normaalijakaumien muotoja eri parametriarvoilla.
 </p>
 </div>
 <div class="eblock kimmo">
@@ -234,14 +239,12 @@ Kuvio 4.3: Normaalijakaumien muotoja eri parametriarvoilla
 <li>Yleensä <span class="math inline">\(Y=0\)</span> tarkoittaa, että jokin tapahtuma ei tapahdu ja <span class="math inline">\(Y=1\)</span> että tapahtuu.</li>
 <li>Todennäköisyys tapahtumalle <span class="math inline">\(Y=1\)</span> on <span class="math inline">\(\text{P}(Y=1)=p\)</span> ja vastaavasti vastatodennäköisyys <span class="math inline">\(\text{P}(Y=0)=1-p\)</span>.</li>
 <li>Bernoulli-jakaumaa merkitään <span class="math inline">\(Y \thicksim B(p)\)</span>, jossa siis <span class="math inline">\(0 &lt; p &lt; 1\)</span>.</li>
-<li>Bernoulli-jakauman <strong>pistetodennäköisyysfunktio</strong> on muotoa</li>
-</ul></li>
-</ul>
-<p><span class="math display">\[
+<li>Bernoulli-jakauman <strong>pistetodennäköisyysfunktio</strong> on muotoa
+<span class="math display">\[
 f(y; p) = \text{P}(Y=y) = p^y (1-p)^{(1-y)},
 \]</span>
-jossa <span class="math inline">\(y\)</span> on sm:n <span class="math inline">\(Y\)</span> realisaatio (havaittu arvo) ja parametri <span class="math inline">\(p\)</span> on tuntematon (voidaan estimoida otoksen avulla).</p>
-<ul>
+jossa <span class="math inline">\(y\)</span> on sm:n <span class="math inline">\(Y\)</span> realisaatio (havaittu arvo) ja parametri <span class="math inline">\(p\)</span> on tuntematon (voidaan estimoida otoksen avulla, kuten myöhemmin tullaan näkemään).</li>
+</ul></li>
 <li>Bernoulli-jakauman odotusarvo <span class="math inline">\(\text{E}(Y)=p\)</span> ja varianssi <span class="math inline">\(\mathrm{Var}(Y)=p (1-p)\)</span>.</li>
 </ul>
 <p><br />
@@ -264,7 +267,7 @@ jossa <span class="math inline">\(y\)</span> on sm:n <span class="math inline">\
 <div class="eblock kimmo">
 <p><strong>Esimerkki: Miesten lukumäärä Saksin osavaltion perheissä 1876–1885</strong><a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a></p>
 <p>Vuosien 1876–1885 aikana Saksin osavaltiossa rekisteröitiin yli neljä miljoonaa syntynyttä lasta. Tällöin vanhempien tuli ilmoittaa lapsen sukupuoli (mies tai nainen) heidän syntymätodistuksessaan. Myöhemmässä tutkimuksessa tutkittiin tarkemmin 6115 perhettä, joissa asui 12 lasta ja tarkemmin miesten (poikien) lukumäärää näissä perheissä.</p>
-<p>Seuraavassa taulukossa taulukoidaan miesten (poikien) lukumäärät näissä 12 lapseen perheissä. Tarkasteltava jakauma esitetään vielä erikseen oheisessa kuviossa <a href="alaluku45.html#fig:miestenlkm">4.4</a>.</p>
+<p>Oheisessa taulukossa taulukoidaan miesten (poikien) lukumäärät näissä 12 lapseen perheissä. Tarkasteltava jakauma esitetään vielä erikseen oheisessa kuviossa <a href="alaluku45.html#fig:miestenlkm">4.4</a>.</p>
 <p>Tässä tilantessa mielenkiinnon kohteena saattaisi olla hypoteesi, jonka mukaan pojan (miehen) syntymätodennäköisyys <span class="math inline">\(\text{P}(\mathrm{mies}) = p\)</span> on <span class="math inline">\(p=0.5\)</span>.</p>
 </div>
 <table class="table" style="font-size: 12px; margin-left: auto; margin-right: auto;">
@@ -316,7 +319,7 @@ jossa <span class="math inline">\(y\)</span> on sm:n <span class="math inline">\
 <tbody>
 <tr>
 <td style="text-align:left;">
-Miesten lkm, k
+Miesten lkm
 </td>
 <td style="text-align:right;">
 0
@@ -360,7 +363,7 @@ Miesten lkm, k
 </tr>
 <tr>
 <td style="text-align:left;">
-Perheiden lkm n<sub>k</sub>
+Perheiden lkm
 </td>
 <td style="text-align:right;">
 3
@@ -405,13 +408,11 @@ Perheiden lkm n<sub>k</sub>
 </tbody>
 </table>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:miestenlkm"></span>
-<img src="images/Miesten_lkm.jpg" alt="Miesten lukumäärä Saksin osavaltiossa 12 lapsen perheissä." width="50%" />
+<img src="images/Miesten_lkm.jpg" alt="Miesten lukumäärä Saksin osavaltiossa 12:n lapsen perheissä." width="750%" />
 <p class="caption">
-Kuvio 4.4: Miesten lukumäärä Saksin osavaltiossa 12 lapsen perheissä.
+Kuvio 4.4: Miesten lukumäärä Saksin osavaltiossa 12:n lapsen perheissä.
 </p>
 </div>
-<p><br />
-</p>
 <p><strong>Poisson-jakauma</strong></p>
 <ul>
 <li><p>Jos satunnaismuuttuja <span class="math inline">\(Y\)</span> on Poisson-jakautunut, merkitään <span class="math inline">\(Y \thicksim P(\lambda)\)</span>, jossa parametri <span class="math inline">\(\lambda &gt; 0\)</span> on Poisson-jakauman parametri, jota kutsutaan myös ajoittain intensiteettiparametriksi.</p></li>
@@ -425,7 +426,7 @@ Kuvio 4.4: Miesten lukumäärä Saksin osavaltiossa 12 lapsen perheissä.
 <p><strong>Esimerkki: Poisson-jakauma</strong></p>
 <p>Tarkastellaan Englannin Valioliigakauden 1995–1996 otteluissa tehtyjä maalimääriä. Valioliiga (The F.A. Premier League) on korkein Englannin jalkapalloliigan sarjataso, jossa ensi kerran juuri kaudella 1995-1996 20 joukkuetta (aiemmin Valioliigan perustamisen kauden 1992–1993 alussa 22 joukkuetta) pelasivat keskenään kerran toisiaan vastaan koti- ja vieraskentällä. Otteluita oli siis yhteensä 380.</p>
 <p>Tämä esimerkki perustuu edellä mainittuun Friendlyn ja Meyerin (2015) kirjan esimerkkiin 3.9 (s. 78-79), joka vastaavasti perustuu Alan J. Leen (1997) artikkeliin<a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a>, jonka esittämään kysymykseen (hypoteesiin) vastaus on tietenkin ilmeinen! Näin ollen seuraavassa tarkastellaankin kotijoukkueiden ja vierasjoukkueiden maalintekointensiteettiä Poisson-jakaumaan perustuen. Seuraavassa emme siis pyri mallintamaan tietyn spesifin ottelun lopputulosta vaan tarkastelemme “keskimääräisen” kotijoukkueen ja vierasjoukkueen “edustavaa” ottelua.</p>
-<p>Seuraava taulukko raportoi tehtyjen maalimäärien jakaumat pelatuissa 380 ottelussa. Neljän tai yli neljän maalin tapaukset kirjataan 4+:nä maalina. Ts. esim. kys. kauden lopputulokset <em>Blackburn Rovers</em>- <em>Nottingham Forest</em> 7-0 ja <em>Bolton Wanderers</em> - <em>Manchester United</em> 0-6 tulevat aineistoon tuloksina 4+ vs. 0 ja 0 vs. 4+.</p>
+<p>Seuraava taulukko raportoi tehtyjen maalimäärien jakaumat pelatuissa 380 ottelussa. Neljän tai yli neljän maalin tapaukset kirjataan 4+:nä maalina. Ts. esim. kys. kauden lopputulokset <em>Blackburn Rovers</em> - <em>Nottingham Forest</em> 7-0 ja <em>Bolton Wanderers</em> - <em>Manchester United</em> 0-6 tulevat aineistoon tuloksina 4+ vs. 0 ja 0 vs. 4+.</p>
 </div>
 <table>
 <thead>
@@ -613,22 +614,20 @@ Yht.
 <div class="eblock kimmo">
 <p><strong>Esimerkki (jatkuu): Poisson-jakauma</strong></p>
 <p>Olettamalla, että koti- ja vierasjoukkueen todennäköisyys tehdä maali ottelun aikana on vakio, niin tällöin koti- ja vierasjoukkueen ottelun aikana tekemien maalien lukumäärää (ilman edellä käytettyä maalimäärien “katkaisua” neljään) voidaan melko hyvin approksimoida oletuksella, että nämä lukumäärät ovat Poisson-jakautuneita. Ts. <span class="math inline">\(Y^H_i \thicksim P(\lambda_H)\)</span> on sm., joka kuvaa <span class="math inline">\(i\)</span>:n ottelun kotijoukkueen tekemien maalien lukumäärää ja intensiteettiparametrin <span class="math inline">\(\lambda_H\)</span> arvon määrittäminen kuuluu tilastollisen päättelyn ja erityisesti estimointiteorian piiriin. Vastaavasti vierasjoukkueen maalimäärät: <span class="math inline">\(Y^A_i \thicksim P(\lambda_A)\)</span>.</p>
-<p>Osoittautuu, että parametreille <span class="math inline">\(\lambda_H\)</span> ja <span class="math inline">\(\lambda_A\)</span> saatavat estimaatit ovat <span class="math inline">\(\lambda_H = 1,49\)</span> ja <span class="math inline">\(\lambda_A = 1,06\)</span> ja ne vastaavat tässä yksinkertaistetussa tilanteessa koti- ja vierasjoukkueen keskimääräisiä maalimääriä:</p>
-<p>Tuloksista voidaan siis päätellä, että kotijoukkueen (odotettavissa oleva) maalimäärä on vierasjoukkuetta korkeampi (osoittaen osaltaan kotiedun merkitystä jalkapallossa). Lisäksi edellä todetun Poisson-jakauman teoreettisten ominaisuuksien mukaisesti keskimääräiset maalimäärät ovat lähellä niiden variansseja, mikä osoittaa osaltaan tarkasteltavassa yksinkertaisessa tilanteessa, että Poisson-jakaumaan perustuva jakaumaoletus on kelvollinen.</p>
-<p>On syytä todeta lopuksi, että tämän vahvasti yksinkertaistetun tilanteen sijaan tilastotieteessä on laaja ja kasvava kirjallisuuden haara jalkapalloa ja muuta urheilua koskevien tilastollisen menetelmien saralla. Nämä vaativat kuitenkin syvällisemmän ymmärryksen kannalta jälleen huomattavasti laajempia tilastotieteen (aine- ja syventäviä) opintoja.</p>
+<p>Osoittautuu, että parametreille <span class="math inline">\(\lambda_H\)</span> ja <span class="math inline">\(\lambda_A\)</span> saatavat estimaatit ovat <span class="math inline">\(\lambda_H = 1.49\)</span> ja <span class="math inline">\(\lambda_A = 1.06\)</span> ja ne vastaavat tässä yksinkertaistetussa tilanteessa koti- ja vierasjoukkueen keskimääräisiä maalimääriä:</p>
 </div>
 <table>
 <thead>
 <tr>
 <th style="text-align:left;">
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;">
 Kotijoukkue (home)
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;">
 Vierasjoukkue (away)
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;">
 Yht.
 </th>
 </tr>
@@ -638,32 +637,36 @@ Yht.
 <td style="text-align:left;">
 Keskiarvo
 </td>
-<td style="text-align:right;">
-1486
+<td style="text-align:left;">
+1.486
 </td>
-<td style="text-align:right;">
-1063
+<td style="text-align:left;">
+1.063
 </td>
-<td style="text-align:right;">
-2550
+<td style="text-align:left;">
+2.550
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Varianssi
 </td>
-<td style="text-align:right;">
-1316
+<td style="text-align:left;">
+1.316
 </td>
-<td style="text-align:right;">
-1172
+<td style="text-align:left;">
+1.172
 </td>
-<td style="text-align:right;">
-2618
+<td style="text-align:left;">
+2.618
 </td>
 </tr>
 </tbody>
 </table>
+<div class="eblock kimmo">
+<p>Tuloksista voidaan siis päätellä, että kotijoukkueen (odotettavissa oleva) maalimäärä on vierasjoukkuetta korkeampi (osoittaen kotiedun merkitystä jalkapallossa). Lisäksi edellä todetun Poisson-jakauman teoreettisten ominaisuuksien mukaisesti keskimääräiset maalimäärät ovat lähellä niiden variansseja, mikä osoittaa osaltaan (tässä yksinkertaistetussa tilanteessa), että Poisson-jakaumaan perustuva jakaumaoletus on kelvollinen.</p>
+<p>On syytä todeta lopuksi, että tämän vahvasti yksinkertaistetun tilanteen sijaan tilastotieteessä on laaja ja kasvava kirjallisuuden haara jalkapalloa ja muuta urheilua koskevien tilastollisen menetelmien saralla. Nämä vaativat kuitenkin syvällisemmän ymmärryksen saavuttamiseksi jälleen huomattavasti laajempia tilastotieteen (aine- ja syventäviä) opintoja.</p>
+</div>
 </div>
 </div>
 <div class="footnotes">
@@ -739,7 +742,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

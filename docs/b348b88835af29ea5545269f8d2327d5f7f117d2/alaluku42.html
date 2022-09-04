@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4.2 Satunnaisuus ja todennäköisyydet | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4.2 Satunnaisuus ja todennäköisyydet | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-02" />
+<meta name="date" content="2022-09-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -205,30 +205,31 @@
 </ul></li>
 <li>Kerätyn (tai havaitun) aineiston pohjalta tehdään päätelmiä sen generoineesta satunnaisilmiöstä esimerkiksi testaamalla erilaisia siihen liittyviä hypoteeseja.
 <ul>
-<li>Tilastotiede voidaan jakaa kahteen suureen paradigmaan sen mukaan, miten tilastolliseen päättelyyn, ml. hypoteeseihin ja niiden testaamiseen, suhtaudutaan. Näitä ovat <strong>klassinen eli frekventistinen tilastotiede</strong> sekä <strong>Bayesilainen tilastotiede</strong>. Tarkastellaan seuraavaksi minkälaisia eroja ja yhtäläisyyksiä näiden koulukuntien välillä on.</li>
+<li>Tilastotiede voidaan jakaa kahteen merkittävään paradigmaan sen mukaan, miten tilastolliseen päättelyyn, ml. hypoteeseihin ja niiden testaamiseen, suhtaudutaan. Näitä ovat <strong>klassinen eli frekventistinen tilastotiede</strong> sekä <strong>Bayesilainen tilastotiede</strong>. Tarkastellaan seuraavaksi minkälaisia eroja ja yhtäläisyyksiä näiden koulukuntien välillä on.</li>
 </ul></li>
 </ul>
 <p><br />
-<br />
 </p>
 <p><strong>Frekventistinen tilastotiede</strong></p>
 <ul>
 <li><p>Klassisessa eli frekventistisessä tilastotieteessä ajatellaan että hypoteesien testaaminen tulee perustua yksinomaan havaittuun aineistoon ja siihen liitettävään tilastolliseen malliin.</p></li>
 <li><p>Nimi “frekventistinen” juontuu siitä, että tilastollisen mallin perustana oleva todennäköisyysjakauma määrittää satunnaismuuttujan mahdollisten arvojen todennäköisyydeksi niiden suhteellisen osuuden äärettömästä määrästä realisaatioita, ts. niiden suhteellisen frekvenssin.</p></li>
-<li><p>Klassisessa tilastotieteessä havaittuun aineistoon <em>sovitetaan</em> sitä tilastollinen malli, joka vastaa saatua aineistoa parhaiten.</p>
+<li><p>Klassisessa tilastotieteessä havaittuun aineistoon <em>sovitetaan</em> tilastollinen malli, joka vastaa saatua aineistoa parhaiten.</p>
 <ul>
-<li>Tämä tilastollinen malli perustuu nk. <strong>uskottavuusfunktioon</strong>, joka on <em>aineiston</em> sekä yhden tai useamman <em>parametrin</em> funktio ja joka saavuttaa suurimman arvonsa nk. “suurimman uskottavuuden pisteessä.”</li>
-<li>Uskottavuusfunktio kertoo kuinka todennäköisenä havaittua aineistoa voidaan pitää, mikäli sen oletetaan olevan peräisin vastaavasta mallista jollain parametriarvolla. Täten ne parametriarvot, joilla uskottavuusfunktion arvo maksimoituu, kuvaavat aineiston generoimaa prosessia parhaiten, annettuna malli- eli jakaumaoletus.</li>
+<li>Tämä tilastollinen malli voidaan (useimmiten) perustaa nk. <strong>uskottavuusfunktioon</strong>, joka on <em>aineiston</em> sekä yhden tai useamman <em>parametrin</em> funktio ja joka saavuttaa suurimman arvonsa nk. “suurimman uskottavuuden pisteessä”.</li>
+<li>Uskottavuusfunktio kertoo kuinka todennäköisenä havaittua aineistoa voidaan pitää, mikäli sen oletetaan olevan peräisin vastaavasta mallista jollain parametriarvolla.
+<ul>
+<li>Täten ne parametriarvot, joilla uskottavuusfunktion arvo maksimoituu, <em>kuvaavat aineiston generoimaa prosessia parhaiten</em>, annettuna malli- eli jakaumaoletus.</li>
+</ul></li>
 <li>Uskottavuusfunktioista, tilastollisten mallien estimoinnnista ja parametreista lisää seuraavassa alaluvussa sekä luvussa <a href="luku6.html#luku6">6</a>.</li>
 </ul></li>
-<li><p>Perusjoukkoa koskevia hypoteeseja testataan tämän tilastollisen mallin avulla: havaittu aineisto määrittää uskottavuusfunktion perusteella sellaiset hypoteesit, jotka jäävät joko voimaan tai tulevat hylätyiksi.</p></li>
+<li><p>Perusjoukkoa koskevia hypoteeseja testataan tilastollisen mallin avulla: havaittu aineisto määrittää uskottavuusfunktion perusteella sellaiset hypoteesit, jotka jäävät joko voimaan tai tulevat hylätyiksi.</p></li>
 <li><p>Klassisessa tilastotieteessä hypoteesien testaus perustuu siis vain aineistoon eli tilastollinen päättely on induktiivista: aineiston avulla otosta koskeva päätelmä voidaan yleistää koskemaan perusjoukkoa.</p>
 <ul>
 <li>Toki kaikki päättely on alisteista tehdyille oletuksille koskien käytettävää tilastollista mallia.</li>
 </ul></li>
 </ul>
 <p><br />
-<br />
 </p>
 <p><strong>Bayesilainen tilastotiede</strong></p>
 <ul>
@@ -236,7 +237,7 @@
 <li>Bayesilainen tilastotiede ulottaa todennäköisyyskäsityksen, eli tn-jakauman, myös aineistoa koskevien hypoteesien puolelle: kuinka todennäköisenä jotain hypoteesia voidaan pitää jo ennen tutkimusaineiston keräämistä?
 <ul>
 <li>Myös Bayesilaisessa tilastotieteessä hyödynnetään uskottavuusfunktiota, mutta hypoteesien testaus ei perustu niinkään frekventistiseen ajatukseen todennäköisyyksistä suhteellisina osuuksina äärettömässä sarjassa.</li>
-<li>Bayesilaiset perustavat sen sijaan hypoteesien testaamisen tutkimuskysymystä koskevien ennakkokäsitysten päivittämiselle sen jälkeen, kun aineiston on havaittu.</li>
+<li>Bayesilaiset perustavat sen sijaan hypoteesien testaamisen tutkimuskysymystä koskevien ennakkokäsitysten päivittämiselle sen jälkeen, kun aineisto on havaittu.</li>
 <li>Nämä ennakkokäsitykset voidaan kuvata todennäköisyysjakaumana, priorijakaumana, jota päivitetään ns. posteriorijakaumaksi kun aineisto havaitaan. Näin päättely perustuu priorijakauman ja aineiston uskottavuusfunktion väliselle kompromissille!</li>
 </ul></li>
 <li>Ajatusta ennakkokäsityksistä todennäköisyyksinä käytetään niin Bayesilaisen tilastotieteen kritiikkinä kuin puolustuksena.
@@ -250,7 +251,7 @@
 <div class="footnotes">
 <hr />
 <ol start="16">
-<li id="fn16"><p>Erityisesti erilaisten otantamenetelmien yhteydessä, joita tarkastellaan tarkemmin luvussa <a href="luku5.html#luku5">5</a>.<a href="alaluku42.html#fnref16" class="footnote-back">↩︎</a></p></li>
+<li id="fn16"><p> Erityisesti erilaisten otantamenetelmien yhteydessä, joita tarkastellaan tarkemmin luvussa <a href="luku5.html#luku5">5</a>.<a href="alaluku42.html#fnref16" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -319,7 +320,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

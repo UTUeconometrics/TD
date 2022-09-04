@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4.3 Tilastolliset mallit, jakaumat ja parametrit | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4.3 Tilastolliset mallit, jakaumat ja parametrit | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-02" />
+<meta name="date" content="2022-09-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -191,30 +191,32 @@
 <div id="alaluku43" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Tilastolliset mallit, jakaumat ja parametrit<a href="alaluku43.html#alaluku43" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Tilastolliset mallit perustuvat satunnaismuuttujan mahdollisten tulosvaihtoehtojen todennäköisyyksiä kuvaavalle <strong>todennäköisyysjakaumalle</strong>, joka määrää millä todennäköisyydellä satunnaismuuttuja saa erilaisia arvoja.</li>
+<li>Tilastolliset mallit perustuvat satunnaismuuttujan mahdollisten tulosvaihtoehtojen todennäköisyyksiä kuvaavalle <strong>todennäköisyysjakaumalle</strong>, joka määrää millä todennäköisyydellä satunnaismuuttuja saa erilaisia arvoja.
+<ul>
+<li>Kuten aiemmin todettiin, satunnaismuuttujat jaetaan kahteen luokkaan: diskreetteihin ja jatkuviin.</li>
+</ul></li>
 <li>Toisaalta ajoittain tietyn suureen/ilmiön mallinnuksessa voidaan perustellusti käyttää molempiin luokkiin kuuluvien satunnaismuuttuja- ja tilastollisen mallityypin vaihtoehtoja.
 <ul>
-<li>Esimerkki: Esimerkiksi COVID19-tartuntatapausten lukumäärä Suomessa on periaatteessa diskreetti satunnaismuuttuja, joka saa yksittäisen (kokonaisluku)arvon joka kuukausi, mutta käytännössä lukumäärät ovat tässä tapauksessa sen verran suuria, että niitä (saatetaan) mallintaa jatkuva-arvoisena muuttujana.</li>
-<li>Vastaavasti esimerkiksi potilaan jonotusaika päivystyksessä voi periaatteessa saada minkä tahansa arvon tietyltä reaalilukuväliltä (tällöin käytettäisiin jatkuviin sm:jiin perustuvia tilastollisia menetelmiä).</li>
+<li>Esimerkki: Esimerkiksi COVID19-tartuntatapausten lukumäärä Suomessa on periaatteessa diskreetti satunnaismuuttuja, joka saa yksittäisen (kokonaisluku)arvon joka kuukausi, mutta käytännössä lukumäärät ovat tässä tapauksessa sen verran suuria, että niitä mallinnetaan jatkuva-arvoisena muuttujana.</li>
+<li>Vastaavasti esimerkiksi potilaan jonotusaika päivystyksessä voi periaatteessa saada minkä tahansa arvon tietyltä reaalilukuväliltä (<span class="math inline">\([0,\infty)\)</span>, ts. mikä vain positiivinen arvo) ja tällöin käytettäisiin jatkuviin sm:jiin perustuvia tilastollisia menetelmiä.</li>
 </ul></li>
 <li>Satunnaismuuttujan mahdolliset arvot määrääväät myös mahdollisen todennäköisyysjakauman ja täten myös käytettävän tilastollisen mallin.
 <ul>
 <li><strong>Diskreetin satunnaismuuttujan</strong> jakauma voidaan usein esittää taulukkomuodossa. Eri arvojen todennäköisyydet muodostavat kyseisen satunnaismuuttujan todennäköisyysjakauman (<strong>pistetodennäköisyysfunktion</strong>), jota voidaan havainnollistaa esimerkiksi pylväsdiagrammilla.</li>
-<li>Jatkuvan satunnaismuuttujan <span class="math inline">\(Y\)</span> arvot muodostavat jonkin reaaliakselin välin, joka sisältää äärettömän määrän lukuja. Tämän vuoksi jatkuvan satunnaismuuttujan jakauman esittäminen taulukossa ei ole luontevaa, vaan jakauma esitetään yleensä satunnaismuuttujan <strong>tiheysfunktion</strong> avulla.
+<li>Jatkuvan satunnaismuuttujan <span class="math inline">\(Y\)</span> arvot muodostavat jonkin reaaliakselin välin, joka sisältää äärettömän määrän lukuja. Tämän vuoksi jatkuvan satunnaismuuttujan jakauman esittäminen taulukon kautta ei ole luontevaa, vaan jakauma esitetään yleensä satunnaismuuttujan <strong>tiheysfunktion</strong> avulla.
 <ul>
-<li>Pistetodennäköisyys- ja tiheysfunktio siis määräävät satunnaismuuttujan mahdollisille arvoille todennäköisyydet väliltä <span class="math inline">\([0,1]\)</span> ja näin voidaan arvioida havaitun aineiston uskottavuutta ja testata siihen liitettäviä hypoteeseja suhteessa estimoituun suuriman uskottavuuden estimaattiin.</li>
+<li>Pistetodennäköisyys- ja tiheysfunktiot siis määräävät satunnaismuuttujan mahdollisille arvoille todennäköisyydet väliltä <span class="math inline">\([0,1]\)</span> ja näin voidaan arvioida havaitun aineiston uskottavuutta ja testata siihen liitettäviä hypoteeseja suhteessa estimoituun suurimman uskottavuuden estimaattiin.</li>
 </ul></li>
 </ul></li>
 <li>Tilastolliset mallit approksimoivat “todellista” aineiston generoinutta ilmiötä. Tilastolliset mallit riippuvat <strong>parametreista</strong> ja keskeinen oletus erityisesti klassisessa tilastotieteessä on, että aineiston generoinutta satunnaisilmiötä kuvaa jokin vakioinen mutta tuntematon parametriarvo (tai niiden joukko).</li>
 </ul>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:poisson"></span>
-<img src="images/poisson.jpg" alt="Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa 4.5." width="100%" />
+<img src="images/poisson.jpg" alt="Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin $\lambda$ arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa \@ref(alaluku45)." width="100%" />
 <p class="caption">
-Kuvio 4.2: Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa 4.5.
+Kuvio 4.2: Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin <span class="math inline">\(\lambda\)</span> arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa <a href="alaluku45.html#alaluku45">4.5</a>.
 </p>
 </div>
 <p><br />
-<br />
 </p>
 <p><strong>Parametrien estimointi ja niiden testaus</strong></p>
 <ul>
@@ -229,7 +231,7 @@ Kuvio 4.2: Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköi
 <ul>
 <li>Estimoitujen parametrien testaus voi vastata esimerkiksi seuraavanlaisiin kysymyksiin:
 <ul>
-<li>Onko suomalaisten miesten keskipituus 180cm?</li>
+<li>Onko suomalaisten miesten keskipituus 180 cm?</li>
 <li>Vaikuttaako yliopistokoulutus tulevaisuuden ansioihin?</li>
 <li>Auttaako tietty lääkeaine jonkin sairauden hoidossa?</li>
 <li>Voiko osakemarkkinoiden tuottoja ennustaa?</li>
@@ -304,7 +306,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
