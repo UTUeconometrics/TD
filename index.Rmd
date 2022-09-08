@@ -16,6 +16,9 @@ urlcolor: blue
 linkcolor: blue
 github-repo: rstudio/bookdown-demo
 description: "Tilastotieteen ensimmäinen kurssi."
+header-includes: |
+    \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+    \newcommand{\indep}{\perp \!\!\! \perp}
 ---
 
 # Kurssin rakenne {-}

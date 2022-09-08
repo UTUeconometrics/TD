@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma {#luku6}
 
 Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edellisten lukujen erityisesti otantaa koskevan johdannon yhteydessä. Tilastollinen päättely on keskeinen osa tilastotiedettä, sillä se mahdollistaa päätelmien yleistämisen otoksesta populaatioon/perusjoukkoon. Tämä luku toimii esimerkkinä formaaliin matemaattiseen esitykseen perustuvan tilastollisen päättelyn perusteista (otannan ja otantajakaumien näkökulmasta), jonka ideana on yleisesti tehdä luotettavia johtopäätöksiä perusjoukosta otoksen perusteella. Tällä kurssilla käydään läpi (vain) tarvittavia yksityiskohtia sekä rakennetaan pohjia tn-laskennan kurssin jälkeiselle tilastollisen päättelyn peruskurssille ([TILM3555](https://opas.peppi.utu.fi/fi/opintojakso/TILM3555/1731)).
@@ -17,9 +12,9 @@ Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edell
 ::: {.defblock .mikko data-latex="{}"}
 **Satunnaisotos**  
 
-Olkoot $Y_1, \ldots, Y_n$ riippumattomia ja samoinjakautuneita satunnaismuuttujia, joiden tiheysfunktiota (tf., tai pistetoden\-näköisyysfunktiota (ptnf)) merkitään $f(y, \theta)$:llä, jossa $y$:n on yksittäisen sm:jan $Y$ reaalisaatio ja $\theta$ on jokin jakauman muodon määräävä parametri (tai parametrit).  
+Olkoot $Y_1, \ldots, Y_n$ riippumattomia ja samoinjakautuneita satunnaismuuttujia, joiden tiheysfunktiota (tf., tai pistetodennäköisyysfunktiota (ptnf)) merkitään $f(y, \theta)$:llä, jossa $y$:n on yksittäisen sm:jan $Y$ reaalisaatio ja $\theta$ on jokin jakauman muodon määräävä parametri (tai parametrit).  
 
-Parametrin $\theta$ arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, __estimoida__, sen arvoa lopulta käytettävää aineistoa käyttäen.
+Parametrin $\theta$ arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, __estimoida__, sen arvo lopulta käytettävissä olevasta aineistosta.
 :::
 
 \
@@ -35,14 +30,14 @@ __Satunnaisotoksen tilastollinen malli__
 
 - Tässä $f(y_1, \ldots, y_n; \theta)$ on siis tilastollinen malli: sen muodon määrää tutkijan tekemä aineistoa koskeva jakaumaoletus, mikä voi paikoin olla hyvinkin monimutkainen. Tilastollisen mallin monimutkaisuus ilmenee sen parametrien määrästä: mitä useampi parametri (erit. suhteessa havaintojen määrään), sitä monimutkaisempi malli. 
   - Useimmiten kuitenkin ajatellaan, että on käytettävä niin yksinkertaisia menetelmiä kuin mahdollista, mutta ei yhtään yksinkertaisempia. Ns. **parsimoonisuusperiaate** eli **vähäparametrisuus-** tai **säästeliäisyysperiaate**.
-  - Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns.[Occamin partaveitsen -periaatteeseen](https://fi.wikipedia.org/wiki/Occamin_partaveitsi), jonka mukaan *"ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen"*, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
+  - Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns. [Occamin partaveitsen -periaatteeseen](https://fi.wikipedia.org/wiki/Occamin_partaveitsi), jonka mukaan *"ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen"*, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
   - Tämä periaate ja sen suhde ns. **varianssin ja harhan väliseen kompromissiin** on erityisen tärkeä erityisesti tilastollisen ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen (kone)oppimisen sovellutuksissa (ks. tarkemmin alaluku \@ref(alaluku33) ja luku \@ref(luku6)).
 
 - Oletetaan, että $Y_1, \ldots, Y_n$ ovat aiempien oletusten pätiessä riippumattomia sm:jia ja, että ne muodostavat  satunnaisotoksen jakaumasta, jonka odotusarvo on $\mu$ ja varianssi on $\sigma^2$.
   - Ts. oletamme
 
 $$
-\text{E}(Y_i) = \mu, \quad i=1,\ldots,n,  \\
+\text{E}(Y_i) = \mu,  \quad \text{ja} \quad 
 \mathrm{Var}(Y_i) = \sigma^2, \quad i=1,\ldots,n.
 $$
 
@@ -53,7 +48,7 @@ $$
 **Esimerkki: satunnaisotos normaalijakaumasta**  
 
 Normaalijakautuneiden satunnaismuuttujien satunnaisotokselle pätee $Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\,\, i=1,\ldots,n$.
-
+- Merkintä $\indep$ tarkoittaa, että sm:t $Y_1,\ldots,Y_n$ ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti _iid_ tai _i.i.d_, joka tulee englannin kielen ilmaisusta "independent and identically distributed"). Merkintä soveltuu käytettäväksi muidenkin jakaumien tapauksessa.
 - Esimerkiksi R-ohjelmassa voidaan generoida 10 havainnon ($n=10$) satunnaisotos standardoidusta normaalijakaumasta (ts. $Y_i \thicksim \text{N}(0,1),\, i=1,\ldots,10$) komennolla rnorm(10).
 :::
 
@@ -102,7 +97,6 @@ $$
   - Parametri on (usein) perusjoukon tunnusluku, jota halutaan arvioida. Parametrit __estimoidaan__ havaintoaineistoa käyttäen.
 
 \
-\
 
 __Estimaattorin ominaisuudet__
 
@@ -113,8 +107,8 @@ __Estimaattorin ominaisuudet__
 
 Estimaattorin odotettavissa oleva arvo yhtyy tuntemattoman parametrin $\theta$ todelliseen arvoon eli $\text{E}(\widehat{\theta}) = \theta$.
 
-- Harhaton estimaattori tuottaa keskimäärin oikean kokoisia arvoja (estimaatteja) estimoitavalle parametrille
-- Estimaattorin tuottama arvo parametrille saattaa tietylle otokselle poiketa paljonkin parametrin todellisesta arvosta, mutta odotusarvon frekvenssitulkinnan mukaan estimaattorin tuottamat otoskohtaiset arvot parametrille jakautuvat otantaa toistettaessa (symmetrisesti) parametrin todellisen arvon ympärille
+- Harhaton estimaattori tuottaa keskimäärin oikean kokoisia arvoja (estimaatteja) estimoitavalle parametrille.
+- Estimaattorin tuottama arvo parametrille saattaa tietylle otokselle poiketa paljonkin parametrin todellisesta arvosta, mutta odotusarvon frekvenssitulkinnan mukaan estimaattorin tuottamat otoskohtaiset arvot parametrille jakautuvat otantaa toistettaessa (symmetrisesti) parametrin todellisen arvon ympärille.
 :::
 
 ```{r unbiased, echo=FALSE, fig.cap="Harhaton estimaattori", fig.align='center', out.width = "100%"}
@@ -139,15 +133,16 @@ Kahdesta saman parametrin $\theta$ estimaattorista tehokkaampi on se, jonka vari
 Tarkentuvan estimaattorin $\widehat{\theta}$ arvot lähestyvät parametrin $\theta$ oikeaa arvoa otoskoon kasvaessa.
 :::
 
-- Voidaan osoittaa (yksityiskohdat sivuutetaan tällä kurssilla), että esimerkiksi yksinkertaisen satunnaisotoksen tapauksessa tavanomaisilla binomi- ja normaalijakauman parametrien estimaattoreilla on kaikki edellä mainitut hyvyysominaisuudet.
+- Voidaan osoittaa (yksityiskohdat sivuutetaan tällä kurssilla), että esimerkiksi yksinkertaisen satunnaisotoksen tapauksessa tavanomaisilla binomi- ja normaalijakauman parametrien estimaattoreilla on kaikki edellä mainitut hyvät ominaisuudet.
   - Näin ei ole yleisesti monimutkaisemmissa otantatilanteissa ja tilastollisisssa malleissa.
   - Estimaattoreiden kehittäminen erilaisten tilastollisten mallien tapauksessa kuuluu teoreettisen tilastotieteen alaan.
 
-## Otoskeskiarvo ja otosvarianssi (estimaattoreinta) {#alaluku63}
+- Seuraavaksi perehdytään tarkemmin kahteen kenties useimmiten tarkasteltavaan tunnuslukuun ja niiden otosjakaumiin: 
+  - Aritmeettisen keskiarvon otosjakaumaa \@ref(alaluku63)
+  - Suhteellisen osuuden (frekvenssin) otosjakaumaa \@ref(alaluku64)
 
-- Tarkastellaan seuraavaksi tarkemmin kahta kenties useimmiten tarkasteltua tunnuslukua ja niiden otosjakaumia: 
-  - Aritmeettisen keskiarvon otosjakaumaa
-  - Suhteellisen osuuden (frekvenssin) otosjakaumaa
+
+## Otoskeskiarvo ja otosvarianssi (estimaattoreina) {#alaluku63}
 
 __Otoskeskiarvo__
 
@@ -169,13 +164,13 @@ $$
 
 $$\text{E}(\bar{Y}) = \mu$$
 
-  - Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa, ts. $\text{E}(\bar{Y}) = \text{E}(\widehat{\theta}) = \theta = \mu$
+  - Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa.
 
 __Aritmeettisen keskiarvon ominaisuuksia__
 
 - Aiempien oletusten pätiessä aritmeettisella keskiarvolla $\bar{Y}$ on seuraava odotusarvo ja varianssi:
 $$
-\text{E}(\bar{Y}) = \mu,  \\
+\text{E}(\bar{Y}) = \mu,  \quad
 \mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}.
 $$
 
@@ -219,9 +214,6 @@ $$
 - Itse asiassa ns. __asymptoottiseen teoriaan__ vedoten (suurten otosten tapauksessa) voidaan osoittaa, että edellämainittu tulos pätee myös ilman normaalisuusoletusta. 
   - Nämä tarkastelut vaativat jälleen selvästi enemmän käytyjä tilastotieteen (ja matematiikan) opintoja.
 
-\
-\
-\
 \
 
 __Standardoidun aritmeettisen keskiarvon otosjakauma__
@@ -362,7 +354,7 @@ Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsema
 
 - Otoskoko on luottamusvälejä koskevissa tarkasteluissa keskeinen ja luottamusväleihin palataankin otoskoon käsittelyn yhteydessä.
 
-- Valittua luottamustasoa merkitään usein $1-\alpha$:lla, jossa __merkitsevyystaso__ ( __riskitaso__ ) $\alpha$ on esimerkiksi $\alpha=0.05$.
+- Valittua luottamustasoa merkitään usein $1-\alpha$:lla, jossa __merkitsevyystaso__ (__riskitaso__) $\alpha$ on esimerkiksi $\alpha=0.05$.
 
 - Tulkinta: Jos __otantaa__ jakaumasta $f(y;\theta)$ toistetaan, niin keskimäärin $100 \times (1-\alpha)\%$ otoksista kontstruloiduista luottamusväleistä peittää parametrin $\theta$ todellisen arvon.
 
@@ -389,7 +381,6 @@ __Normaalijakauman odotusarvon luottamusväli__
 
 - Tarkastellaan satunnaisotosta normaalijakaumasta 
 $Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\, i=1,\ldots,n$.
-  - Merkintä $\indep$ tarkoittaa, että sm:t $Y_1,\ldots,Y_n$ ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti $iid$, joka tulee englannin kielen ilmaisusta "independent and identically distributed"). 
 
 - Tarkastellaan normaalijakauman odotusarvon $\mu$ luottamusvälin määräämistä otannan avulla olettaen että jakauman varianssi $\sigma^2$ on tunnettu.
   - Muistetaan että normaalijakauman odotusarvoparametrin $\text{E}(Y_i) = \mu$ __harhaton estimaattori__ on aritmeettinen keskiarvo
@@ -458,7 +449,6 @@ knitr::include_graphics("images/gaussian-distribution.jpg")
 ```
 
 \
-\
 
 __Normaalijakauman odotusarvon luottamusväli ($\sigma^2$ tuntematon)__
 
@@ -478,7 +468,7 @@ saadaan nyt $t$__-jakaumasta__ $t_{n-1}$, jossa $S^2$ on varianssin $\sigma^2$ h
 
   - Normaalijakauman odotusarvon luottamusväli ($\sigma^2$ tuntematon), $t$-jakauma eri vapausastein $df$
 
-```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja", fig.align='center', out.width = "100%"}
+```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/NjaT-jakauma.jpg")
 ```
 
@@ -545,17 +535,16 @@ $$
 ## Otoskoko {#alaluku67}
 
 - Yksi tilastollisen päättelyn keskeisiä tavoitteita on yleistää otoksen pohjalta tehty päättely koskemaan koko perusjoukkoa. Seuraavaksi käymme läpi seikkoja, jotka tulee ottaa huomioon otoskokoa miettiessä.
-- Kun on päätetty, millainen tutkimusaineisto halutaan kerätä, on päätettävä, kuinka suuri otoksen on oltava, jotta se edustaa tutkittavaa joukkoa kattavasti
+- Kun on päätetty, millainen tutkimusaineisto halutaan kerätä, on päätettävä, kuinka suuri otoksen on oltava, jotta se edustaa tutkittavaa joukkoa kattavasti.
   - Liian pieni __otoskoko__, eli pieni määrä otokseen poimittuja tilastoyksiköitä, voi __sattumalta__ poiketa paljonkin perusjoukosta.
     - Tämä niin kutsuttu __otantavirhe__ on sitä suurempi mitä pienempää otosta käytetään.
     - Liian pienen otoksen vuoksi muuten hyvin toteuttu tutkimus- ja otanta-asetelma saattaa epäonnistua vastaamaan tutkimuksen mielenkiinnon kohteena olevaan kysymykseen.
   - Todella suuren otoksen koostaminen voi olla __työlästä__, __kallista__ tai joskus jopa täysin mahdotonta esimerkiksi siksi että käytettävissä olevat tutkimusyksiköt eivät ole käytettävissä ajallisten rajoitteiden vuoksi (kuten harvinaisten tautien kantajat). 
     - Toisaalta perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa paremmin esille, vaikka yksittäisten otosyksiköiden tilastolliset muuttujat saattavat vaihdella suuresti.
   - __Otoskoko__ siis vaikuttaa keskeisesti siihen, miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa!
+- Optimaalinen, tai ainakin tutkimusongelmaan vastaamisen kannalta vähintään riittävä arvio, otoskoosta voidaan usein määrätä etukäteen.
 
 \
-
-- Optimaalinen, tai ainakin tutkimusongelmaan vastaamisen kannalta vähintään riittävä arvio, otoskoosta voidaan usein määrätä etukäteen.
 
 __Perusjoukon rooli otoskoon määrittämisessä__
 
@@ -572,8 +561,8 @@ __Tulosten vaaditun tarkkuuden vaikutus otoskokoon__
 - Tarkastellaan kuitenkin ensin minkälaiset kysymykset liittyvät otoskoon pohdintaan tulosten tarkkuuden osalta. 
   - Kuinka varma sinun on oltava, että tulokset vastaavat joukon mielipiteitä? Tämä on virhemarginaalisi. 
     - Esimerkiksi puoluekannatuksen arvioimiseen 2% virhemarginaalilla riittää huomattavasti pienempi otoskoko kuin 0.2% virhemarginaalilla. Politiikan tutkija voisikin kasvattaa otoskokoa vaalien lähestyessä, mikäli mielii tarkempia tuloksia.
-  - Kuinka varma haluat olla, että otos edustaa joukkoa oikein? Tämä on luotettavuustaso. 
-    - Luotettavuustaso on todennäköisyys sille, että valitsemasi otos on tulosten kannalta oleellinen.
+  - Kuinka varma haluat olla, että otos edustaa joukkoa oikein? Tämä on luottamustaso. 
+    - Luottamustaso on todennäköisyys sille, että valitsemasi otos on tulosten kannalta oleellinen.
     - Jos joukosta poimitaan 30 otosta sattumanvaraisesti, kuinka usein yhdestä otoksesta saadut tulokset eroavat merkittävästi muista 30 otoksesta? Jos luotettavuustaso on 95%, samat tulokset saadaan 95 prosentissa tapauksista. 
 
 __Odotetun vastauskadon vaikutus otoskokoon__

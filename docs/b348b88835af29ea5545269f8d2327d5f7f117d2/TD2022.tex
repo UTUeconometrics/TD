@@ -1,14 +1,14 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -34,6 +34,18 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={TILM3701 - Tilastotiede ja data 2022},
+  pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -148,8 +160,11 @@
 \newcommand{\rd}[1]{\textcolor{red}{#1}}
 \newcommand{\gr}[1]{\textcolor{darkgreenx}{#1}}
 
-\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+
+%\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+%\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
 \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\indep}{\perp \!\!\! \perp}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -166,27 +181,15 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
-\ifLuaTeX
+\ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
-\hypersetup{
-  pdftitle={TILM3701 - Tilastotiede ja data 2022},
-  pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={blue},
-  pdfcreator={LaTeX via pandoc}}
 
 \title{TILM3701 - Tilastotiede ja data 2022}
 \author{Koonneet \and Henri Nyberg\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:henri.nyberg@utu.fi}{\nolinkurl{henri.nyberg@utu.fi}}} \and Roope Rihtamo\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:roope.rihtamo@utu.fi}{\nolinkurl{roope.rihtamo@utu.fi}}}}
-\date{2022-09-04}
+\date{2022-09-08}
 
 \begin{document}
 \maketitle
@@ -484,7 +487,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
     Tieteellinen tutkimus on tutkivan subjektin ja tutkimusobjektin välistä vuorovaikutusta.
   \item
     Tiede pyrkii järjestämään tiedon yksinkertaisiksi kokonaisuuksiksi ja pyrkii löytämään säännönmukaisuuksia.\\
-    \strut \\
+    ~\\
   \end{itemize}
 \item
   Tiede on siis tiedon hankintaa, jonka kohteena on meitä ympäröivä todellinen maailma sen ilmiöineen ja tapahtumineen.
@@ -515,7 +518,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
     \tightlist
     \item
       Aikaisemmin hankittujen tietojen vahvistaminen ja todentaminen, eli uuden tutkimuksen tekeminen, on kuitenkin tiedettä sen tuottaessa uutta tietoa.\\
-      \strut \\
+      ~\\
     \end{itemize}
   \end{itemize}
 \item
@@ -546,7 +549,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
       Propagandaan
     \item
       ``Jumalalliseen ilmoitukseen'' tai vastaavaan\\
-      \strut \\
+      ~\\
     \end{itemize}
   \end{itemize}
 \item
@@ -596,9 +599,6 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
 \end{defblock}
 
 \hfill\break
-\hfill\break
-
-Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin, joita ei voida selittää olemassa olevilla tieteellisillä teorioilla tyydyttävästi.
 
 \begin{defblock}{}
 
@@ -633,10 +633,11 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
 \end{defblock}
 
 \hfill\break
-\hfill\break
 
 \begin{itemize}
 \tightlist
+\item
+  Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin, joita ei voida selittää olemassa olevilla tieteellisillä teorioilla tyydyttävästi.
 \item
   Uuden tieteellisen tiedon tuottaminen ja jo tuotetun tiedon ymmärtäminen vaatii \textbf{tieteellisen ajattelutavan} omaksumista, jonka \textbf{perustana on lähes aina tilastollinen päättely}.
 
@@ -677,6 +678,8 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
       Päinvastoin, paradigmat ovat ajan myötä kumuloitunutta tietoa siitä, mitkä toimintatavat ja -menetelmät tuottavat uskottavaa, koko tiedeyhteisön hyväksymää tiedettä, joka täyttää hyvän tieteen kriteerit.
     \item
       On kuitenkin mahdollista, ja käytännössä varmaa, että vallitsevat paradigmat myös estävät osaltaan uusien löytöjen syntymistä: liian vahvasti alan paradigmojen kanssa ristiriidassa oleva tulos saattaa jäädä julkaisematta, mikäli tutkija ei pidä sitä lainkaan mahdollisena suhteessa vallitseviin paradigmoihin.
+    \item
+      Samoin on käytännössä varmaa, että vallitsevat paradigmat muuttuvat ajan myötä uusien löytöjen myötä!
     \end{itemize}
   \item
     Tieteelliseen ajattelutapaan kuuluu olennaisesti juuri tiedon kumuloitumisen ymmärtäminen: yksittäinen vahva tulos on vasta alku ja vahvistettu tieto jostain ilmiöstä, yhteydestä tai vaikutuksesta syntyy monien mittausten ja tutkimusten jatkumona.
@@ -832,7 +835,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
 \tightlist
 \item
   Ihminen ei voi toimia maailmassa järkevästi, ellei hän pysty muodostamaan oikeata kuvaa maailmasta ja sen tilasta. Nykyaikana oikeaa kuvaa varten tarvitaan maailmaa ja sen tilaa merkityksellisesti ja oikein kuvaavia, ajantasaisia \textbf{(tilasto)tietoja}.\\
-  \strut \\
+  ~\\
 \item
   Yhteiskunnan kaikilla sektoreilla toiminnan seuranta, päätöksenteko ja ennakointi perustuvat eri sektoreita kuvaaviin \textbf{(tilasto)tietoihin} ja niiden analysoinnissa käytettäviin \textbf{tilastollisiin menetelmiin}.
 
@@ -850,7 +853,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
     \end{itemize}
   \item
     (Tilasto)tietojen saatavuutta voidaan pitää jopa toimivan demokratian edellytyksenä.\\
-    \strut \\
+    ~\\
   \end{itemize}
 \item
   Koska todellisuutta kuvaaviin (tilasto)tietoihin sisältyy (lähes) aina epävarmuutta ja satunnaisuutta, tilastotiede ja tilastolliset menetelmät luovat perustan tilastojen tuotannolle, jalostukselle ja analysoinnille.
@@ -861,7 +864,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
     Niinpä tilastojen tuotannon, jalostuksen ja analysoinnin menetelmien kehittäminen on keskeinen osa tilastotieteen tehtäväkenttää.
   \item
     Samoin tilastotieteen menetelmien ymmärtämisellä on keskeinen rooli tietoyhteiskunnassa toimimisessa ja vaikuttamisessa.\\
-    \strut \\
+    ~\\
   \end{itemize}
 \end{itemize}
 
@@ -961,7 +964,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
     \tightlist
     \item
       Lisää tieteen popularisoinnista jaksossa \ref{alaluku46}.\\
-      \strut \\
+      ~\\
     \end{itemize}
   \end{itemize}
 \item
@@ -982,7 +985,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
   \end{itemize}
 \item
   Myöhemmin materiaalissa (luvussa \ref{luku11}) keskustellaan vielä tarkemmin miten tilastotieteessä ilmiön ymmmärtäminen (selittäminen) ja ennustaminen eroavat toisistaan.\\
-  \strut \\
+  ~\\
 \item
   \textbf{Tutkimuksen rajat?} Onko niitä?
 
@@ -1066,7 +1069,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
       Käsitteiden ja eri aloilla, osin samoista asioista käytettävien, toisistaan eroavien termien systemaattinen määrittely ja jäsentely selkeyttää tiedeyhteisön välistä kommunikointia.\\
     \item
       Eivät korvaa empiiristä tietoa vaan vaikuttavat tiedon järjestymiseen ja sen perusteella tehtäviin päätelmiin.\\
-      \strut \\
+      ~\\
     \end{itemize}
   \end{itemize}
 \end{itemize}
@@ -1116,7 +1119,7 @@ Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin
 
 Tieteellinen tutkimus ja asiantuntijatyö tuottavat valtavan määrän perusteltua, luotettavaa tutkimustietoa. Ks. tarkemmin tieteellisestä julkaisemisesta linkin tapauksessa erityisesti yhteiskuntatieteiden alalla, mutta perusperiaatteet pätevät myös muiden tieteenalojen tapauksessa
 
-\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}\strut \\
+\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}~\\
 
 Vastuullisen tieteen
 
@@ -1125,7 +1128,7 @@ Vastuullisen tieteen
 artikkelit tarjoavat tietoa siitä, kuinka tutkittua tietoa tuotetaan, julkaistaan ja arvioidaan luotettavasti ja yhteisesti hyväksytyllä tavalla. Jotta tiede vaikuttaa koko yhteiskunnan hyväksi, toiminnan on oltava vastuullista tutkimuksen jokaisessa vaiheessa.
 
 Helsingin Yliopisto tarjoaa lisäksi \href{https://tiedelukutaito.mooc.fi/}{Tiedelukutaidon perusteet -kurssia} MOOC-toteutuksena (Massive Open Onlince Course). Keskustelethan ennen kurssin käymistä oman alasi koulutussuunnittelijan (tai vastaavan vastuuhenkilön) kanssa siitä, soveltuuko kyseinen kurssi sisällytettäväksi johonkin omaan opintokokonaisuuteesi.\\
-\strut \\
+~\\
 
 \begin{itemize}
 \tightlist
