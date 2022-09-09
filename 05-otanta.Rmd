@@ -2,7 +2,7 @@
 
 Edellisessä luvussa käsiteltiin tilastotieteen suhtautumista satunnaisilmiöihin. Tässä luvussa tarkastelemme lähemmin miten reaalimaailman satunnaisilmiöistä kerätään tietoa ja miten niitä voidaan mitata. Tilastotieteen perusoppimäärä rakentuu ajatukselle ilmiöiden tutkimisesta rajallisen ja epävarman tiedon vallitessa. Käytännössä tämä tarkoittaa sitä, että tutkimuksen kohteena olevat rajalliset aineistot sisältävät niin systemaattista kuin satunnaisuudesta johtuvaa vaihtelua. Tilastollisten menetelmien avulla pyrimme erottamaan systemaattisen vaihtelun satunnaisesta sekä tekemään tilastollista päättelyä aineiston generoimasta mekanismista. Lyhyesti tämä tarkoittaa aineiston systemaattisen vaihtelun tilastollista mallintamista ja sen parametrien estimointia otoksesta, joka kattaa vain (pienen) osajoukon koko populaation (perusjoukon) tilastoyksiköistä. 
 
-Voidaksemme tehdä uskottavaa päättelyä "havainnoista parametreihin", tulee otoksen olla riittävän __edustava__. Tämän luvun keskeisin oppi onkin, että miten otanta tulisi suorittaa, jotta havaintoaineisto olisi __edustava otos__ populaatiosta, silloin kun aineisto kerätään otannalla. Vaikka aineiston hankinta vaatii yleensä runsaasti käytännön työtä, kannattaa se tehdä huolellisesti, sillä huonosti toteutetun otannan vuoksi tutkimusongelman kannalta keskeisiä johtopäätöksiä ei voida tehdä! 
+Voidaksemme tehdä uskottavaa päättelyä "havainnoista parametreihin", tulee otoksen olla riittävän __edustava__. Tämän luvun keskeisin oppi onkin, että miten __otanta__ tulisi suorittaa, jotta havaintoaineisto olisi __edustava otos__ populaatiosta, silloin kun aineisto kerätään otannalla. Vaikka aineiston hankinta vaatii yleensä runsaasti käytännön työtä, kannattaa se tehdä huolellisesti, sillä huonosti toteutetun otannan vuoksi tutkimusongelman kannalta keskeisiä johtopäätöksiä ei voida tehdä! 
 
 ## Kertausta: Data eli aineisto {#alaluku51}
 
@@ -13,14 +13,14 @@ Voidaksemme tehdä uskottavaa päättelyä "havainnoista parametreihin", tulee o
 knitr::include_graphics("images/populaatiostahavaintoon.jpg")
 ```
 
-- Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu $n$ tilastoyksiköstä, joista jokaisesta on kerätty esim. $m$ tilastomuuttujasta havainnot, niin havainnot voidaan kirjoittaa taulukon muotoon
+- Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu $n$ tilastoyksiköstä, joista jokaisesta on kerätty esim. $m$:stä tilastomuuttujasta havainnot, niin aineisto voidaan kirjoittaa taulukon muotoon:
 
-| |tilastomuuttuja 1 |tilastomuuttuja 2 | ... |tilastomuuttuja $m$ |
+| |tilastomuuttuja 1 |tilastomuuttuja 2 | $\dots$ |tilastomuuttuja $m$ |
 |------------------|------------------|--------------------|------|--------------------|
-| tilastoyksikkö  1 | $x_{1,1}$ | $x_{1,2}$ | | $x_{1,m}$ |
-| tilastoyksikkö  2 | $x_{2,2}$ | $x_{2,2}$ | | $x_{2,m}$ |
-| ... | ... |... | ... |
-| tilastoyksikkö $n$| $x_{n,1}$ | $x_{1,2}$ | | $x_{n,m}$ |
+| tilastoyksikkö  1 | $x_{1,1}$ | $x_{1,2}$ | $\dots$ | $x_{1,m}$ |
+| tilastoyksikkö  2 | $x_{2,2}$ | $x_{2,2}$ | $\dots$ | $x_{2,m}$ |
+| $\vdots$ | $\vdots$ | $\vdots$ | | $\vdots$ |
+| tilastoyksikkö $n$| $x_{n,1}$ | $x_{1,2}$ | $\dots$ | $x_{n,m}$ |
 
 
 Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja sarakkeessa $j$ on $j$. tilastollisesta muuttujasta havaitut arvot $x_{i,j}$. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.
@@ -29,7 +29,7 @@ Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja sarakkeessa $j
     - Tällöin voi olla tarpeen luokitella aineistoa taulukon muodostamiseksi.  
     - Luokittelussa on kysymys aineiston tiivistämisestä kohtuullisen kokoiseksi ja havainnollisempaan muotoon. Luokittelussa tilastomuuttujan arvot sijoitetaan eri luokkiin siten, että yhden tilastomuuttujan arvo voi kuulua vain yhteen luokkaan. Luokka ilmoitetaan yleensä luokkavälinä, kuten reaalilukuvälinä. Esimerkiksi henkilön ikä on tapana luokitella ikäjakauman kuvaamisessa 10-vuotisluokkiin (15-24, 25-34, ...), vaikka periaatteessa ikä voitaisiin ilmoittaa minuutinkin tarkkuudella.  
     - Luokkien lukumäärään vaikuttavat muun muassa tilastomuuttujan arvojen vaihteluväli ja havaintoaineiston laajuus. Luokittelussa pyritään siihen, että luokkien lukumäärä saadaan tarvittaessa luokkia yhdistämällä kohtuulliseksi ja että luokat valitaan tasavälisesti eli siten, että kahden peräkkäisen luokan alarajojen erotus on vakio. Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta toisaalta osa tiedoista menetetään eivätkä yksittäiset havaintoarvot ole enää tiedossa.  
-    - Emme vielä tällä kurssilla käsittele tilastografiikan esittämistä. Muun muassa tilastollisen päättelyn peruskurssi (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset menetelmät ovat joka tapauksessa erittäin tärkeä osa aineiston havainnollistamista. Kuvat helpottavat aineiston tulkitsemista ja toimivat usein perusteltuna lähtökohtana monimutkaisempien tilastollisten mallien (ja algoritmien) sovittamiselle.  
+    - Emme vielä tällä kurssilla käsittele tilastografiikan esittämistä tarkemmin. Muun muassa tilastollisen päättelyn peruskurssi (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset menetelmät ovat joka tapauksessa erittäin tärkeä osa aineiston havainnollistamista. Kuvat helpottavat aineiston tulkitsemista ja toimivat usein perusteltuna lähtökohtana monimutkaisempien tilastollisten mallien (ja algoritmien) sovittamiselle.  
 
 \
 
@@ -38,9 +38,8 @@ Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja sarakkeessa $j
   - Kaikki havaitut tilastolliset muuttujat eivät ole aina mielenkiintoisia. Tutkimuksen kannalta mielenkiintoisia muuttujia kutsutaan __tutkimusmuuttujiksi__, joiden lisäksi havaintoaineisto pitää mahdollisesti sisällään __taustamuuttujia__.
     - Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen aikuisväestön mielipiteistä, havaintoyksikköinä ovat aikuisväestöön kuuluvat henkilöt. Jos halutaan tietoa suomalaisista kunnista, havaintoyksikköinä ovat Suomen kunnat jne.
     - Ensimmäisessä tapauksessa tilastollisina muuttujina on aikuisväestön mielipiteet, joita voidaan selvittää esimerkiksi kyselytutkimuksella. Toisaalta voidaan myös kerätä taustamuuttujiksi haastatelluista muita tietoja, kuten asuinpaikka, ikä ja ammatti. 
-  - Kaikkia mielenkiintoisia muuttujia ei kuitenkaan välttämättä voida havaita, eli niille ei voida määrittää numeerista arvoa. 
-  - Tällöin puhutaan nk. __latenteista muuttujista__, eli muuttujista joita ei suoraan havaita mutta joiden oletetaan vaikuttavan havaittavien muuttujien taustalla. Latentteja muuttujia voidaan rakentaa tilastollisten mallien avulla käyttäen hyödyksi niihin liittyviä havaittuja muuttujia.
-  - Latentteja muuttujia ovat esimerkiksi elämänlaatu, onnellisuus, konservatiivisuus, yms.
+  - Kaikkia mielenkiintoisia muuttujia ei kuitenkaan välttämättä voida havaita, eli niille ei voida määrittää numeerista arvoa. Tällöin puhutaan nk. __latenteista muuttujista__, eli muuttujista joita ei suoraan havaita mutta joiden oletetaan vaikuttavan havaittavien muuttujien taustalla. Latentteja muuttujia voidaan rakentaa tilastollisten mallien avulla käyttäen hyödyksi niihin liittyviä havaittuja muuttujia.
+    - Latentteja muuttujia ovat esimerkiksi elämänlaatu, onnellisuus, konservatiivisuus, yms.
 
 \
 
@@ -105,10 +104,10 @@ __Otantatutkimuksessa__ tutkimus kohdistetaan johonkin (populaation/perusjoukon)
     - Usein tavoiteperusjoukko = kohdeperusjoukko.
     - Tavoiteperusjoukko voi joskus olla laajempi (esim. "ihmiset" vs. "suomalaiset").
 
-- Tutkimuksessa (edustavaan) otokseen poimitut tilastoyksiköt, näiden tilastolliset muuttujat ja niiden arvot muodostavat __otosaineiston__ eli siis tutkimus- tai havaintoaineiston (datan).
+- Tutkimuksessa (edustavaan) otokseen poimitut tilastoyksiköt, näiden tilastolliset muuttujat ja niiden arvot muodostavat __otosaineiston__ eli siis tutkimus- tai havaintoaineiston (__datan__).
     - Tutkimuskysymykseen vastatakseen tutkija valitsee sopivan tilastollisen mallin ja estimoi sen parametrit tähän otokseen perustuen.
     - Perusoletuksena on otoksen ja valitun tilastollisten mallin pohjalta suoritettavan tilastollisen päättelyn __yleistettävyys koko populaatioon__.
-    - Otos valitaan __otantaa__ ja erilaisia __otantamenetelmiä__ hyödyntäen pyrkien varmistamaan otoksen __edustavuus__ (perusjoukko pienoiskoossa, ks. kuva \@ref(fig:otanta)).
+    - Otos valitaan erilaisia __otantamenetelmiä__ hyödyntäen pyrkien varmistamaan otoksen __edustavuus__ (perusjoukko pienoiskoossa, ks. kuva \@ref(fig:otanta)).
 
 ::: {.defblock .mikko data-latex="{}"}
 **Edustavuus**  
@@ -138,10 +137,13 @@ knitr::include_graphics("images/otanta.jpg")
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Kotitalouksien tulot, tuloerot ja pienituloisuusrajan kehitys 1987-2005 (Tilastokeskus)**  
 
-- Tilastotyksikkö kotitalous, joten kaikkien kotitalouksien tutkiminen (kokonaistutkimus, ks. alla) olisi vaikeaa ja aikaavievää. 
+- Tilastoyksikkö on kotitalous, joten kaikkien kotitalouksien tutkiminen (kokonaistutkimus, ks. alla) olisi vaikeaa ja aikaavievää. 
 - Tutkittavaksi valitaan vain muutama tuhat kotitaloutta (ts. otantatutkimus) ja selvitetään näiden tulot.
-- On mahdollista tehdä __kaikkia__ suomalaisia kotitalouksia koskevia johtopäätöksiä, jos tutkitut yksiköt olivat __edustava otos__ suomalaisista kotitalouksista. Ts. osajoukkoa koskevat päätelmät voidaan yleistää koskemaan perusjoukkoa, mikäli osajoukko on edustava otos perusjoukosta.
+  - Tuloja, pienituloisuusrajaa ja tuloeroja on havainnollistettu kuvassa \@ref(fig:tuloerot).
+- On mahdollista tehdä __kaikkia__ suomalaisia kotitalouksia koskevia johtopäätöksiä, jos tutkitut yksiköt ovat __edustava otos__ suomalaisista kotitalouksista. Ts. osajoukkoa koskevat päätelmät voidaan yleistää koskemaan perusjoukkoa, mikäli osajoukko on edustava otos perusjoukosta.
 :::
+
+\FloatBarrier
 
 ```{r tuloerot, echo=FALSE, fig.cap="Tuloerot.", fig.align='center', out.width="100%"}
 knitr::include_graphics("images/tuloerot.jpg")
@@ -156,8 +158,8 @@ __Mittaaminen__
 - Kumpaa tahansa tutkimusotetta (kokonais- tai otantatutkimus) noudatettaessa tietojen keräämisessä on olennaisena osana kohteiden ominaisuuksien __mittaaminen__.
     - Mittaaminen vaatii aina mittauksen kohteen, hyvin määritellyn mitattavan ominaisuuden ja __mittarin__, joka liittää mielekkäät lukuarvot mitattavaan ominaisuuteen.
     - Erilaiset mittarit heijastavat ilmiön ominaisuuksia eri tavoin ja eri tarkkuudella
-        - Esimerkiksi jos tutkitaan opiskelijoiden pituuden kehitystä niin mitataan pituutta eri aikoina. Pituudet voidaan mitata senttimetreissä, metreissä, kilometreissä tai vaikkapa tuumissa.
-        - Mittari on hyvä jos sen antama mittaus on
+        - Esimerkiksi, jos tutkitaan opiskelijoiden pituuden kehitystä, niin mitataan pituutta eri aikoina. Pituudet voidaan mitata senttimetreissä, metreissä, kilometreissä tai vaikkapa tuumissa.
+        - Mittari on hyvä, jos sen antama mittaus on
           - __(i) validi__ eli mittaus esittää oikein mitattavaa ominaisuutta (senttimetri mittaa pituutta, gramma ei) ja 
           - __(ii) luotettava__ eli mittaus on __harhaton__ ja __toistettavissa__. 
         - Määritellään nämä termit vielä erikseen, sillä ne ovat keskeisiä tilastotieteessä.
@@ -173,7 +175,7 @@ Mittari on harhaton, jos se ei systemaattisesti ali- tai yliarvioi mitattavan om
 - Harhattomuutta pidetään myös hyvänä ominaisuutena tilastollisten mallien parametrien estimaattoreille. Tähän palataan myöhemmin luvussa \@ref(luku6).
 
 ::: {.defblock .mikko data-latex="{}"}
-**Toistettaavuus**  
+**Toistettavuus**  
 
 Mittari on toistettava, jos se tuottaa keskimäärin samanlaisia mittauksia samanlaisista otoksista eli se on johdonmukainen ja mittausvirheet ovat pieniä.
 :::
@@ -186,25 +188,26 @@ Mittari on toistettava, jos se tuottaa keskimäärin samanlaisia mittauksia sama
 
 - Kun mittaaminen on luotettavaa ja validia, tutkimusaineisto on __sisäisesti luotettavaa__.
 - Aineiston __ulkoinen luotettavuus__ toteutuu silloin, kun tutkittu otos edustaa perusjoukkoa eli on edustava. 
-  - Validi mittaaminen ei pelasta epäedustavaa otosta!
+  - Validi mittaaminen ei pelasta otosta, jos se ei ole edustava!
 - Jokaisen tutkimuksen tulosten luotettavuuden perusteena on käytetty aineisto, kuinka se on hankittu ja mistä lähteestä. Kun käytetään luotettavaksi havaittuja mittareita, voidaan kustakin aineistosta laskea erikseen tunnuslukuja mittauksen luotettavuudelle. Esimerkkinä __luottamusväli__:
-  - Luottamusväliä käytetään määrittämään estimaatin luotettavuutta.
   - Väli, joka vaihtelee otoksesta toiseen ja joka usein sisältää mielenkiinnon kohteena olevan parametrin, kun otantakoetta toistetaan!
+  - Luottamusväliä käytetään määrittämään estimaatin luotettavuutta.
+  - Väliestimointia tarkastellaan tarkemmin luvussa \@ref(luku6).
     
-```{r luottamus, echo=FALSE, fig.cap="Normaalijakauman luottamusväli. Väliestimointia tarkastellaan tarkemmin luvussa \\@ref(luku6).", fig.align='center', out.width="75%"}
+```{r luottamus, echo=FALSE, fig.cap="Normaalijakaumaan perustuva 95\\% luottamusväli.", fig.align='center', out.width="75%"}
 knitr::include_graphics("images/luottamus.jpg")
 ```
 
 - Luotettavuudella voidaan tarkoittaa myös tutkimuksen __objektiivisuutta / puolueettomuutta__
     - __Objektiivinen totuus__, tutkimustulokset ovat samat riippumatta siitä kuka pätevä tutkija tutkimuksen on tehnyt.
-    - Tulosten tulisi olla luotettavia, mutta luotettavatkin havainnot voivat olla puolueellisia siinä mielessä, että ne tarkastelevat asiaa vain yhdeltä näkökannalta!
-    - Esim. tarkastellaan yrityksen henkilöstökysymyksiä, työn organisointia ja työmoraalia, ongelmien tarkastelu johdon vs. henkilöstön näkökulmasta.
+    - Tulosten tulisi olla luotettavia, mutta luotettavatkin tulokset voivat olla puolueellisia siinä mielessä, että ne tarkastelevat asiaa vain yhdeltä näkökannalta!
+    - Esim. tarkastellaan yrityksen henkilöstökysymyksiä, työn organisointia ja työmoraalia, ongelmien tarkastelua johdon vs. henkilöstön näkökulmasta.
   
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: C-vitamiinin vaikutus syövän hoidossa**  
 
-- Annettiin C-vitamiinia 100 terminaalivaiheen syöpäpotilaalle ja
+- Annettiin C-vitamiinia 100:lle terminaalivaiheen syöpäpotilaalle ja
 seurattiin kuolleisuutta (Cameron and Pauling, 1976). 
   - Pyrittiin luomaan tärkeiden ominaisuuksien suhteen samanlaisia verrokkiryhmiä ja valittiin kutakin potilasta kohden 10 verrokkia, jotka olivat samanlaisia iän, sukupuolen, primääri-kasvaimen sijaintipaikan ja histologisen kasvaintyypin suhteen. 
   - Seuranta-aika: aika hetkestä, jolloin todettiin tavanomaisten hoitojen olevan tehottomia, kuolinhetkeen saakka. 
@@ -212,7 +215,7 @@ seurattiin kuolleisuutta (Cameron and Pauling, 1976).
 
 - Ristiriitaista evidenssiä saatiin tutkimuksessa, jossa vastaava tutkimusongelma, mutta toteutettu satunnaistettuna kokeena (Moertel et al. 1985). 
   - Satunnaistettiin potilaat, joilla pitkälle edennyt paksunsuolen tai peräsuolen syöpä, C-vitamiinia saavien ja lumelääkettä saavien ryhmiin. 
-  - Tulos: kontrolliryhmän potilaat elivät keskimäärin hieman pidempään, mutta ero ei merkitsevä.
+  - Tulos: kontrolliryhmän potilaat elivät keskimäärin hieman pidempään, mutta ero ei tilastollisesti merkitsevä.
 
 - Mistä kahden tutkimuksen erot johtuivat? 
   - Huonolla tuurilla kaltaistetut verrokit erosivat käsittelyryhmän potilaista joillakin merkittävillä tavoilla, joita ei oltu mitattu! Miten kvantifioida "huonoa tuuria"? 
@@ -223,10 +226,10 @@ seurattiin kuolleisuutta (Cameron and Pauling, 1976).
 :::
 
 \
-\
+
 __Mitta-asteikot__
 
-- Kuten satunnaismuuttujia koskeneessa luvussa \@ref(luku4) opittiin, satunnaisilmiöillä on erilaisia tulosvaihtoehtoja jotka kantavat satunnaismuuttujien todennäköisyysjakaumia.
+- Kuten satunnaismuuttujia koskeneessa luvussa \@ref(luku4) opittiin, satunnaisilmiöillä on erilaisia tulosvaihtoehtoja, jotka kantavat satunnaismuuttujien todennäköisyysjakaumia.
   - On syytä huomauttaa, että vaikka mitattava ilmiö ei olisikaan numeerinen, se voidaan aina "koodata" eli muuntaa numeeriseksi. Esimerkiksi perinteinen kaksiarvoinen mies-nainen -muuttujan tapauksessa voidaan käyttää tunnuksia 0 ja 1.
 
 - Ilmiön luonteesta riippuen voidaan näille tulosvaihtoehdoille käyttää erilaisia __mitta-asteikkoja__. 
@@ -260,10 +263,13 @@ __Mitta-asteikot__
 
 - Vastavasti __välimatka- ja suhdeasteikkoa kutsutaan kvantitatiivisiksi asteikoiksi__, koska tällöin mittaluvut kuvaavat jonkin ominaisuuden määrää.
 
-- Tilastollisen analyysin kannalta mitta-asteikkojen merkitys on siinä, että tilastollisten (matemaattisten) operaatioiden sallittavuus määräytyy muuttujan mitta-asteikon mukaan. Mitä korkeampi mitta-asteikko, sitä enemmän on käytettävissä olevia analyysimenetelmiä. Esimerkiksi keskiarvon laskeminen on eräs tilastollinen operaatio, ja se ei ole sallittu kvalitatiivislle muuttujille.
+- Tilastollisen analyysin kannalta mitta-asteikkojen merkitys on siinä, että tilastollisten (matemaattisten) operaatioiden sallittavuus määräytyy muuttujan mitta-asteikon mukaan. Mitä "korkeampi" mitta-asteikko, sitä enemmän on käytettävissä olevia analyysimenetelmiä. Esimerkiksi keskiarvon laskeminen on eräs tilastollinen operaatio, ja se ei ole sallittu kvalitatiivislle muuttujille.
 
-- __Aineistotyyppejä__: Käsitellään tarkemmin vielä myöhemmin (Luvussa \@ref(luku10)), joiden yhteydessä mitattavat muuttujat voivat olla kvalitatiivisia tai kvantitatiivisia.
-  - Poikkileikkausaineisto: Tietoja yhdeltä ajanhetkeltä tai aikaväliltä
+\
+__Aineistotyyppejä__ 
+
+- Käsitellään tarkemmin vielä myöhemmin (Luvussa \@ref(luku10)), joiden yhteydessä mitattavat muuttujat voivat olla kvalitatiivisia tai kvantitatiivisia.
+  - Poikkileikkausaineisto: Tietoja useista tutkimuskohteista yhdeltä ajanhetkeltä tai aikäväliltä
   - Aikasarja-aineisto: Tietoja samasta tutkimuskohteesta eri ajanhetkiltä
   - Paneeliaineisto: Tietoja useilta ajanhetkiltä useista tutkimuskohteista
   - Tapahtumahistoria-aineisto: Tietoja tapahtumahetkiltä
@@ -285,9 +291,9 @@ __Mitta-asteikot__
 
 - Suoria havaintoja tehtäessä ei voida (usein) selvittää vasteen ja olosuhteiden __kausaalista__ yhteyttä. Suorilla havainnoilla voidaan lähinnä saada selville onko vasteella ja olosuhteilla jokin yhteys (korrelaatio) (ks. luku \@ref(luku7)).
 
-- Suorien havaintojen keräämiseen liittyy olennaisesti joitain riskejä ja toisaalta rajoituksia. Riskit liittyvät käytännössä otoksen harhaisuuteen (erit. valikoitumisharha)
+- Suorien havaintojen keräämiseen liittyy olennaisesti joitain riskejä ja toisaalta rajoituksia. Riskit liittyvät käytännössä otoksen harhaisuuteen (erit. valikoitumisharha).
   - Esimerkiksi jos havaintoja tehtäessä suositaan systemaattisesti joitakin tulosvaihtoehtoja. Tämä suosiminen voi olla tahallista tai tahatonta.
-  - Tämä tilastoyksiköiden __valikoituminen__ otokseen aiheuttaa harhaa, sillä otokseen valikoituva osajoukko saattaa ylikorostaa perusjoukon jotain ominaisuuksia.
+  - Tämä tilastoyksiköiden __valikoituminen__ otokseen aiheuttaa harhaa, sillä otokseen valikoituva osajoukko saattaa ylikorostaa perusjoukon joitain ominaisuuksia.
 
 ::: {.defblock .mikko data-latex="{}"}
 **Valikoituminen**  
@@ -317,9 +323,9 @@ Tilastoyksiköiden poimimista populaatiosta otokseen riippumatta muiden yksiköi
 - Johtopäätelmien pätevyys riippuu mm. siitä, kuinka hyvin otanta on suoritettu. Tämän vuoksi on tärkeää ymmärtää otannan perusperiaatteet ja erilaisten otantamenetelmien luonne.
 
 - Kontrolloiduissa kokeissa satunnaistaminen jakaa yksilöt __riippumatta yksilön omista ilmiöön vaikuttavista muuttujista__ joko __käsittely- tai kontrolliryhmään__ (eng. treatment ja control).
-  - Se takaa, ettei valikoitumista jonkin käsittelyä edeltävän ominaisuuden mukaan esiinny
+  - Se takaa, ettei valikoitumista jonkin käsittelyä edeltävän ominaisuuden mukaan esiinny.
   - Tämä tarkoittaa __altisteen__ (käsittely / "treatment") antamista (täysin) satunnaisesti kokeeseen valituille yksilöille, riippumatta näiden taustamuuttujien arvoista.
-  - Nämä yksilöt sinänsä voivat olla satunnaisotos jostain populaatiosta (tai ainakin niiden toivotaan olevan), mutta satunnaistaminen tarkoittaa siis käsittelyn kohdentamista koeyksilöille, ei satunnaisotantaa sinänsä
+  - Nämä yksilöt sinänsä voivat olla satunnaisotos jostain populaatiosta (tai ainakin niiden toivotaan olevan), mutta satunnaistaminen tarkoittaa siis käsittelyn kohdentamista koeyksilöille, ei satunnaisotantaa sinänsä.
   - Esimerkiksi tutkittavat voidaan satunnaistaa lääkehoito- ja placeboryhmiin, jotta mahdolliset erot tutkittavien iässä, sukupuolessa ja muissa taustamuuttujissa eivät aiheuta systemaattista harhaa, kun tutkitaan lääkehoidon vaikutusta.
 
 ## Otantamenetelmät {#alaluku55}
@@ -359,7 +365,7 @@ jossa siis $N$ on perusjoukon alkioiden lukumäärä. Toisin sanoen, kaikilla pe
     - Yksinkertainen satunnaisotanta on periaatteiltaan intuitiivinen ja helppo ymmärtää. Lisäksi se on tietyissä tilanteissa usein helppo toteuttaa.
   - Tällöin on selvää että myös jokaisella perusjoukon samankokoisella osajoukolla on sama todennäköisyys tulla valituksi. 
   - Toisin sanoen, todennäköisyys tulla poimituksi ei riipu tilastoyksikön ominaisuuksista tai siitä minkälaisia ominaisuuksia jo poimituilla otosyksiköillä on. 
-  - Satunnaisotanta siis selvästi korjaa valikoitumisharhaa (viittaus aiempaan lukuun) satunnaistamalla otokseen valikoitumisen täysin! YSO voidaankin aina tulkita arvonnaksi. Käytännön työssä arvonta onkin oiva satunnaistamisen keino.
+  - Satunnaisotanta siis selvästi korjaa valikoitumisharhaa (ks. aiempi luku \@ref(alaluku54)) satunnaistamalla otokseen valikoitumisen täysin! YSO voidaankin aina tulkita arvonnaksi. Käytännön työssä arvonta onkin oiva satunnaistamisen keino.
 
 - __YSO:n toteuttaminen__
   - Käytännössä yksinkertainen satunnaisotanta etenee vaiheittain:

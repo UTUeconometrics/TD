@@ -14,5 +14,6 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
+  fig_caption: yes
   keep_tex: yes
   extra_dependencies: ["amsmath", "amssymb"]

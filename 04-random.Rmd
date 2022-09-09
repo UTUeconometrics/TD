@@ -151,9 +151,10 @@ __Bayesilainen tilastotiede__
     - Pistetodennäköisyys- ja tiheysfunktiot siis määräävät satunnaismuuttujan mahdollisille arvoille todennäköisyydet väliltä $[0,1]$ ja näin voidaan arvioida havaitun aineiston uskottavuutta ja testata siihen liitettäviä hypoteeseja suhteessa estimoituun suurimman uskottavuuden estimaattiin.
 
 - Tilastolliset mallit approksimoivat "todellista" aineiston generoinutta ilmiötä. Tilastolliset mallit riippuvat __parametreista__ ja keskeinen oletus erityisesti klassisessa tilastotieteessä on, että aineiston generoinutta satunnaisilmiötä kuvaa jokin vakioinen mutta tuntematon parametriarvo (tai niiden joukko).
+  - Kuviossa \@ref(fig:poisson) on kuvattu Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktion muotoa eri parametrin $\lambda$ arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa \@ref(alaluku45).
 
 
-```{r poisson, echo=FALSE, fig.cap="Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin $\\lambda$ arvoilla. Poisson-jakaumaa esitellään tarkemmin alaluvussa \\@ref(alaluku45).", fig.align='center', out.width = "100%"}
+```{r poisson, echo=FALSE, fig.cap="Esimerkki: Poisson-jakauman sovelluskohteita ja sen pistetodennäköisyysfunktio eri parametrin $\\lambda$ arvoilla.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/poisson.jpg")
 ```
 
