@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5.2 Otannan idea | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5.2 Otannan idea | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -124,7 +124,13 @@
 <li class="chapter" data-level="5.2" data-path="alaluku52.html"><a href="alaluku52.html"><i class="fa fa-check"></i><b>5.2</b> Otannan idea</a></li>
 <li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Mittaaminen ja mitta-asteikot</a></li>
 <li class="chapter" data-level="5.4" data-path="alaluku54.html"><a href="alaluku54.html"><i class="fa fa-check"></i><b>5.4</b> Kontrolloidut kokeet ja suorat havainnot</a></li>
-<li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a></li>
+<li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="alaluku55.html"><a href="alaluku55.html#yksinkertainen-satunnaisotanta"><i class="fa fa-check"></i><b>5.5.1</b> Yksinkertainen satunnaisotanta</a></li>
+<li class="chapter" data-level="5.5.2" data-path="alaluku55.html"><a href="alaluku55.html#systemaattinen-otanta"><i class="fa fa-check"></i><b>5.5.2</b> Systemaattinen otanta</a></li>
+<li class="chapter" data-level="5.5.3" data-path="alaluku55.html"><a href="alaluku55.html#ositettu-otanta"><i class="fa fa-check"></i><b>5.5.3</b> Ositettu otanta</a></li>
+<li class="chapter" data-level="5.5.4" data-path="alaluku55.html"><a href="alaluku55.html#ryväsotanta"><i class="fa fa-check"></i><b>5.5.4</b> Ryväsotanta</a></li>
+</ul></li>
 <li class="chapter" data-level="5.6" data-path="alaluku56.html"><a href="alaluku56.html"><i class="fa fa-check"></i><b>5.6</b> Otantaesimerkkejä</a></li>
 <li class="chapter" data-level="5.7" data-path="alaluku57.html"><a href="alaluku57.html"><i class="fa fa-check"></i><b>5.7</b> Otannan haasteita vielä kootusti</a></li>
 </ul></li>
@@ -190,6 +196,86 @@
             <section class="normal" id="section-">
 <div id="alaluku52" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Otannan idea<a href="alaluku52.html#alaluku52" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Otantatutkimuksen (karkeat) suunnittelu- ja työvaiheet ovat seuraavat:
+<ol style="list-style-type: decimal">
+<li>Tavoitteiden asettaminen</li>
+<li>Perusjoukon (populaation) asettaminen</li>
+<li>Kehikko</li>
+<li>Kerättävän informaation sisältö (mitä tietoa todella tarvitaan, mitä voidaan jättää pois, suunnitellaan kysymykset ja mahdollinen kyselylomake)</li>
+<li>Otoskoon määrittäminen</li>
+<li>Suoritetaan otoksen poiminta, tietojen keräys ja tarkastus</li>
+<li>Aineiston taulukointi ja analysointi</li>
+<li>Raportin laatiminen</li>
+</ol></li>
+<li>Otantatutkimuksessa ajatuksena on siis poimia <strong>edustava otos</strong> siitä populaatiosta (perusjoukosta), joka on mielenkiinnon kohteena eli jota halutaan tutkia ja josta halutaan tietoja.
+<ul>
+<li><strong>Tavoiteperusjoukko</strong> on joukko, johon otannan myötä saatavat tutkimustulokset halutaan yleistää. Toisin sanoen, se mistä haluamme tietoja määrää populaation.</li>
+<li><strong>Kohdeperusjoukko</strong> on joukko, jota koskevia tietoja halutaan kerätä.
+<ul>
+<li>Esimerkiksi äänestysikäiset Suomen kansalaiset.</li>
+<li>Usein tavoiteperusjoukko = kohdeperusjoukko.</li>
+<li>Tavoiteperusjoukko voi joskus olla laajempi (esim. “ihmiset” vs. “suomalaiset”).</li>
+</ul></li>
+</ul></li>
+<li>Tutkimuksessa (edustavaan) otokseen poimitut tilastoyksiköt, näiden tilastolliset muuttujat ja niiden arvot muodostavat <strong>otosaineiston</strong> eli siis tutkimus- tai havaintoaineiston (<strong>datan</strong>).
+<ul>
+<li>Tutkimuskysymykseen vastatakseen tutkija valitsee sopivan tilastollisen mallin ja estimoi sen parametrit tähän otokseen perustuen.</li>
+<li>Perusoletuksena on otoksen ja valitun tilastollisten mallin pohjalta suoritettavan tilastollisen päättelyn <strong>yleistettävyys koko populaatioon</strong>.</li>
+<li>Otos valitaan erilaisia <strong>otantamenetelmiä</strong> hyödyntäen pyrkien varmistamaan otoksen <strong>edustavuus</strong> (perusjoukko pienoiskoossa, ks. kuva <a href="alaluku52.html#fig:otanta">5.2</a>).</li>
+</ul></li>
+</ul>
+<div class="defblock mikko">
+<p><strong>Edustavuus</strong></p>
+<p>Tutkimukseen valitut yksiköt edustavat koko populaatiota, ts. tutkimukseen valittu osajoukko kuvaa perusjoukon ominaisuuksia kattavasti.</p>
+</div>
+<ul>
+<li>Keskeistä tutkimuksen ja sen edustavuuden kannalta on, että tutkija osaa kerätä sisällöllisesti ja määrällisesti <strong>sopivan kokoisen</strong> aineiston.</li>
+<li>Tietyn otoksen edustavuutta arvioidessa voi käyttää apuna seuraavia kysymyksiä:
+<ul>
+<li>Miksi päädyttiin tämän kokoiseen otokseen?
+<ul>
+<li><strong>Otoskoko</strong> vaikuttaa siihen miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa, ts. kuinka luotettavia ne ovat. Tämä johtuu siitä että yksittäisten otosyksiköiden ominaisuudet saattavat vaihdella suuresti ja kasvattamalla otoskokoa perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa yhä paremmin esille. Kun otoskoko vastaa populaation kokoa, on kyseessä tietenkin kokonaistutkimus, joka kertoo kaiken perusjoukosta. Otoskoon valintaan ja määräämiseen palataan myöhemmin luvussa <a href="luku6.html#luku6">6</a>.</li>
+</ul></li>
+<li>Käytettiinkö apuna tilastotieteellisesti vankkaa suunnittelua otoskoon määrittämiseksi ja/tai miten pyrittiin varmistamaan tutkimuksen kannalta tärkeisiin analyysiryhmiin kuuluvien riittävä määrä aineistossa?</li>
+<li>Harkittiinko muita otantamenetelmiä ja miksi päädyttiin juuri käytössä olleeseen menetelmään?</li>
+</ul></li>
+<li>Edustavuuteen vaikuttaa keskeisesti se, millä tavoin otanta pystytään suorittamaan, ts. mihin kohdeperusjoukkoon otanta kohdistetaan.
+<ul>
+<li><strong>Kehikkoperusjoukko</strong> on rekisterin, luettelon tms. peittämä osa kohdeperusjoukkoa. Kyseessä on siis se osa kohdeperusjoukkoa, josta otanta ylipäänsä pystytään suorittamaan eli <strong>otantakehikko</strong>.</li>
+<li><strong>Otantakehikon alipeitto</strong> esiintyy, kun otantakehikosta puuttuu osa kohdeperusjoukon alkioista (esim. tutkimus suoritetaan puhelinhaastattelulla, mutta osa aiottuun otokseen kuuluvista haastateltavista ei omista puhelinta). Vastaavasti <strong>otantakehikon ylipeittoa</strong> esiintyy, kun otantakehikkoon kuuluu kohdeperusjoukkoon kuulumattomia alkioita.
+<ul>
+<li>Nämä ovat nk. <strong>kehikkovirheitä</strong>. Lisäki esimerkiksi kyselytutkimuksissa tai rekisteriaineistoissa saattaa esiintyä <strong>katoa</strong>, eli osa vastauksista jää uupumaan tai niitä ei jostain syystä mitata.</li>
+<li><strong>Otantavirhe</strong> taas on satunnaisuudesta johtuvaa tilastollisten muuttujien vaihtelua otoksesta toiseen ja se onkin ainoa virhelaji, jonka suuruutta voidaan tilastollisin menetelmin arvioida.</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:otanta"></span>
+<img src="images/otanta.jpg" alt="Otannan idea." width="100%" />
+<p class="caption">
+Kuvio 5.2: Otannan idea.
+</p>
+</div>
+<ul>
+<li>Edustavan otoksen avulla on mahdollista tehdä perusjoukkoa koskevaa tilastollista päättelyä, sillä otos kuvaa perusjoukon ominaisuuksia riittävän hyvin. Tämä on yksi tilastotieteen keskeisimpiä oppeja mutta myös kriittisen tiedelukutaidon ja arkijärjen kannalta tärkeää.</li>
+</ul>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: Kotitalouksien tulot, tuloerot ja pienituloisuusrajan kehitys 1987-2005 (Tilastokeskus)</strong></p>
+<ul>
+<li>Tilastoyksikkö on kotitalous, joten kaikkien kotitalouksien tutkiminen (kokonaistutkimus, ks. alla) olisi vaikeaa ja aikaavievää.</li>
+<li>Tutkittavaksi valitaan vain muutama tuhat kotitaloutta (ts. otantatutkimus) ja selvitetään näiden tulot.
+<ul>
+<li>Tuloja, pienituloisuusrajaa ja tuloeroja on havainnollistettu kuvassa <a href="alaluku52.html#fig:tuloerot">5.3</a>.</li>
+</ul></li>
+<li>On mahdollista tehdä <strong>kaikkia</strong> suomalaisia kotitalouksia koskevia johtopäätöksiä, jos tutkitut yksiköt ovat <strong>edustava otos</strong> suomalaisista kotitalouksista. Ts. osajoukkoa koskevat päätelmät voidaan yleistää koskemaan perusjoukkoa, mikäli osajoukko on edustava otos perusjoukosta.</li>
+</ul>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:tuloerot"></span>
+<img src="images/tuloerot.jpg" alt="Tuloerot." width="100%" />
+<p class="caption">
+Kuvio 5.3: Tuloerot.
+</p>
+</div>
 </div>
             </section>
 
@@ -257,7 +343,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

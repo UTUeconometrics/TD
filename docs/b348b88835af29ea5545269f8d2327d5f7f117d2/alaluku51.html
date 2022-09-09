@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5.1 Kertausta: Data eli aineisto | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5.1 Kertausta: Data eli aineisto | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -124,7 +124,13 @@
 <li class="chapter" data-level="5.2" data-path="alaluku52.html"><a href="alaluku52.html"><i class="fa fa-check"></i><b>5.2</b> Otannan idea</a></li>
 <li class="chapter" data-level="5.3" data-path="alaluku53.html"><a href="alaluku53.html"><i class="fa fa-check"></i><b>5.3</b> Mittaaminen ja mitta-asteikot</a></li>
 <li class="chapter" data-level="5.4" data-path="alaluku54.html"><a href="alaluku54.html"><i class="fa fa-check"></i><b>5.4</b> Kontrolloidut kokeet ja suorat havainnot</a></li>
-<li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a></li>
+<li class="chapter" data-level="5.5" data-path="alaluku55.html"><a href="alaluku55.html"><i class="fa fa-check"></i><b>5.5</b> Otantamenetelmät</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="alaluku55.html"><a href="alaluku55.html#yksinkertainen-satunnaisotanta"><i class="fa fa-check"></i><b>5.5.1</b> Yksinkertainen satunnaisotanta</a></li>
+<li class="chapter" data-level="5.5.2" data-path="alaluku55.html"><a href="alaluku55.html#systemaattinen-otanta"><i class="fa fa-check"></i><b>5.5.2</b> Systemaattinen otanta</a></li>
+<li class="chapter" data-level="5.5.3" data-path="alaluku55.html"><a href="alaluku55.html#ositettu-otanta"><i class="fa fa-check"></i><b>5.5.3</b> Ositettu otanta</a></li>
+<li class="chapter" data-level="5.5.4" data-path="alaluku55.html"><a href="alaluku55.html#ryväsotanta"><i class="fa fa-check"></i><b>5.5.4</b> Ryväsotanta</a></li>
+</ul></li>
 <li class="chapter" data-level="5.6" data-path="alaluku56.html"><a href="alaluku56.html"><i class="fa fa-check"></i><b>5.6</b> Otantaesimerkkejä</a></li>
 <li class="chapter" data-level="5.7" data-path="alaluku57.html"><a href="alaluku57.html"><i class="fa fa-check"></i><b>5.7</b> Otannan haasteita vielä kootusti</a></li>
 </ul></li>
@@ -190,6 +196,146 @@
             <section class="normal" id="section-">
 <div id="alaluku51" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Kertausta: Data eli aineisto<a href="alaluku51.html#alaluku51" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>Tilastollinen tutkimus</strong> aloitetaan tutkimusaineiston keruun suunnittelulla.</li>
+<li>Kertauksen vuoksi: tilastollinen tutkimusaineisto (havaintoaineisto) koostuu tilastoyksiköiden populaatiosta havaituista tilastomuuttujien arvoista.</li>
+</ul>
+<div class="figure"><span style="display:block;" id="fig:pophav"></span>
+<img src="images/populaatiostahavaintoon.jpg" alt="Populaatiosta havaintoon." width="90%" />
+<p class="caption">
+Kuvio 5.1: Populaatiosta havaintoon.
+</p>
+</div>
+<ul>
+<li>Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu <span class="math inline">\(n\)</span> tilastoyksiköstä, joista jokaisesta on kerätty esim. <span class="math inline">\(m\)</span>:stä tilastomuuttujasta havainnot, niin aineisto voidaan kirjoittaa taulukon muotoon:</li>
+</ul>
+<table style="width:100%;">
+<colgroup>
+<col width="21%" />
+<col width="21%" />
+<col width="24%" />
+<col width="7%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>tilastomuuttuja 1</th>
+<th>tilastomuuttuja 2</th>
+<th><span class="math inline">\(\dots\)</span></th>
+<th>tilastomuuttuja <span class="math inline">\(m\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>tilastoyksikkö 1</td>
+<td><span class="math inline">\(x_{1,1}\)</span></td>
+<td><span class="math inline">\(x_{1,2}\)</span></td>
+<td><span class="math inline">\(\dots\)</span></td>
+<td><span class="math inline">\(x_{1,m}\)</span></td>
+</tr>
+<tr class="even">
+<td>tilastoyksikkö 2</td>
+<td><span class="math inline">\(x_{2,2}\)</span></td>
+<td><span class="math inline">\(x_{2,2}\)</span></td>
+<td><span class="math inline">\(\dots\)</span></td>
+<td><span class="math inline">\(x_{2,m}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\vdots\)</span></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+<td></td>
+<td><span class="math inline">\(\vdots\)</span></td>
+</tr>
+<tr class="even">
+<td>tilastoyksikkö <span class="math inline">\(n\)</span></td>
+<td><span class="math inline">\(x_{n,1}\)</span></td>
+<td><span class="math inline">\(x_{1,2}\)</span></td>
+<td><span class="math inline">\(\dots\)</span></td>
+<td><span class="math inline">\(x_{n,m}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Tässä siis rivillä <span class="math inline">\(i\)</span> on <span class="math inline">\(i\)</span>. <strong>tilastoyksikön</strong> havainto ja sarakkeessa <span class="math inline">\(j\)</span> on <span class="math inline">\(j\)</span>. tilastollisesta muuttujasta havaitut arvot <span class="math inline">\(x_{i,j}\)</span>. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.</p>
+<ul>
+<li>Usein (varsinkin parhaillaan kiihtyvällä vauhdilla) kerättävät havaintoaineistot ovat niin suuria, ettei edellisenkaltaisesta havaintotaulukosta voida usein suoraan tarkastelemalla nähdä aineiston pääpiirteitä.
+<ul>
+<li>Tällöin voi olla tarpeen luokitella aineistoa taulukon muodostamiseksi.<br />
+</li>
+<li>Luokittelussa on kysymys aineiston tiivistämisestä kohtuullisen kokoiseksi ja havainnollisempaan muotoon. Luokittelussa tilastomuuttujan arvot sijoitetaan eri luokkiin siten, että yhden tilastomuuttujan arvo voi kuulua vain yhteen luokkaan. Luokka ilmoitetaan yleensä luokkavälinä, kuten reaalilukuvälinä. Esimerkiksi henkilön ikä on tapana luokitella ikäjakauman kuvaamisessa 10-vuotisluokkiin (15-24, 25-34, …), vaikka periaatteessa ikä voitaisiin ilmoittaa minuutinkin tarkkuudella.<br />
+</li>
+<li>Luokkien lukumäärään vaikuttavat muun muassa tilastomuuttujan arvojen vaihteluväli ja havaintoaineiston laajuus. Luokittelussa pyritään siihen, että luokkien lukumäärä saadaan tarvittaessa luokkia yhdistämällä kohtuulliseksi ja että luokat valitaan tasavälisesti eli siten, että kahden peräkkäisen luokan alarajojen erotus on vakio. Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta toisaalta osa tiedoista menetetään eivätkä yksittäiset havaintoarvot ole enää tiedossa.<br />
+</li>
+<li>Emme vielä tällä kurssilla käsittele tilastografiikan esittämistä tarkemmin. Muun muassa tilastollisen päättelyn peruskurssi (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset menetelmät ovat joka tapauksessa erittäin tärkeä osa aineiston havainnollistamista. Kuvat helpottavat aineiston tulkitsemista ja toimivat usein perusteltuna lähtökohtana monimutkaisempien tilastollisten mallien (ja algoritmien) sovittamiselle.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Kvantitatiivisen tutkimuksen aineistoksi kelpaa periaatteessa kaikki havaintoihin perustuva informaatio, joka on <strong>mittauksen</strong> avulla muutettavissa numeeriseen muotoon.
+<ul>
+<li>Havaintoyksiköiden tilastollisten muuttujien numeerisia arvoja kutsutaan <strong>havaintoarvoiksi</strong> tai <strong>havainnoiksi</strong>.</li>
+<li>Kaikki havaitut tilastolliset muuttujat eivät ole aina mielenkiintoisia. Tutkimuksen kannalta mielenkiintoisia muuttujia kutsutaan <strong>tutkimusmuuttujiksi</strong>, joiden lisäksi havaintoaineisto pitää mahdollisesti sisällään <strong>taustamuuttujia</strong>.
+<ul>
+<li>Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen aikuisväestön mielipiteistä, havaintoyksikköinä ovat aikuisväestöön kuuluvat henkilöt. Jos halutaan tietoa suomalaisista kunnista, havaintoyksikköinä ovat Suomen kunnat jne.</li>
+<li>Ensimmäisessä tapauksessa tilastollisina muuttujina on aikuisväestön mielipiteet, joita voidaan selvittää esimerkiksi kyselytutkimuksella. Toisaalta voidaan myös kerätä taustamuuttujiksi haastatelluista muita tietoja, kuten asuinpaikka, ikä ja ammatti.</li>
+</ul></li>
+<li>Kaikkia mielenkiintoisia muuttujia ei kuitenkaan välttämättä voida havaita, eli niille ei voida määrittää numeerista arvoa. Tällöin puhutaan nk. <strong>latenteista muuttujista</strong>, eli muuttujista joita ei suoraan havaita mutta joiden oletetaan vaikuttavan havaittavien muuttujien taustalla. Latentteja muuttujia voidaan rakentaa tilastollisten mallien avulla käyttäen hyödyksi niihin liittyviä havaittuja muuttujia.
+<ul>
+<li>Latentteja muuttujia ovat esimerkiksi elämänlaatu, onnellisuus, konservatiivisuus, yms.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Tilastollinen tutkimus voi olla joko <strong>kokonaistutkimus</strong> tai <strong>otantatutkimus</strong>.</li>
+</ul>
+<div class="defblock mikko">
+<p><strong>Kokonaistutkimus</strong></p>
+<p>Kokonaistutkimus on tutkimus, jossa tutkitaan kaikki tutkimuksen kohteena olevan perusjoukon alkiot, ts. kaikki ajateltavissa olevat kohteet tutkitaan.</p>
+<ul>
+<li>Kokonaistutkimus on yleinen tutkimustapa silloin, kun kohdeperusjoukko on selvästi määritelty ja sen alkioita koskevat tilastolliset muuttujat ovat helposti mitattavissa.</li>
+<li>Esimerkiksi jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat. Kunnista on useimmissa tilanteissa mahdollista kerätä mielenkiinnon kohteena olevia tilastollisia muuttujia.</li>
+<li>Toisaalta jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin kokonaistutkimuksessa tutkittaisiin jokainen ihminen erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa.</li>
+</ul>
+</div>
+<div class="defblock mikko">
+<p><strong>Otantatutkimus</strong></p>
+<p><strong>Otantatutkimuksessa</strong> tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon, joka pooimitaan sopivaa <strong>otantamenetelmää</strong> käyttäen (ks. alaluku <a href="alaluku55.html#alaluku55">5.5</a>) ja populaatiota/perusjoukkoa koskevat johtopäätelmät tehdään tähän otokseen perustuen.</p>
+<ul>
+<li>Otantatutkimus on usein luonnollinen valinta, sillä koko populaation tutkiminen ei useinkaan ole mahdollista tai kannattavaa.
+<ul>
+<li>Esimerkiksi aseiden patruunoita valmistava tehtailija ei voi tutkia toimivatko kaikki ammukset. Myöskään valaisimien valmistaja tuskin tekee kokonaistutkimuksia valmistamiensa tuotteiden kestoajan selvittämiseksi.<br />
+</li>
+</ul></li>
+<li>Perusjoukosta otokseen poimittuja alkioita kutsutaan <strong>otosyksiköiksi</strong> ja niiden muodostama osajoukko, eli <strong>otos</strong>, on se osa perusjoukkoa, joka tutkitaan tutkimusaineiston keräämisen jälkeen.
+<ul>
+<li>Lääketutkimusta tehdäänkin poikkeuksetta otantatutkimuksena (ja kontrolloituina kokeina, ks. alempaa), jolloin lääkettä testataan vain osajoukolla koko ihmispopulaatiosta ja tämän osajoukon alkiot ovat otosyksiköitä.</li>
+<li>Näin toimimalla, ja riittävän edustavalla otoksella, saadaan kuitenkin tarpeeksi tietoa lääkeaineen vaikutuksista ja tulokset voidaan yleistää populaatiotasolle ja lääke ottaa käyttöön.</li>
+</ul></li>
+<li>Otantatutkimus on halvempi kuin kokonaistutkimus ja tulokset saadaan nopeammin!</li>
+</ul>
+</div>
+<p><br />
+</p>
+<ul>
+<li>Otantatutkimuksessa keskitytään siis perusjoukkoa edustavan pienemmän, mieluusti satunnaisesti valitun otoksen tutkimiseen.
+<ul>
+<li>Otantatutkimuksissa tiedot kerätään useimmiten haastattelemella, kirjallisella/sähköisellä kyselyllä tai suoraan tietorekistereistä. Tiedonkeruun toteuttaminen (eri sovelluksissa) määrää osaltaan käytettävän otantamenetelmän.</li>
+<li>Teoriassa äärelliseen perusjoukkoon kohdistuvat kokonaistutkimukset voidaan aina tulkita otantatutkimuksiksi (perusjoukko tulkitaan otokseksi hypoteettisesta äärettömästä perusjoukosta)!
+<ul>
+<li>Esimerkiksi Galilein tekemät painovoiman vaikutusta kappaleiden putoamisaikaan liittyneet mittaukset. Koetuloksia (mittauksia) voidaan pitää otoksena äärettömästä mahdollisten koetulosten joukosta. Tällöin ainoa mahdollisuus ilmiön tutkimiseen on käyttää otantaa.</li>
+</ul></li>
+</ul></li>
+<li>Otantatutkimuksen tulokset voivat olla luotettavampia kuin kokonaistutkimuksen.
+<ul>
+<li>Otantatutkimuksessa voidaan panostaa enemmän huolelliseen ja tarkkaan mittaamiseen sekä valitun otoksen tavoittamiseen.</li>
+<li>Kokonaistutkimuksessa vastauskato ja tarkasteltavan populaation valintavirhe ovat mahdollisia siinä missä otantatutkimuksessakin.</li>
+</ul></li>
+<li>Otantateoria on yksi tilastotieteen keskeisimpiä oppeja ja tarjoaa teoreettisen kehikon empiiristen tutkimusten tulosten yleistämiseen. Tarkastellaan siis tarkemmin otannan ideaa ja toteuttamista seuraavassa alaluvussa.</li>
+</ul>
 </div>
             </section>
 
@@ -257,7 +403,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
