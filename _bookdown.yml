@@ -1,5 +1,5 @@
 delete_merged_file: true
-rmd_files: ["index.Rmd", "01-intro.Rmd", "02-tieto_tilastot.Rmd", "03-tilastotiede.Rmd", "04-random.Rmd", "05-otanta.Rmd", "C06-tilppa.Rmd", "C07-korrelaatio.Rmd", "C08-regressio.Rmd", "C09-til_rooli.Rmd", "C010-tutkimusasetelmat.Rmd",
+rmd_files: ["index.Rmd", "01-intro.Rmd", "02-tieto_tilastot.Rmd", "03-tilastotiede.Rmd", "04-random.Rmd", "05-otanta.Rmd", "06-tilppa.Rmd", "C07-korrelaatio.Rmd", "C08-regressio.Rmd", "C09-til_rooli.Rmd", "C010-tutkimusasetelmat.Rmd",
             "C011-ennustaminen.Rmd", "C012-til_kehitys.Rmd"] 
 output_dir: "docs/b348b88835af29ea5545269f8d2327d5f7f117d2"
 language:

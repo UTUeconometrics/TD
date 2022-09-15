@@ -4,8 +4,8 @@ Tarkastellaan seuravaaksi otoksia ja otosjakaumia "tilastollisemmin" mitä edell
 
 ## Satunnaisotos, yhteisjakauma ja tilastollinen malli {#alaluku61}
 
-- Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on satunnaisilmiöt, joita kuvataan satunnaismuuttujilla. Satunnaismuuttujilla on todennäköisyysjakaumat, joita tilastotieteessä kuvataan todennäköisyys- eli tiheysfunktion avulla.  
-  - Merkitään satunnaismuuttujia isolla kirjaimella, $Y$, ja yksittäisen satunnaismuuttuja realisaatiota pienellä kirjaimella $y$. Otoskokoa, eli otokseen osallistuvien tilastoyksiköiden määrää merkitään $n$:llä ja tilastoyksiköitä indeksöidään alaindeksillä $i=1,\ldots,n$. 
+- Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on satunnaisilmiöt, joita kuvataan satunnaismuuttujia käyttäen. Satunnaismuuttujilla on todennäköisyysjakaumat, joita tilastotieteessä kuvataan todennäköisyys- eli tiheysfunktion avulla.  
+  - Merkitään satunnaismuuttujaa isolla kirjaimella, $Y$, ja satunnaismuuttujan realisaatiota pienellä kirjaimella $y$. Otoskokoa, eli otokseen osallistuvien tilastoyksiköiden määrää merkitään $n$:llä ja tilastoyksiköitä indeksöidään alaindeksillä $i=1,\ldots,n$. 
   - Otoksen poimimisen jälkeen satunnaismuuttujat $Y_1, \ldots, Y_n$ saavat havaituiksi arvoikseen havaintoarvot $y_1, \ldots, y_n$ (ts. $Y_1=y_1, \ldots, Y_n = y_n$).
   - Näin havaintoaineisto on siis __satunnaisotos__, joka voidaan määritellä tarkemmin seuraavasti.
 
@@ -18,7 +18,6 @@ Parametrin $\theta$ arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, 
 :::
 
 \
-\
 
 __Satunnaisotoksen tilastollinen malli__
 
@@ -29,11 +28,11 @@ __Satunnaisotoksen tilastollinen malli__
   - Koska tällä kurssilla satunnaismuuttujat $Y_1, \ldots, Y_n$ oletetaan __riippumattomiksi toisiinsa nähden__, niiden yhteisjakauma on tulomuotoa $f(y_1, \ldots, y_n; \theta) = f(y_1; \theta) \times \cdots \times f(y_n; \theta)$.
 
 - Tässä $f(y_1, \ldots, y_n; \theta)$ on siis tilastollinen malli: sen muodon määrää tutkijan tekemä aineistoa koskeva jakaumaoletus, mikä voi paikoin olla hyvinkin monimutkainen. Tilastollisen mallin monimutkaisuus ilmenee sen parametrien määrästä: mitä useampi parametri (erit. suhteessa havaintojen määrään), sitä monimutkaisempi malli. 
-  - Useimmiten kuitenkin ajatellaan, että on käytettävä niin yksinkertaisia menetelmiä kuin mahdollista, mutta ei yhtään yksinkertaisempia. Ns. **parsimoonisuusperiaate** eli **vähäparametrisuus-** tai **säästeliäisyysperiaate**.
+  - Useimmiten kuitenkin ajatellaan, että on käytettävä niin yksinkertaisia menetelmiä kuin mahdollista, mutta ei yhtään yksinkertaisempia. Tämä on ns. **parsimoonisuusperiaate** eli **vähäparametrisuus-** tai **säästeliäisyysperiaate**.
   - Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns. [Occamin partaveitsen -periaatteeseen](https://fi.wikipedia.org/wiki/Occamin_partaveitsi), jonka mukaan *"ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen"*, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
   - Tämä periaate ja sen suhde ns. **varianssin ja harhan väliseen kompromissiin** on erityisen tärkeä erityisesti tilastollisen ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen (kone)oppimisen sovellutuksissa (ks. tarkemmin alaluku \@ref(alaluku33) ja luku \@ref(luku6)).
 
-- Oletetaan, että $Y_1, \ldots, Y_n$ ovat aiempien oletusten pätiessä riippumattomia sm:jia ja, että ne muodostavat  satunnaisotoksen jakaumasta, jonka odotusarvo on $\mu$ ja varianssi on $\sigma^2$.
+- Oletetaan, että $Y_1, \ldots, Y_n$ ovat aiempien oletusten pätiessä riippumattomia sm:jia ja että ne muodostavat  satunnaisotoksen jakaumasta, jonka odotusarvo on $\mu$ ja varianssi on $\sigma^2$.
   - Ts. oletamme
 
 $$
@@ -47,7 +46,8 @@ $$
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: satunnaisotos normaalijakaumasta**  
 
-Normaalijakautuneiden satunnaismuuttujien satunnaisotokselle pätee $Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\,\, i=1,\ldots,n$.
+Normaalijakautuneiden satunnaismuuttujien satunnaisotokselle pätee $Y_1, \ldots, Y_n \indep, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\,\, i=1,\ldots,n$.  
+
 - Merkintä $\indep$ tarkoittaa, että sm:t $Y_1,\ldots,Y_n$ ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti _iid_ tai _i.i.d_, joka tulee englannin kielen ilmaisusta "independent and identically distributed"). Merkintä soveltuu käytettäväksi muidenkin jakaumien tapauksessa.
 - Esimerkiksi R-ohjelmassa voidaan generoida 10 havainnon ($n=10$) satunnaisotos standardoidusta normaalijakaumasta (ts. $Y_i \thicksim \text{N}(0,1),\, i=1,\ldots,10$) komennolla rnorm(10).
 :::
@@ -74,7 +74,7 @@ $$
 T = g(Y_1, \ldots, Y_n).
 $$
 
-- Tunnusluvut ovat satunnaismuuttujien funktioina myös satunnaismuuttujia.
+- __Tunnusluvut ovat satunnaismuuttujien funktioina myös satunnaismuuttujia.__
   - Tunnusluvulla on nk. todellinen arvo, $g(\theta)$, joka vastaa tunnusluvun arvoa perusjoukon tasolla ja jota pyritään aineistoa käyttäen estimoimaan.
   - Esimerkkinä tunnusluvusta on keskiarvo $\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$.
   - Tunnusluvun havaittu arvo (realisaatio) pisteessä ($y_1,\ldots, y_n$) eli havaitussa aineistossa on
@@ -94,7 +94,7 @@ $$
 
   - Otosjakauma muodostaa (tilastollisen mallin) todennäköisyysmallin tunnusluvun $T$ arvojen satunnaisvaihtelulle otoksesta toiseen.
   - Otosjakaumat riippuvat tuntemattomista __parametreista__, joiden arvoja ei yleensä tunneta ja niitä pyritään estimoimaan kerättyä otosta ja sopivaa tunnuslukua käyttäen.
-  - Parametri on (usein) perusjoukon tunnusluku, jota halutaan arvioida. Parametrit __estimoidaan__ havaintoaineistoa käyttäen.
+  - Parametri on (usein) perusjoukon tunnusluku, jota halutaan arvioida. Parametrit __estimoidaan__, kuten yllä jo todettiin, havaintoaineistoa käyttäen.
 
 \
 
@@ -138,8 +138,8 @@ Tarkentuvan estimaattorin $\widehat{\theta}$ arvot lähestyvät parametrin $\the
   - Estimaattoreiden kehittäminen erilaisten tilastollisten mallien tapauksessa kuuluu teoreettisen tilastotieteen alaan.
 
 - Seuraavaksi perehdytään tarkemmin kahteen kenties useimmiten tarkasteltavaan tunnuslukuun ja niiden otosjakaumiin: 
-  - Aritmeettisen keskiarvon otosjakaumaa \@ref(alaluku63)
-  - Suhteellisen osuuden (frekvenssin) otosjakaumaa \@ref(alaluku64)
+  - Aritmeettisen keskiarvon otosjakaumaan \@ref(alaluku63)
+  - Suhteellisen osuuden (frekvenssin) otosjakaumaan \@ref(alaluku64)
 
 
 ## Otoskeskiarvo ja otosvarianssi (estimaattoreina) {#alaluku63}
@@ -150,7 +150,7 @@ __Otoskeskiarvo__
   - Havaintojen (satunnaismuuttujien) $Y_1, \ldots, Y_n$ __otoskeskiarvo__ on  
 
 $$
-\bar{Y} = \frac{1}{n}(Y_1 + \ldots + Y_n) = \frac{1}{n} \sum_{i=1}^{n} Y_i
+\bar{Y} = \frac{1}{n}(Y_1 + \cdots + Y_n) = \frac{1}{n} \sum_{i=1}^{n} Y_i
 $$
 
   - Yksittäisen otoksen otoskeskiarvo on tällöin sm:jien realisaatioiden aritmeettinen keskiarvo
@@ -304,9 +304,9 @@ noudattaa suurissa otoksissa approksimatiivisesti standardoitua normaalijakaumaa
 **EU-kansanäänestys**  
 
 
-- Suomen EU-kansanäänestyksessä vuonna 1994 jäsenyyttä kannattaneiden suhteellinen osuus oli 0,54 (54\%).
+- Suomen EU-kansanäänestyksessä vuonna 1994 jäsenyyttä kannattaneiden suhteellinen osuus oli 0,54 (54 \%).
 
-- Mikä olisi ollut tällöin tn., että ennen äänestystä 200 havainnon otoksessa kyllä-osuus olisi ollut alle 50\%?
+- Mikä olisi ollut tällöin tn., että ennen äänestystä 200 havainnon otoksessa kyllä-osuus olisi ollut alle 50 \%?
 
 - Suhteellisen frekvenssin otosjakauman perusteella kyllä-kannatusosuuden jakauma olisi
 $$
@@ -333,8 +333,8 @@ Jakaumien tunnusluvut voidaan jakaa sijaintilukuihin, hajontalukuihin ja muihin 
   - Luokitteluasteikolla mitattaville muuttujille ei ole olemassa luontevia sijaintilukuja keskilukujen yhteydessä pl. moodi.
 
 - Järjestysasteikolla mitatuille muuttujille voidaan mediaanin lisäksi määrittää __fraktiileja__: pp%:n fraktiili jakaa tilastoaineiston kahteen osaan siten, että kyseistä fraktiilia pienempiä havaintoarvoja on pp%. 
-  - Eniten käytettyjä fraktiileja ovat __kvartiilit__. __Alakvartiili__ $Q_1$ on 25%:n fraktiili, ja __yläkvartiili__ $Q_3$ on 75% fraktiili.
-  - Tietyistä fraktiileista käytetään nimitystä __desiili__. Ensimmäinen desiili $D_1$ on 10% fraktiili ja esim. yhdeksäs fraktiili $D_9$ on 90% fraktiili.
+  - Eniten käytettyjä fraktiileja ovat __kvartiilit__. __Alakvartiili__ $Q_1$ on 25 \%:n fraktiili, ja __yläkvartiili__ $Q_3$ on 75 \% fraktiili.
+  - Tietyistä fraktiileista käytetään nimitystä __desiili__. Ensimmäinen desiili $D_1$ on 10 \% fraktiili ja esim. yhdeksäs fraktiili $D_9$ on 90 \% fraktiili.
 
 - Hajontalukuja: Varianssin/keskihajonnan lisäksi, jos muuttuja on mitattu vähintään järjestysasteikolla, sille voidaan määrittää vaihteluväli ja kvartiiliväli. __Vaihteluväli__ kuvaa aineiston kokonaispeittoa ja siinä ilmoitetaan aineiston pienin havainto ja suurin havainto. Ts. vaihteluväli=(pienin havainto, suurin havainto). __Kvartiiliväli__ = ($Q_1, Q_3$).
 
@@ -369,7 +369,7 @@ Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsema
 - Luottamusväleissä ei kuitenkaan varsinaisesti ole kyse "virheestä" vaan saadun/muodostetun tiedon tarkkuudesta.
   - Luottamusvälit, eli virhemarginaalit, siis (yleisesti) riippuvat valittavasta luottamustasosta $1-\alpha$ ja näin ollen samasta aineistosta on saatavissa useita virhemarginaaleja.
     - Täten on tarkalleen ottaen virheellistä sanoa, että "tutkimuksen virhemarginaali on 3,5 puoleen tai toiseen".
-    - Oikeammin olisi sanoa esimerkiksi "tutkimuksessa saadun kannatuksen virhemarginaali on 3,5 puoleen tai toiseen 95% luottamustasolla."
+    - Oikeammin olisi sanoa esimerkiksi "tutkimuksessa saadun kannatuksen virhemarginaali on 3,5 puoleen tai toiseen 95 \% luottamustasolla."
     - Virhemarginaali kasvaa, kun aineistoa lohkotaan: jos tuhannen hengen otoksesta esitetään tietoja, jotka kuvaavat erikseen miesten ja naisten ominaisuuksia, sukupuolittain lasketut ovat estimaatit epävarmempia kuin koko otoksesta esitetyt.
   - Vastaavasti on virheellistä sanoa että tutkimuksella olisi virhemarginaali, sillä virhemarginaali liittyy aina vain tutkimuksen antamiin numeerisiin arvoihin. 
   - Aitoja virhelähteitä ovat mm. otantatutkimukseen liittyvien kysymysten muotoilu, käsitteiden monitulkintaisuus, vastaajien valikoituminen ja vastauskato.
@@ -400,8 +400,8 @@ jossa standardoitu satunnaismuuttuja
 $$
 Z = \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}} = \sqrt{n} \Big( \frac{\bar{Y} - \mu}{\sigma} \Big),  
 $$
-(ks. aiemmat jaksot \@ref(luku6)) noudattaa $\text{N}(0,1)$-jakaumaa. 
-  - $\text{P}(\cdot)$:llä merkitään todennäköisyysjakaumaa, ts. se on normaalijakauman jakaumafunktio ja $z_{\alpha/2}$ on jakaumafunktion arvo pisteessä $\alpha/2$.
+(ks. aiemmat alaluvut tässä luvussa \@ref(luku6)) noudattaa $\text{N}(0,1)$-jakaumaa. 
+  - $\text{P}(\cdot)$:llä merkitään todennäköisyyttä, joka tässä tapauksessa liittyy normaalijakaumaan, ja $z_{\alpha/2}$ on jakaumafunktion arvo pisteessä $\alpha/2$.
 
 - Tällöin etsitään odotusarvoparametrille $\mu$ sellainen arvo, jolla oheinen epäyhtälö pätee ja päädytään luottamusväliin.
 
@@ -468,11 +468,10 @@ saadaan nyt $t$__-jakaumasta__ $t_{n-1}$, jossa $S^2$ on varianssin $\sigma^2$ h
 
   - Normaalijakauman odotusarvon luottamusväli ($\sigma^2$ tuntematon), $t$-jakauma eri vapausastein $df$
 
-```{r, echo=FALSE, fig.cap="Standardoitu normaalijakauma: Virhemarginaaleja", fig.align='center', out.width = "75%"}
+```{r, echo=FALSE, fig.cap="t-jakauman (ja standardoidun normaalijakauman) tiheysfunktioita", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/NjaT-jakauma.jpg")
 ```
 
-\
 \
 
 __Luottamusväli: Suhteellisen osuuden odotusarvo__
@@ -530,7 +529,6 @@ ja luottamusvälin pituus on
 $$
 2 \times z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}.
 $$
-- Ks. kuvio \@ref(fig:foo)
 
 ## Otoskoko {#alaluku67}
 
@@ -560,10 +558,10 @@ __Tulosten vaaditun tarkkuuden vaikutus otoskokoon__
 - Tarkastelemme pian esimerkin avulla, kuinka tarvittavaa otoskokoa voidaan approksimoida tulosten halutun tarkkuuden avulla. 
 - Tarkastellaan kuitenkin ensin minkälaiset kysymykset liittyvät otoskoon pohdintaan tulosten tarkkuuden osalta. 
   - Kuinka varma sinun on oltava, että tulokset vastaavat joukon mielipiteitä? Tämä on virhemarginaalisi. 
-    - Esimerkiksi puoluekannatuksen arvioimiseen 2% virhemarginaalilla riittää huomattavasti pienempi otoskoko kuin 0.2% virhemarginaalilla. Politiikan tutkija voisikin kasvattaa otoskokoa vaalien lähestyessä, mikäli mielii tarkempia tuloksia.
+    - Esimerkiksi puoluekannatuksen arvioimiseen 2 \% virhemarginaalilla riittää huomattavasti pienempi otoskoko kuin 0.2 \% virhemarginaalilla. Politiikan tutkija voisikin kasvattaa otoskokoa vaalien lähestyessä, mikäli mielii tarkempia tuloksia.
   - Kuinka varma haluat olla, että otos edustaa joukkoa oikein? Tämä on luottamustaso. 
     - Luottamustaso on todennäköisyys sille, että valitsemasi otos on tulosten kannalta oleellinen.
-    - Jos joukosta poimitaan 30 otosta sattumanvaraisesti, kuinka usein yhdestä otoksesta saadut tulokset eroavat merkittävästi muista 30 otoksesta? Jos luotettavuustaso on 95%, samat tulokset saadaan 95 prosentissa tapauksista. 
+    - Jos joukosta poimitaan 30 otosta sattumanvaraisesti, kuinka usein yhdestä otoksesta saadut tulokset eroavat merkittävästi muista 30 otoksesta? Jos luotettavuustaso on 95 \%, samat johtopäätelmät saadaan 95 prosentissa tapauksista. 
 
 __Odotetun vastauskadon vaikutus otoskokoon__
 
@@ -572,7 +570,6 @@ __Odotetun vastauskadon vaikutus otoskokoon__
   - Otoskoon kasvattaminen ei paranna kadon aiheuttamaa vinoutumista.
 - Esimerkki: Jos Alkon myymälän asiakastutkimus suoritetaan ovensuukyselynä maanantaina aamupäivällä, niin vastaajat eivät luultavasti edusta myymälän koko asiakaskuntaa. Otantakehikko on tässä liian suppea ja seurauksena on todennäköisesti vinoutunut otos. Vinoutuma ei korjaannu vaikka otosta kasvatetaan maanantai-aamupäivän asiakkailla.
 
-\
 \
 
 ::: {.eblock .kimmo data-latex="{}"}
@@ -678,6 +675,10 @@ __Otoskoko: Suhteellinen osuus__
 $$
 n = \Big(\frac{z_{\alpha/2} \,\, \sqrt{p(1-p)}}{d} \Big)^2.
 $$
+
+
+\
+\
 
 __Suhteellinen osuus, äärellisyyskorjaus:__
 

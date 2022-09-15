@@ -189,7 +189,7 @@
 
 \title{TILM3701 - Tilastotiede ja data 2022}
 \author{Koonneet \and Henri Nyberg\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:henri.nyberg@utu.fi}{\nolinkurl{henri.nyberg@utu.fi}}} \and Roope Rihtamo\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:roope.rihtamo@utu.fi}{\nolinkurl{roope.rihtamo@utu.fi}}}}
-\date{2022-09-11}
+\date{2022-09-15}
 
 \begin{document}
 \maketitle
@@ -4141,26 +4141,1147 @@ Sisältymistodennäköisyys kuvaa sitä (tunnettua) todennäköisyyttä, jolla p
 \hypertarget{luku6}{%
 \chapter{Otokset ja otosjakaumat: tilastollisen päättelyn näkökulma}\label{luku6}}
 
+Tarkastellaan seuravaaksi otoksia ja otosjakaumia ``tilastollisemmin'' mitä edellisten lukujen erityisesti otantaa koskevan johdannon yhteydessä. Tilastollinen päättely on keskeinen osa tilastotiedettä, sillä se mahdollistaa päätelmien yleistämisen otoksesta populaatioon/perusjoukkoon. Tämä luku toimii esimerkkinä formaaliin matemaattiseen esitykseen perustuvan tilastollisen päättelyn perusteista (otannan ja otantajakaumien näkökulmasta), jonka ideana on yleisesti tehdä luotettavia johtopäätöksiä perusjoukosta otoksen perusteella. Tällä kurssilla käydään läpi (vain) tarvittavia yksityiskohtia sekä rakennetaan pohjia tn-laskennan kurssin jälkeiselle tilastollisen päättelyn peruskurssille (\href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3555/1731}{TILM3555}).
+
 \hypertarget{alaluku61}{%
 \section{Satunnaisotos, yhteisjakauma ja tilastollinen malli}\label{alaluku61}}
+
+\begin{itemize}
+\tightlist
+\item
+  Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on satunnaisilmiöt, joita kuvataan satunnaismuuttujia käyttäen. Satunnaismuuttujilla on todennäköisyysjakaumat, joita tilastotieteessä kuvataan todennäköisyys- eli tiheysfunktion avulla.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Merkitään satunnaismuuttujaa isolla kirjaimella, \(Y\), ja satunnaismuuttujan realisaatiota pienellä kirjaimella \(y\). Otoskokoa, eli otokseen osallistuvien tilastoyksiköiden määrää merkitään \(n\):llä ja tilastoyksiköitä indeksöidään alaindeksillä \(i=1,\ldots,n\).
+  \item
+    Otoksen poimimisen jälkeen satunnaismuuttujat \(Y_1, \ldots, Y_n\) saavat havaituiksi arvoikseen havaintoarvot \(y_1, \ldots, y_n\) (ts. \(Y_1=y_1, \ldots, Y_n = y_n\)).
+  \item
+    Näin havaintoaineisto on siis \textbf{satunnaisotos}, joka voidaan määritellä tarkemmin seuraavasti.
+  \end{itemize}
+\end{itemize}
+
+\begin{defblock}{}
+\textbf{Satunnaisotos}
+
+Olkoot \(Y_1, \ldots, Y_n\) riippumattomia ja samoinjakautuneita satunnaismuuttujia, joiden tiheysfunktiota (tf., tai pistetodennäköisyysfunktiota (ptnf)) merkitään \(f(y, \theta)\):llä, jossa \(y\):n on yksittäisen sm:jan \(Y\) reaalisaatio ja \(\theta\) on jokin jakauman muodon määräävä parametri (tai parametrit).
+
+Parametrin \(\theta\) arvoa ei yleensä tunneta ja tavoitteena onkin päätellä, \textbf{estimoida}, sen arvo lopulta käytettävissä olevasta aineistosta.
+
+\end{defblock}
+
+\hfill\break
+
+\textbf{Satunnaisotoksen tilastollinen malli}
+
+\begin{itemize}
+\tightlist
+\item
+  Havaintoarvot \(y_1, \dots, y_n\) ovat kiinteitä lukuja, mutta ne vaihtelevat satunnaisesti otoksesta toiseen. Satunnaisotannassa \textbf{satunnaisuus liittyy siis havaintoarvojen vaihteluun satunnaisesti otoksesta toiseen}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Satunnaisuus ei siis liity otannan tuloksena saatuihin havaintoarvoihin, vaan otoksen poimintaan.
+  \end{itemize}
+\item
+  Satunnaismuuttujien \(Y_1, \ldots, Y_n\) \textbf{yhteisjakauma} muodostaa (tiettyjen lisäoletusten jälkeen) \textbf{tilastollisen mallin} havaintoarvojen satunnaiselle vaihtelulle eri otoksissa.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Koska tällä kurssilla satunnaismuuttujat \(Y_1, \ldots, Y_n\) oletetaan \textbf{riippumattomiksi toisiinsa nähden}, niiden yhteisjakauma on tulomuotoa \(f(y_1, \ldots, y_n; \theta) = f(y_1; \theta) \times \cdots \times f(y_n; \theta)\).
+  \end{itemize}
+\item
+  Tässä \(f(y_1, \ldots, y_n; \theta)\) on siis tilastollinen malli: sen muodon määrää tutkijan tekemä aineistoa koskeva jakaumaoletus, mikä voi paikoin olla hyvinkin monimutkainen. Tilastollisen mallin monimutkaisuus ilmenee sen parametrien määrästä: mitä useampi parametri (erit. suhteessa havaintojen määrään), sitä monimutkaisempi malli.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Useimmiten kuitenkin ajatellaan, että on käytettävä niin yksinkertaisia menetelmiä kuin mahdollista, mutta ei yhtään yksinkertaisempia. Tämä on ns. \textbf{parsimoonisuusperiaate} eli \textbf{vähäparametrisuus-} tai \textbf{säästeliäisyysperiaate}.
+  \item
+    Vähäparametrisuusperiaatteen voidaan nähdä perustuvan ns. \href{https://fi.wikipedia.org/wiki/Occamin_partaveitsi}{Occamin partaveitsen -periaatteeseen}, jonka mukaan \emph{``ilmiöitä selittävien tekijöiden määrän tulee olla mahdollisimman vähäinen''}, ts. tilastotieteessä menetelmien (mallien) tulee olla mahdollisimman yksinkertaisia, mutta silti riittäviä.
+  \item
+    Tämä periaate ja sen suhde ns. \textbf{varianssin ja harhan väliseen kompromissiin} on erityisen tärkeä erityisesti tilastollisen ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen (kone)oppimisen sovellutuksissa (ks. tarkemmin alaluku \ref{alaluku33} ja luku \ref{luku6}).
+  \end{itemize}
+\item
+  Oletetaan, että \(Y_1, \ldots, Y_n\) ovat aiempien oletusten pätiessä riippumattomia sm:jia ja että ne muodostavat satunnaisotoksen jakaumasta, jonka odotusarvo on \(\mu\) ja varianssi on \(\sigma^2\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ts. oletamme
+  \end{itemize}
+\end{itemize}
+
+\[
+\text{E}(Y_i) = \mu,  \quad \text{ja} \quad 
+\mathrm{Var}(Y_i) = \sigma^2, \quad i=1,\ldots,n.
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Tässä tapauksessa mielenkiinnon kohteena olevat parametrit ovat siis \(\mu\) ja \(\sigma^2\) eli \(\theta = (\mu \quad \sigma^2)\).
+\item
+  Tilastollisten mallien tehtävänä on siis estimoida nämä todennäköisyysjakaumien parametrit havaitun aineiston perusteella, joten keskeinen tilastollinen kysymys on että miten estimointi suoritetaan luotettavasti.
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: satunnaisotos normaalijakaumasta}
+
+Normaalijakautuneiden satunnaismuuttujien satunnaisotokselle pätee \(Y_1, \ldots, Y_n \perp \!\!\! \perp, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\,\, i=1,\ldots,n\).
+
+\begin{itemize}
+\tightlist
+\item
+  Merkintä \(\perp \!\!\! \perp\) tarkoittaa, että sm:t \(Y_1,\ldots,Y_n\) ovat riippumattomia ja samoin jakautuneita (toisinaan myös lyhyesti \emph{iid} tai \emph{i.i.d}, joka tulee englannin kielen ilmaisusta ``independent and identically distributed''). Merkintä soveltuu käytettäväksi muidenkin jakaumien tapauksessa.
+\item
+  Esimerkiksi R-ohjelmassa voidaan generoida 10 havainnon (\(n=10\)) satunnaisotos standardoidusta normaalijakaumasta (ts. \(Y_i \thicksim \text{N}(0,1),\, i=1,\ldots,10\)) komennolla rnorm(10).
+\end{itemize}
+
+\end{eblock}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: miesten pituus}
+
+\begin{itemize}
+\item
+  Kerätään havaintoja miesten pituuksista yksinkertaisella satunnaisotannalla (takaisinpalauttaen) \(n\) kappaletta.
+\item
+  Tällöin havaintoarvoja \(Y_1, \ldots, Y_n\) voidaan pitää riippumattomina satunnaismuuttujina, joista jokainen noudattaa tehdyn jakaumaoletuksen mukaan normaalijakaumaa \(\text{N}(\mu, \sigma^2)\).
+\item
+  Estimoinnin tehtävänä on muodostaa parhaat mahdolliset arviot parametreille \(\mu\) ja \(\sigma^2\), ja mahdollisesti testata esimerkiksi odotusarvolle \(\mu\) asetettua hypoteesia.
+\end{itemize}
+
+\end{eblock}
 
 \hypertarget{alaluku62}{%
 \section{Otosjakauma: Estimaattori ja estimaatti}\label{alaluku62}}
 
+\begin{itemize}
+\item
+  Erityisesti klassisessa tilastotieteessä päättely pohjautuu aineiston tilastollisen mallin kuvaamalle tilastolliselle stabiliteetille, joka ilmenee ajatuksena aineiston keruun toistamisesta.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Oletetaan, että tarkasteltavan aineiston on tuottanut satunnaisotanta tai satunnaiskoe, joka noudattaa tilastollista mallia \(f(y_1, \ldots, y_n; \theta)\) (aiemmin merkinnöin).
+  \item
+    Toistetaan aineiston keruu samoissa olosuhteissa yhä uudelleen ja uudelleen.
+  \item
+    Saatava aineisto (numeeriset arvot) \(y_1, \ldots, y_n\) vaihtelevat näin ollen valitun tilastollisen mallin jakauman kuvaamalla tavalla.
+  \end{itemize}
+\item
+  Satunnaisotoksesta voidaan laskea erilaisia \textbf{tunnuslukuja/otossuureita}, joita merkitään \(T\):llä, ts. ne ovat aineiston funktioita
+  \[
+  T = g(Y_1, \ldots, Y_n).
+  \]
+\item
+  \textbf{Tunnusluvut ovat satunnaismuuttujien funktioina myös satunnaismuuttujia.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tunnusluvulla on nk. todellinen arvo, \(g(\theta)\), joka vastaa tunnusluvun arvoa perusjoukon tasolla ja jota pyritään aineistoa käyttäen estimoimaan.
+  \item
+    Esimerkkinä tunnusluvusta on keskiarvo \(\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i\).
+  \item
+    Tunnusluvun havaittu arvo (realisaatio) pisteessä (\(y_1,\ldots, y_n\)) eli havaitussa aineistossa on
+  \end{itemize}
+\end{itemize}
+
+\[
+t = g(y_1, \ldots, y_n).
+\]
+
+\begin{itemize}
+\item
+  Otoksen poimimisen jälkeen, havaintoarvoja käyttäen, voidaan laskea tunnuslukujen havaitut arvot (jolloin ne ovat siis ei-satunnaisia).
+\item
+  Esimerkiksi keskiarvo on havaittujen arvojen keskiarvo, kun se lasketaan kerätystä aineistosta.
+\item
+  Jos tunnuslukua \(T\) käytetään tilastollisen mallin parametrin (parametrien) \(\theta\) estimointiin, niin tätä sanotaan tällöin parametrin \textbf{estimaattoriksi}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Estimaattorin otoskohtaisia arvoja, kuten yllä \(t\), kutsutaan \textbf{estimaateiksi}.
+  \item
+    Toivottavaa olisi, että estimaatit \(t = g(y_1, \ldots, y_n)\) osuisivat mahdollisimman lähelle tunnusluvun todellista arvoa \(g(\theta)\). Ts. satunnaismuuttujan eli tässä tapauksessa estimaattorin \(T=g(Y_1, \ldots, Y_n)\) jakauman tulisi keskittyä mahdollisimman tiiviisti \(g(\theta)\):n ympärille.
+  \end{itemize}
+\item
+  Koska tunnusluku/estimaattori \(T\) on satunnaismuuttuja, sillä on todennäköisyysjakauma, jota kutsutaan tunnusluvun \(T\) \textbf{otosjakaumaksi}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Otosjakauma muodostaa (tilastollisen mallin) todennäköisyysmallin tunnusluvun \(T\) arvojen satunnaisvaihtelulle otoksesta toiseen.
+  \item
+    Otosjakaumat riippuvat tuntemattomista \textbf{parametreista}, joiden arvoja ei yleensä tunneta ja niitä pyritään estimoimaan kerättyä otosta ja sopivaa tunnuslukua käyttäen.
+  \item
+    Parametri on (usein) perusjoukon tunnusluku, jota halutaan arvioida. Parametrit \textbf{estimoidaan}, kuten yllä jo todettiin, havaintoaineistoa käyttäen.
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\textbf{Estimaattorin ominaisuudet}
+
+\begin{itemize}
+\tightlist
+\item
+  Merkitään seuraavassa parametrin \(\theta\) estimaattoria \(\widehat{\theta}\):lla ja siltä voidaan toivoa seuraavia ominaisuuksia:
+\end{itemize}
+
+\begin{defblock}{}
+
+\textbf{Harhattomuus}
+
+Estimaattorin odotettavissa oleva arvo yhtyy tuntemattoman parametrin \(\theta\) todelliseen arvoon eli \(\text{E}(\widehat{\theta}) = \theta\).
+
+\begin{itemize}
+\tightlist
+\item
+  Harhaton estimaattori tuottaa keskimäärin oikean kokoisia arvoja (estimaatteja) estimoitavalle parametrille.
+\item
+  Estimaattorin tuottama arvo parametrille saattaa tietylle otokselle poiketa paljonkin parametrin todellisesta arvosta, mutta odotusarvon frekvenssitulkinnan mukaan estimaattorin tuottamat otoskohtaiset arvot parametrille jakautuvat otantaa toistettaessa (symmetrisesti) parametrin todellisen arvon ympärille.
+\end{itemize}
+
+\end{defblock}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/unbiased} 
+
+}
+
+\caption{Harhaton estimaattori}\label{fig:unbiased}
+\end{figure}
+
+\begin{defblock}{}
+\textbf{Tyhjentävyys}
+
+Tyhjentävä estimaattori käyttää kaiken otokseen sisältyvän parametria \(\theta\) koskevan informaation.
+
+\end{defblock}
+
+\begin{defblock}{}
+\textbf{Tehokkuus}
+
+Kahdesta saman parametrin \(\theta\) estimaattorista tehokkaampi on se, jonka varianssi on pienempi. Ts. \(\widehat{\theta}^{(1)}\) on tehokkaampi kuin \(\widehat{\theta}^{(2)}\), jos \(\mathrm{Var}(\widehat{\theta}^{(1)}) \le \mathrm{Var}(\widehat{\theta}^{(2)})\).
+
+\end{defblock}
+
+\begin{defblock}{}
+\textbf{Tarkentuvuus}
+
+Tarkentuvan estimaattorin \(\widehat{\theta}\) arvot lähestyvät parametrin \(\theta\) oikeaa arvoa otoskoon kasvaessa.
+
+\end{defblock}
+
+\begin{itemize}
+\tightlist
+\item
+  Voidaan osoittaa (yksityiskohdat sivuutetaan tällä kurssilla), että esimerkiksi yksinkertaisen satunnaisotoksen tapauksessa tavanomaisilla binomi- ja normaalijakauman parametrien estimaattoreilla on kaikki edellä mainitut hyvät ominaisuudet.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Näin ei ole yleisesti monimutkaisemmissa otantatilanteissa ja tilastollisisssa malleissa.
+  \item
+    Estimaattoreiden kehittäminen erilaisten tilastollisten mallien tapauksessa kuuluu teoreettisen tilastotieteen alaan.
+  \end{itemize}
+\item
+  Seuraavaksi perehdytään tarkemmin kahteen kenties useimmiten tarkasteltavaan tunnuslukuun ja niiden otosjakaumiin:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aritmeettisen keskiarvon otosjakaumaan \ref{alaluku63}
+  \item
+    Suhteellisen osuuden (frekvenssin) otosjakaumaan \ref{alaluku64}
+  \end{itemize}
+\end{itemize}
+
 \hypertarget{alaluku63}{%
-\section{Otoskeskiarvo ja otosvarianssi (estimaattoreinta)}\label{alaluku63}}
+\section{Otoskeskiarvo ja otosvarianssi (estimaattoreina)}\label{alaluku63}}
+
+\textbf{Otoskeskiarvo}
+
+\begin{itemize}
+\tightlist
+\item
+  Oletetaan, kuten aiemmin, että \(Y_1,\ldots,Y_n\) ovat riippumattomia sm:jia ja että ne muodostavat satunnaisotoksen jakaumasta jonka odotusarvo on \(\mu\), ts. \(\text{E}(Y_i) = \mu\) ja varianssi on \(\sigma^2\), ts. \(\text{Var}(Y_i) = \sigma^2\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Havaintojen (satunnaismuuttujien) \(Y_1, \ldots, Y_n\) \textbf{otoskeskiarvo} on
+  \end{itemize}
+\end{itemize}
+
+\[
+\bar{Y} = \frac{1}{n}(Y_1 + \cdots + Y_n) = \frac{1}{n} \sum_{i=1}^{n} Y_i
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Yksittäisen otoksen otoskeskiarvo on tällöin sm:jien realisaatioiden aritmeettinen keskiarvo
+\end{itemize}
+
+\[
+\bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i.
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Otoskeskiarvo on satunnaismuutuja, jonka saama arvo vaihtelee satunnaisesti otoksesta toiseen johtuen satunnaisotannasta.
+\item
+  Kun satunnaismuuttujat ovat samoin jakautuneet odotusarvonaan \(\mu\), on otoskeskiarvo jakauman odotusarvon harhaton estimaattori, ts.
+\end{itemize}
+
+\[\text{E}(\bar{Y}) = \mu\]
+
+\begin{itemize}
+\tightlist
+\item
+  Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa.
+\end{itemize}
+
+\textbf{Aritmeettisen keskiarvon ominaisuuksia}
+
+\begin{itemize}
+\item
+  Aiempien oletusten pätiessä aritmeettisella keskiarvolla \(\bar{Y}\) on seuraava odotusarvo ja varianssi:
+  \[
+  \text{E}(\bar{Y}) = \mu,  \quad
+  \mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}.
+  \]
+\item
+  Aritmeettisen keskiarvon \(\bar{Y}\) \textbf{standardipoikkeama}
+\end{itemize}
+
+\[
+\text{D}(\bar{Y}) = \sqrt{\mathrm{Var}(\bar{Y})} = \frac{\sigma}{\sqrt{n}}.
+\]
+
+\begin{itemize}
+\item
+  Standardipoikkeamaa kutsutaan myös \textbf{keskiarvon keskivirheeksi} ja se kuvaa otoskeskiarvon otosvaihtelua odotusarvon \(\mu\) ympärillä.
+\item
+  Aritmeettisen keskiarvon otosjakauma keskittyy yhä voimakkaammin havaintojen yhteisen odotusarvon \(\mu\) ympärille, kun otoskoko \(n\) kasvaa.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ts. otoskoon \(n\) kasvaessa \(\mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}\) pienenee.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Otosvarianssi}
+
+\begin{itemize}
+\item
+  Aineiston sisältämää vaihtelua kuvataan \textbf{otosvarianssilla}
+  \[
+  S^2= \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2.
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vastaavasti sm:jien vaihtelua perusjoukon tasolla kuvataan \textbf{populaatiovarianssilla}
+  \end{itemize}
+\end{itemize}
+
+\[
+\sigma^2= \frac{1}{N} \sum_{j=1}^{N} (Y_j - \mu)^2,
+\]
+jota otosvarianssi harhattomasti estimoi.
+
+\begin{itemize}
+\item
+  Huomioi, että \textbf{otosvarianssi} on eri asia kuin \textbf{otoskeskiarvon varianssi}.
+\item
+  Otoskeskiarvo \(\bar{Y}\) ja otosvarianssi \(S^2\) ovat siis satunnaismuuttujia, joiden saamat arvot vaihtelevat satunnaisesti otoksesta toiseen.
+\end{itemize}
+
+\textbf{Normaalijakautunut otos}
+
+\begin{itemize}
+\item
+  Muodostakoot havainnot \(Y_1, \ldots, Y_n\) satunnaisotoksen normaalijakaumasta \(\text{N}(\mu, \sigma^2)\).
+\item
+  Tällöin voidaan osoittaa, että havaintojen \(Y_1, \ldots, Y_n\) keskiarvo \(\bar{Y}\) noudattaa normaalijakaumaa odotusarvolla \(\mu\) ja varianssilla \(\sigma^2/n\). Merkitään
+  \[
+  \bar{Y} \thicksim \text{N} \Big(\mu, \frac{\sigma^2}{n} \Big).
+  \]
+\item
+  Itse asiassa ns. \textbf{asymptoottiseen teoriaan} vedoten (suurten otosten tapauksessa) voidaan osoittaa, että edellämainittu tulos pätee myös ilman normaalisuusoletusta.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Nämä tarkastelut vaativat jälleen selvästi enemmän käytyjä tilastotieteen (ja matematiikan) opintoja.
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\textbf{Standardoidun aritmeettisen keskiarvon otosjakauma}
+
+\begin{itemize}
+\tightlist
+\item
+  Tarkastellaan \textbf{standardoitua} satunnaismuuttujaa
+  \[
+  Z = \frac{\bar{Y} - \text{E}(\bar{Y})}{\text{D}(\bar{Y})} = \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}} = \sqrt{n} \Big(\frac{\bar{Y} - \mu}{\sigma}\Big).
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tällöin \(Z\):n odotusarvo \(\text{E}(Z) = 0\) ja varianssi \(\mathrm{Var}(Z) = 1\).
+  \end{itemize}
+\item
+  Jos \(Y_i \thicksim \text{N}(\mu, \sigma^2), i=1,\ldots,n\), niin tällöin \(Z\) noudattaa standardoitua normaalijakaumaa:
+  \[
+  Z \thicksim \text{N}(0,1).
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Jälleen voidaan osoittaa, että tämä tulos pätee asymptoottisesti (suurissa otoksissa) myös ilman yllä tehtyä normaalisuusoletusta.
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{alaluku64}{%
 \section{Suhteellisen frekvenssin otosjakauma}\label{alaluku64}}
 
+\textbf{Frekvenssi ja suhteellinen frekvenssi}
+
+\begin{itemize}
+\item
+  Oletetaan, että tapahtuman \(A\) todennäköisyys on
+  \[
+  \text{P}(A) = p,
+  \]
+  jolloin tapahtuman \(A\) komplementtitapahtuman (vastatapahtuman) \(A^c\) todennäköisyys on
+  \[
+  \text{P}(A^c) = 1- p = q.
+  \]
+\item
+  Poimitaan satunnaisotos, jonka koko on \(n\). Tällöin \(A\)-tyyppisten alkioiden frekvenssi eli lukumäärä kyseisessä otoksessa on \(f\).
+\item
+  Suhteellinen frekvenssi eli osuus on tällöin
+  \[
+  \widehat{p} = \frac{f}{n}.
+  \]
+\item
+  Sekä frekvenssi (lukumäärä) \(f\) ja (täten myös) suhteellinen frekvenssi \(\widehat{p}\) ovat satunnaismuuttujia, joiden saamat arvot vaihtelevat satunnaisesti otoksesta toiseen.
+\end{itemize}
+
+\textbf{Frekvenssin otosjakauma}
+
+\begin{itemize}
+\tightlist
+\item
+  Frekvenssillä \(f\) on odotusarvo
+  \[
+  \text{E}(f) = np,
+  \]
+  ja varianssi
+  \[
+  \mathrm{Var}(f) = npq = np(1-p).
+  \]
+\item
+  Frekvenssi \(f\) noudattaa binomijakaumaa parametrein \(n\) ja \(p\):
+  \[
+  f \thicksim \mathrm{Bin}(n,p).
+  \]
+\end{itemize}
+
+\textbf{Suhteellinen frekvenssi: Odotusarvo ja varianssi}
+
+\begin{itemize}
+\item
+  Suhteellisen frekvenssin \(\widehat{p}\) odotusarvo
+  \[
+  \text{E}(\widehat{p}) = \text{E} \Big(\frac{f}{n} \Big) = p,
+  \]
+  ja varianssi
+  \[
+  \mathrm{Var}(\widehat{p}) = \frac{pq}{n} = \frac{p(1-p)}{n}.
+  \]
+\item
+  Suhteellisen frekvenssin \(\widehat{p}\) standardipoikkeamaa
+  \[
+  \text{D}(\widehat{p}) = \sqrt{\mathrm{Var} (\widehat{p})} =  \sqrt{\frac{pq}{n}}
+  \]
+  voidaan kutsua \textbf{suhteellisen frekvenssin keskivirheeksi} ja se kuvaa suhteellisen frekvenssin otosvaihtelua odotusarvon \(p\) ympärillä.
+\end{itemize}
+
+\textbf{Suhteellisen frekvenssin otosjakauma}
+
+\begin{itemize}
+\item
+  Koska \(\text{E}(\widehat{p}) = p\) ja \(\mathrm{Var}(\widehat{p}) = \frac{pq}{n}\),
+  niin suhteellisen frekvenssin otosjakauma keskittyy yhä voimakkaammin tapahtuman A
+  todennäköisyyden \(\text{P}(A) = p\) ympärille, kun otoskoko \(n\) kasvaa.
+\item
+  Jälleen suurten otosten tapauksessa voidaan osoittaa, että suhteellinen frekvenssi noudattaa em. oletusten pätiessä normaalijakaumaa:
+  \[
+  \widehat{p} \thicksim \text{N} \Big(p, \frac{pq}{n} \Big).
+  \]
+\item
+  Aritmeettisen keskiarvon tapaan standardoitu sm.
+  \[
+  Z = \frac{\widehat{p} - p}{\sqrt{\frac{pq}{n}}} \thicksim \text{N}(0,1)
+  \]
+  noudattaa suurissa otoksissa approksimatiivisesti standardoitua normaalijakaumaa.
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{EU-kansanäänestys}
+
+\begin{itemize}
+\item
+  Suomen EU-kansanäänestyksessä vuonna 1994 jäsenyyttä kannattaneiden suhteellinen osuus oli 0,54 (54 \%).
+\item
+  Mikä olisi ollut tällöin tn., että ennen äänestystä 200 havainnon otoksessa kyllä-osuus olisi ollut alle 50 \%?
+\item
+  Suhteellisen frekvenssin otosjakauman perusteella kyllä-kannatusosuuden jakauma olisi
+  \[
+  %\widehat{p} \stackrel{as}{\thicksim} \text{N} \Big(0.54, \frac{0.54 \times (1-0.54)}{200} \Big),
+  \widehat{p} \thicksim \text{N} \Big(0.54, \frac{0.54 \times (1-0.54)}{200} \Big),
+  \]
+  jossa \(\frac{0.54 \times (1-0.54)}{200} = 0.0352^2\).
+\item
+  Näin ollen haluttu todennäköisyys (ts. saada sellainen satunnaismuuttujan \(Z \thicksim \text{N}(0,1)\) arvo että suhteellinen osuus on pienempi kuin 0.5)
+  \[
+  P \Big(Z < \frac{0.5-0.54}{0.0352} \Big) = P (Z < -1.14) \approx 0.127.
+  \]
+\end{itemize}
+
+\end{eblock}
+
 \hypertarget{alaluku65}{%
 \section{Muita tunnuslukuja}\label{alaluku65}}
+
+Tilastollisia analyysejä tehtäessä johtopäätösten ja objektiivisten tulkintojen tueksi tarvitaan tunnuslukuja, joita muodostetaan tarkasteltavasta jakaumasta ja mm. otoskeskiarvon osalta jo sivuttiin edellä. Tunnuslukuja on paljon, ja jokainen niistä valottaa muuttujan jakaumaa eri näkökulmista.
+
+Jakaumien tunnusluvut voidaan jakaa sijaintilukuihin, hajontalukuihin ja muihin tunnuslukuihin. Kahdesta ensimmäisestä esimerkkejä ovat keskiarvo ja varianssi tai keskihajonta (välimatka- ja suhdeasteikon havaintojen tapauksessa). Esitellään seuraavassa vielä lyhyesti muutamia muita tunnuslukuja.
+
+\begin{itemize}
+\item
+  \textbf{Moodi}: Moodi eli tyyppiarvo on havaintoaineiston yleisin muuttujan arvo tai se on luokka, jolla on suurin frekvenssi.
+\item
+  \textbf{Mediaani}: Mediaani on järjestetyn havaintoaineiston keskimmäinen arvo (jos havaintoarvoja on pariton määrä, parillisessa tapauksessa esitetään jompikumpi keskimmäisistä arvoista). Mediaani siis jakaa järjestetyn havaintoaineiston kahteen osaan siten, että puolet arvoista on mediaania pienempiä ja puolet arvoltaan mediaania suurempia.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Luokitteluasteikolla mitattaville muuttujille ei ole olemassa luontevia sijaintilukuja keskilukujen yhteydessä pl. moodi.
+  \end{itemize}
+\item
+  Järjestysasteikolla mitatuille muuttujille voidaan mediaanin lisäksi määrittää \textbf{fraktiileja}: pp\%:n fraktiili jakaa tilastoaineiston kahteen osaan siten, että kyseistä fraktiilia pienempiä havaintoarvoja on pp\%.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Eniten käytettyjä fraktiileja ovat \textbf{kvartiilit}. \textbf{Alakvartiili} \(Q_1\) on 25 \%:n fraktiili, ja \textbf{yläkvartiili} \(Q_3\) on 75 \% fraktiili.
+  \item
+    Tietyistä fraktiileista käytetään nimitystä \textbf{desiili}. Ensimmäinen desiili \(D_1\) on 10 \% fraktiili ja esim. yhdeksäs fraktiili \(D_9\) on 90 \% fraktiili.
+  \end{itemize}
+\item
+  Hajontalukuja: Varianssin/keskihajonnan lisäksi, jos muuttuja on mitattu vähintään järjestysasteikolla, sille voidaan määrittää vaihteluväli ja kvartiiliväli. \textbf{Vaihteluväli} kuvaa aineiston kokonaispeittoa ja siinä ilmoitetaan aineiston pienin havainto ja suurin havainto. Ts. vaihteluväli=(pienin havainto, suurin havainto). \textbf{Kvartiiliväli} = (\(Q_1, Q_3\)).
+\item
+  Muita tunnuslukuja: Tilastollisen päätöksenteon yhteydessä käytettäviä tunnuslukuja ovat \textbf{vinous} ja \textbf{huipukkuus}. Vinous ja huipukkuus voidaan määrittää välimatka- ja suhdeasteikon muuttujille. Vinous ja huipukkuus mittaavat kumpikin omalla tavallaan jakauman poikkeamaa normaalijakaumasta. Normaalijakauman vinous on 0 ja huipukkuus on 3.
+\end{itemize}
 
 \hypertarget{alaluku66}{%
 \section{Luottamusvälit}\label{alaluku66}}
 
+\begin{itemize}
+\tightlist
+\item
+  Satunnaisesti saadusta aineistosta laskettujen tunnuslukujen luotettavuus on tilastollisen mallin parametrien estimoinnissa keskeinen tilastollinen kysymys.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Otoksen poimintaan liittyvän satunnaisvaihtelun vuoksi emme voi varmuudella tietää onko saatu otokseen perustuva parametriestimaatti ``lähellä'' vai ``kaukana'' sen todellisesta arvosta.
+  \item
+    Täten tarvitaan jokin tapa, jolla saadun parametriestimaatin luotettavuutta voidaan arvioida.
+  \end{itemize}
+\end{itemize}
+
+\begin{defblock}{}
+\textbf{Luottamusväli}
+
+Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsemalla todennäköisyydellä (luottamustasolla) peittää tarkasteltavan tilastollisen mallin \(f(y;\theta)\) parametrin \(\theta\) tuntemattoman todellisen arvon. Se perustetaan otostunnusluvun, estimaattorin, otosjakaumaan.
+
+\end{defblock}
+
+\begin{itemize}
+\item
+  Otoskoko on luottamusvälejä koskevissa tarkasteluissa keskeinen ja luottamusväleihin palataankin otoskoon käsittelyn yhteydessä.
+\item
+  Valittua luottamustasoa merkitään usein \(1-\alpha\):lla, jossa \textbf{merkitsevyystaso} (\textbf{riskitaso}) \(\alpha\) on esimerkiksi \(\alpha=0.05\).
+\item
+  Tulkinta: Jos \textbf{otantaa} jakaumasta \(f(y;\theta)\) toistetaan, niin keskimäärin \(100 \times (1-\alpha)\%\) otoksista kontstruloiduista luottamusväleistä peittää parametrin \(\theta\) todellisen arvon.
+\item
+  Oletetaan, että olemme tehneet johtopäätöksen, että konstruloitu luottamusväli peittää parametrin \(\theta\) tuntemattoman todellisen arvon.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tällöin otantaa toistettaessa luottamusvälin konstruktiosta seuraa, että tehty johtopäätös on oikea keskimäärin \(100 \times (1-\alpha)\%\) tapauksista.
+  \item
+    Vastaavasti taas \(100 \times \alpha \%\) ei peitä parametrin todellista arvoa.
+  \end{itemize}
+\item
+  Luottamusväli on kenties tunnetumpi kansankieliseltä nimitykseltään \textbf{virhemarginaali}, joka on itseasiassa luottamusvälin puolikas: todellinen parametriarvo kuuluu saadun estimaatin ja virhemarginaalien sisään jäävälle osuudelle.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Normaalisti mm. otoskoon kasvu pienentää virhemarginaalia.
+  \item
+    Kuten jatkossa tullaan havaitsemaan, virhemarginaalin suuruuteen vaikuttavat otosasetelma, otoskoko, luottamustaso ja tutkittavan tilastollisen tunnusluvun jakauma.
+  \end{itemize}
+\item
+  Luottamusväleissä ei kuitenkaan varsinaisesti ole kyse ``virheestä'' vaan saadun/muodostetun tiedon tarkkuudesta.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Luottamusvälit, eli virhemarginaalit, siis (yleisesti) riippuvat valittavasta luottamustasosta \(1-\alpha\) ja näin ollen samasta aineistosta on saatavissa useita virhemarginaaleja.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Täten on tarkalleen ottaen virheellistä sanoa, että ``tutkimuksen virhemarginaali on 3,5 puoleen tai toiseen''.
+    \item
+      Oikeammin olisi sanoa esimerkiksi ``tutkimuksessa saadun kannatuksen virhemarginaali on 3,5 puoleen tai toiseen 95 \% luottamustasolla.''
+    \item
+      Virhemarginaali kasvaa, kun aineistoa lohkotaan: jos tuhannen hengen otoksesta esitetään tietoja, jotka kuvaavat erikseen miesten ja naisten ominaisuuksia, sukupuolittain lasketut ovat estimaatit epävarmempia kuin koko otoksesta esitetyt.
+    \end{itemize}
+  \item
+    Vastaavasti on virheellistä sanoa että tutkimuksella olisi virhemarginaali, sillä virhemarginaali liittyy aina vain tutkimuksen antamiin numeerisiin arvoihin.
+  \item
+    Aitoja virhelähteitä ovat mm. otantatutkimukseen liittyvien kysymysten muotoilu, käsitteiden monitulkintaisuus, vastaajien valikoituminen ja vastauskato.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Normaalijakauman odotusarvon luottamusväli}
+
+\begin{itemize}
+\item
+  Käsittelemme seuraavassa (normaalijakauman) odotusarvon \(\mu\) luottamusvälejä ja jatkossa oletetaan (ellei toisin mainita), että taustalla oleva populaatio, \(N\), on ``iso'' (ääretön).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Näin ollen ns. äärellisyyskorjausta ei käytetä (yksinkertaisuuden vuoksi).
+  \end{itemize}
+\item
+  Tarkastellaan satunnaisotosta normaalijakaumasta
+  \(Y_1, \ldots, Y_n \perp \!\!\! \perp, \,\, Y_i \thicksim \text{N}(\mu, \sigma^2),\, i=1,\ldots,n\).
+\item
+  Tarkastellaan normaalijakauman odotusarvon \(\mu\) luottamusvälin määräämistä otannan avulla olettaen että jakauman varianssi \(\sigma^2\) on tunnettu.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Muistetaan että normaalijakauman odotusarvoparametrin \(\text{E}(Y_i) = \mu\) \textbf{harhaton estimaattori} on aritmeettinen keskiarvo
+  \end{itemize}
+\end{itemize}
+
+\[
+\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i.
+\]
+
+\begin{itemize}
+\item
+  Valitaan \textbf{luottamustasoksi} \(1-\alpha\), eli \(\alpha\) määrää todennäköisyyden, jolla luottamusväli peittää odotusarvon \(\mu\) todellisen arvon: yleinen valinta ihmistieteissä on \(\alpha = 0.05\) tai \(\alpha = 0.1\) vastaten 95\% ja 90\% prosentin luottamustasoa. Luonnontieteissä \(\alpha\) on usein paljon pienempi.
+\item
+  Määrätään \textbf{luottamuskertoimet} \(-z_{\alpha/2}\) ja \(z_{\alpha/2}\) (luottamusväli on kaksisuuntainen), joille pätee
+  \[
+  \text{P}(-z_{\alpha/2} \le Z \le z_{\alpha/2}) = 1-\alpha,
+  \]
+  jossa standardoitu satunnaismuuttuja
+  \[
+  Z = \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}} = \sqrt{n} \Big( \frac{\bar{Y} - \mu}{\sigma} \Big),  
+  \]
+  (ks. aiemmat alaluvut tässä luvussa \ref{luku6}) noudattaa \(\text{N}(0,1)\)-jakaumaa.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\text{P}(\cdot)\):llä merkitään todennäköisyyttä, joka tässä tapauksessa liittyy normaalijakaumaan, ja \(z_{\alpha/2}\) on jakaumafunktion arvo pisteessä \(\alpha/2\).
+  \end{itemize}
+\item
+  Tällöin etsitään odotusarvoparametrille \(\mu\) sellainen arvo, jolla oheinen epäyhtälö pätee ja päädytään luottamusväliin.
+\item
+  Nyt epäyhtälöketju voidaan kirjoittaa muodossa
+  \[
+  -z_{\alpha/2} \le  \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}}  \le z_{\alpha/2}.
+  \]
+\item
+  Joka voidaan kirjoittaa uudelleen muodossa
+  \[
+  \bar{Y} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \le   \mu  \le 
+  \bar{Y} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}},
+  \]
+  kertomalla nimittäjällä puolittain ja vähentämällä sm:jien keskiarvo molemmin puolin.
+\item
+  Normaalijakauman odotusarvon \((1-\alpha) \times 100\)\% luottamusväli on siis
+  \[
+  \Big(\bar{Y} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}}, 
+  \bar{Y} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \Big).
+  \]
+\item
+  Luottamusväli on symmetrinen keskipisteensä \(\bar{Y}\) suhteen. Siksi luottamusväli esitetään usein
+  \[
+  \bar{Y} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+  \]
+\item
+  Luottamusvälin pituus
+  \[
+  2 \cdot z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+  \]
+\item
+  \textbf{Virhemarginaali} on luottamusvälin pituuden puolikas eli
+  \[
+  z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+  \]
+\item
+  Edellä tiettyyn otokseen liittyvä luottamusväli perustetaan realisoituneeseen otoskeskiarvoon \(\bar{y}=\frac{1}{n} \sum_{i=1}^{n} y_i\).
+\item
+  Olisi toivottavaa pystyä konstruoimaan parametrille \(\mu\) mahdollisimman lyhyt luottamusväli, johon liittyvä luottamustaso olisi samanaikaisesti mahdollisimman korkea. Molempien vaatimusten samanaikainen täyttäminen ei ole kuitenkaan mahdollista, jos otoskoko \(n\) pidetään kiinteänä:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Luottamustason kasvattaminen pidentää luottamusväliä, jolloin tieto parametrin \(\mu\) todellisesta arvosta tulee epätarkemmaksi.
+  \item
+    Luottamusvälin lyhentäminen pienentää luottamustasoa, jolloin tieto parametrin \(\mu\) todellisesta arvosta tulee epävarmemmaksi.
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1.5\linewidth]{images/gaussian-distribution} 
+
+}
+
+\caption{Standardoitu normaalijakauma: Virhemarginaaleja}\label{fig:foo}
+\end{figure}
+
+\hfill\break
+
+\textbf{Normaalijakauman odotusarvon luottamusväli (\(\sigma^2\) tuntematon)}
+
+\begin{itemize}
+\item
+  Tarkastellaan edelleen satunnaisotosta normaalijakaumasta, mutta oletetaan nyt että varianssi \(\sigma^2\) tuntematon.
+\item
+  Normaalijakauman odotusarvon \((1-\alpha) \times 100\)\% luottamusväli:
+  \[
+  \Big(\bar{Y} - t_{\alpha/2} \frac{S}{\sqrt{n}}, 
+  \bar{Y} + t_{\alpha/2} \frac{S}{\sqrt{n}} \Big),
+  \]
+  jossa \textbf{luottamuskertoimet} \(-t_{\alpha/2}\) ja \(t_{\alpha/2}\)
+  saadaan nyt \(t\)\textbf{-jakaumasta} \(t_{n-1}\), jossa \(S^2\) on varianssin \(\sigma^2\) harhaton estimaattori ja vapausasteiden lukumäärä on \(n-1\).
+
+  \begin{itemize}
+  \item
+    (Studentin) \(t\)-jakauma muistuttaa silmämääräisesti normaalijakaumaa, mutta se on paksuhäntäisempi. Vapausasteluvun kasvaesssa \(t\)-jakauma lähestyy normaalijakaumaa.
+  \item
+    Suurissa otoksissa (\(n\) iso) luottamuskertoimet voidaan poimia (approksimatiivisesti) myös normaalijakaumasta eli korvata edellä kertoimet \(t_{\alpha/2}\) aiemmin käytetyillä kertoimilla \(z_{\alpha/2}\).
+  \item
+    Normaalijakauman odotusarvon luottamusväli (\(\sigma^2\) tuntematon), \(t\)-jakauma eri vapausastein \(df\)
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/NjaT-jakauma} 
+
+}
+
+\caption{t-jakauman (ja standardoidun normaalijakauman) tiheysfunktioita}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+\hfill\break
+
+\textbf{Luottamusväli: Suhteellisen osuuden odotusarvo}
+
+\begin{itemize}
+\item
+  Käsittelemme seuraavassa suhteellisen osuuden \(p\) luottamusvälejä.
+\item
+  Tarkastellaan satunnaisotosta Bernoulli-jakaumasta
+  \(Y_1, \ldots, Y_n \perp \!\!\! \perp, \,\, Y_i \thicksim B(p),\, i=1,\ldots,n\),
+  jossa merkitään \(Y_i=1\) jos tapahtuma A tapahtuu ja \(Y_i=0\) jos tapahtuma A ei tapahdu.
+\item
+  Bernoulli-jakauman odotusarvoparametrin \(p=\text{E}(Y_i)\) harhaton estimaattori on tapahtuman A suhteellinen otosfrekvenssi
+  \[
+  \widehat{p} = \frac{1}{n} \sum_{i=1}^{n} Y_i.
+  \]
+\item
+  Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien
+  perusteella \(\text{E}(Y_i)=p\) ja \(\mathrm{Var}(Y_i)=pq\), jossa
+  \(q=1-p\).
+\item
+  Näin ollen voimme normaalijakauman odotusarvoparametrin
+  luottamusvälin konstruloinnin tapaan määritellä satunnaismuuttujan \(Z\):
+  \[
+  Z = \frac{\widehat{p} - p}{\sqrt{\frac{p (1-p)}{n}}} = 
+  \sqrt{n} \Big(\frac{\widehat{p} - p}{\sqrt{p (1-p)}} \Big),  
+  \]
+  joka noudattaa (suurissa otoksissa) \(\text{N}(0,1)\)-jakaumaa.
+\item
+  Suhteellisen frekvenssin hajonnan estimaattori on siis
+  \[
+  \sqrt{\frac{\widehat{p} (1-\widehat{p})}{n}},
+  \]
+  jossa tuntematon \(p\) on korvattu sen estimaattorilla (otosvastineella) \(\widehat{p}\).
+\item
+  Luottamuskertoimet määrätään aiempaan tapaan:
+  \[
+  \text{P}(-z_{\alpha/2} \le Z \le z_{\alpha/2}) = 1-\alpha,
+  \]
+\item
+  Näin ollen odotusarvoparametrin (suhteellisen osuuden) \(p\) \((1-\alpha)\)\% luottamusväliksi
+  saadaan
+  \[
+  \Big(
+  \widehat{p} - z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}},
+  \widehat{p} + z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}} 
+  \Big)
+  \]
+\item
+  Luottamusväli voidaan kirjoittaa
+  \[
+  \widehat{p} \pm z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}
+  \]
+  ja luottamusvälin pituus on
+  \[
+  2 \times z_{\alpha/2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}.
+  \]
+\end{itemize}
+
 \hypertarget{alaluku67}{%
 \section{Otoskoko}\label{alaluku67}}
+
+\begin{itemize}
+\tightlist
+\item
+  Yksi tilastollisen päättelyn keskeisiä tavoitteita on yleistää otoksen pohjalta tehty päättely koskemaan koko perusjoukkoa. Seuraavaksi käymme läpi seikkoja, jotka tulee ottaa huomioon otoskokoa miettiessä.
+\item
+  Kun on päätetty, millainen tutkimusaineisto halutaan kerätä, on päätettävä, kuinka suuri otoksen on oltava, jotta se edustaa tutkittavaa joukkoa kattavasti.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Liian pieni \textbf{otoskoko}, eli pieni määrä otokseen poimittuja tilastoyksiköitä, voi \textbf{sattumalta} poiketa paljonkin perusjoukosta.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tämä niin kutsuttu \textbf{otantavirhe} on sitä suurempi mitä pienempää otosta käytetään.
+    \item
+      Liian pienen otoksen vuoksi muuten hyvin toteuttu tutkimus- ja otanta-asetelma saattaa epäonnistua vastaamaan tutkimuksen mielenkiinnon kohteena olevaan kysymykseen.
+    \end{itemize}
+  \item
+    Todella suuren otoksen koostaminen voi olla \textbf{työlästä}, \textbf{kallista} tai joskus jopa täysin mahdotonta esimerkiksi siksi että käytettävissä olevat tutkimusyksiköt eivät ole käytettävissä ajallisten rajoitteiden vuoksi (kuten harvinaisten tautien kantajat).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Toisaalta perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa paremmin esille, vaikka yksittäisten otosyksiköiden tilastolliset muuttujat saattavat vaihdella suuresti.
+    \end{itemize}
+  \item
+    \textbf{Otoskoko} siis vaikuttaa keskeisesti siihen, miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa!
+  \end{itemize}
+\item
+  Optimaalinen, tai ainakin tutkimusongelmaan vastaamisen kannalta vähintään riittävä arvio, otoskoosta voidaan usein määrätä etukäteen.
+\end{itemize}
+
+\hfill\break
+
+\textbf{Perusjoukon rooli otoskoon määrittämisessä}
+
+\begin{itemize}
+\tightlist
+\item
+  Ensiksi tulee kuitenkin pohtia käsillä olevaa tutkimusongelmaa esimerkiksi kysymällä: \textbf{Millainen on perusjoukkosi?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Onko tutkittavan muuttujan arvoissa paljon vaihtelua? Jos on, niin tämä täytyy huomioida kasvattamalla otoskokoa.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi otosten keskiarvot alkavat käyttäytyä riittävän siististi vasta noin otoskoosta \(n=30\) alkaen.
+    \item
+      Kyseinen otoskoko ei kuitenkaan ole missään tapauksessa yleinen ja pätevä peukalosääntö otoskoon koolle, vaan se tulee aina päättää tutkimusongelmakohtaisesti.
+    \end{itemize}
+  \item
+    Kuuluuko tutkimukseesi esimerkiksi otoksen sisällä olevien ryhmien keskiarvojen vertailua tai muita otoksen osajoukkojen tunnuslukujen vertailua? Jos kuuluu, niin otoskoko tulee valita pienimmän ryhmäkoon mukaan, jotta siitäkin saadaan tarpeeksi edustajia.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Mitä isompaa otosta käytetään, sitä pienempi perusjoukossa esiintyvä ryhmien välinen ero pystytään otoksella tunnistamaan.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\textbf{Tulosten vaaditun tarkkuuden vaikutus otoskokoon}
+
+\begin{itemize}
+\tightlist
+\item
+  Tarkastelemme pian esimerkin avulla, kuinka tarvittavaa otoskokoa voidaan approksimoida tulosten halutun tarkkuuden avulla.
+\item
+  Tarkastellaan kuitenkin ensin minkälaiset kysymykset liittyvät otoskoon pohdintaan tulosten tarkkuuden osalta.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kuinka varma sinun on oltava, että tulokset vastaavat joukon mielipiteitä? Tämä on virhemarginaalisi.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi puoluekannatuksen arvioimiseen 2 \% virhemarginaalilla riittää huomattavasti pienempi otoskoko kuin 0.2 \% virhemarginaalilla. Politiikan tutkija voisikin kasvattaa otoskokoa vaalien lähestyessä, mikäli mielii tarkempia tuloksia.
+    \end{itemize}
+  \item
+    Kuinka varma haluat olla, että otos edustaa joukkoa oikein? Tämä on luottamustaso.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Luottamustaso on todennäköisyys sille, että valitsemasi otos on tulosten kannalta oleellinen.
+    \item
+      Jos joukosta poimitaan 30 otosta sattumanvaraisesti, kuinka usein yhdestä otoksesta saadut tulokset eroavat merkittävästi muista 30 otoksesta? Jos luotettavuustaso on 95 \%, samat johtopäätelmät saadaan 95 prosentissa tapauksista.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\textbf{Odotetun vastauskadon vaikutus otoskokoon}
+
+\begin{itemize}
+\tightlist
+\item
+  Kuinka suuri vastauskato tulee mahdollisesti olemaan?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yleensä osa kyselytutkimukseen valituista jättää vastaamatta. Tätä kutsutaan kadoksi. Kato vinouttaa otosta, jos vastaamatta jättäneet ovat mielipiteiltään erilaisia kuin vastanneet.
+  \item
+    Otoskoon kasvattaminen ei paranna kadon aiheuttamaa vinoutumista.
+  \end{itemize}
+\item
+  Esimerkki: Jos Alkon myymälän asiakastutkimus suoritetaan ovensuukyselynä maanantaina aamupäivällä, niin vastaajat eivät luultavasti edusta myymälän koko asiakaskuntaa. Otantakehikko on tässä liian suppea ja seurauksena on todennäköisesti vinoutunut otos. Vinoutuma ei korjaannu vaikka otosta kasvatetaan maanantai-aamupäivän asiakkailla.
+\end{itemize}
+
+\hfill\break
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: otoskoko normaalijakauman odotusarvon estimoinnissa}
+
+\begin{itemize}
+\item
+  Palautetaan mieleen normaalijakauman \(\text{N}(\mu,\sigma^2)\) odotusarvon luottamusvälin määräminen (kun varianssi \(\sigma^2\) oletetaan tunnetuksi).
+\item
+  Luottamusväliksi saatiin
+  \[
+  \bar{Y} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}},
+  \]
+  ja luottamusvälin symmetrisyydestä johtuen luottamusvälin pituus
+  \[
+  2 \times z_{\alpha/2} \frac{\sigma}{\sqrt{n}}.
+  \]
+\item
+  Oletetaan, että normaalijakauman odotusarvoparametrille \(\mu\) halutaan konstruoida luottamusväli, jonka toivottu pituus on \(2d\) (huom. symmetrisyys).
+\item
+  Luottamusvälin lausekkeesta saadaan täten järjestelemällä
+  \[
+  n = \Big(\frac{z_{\alpha/2} \, \sigma}{d} \Big)^2.
+  \]
+\item
+  Jos varianssi \(\sigma^2\) on tuntematon, se voidaan kaavassa korvata havaitulla otosvarianssilla \(s^2\), jolloin
+  \[
+  n = \Big(\frac{z_{\alpha/2} \, s}{d} \Big)^2.
+  \]
+\item
+  Pitäydytään (yksinkertaisuuden vuoksi) luottamuskertoimissa \(z_{\alpha/2}\) vaikka varianssi \(\sigma^2\) olisikin tuntematon.
+\end{itemize}
+
+\end{eblock}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: otoskoko}
+
+\begin{itemize}
+\item
+  Oletetaan, että haluamme määrätä otoskoon niin, että otoskeskiarvo poikkeaa populaatiokeskiarvosta korkeintaan yhden yksikön (\(d = 1\)) todennäköisyydellä \(0.05\). Oletetaan, että varianssi on aiemmissa tutkimuksissa ollut \(\sigma^2 = 5\). Oletetaan lisäksi, että taustallaoleva perusjoukko on iso (ääretön).
+\item
+  Tällöin otoskoon tulisi olla
+  \[
+  n \ge \Big(\frac{z_{\alpha/2} \, \sigma}{d} \Big)^2 = \Big(1.96 \sqrt{5} \Big)^2 \approx 19.2.
+  \]
+\item
+  Tarvittavan otoskoon tulisi siis olla tässä tapauksessa noin 20.
+\end{itemize}
+
+\end{eblock}
+
+\textbf{Äärellisyyskorjaus}:
+
+\begin{itemize}
+\item
+  Äärellisyyskorjausta käytetään, jos otos poimitaan äärellisestä perusjoukosta palauttamatta ja (nyrkkisääntönä)
+  \[
+  \frac{n}{N} > 0.05,
+  \]
+  jossa \(n\) on edelleen otoskoko, \(N\) perusjoukon koko ja \(n < N\).
+\item
+  Jos suhde \(n/N\) on lähellä arvoa 1, tarkoittaa se, että perusjoukosta
+  huomattava osa kuuluu otokseen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tällöin otoskeskiarvon poikkeama populaatiokeskiarvosta on luonnollisesti pienempi kuin pienemmän otoksen tilanteessa.
+  \item
+    Otoskoon kasvattaminen lisää siis estimoinnin tarkkuutta, ja juuri äärellisyyskertoimen avulla hajonta ``korjataan'' vastaamaan käytettyä otoskokoa.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Otoskoko, äärellisyyskorjaus: Normaalijakauman odotusarvon estimointi}
+
+\begin{itemize}
+\item
+  Oletetaan, että otannan taustalla oleva perusjoukko on äärellinen (pieni).
+\item
+  Tällöin luottamusvälin konstruloinnissa huomioidaan äärellisyyskorjaus
+  (vrt. aiemmat kaavat):
+  \[
+  \bar{Y} \pm z_{\alpha/2} \sqrt{\Big(\frac{N-n}{N}\Big)\frac{\sigma^2}{n}}.
+  \]
+\item
+  Tarvittava otoskoko on tällöin välivaiheiden jälkeen
+  \[
+  n =\frac{1}{\frac{d^2}{z^2_{\alpha/2} \sigma^2} + \frac{1}{N}}.
+  \]
+\end{itemize}
+
+\hfill\break
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: otoskoko (jatkoa)}
+
+\begin{itemize}
+\item
+  Oletetaan aiemman esimerkin tilanne kuitenkin siten, että perusjoukon koko on nyt \(N=100\).
+\item
+  Tällöin otoskooon tulisi olla
+  \[
+  n  \ge \frac{1}{\frac{1}{1.96^2 \times 5} + \frac{1}{100}} \approx 16.11.
+  \]
+\item
+  Tarvittava otoskoko on siis noin 17.
+\end{itemize}
+
+\end{eblock}
+
+\hfill\break
+
+\textbf{Otoskoko: Suhteellinen osuus}
+
+\begin{itemize}
+\tightlist
+\item
+  Palautetaan mieleen Bernoulli-jakauman odotusarvoparametrin \(p\) luottamusvälin muodostaminen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kuten normaalijakauman odotusarvoparametrin tapauksessa, pyrimme muodostamaan mahdollisimman lyhyen luottamusvälin, johon liittyvä luottamustaso olisi samanaikaisesti mahdollisimman korkea.
+  \end{itemize}
+\item
+  Oletetaan aiempaan tapaan, että \(p\):lle halutaan muodostaa luottamusväli, jonka toivottu pituus on \(2d\).
+\item
+  Tarvittava otoskoko saadaan kaavasta (kun perusjoukko oletetaan äärettömäksi)
+\end{itemize}
+
+\[
+n = \Big(\frac{z_{\alpha/2} \,\, \sqrt{p(1-p)}}{d} \Big)^2.
+\]
+
+\hfill\break
+\hfill\break
+
+\textbf{Suhteellinen osuus, äärellisyyskorjaus:}
+
+\begin{itemize}
+\tightlist
+\item
+  Tarvittava otoskoko saadaan äärellisyyskorjausta käytettäessä kaavasta
+  \[
+  n = \frac{N p (1-p)}{\frac{(N-1) d^2}{z^2_{\alpha/2}} + p(1-p)}.
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Voidaan osoittaa, että jos perusjoukko \(N\) on iso (ääretön), niin tällöin edellinen lauseke supistuu aiempaan otoskokoa osoittavaan lausekkeeseen.
+  \end{itemize}
+\item
+  Usein otoskokoa määrättäessä suhteellisesta osuudesta ei ole olemassa arviota.
+\item
+  Tällöin suhteellisen osuuden \(p\) arvoksi asetetaan useimmiten \(p=0.5\), jolloin suhteellisen osuuden varianssi on suurin.
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: Otoskoko ja suhteellinen osuus}
+
+\begin{itemize}
+\item
+  Geologi haluaa arvioida kallion kultapitoisuuden ottamalla kivinäytteen \(n\) eri pisteestä. Jokaisesta näytteestä havaitaan sisältyykö siihen kultaa. Kuinka suuri otos on poimittava, jotta kultapitoisuuden estimointivirheen \(d\) arvo on korkeintaan \(0.05\) todennäköisyydellä 0.95?
+\item
+  Tässä kullan suhteellinen osuus on tuntematon, joten \(p\):lle asetetaan \(p=0.5\).
+\item
+  Äärellisyyskorjaus voidaan unohtaa, sillä näytteenottopisteiden pinta-alat ovat pieniä (eli niitä on äärettömän paljon, ts. tarkasteltavaan populaatioon niitä sisältyy
+  hyvin suuri määrä).
+\item
+  Tällöin otoskoko
+  \[
+  n = \frac{1.96^2 \cdot 0.5 \cdot 0.5}{0.05^2} \approx 384.16.
+  \]
+\end{itemize}
+
+\end{eblock}
 
 \hypertarget{luku7}{%
 \chapter{Tilastollinen riippuvuus ja korrelaatio}\label{luku7}}

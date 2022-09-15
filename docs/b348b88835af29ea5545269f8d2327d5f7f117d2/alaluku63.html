@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreinta) | TILM3701 - Tilastotiede ja data 2022</title>
+  <title>6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreina) | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreinta) | TILM3701 - Tilastotiede ja data 2022" />
+  <meta property="og:title" content="6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreina) | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Tilastotieteen ensimmäinen kurssi." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreinta) | TILM3701 - Tilastotiede ja data 2022" />
+  <meta name="twitter:title" content="6.3 Otoskeskiarvo ja otosvarianssi (estimaattoreina) | TILM3701 - Tilastotiede ja data 2022" />
   
   <meta name="twitter:description" content="Tilastotieteen ensimmäinen kurssi." />
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-11" />
+<meta name="date" content="2022-09-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -138,7 +138,7 @@
 <ul>
 <li class="chapter" data-level="6.1" data-path="alaluku61.html"><a href="alaluku61.html"><i class="fa fa-check"></i><b>6.1</b> Satunnaisotos, yhteisjakauma ja tilastollinen malli</a></li>
 <li class="chapter" data-level="6.2" data-path="alaluku62.html"><a href="alaluku62.html"><i class="fa fa-check"></i><b>6.2</b> Otosjakauma: Estimaattori ja estimaatti</a></li>
-<li class="chapter" data-level="6.3" data-path="alaluku63.html"><a href="alaluku63.html"><i class="fa fa-check"></i><b>6.3</b> Otoskeskiarvo ja otosvarianssi (estimaattoreinta)</a></li>
+<li class="chapter" data-level="6.3" data-path="alaluku63.html"><a href="alaluku63.html"><i class="fa fa-check"></i><b>6.3</b> Otoskeskiarvo ja otosvarianssi (estimaattoreina)</a></li>
 <li class="chapter" data-level="6.4" data-path="alaluku64.html"><a href="alaluku64.html"><i class="fa fa-check"></i><b>6.4</b> Suhteellisen frekvenssin otosjakauma</a></li>
 <li class="chapter" data-level="6.5" data-path="alaluku65.html"><a href="alaluku65.html"><i class="fa fa-check"></i><b>6.5</b> Muita tunnuslukuja</a></li>
 <li class="chapter" data-level="6.6" data-path="alaluku66.html"><a href="alaluku66.html"><i class="fa fa-check"></i><b>6.6</b> Luottamusvälit</a></li>
@@ -195,7 +195,99 @@
 
             <section class="normal" id="section-">
 <div id="alaluku63" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> Otoskeskiarvo ja otosvarianssi (estimaattoreinta)<a href="alaluku63.html#alaluku63" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">6.3</span> Otoskeskiarvo ja otosvarianssi (estimaattoreina)<a href="alaluku63.html#alaluku63" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Otoskeskiarvo</strong></p>
+<ul>
+<li>Oletetaan, kuten aiemmin, että <span class="math inline">\(Y_1,\ldots,Y_n\)</span> ovat riippumattomia sm:jia ja että ne muodostavat satunnaisotoksen jakaumasta jonka odotusarvo on <span class="math inline">\(\mu\)</span>, ts. <span class="math inline">\(\text{E}(Y_i) = \mu\)</span> ja varianssi on <span class="math inline">\(\sigma^2\)</span>, ts. <span class="math inline">\(\text{Var}(Y_i) = \sigma^2\)</span>.
+<ul>
+<li>Havaintojen (satunnaismuuttujien) <span class="math inline">\(Y_1, \ldots, Y_n\)</span> <strong>otoskeskiarvo</strong> on</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\bar{Y} = \frac{1}{n}(Y_1 + \cdots + Y_n) = \frac{1}{n} \sum_{i=1}^{n} Y_i
+\]</span></p>
+<ul>
+<li>Yksittäisen otoksen otoskeskiarvo on tällöin sm:jien realisaatioiden aritmeettinen keskiarvo</li>
+</ul>
+<p><span class="math display">\[
+\bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i.
+\]</span></p>
+<ul>
+<li>Otoskeskiarvo on satunnaismuutuja, jonka saama arvo vaihtelee satunnaisesti otoksesta toiseen johtuen satunnaisotannasta.</li>
+<li>Kun satunnaismuuttujat ovat samoin jakautuneet odotusarvonaan <span class="math inline">\(\mu\)</span>, on otoskeskiarvo jakauman odotusarvon harhaton estimaattori, ts.</li>
+</ul>
+<p><span class="math display">\[\text{E}(\bar{Y}) = \mu\]</span></p>
+<ul>
+<li>Täten otoskeskiarvo kuvaa aineiston perusjoukon tilastollisen mallin odotusarvoa.</li>
+</ul>
+<p><strong>Aritmeettisen keskiarvon ominaisuuksia</strong></p>
+<ul>
+<li><p>Aiempien oletusten pätiessä aritmeettisella keskiarvolla <span class="math inline">\(\bar{Y}\)</span> on seuraava odotusarvo ja varianssi:
+<span class="math display">\[
+\text{E}(\bar{Y}) = \mu,  \quad
+\mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}.
+\]</span></p></li>
+<li><p>Aritmeettisen keskiarvon <span class="math inline">\(\bar{Y}\)</span> <strong>standardipoikkeama</strong></p></li>
+</ul>
+<p><span class="math display">\[
+\text{D}(\bar{Y}) = \sqrt{\mathrm{Var}(\bar{Y})} = \frac{\sigma}{\sqrt{n}}.
+\]</span></p>
+<ul>
+<li><p>Standardipoikkeamaa kutsutaan myös <strong>keskiarvon keskivirheeksi</strong> ja se kuvaa otoskeskiarvon otosvaihtelua odotusarvon <span class="math inline">\(\mu\)</span> ympärillä.</p></li>
+<li><p>Aritmeettisen keskiarvon otosjakauma keskittyy yhä voimakkaammin havaintojen yhteisen odotusarvon <span class="math inline">\(\mu\)</span> ympärille, kun otoskoko <span class="math inline">\(n\)</span> kasvaa.</p>
+<ul>
+<li>Ts. otoskoon <span class="math inline">\(n\)</span> kasvaessa <span class="math inline">\(\mathrm{Var}(\bar{Y}) = \frac{\sigma^2}{n}\)</span> pienenee.</li>
+</ul></li>
+</ul>
+<p><strong>Otosvarianssi</strong></p>
+<ul>
+<li><p>Aineiston sisältämää vaihtelua kuvataan <strong>otosvarianssilla</strong>
+<span class="math display">\[
+S^2= \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2.
+\]</span></p>
+<ul>
+<li>Vastaavasti sm:jien vaihtelua perusjoukon tasolla kuvataan <strong>populaatiovarianssilla</strong></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\sigma^2= \frac{1}{N} \sum_{j=1}^{N} (Y_j - \mu)^2,
+\]</span>
+jota otosvarianssi harhattomasti estimoi.</p>
+<ul>
+<li><p>Huomioi, että <strong>otosvarianssi</strong> on eri asia kuin <strong>otoskeskiarvon varianssi</strong>.</p></li>
+<li><p>Otoskeskiarvo <span class="math inline">\(\bar{Y}\)</span> ja otosvarianssi <span class="math inline">\(S^2\)</span> ovat siis satunnaismuuttujia, joiden saamat arvot vaihtelevat satunnaisesti otoksesta toiseen.</p></li>
+</ul>
+<p><strong>Normaalijakautunut otos</strong></p>
+<ul>
+<li><p>Muodostakoot havainnot <span class="math inline">\(Y_1, \ldots, Y_n\)</span> satunnaisotoksen normaalijakaumasta <span class="math inline">\(\text{N}(\mu, \sigma^2)\)</span>.</p></li>
+<li><p>Tällöin voidaan osoittaa, että havaintojen <span class="math inline">\(Y_1, \ldots, Y_n\)</span> keskiarvo <span class="math inline">\(\bar{Y}\)</span> noudattaa normaalijakaumaa odotusarvolla <span class="math inline">\(\mu\)</span> ja varianssilla <span class="math inline">\(\sigma^2/n\)</span>. Merkitään
+<span class="math display">\[
+\bar{Y} \thicksim \text{N} \Big(\mu, \frac{\sigma^2}{n} \Big).
+\]</span></p></li>
+<li><p>Itse asiassa ns. <strong>asymptoottiseen teoriaan</strong> vedoten (suurten otosten tapauksessa) voidaan osoittaa, että edellämainittu tulos pätee myös ilman normaalisuusoletusta.</p>
+<ul>
+<li>Nämä tarkastelut vaativat jälleen selvästi enemmän käytyjä tilastotieteen (ja matematiikan) opintoja.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Standardoidun aritmeettisen keskiarvon otosjakauma</strong></p>
+<ul>
+<li>Tarkastellaan <strong>standardoitua</strong> satunnaismuuttujaa
+<span class="math display">\[
+Z = \frac{\bar{Y} - \text{E}(\bar{Y})}{\text{D}(\bar{Y})} = \frac{\bar{Y} - \mu}{\sigma / \sqrt{n}} = \sqrt{n} \Big(\frac{\bar{Y} - \mu}{\sigma}\Big).
+\]</span>
+<ul>
+<li>Tällöin <span class="math inline">\(Z\)</span>:n odotusarvo <span class="math inline">\(\text{E}(Z) = 0\)</span> ja varianssi <span class="math inline">\(\mathrm{Var}(Z) = 1\)</span>.</li>
+</ul></li>
+<li>Jos <span class="math inline">\(Y_i \thicksim \text{N}(\mu, \sigma^2), i=1,\ldots,n\)</span>, niin tällöin <span class="math inline">\(Z\)</span> noudattaa standardoitua normaalijakaumaa:
+<span class="math display">\[
+Z \thicksim \text{N}(0,1).
+\]</span>
+<ul>
+<li>Jälleen voidaan osoittaa, että tämä tulos pätee asymptoottisesti (suurissa otoksissa) myös ilman yllä tehtyä normaalisuusoletusta.</li>
+</ul></li>
+</ul>
 </div>
             </section>
 

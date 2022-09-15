@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.2)  11 SEP 2022 20:27
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.2)  15 SEP 2022 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1992,57 +1992,220 @@ Overfull \hbox (62.11224pt too wide) has occurred while \output is active
 
 ]
 Luku 6.
+
+Underfull \hbox (badness 2253) in paragraph at lines 4152--4153
+[]\TU/lmr/m/n/10 Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 4157--4159
+[]\TU/lmr/m/n/10 Merkitään satunnaismuuttujaa isolla kirjaimella, $[]$, ja satun-
+ []
+
 [101]
+Underfull \hbox (badness 10000) in paragraph at lines 4174--4175
+
+ []
+
+
 Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 102 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
  []
 
-[102
+[102]
+Underfull \hbox (badness 1418) in paragraph at lines 4206--4207
+\TU/lmr/m/n/10 ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen
+ []
+
+
+Overfull \hbox (7.11334pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 6.1.  SATUNNAISOTOS, YHTEISJAKAUMA JA TILASTOLLINEN MALLI \TU/lmr/m/n/10 103
+ []
+
+[103]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 104 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 4330--4331
+
+ []
+
+File: images/unbiased.jpg Graphic file (type bmp)
+<images/unbiased.jpg>
+[105]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 106 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[106]
+Underfull \hbox (badness 7081) in paragraph at lines 4396--4397
+[]\TU/lmr/m/n/10 Estimaattoreiden kehittäminen erilaisten tilastollisten mallien
+ []
+
+[107]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 108 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 4535--4536
+
+ []
+
+[109]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 110 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[110]
+Underfull \hbox (badness 10000) in paragraph at lines 4661--4662
+[]\TU/lmr/m/n/10 Suhteellisen frekvenssin otosjakauman perusteella kyllä-
+ []
+
+[111]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 112 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[112] [113]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 114 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[114] [115]
+File: images/gaussian-distribution.jpg Graphic file (type bmp)
+<images/gaussian-distribution.jpg>
+
+Overfull \hbox (56.51125pt too wide) in paragraph at lines 4883--4884
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4890--4891
+
+ []
+
+
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 116 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[116] [117]
+File: images/NjaT-jakauma.jpg Graphic file (type bmp)
+<images/NjaT-jakauma.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4925--4926
+
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 4942--4946
+[]\TU/lmr/m/n/10 Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien perusteella
+ []
+
+
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 118 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[118] [119]
+Underfull \hbox (badness 10000) in paragraph at lines 5021--5022
+
+ []
+
+
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 120 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[120]
+Underfull \hbox (badness 10000) in paragraph at lines 5103--5104
+
+ []
+
+[121]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 122 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[122]
+Underfull \hbox (badness 10000) in paragraph at lines 5197--5198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5217--5218
+
+ []
+
+[123]
+Underfull \hbox (badness 10000) in paragraph at lines 5241--5243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5241--5243
+
+ []
+
+
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 124 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[124] [125]
+Overfull \hbox (88.38228pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 126 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
+ []
+
+[126
 
 ]
 Luku 7.
 
-Underfull \hbox (badness 1237) in paragraph at lines 4172--4172
+Underfull \hbox (badness 1237) in paragraph at lines 5293--5293
 []\TU/lmr/bx/n/14.4 Kahden muuttujan havaintoaineiston ku-
  []
 
-[103] [104
+[127] [128
 
 ]
 Luku 8.
-[105] [106
+[129] [130
 
 ]
 Luku 9.
-[107]
+[131]
 Overfull \hbox (10.86224pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 108 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+\TU/lmr/m/n/10 132 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
  []
 
-[108
+[132
 
 ]
 Luku 10.
-[109] [110
+[133] [134
 
 ]
 Luku 11.
-[111] [112
+[135] [136
 
 ]
 Luku 12.
 No file TD2022.bbl.
-[113] (./TD2022.aux)
+[137] (./TD2022.aux)
 Package rerunfilecheck Info: File `TD2022.out' has not changed.
-(rerunfilecheck)             Checksum: 6069143C060C503EC5B583BB5D86F0B3;14172.
+(rerunfilecheck)             Checksum: BAFC047D4B164C7027E46EF4FBD9ED8D;14167.
  ) 
 Here is how much of TeX's memory you used:
- 40763 strings out of 477729
- 829144 string characters out of 5841457
- 1386218 words of memory out of 5000000
- 61063 multiletter control sequences out of 15000+600000
+ 40849 strings out of 477729
+ 831388 string characters out of 5841457
+ 1386427 words of memory out of 5000000
+ 61146 multiletter control sequences out of 15000+600000
  502059 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,12n,121p,1023b,1042s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TD2022.pdf (113 pages).
+Output written on TD2022.pdf (137 pages).
