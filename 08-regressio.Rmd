@@ -45,7 +45,7 @@ Tällä kurssilla käsitellään vain __lineaarisia yhden yhtälön regressiomal
 ## Yhden selittäjän lineaarinen regressiomalli {#alaluku82}
 
 - Yhden selittäjän lineaarinen regressiomalli pyrkii selittämään selitettävän muuttujan havaittujen arvojen vaihtelun yhden selittävän muuttujan havaittujen arvojen vaihtelun avulla. Se on siis yksinkertaisin esimerkki yhden yhtälön lineaarisista regressiomalleista, sillä se sisältää vain yhden selittävän muuttujan useamman sijaan. 
-  - Selitettävää muuttujaa kutsutaan usein myös _vastemuuttujaksi, riippuvaksi muuttujaksi tai tulosmuuttuja_ 
+  - Selitettävää muuttujaa kutsutaan usein myös _vastemuuttujaksi, riippuvaksi muuttujaksi tai tulosmuuttujaksi_ 
   - Vastaavasti selittävää muuttujaa kutsutaan paikoin _selittäjäksi, riippumattomaksi muuttujaksi tai ennustavaksi muuttujaksi_. 
 
 - Tässä luvussa tarkastellaan seuraavia yhden selittävän muuttujan lineaarisen regressiomallin soveltamiseen liittyviä kysymyksiä:
