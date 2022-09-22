@@ -32,19 +32,18 @@
 :::
 
 \
-\
 
 - __Eksakti__ vs. __tilastollinen riippuvuus__
   - Tarkastelemme tässä esityksessä yksinkertaisuuden vuoksi pääasiassa kahden muuttujan välistä riippuvuutta:
-    - (i) Muuttujien välinen riippuvuus on __eksaktia__, jos toisen arvot voidaan ennustaa tarkasti toisen saamien arvojen perusteella.
-    - (ii) Muuttujien välinen riippuvuus on __tilastollista__, jos niiden välillä ei ole eksaktia riippuvuutta, mutta toisen muuttujan arvoja voidaan käyttää apuna toisen muuttujan arvojen ennustamisessa.
+    - (i) Muuttujien välinen riippuvuus on __eksaktia__, jos toisen arvot voidaan ennustaa tarkasti (täydellisesti) toisen saamien arvojen perusteella.
+    - (ii) Muuttujien välinen riippuvuus on __tilastollista__, jos niiden välillä ei ole eksaktia riippuvuutta, mutta toisen muuttujan arvoja voidaan käyttää apuna toisen muuttujan arvojen mallintamisessa ja mahdollisesti myös ennustamisessa.
 
 - Tilastollinen riippuvuus ja __korrelaatio__
   - Kahden muuttujan välistä (lineaarista) tilastollista riippuvuutta kutsutaan tilastotieteessä (tavallisesti) __korrelaatioksi__.
   - Korrelaation eli (lineaarisen) tilastollisen riippuvuuden voimakkuutta mittaavia tilastollisia tunnuslukuja kutsutaan korrelaatiokertoimiksi.
   - Korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle.
   - Vaikka korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle, riippuvuuksia halutaan tavallisesti analysoida myös tarkemmin.
-  - __Regressioanalyysi__ on tilastollinen menetelmä, jossa jonkin, ns. selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, ns. selittävistä muuttujista pyritään mallintamaan regressiomalliksi kutsutulla tilastollisella mallilla. Käsittelemme johdatusta regressioanalyysin vielä myöhemmin luvussa \@ref(luku8).
+  - __Regressioanalyysi__ on tilastollinen menetelmä, jossa jonkin, ns. selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, ns. selittävistä muuttujista pyritään mallintamaan regressiomalliksi kutsuttavalla tilastollisella mallilla. Käsittelemme johdatusta regressioanalyysiin vielä myöhemmin luvussa \@ref(luku8).
 
 ## Kahden muuttujan havaintoaineiston kuvaaminen {#alaluku72}
 
@@ -52,11 +51,11 @@
 
 - Havaintoarvojen jakaumaa voidaan kuvailla ja esitellä tiivistämällä havaintoarvoihin sisältyvä informaatio sopivaan muotoon:
   - Havaintoarvojen jakaumaa kokonaisuutena voidaan kuvata sopivasti valituilla graafisilla esityksillä.
-  - Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnuslukuja ja otosjakaumat luvussa \@ref(luku6) ).
+  - Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \@ref(luku6) ).
 
 - Koska useampi- kuin kaksiulotteisten kuvioiden tekeminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.
 
-- Kahden järjestys-, välimatka- tai suhdeasteikoillisen muuttujan havaittujen arvojen pareja havainnollistetaan tavallisesti graafisella esityksellä, jota kutsutaan hajontakuvioksi tai pistediagrammiksi ("pistekaavio" engl. scatter plot).
+- Kahden järjestys-, välimatka- tai suhdeasteikoillisen muuttujan havaittujen arvojen pareja havainnollistetaan tavallisesti graafisella esityksellä, jota kutsutaan hajontakuvioksi tai pistediagrammiksi ("pistekaavio" engl. scatter plot). Ks. esimerkiksi kuva \@ref(fig:isatjapojat1). 
 
 - Usean muuttujan havaintoaineistojen karakteristisia ominaisuuksia voidaan kuvata muuttujakohtaisilla otostunnusluvuilla.
 
@@ -64,7 +63,6 @@
 
 - Muuttujien pareittaisia tilastollisia riippuvuuksia voidaan kuvata sopivasti valitulla korrelaation mitalla.
 
-\
 \
 
 __Pistediagrammi (hajontakuvio)__
@@ -82,20 +80,19 @@ Olkoot $X$ ja $Y$ järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joi
 :::
 
 \
-\
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Isän ja pojan pituus**  
 
 - Perinnöllisyystieteen mukaan lapset perivät geneettiset ominaisuutensa vanhemmiltaan.
 - Periytyykö isän pituus heidän pojilleen?
-- Havaintoaineisto koostuu 300:n isän ja heidän poikiensa pituuksien muodostamasta lukuparista $(x_i , y_i),\, i = 1, 2, \ldots, 300$, jossa $x_i$ = isän $i$ pituus ja $y_i$ = isän $i$ pojan pituus.
+- Havaintoaineisto koostuu 300:ta isän ja heidän poikiensa pituuksien muodostamasta lukuparista $(x_i , y_i),\, i = 1, 2, \ldots, 300$, jossa $x_i$ = isän $i$ pituus ja $y_i$ = isän $i$ pojan pituus.
 - Yhtä pitkillä isillä näyttää olevan monen mittaisia poikia.
 - Mutta: Lyhyillä isillä näyttää olevan keskimäärin lyhyempiä poikia kuin pitkillä isillä ja pitkillä isillä näyttää olevan keskimäärin pitempiä poikia kuin lyhyillä isillä.
 - Tällaisten tilastollisten riippuvuuksien analysoimista lineaaristen regressiomallien avulla tarkastellaan myöhemmin luvussa \@ref(luku8) Yksinkertainen lineaarinen regressiomalli. 
 :::
 
-```{r isatjapojat1, echo=FALSE, fig.cap="Isien ja poikien pituudet. Lähde: Mellin (2006).", fig.align='center', out.width = "100%"}
+```{r isatjapojat1, echo=FALSE, fig.cap="Isien ja poikien pituudet. Lähde: Mellin (2006).", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/Isien-poikien-pituudet-Mellin.jpg")
 ```
 
@@ -106,7 +103,7 @@ knitr::include_graphics("images/Isien-poikien-pituudet-Mellin.jpg")
   - Havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä kuvataan keskihajonnoilla tai (otos-) variansseilla.
   - Havaintoarvojen (lineaarista) riippuvuutta kuvataan otoskovarianssilla ja otoskorrelaatiokertoimella.
 
-- Ts. oletetaan seuraavassa, että meillä on käytettävissä välimatka- tai suhdeasteikollisten muuttujien x ja y havaittuja arvoja $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$. Havaintoarvojen parien $(x_i, y_i)$
+- Ts. oletetaan seuraavassa, että meillä on käytettävissä välimatka- tai suhdeasteikollisten muuttujien x ja y havaittuja arvoja $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$ muodostaen havaintoyksikkökohtaisia havaintoarvojen pareja $(x_i, y_i)$.
 
 - Käsitellään seuraavassa otoskeskiarvoa ja otosvarianssia. Olemme käsitelleet vastaavia estimaattoreita jo aiemmin luvussa \@ref(luku6).
 
@@ -117,23 +114,23 @@ $$
 Vastaavalla tavalla voidaan määritellä havaintojen $x_1, x_2, \ldots, x_n$ (aritmeettinen) keskiarvo $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i$.
   - Havaintoarvojen pareista $(x_i, y_i ), \, i = 1, 2,\ldots,n$ laskettujen aritmeettisten keskiarvojen, otoskeskiarvojen, $\bar{x}$ ka $\bar{y}$ muodostama lukupari ($\bar{x}, \bar{y})$ on havaintoarvojen parien muodostamien pisteiden painopiste.
   - Havaintoarvojen aritmeettinen keskiarvo kuvaa havaintoarvojen keskimääräistä sijaintia.
-  - Osoittautuu, että (aritmeettinen) keskiarvo toimii tilastollisessa mielessä hyvänä estimaattorina satunnaismuuttujan $y$ odotusarvolle. 
+  - Osoittautuu, että (aritmeettinen) keskiarvo toimii tilastollisessa mielessä hyvänä estimaattorina satunnaismuuttujan $Y$ odotusarvolle. 
 
 \
 
-- __Otosvarianssi__: Havaintoarvojen $y_1, y_2,\ldots, y_n$ (otos-) varianssi (on todettu jo aiemmin) on muotoa
+__Otosvarianssi__: Havaintoarvojen $y_1, y_2,\ldots, y_n$ (otos-) varianssi (on todettu jo aiemmin) on muotoa
 $$
     S^2_y = \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2,
 $$
-jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo.
-  - Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) varianssi $S^2_x$.  
-  - Havaintoarvojen varianssi mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.  
+jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. 
+  - Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) varianssi $S^2_x$.
+  - Havaintoarvojen varianssi mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.
     
 - __(Otos-) keskihajonta__: Havaintoarvojen $y_1, y_2,\ldots, y_n$ (otos-) keskihajonta
 $$
     s_y = \sqrt{s^2_y} = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2},
 $$
-jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde otosvarianssiin.
+jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde (otosvarianssiin.
   - Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) keskihajonta $s_x$.
   - Havaintoarvojen keskihajonta mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.
 
@@ -141,12 +138,12 @@ jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde ot
 
 ## Satunnaismuuttujien kovarianssi ja korrelaatio {#alaluku74}
 
-- Tarkastellaan välimatka- tai suhdeasteikollisten satunnaismuuttujien $X$ ja $Y$ Pearsonin (tulomomentti-) korrelaatiokerrointa $\rho_{XY}$ ja sen estimointia.
+- Tarkastellaan välimatka- tai suhdeasteikollisten satunnaismuuttujien $X$ ja $Y$ (Pearsonin tulomomentti-) korrelaatiokerrointa $\rho_{XY}$ ja sen estimointia.
 
 - Tällä kurssilla emme tarkastele tarkemmin tilastollisia testejä korrelaatiokertoimelle $\rho_{XY}$, kuten:
-  - Yhden otoksen testi korrelaatiokertoimelle
-  - Korrelaatiokertoimien vertailutesti
-  - Korreloimattomuuden testaaminen
+  -Yhden otoksen testi korrelaatiokertoimelle
+  -Korrelaatiokertoimien vertailutesti
+  -Korreloimattomuuden testaaminen
 
 - Jälleen kerran, lisätietoja ja tarkempia yksityiskohtia moniulotteisista satunnaismuuttujista ja jakaumista tarkastellaan todennäköisyyslaskennan kursseilla.
 
@@ -155,13 +152,13 @@ jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde ot
 
  Olkoon $(X, Y)$ satunnaismuuttujien $X$ ja $Y$ muodostama järjestetty pari. Olkoot 
 $$
-\mu_X = \text{E}(X) \qquad \mathrm{and} \qquad  \mu_Y = \text{E}(Y)
+\mu_X = \text{E}(X) \qquad \mathrm{ja} \qquad  \mu_Y = \text{E}(Y)
 $$
 satunnaismuuttujien $X$ ja $Y$ odotusarvot ja
-\begin{align}
+\begin{align*}
 \sigma^2_X &= \mathrm{Var}(X) = \text{D}^2(X) = \text{E}[(X - \mu_X)^2] \\
 \sigma^2_Y &= \mathrm{Var}(Y) = \text{D}^2(Y) = \text{E}[(Y - \mu_Y)^2]
-\end{align}
+\end{align*}
 
 satunnaismuuttujien $X$ ja $Y$ varianssit. 
 
@@ -183,14 +180,15 @@ jossa siis $\sigma_X = \sqrt{\mathrm{Var}(X)} = \sqrt{\text{D}^2(X)}$ ja $\sigma
 $$
 \rho_{XY} = \mathrm{Cor}(X, Y)
 $$
-kutsutaan ajoittain __Pearsonin korrelaatiokertoimeksi__ (tulomomenttikorrelaatiokertoimeksi).
+kutsutaan ajoittain siis __Pearsonin korrelaatiokertoimeksi__ (tulomomenttikorrelaatiokertoimeksi).
   - Pearsonin korrelaatiokerroin $\rho_{XY}$ mittaa satunnaismuuttujien $X$ ja $Y$ lineaarisen riippuvuuden voimakkuutta. Ts. sm:jien välistä (lineaarista) yhteyttä.
 
-- Pearsonin (tulomomentti-) korrelaatiokerroin voidaan estimoida vastaavalla Pearsonin __otoskorrelaatiokertoimella__ 
+- Pearsonin (tulomomentti-) korrelaatiokerrointa 
 $$
 r_{XY} = \frac{s_{XY}}{s_X s_Y}
 $$
-Estimaattori $r_{XY}$ voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
+voidaan estimoida Pearsonin __otoskorrelaatiokertoimella__ (ks. alla). 
+  - Estimaattori $r_{XY}$ voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
 
 ::: {.defblock .miko data-latex="{}"}
 **Pearsonin otoskorrelaatiokerroin**
@@ -217,7 +215,7 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
 
 - Pearsonin otoskorrelaatiokertoimella $r_{xy}$ on seuraavat ominaisuudet:
   i) $-1 \le r_{xy} \le 1$
-  ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha + \beta x_i$, jossa $\alpha$ ja $\beta$ ovat reaalisia vakiota ja $\beta \neq 0$
+  ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$  ovat reaalisia vakiota ja $\beta \neq 0$
   iii)	Korrelaatiokertoimella $r_{xy}$ ja kovarianssilla $s_{xy}$ on aina sama etumerkki
 
 - Pearsonin otoskorrelaatiokerroin $r_{xy}$: Tulkinta/tulkintoja:
@@ -226,36 +224,22 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
   - Jos $r_{xy} = 0$, niin $x$- ja $y$-havaintoarvojen välillä ei voi olla eksaktia lineaarista riippuvuutta.
   - Vaikka $r_{xy} = 0$, $x$- ja $y$-havaintoarvojen välillä saattaa silti olla jopa eksakti epälineaarinen riippuvuus.
 
-- __Havainnollistus__: Kuviot alla havainnollistavat kahden muuttujan havaittujen arvojen ($n = 30$) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
+- __Havainnollistus__: Alapuolella esitettävät kuviot havainnollistavat kahden muuttujan havaittujen arvojen ($n = 30$) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
 
 \FloatBarrier
 
-```{r korrelaatioMellin, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006).", fig.align='center', out.width = "100%", message = FALSE, warning = FALSE}
+```{r korrelaatioMellin, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006).", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/Pearson-korr-Mellin.jpg")
 ```
 
-- Toinen havainnollistus: Ks. seuraavasta linkistä lisää havainnollistuksia. Arvio korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: 
-
-\FloatBarrier
-
-```{r, echo = FALSE}
-knitr::include_url("http://guessthecorrelation.com/")
-```
-
-\
-\
+- Toinen havainnollistus: Ks. seuraavasta [linkistä](http://guessthecorrelation.com/) lisää havainnollistuksia. 
+  - _Guess the correlation_ pelissä pääset arvioimaan esitettävän pisteparven korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: http://guessthecorrelation.com/
 
 - __Kausaalisuus__
   - Muuttujan $x$ arvojen muutos vaikuttaaa muuttujan $y$ arvoihin (syy-vaikutussuhde), jos seuraavat kolme ehtoa täyttyvät:
     - muuttujan $x$ muutos esiintyy ajallisesti ennen y:n muutosta
     - muuttujissa $x$ ja $y$ tapahtuvien muuttujien välillä on riippuvuutta
     - muuttujassa $y$ tapahtunutta muutosta ei voida selittää millään muilla tekjöillä
-
-\FloatBarrier
-
-```{r causality, echo=FALSE, fig.cap="Kausaalisuus: kumpi tuli ensin?", fig.align='center', out.width = "100%"}
-knitr::include_graphics("images/causality.jpg")
-```
 
 - Kausaalisuhteita selvitettäessä on tunnettava etukäteen ilmiötä koskevat aiemmat teoriat ja tutkimukset tarkasti, jotta voidaan ottaa huomioon ilmiöön vaikuttavat tekijät
 
@@ -265,7 +249,7 @@ knitr::include_graphics("images/causality.jpg")
 
 \FloatBarrier
 
-```{r, echo=FALSE, fig.cap="Esimerkkejä: luomuruoka syypää lisääntyneisiin autismitapauksiin?", fig.align='center', out.width = "100%"}
+```{r, echo=FALSE, fig.cap="Esimerkkejä: luomuruoka syypää lisääntyneisiin autismitapauksiin?", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/causality2.jpg")
 ```
 
@@ -274,37 +258,16 @@ knitr::include_graphics("images/causality2.jpg")
   
 \FloatBarrier
 
-```{r simpson, echo=FALSE, fig.cap="Simpsonin paradoksi", fig.align='center', out.width = "100%"}
+```{r simpson, echo=FALSE, fig.cap="Simpsonin paradoksi", fig.align='center', out.width = "75%"}
 knitr::include_graphics("images/simpson.jpg")
 ```
 
 \FloatBarrier
+
 ::: {.defblock .mikko data-latex="{}"}
 **Esimerkki: Berkeleyn sukupuolisyrjintä**
 
-Yksi tunnetuimmista esimerkeistä Simpsonin paradoksista on Berkeleyn yliopiston sukupuolisyrjintätapaus. Yliopisto haastettiin oikeuteen vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi miesten helpompi päästä kuin naisten.
-:::
-
-\FloatBarrier
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE, out.width="50%"}
-m = c(8442, "44%")
-n = c(4321, "35%")
-library(kableExtra)
-library(tidyverse)
-library(knitr)
-taulukko = rbind.data.frame(m,n)
-rownames(taulukko) = c("Miehet", "Naiset")
-colnames(taulukko) = c("Hakijat", "Hyväksytyt")
-kable(taulukko, booktabs = TRUE) %>% 
-  kable_styling(font_size = 12, latex_options = "scale_down")
-```
-
-\FloatBarrier
-
-::: {.defblock .mikko data-latex="{}"}
-
-Taulukosta nähdään, että mieshakijoista on päässyt 9 prosenttiyksikköä enemmän sisälle kuin naisista.
+Yksi tunnetuimmista esimerkeistä Simpsonin paradoksista on Berkeleyn yliopiston sukupuolisyrjintätapaus. Yliopisto haastettiin oikeuteen vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi miesten helpompi päästä kuin naisten, sillä yhteensä 8442:sta mieshakijasta 44 % hyväksyttiin kun samat luvut olivat naisilla 4321 ja 35 %. Mieshakijoista pääsi siis 9 prosenttiyksikköä enemmän sisälle kuin naisista.
 
 - Tarkasteltaessa erikseen eri tiedekuntia huomataan, että itseasissa useammassa tiedekunnissa naisia on päässyt sisälle isompi osuus hakijoista. Aineisto kuudesta isoimmasta tiedekunnasta on listattu alla olevaan taulukkoon.
 :::
@@ -321,11 +284,11 @@ Fe = c("F", 373,6,341, 7)
 taulukko = rbind.data.frame(A,B,C,D,E,Fe)
 colnames(taulukko) = c("Tiedekunta", "Hakijat", "Hyväksytyt %", "Hakijat", "Hyväksytyt %")
 kable(taulukko, booktabs = TRUE) %>% 
-  kable_styling(font_size = 12, latex_options = "scale_down") %>% 
-  add_header_above(c("Miehet" = 2, "Naiset" = 3))
+  kableExtra::kable_styling(font_size = 12) %>% 
+  kableExtra::add_header_above(c("Miehet" = 2, "Naiset" = 3))
 ```
 
-\
+\FloatBarrier
 
 - Vielä tiivistäen korrelaatiokertoimen tulkintavirheitä aiheuttavat useimmiten seuraavat seikat:
   - Riippuvuudesta ei välttämättä seuraa syy-seuraussuhdetta.

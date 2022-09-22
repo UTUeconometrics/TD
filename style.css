@@ -48,3 +48,13 @@ pre code {
 .book .book-summary {
     width: 450px;
 }
+
+
+.table{
+  width:auto;
+  font-size: 12px;
+}
+
+.verysmall .table{
+  font-size: 8px;
+}

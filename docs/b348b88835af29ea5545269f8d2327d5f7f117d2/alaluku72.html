@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.2 Kahden muuttujan havaintoaineiston kuvaaminen | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.2 Kahden muuttujan havaintoaineiston kuvaaminen | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-21" />
+<meta name="date" content="2022-09-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,6 +196,50 @@
             <section class="normal" id="section-">
 <div id="alaluku72" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Kahden muuttujan havaintoaineiston kuvaaminen<a href="alaluku72.html#alaluku72" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Kuten yhden muuttujan havaintoaineistojen tapauksessa, lähtökohdan kahden tai useamman muuttujan havaintoaineistojen kuvaamiselle muodostaa tutustuminen havaintoarvojen jakaumaan.</p></li>
+<li><p>Havaintoarvojen jakaumaa voidaan kuvailla ja esitellä tiivistämällä havaintoarvoihin sisältyvä informaatio sopivaan muotoon:</p>
+<ul>
+<li>Havaintoarvojen jakaumaa kokonaisuutena voidaan kuvata sopivasti valituilla graafisilla esityksillä.</li>
+<li>Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa <a href="luku6.html#luku6">6</a> ).</li>
+</ul></li>
+<li><p>Koska useampi- kuin kaksiulotteisten kuvioiden tekeminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.</p></li>
+<li><p>Kahden järjestys-, välimatka- tai suhdeasteikoillisen muuttujan havaittujen arvojen pareja havainnollistetaan tavallisesti graafisella esityksellä, jota kutsutaan hajontakuvioksi tai pistediagrammiksi (“pistekaavio” engl. scatter plot). Ks. esimerkiksi kuva <a href="alaluku72.html#fig:isatjapojat1">7.1</a>.</p></li>
+<li><p>Usean muuttujan havaintoaineistojen karakteristisia ominaisuuksia voidaan kuvata muuttujakohtaisilla otostunnusluvuilla.</p></li>
+<li><p>Muuttujakohtaiset otostunnusluvut eivät kuitenkaan voi antaa informaatiota muuttujien välisistä riippuvuuksista.</p></li>
+<li><p>Muuttujien pareittaisia tilastollisia riippuvuuksia voidaan kuvata sopivasti valitulla korrelaation mitalla.</p></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Pistediagrammi (hajontakuvio)</strong></p>
+<ul>
+<li><p>Tarkastellaan tilannetta, jossa tutkimuksen kohteina olevista havaintoyksiköistä on mitattu kahden järjestys-, välimatka- tai suhdeasteikollisen muuttujan <span class="math inline">\(X\)</span> ja <span class="math inline">\(Y\)</span> arvot.</p></li>
+<li><p>Muuttujien <span class="math inline">\(X\)</span> ja <span class="math inline">\(Y\)</span> arvojen samaan havaintoyksikköön liittyvien parien <span class="math inline">\((X,Y)\)</span> muodostamaa havaintoaineistoa voidaan kuvata graafisesti pistediagrammilla.</p></li>
+<li><p>Pistediagrammi sopii erityisesti kahden muuttujan välisen riippuvuuden havainnollistamiseen. Se on keskeinen työväline korrelaatio- ja regressioanalyysissa.</p></li>
+</ul>
+<div class="defblock mikko">
+<p><strong>Pistediagrammi</strong></p>
+<p>Olkoot <span class="math inline">\(X\)</span> ja <span class="math inline">\(Y\)</span> järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joiden havaitut arvot ovat <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> ja <span class="math inline">\(y_1, y_2, \ldots, y_n\)</span>. Oletetaan lisäksi, että havaintoarvot <span class="math inline">\(x_i\)</span> ja <span class="math inline">\(y_i\)</span> liittyvät samaan havaintoyksikköön kaikille <span class="math inline">\(i = 1, 2, \ldots, n\)</span>. Havaintoarvojen parien <span class="math inline">\((x_i, y_i)\)</span> pistediagrammi saadaan esittämällä lukuparit niiden määrittelemien pisteiden tasokoordinaatistossa.</p>
+</div>
+<p><br />
+</p>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: Isän ja pojan pituus</strong></p>
+<ul>
+<li>Perinnöllisyystieteen mukaan lapset perivät geneettiset ominaisuutensa vanhemmiltaan.</li>
+<li>Periytyykö isän pituus heidän pojilleen?</li>
+<li>Havaintoaineisto koostuu 300:ta isän ja heidän poikiensa pituuksien muodostamasta lukuparista <span class="math inline">\((x_i , y_i),\, i = 1, 2, \ldots, 300\)</span>, jossa <span class="math inline">\(x_i\)</span> = isän <span class="math inline">\(i\)</span> pituus ja <span class="math inline">\(y_i\)</span> = isän <span class="math inline">\(i\)</span> pojan pituus.</li>
+<li>Yhtä pitkillä isillä näyttää olevan monen mittaisia poikia.</li>
+<li>Mutta: Lyhyillä isillä näyttää olevan keskimäärin lyhyempiä poikia kuin pitkillä isillä ja pitkillä isillä näyttää olevan keskimäärin pitempiä poikia kuin lyhyillä isillä.</li>
+<li>Tällaisten tilastollisten riippuvuuksien analysoimista lineaaristen regressiomallien avulla tarkastellaan myöhemmin luvussa <a href="luku8.html#luku8">8</a> Yksinkertainen lineaarinen regressiomalli.</li>
+</ul>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:isatjapojat1"></span>
+<img src="images/Isien-poikien-pituudet-Mellin.jpg" alt="Isien ja poikien pituudet. Lähde: Mellin (2006)." width="75%" />
+<p class="caption">
+Kuvio 7.1: Isien ja poikien pituudet. Lähde: Mellin (2006).
+</p>
+</div>
 </div>
             </section>
 
@@ -263,7 +307,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

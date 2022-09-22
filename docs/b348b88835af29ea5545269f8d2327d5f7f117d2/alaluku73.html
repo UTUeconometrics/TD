@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.3 Tunnusluvut | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.3 Tunnusluvut | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-21" />
+<meta name="date" content="2022-09-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,6 +196,48 @@
             <section class="normal" id="section-">
 <div id="alaluku73" class="section level2 hasAnchor" number="7.3">
 <h2><span class="header-section-number">7.3</span> Tunnusluvut<a href="alaluku73.html#alaluku73" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Kahden välimatka- tai suhdeasteikollisen muuttujan havaintoarvojen parien muodostamaa jakaumaa voidaan karakterisoida seuraavilla tunnusluvuilla:</p>
+<ul>
+<li>Havaintoarvojen keskimääräistä sijaintia kuvataan aritmeettisilla keskiarvoilla.</li>
+<li>Havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä kuvataan keskihajonnoilla tai (otos-) variansseilla.</li>
+<li>Havaintoarvojen (lineaarista) riippuvuutta kuvataan otoskovarianssilla ja otoskorrelaatiokertoimella.</li>
+</ul></li>
+<li><p>Ts. oletetaan seuraavassa, että meillä on käytettävissä välimatka- tai suhdeasteikollisten muuttujien x ja y havaittuja arvoja <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> ja <span class="math inline">\(y_1, y_2, \ldots, y_n\)</span>. Oletetaan lisäksi, että havaintoarvot <span class="math inline">\(x_i\)</span> ja <span class="math inline">\(y_i\)</span> liittyvät samaan havaintoyksikköön kaikille <span class="math inline">\(i = 1, 2, \ldots, n\)</span> muodostaen havaintoyksikkökohtaisia havaintoarvojen pareja <span class="math inline">\((x_i, y_i)\)</span>.</p></li>
+<li><p>Käsitellään seuraavassa otoskeskiarvoa ja otosvarianssia. Olemme käsitelleet vastaavia estimaattoreita jo aiemmin luvussa <a href="luku6.html#luku6">6</a>.</p></li>
+<li><p>Havaintoarvojen <span class="math inline">\(y_1, y_2,\ldots, y_n\)</span> aritmeettinen keskiarvo on
+<span class="math display">\[
+  \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i.
+\]</span>
+Vastaavalla tavalla voidaan määritellä havaintojen <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> (aritmeettinen) keskiarvo <span class="math inline">\(\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i\)</span>.</p>
+<ul>
+<li>Havaintoarvojen pareista <span class="math inline">\((x_i, y_i ), \, i = 1, 2,\ldots,n\)</span> laskettujen aritmeettisten keskiarvojen, otoskeskiarvojen, <span class="math inline">\(\bar{x}\)</span> ka <span class="math inline">\(\bar{y}\)</span> muodostama lukupari (<span class="math inline">\(\bar{x}, \bar{y})\)</span> on havaintoarvojen parien muodostamien pisteiden painopiste.</li>
+<li>Havaintoarvojen aritmeettinen keskiarvo kuvaa havaintoarvojen keskimääräistä sijaintia.</li>
+<li>Osoittautuu, että (aritmeettinen) keskiarvo toimii tilastollisessa mielessä hyvänä estimaattorina satunnaismuuttujan <span class="math inline">\(Y\)</span> odotusarvolle.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<p><strong>Otosvarianssi</strong>: Havaintoarvojen <span class="math inline">\(y_1, y_2,\ldots, y_n\)</span> (otos-) varianssi (on todettu jo aiemmin) on muotoa
+<span class="math display">\[
+    S^2_y = \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2,
+\]</span>
+jossa <span class="math inline">\(\bar{y}\)</span> on on y-havaintoarvojen aritmeettinen keskiarvo.
+- Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) varianssi <span class="math inline">\(S^2_x\)</span>.
+- Havaintoarvojen varianssi mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.</p>
+<ul>
+<li><strong>(Otos-) keskihajonta</strong>: Havaintoarvojen <span class="math inline">\(y_1, y_2,\ldots, y_n\)</span> (otos-) keskihajonta
+<span class="math display">\[
+  s_y = \sqrt{s^2_y} = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2},
+\]</span>
+jossa <span class="math inline">\(\bar{y}\)</span> on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde (otosvarianssiin.
+<ul>
+<li>Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) keskihajonta <span class="math inline">\(s_x\)</span>.</li>
+<li>Havaintoarvojen keskihajonta mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
 </div>
             </section>
 
@@ -263,7 +305,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

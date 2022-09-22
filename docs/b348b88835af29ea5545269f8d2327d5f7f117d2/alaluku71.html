@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.1 Muuttujien väliset riippuvuudet | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.1 Muuttujien väliset riippuvuudet | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-21" />
+<meta name="date" content="2022-09-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,6 +196,51 @@
             <section class="normal" id="section-">
 <div id="alaluku71" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Muuttujien väliset riippuvuudet<a href="alaluku71.html#alaluku71" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Tieteellisen tutkimuksen tärkeimmät ja mielenkiintoisimmat kysymykset liittyvät tavallisesti <strong>tutkimuksen kohteena olevaa ilmiötä kuvaavien muuttujien välisiin riippuvuuksiin</strong>.</p></li>
+<li><p>Jos tilastollisen tutkimuksen kohteena olevaan ilmiöön liittyy useampia kuin yksi muuttuja, yhden muuttujan tilastolliset menetelmät antavat tavallisesti vain rajoittuneen kuvan ilmiöstä.</p></li>
+<li><p>Sovellusten kannalta ehkä merkittävin osa tilastotiedettä käsittelee kahden tai useamman muuttujan välisten riippuvuuksien kuvaamista ja mallintamista.</p></li>
+</ul>
+<div class="eblock kimmo">
+<p><strong>Esimerkkejä riippuvuustarkasteluista</strong></p>
+<ul>
+<li>Miten työttömyysaste Suomessa (% työvoimasta) riippuu BKT:n (bruttokansantuotteen) kasvuvauhdista Suomessa, Suomen viennin volyymista sekä BKT:n kasvuvauhdista muissa EU-maissa ja USA:ssa? Taloustieteilijät pyrkivät yleisesti löytämään muitakin lainalaisuuksia. Esimerkkejä tällaisista ovat riskin ja tuoton välinen suhde osakesijoittamisessa, hajauttaminen pienentää riskiä ja/tai alhainen korkotaso suosii sijoittamista pörssiin.<br />
+</li>
+<li>Miten alkoholin kulutus (l per capita vuodessa) riippuu alkoholijuomien hintatasosta, ihmisten käytettävissä olevista tuloista ja alkoholin saatavuudesta?<br />
+</li>
+<li>Miten todennäköisyys sairastua keuhkosyöpään riippuu tupakoinnin määrästä ja kestosta?<br />
+</li>
+<li>Miten vehnän hehtaarisato (t/ha) riippuu kesän keskilämpötilasta ja sademäärästä sekä maan muokkauksesta, lannoituksesta ja tuholaisten torjunnasta?<br />
+</li>
+<li>Miten betonin lujuus (kg/cm2) riippuu sen kuivumisajasta?<br />
+</li>
+<li>Miten kemiallisen aineen saanto (%) riippuu valmistusprosessissa käytettävästä lämpötilasta?</li>
+</ul>
+</div>
+<p><br />
+</p>
+<ul>
+<li><strong>Eksakti</strong> vs. <strong>tilastollinen riippuvuus</strong>
+<ul>
+<li>Tarkastelemme tässä esityksessä yksinkertaisuuden vuoksi pääasiassa kahden muuttujan välistä riippuvuutta:
+<ul>
+<li><ol style="list-style-type: lower-roman">
+<li>Muuttujien välinen riippuvuus on <strong>eksaktia</strong>, jos toisen arvot voidaan ennustaa tarkasti (täydellisesti) toisen saamien arvojen perusteella.</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-roman">
+<li>Muuttujien välinen riippuvuus on <strong>tilastollista</strong>, jos niiden välillä ei ole eksaktia riippuvuutta, mutta toisen muuttujan arvoja voidaan käyttää apuna toisen muuttujan arvojen mallintamisessa ja mahdollisesti myös ennustamisessa.</li>
+</ol></li>
+</ul></li>
+</ul></li>
+<li>Tilastollinen riippuvuus ja <strong>korrelaatio</strong>
+<ul>
+<li>Kahden muuttujan välistä (lineaarista) tilastollista riippuvuutta kutsutaan tilastotieteessä (tavallisesti) <strong>korrelaatioksi</strong>.</li>
+<li>Korrelaation eli (lineaarisen) tilastollisen riippuvuuden voimakkuutta mittaavia tilastollisia tunnuslukuja kutsutaan korrelaatiokertoimiksi.</li>
+<li>Korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle.</li>
+<li>Vaikka korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle, riippuvuuksia halutaan tavallisesti analysoida myös tarkemmin.</li>
+<li><strong>Regressioanalyysi</strong> on tilastollinen menetelmä, jossa jonkin, ns. selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, ns. selittävistä muuttujista pyritään mallintamaan regressiomalliksi kutsuttavalla tilastollisella mallilla. Käsittelemme johdatusta regressioanalyysiin vielä myöhemmin luvussa <a href="luku8.html#luku8">8</a>.</li>
+</ul></li>
+</ul>
 </div>
             </section>
 
@@ -263,7 +308,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
