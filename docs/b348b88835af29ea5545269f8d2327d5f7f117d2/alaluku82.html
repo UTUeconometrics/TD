@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8.2 Yhden selittäjän lineaarinen regressiomalli | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8.2 Yhden selittäjän lineaarinen regressiomalli | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-22" />
+<meta name="date" content="2022-09-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -165,8 +165,19 @@
 <li class="chapter" data-level="10" data-path="luku10.html"><a href="luku10.html"><i class="fa fa-check"></i><b>10</b> Aineisto- ja tutkimustyypit ja koeasetelmat</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="alaluku101.html"><a href="alaluku101.html"><i class="fa fa-check"></i><b>10.1</b> Tutkimustyypit</a></li>
-<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a></li>
-<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a></li>
+<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="alaluku102.html"><a href="alaluku102.html#poikittaistutkimus-tai-poikkileikkaustutkimus"><i class="fa fa-check"></i><b>10.2.1</b> <strong>Poikittaistutkimus</strong> tai <strong>poikkileikkaustutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.2" data-path="alaluku102.html"><a href="alaluku102.html#pitkittäistutkimus"><i class="fa fa-check"></i><b>10.2.2</b> <strong>Pitkittäistutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.3" data-path="alaluku102.html"><a href="alaluku102.html#kohorttitutkimus"><i class="fa fa-check"></i><b>10.2.3</b> <strong>Kohorttitutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.4" data-path="alaluku102.html"><a href="alaluku102.html#tapaus-verrokkitutkimus"><i class="fa fa-check"></i><b>10.2.4</b> <strong>Tapaus-verrokkitutkimus</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="alaluku103.html"><a href="alaluku103.html#rekisteriaineistot"><i class="fa fa-check"></i><b>10.3.1</b> Rekisteriaineistot</a></li>
+<li class="chapter" data-level="10.3.2" data-path="alaluku103.html"><a href="alaluku103.html#aikasarjat-ja-paneeliaineistot"><i class="fa fa-check"></i><b>10.3.2</b> Aikasarjat ja paneeliaineistot</a></li>
+<li class="chapter" data-level="10.3.3" data-path="alaluku103.html"><a href="alaluku103.html#survey--eli-haastattelu--tai-kyselytutkimus"><i class="fa fa-check"></i><b>10.3.3</b> Survey- eli haastattelu- tai kyselytutkimus</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="luku11.html"><a href="luku11.html"><i class="fa fa-check"></i><b>11</b> Tilastollisesta ennustamisesta</a>
 <ul>
@@ -196,6 +207,205 @@
             <section class="normal" id="section-">
 <div id="alaluku82" class="section level2 hasAnchor" number="8.2">
 <h2><span class="header-section-number">8.2</span> Yhden selittäjän lineaarinen regressiomalli<a href="alaluku82.html#alaluku82" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Yhden selittäjän lineaarinen regressiomalli pyrkii selittämään selitettävän muuttujan havaittujen arvojen vaihtelun yhden selittävän muuttujan havaittujen arvojen vaihtelun avulla. Se on siis yksinkertaisin esimerkki yhden yhtälön lineaarisista regressiomalleista, sillä se sisältää vain yhden selittävän muuttujan useamman sijaan.</p>
+<ul>
+<li>Selitettävää muuttujaa kutsutaan usein myös <em>vastemuuttujaksi, riippuvaksi muuttujaksi tai tulosmuuttujaksi</em></li>
+<li>Vastaavasti selittävää muuttujaa kutsutaan paikoin <em>selittäjäksi, riippumattomaksi muuttujaksi tai ennustavaksi muuttujaksi</em>.</li>
+</ul></li>
+<li><p>Tässä luvussa tarkastellaan lyhyesti ja tiivistetysti seuraavia yhden selittävän muuttujan lineaarisen regressiomallin soveltamiseen liittyviä kysymyksiä:</p>
+<ul>
+<li>Miten malli formuloidaan?</li>
+<li>Mitkä ovat mallin osat ja mitkä ovat osien tulkinnat?</li>
+<li>Mitkä ovat mallia koskevat oletukset?</li>
+<li>Miten mallin parametrit estimoidaan?</li>
+<li>Miten mallin parametreja koskevia hypoteeseja testataan?</li>
+<li>Miten mallin hyvyyttä mitataan?</li>
+<li>Miten mallilla ennustetaan?</li>
+</ul></li>
+<li><p>Oletetaan, että selitettävän muuttujan <span class="math inline">\(Y\)</span> havaittujen arvojen vaihtelua halutaan selittää selittävän muuttujan eli selittäjän <span class="math inline">\(x\)</span> havaittujen arvojen vaihtelun avulla. Tulkitaan selittävä muuttuja tässä kohtaa kiinteäksi eli sen arvot oletetaan tunnetuksi.<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></p></li>
+<li><p>Tehdään siis seuraavat oletukset:</p>
+<ol style="list-style-type: lower-roman">
+<li>Selitettävä muuttuja Y on suhdeasteikollinen satunnaismuuttuja.</li>
+<li>Selittävä muuttuja x on kiinteä eli ei-satunnainen muuttuja.</li>
+</ol></li>
+<li><p>Olkoot <span class="math inline">\(y_1, y_2,\ldots, y_n\)</span> selitettävän muuttujan <span class="math inline">\(Y\)</span> ja <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> selittävän muuttujan <span class="math inline">\(x\)</span> havaittuja arvoja. Oletetaan lisäksi, että havaintoarvot <span class="math inline">\(x_i\)</span> ja <span class="math inline">\(y_i\)</span> liittyvät
+samaan havaintoyksikköön kaikille <span class="math inline">\(i=1, 2, \ldots, n\)</span>.</p>
+<ul>
+<li>Matemaattisemmin tämä tarkoittaa sitä, että tällöin havaintoarvot muodostavat pisteitä 2-ulotteisessa <span class="math inline">\((x_i, Y_i)\)</span> avaruudessa.</li>
+</ul></li>
+<li><p>Oletetaan seuraavaksi, että havaintoarvojen <span class="math inline">\(y_i\)</span> ja <span class="math inline">\(x_i\)</span> välillä on <strong>lineaarinen tilastollinen riippuvuus</strong>, joka voidaan ilmaista yhtälöllä
+<span class="math display">\[
+Y_i = \beta_0 + \beta_1 x_i + \varepsilon_i, \quad i=1,\ldots, n.
+\]</span></p></li>
+<li><p>Tämä yhtälö määrittelee yhden selittäjän lineaarisen regressiomallin, jossa</p>
+<ul>
+<li><span class="math inline">\(y_i\)</span> on selitettävän muuttujan <span class="math inline">\(Y\)</span> satunnainen ja havaittu arvo havaintoyksikölle <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(x_i\)</span> selittävän muuttujan eli selittäjän <span class="math inline">\(x\)</span> ei-satunnainen ja havaittu arvo havaintoyksikölle <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(\varepsilon_i\)</span> on virtermi (ajoittain myös jäännöstermi) ja sen satunnainen ja ei-havaittu arvo havaintoyksikölle <span class="math inline">\(i\)</span></li>
+</ul></li>
+<li><p>Yhden selittäjän lineaarisessa regressiomallissa on seuraavat regressiokertoimet:</p>
+<ul>
+<li><span class="math inline">\(\beta_0\)</span> on vakioselittäjän regressiokerroin; <span class="math inline">\(\beta_0\)</span> on ei-satunnainen ja tuntematon vakio. Kerrointa <span class="math inline">\(\beta_0\)</span> kutsutaan myös vakioselittäjän regressiokertoimeksi. Nimitys johtuu siitä, että kerrointa <span class="math inline">\(\beta_0\)</span> vastaa keinotekoinen selittäjä, joka saa kaikille havaintoyksiköille <span class="math inline">\(i=1, 2, \ldots, n\)</span> vakioarvon 1.
+<ul>
+<li>Huomautus: Jatkossa esitettävät kaavat eivät välttämättä päde esitettävässä muodossa, jos mallissa ei ole vakiota (vakioselittäjää), joka yleensä automaattisesti lisätään mukaan malliin.</li>
+<li>Oletamme jatkossa, että mallissa on aina vakioselittäjä.</li>
+</ul></li>
+<li><span class="math inline">\(\beta_1\)</span> on selittäjän <span class="math inline">\(x\)</span> regressiokerroin; <span class="math inline">\(\beta_1\)</span> on ei-satunnainen ja tuntematon vakio
+<ul>
+<li>Huomautus: Regressiokertoimet <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> on oletettu samoiksi kaikille havaintoyksiköille <span class="math inline">\(i\)</span>.</li>
+</ul></li>
+</ul></li>
+<li><p>Virhetermeistä <span class="math inline">\(\varepsilon_i\)</span> tehtävät ns. standardioletukset ovat seuraavat:</p>
+<ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(\text{E}(\varepsilon_i) = 0, \, i=1,2,\ldots,n\)</span></li>
+<li>Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia: <span class="math inline">\(\mathrm{Var}(\varepsilon_i)= \sigma^2, \, i=1,\ldots,n\)</span>. Virhetermien <span class="math inline">\(\varepsilon_i\)</span> tässä yhteiseksi oletettua varianssia kutsutaan ajoittain jäännösvarianssiksi.</li>
+<li>Virhetermit ovat korreloimattomia: <span class="math inline">\(\mathrm{Cov}(\varepsilon_i, \varepsilon_l)=0, \, i \neq l\)</span></li>
+<li>Lisäksi tehdään ajoittain normaalisuusoletus eli että virhetermit ovat normaalisti jakautuneita: <span class="math inline">\(\varepsilon_i \thicksim \text{N}(0, \sigma^2), \, i=1,2,\ldots,n\)</span>.</li>
+</ol>
+<ul>
+<li>Huomautus: Oletus (iv) sisältää oletukset (i) ja (ii).</li>
+</ul></li>
+<li><p>Lineaarisen regressiomallin perusoletuksiin kuuluu se, että selittävien muuttujien arvot ovat ei-satunnaisia. On kuitenkin syytä korostaa (jo tässä vaiheessa), että selittävän muuttujan arvojen satunnaisuus ei kuitenkaan vaikuta mallin estimoinnissa ja testauksessa käytettäviin menetelmiin seuraavissa tilanteissa:</p>
+<ul>
+<li>Tavanomaiset mallista tehdyt oletukset pätevät (sopivasti modifioituina), kun siirrytään tarkastelemaan selittävän muuttujan ehdollista odotusarvoa selittäjien suhteen.</li>
+<li>Voidaan (ajoittain) olettaa, että selitettävä muuttuja ja selittäjät noudattavat yhdessä <strong>multinormaalijakaumaa</strong> eli aiemmin esitellyn yksiulotteisen normaalijakauman moniulotteista laajennusta.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Regressioanalyysille voidaan esittää kaksi asialoogisesti varsin erilaista lähtökohtaa, joilla on kuitenkin myös monia yhtymäkohtia:
+<ol style="list-style-type: lower-roman">
+<li>Ongelmat determinististen mallien sovittamisessa havaintoihin: Havainnoille esitetty malli ei sovi täsmällisesti kaikkiin havaintoihin. Tämä onkin osaltaan tilastollisen mallinnuksen yksi ominaispiirteistä: Täydellistä sopivuutta aineiston kanssa ei käytännössä koskaan saavuteta.</li>
+<li>Tavoitteena on moniulotteisen todennäköisyysjakauman regressiofunktion parametrien estimointi.</li>
+</ol>
+<ul>
+<li>Vaikka moniulotteisten todennäköisyysjakaumien regressiofunktiot ovat yleisesti epälineaarisia, lineaariset regressiomallit muodostavat tärkeän ja paljon sovelletun malliluokan.</li>
+</ul></li>
+<li>Koska regressiokertoimet <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> sekä jäännösvarianssi <span class="math inline">\(\sigma^2\)</span> ovat tavallisesti tuntemattomia, niiden arvot on <strong>estimoitava</strong> muuttujien <span class="math inline">\(x\)</span> ja <span class="math inline">\(Y\)</span> havaittuja arvoja <span class="math inline">\(x_i\)</span> ja <span class="math inline">\(y_i\)</span>, <span class="math inline">\(i=1,2, \ldots, n\)</span> käyttäen.
+<ul>
+<li>Regressiomallien parametrien estimointiin käytetään tavallisesti <strong>pienimmän neliösumman (PNS) menetelmää</strong>. Tämän estimointimenetelmän tarkemmat yksityiskohdat ovat myöhempien tilastotieteen kurssien asioita, mutta seuraavassa kuitenkin muutamia lähtökohtia mihin PNS-menetelmä perustuu yhden selittäjän mallin tapauksessa.</li>
+<li>Edellä esitellyn yhden selittäjän lineaarisen regressiomallin regressiokertoimien <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> estimaattorit määrätään minimoimalla virhetermien <span class="math inline">\(\varepsilon_i\)</span> neliösummaa</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+S(\beta_0,\beta_1) = \sum_{i=1}^{n} \varepsilon^2_i = \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i)^2
+\]</span>
+regressiokertoimien <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> suhteen.</p>
+<ul>
+<li><p>Tämä minimointi tapahtuu tavanomaiseen tapaan derivoimalla funktio <span class="math inline">\(S(\beta_0,\beta_1)\)</span> kertoimien <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> suhteen ja merkitsemällä derivaatat nolliksi:
+<span class="math display">\[\begin{align*}
+\frac{\partial S(\beta_0,\beta_1)}{\partial \beta_0} &amp;= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) = 0 \\
+\frac{\partial S(\beta_0,\beta_1)}{\partial \beta_1} &amp;= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) x_i = 0.
+\end{align*}\]</span></p></li>
+<li><p>Nämä ns. normaaliyhtälöt johtavat lopulta pienen sieventämisen jälkeen regressiokertoimien <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> pienimmän neliösumman (PNS-) estimaattoreihin (ja lopulta käytännössä analysoitavasta aineistosta laskettaviin PNS-estimaatteihin)
+<span class="math display">\[\begin{align*}
+\widehat{\beta}_0 &amp;= \bar{y} - \widehat{\beta}_1 \bar{x} \\
+\widehat{\beta}_1 &amp;= \frac{s_{xy}}{s^2_x} = r_{xy} \frac{s_y}{s_x}.
+\end{align*}\]</span></p></li>
+<li><p>Huomaa siis yhteys aiemmin keskusteltuihin <span class="math inline">\(x\)</span>:n ja <span class="math inline">\(y\)</span>:n otoskeskiarvioihin, keskihajontoihin sekä otoskovarianssiin ja korrelaatioon <span class="math inline">\(x\)</span>:n ja <span class="math inline">\(y\)</span>:n välillä.</p></li>
+<li><p>PNS-estimaattorit (estimaatit) <span class="math inline">\(\widehat{\beta}_0\)</span> ja <span class="math inline">\(\widehat{\beta}_1\)</span> määrittelevät suoran (matemaattisesti katsoen avaruudessa <span class="math inline">\(\mathbb{R}^2\)</span>):
+<span class="math display">\[
+\widehat{y} = \widehat{\beta}_0 + \widehat{\beta}_1 x,
+\]</span>
+jossa</p>
+<ul>
+<li><span class="math inline">\(\widehat{\beta}_0\)</span> on estimoidun regressiosuoran ja pistekuvion y-akselin leikkauspiste</li>
+<li><span class="math inline">\(\widehat{\beta}_1\)</span> on estimoidun regressiosuoran kulmakerroin</li>
+</ul></li>
+<li><p>Tämän suoran tuottamat arvot <span class="math inline">\(\widehat{y}_i\)</span> ovat käytännössä eri havainnoille <span class="math inline">\(y\)</span> saatavat <strong>sovitteet</strong> lineaariseen malliin perustuen.</p></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><p>Sijoitetaan regressiokertoimien <span class="math inline">\(\beta_0\)</span> ja <span class="math inline">\(\beta_1\)</span> PNS-estimaattoreiden lausekkeet estimoidun regressiosuoran lausekkeeseen. Tällöin estimoidun regressiosuoran yhtälö voidaan kirjoittaa muodossa:
+<span class="math display">\[
+y = \bar{y} + r_{xy} \frac{s_y}{s_x} (x-\bar{x})
+\]</span></p>
+<ul>
+<li>Yhtälöstä nähdään, että estimoitu regressiosuora kulkee havaintopisteiden <span class="math inline">\((x_i , y_i), i = 1,2, \ldots, n\)</span> painopisteen kautta. Voidaan siis nähdä, että estimoidulla regressiosuoralla on seuraavat ominaisuudet:
+<ul>
+<li><ol style="list-style-type: lower-roman">
+<li>Jos <span class="math inline">\(r_{xy} &gt; 0\)</span>, suora on nouseva.</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-roman">
+<li>Jos <span class="math inline">\(r_{xy} &lt; 0\)</span>, suora on laskeva.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-roman">
+<li>Jos <span class="math inline">\(r_{xy} = 0\)</span>, suora on vaakasuorassa.</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-roman">
+<li>Suora jyrkkenee (loivenee), jos</li>
+</ol>
+<ul>
+<li>korrelaation itseisarvo <span class="math inline">\(|r_{xy}|\)</span> kasvaa (pienenee)</li>
+<li>keskihajonta <span class="math inline">\(s_y\)</span> kasvaa (pienenee)</li>
+<li>keskihajonta <span class="math inline">\(s_x\)</span> pienenee (kasvaa)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Tarkastellaan vielä estimoituun lineaariseen malliin liittyviä sovitteita ja residuaaleja.
+<ul>
+<li>Estimoidun mallin <strong>sovitteet</strong> saadaan siis kaavalla</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\widehat{y}_i = \widehat{\beta}_0 + \widehat{\beta}_1 x_i, \quad i=1,2,\ldots,n.
+\]</span></p>
+<ul>
+<li>Vastaavasti <strong>residuaalit</strong> saadaan havaintojen ja sovitteiden erotuksena</li>
+</ul>
+<p><span class="math display">\[
+\widehat{\varepsilon}_i = y_i - \widehat{y}_i = y_i - \widehat{\beta}_0 - \widehat{\beta}_1 x_i, \quad i=1,2,\ldots,n.
+\]</span></p>
+<ul>
+<li>Sovite on estimoidun regressiosuoran yhtälön selitettävälle muuttujalle antama arvo havaintopisteessä <span class="math inline">\(x_i\)</span>. Vastaaavasti residuaali on selitettävän muuttujan havaitun arvon <span class="math inline">\(y_i\)</span> ja sovitteen <span class="math inline">\(\widehat{y}_i\)</span> eli estimoidun regressiosuoran yhtälön selitettävälle muuttujalle havaintopisteessä <span class="math inline">\(x_i\)</span> antaman arvon erotus.
+<ul>
+<li>Estimoitu regressiomalli selittää selitettävän muuttujan havaittujen arvojen vaihtelua sitä paremmin mitä lähempänä estimoidun mallin sovitteet <span class="math inline">\(\widehat{y}_i\)</span> ovat selitettävän muuttujan havaittuja arvoja <span class="math inline">\(y_i\)</span>.</li>
+<li>Yhtäpitävästi edellisen kanssa: Estimoitu regressiomalli selittää selitettävän muuttujan havaittujen arvojen <span class="math inline">\(y_i\)</span> vaihtelua sitä paremmin mitä pienempiä ovat estimoidun mallin residuaalit <span class="math inline">\(\widehat{\varepsilon}_i\)</span>.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>Liittyen vielä estimoidun mallin sopivuuden tarkasteluun, estimoidun regressiomallin hyvyyttä mitataan (tavanomaisesti) mm. <strong>selitysasteella</strong> (<span class="math inline">\(R^2)\)</span>.
+<ul>
+<li>Selitysasteen määritelmä perustuu ns. varianssianalyysihajotelmaan, jossa selitettävän muuttujan havaittujen arvojen vaihtelua kuvaava neliösumma on jaettu kahdeksi neliösummaksi, joista toinen kuvaa mallin ja havaintojen yhteensopivuutta ja toinen mallin ja havaintojen yhteensopimattomuutta.</li>
+<li>Selitysaste saa arvoja nollan ja ykkösen väliltä (kun lineaarisessa regressiomallissa on mukana vakiotermi). Arvo 0 tarkoittaa, että malli (yhden selittäjän mallissa käytännössä siis selittäjä <span class="math inline">\(x\)</span>) ei selitä <span class="math inline">\(y\)</span>:n lineaarista vaihtelua yhtään (yli vakiotermin). Ts. määritelty malli ei ollenkaan selitä selitettävän muuttujan havaittujen arvojen vaihtelua.</li>
+<li>Vastaavasti arvo <span class="math inline">\(R^2 = 1\)</span> tarkoittaa, että malli sopii täydellisesti aineistoon. Ts. selitysaste mittaa regressiomallin selittämää osuutta selitettävän muuttujan havaittujen arvojen kokonaisvaihtelusta.</li>
+<li>Korkea selitysasteen arvo on siis sinänsä usein toivottava lopputulos lineaarisen mallin käytön yhteydessä. Tämän liian mekaaninen tavoittelu johtaa kuitenkin ajoittain muihin ongelmiin, kuten <strong>ylisovittamiseen</strong> usean selittäjän lineaarisia malleja käsiteltäessä.</li>
+</ul></li>
+</ul>
+<p><br />
+</p>
+<div class="eblock kimmo">
+<p><strong>Esimerkki: isän ja poikien pituus, tarkemmin</strong></p>
+<p>Jatketaan isän ja heidän poikiensa pituutta koskevan aineiston tarkastelua. Periytyykö isän pituus heidän pojilleen? Käytännössä jo aiemmin tarkastelimme 300 havainnon havaintoaineistoa isän ja heidän poikiensa pituuksien muodostamista lukupareista.</p>
+<p>Estimoidun regressiosuoran yhtälö on (ks. oheinen kuva <a href="alaluku82.html#fig:isatjapojat2">8.1</a>)
+<span class="math display">\[
+y = 97.391+ 0.4707 x
+\]</span>
+Suoran kulmakertoimen <span class="math inline">\(\widehat{\beta}_1\)</span> = 0.4707 tulkinta on siis, että jos isä A on 1 cm pitempi kuin isä B, isä A:n poika on keskimäärin 0.4707 cm pitempi kuin isä B:n poika.</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:isatjapojat2"></span>
+<img src="images/Sovite-isien-poikien-pituudet-Mellin.jpg" alt="Isien ja poikien pituudet: regressiosuoran sovite" width="100%" />
+<p class="caption">
+Kuvio 8.1: Isien ja poikien pituudet: regressiosuoran sovite
+</p>
+</div>
+<p><br />
+</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="22">
+<li id="fn22"><p>Kyseinen muuttuja voidaan myös tulkita satunnaismuuttujana eikä seuraavat tarkastelut muutu ratkaisevasti tämän seurauksena. Tätä pohditaan vielä tarkemmin alempana.<a href="alaluku82.html#fnref22" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -263,7 +473,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

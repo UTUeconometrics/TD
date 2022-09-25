@@ -1,13 +1,13 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.22)  22 SEP 2022 19:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.25)  25 SEP 2022 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **TD2022.tex
 (./TD2022.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30> (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+L3 programming layer <2022-08-30> (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
@@ -22,20 +22,20 @@ File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen139
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count190
@@ -85,16 +85,16 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -128,15 +128,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2022-08-30 L3 programming layer (loader) 
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-08-30 L3 backend support: XeTeX
 \g__graphics_track_int=\count268
 \l__pdf_internal_box=\box53
@@ -145,15 +141,15 @@ File: l3backend-xetex.def 2022-08-30 L3 backend support: XeTeX
 \g__pdf_backend_link_int=\count271
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
 Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count272
 \l__fontspec_language_int=\count273
@@ -169,11 +165,11 @@ Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen148
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -181,15 +177,43 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \g__um_fonts_used_int=\count284
 \l__um_primecount_int=\count285
 \g__um_primekern_muskip=\muskip17
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+)
+\MT@toks=\toks22
+\MT@tempbox=\box54
+\MT@count=\count287
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
+LaTeX Info: Redefining \leftprotrusion on input line 1046.
+LaTeX Info: Redefining \rightprotrusion on input line 1056.
+LaTeX Info: Redefining \textls on input line 1234.
+\MT@outer@kern=\dimen151
+LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
+\MT@listname@count=\count288
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2022/06/23 v3.0f Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 236.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+\stockwidth=\dimen152
+\stockheight=\dimen153
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
@@ -198,594 +222,487 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2022/06/12 v2.14 Predefined colors according to SVG 1.1 (UK)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
 File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
-\c@section@level=\count286
-)
-\@linkdim=\dimen151
-\Hy@linkcounter=\count287
-\Hy@pagecounter=\count288
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count289
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
-)
-Package hyperref Info: Option `unicode' set `true' on input line 4045.
-Package hyperref Info: Hyper figures OFF on input line 4162.
-Package hyperref Info: Link nesting OFF on input line 4167.
-Package hyperref Info: Hyper index ON on input line 4170.
-Package hyperref Info: Plain pages OFF on input line 4177.
-Package hyperref Info: Backreferencing OFF on input line 4182.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4408.
-\c@Hy@tempcnt=\count290
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4746.
-\XeTeXLinkMargin=\dimen152
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
-))
-\Fld@menulength=\count291
-\Field@Width=\dimen153
-\Fld@charsize=\dimen154
-Package hyperref Info: Hyper figures OFF on input line 6024.
-Package hyperref Info: Link nesting OFF on input line 6029.
-Package hyperref Info: Hyper index ON on input line 6032.
-Package hyperref Info: backreferencing OFF on input line 6039.
-Package hyperref Info: Link coloring OFF on input line 6044.
-Package hyperref Info: Link coloring with OCG OFF on input line 6049.
-Package hyperref Info: PDF/A mode OFF on input line 6054.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
-)
-Package hyperref Info: Driver (autodetected): hxetex.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2022-06-20 v7.00s Hyperref driver for XeTeX
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-)
-\pdfm@box=\box54
-\c@Hy@AnnotLevel=\count295
-\HyField@AnnotCount=\count296
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
-)
-\Hy@SectionHShift=\skip52
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip53
-\LTright=\skip54
-\LTpre=\skip55
-\LTpost=\skip56
-\LTchunksize=\count299
-\LTcapwidth=\dimen155
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count289
+\LTcapwidth=\dimen154
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
 \LT@lastfoot=\box58
 \LT@gbox=\box59
-\LT@cols=\count300
-\LT@rows=\count301
-\c@LT@tables=\count302
-\c@LT@chunks=\count303
-\LT@p@ftn=\toks22
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+\LT@cols=\count290
+\LT@rows=\count291
+\c@LT@tables=\count292
+\c@LT@chunks=\count293
+\LT@p@ftn=\toks23
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen156
-\lightrulewidth=\dimen157
-\cmidrulewidth=\dimen158
-\belowrulesep=\dimen159
-\belowbottomsep=\dimen160
-\aboverulesep=\dimen161
-\abovetopsep=\dimen162
-\cmidrulesep=\dimen163
-\cmidrulekern=\dimen164
-\defaultaddspace=\dimen165
-\@cmidla=\count304
-\@cmidlb=\count305
-\@aboverulesep=\dimen166
-\@belowrulesep=\dimen167
-\@thisruleclass=\count306
-\@lastruleclass=\count307
-\@thisrulewidth=\dimen168
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+\heavyrulewidth=\dimen155
+\lightrulewidth=\dimen156
+\cmidrulewidth=\dimen157
+\belowrulesep=\dimen158
+\belowbottomsep=\dimen159
+\aboverulesep=\dimen160
+\abovetopsep=\dimen161
+\cmidrulesep=\dimen162
+\cmidrulekern=\dimen163
+\defaultaddspace=\dimen164
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen165
+\@belowrulesep=\dimen166
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen167
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen169
+\col@sep=\dimen168
 \ar@mcellbox=\box60
-\extrarowheight=\dimen170
-\NC@list=\toks23
-\extratabsurround=\skip57
-\backup@length=\skip58
+\extrarowheight=\dimen169
+\NC@list=\toks24
+\extratabsurround=\skip56
+\backup@length=\skip57
 \ar@cellbox=\box61
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count308
-\calc@Bcount=\count309
-\calc@Adimen=\dimen171
-\calc@Bdimen=\dimen172
-\calc@Askip=\skip59
-\calc@Bskip=\skip60
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count310
-\calc@Cskip=\skip61
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count311
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+\calc@Ccount=\count300
+\calc@Cskip=\skip60
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box62
-\fn@width=\dimen173
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+\fn@width=\dimen172
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
-\Gin@req@height=\dimen174
-\Gin@req@width=\dimen175
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip62
-\thm@postskip=\skip63
-\thm@headsep=\skip64
-\dth@everypar=\toks29
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks30
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks30
-\XKV@tempa@toks=\toks31
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
 )
-\XKV@depth=\count312
+\XKV@depth=\count301
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/collectbox/collectbox.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box63
 )
-\tc@llx=\dimen176
-\tc@lly=\dimen177
-\tc@urx=\dimen178
-\tc@ury=\dimen179
+\tc@llx=\dimen175
+\tc@lly=\dimen176
+\tc@urx=\dimen177
+\tc@ury=\dimen178
 Package trimclip Info: Using driver 'tc-xetex.def'.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen180
-\adjbox@Height=\dimen181
-\adjbox@Depth=\dimen182
-\adjbox@Totalheight=\dimen183
-\adjbox@pwidth=\dimen184
-\adjbox@pheight=\dimen185
-\adjbox@pdepth=\dimen186
-\adjbox@ptotalheight=\dimen187
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+\adjbox@Width=\dimen179
+\adjbox@Height=\dimen180
+\adjbox@Depth=\dimen181
+\adjbox@Totalheight=\dimen182
+\adjbox@pwidth=\dimen183
+\adjbox@pheight=\dimen184
+\adjbox@pdepth=\dimen185
+\adjbox@ptotalheight=\dimen186
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box64
-\sift@deathcycles=\count313
-\@vwid@loff=\dimen188
-\@vwid@roff=\dimen189
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/awesomebox/awesomebox.sty
+\sift@deathcycles=\count302
+\@vwid@loff=\dimen187
+\@vwid@roff=\dimen188
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/awesomebox/awesomebox.sty
 Package: awesomebox 2019/07/27 v0.6
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5-utex-helper.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/fontawesome5-utex-helper.sty
 Package: fontawesome5-utex-helper 2022/05/02 v5.15.4 uTeX helper for fontawesome5
 LaTeX Font Info:    Trying to load font information for TU+fontawesomefree on input line 69.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomefree.fd)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomefree.fd)
 LaTeX Font Info:    Trying to load font information for TU+fontawesomebrands on input line 70.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomebrands.fd)))
-\aweboxleftmargin=\skip65
-\aweboxcontentwidth=\skip66
-\aweboxvskip=\skip67
-\aweboxsignraise=\skip68
-\aweboxrulewidth=\skip69
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome5/tufontawesomebrands.fd)))
+\aweboxleftmargin=\skip64
+\aweboxcontentwidth=\skip65
+\aweboxvskip=\skip66
+\aweboxsignraise=\skip67
+\aweboxrulewidth=\skip68
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\aweboxlinewidthvar=\skip70
-\aweboxlinewidthref=\skip71
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+\aweboxlinewidthvar=\skip69
+\aweboxlinewidthref=\skip70
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip72
-\fb@frw=\dimen190
-\fb@frh=\dimen191
-\FrameRule=\dimen192
-\FrameSep=\dimen193
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+\OuterFrameSep=\skip71
+\fb@frw=\dimen189
+\fb@frh=\dimen190
+\FrameRule=\dimen191
+\FrameSep=\dimen192
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen194
-\pgfutil@tempdimb=\dimen195
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box65
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen196
-\pgf@y=\dimen197
-\pgf@xa=\dimen198
-\pgf@ya=\dimen199
-\pgf@xb=\dimen256
-\pgf@yb=\dimen257
-\pgf@xc=\dimen258
-\pgf@yc=\dimen259
-\pgf@xd=\dimen260
-\pgf@yd=\dimen261
+\pgf@x=\dimen195
+\pgf@y=\dimen196
+\pgf@xa=\dimen197
+\pgf@ya=\dimen198
+\pgf@xb=\dimen199
+\pgf@yb=\dimen256
+\pgf@xc=\dimen257
+\pgf@yc=\dimen258
+\pgf@xd=\dimen259
+\pgf@yd=\dimen260
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count314
-\c@pgf@countb=\count315
-\c@pgf@countc=\count316
-\c@pgf@countd=\count317
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count318
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\c@pgf@counta=\count303
+\c@pgf@countb=\count304
+\c@pgf@countc=\count305
+\c@pgf@countd=\count306
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
+\pgf@sys@id@count=\count307
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-xetex.def
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
 File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )
-\pgfsys@objnum=\count319
-))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+\pgfsys@objnum=\count308
+))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count320
-\pgfsyssoftpath@bigbuffer@items=\count321
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count309
+\pgfsyssoftpath@bigbuffer@items=\count310
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen262
-\pgfmath@count=\count322
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen261
+\pgfmath@count=\count311
 \pgfmath@box=\box66
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count323
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count312
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen263
-\pgf@picmaxx=\dimen264
-\pgf@picminy=\dimen265
-\pgf@picmaxy=\dimen266
-\pgf@pathminx=\dimen267
-\pgf@pathmaxx=\dimen268
-\pgf@pathminy=\dimen269
-\pgf@pathmaxy=\dimen270
-\pgf@xx=\dimen271
-\pgf@xy=\dimen272
-\pgf@yx=\dimen273
-\pgf@yy=\dimen274
-\pgf@zx=\dimen275
-\pgf@zy=\dimen276
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen262
+\pgf@picmaxx=\dimen263
+\pgf@picminy=\dimen264
+\pgf@picmaxy=\dimen265
+\pgf@pathminx=\dimen266
+\pgf@pathmaxx=\dimen267
+\pgf@pathminy=\dimen268
+\pgf@pathmaxy=\dimen269
+\pgf@xx=\dimen270
+\pgf@xy=\dimen271
+\pgf@yx=\dimen272
+\pgf@yy=\dimen273
+\pgf@zx=\dimen274
+\pgf@zy=\dimen275
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen277
-\pgf@path@lasty=\dimen278
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen276
+\pgf@path@lasty=\dimen277
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen279
-\pgf@shorten@start@additional=\dimen280
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen278
+\pgf@shorten@start@additional=\dimen279
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box67
 \pgf@hbox=\box68
 \pgf@layerbox@main=\box69
-\pgf@picture@serial@count=\count324
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgf@picture@serial@count=\count313
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen281
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen280
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen282
-\pgf@pt@y=\dimen283
-\pgf@pt@temp=\dimen284
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen281
+\pgf@pt@y=\dimen282
+\pgf@pt@temp=\dimen283
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen285
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen284
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen286
-\pgf@sys@shading@range@num=\count325
-\pgf@shadingcount=\count326
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen285
+\pgf@sys@shading@range@num=\count314
+\pgf@shadingcount=\count315
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box70
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box71
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen287
-\pgf@nodesepend=\dimen288
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen286
+\pgf@nodesepend=\dimen287
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
+\every@verbatim=\toks43
+\verbatim@line=\toks44
 \verbatim@in@stream=\read3
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \tcb@titlebox=\box72
 \tcb@upperbox=\box73
 \tcb@lowerbox=\box74
 \tcb@phantombox=\box75
-\c@tcbbreakpart=\count327
-\c@tcblayer=\count328
-\c@tcolorbox@number=\count329
+\c@tcbbreakpart=\count316
+\c@tcblayer=\count317
+\c@tcolorbox@number=\count318
 \tcb@temp=\box76
 \tcb@temp=\box77
 \tcb@temp=\box78
 \tcb@temp=\box79
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
-\c@tcbrastercolumn=\count330
-\c@tcbrasterrow=\count331
-\c@tcbrasternum=\count332
-\c@tcbraster=\count333
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+\c@tcbrastercolumn=\count319
+\c@tcbrasterrow=\count320
+\c@tcbrasternum=\count321
+\c@tcbraster=\count322
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen289
-\pgffor@skip=\dimen290
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen288
+\pgffor@skip=\dimen289
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count334
-\pgfplotmarksize=\dimen291
+\pgf@plot@mark@count=\count323
+\pgfplotmarksize=\dimen290
 )
-\tikz@lastx=\dimen292
-\tikz@lasty=\dimen293
-\tikz@lastxsaved=\dimen294
-\tikz@lastysaved=\dimen295
-\tikz@lastmovetox=\dimen296
-\tikz@lastmovetoy=\dimen297
-\tikzleveldistance=\dimen298
-\tikzsiblingdistance=\dimen299
+\tikz@lastx=\dimen291
+\tikz@lasty=\dimen292
+\tikz@lastxsaved=\dimen293
+\tikz@lastysaved=\dimen294
+\tikz@lastmovetox=\dimen295
+\tikz@lastmovetoy=\dimen296
+\tikzleveldistance=\dimen297
+\tikzsiblingdistance=\dimen298
 \tikz@figbox=\box80
 \tikz@figbox@bg=\box81
 \tikz@tempbox=\box82
 \tikz@tempbox@bg=\box83
-\tikztreelevel=\count335
-\tikznumberofchildren=\count336
-\tikznumberofcurrentchild=\count337
-\tikz@fig@count=\count338
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count339
-\pgfmatrixcurrentcolumn=\count340
-\pgf@matrix@numberofcolumns=\count341
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
 )
-\tikz@expandcount=\count342
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count331
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 \tcb@waterbox=\box84
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/pdfcol.sty
-Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
 Package pdfcol Info: pdfTeX's color stacks are not available.
 \tcb@testbox=\box85
 \tcb@totalupperbox=\box86
 \tcb@totallowerbox=\box87
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen300
-\tcb@lowerfitdim=\dimen301
-\tcb@upperfitdim=\dimen302
-\tcb@cur@hbadness=\count343
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+\tcbfitdim=\dimen299
+\tcb@lowerfitdim=\dimen300
+\tcb@upperfitdim=\dimen301
+\tcb@cur@hbadness=\count332
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count344
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count333
 \lst@gtempboxa=\box88
-\lst@token=\toks46
-\lst@length=\count345
-\lst@currlwidth=\dimen303
-\lst@column=\count346
-\lst@pos=\count347
-\lst@lostspace=\dimen304
-\lst@width=\dimen305
-\lst@newlines=\count348
-\lst@lineno=\count349
-\lst@maxwidth=\dimen306
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+\lst@token=\toks47
+\lst@length=\count334
+\lst@currlwidth=\dimen302
+\lst@column=\count335
+\lst@pos=\count336
+\lst@lostspace=\dimen303
+\lst@width=\dimen304
+\lst@newlines=\count337
+\lst@lineno=\count338
+\lst@maxwidth=\dimen305
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count350
-\lst@skipnumbers=\count351
+\c@lstnumber=\count339
+\lst@skipnumbers=\count340
 \lst@framebox=\box89
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
 Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/shellesc.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count352
+\c@tcblisting=\count341
 ))
 Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. Library `listings` is loaded instead. on input line 29.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
 Library (tcolorbox): 'tcbexternal.code.tex' version '5.1.1'
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
 Library (tcolorbox): 'tcbmagazine.code.tex' version '5.1.1'
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
 Library (tcolorbox): 'tcbvignette.code.tex' version '5.1.1'
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '5.1.1'
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/blindtext/blindtext.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count353
-\c@Blindtext=\count354
-\c@blind@countparstart=\count355
-\blind@countxx=\count356
-\blindtext@numBlindtext=\count357
-\blind@countyy=\count358
-\c@blindlist=\count359
-\c@blindlistlevel=\count360
-\c@blindlist@level=\count361
-\blind@listitem=\count362
-\c@blind@listcount=\count363
-\c@blind@levelcount=\count364
-\blind@mathformula=\count365
-\blind@Mathformula=\count366
-\c@blind@randomcount=\count367
-\c@blind@randommax=\count368
-\c@blind@pangramcount=\count369
-\c@blind@pangrammax=\count370
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
+\c@blindtext=\count342
+\c@Blindtext=\count343
+\c@blind@countparstart=\count344
+\blind@countxx=\count345
+\blindtext@numBlindtext=\count346
+\blind@countyy=\count347
+\c@blindlist=\count348
+\c@blindlistlevel=\count349
+\c@blindlist@level=\count350
+\blind@listitem=\count351
+\c@blind@listcount=\count352
+\c@blind@levelcount=\count353
+\blind@mathformula=\count354
+\blind@Mathformula=\count355
+\c@blind@randomcount=\count356
+\c@blind@randommax=\count357
+\c@blind@pangramcount=\count358
+\c@blind@pangrammax=\count359
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -794,135 +711,235 @@ Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/09/17 3.80 The Babel package
-\babel@savecnt=\count371
-\U@D=\dimen307
+\babel@savecnt=\count360
+\U@D=\dimen306
 \l@unhyphenated=\language5
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def))
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read4
-\bbl@dirlevel=\count372
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-finnish/finnish.ldf
+\bbl@dirlevel=\count361
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-finnish/finnish.ldf
 Language: finnish 2021/02/06 v1.3s Finnish support from the babel system
 Package babel Info: Making " an active character on input line 85.
-)) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/fi/babel-finnish.tex
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/fi/babel-finnish.tex
 Package babel Info: Importing font and identification data for finnish
 (babel)             from babel-fi.ini. Reported on input line 11.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/overpic/overpic.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/overpic/overpic.sty
 Package: overpic 2020/02/22 1.3 picture overlays (RN)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eepic/epic.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count373
-\d@lta=\count374
-\@delta=\dimen308
-\@@delta=\dimen309
-\@gridcnt=\count375
-\@joinkind=\count376
-\@dotgap=\dimen310
-\@ddotgap=\dimen311
-\@x@diff=\count377
-\@y@diff=\count378
-\x@diff=\dimen312
-\y@diff=\dimen313
+\@@multicnt=\count362
+\d@lta=\count363
+\@delta=\dimen307
+\@@delta=\dimen308
+\@gridcnt=\count364
+\@joinkind=\count365
+\@dotgap=\dimen309
+\@ddotgap=\dimen310
+\@x@diff=\count366
+\@y@diff=\count367
+\x@diff=\dimen311
+\y@diff=\dimen312
 \@dotbox=\box90
-\num@segments=\count379
-\num@segmentsi=\count380
+\num@segments=\count368
+\num@segmentsi=\count369
 \@datafile=\read5
 )
 \OVP@box=\box91
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/epsfig.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen314
-\epsfysize=\dimen315
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count381
-\decimalpart=\count382
+\epsfxsize=\dimen313
+\epsfysize=\dimen314
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count370
+\decimalpart=\count371
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip73
-\multirow@cntb=\count383
-\multirow@dima=\skip74
-\bigstrutjot=\dimen316
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen317
-\WF@size=\dimen318
-\c@WF@wrappedlines=\count384
+\multirow@colwidth=\skip72
+\multirow@cntb=\count372
+\multirow@dima=\skip73
+\bigstrutjot=\dimen315
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen316
+\WF@size=\dimen317
+\c@WF@wrappedlines=\count373
 \WF@box=\box92
-\WF@everypar=\toks47
+\WF@everypar=\toks48
 Package: wrapfig 2003/01/31  v 3.6
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count385
-\float@exts=\toks48
+\c@float@type=\count374
+\float@exts=\toks49
 \float@box=\box93
-\@float@everytoks=\toks49
+\@float@everytoks=\toks50
 \@floatcapt=\box94
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
-\everycr=\toks50
-\minrowclearance=\skip75
-\rownum=\count386
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+\everycr=\toks51
+\minrowclearance=\skip74
+\rownum=\count375
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
-\c@taburow=\count387
-\tabu@nbcols=\count388
-\tabu@cnt=\count389
-\tabu@Xcol=\count390
-\tabu@alloc=\count391
-\tabu@nested=\count392
-\tabu@target=\dimen319
-\tabu@spreadtarget=\dimen320
-\tabu@naturalX=\dimen321
-\tabucolX=\dimen322
-\tabu@Xsum=\dimen323
-\extrarowdepth=\dimen324
-\abovetabulinesep=\dimen325
-\belowtabulinesep=\dimen326
-\tabustrutrule=\dimen327
-\tabu@thebody=\toks51
-\tabu@footnotes=\toks52
+\c@taburow=\count376
+\tabu@nbcols=\count377
+\tabu@cnt=\count378
+\tabu@Xcol=\count379
+\tabu@alloc=\count380
+\tabu@nested=\count381
+\tabu@target=\dimen318
+\tabu@spreadtarget=\dimen319
+\tabu@naturalX=\dimen320
+\tabucolX=\dimen321
+\tabu@Xsum=\dimen322
+\extrarowdepth=\dimen323
+\abovetabulinesep=\dimen324
+\belowtabulinesep=\dimen325
+\tabustrutrule=\dimen326
+\tabu@thebody=\toks52
+\tabu@footnotes=\toks53
 \tabu@box=\box95
 \tabu@arstrutbox=\box96
 \tabu@hleads=\box97
 \tabu@vleads=\box98
-\tabu@cellskip=\skip76
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+\tabu@cellskip=\skip75
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box99
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
-\TPTL@width=\skip77
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\TPTL@width=\skip76
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box100
 \UL@hyphenbox=\box101
-\UL@skip=\skip78
-\UL@hook=\toks53
-\UL@height=\dimen328
-\UL@pe=\count393
-\UL@pixel=\dimen329
+\UL@skip=\skip77
+\UL@hook=\toks54
+\UL@height=\dimen327
+\UL@pe=\count382
+\UL@pixel=\dimen328
 \ULC@box=\box102
 Package: ulem 2019/11/18
-\ULdepth=\dimen330
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+\ULdepth=\dimen329
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen331
-\c@nlinenum=\count394
-\TeXr@lab=\toks54
-) (c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+\rotheadsize=\dimen330
+\c@nlinenum=\count383
+\TeXr@lab=\toks55
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip79
-\bibsep=\skip80
+\bibhang=\skip78
+\bibsep=\skip79
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count395
-) (./TD2022.aux)
+\c@NAT@ctr=\count384
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count385
+)
+\@linkdim=\dimen331
+\Hy@linkcounter=\count386
+\Hy@pagecounter=\count387
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count388
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count389
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen332
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count390
+\Field@Width=\dimen333
+\Fld@charsize=\dimen334
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+\Hy@abspage=\count391
+\c@Item=\count392
+\c@Hfootnote=\count393
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2022-09-22 v7.00t Hyperref driver for XeTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box103
+\c@Hy@AnnotLevel=\count394
+\HyField@AnnotCount=\count395
+\Fld@listcount=\count396
+\c@bookmark@seq@number=\count397
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip80
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 188.
+(./TD2022.aux)
 \openout1 = `TD2022.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
@@ -1177,12 +1194,25 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `bold' on input line 194.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 194.
+LaTeX Info: Redefining \microtypecontext on input line 194.
+Package microtype Info: Applying patch `item' on input line 194.
+Package microtype Info: Applying patch `toc' on input line 194.
+Package microtype Info: Applying patch `eqnum' on input line 194.
+Package microtype Info: Applying patch `footnote' on input line 194.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
+)
+\c@lstlisting=\count398
 Package hyperref Info: Link coloring ON on input line 194.
 (./TD2022.out) (./TD2022.out)
 \@outlinefile=\write4
 \openout4 = `TD2022.out'.
 
-\c@lstlisting=\count396
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 196.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1190,7 +1220,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 196.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 196.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -1206,19 +1236,23 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 196.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 196.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 196.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 196.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 196.
-(c:/Users/rvhrih/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1260,7 +1294,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ]
 Luku 1.
 [11]
-Underfull \hbox (badness 1629) in paragraph at lines 376--378
+Underfull \hbox (badness 1715) in paragraph at lines 376--378
 \TU/lmr/m/n/10 mallintamisessa ja päättelyssä. Tilastolliseen malliin liittyy
  []
 
@@ -1279,16 +1313,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--491
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--522
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
@@ -1299,11 +1323,6 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 551--553
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 551--553
 
  []
@@ -1323,16 +1342,7 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 18 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
  []
 
-[18]
-Underfull \hbox (badness 3088) in paragraph at lines 673--674
-[]\TU/lmr/m/n/10 Paradigmojen ei pidä ajatella olevan kaavoihin kangistuneita
- []
-
-[19]
-Underfull \hbox (badness 2285) in paragraph at lines 702--703
-[]\TU/lmr/m/n/10 Tieteellisten menetelmien käyttöä ohjaa tutkimusalakohtai-
- []
-
+[18] [19]
 File: images/Arkitieto-tieteellinentieto.jpg Graphic file (type bmp)
 <images/Arkitieto-tieteellinentieto.jpg>
 
@@ -1361,22 +1371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 837--840
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 837--840
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 855--857
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 855--857
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 866--868
 
  []
 
@@ -1386,9 +1381,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 866--868
  []
 
 [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 24 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
  []
@@ -1396,22 +1388,12 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 [24]
 File: images/Are-women-really-more-talkative.jpg Graphic file (type bmp)
 <images/Are-women-really-more-talkative.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 966--968
+
+ []
+
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 966--968
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 966--968
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 987--990
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 987--990
 
  []
@@ -1441,17 +1423,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1069--1071
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
+
+ []
+
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1122--1123
 
  []
@@ -1466,11 +1443,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1130--1132
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1132
-
- []
-
 [29]
 Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 30 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
@@ -1481,11 +1453,6 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 ]
 Luku 3.
 [31] [32] [33]
-Underfull \hbox (badness 1484) in paragraph at lines 1288--1290
-\TU/lmr/m/n/10 usein graafisiksi esityksiksi ja tunnusluvuiksi sekä tilastollisten
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1294--1295
 
  []
@@ -1562,7 +1529,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1549--1551
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 1585--1586
+Underfull \hbox (badness 2189) in paragraph at lines 1585--1586
 []\TU/lmr/m/n/10 Tästä huolimatta datatieteilijöiden käyttämät mallinnusme-
  []
 
@@ -1580,6 +1547,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1664--1665
  []
 
 [42]
+Underfull \hbox (badness 1675) in paragraph at lines 1674--1676
+\TU/lmr/m/n/10 kimuksen edetessä ja sille tyypillistä on hypoteesittomuus,
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 1674--1676
+\TU/lmr/m/n/10 eli tutkimus on tarkoitus aloittaa mahdollisimman vähin
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1687--1689
 
  []
@@ -1612,6 +1589,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1772--1774
 
  []
 
+
+Underfull \hbox (badness 1132) in paragraph at lines 1783--1785
+[]\TU/lmr/m/n/10 Tiheysfunktiot kuvaavat jonkin satunnaismuuttujan (satunnaisil-
+ []
+
 [45]
 File: images/perustuu.jpg Graphic file (type bmp)
 <images/perustuu.jpg>
@@ -1623,6 +1605,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1800--1802
 
 Underfull \hbox (badness 10000) in paragraph at lines 1800--1802
 
+ []
+
+
+Overfull \hbox (0.20998pt too wide) in paragraph at lines 1811--1812
+\TU/lmr/m/n/10 villa) kursseilla [][]TILM3553 Todennäköisyyslaskennan peruskurssi pää-
  []
 
 File: images/teoreettinen.jpg Graphic file (type bmp)
@@ -1658,7 +1645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1925--1927
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 1945--1946
+Underfull \hbox (badness 3514) in paragraph at lines 1945--1946
 []\TU/lmr/m/n/10 Tämä kysymys on kuitenkin pitkälti tieteenfilosofinen ja
  []
 
@@ -1683,7 +1670,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1972--1974
  []
 
 [50] [51]
-Underfull \hbox (badness 1377) in paragraph at lines 2100--2101
+Underfull \hbox (badness 1436) in paragraph at lines 2100--2101
 []\TU/lmr/m/n/10 Sovellusaloja, joilla tilastotieteen soveltaminen on muodostunut
  []
 
@@ -1713,12 +1700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2288--2289
 
  []
 
-[58]
-Underfull \hbox (badness 1552) in paragraph at lines 2334--2336
-[]\TU/lmr/m/n/10 Yksinkertaisimmillaan esimerkiksi yksinkertaiseen satunnaisotan-
- []
-
-[59]
+[58] [59]
 Underfull \hbox (badness 10000) in paragraph at lines 2381--2382
 
  []
@@ -1729,17 +1711,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 2420--2421
  []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 2429--2430
+Underfull \hbox (badness 6944) in paragraph at lines 2429--2430
 []\TU/lmr/m/n/10 Bayesilainen tilastotiede ulottaa todennäköisyyskäsityksen, eli tn-
  []
 
 [61]
-Underfull \hbox (badness 1824) in paragraph at lines 2475--2476
+Underfull \hbox (badness 1917) in paragraph at lines 2475--2476
 []\TU/lmr/m/n/10 Vastaavasti esimerkiksi potilaan jonotusaika päivystyksessä voi
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 2483--2485
+Underfull \hbox (badness 1057) in paragraph at lines 2483--2485
+[]\TU/lmr/bx/n/10 Diskreetin satunnaismuuttujan \TU/lmr/m/n/10 jakauma voidaan usein esit-
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 2483--2485
 \TU/lmr/m/n/10 tää taulukkomuodossa. Eri arvojen todennäköisyydet muodos-
  []
 
@@ -1749,7 +1736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2483--2485
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 2483--2485
+Underfull \hbox (badness 6592) in paragraph at lines 2483--2485
 \TU/lmr/m/n/10 (\TU/lmr/bx/n/10 pistetodennäköisyysfunktion\TU/lmr/m/n/10 ), jota voidaan havainnollistaa
  []
 
@@ -1776,6 +1763,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2592--2593
  []
 
 [65]
+Underfull \hbox (badness 2285) in paragraph at lines 2639--2641
+[]\TU/lmr/m/n/10 Jos satunnaismuuttuja $[]$ noudattaa \TU/lmr/bx/n/10 normaalijakaumaa \TU/lmr/m/n/10 odotusar-
+ []
+
 File: TD2022_files/figure-latex/normaalijakauma-1.pdf Graphic file (type pdf)
 <use TD2022_files/figure-latex/normaalijakauma-1.pdf>
 [66]
@@ -1797,7 +1788,7 @@ Underfull \hbox (badness 1735) in paragraph at lines 2739--2741
 File: images/Miesten_lkm.jpg Graphic file (type bmp)
 <images/Miesten_lkm.jpg>
 
-Underfull \hbox (badness 1755) in paragraph at lines 2811--2812
+Underfull \hbox (badness 2050) in paragraph at lines 2811--2812
 []\TU/lmr/m/n/10 Odotusarvo ja varianssi ovat Poisson-jakauman tapauksessa samat:
  []
 
@@ -1820,23 +1811,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/populaatiostahavaintoon.jpg Graphic file (type bmp)
 <images/populaatiostahavaintoon.jpg>
 
-Overfull \hbox (12.58002pt too wide) in alignment at lines 2937--2941
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.58002pt too wide) in alignment at lines 2941--2947
- [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2959--2961
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2961--2963
-
+Overfull \hbox (2.6592pt too wide) in paragraph at lines 2946--2947
+[]\TU/lmr/m/n/10 tilastomuuttuja 
  []
 
 
@@ -1845,57 +1821,67 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [74]
-Underfull \hbox (badness 1097) in paragraph at lines 2963--2965
+Underfull \hbox (badness 10000) in paragraph at lines 2973--2975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2975--2977
+
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 2977--2979
 \TU/lmr/m/n/10 Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2963--2965
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2979
 
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 2965--2966
+Underfull \hbox (badness 3260) in paragraph at lines 2979--2980
 []\TU/lmr/m/n/10 Emme vielä tällä kurssilla käsittele tilastografiikan esittämis-
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 2965--2966
+Underfull \hbox (badness 1014) in paragraph at lines 2979--2980
 \TU/lmr/m/n/10 tä tarkemmin. Muun muassa tilastollisen päättelyn peruskurssi
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 2965--2966
+Underfull \hbox (badness 5077) in paragraph at lines 2979--2980
 \TU/lmr/m/n/10 (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 2965--2966
+Underfull \hbox (badness 5756) in paragraph at lines 2979--2980
 \TU/lmr/m/n/10 havainnollistamista. Kuvat helpottavat aineiston tulkitsemista
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2969--2970
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2984
 
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 2986--2988
+Underfull \hbox (badness 2012) in paragraph at lines 3000--3002
 []\TU/lmr/m/n/10 Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 2986--2988
+Underfull \hbox (badness 4673) in paragraph at lines 3000--3002
 \TU/lmr/m/n/10 aikuisväestön mielipiteistä, havaintoyksikköinä ovat aikuis-
  []
 
 [75]
-Underfull \hbox (badness 10000) in paragraph at lines 3001--3002
+Underfull \hbox (badness 10000) in paragraph at lines 3015--3016
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3041--3042
+Underfull \hbox (badness 10000) in paragraph at lines 3055--3056
 
  []
 
@@ -1905,7 +1891,7 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [76]
-Underfull \hbox (badness 10000) in paragraph at lines 3059--3060
+Underfull \hbox (badness 10000) in paragraph at lines 3073--3074
 
  []
 
@@ -1917,17 +1903,15 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 [78] [79]
 File: images/otanta.jpg Graphic file (type bmp)
 <images/otanta.jpg>
-File: images/tuloerot.jpg Graphic file (type bmp)
-<images/tuloerot.jpg>
-
-Underfull \vbox (badness 1043) has occurred while \output is active []
-
 
 Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 80 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
  []
 
-[80] [81]
+[80]
+File: images/tuloerot.jpg Graphic file (type bmp)
+<images/tuloerot.jpg>
+[81]
 File: images/luottamus.jpg Graphic file (type bmp)
 <images/luottamus.jpg>
 
@@ -1936,12 +1920,12 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [82] [83]
-Underfull \hbox (badness 10000) in paragraph at lines 3424--3425
+Underfull \hbox (badness 10000) in paragraph at lines 3438--3439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3443--3444
+Underfull \hbox (badness 10000) in paragraph at lines 3457--3458
 []\TU/lmr/bx/n/10 Laatueroasteikko/luokitteluasteikko \TU/lmr/m/n/10 (nominaaliasteikko):
  []
 
@@ -1951,22 +1935,22 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [84]
-Underfull \hbox (badness 1122) in paragraph at lines 3472--3474
+Underfull \hbox (badness 1394) in paragraph at lines 3486--3488
 \TU/lmr/m/n/10 kien tai havaintoarvojen ero. Esimerkiksi: Lämpötilan mit-
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 3472--3474
+Underfull \hbox (badness 6775) in paragraph at lines 3486--3488
 \TU/lmr/m/n/10 taaminen esim. celcius-asteina. Pystymme numeroarvoina
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 3472--3474
+Underfull \hbox (badness 2302) in paragraph at lines 3486--3488
 \TU/lmr/m/n/10 ilmoittamaan onko tänään lämpimämpi, yhtä lämmin vai
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 3476--3478
+Underfull \hbox (badness 3568) in paragraph at lines 3490--3492
 \TU/lmr/m/n/10 valittavissa. Samoin voidaan valita käytettävä mittayksik-
  []
 
@@ -1976,11 +1960,6 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [86] [87]
-Underfull \hbox (badness 2486) in paragraph at lines 3603--3604
-[]\TU/lmr/m/n/10 Satunnaistaminen poistaa otannasta valikoitumisharhan, sillä
- []
-
-
 Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 88 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
  []
@@ -1994,7 +1973,7 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 3813.
+(amsmath)                 on input line 3827.
 
 
 Overfull \hbox (57.11224pt too wide) has occurred while \output is active
@@ -2002,17 +1981,20 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [92] [93]
+Underfull \vbox (badness 1917) has occurred while \output is active []
+
+
 Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 94 \TU/lmr/m/sl/10 LUKU 5.  TILASTOLLISET AINEISTOT, NIIDEN KERÄÄMINEN JA MITTAAMINEN
  []
 
 [94] [95]
-Overfull \hbox (55.04pt too wide) in paragraph at lines 3970--3971
+Overfull \hbox (55.04pt too wide) in paragraph at lines 3984--3985
 []\TU/lmr/m/n/10 Ryväsotannan voi suorittaa \TU/lmr/bx/n/10 yksi\TU/lmr/m/n/10 - tai \TU/lmr/bx/n/10 kaksivaiheisena \TU/lmr/m/n/10 (\TU/lmr/bx/n/10 yksiasteinen/kaksiasteinen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3980--3982
+Underfull \hbox (badness 10000) in paragraph at lines 3994--3996
 
  []
 
@@ -2022,12 +2004,12 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [96] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 4072--4074
+Underfull \hbox (badness 10000) in paragraph at lines 4086--4088
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4072--4074
+Underfull \hbox (badness 10000) in paragraph at lines 4086--4088
 
  []
 
@@ -2046,12 +2028,17 @@ Overfull \hbox (62.11224pt too wide) has occurred while \output is active
 ]
 Luku 6.
 
-Underfull \hbox (badness 2253) in paragraph at lines 4138--4139
+Underfull \hbox (badness 2253) in paragraph at lines 4152--4153
 []\TU/lmr/m/n/10 Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on
  []
 
+
+Underfull \hbox (badness 2875) in paragraph at lines 4157--4159
+[]\TU/lmr/m/n/10 Merkitään satunnaismuuttujaa isolla kirjaimella, $[]$, ja satun-
+ []
+
 [101]
-Underfull \hbox (badness 10000) in paragraph at lines 4160--4161
+Underfull \hbox (badness 10000) in paragraph at lines 4174--4175
 
  []
 
@@ -2061,7 +2048,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [102]
-Underfull \hbox (badness 1418) in paragraph at lines 4192--4193
+Underfull \hbox (badness 1418) in paragraph at lines 4206--4207
 \TU/lmr/m/n/10 ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen
  []
 
@@ -2076,7 +2063,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [104]
-Underfull \hbox (badness 10000) in paragraph at lines 4316--4317
+Underfull \hbox (badness 10000) in paragraph at lines 4330--4331
 
  []
 
@@ -2088,7 +2075,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [106]
-Underfull \hbox (badness 7081) in paragraph at lines 4382--4383
+Underfull \hbox (badness 7081) in paragraph at lines 4396--4397
 []\TU/lmr/m/n/10 Estimaattoreiden kehittäminen erilaisten tilastollisten mallien
  []
 
@@ -2098,7 +2085,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [108]
-Underfull \hbox (badness 10000) in paragraph at lines 4521--4522
+Underfull \hbox (badness 10000) in paragraph at lines 4535--4536
 
  []
 
@@ -2108,7 +2095,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [110]
-Underfull \hbox (badness 10000) in paragraph at lines 4647--4648
+Underfull \hbox (badness 10000) in paragraph at lines 4661--4662
 []\TU/lmr/m/n/10 Suhteellisen frekvenssin otosjakauman perusteella kyllä-
  []
 
@@ -2126,12 +2113,12 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 File: images/gaussian-distribution.jpg Graphic file (type bmp)
 <images/gaussian-distribution.jpg>
 
-Overfull \hbox (56.51125pt too wide) in paragraph at lines 4869--4870
+Overfull \hbox (56.51125pt too wide) in paragraph at lines 4883--4884
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4876--4877
+Underfull \hbox (badness 10000) in paragraph at lines 4890--4891
 
  []
 
@@ -2144,12 +2131,12 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 File: images/NjaT-jakauma.jpg Graphic file (type bmp)
 <images/NjaT-jakauma.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 4911--4912
+Underfull \hbox (badness 10000) in paragraph at lines 4925--4926
 
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 4928--4932
+Underfull \hbox (badness 1436) in paragraph at lines 4942--4946
 []\TU/lmr/m/n/10 Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien perusteella
  []
 
@@ -2159,7 +2146,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [118] [119]
-Underfull \hbox (badness 10000) in paragraph at lines 5007--5008
+Underfull \hbox (badness 10000) in paragraph at lines 5021--5022
 
  []
 
@@ -2169,7 +2156,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [120]
-Underfull \hbox (badness 10000) in paragraph at lines 5089--5090
+Underfull \hbox (badness 10000) in paragraph at lines 5103--5104
 
  []
 
@@ -2179,27 +2166,22 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [122]
-Underfull \hbox (badness 10000) in paragraph at lines 5183--5184
+Underfull \hbox (badness 10000) in paragraph at lines 5197--5198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5203--5204
+Underfull \hbox (badness 10000) in paragraph at lines 5217--5218
 
  []
 
 [123]
-Underfull \hbox (badness 4303) in paragraph at lines 5215--5216
-\TU/lmr/m/n/10 rimme muodostamaan mahdollisimman lyhyen luottamusvälin,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5227--5229
+Underfull \hbox (badness 10000) in paragraph at lines 5241--5243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5227--5229
+Underfull \hbox (badness 10000) in paragraph at lines 5241--5243
 
  []
 
@@ -2218,62 +2200,52 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 ]
 Luku 7.
 [127]
-Underfull \hbox (badness 4013) in paragraph at lines 5317--5319
-\TU/lmr/m/n/10 takin lainalaisuuksia. Esimerkkejä tällaisista ovat riskin ja
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 5317--5319
-\TU/lmr/m/n/10 tuoton välinen suhde osakesijoittamisessa, hajauttaminen pie-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5317--5319
+Underfull \hbox (badness 10000) in paragraph at lines 5331--5333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5319--5321
+Underfull \hbox (badness 10000) in paragraph at lines 5333--5335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5321--5323
+Underfull \hbox (badness 10000) in paragraph at lines 5335--5337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5323--5325
+Underfull \hbox (badness 10000) in paragraph at lines 5337--5339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5325--5327
+Underfull \hbox (badness 10000) in paragraph at lines 5339--5341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5332--5333
+Underfull \hbox (badness 10000) in paragraph at lines 5346--5347
 
  []
 
 [128]
-Underfull \hbox (badness 1237) in paragraph at lines 5381--5381
+Underfull \hbox (badness 1237) in paragraph at lines 5395--5395
 []\TU/lmr/bx/n/14.4 Kahden muuttujan havaintoaineiston ku-
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 5385--5387
+Underfull \hbox (badness 3189) in paragraph at lines 5399--5401
 []\TU/lmr/m/n/10 Kuten yhden muuttujan havaintoaineistojen tapauksessa, lähtökoh-
  []
 
 [129]
-Underfull \hbox (badness 10000) in paragraph at lines 5408--5409
+Underfull \hbox (badness 10000) in paragraph at lines 5422--5423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5428--5429
+Underfull \hbox (badness 10000) in paragraph at lines 5442--5443
 
  []
 
@@ -2281,32 +2253,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 5428--5429
 File: images/Isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
 <images/Isien-poikien-pituudet-Mellin.jpg>
 [131]
-Underfull \hbox (badness 1472) in paragraph at lines 5478--5480
-\TU/lmr/m/n/10 ja $[][][] [][][] [] [] [][]$. Oletetaan lisäksi, että havaintoarvot $[][]$ ja $[][]$ liit-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5499--5500
+Underfull \hbox (badness 10000) in paragraph at lines 5513--5514
 
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 5521--5523
+Underfull \hbox (badness 1259) in paragraph at lines 5535--5537
 []\TU/lmr/m/n/10 Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen
  []
 
 [132]
-Underfull \hbox (badness 10000) in paragraph at lines 5527--5528
+Underfull \hbox (badness 10000) in paragraph at lines 5541--5542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5559--5560
+Underfull \hbox (badness 10000) in paragraph at lines 5580--5581
 
  []
 
 [133]
-Underfull \hbox (badness 2932) in paragraph at lines 5614--5616
+Underfull \hbox (badness 3260) in paragraph at lines 5625--5627
 \TU/lmr/m/n/10 jossa $[][]$ on $[]$- ja $[]$-havaintoarvojen otoskovarianssi, $[][]$ on $[]$-
  []
 
@@ -2326,39 +2293,269 @@ Underfull \vbox (badness 3439) has occurred while \output is active []
 
 ]
 Luku 8.
-[141] [142
-
-]
-Luku 9.
-[143]
-Overfull \hbox (10.86224pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 144 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+[141]
+Underfull \hbox (badness 6575) in paragraph at lines 5883--5884
+[]\TU/lmr/m/n/10 Epälineaariset regressiomallit muodostavat oman tilastollisten
  []
 
-[144
+[142] [143]
+Underfull \hbox (badness 4391) in paragraph at lines 6039--6041
+[]\TU/lmr/m/n/10 Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia:
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 6052--6053
+\TU/lmr/m/n/10 tässä vaiheessa), että selittävän muuttujan arvojen satunnaisuus ei
+ []
+
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6064
+
+ []
+
+[145]
+Underfull \hbox (badness 10000) in paragraph at lines 6134--6135
+
+ []
+
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 6194--6195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6236--6237
+
+ []
+
+[147]
+Underfull \hbox (badness 10000) in paragraph at lines 6256--6257
+
+ []
+
+File: images/Sovite-isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
+<images/Sovite-isien-poikien-pituudet-Mellin.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 6280--6281
+
+ []
+
+
+Underfull \vbox (badness 6078) has occurred while \output is active []
+
+[148] [149] [150]
+Luku 9.
+[151
 
 ]
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 152 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[152]
+Underfull \hbox (badness 10000) in paragraph at lines 6412--6413
+
+ []
+
+[153]
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 154 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[154] [155]
+Underfull \hbox (badness 10000) in paragraph at lines 6599--6600
+
+ []
+
+
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 156 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[156]
+Underfull \hbox (badness 10000) in paragraph at lines 6669--6670
+
+ []
+
+[157]
+Overfull \hbox (10.86224pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 158 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
+ []
+
+[158]
 Luku 10.
-[145] [146
+File: images/tutkimusasetelma.jpg Graphic file (type bmp)
+<images/tutkimusasetelma.jpg>
+[159
+
+] [160]
+Underfull \hbox (badness 10000) in paragraph at lines 6808--6809
+
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 6831--6833
+[]\TU/lmr/bx/n/10 Korrelaatiotutkimuksissa \TU/lmr/m/n/10 pyritään löytämään ilmiöiden väli-
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 6831--6833
+\TU/lmr/m/n/10 siä yhteyksiä tutkimalla kohdejoukkoa kokonaisuutena, jolloin
+ []
+
+[161]
+File: images/co2.jpg Graphic file (type bmp)
+<images/co2.jpg>
+[162] [163]
+Underfull \hbox (badness 2237) in paragraph at lines 6969--6971
+[]\TU/lmr/m/n/10 Tällöin mahdolliset erot parantuneiden suhteellisissa
+ []
+
+[164]
+Underfull \hbox (badness 10000) in paragraph at lines 7004--7005
+
+ []
+
+[165]
+Underfull \hbox (badness 1436) in paragraph at lines 7058--7059
+[]\TU/lmr/bx/n/10 Esimerkki: raskauden keskeytyksen ja rintasyövän välinen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7074--7075
+
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 7096--7097
+\TU/lmr/bx/n/10 strategiaan \TU/lmr/m/n/10 sen mukaan, miten niissä ryhmitellään tilastoyksiköitä:
+ []
+
+[166] [167]
+File: images/cross.jpg Graphic file (type bmp)
+<images/cross.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7161--7162
+
+ []
+
+[168]
+File: images/long.jpg Graphic file (type bmp)
+<images/long.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7205--7206
+
+ []
+
+[169]
+Underfull \hbox (badness 10000) in paragraph at lines 7241--7242
+
+ []
+
+[170]
+File: images/hiroshima.jpg Graphic file (type bmp)
+<images/hiroshima.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7300--7301
+
+ []
+
+
+Underfull \vbox (badness 6708) has occurred while \output is active []
+
+[171] [172]
+File: images/tali.jpg Graphic file (type bmp)
+<images/tali.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7365--7366
+
+ []
+
+[173]
+File: images/block.jpg Graphic file (type bmp)
+<images/block.jpg>
+
+Underfull \hbox (badness 1205) in paragraph at lines 7408--7410
+[]\TU/lmr/m/n/10 Kolmoissokkoutetussa tutkimuksessa edes havaintojen analysoija
+ []
+
+[174] [175] [176]
+Underfull \hbox (badness 1292) in paragraph at lines 7553--7555
+[]\TU/lmr/m/n/10 Tieteellinen tutkimustarkoitus luokitellaan kuitenkin poikkeusta-
+ []
+
+[177]
+File: images/diab.jpg Graphic file (type bmp)
+<images/diab.jpg>
+[178]
+File: images/rekist.jpg Graphic file (type bmp)
+<images/rekist.jpg>
+[179] [180]
+Underfull \hbox (badness 1184) in paragraph at lines 7748--7749
+\TU/lmr/m/n/10 kuussa eniten elintarvikkeiden, polttonesteiden ja viihde-
+ []
+
+[181]
+File: images/kuluttaja.jpg Graphic file (type bmp)
+<images/kuluttaja.jpg>
+[182]
+File: images/time.jpg Graphic file (type bmp)
+<images/time.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7808--7809
+
+ []
+
+[183]
+Underfull \hbox (badness 2635) in paragraph at lines 7831--7832
+\TU/lmr/m/n/10 kuukausittain tai vuosittain, ja yksittäisen ajanhetken
+ []
+
+[184] [185] [186
 
 ]
 Luku 11.
-[147] [148
+
+Underfull \hbox (badness 2119) in paragraph at lines 7911--7912
+\TU/lmr/m/n/10 timotautikuolleisuuteen tai ylipainon vaikutus leikkauksen jälkeisiin
+ []
+
+[187] [188]
+Underfull \hbox (badness 2582) in paragraph at lines 7966--7968
+\TU/lmr/m/n/10 tännössä useinmiten mm. vastemuuttujan luonteen perusteella
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7978--7979
+
+ []
+
+[189] [190]
+Underfull \hbox (badness 10000) in paragraph at lines 8024--8025
+
+ []
+
+[191] [192]
+Luku 12.
+[193
 
 ]
-Luku 12.
+Underfull \hbox (badness 10000) in paragraph at lines 8094--8095
+
+ []
+
 No file TD2022.bbl.
-[149] (./TD2022.aux)
+[194] (./TD2022.aux)
 Package rerunfilecheck Info: File `TD2022.out' has not changed.
 (rerunfilecheck)             Checksum: BAFC047D4B164C7027E46EF4FBD9ED8D;14167.
  ) 
 Here is how much of TeX's memory you used:
- 40098 strings out of 477729
- 818031 string characters out of 5841365
- 1344056 words of memory out of 5000000
- 60394 multiletter control sequences out of 15000+600000
+ 42284 strings out of 477729
+ 860571 string characters out of 5841456
+ 1414813 words of memory out of 5000000
+ 62540 multiletter control sequences out of 15000+600000
  502059 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,12n,121p,1020b,1026s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,121p,1061b,1028s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TD2022.pdf (149 pages).
+Output written on TD2022.pdf (194 pages).
