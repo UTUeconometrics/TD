@@ -51,7 +51,7 @@
 
 - Havaintoarvojen jakaumaa voidaan kuvailla ja esitellä tiivistämällä havaintoarvoihin sisältyvä informaatio sopivaan muotoon:
   - Havaintoarvojen jakaumaa kokonaisuutena voidaan kuvata sopivasti valituilla graafisilla esityksillä.
-  - Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \@ref(luku6) ).
+  - Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \@ref(luku6)).
 
 - Koska useampi- kuin kaksiulotteisten kuvioiden tekeminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.
 
@@ -141,9 +141,9 @@ jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde (o
 - Tarkastellaan välimatka- tai suhdeasteikollisten satunnaismuuttujien $X$ ja $Y$ (Pearsonin tulomomentti-) korrelaatiokerrointa $\rho_{XY}$ ja sen estimointia.
 
 - Tällä kurssilla emme tarkastele tarkemmin tilastollisia testejä korrelaatiokertoimelle $\rho_{XY}$, kuten:
-  -Yhden otoksen testi korrelaatiokertoimelle
-  -Korrelaatiokertoimien vertailutesti
-  -Korreloimattomuuden testaaminen
+  - Yhden otoksen testi korrelaatiokertoimelle
+  - Korrelaatiokertoimien vertailutesti
+  - Korreloimattomuuden testaaminen
 
 - Jälleen kerran, lisätietoja ja tarkempia yksityiskohtia moniulotteisista satunnaismuuttujista ja jakaumista tarkastellaan todennäköisyyslaskennan kursseilla.
 
@@ -183,12 +183,7 @@ $$
 kutsutaan ajoittain siis __Pearsonin korrelaatiokertoimeksi__ (tulomomenttikorrelaatiokertoimeksi).
   - Pearsonin korrelaatiokerroin $\rho_{XY}$ mittaa satunnaismuuttujien $X$ ja $Y$ lineaarisen riippuvuuden voimakkuutta. Ts. sm:jien välistä (lineaarista) yhteyttä.
 
-- Pearsonin (tulomomentti-) korrelaatiokerrointa 
-$$
-r_{XY} = \frac{s_{XY}}{s_X s_Y}
-$$
-voidaan estimoida Pearsonin __otoskorrelaatiokertoimella__ (ks. alla). 
-  - Estimaattori $r_{XY}$ voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
+- Pearsonin korrelaatiokerrointa voidaan estimoida Pearsonin __otoskorrelaatiokertoimella__.
 
 ::: {.defblock .miko data-latex="{}"}
 **Pearsonin otoskorrelaatiokerroin**
@@ -205,8 +200,10 @@ Ts. havaintoarvojen pareista $(x_i, y_i), i = 1, 2, \ldots, n$ laskettu Pearsoni
 $$
 r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}} , 
 $$
-jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-havaintoarvojen keskihajonta ja $s_y$ on y-havaintoarvojen keskihajonta.
+jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-havaintoarvojen keskihajonta ja $s_y$ on y-havaintoarvojen keskihajonta. 
 :::
+
+- Otoskorrelaatiokertoimen estimaattori voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
 
 - Otoskovarianssi:
   - Huomaa, että $x$- ja $y$-havaintoarvojen otoskovarianssit niiden itsensä kanssa ovat niiden variansseja.
@@ -224,21 +221,23 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
   - Jos $r_{xy} = 0$, niin $x$- ja $y$-havaintoarvojen välillä ei voi olla eksaktia lineaarista riippuvuutta.
   - Vaikka $r_{xy} = 0$, $x$- ja $y$-havaintoarvojen välillä saattaa silti olla jopa eksakti epälineaarinen riippuvuus.
 
-- __Havainnollistus__: Alapuolella esitettävät kuviot havainnollistavat kahden muuttujan havaittujen arvojen ($n = 30$) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
+- __Havainnollistus__: Alapuolella esitettävät kuviot (Kuva \@ref(fig:korrelaatioMellin)) havainnollistavat kahden muuttujan havaittujen arvojen ($n = 30$) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
 
 \FloatBarrier
 
-```{r korrelaatioMellin, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006).", fig.align='center', out.width = "75%"}
+```{r korrelaatioMellin, echo=FALSE, fig.cap="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006).", fig.align='center', out.width = "90%"}
 knitr::include_graphics("images/Pearson-korr-Mellin.jpg")
 ```
 
-- Toinen havainnollistus: Ks. seuraavasta [linkistä](http://guessthecorrelation.com/) lisää havainnollistuksia. 
+- Ks. seuraavasta [linkistä](http://guessthecorrelation.com/) lisää havainnollistuksia. 
   - _Guess the correlation_ pelissä pääset arvioimaan esitettävän pisteparven korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: http://guessthecorrelation.com/
+
+\FloatBarrier
 
 - __Kausaalisuus__
   - Muuttujan $x$ arvojen muutos vaikuttaaa muuttujan $y$ arvoihin (syy-vaikutussuhde), jos seuraavat kolme ehtoa täyttyvät:
     - muuttujan $x$ muutos esiintyy ajallisesti ennen y:n muutosta
-    - muuttujissa $x$ ja $y$ tapahtuvien muuttujien välillä on riippuvuutta
+    - muuttujissa $x$ ja $y$ tapahtuvien muutosten välillä on riippuvuutta
     - muuttujassa $y$ tapahtunutta muutosta ei voida selittää millään muilla tekjöillä
 
 - Kausaalisuhteita selvitettäessä on tunnettava etukäteen ilmiötä koskevat aiemmat teoriat ja tutkimukset tarkasti, jotta voidaan ottaa huomioon ilmiöön vaikuttavat tekijät

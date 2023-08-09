@@ -8,11 +8,12 @@ Seuraavassa vielä joitain tilastotiedettä parhaillaan koskevia kehitystrendej�
   - Havaitsemme informaatiota (osin) ja valikoivasti subjektiivisesti. Luulemme haluavamme lisää informaatiota, kun todellisuudessa haluamme tietoa (ts. signaaleja kun vastaavasti kasvava määrä kohinaa yrittää vaikeuttaa tätä signaalin erottamista kohinasta).
 - __Laskennallisuus__ kasvaa. Tietokoneiden laskentakapasiteetti nousee vaikkakin suhteellinen kasvu ei ehkä olekaan enää niin suurta mitä muutamat viime vuosikymmenet.
 - Osin laskennallisuuteen liittyvä __koneoppimisen__ kehittyminen ja sen "rajatieteiden" yhteyteen integroituneet käytännöt ja menetelmäkehitystyö tulee jatkumaan. 
-- __Analyysien automatisointi__: Tilastolliset ohjelmat alkanevat jatkossa tulkita tuloksia osin automaattisesti. Mihin tarvitaan tilastotieteilijää? Kokonaisvaltaiseen tutkimusprosessin valvontaan?
+  - Toisaalta "perinteiselle" tilastotieteelle on edelleen myöskin vahva oma roolinsa monilla eri tieteenaloilla.
+- __Analyysien automatisointi__: Tilastolliset ohjelmat alkanevat jatkossa tulkita tuloksia osin automaattisesti. Mihin tarvitaan tilastotieteilijää? Kokonaisvaltaiseen tutkimusprosessin valvontaan(?)
   - Osin edelliseen liittyen jo nyt ja jatkossa luultavasti yhä enemmän korostuu se, että melkein kuka vaan voi tehdä tilastollisia analyysejä. Niin valmiita paketteja jne. on jo saatavilla. "Tilastotieteellinen faktantsekkaus" noussee vahvemmin esille eli tilastollisten menetelmien käyttäjän on sittenkin edelleen kyettävät arvioimaan ovatko tulokset uskottavia ja vapaita ilmeisistä hankaluuksista.
-- __Poikkitieteellisyys__ tulee entisestäänkin vahvistumaan. Ts. substanttitietouden ja tilastotieteen yhdistäminen ja sen tärkeys ei tule ainakaan vähenemään. Sivuaineopintoja kannattaa siis ottaa.
+- __Poikkitieteellisyys__ tulee entisestäänkin vahvistumaan. Ts. substanttitietouden ja tilastotieteen yhdistäminen ja sen tärkeys ei tule ainakaan vähenemään. Sivuaineopintoja kannattaa siis käydä ja ottaa opinto-ohjelmaan.
   - Tämän lisäksi kokonaisvaltaisesti tilastotieteen ytimen osaajien osaamista tulla kysymään jatkossakin.
 
 \
 
-- Oheisten huomioiden ohella lopuksi on syytä korostaa tilastotieteen opiskelun näkökulmasta, että oikotietä ei ole! __Oikaista siis ei voi__: Ensin on rakennettava vahva tilastollisen ajattelun ja menetelmien perusta ( __alkaen todennäköisyyslaskennasta ja tilastollisesta päättelystä__), jotta myöhemmin voi kehittyä ja omata todellisia kykyjä ottaa vastaan monia jo varsin monimutkaisia tilastollisia menetelmiä!
+- Oheisten huomioiden ohella lopuksi on syytä korostaa tilastotieteen opiskelun näkökulmasta, että oikotietä ei ole! __Oikaista siis ei voi__: Ensin on rakennettava vahva tilastollisen ajattelun ja menetelmien perusta (__alkaen todennäköisyyslaskennasta ja tilastollisesta päättelystä__), jotta myöhemmin voi kehittyä ja omata todellisia kykyjä ottaa vastaan monia jo varsin monimutkaisia tilastollisia menetelmiä!

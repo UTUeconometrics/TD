@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8.1 Johdatus regressioanalyysin ideaan | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8.1 Johdatus regressioanalyysin ideaan | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-22" />
+<meta name="date" content="2022-09-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -165,8 +165,19 @@
 <li class="chapter" data-level="10" data-path="luku10.html"><a href="luku10.html"><i class="fa fa-check"></i><b>10</b> Aineisto- ja tutkimustyypit ja koeasetelmat</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="alaluku101.html"><a href="alaluku101.html"><i class="fa fa-check"></i><b>10.1</b> Tutkimustyypit</a></li>
-<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a></li>
-<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a></li>
+<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="alaluku102.html"><a href="alaluku102.html#poikittaistutkimus-tai-poikkileikkaustutkimus"><i class="fa fa-check"></i><b>10.2.1</b> <strong>Poikittaistutkimus</strong> tai <strong>poikkileikkaustutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.2" data-path="alaluku102.html"><a href="alaluku102.html#pitkittäistutkimus"><i class="fa fa-check"></i><b>10.2.2</b> <strong>Pitkittäistutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.3" data-path="alaluku102.html"><a href="alaluku102.html#kohorttitutkimus"><i class="fa fa-check"></i><b>10.2.3</b> <strong>Kohorttitutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.4" data-path="alaluku102.html"><a href="alaluku102.html#tapaus-verrokkitutkimus"><i class="fa fa-check"></i><b>10.2.4</b> <strong>Tapaus-verrokkitutkimus</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="alaluku103.html"><a href="alaluku103.html#rekisteriaineistot"><i class="fa fa-check"></i><b>10.3.1</b> Rekisteriaineistot</a></li>
+<li class="chapter" data-level="10.3.2" data-path="alaluku103.html"><a href="alaluku103.html#aikasarjat-ja-paneeliaineistot"><i class="fa fa-check"></i><b>10.3.2</b> Aikasarjat ja paneeliaineistot</a></li>
+<li class="chapter" data-level="10.3.3" data-path="alaluku103.html"><a href="alaluku103.html#survey--eli-haastattelu--tai-kyselytutkimus"><i class="fa fa-check"></i><b>10.3.3</b> Survey- eli haastattelu- tai kyselytutkimus</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="luku11.html"><a href="luku11.html"><i class="fa fa-check"></i><b>11</b> Tilastollisesta ennustamisesta</a>
 <ul>
@@ -196,6 +207,52 @@
             <section class="normal" id="section-">
 <div id="alaluku81" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Johdatus regressioanalyysin ideaan<a href="alaluku81.html#alaluku81" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Regressioanalyysi pyrkii siis havaintoaineiston perusteella <strong>mallintamaan tilastoyksikköjen tilastollisten muuttujien välistä riippuvuutta</strong>.
+<ul>
+<li>Regressiomallissa tilastollisia muuttujia on kahdenlaisia: <strong>selitettävä muuttuja</strong>, jonka tilastollista vaihtelua pyritään selittämään <strong>selittävän muuttujan</strong>, tai <strong>selittävien muuttujien</strong>, vaihtelulla.</li>
+<li>Toisin sanoen, pyritään erottamaan se selitettävän muuttujan arvojen vaihtelu, joka voidaan selittää selittävän muuttujan arvojen vaihtelulla siitä vaihtelusta, joka on täysin satunnaista.
+<ul>
+<li>Esimerkiksi voitaisiin tutkia selittääkö vaaleissa puolueiden/ehdokkaiden vaalimainontabudjetti heidän äänimääriään, ja jos selittää, niin kuinka paljon?</li>
+<li>Jos <strong>tilastollisesti merkitsevä osa</strong> selitettävän muuttujan havaittujen arvojen vaihtelusta voidaan selittää selittävien muuttujien arvojen vaihtelun avulla, sanomme, että selitettävä muuttuja <strong>riippuu tilastollisesti</strong> selittäjinä käytetyistä muuttujista.</li>
+</ul></li>
+</ul></li>
+<li>Yleisemmin regressioanalyysi pyrkii vastaamaan seuraaviin kysymyksiin koskien tilastollisten muuttujien välistä riippuvuutta:
+<ul>
+<li>Muuttujien välisten <strong>riippuvuuksien kuvaaminen</strong>. Millainen on riippuvuuden muoto? Kuinka voimakasta riippuvuus on?</li>
+<li>Muuttujien välisten <strong>riippuvuuksien selittäminen</strong>. Tilastollisen riippuvuuden luonteen selittäminen.</li>
+<li>Selitettävän muuttujan käyttäytymisen <strong>ennustaminen</strong>.</li>
+</ul></li>
+<li><strong>Lineaarinen regressioanalyysi</strong> siis (teknisesti) rajoittuu muuttujien <em>lineaaristen</em> riippuvuuksien kuvaamiseen. Kuitenkin, laajemmin asiaa pohdittaessa, lineaaristen regressiomallien suuri käyttökelpoisuus muuttujien välisten riippuvuuksien tilastollisessa analyysissa perustuu (ainakin) seuraaviin seikkoihin:
+<ul>
+<li>Lineaarisella regressiomallilla voidaan usein vähintään kohtuullisella (riittävällä) tarkkuudella approksimoida epälineaarisiakin muuttujien välisiä riippuvuuksia!</li>
+<li>Muuttujien välinen epälineaarinen riippuvuus voidaan usein myös linearisoida käyttäen sopivia muunnoksia alkuperäisiin muuttujiin.</li>
+<li>Epälineaariset regressiomallit muodostavat oman tilastollisten (regressio)mallien luokkansa (joita ei käsitellä tällä kurssilla, mutta kylläkin myöhemmissä tilastotieteen opinnoissa).</li>
+</ul></li>
+<li>Regressiomalleja käytetään apuvälineinä monilla tilastotieteen osa-alueilla. Esimerkkejä regressiomallien käyttökohteista tilastotieteessä:
+<ul>
+<li>Varianssianalyysi</li>
+<li>Koesuunnittelu</li>
+<li>Monimuuttujamenetelmät</li>
+<li>Biometria/biostatistiikka</li>
+<li>Aikasarja-analyysi ja ennustaminen</li>
+<li>Ekonometria</li>
+</ul></li>
+<li>Regressioanalyysissa sovellettavat tilastolliset mallit voidaan luokitella usealla eri periaatteella.
+<ul>
+<li>Luokittelu regressiomallin funktionaalisen muodon mukaan:
+<ul>
+<li>Lineaariset regressiomallit</li>
+<li>Epälineaariset regressiomallit</li>
+</ul></li>
+<li>Luokittelu regressiomallin yhtälöiden lukumäärän mukaan:
+<ul>
+<li>Yhden yhtälön regressiomallit</li>
+<li>Moniyhtälömallit</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Tällä kurssilla käsitellään vain <strong>lineaarisia yhden yhtälön regressiomalleja</strong>. Kuitenkin luvussa <a href="alaluku83.html#alaluku83">8.3</a> esitellään lyhyesti minkälaisia laajennuksia tälle regressioanalyysin perustilanteelle tyypillisesti käsitellään.</p>
 </div>
             </section>
 
@@ -263,7 +320,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

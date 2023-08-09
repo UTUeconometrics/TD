@@ -1,14 +1,14 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -34,18 +34,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={TILM3701 - Tilastotiede ja data 2022},
-  pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
-  colorlinks=true,
-  linkcolor=blue,
-  filecolor=Maroon,
-  citecolor=Blue,
-  urlcolor=blue,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -181,15 +169,27 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={TILM3701 - Tilastotiede ja data 2022},
+  pdfauthor={Koonneet; Henri Nyberg; Roope Rihtamo},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
 
 \title{TILM3701 - Tilastotiede ja data 2022}
 \author{Koonneet \and Henri Nyberg\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:henri.nyberg@utu.fi}{\nolinkurl{henri.nyberg@utu.fi}}} \and Roope Rihtamo\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:roope.rihtamo@utu.fi}{\nolinkurl{roope.rihtamo@utu.fi}}}}
-\date{2022-09-22}
+\date{2022-09-25}
 
 \begin{document}
 \maketitle
@@ -487,7 +487,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
     Tieteellinen tutkimus on tutkivan subjektin ja tutkimusobjektin välistä vuorovaikutusta.
   \item
     Tiede pyrkii järjestämään tiedon yksinkertaisiksi kokonaisuuksiksi ja pyrkii löytämään säännönmukaisuuksia.\\
-    ~\\
+    \strut \\
   \end{itemize}
 \item
   Tiede on siis tiedon hankintaa, jonka kohteena on meitä ympäröivä todellinen maailma sen ilmiöineen ja tapahtumineen.
@@ -518,7 +518,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
     \tightlist
     \item
       Aikaisemmin hankittujen tietojen vahvistaminen ja todentaminen, eli uuden tutkimuksen tekeminen, on kuitenkin tiedettä sen tuottaessa uutta tietoa.\\
-      ~\\
+      \strut \\
     \end{itemize}
   \end{itemize}
 \item
@@ -549,7 +549,7 @@ Voidakseen ymmärtää ja arvioida kriittisesti tiedeuutisia tulee lukijan olla 
       Propagandaan
     \item
       ``Jumalalliseen ilmoitukseen'' tai vastaavaan\\
-      ~\\
+      \strut \\
     \end{itemize}
   \end{itemize}
 \item
@@ -835,7 +835,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
 \tightlist
 \item
   Ihminen ei voi toimia maailmassa järkevästi, ellei hän pysty muodostamaan oikeata kuvaa maailmasta ja sen tilasta. Nykyaikana oikeaa kuvaa varten tarvitaan maailmaa ja sen tilaa merkityksellisesti ja oikein kuvaavia, ajantasaisia \textbf{(tilasto)tietoja}.\\
-  ~\\
+  \strut \\
 \item
   Yhteiskunnan kaikilla sektoreilla toiminnan seuranta, päätöksenteko ja ennakointi perustuvat eri sektoreita kuvaaviin \textbf{(tilasto)tietoihin} ja niiden analysoinnissa käytettäviin \textbf{tilastollisiin menetelmiin}.
 
@@ -853,7 +853,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
     \end{itemize}
   \item
     (Tilasto)tietojen saatavuutta voidaan pitää jopa toimivan demokratian edellytyksenä.\\
-    ~\\
+    \strut \\
   \end{itemize}
 \item
   Koska todellisuutta kuvaaviin (tilasto)tietoihin sisältyy (lähes) aina epävarmuutta ja satunnaisuutta, tilastotiede ja tilastolliset menetelmät luovat perustan tilastojen tuotannolle, jalostukselle ja analysoinnille.
@@ -864,7 +864,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
     Niinpä tilastojen tuotannon, jalostuksen ja analysoinnin menetelmien kehittäminen on keskeinen osa tilastotieteen tehtäväkenttää.
   \item
     Samoin tilastotieteen menetelmien ymmärtämisellä on keskeinen rooli tietoyhteiskunnassa toimimisessa ja vaikuttamisessa.\\
-    ~\\
+    \strut \\
   \end{itemize}
 \end{itemize}
 
@@ -964,7 +964,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
     \tightlist
     \item
       Lisää tieteen popularisoinnista jaksossa \ref{alaluku46}.\\
-      ~\\
+      \strut \\
     \end{itemize}
   \end{itemize}
 \item
@@ -985,7 +985,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
   \end{itemize}
 \item
   Myöhemmin materiaalissa (luvussa \ref{luku11}) keskustellaan vielä tarkemmin miten tilastotieteessä ilmiön ymmmärtäminen (selittäminen) ja ennustaminen eroavat toisistaan.\\
-  ~\\
+  \strut \\
 \item
   \textbf{Tutkimuksen rajat?} Onko niitä?
 
@@ -1069,7 +1069,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
       Käsitteiden ja eri aloilla, osin samoista asioista käytettävien, toisistaan eroavien termien systemaattinen määrittely ja jäsentely selkeyttää tiedeyhteisön välistä kommunikointia.\\
     \item
       Eivät korvaa empiiristä tietoa vaan vaikuttavat tiedon järjestymiseen ja sen perusteella tehtäviin päätelmiin.\\
-      ~\\
+      \strut \\
     \end{itemize}
   \end{itemize}
 \end{itemize}
@@ -1119,7 +1119,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
 
 Tieteellinen tutkimus ja asiantuntijatyö tuottavat valtavan määrän perusteltua, luotettavaa tutkimustietoa. Ks. tarkemmin tieteellisestä julkaisemisesta linkin tapauksessa erityisesti yhteiskuntatieteiden alalla, mutta perusperiaatteet pätevät myös muiden tieteenalojen tapauksessa
 
-\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}~\\
+\url{https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/}\strut \\
 
 Vastuullisen tieteen
 
@@ -1128,7 +1128,7 @@ Vastuullisen tieteen
 artikkelit tarjoavat tietoa siitä, kuinka tutkittua tietoa tuotetaan, julkaistaan ja arvioidaan luotettavasti ja yhteisesti hyväksytyllä tavalla. Jotta tiede vaikuttaa koko yhteiskunnan hyväksi, toiminnan on oltava vastuullista tutkimuksen jokaisessa vaiheessa.
 
 Helsingin Yliopisto tarjoaa lisäksi \href{https://tiedelukutaito.mooc.fi/}{Tiedelukutaidon perusteet -kurssia} MOOC-toteutuksena (Massive Open Onlince Course). Keskustelethan ennen kurssin käymistä oman alasi koulutussuunnittelijan (tai vastaavan vastuuhenkilön) kanssa siitä, soveltuuko kyseinen kurssi sisällytettäväksi johonkin omaan opintokokonaisuuteesi.\\
-~\\
+\strut \\
 
 \begin{itemize}
 \tightlist
@@ -2934,16 +2934,30 @@ Voidaksemme tehdä uskottavaa päättelyä ``havainnoista parametreihin'', tulee
   Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu \(n\) tilastoyksiköstä, joista jokaisesta on kerätty esim. \(m\):stä tilastomuuttujasta havainnot, niin aineisto voidaan kirjoittaa taulukon muotoon:
 \end{itemize}
 
-\begin{longtable}[]{@{}lllll@{}}
-\toprule
-& tilastomuuttuja 1 & tilastomuuttuja 2 & \(\dots\) & tilastomuuttuja \(m\) \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2195}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2195}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2439}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0732}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2439}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+tilastomuuttuja 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+tilastomuuttuja 2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\dots\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+tilastomuuttuja \(m\)
+\end{minipage} \\
+\midrule()
 \endhead
 tilastoyksikkö 1 & \(x_{1,1}\) & \(x_{1,2}\) & \(\dots\) & \(x_{1,m}\) \\
 tilastoyksikkö 2 & \(x_{2,2}\) & \(x_{2,2}\) & \(\dots\) & \(x_{2,m}\) \\
 \(\vdots\) & \(\vdots\) & \(\vdots\) & & \(\vdots\) \\
 tilastoyksikkö \(n\) & \(x_{n,1}\) & \(x_{1,2}\) & \(\dots\) & \(x_{n,m}\) \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 Tässä siis rivillä \(i\) on \(i\). \textbf{tilastoyksikön} havainto ja sarakkeessa \(j\) on \(j\). tilastollisesta muuttujasta havaitut arvot \(x_{i,j}\). Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.
@@ -5391,7 +5405,7 @@ n = \Big(\frac{z_{\alpha/2} \,\, \sqrt{p(1-p)}}{d} \Big)^2.
   \item
     Havaintoarvojen jakaumaa kokonaisuutena voidaan kuvata sopivasti valituilla graafisilla esityksillä.
   \item
-    Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \ref{luku6} ).
+    Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \ref{luku6}).
   \end{itemize}
 \item
   Koska useampi- kuin kaksiulotteisten kuvioiden tekeminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.
@@ -5534,9 +5548,16 @@ jossa \(\bar{y}\) on on y-havaintoarvojen aritmeettinen keskiarvo.
   Tarkastellaan välimatka- tai suhdeasteikollisten satunnaismuuttujien \(X\) ja \(Y\) (Pearsonin tulomomentti-) korrelaatiokerrointa \(\rho_{XY}\) ja sen estimointia.
 \item
   Tällä kurssilla emme tarkastele tarkemmin tilastollisia testejä korrelaatiokertoimelle \(\rho_{XY}\), kuten:
-  -Yhden otoksen testi korrelaatiokertoimelle
-  -Korrelaatiokertoimien vertailutesti
-  -Korreloimattomuuden testaaminen
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yhden otoksen testi korrelaatiokertoimelle
+  \item
+    Korrelaatiokertoimien vertailutesti
+  \item
+    Korreloimattomuuden testaaminen
+  \end{itemize}
 \item
   Jälleen kerran, lisätietoja ja tarkempia yksityiskohtia moniulotteisista satunnaismuuttujista ja jakaumista tarkastellaan todennäköisyyslaskennan kursseilla.
 \end{itemize}
@@ -5586,17 +5607,7 @@ jossa siis \(\sigma_X = \sqrt{\mathrm{Var}(X)} = \sqrt{\text{D}^2(X)}\) ja \(\si
     Pearsonin korrelaatiokerroin \(\rho_{XY}\) mittaa satunnaismuuttujien \(X\) ja \(Y\) lineaarisen riippuvuuden voimakkuutta. Ts. sm:jien välistä (lineaarista) yhteyttä.
   \end{itemize}
 \item
-  Pearsonin (tulomomentti-) korrelaatiokerrointa
-  \[
-  r_{XY} = \frac{s_{XY}}{s_X s_Y}
-  \]
-  voidaan estimoida Pearsonin \textbf{otoskorrelaatiokertoimella} (ks. alla).
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Estimaattori \(r_{XY}\) voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
-  \end{itemize}
+  Pearsonin korrelaatiokerrointa voidaan estimoida Pearsonin \textbf{otoskorrelaatiokertoimella}.
 \end{itemize}
 
 \begin{defblock}{}
@@ -5617,7 +5628,8 @@ jossa \(s_{xy}\) on \(x\)- ja \(y\)-havaintoarvojen otoskovarianssi, \(s_x\) on 
 \end{defblock}
 
 \begin{itemize}
-\tightlist
+\item
+  Otoskorrelaatiokertoimen estimaattori voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
 \item
   Otoskovarianssi:
 
@@ -5658,14 +5670,14 @@ jossa \(s_{xy}\) on \(x\)- ja \(y\)-havaintoarvojen otoskovarianssi, \(s_x\) on 
     Vaikka \(r_{xy} = 0\), \(x\)- ja \(y\)-havaintoarvojen välillä saattaa silti olla jopa eksakti epälineaarinen riippuvuus.
   \end{itemize}
 \item
-  \textbf{Havainnollistus}: Alapuolella esitettävät kuviot havainnollistavat kahden muuttujan havaittujen arvojen (\(n = 30\)) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
+  \textbf{Havainnollistus}: Alapuolella esitettävät kuviot (Kuva \ref{fig:korrelaatioMellin}) havainnollistavat kahden muuttujan havaittujen arvojen (\(n = 30\)) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.
 \end{itemize}
 
 \FloatBarrier
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.75\linewidth]{images/Pearson-korr-Mellin} 
+{\centering \includegraphics[width=0.9\linewidth]{images/Pearson-korr-Mellin} 
 
 }
 
@@ -5673,14 +5685,20 @@ jossa \(s_{xy}\) on \(x\)- ja \(y\)-havaintoarvojen otoskovarianssi, \(s_x\) on 
 \end{figure}
 
 \begin{itemize}
+\tightlist
 \item
-  Toinen havainnollistus: Ks. seuraavasta \href{http://guessthecorrelation.com/}{linkistä} lisää havainnollistuksia.
+  Ks. seuraavasta \href{http://guessthecorrelation.com/}{linkistä} lisää havainnollistuksia.
 
   \begin{itemize}
   \tightlist
   \item
     \emph{Guess the correlation} pelissä pääset arvioimaan esitettävän pisteparven korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: \url{http://guessthecorrelation.com/}
   \end{itemize}
+\end{itemize}
+
+\FloatBarrier
+
+\begin{itemize}
 \item
   \textbf{Kausaalisuus}
 
@@ -5694,7 +5712,7 @@ jossa \(s_{xy}\) on \(x\)- ja \(y\)-havaintoarvojen otoskovarianssi, \(s_x\) on 
     \item
       muuttujan \(x\) muutos esiintyy ajallisesti ennen y:n muutosta
     \item
-      muuttujissa \(x\) ja \(y\) tapahtuvien muuttujien välillä on riippuvuutta
+      muuttujissa \(x\) ja \(y\) tapahtuvien muutosten välillä on riippuvuutta
     \item
       muuttujassa \(y\) tapahtunutta muutosta ei voida selittää millään muilla tekjöillä
     \end{itemize}
@@ -5813,47 +5831,2273 @@ F & 373 & 6 & 341 & 7\\
 \hypertarget{luku8}{%
 \chapter{Regressioanalyysi}\label{luku8}}
 
+Tilastollinen riippuvuus ja korrelaatio -jakson laajennuksena pyrimme tässä luvussa vastaamaan seuraavaan kysymykseen: \emph{Miten jonkin selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, selittäviksi muuttujiksi kutsutuista muuttujista voidaan mallintaa}? Muuttujien välisten riippuvuuksien, eli erilaisten tosielämän asioiden ja ilmiöiden välisten yhteyksien analysointi on tavallisesti keskeinen kysymys tieteellisessä tutkimuksessa. Regressioanalyysi on yksi tunnetuimpia ja eniten sovellettuja \textbf{tilastollisia menetelmiä} kuvaamaan kahden muuttujan \textbf{tilastollista riippuvuutta}.
+
+Jos tilastoaineistossa on havaittavissa säännönmukaisuutta ja muuttujien välillä näyttäisi olevan järkevä (asialooginen) yhteys, niin päästään ``malliajatteluun''. Ts. pyritään rakentamaan tilastollista mallia kys. aineistolle. Pyritään siis muodostaa tilastollinen malli että se valitun kriteeristön perusteella parhaiten kuvaa analysoitavaa pistejoukkoa.
+
 \hypertarget{alaluku81}{%
 \section{Johdatus regressioanalyysin ideaan}\label{alaluku81}}
+
+\begin{itemize}
+\tightlist
+\item
+  Regressioanalyysi pyrkii siis havaintoaineiston perusteella \textbf{mallintamaan tilastoyksikköjen tilastollisten muuttujien välistä riippuvuutta}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Regressiomallissa tilastollisia muuttujia on kahdenlaisia: \textbf{selitettävä muuttuja}, jonka tilastollista vaihtelua pyritään selittämään \textbf{selittävän muuttujan}, tai \textbf{selittävien muuttujien}, vaihtelulla.
+  \item
+    Toisin sanoen, pyritään erottamaan se selitettävän muuttujan arvojen vaihtelu, joka voidaan selittää selittävän muuttujan arvojen vaihtelulla siitä vaihtelusta, joka on täysin satunnaista.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi voitaisiin tutkia selittääkö vaaleissa puolueiden/ehdokkaiden vaalimainontabudjetti heidän äänimääriään, ja jos selittää, niin kuinka paljon?
+    \item
+      Jos \textbf{tilastollisesti merkitsevä osa} selitettävän muuttujan havaittujen arvojen vaihtelusta voidaan selittää selittävien muuttujien arvojen vaihtelun avulla, sanomme, että selitettävä muuttuja \textbf{riippuu tilastollisesti} selittäjinä käytetyistä muuttujista.
+    \end{itemize}
+  \end{itemize}
+\item
+  Yleisemmin regressioanalyysi pyrkii vastaamaan seuraaviin kysymyksiin koskien tilastollisten muuttujien välistä riippuvuutta:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Muuttujien välisten \textbf{riippuvuuksien kuvaaminen}. Millainen on riippuvuuden muoto? Kuinka voimakasta riippuvuus on?
+  \item
+    Muuttujien välisten \textbf{riippuvuuksien selittäminen}. Tilastollisen riippuvuuden luonteen selittäminen.
+  \item
+    Selitettävän muuttujan käyttäytymisen \textbf{ennustaminen}.
+  \end{itemize}
+\item
+  \textbf{Lineaarinen regressioanalyysi} siis (teknisesti) rajoittuu muuttujien \emph{lineaaristen} riippuvuuksien kuvaamiseen. Kuitenkin, laajemmin asiaa pohdittaessa, lineaaristen regressiomallien suuri käyttökelpoisuus muuttujien välisten riippuvuuksien tilastollisessa analyysissa perustuu (ainakin) seuraaviin seikkoihin:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Lineaarisella regressiomallilla voidaan usein vähintään kohtuullisella (riittävällä) tarkkuudella approksimoida epälineaarisiakin muuttujien välisiä riippuvuuksia!
+  \item
+    Muuttujien välinen epälineaarinen riippuvuus voidaan usein myös linearisoida käyttäen sopivia muunnoksia alkuperäisiin muuttujiin.
+  \item
+    Epälineaariset regressiomallit muodostavat oman tilastollisten (regressio)mallien luokkansa (joita ei käsitellä tällä kurssilla, mutta kylläkin myöhemmissä tilastotieteen opinnoissa).
+  \end{itemize}
+\item
+  Regressiomalleja käytetään apuvälineinä monilla tilastotieteen osa-alueilla. Esimerkkejä regressiomallien käyttökohteista tilastotieteessä:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Varianssianalyysi
+  \item
+    Koesuunnittelu
+  \item
+    Monimuuttujamenetelmät
+  \item
+    Biometria/biostatistiikka
+  \item
+    Aikasarja-analyysi ja ennustaminen
+  \item
+    Ekonometria
+  \end{itemize}
+\item
+  Regressioanalyysissa sovellettavat tilastolliset mallit voidaan luokitella usealla eri periaatteella.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Luokittelu regressiomallin funktionaalisen muodon mukaan:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Lineaariset regressiomallit
+    \item
+      Epälineaariset regressiomallit
+    \end{itemize}
+  \item
+    Luokittelu regressiomallin yhtälöiden lukumäärän mukaan:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Yhden yhtälön regressiomallit
+    \item
+      Moniyhtälömallit
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+Tällä kurssilla käsitellään vain \textbf{lineaarisia yhden yhtälön regressiomalleja}. Kuitenkin luvussa \ref{alaluku83} esitellään lyhyesti minkälaisia laajennuksia tälle regressioanalyysin perustilanteelle tyypillisesti käsitellään.
 
 \hypertarget{alaluku82}{%
 \section{Yhden selittäjän lineaarinen regressiomalli}\label{alaluku82}}
 
+\begin{itemize}
+\item
+  Yhden selittäjän lineaarinen regressiomalli pyrkii selittämään selitettävän muuttujan havaittujen arvojen vaihtelun yhden selittävän muuttujan havaittujen arvojen vaihtelun avulla. Se on siis yksinkertaisin esimerkki yhden yhtälön lineaarisista regressiomalleista, sillä se sisältää vain yhden selittävän muuttujan useamman sijaan.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Selitettävää muuttujaa kutsutaan usein myös \emph{vastemuuttujaksi, riippuvaksi muuttujaksi tai tulosmuuttujaksi}
+  \item
+    Vastaavasti selittävää muuttujaa kutsutaan paikoin \emph{selittäjäksi, riippumattomaksi muuttujaksi tai ennustavaksi muuttujaksi}.
+  \end{itemize}
+\item
+  Tässä luvussa tarkastellaan lyhyesti ja tiivistetysti seuraavia yhden selittävän muuttujan lineaarisen regressiomallin soveltamiseen liittyviä kysymyksiä:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Miten malli formuloidaan?
+  \item
+    Mitkä ovat mallin osat ja mitkä ovat osien tulkinnat?
+  \item
+    Mitkä ovat mallia koskevat oletukset?
+  \item
+    Miten mallin parametrit estimoidaan?
+  \item
+    Miten mallin parametreja koskevia hypoteeseja testataan?
+  \item
+    Miten mallin hyvyyttä mitataan?
+  \item
+    Miten mallilla ennustetaan?
+  \end{itemize}
+\item
+  Oletetaan, että selitettävän muuttujan \(Y\) havaittujen arvojen vaihtelua halutaan selittää selittävän muuttujan eli selittäjän \(x\) havaittujen arvojen vaihtelun avulla. Tulkitaan selittävä muuttuja tässä kohtaa kiinteäksi eli sen arvot oletetaan tunnetuksi.\footnote{Kyseinen muuttuja voidaan myös tulkita satunnaismuuttujana eikä seuraavat tarkastelut muutu ratkaisevasti tämän seurauksena. Tätä pohditaan vielä tarkemmin alempana.}
+\item
+  Tehdään siis seuraavat oletukset:
+
+  \begin{enumerate}
+  \def\labelenumi{\roman{enumi})}
+  \tightlist
+  \item
+    Selitettävä muuttuja Y on suhdeasteikollinen satunnaismuuttuja.
+  \item
+    Selittävä muuttuja x on kiinteä eli ei-satunnainen muuttuja.
+  \end{enumerate}
+\item
+  Olkoot \(y_1, y_2,\ldots, y_n\) selitettävän muuttujan \(Y\) ja \(x_1, x_2, \ldots, x_n\) selittävän muuttujan \(x\) havaittuja arvoja. Oletetaan lisäksi, että havaintoarvot \(x_i\) ja \(y_i\) liittyvät
+  samaan havaintoyksikköön kaikille \(i=1, 2, \ldots, n\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Matemaattisemmin tämä tarkoittaa sitä, että tällöin havaintoarvot muodostavat pisteitä 2-ulotteisessa \((x_i, Y_i)\) avaruudessa.
+  \end{itemize}
+\item
+  Oletetaan seuraavaksi, että havaintoarvojen \(y_i\) ja \(x_i\) välillä on \textbf{lineaarinen tilastollinen riippuvuus}, joka voidaan ilmaista yhtälöllä
+  \[
+  Y_i = \beta_0 + \beta_1 x_i + \varepsilon_i, \quad i=1,\ldots, n.
+  \]
+\item
+  Tämä yhtälö määrittelee yhden selittäjän lineaarisen regressiomallin, jossa
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(y_i\) on selitettävän muuttujan \(Y\) satunnainen ja havaittu arvo havaintoyksikölle \(i\)
+  \item
+    \(x_i\) selittävän muuttujan eli selittäjän \(x\) ei-satunnainen ja havaittu arvo havaintoyksikölle \(i\)
+  \item
+    \(\varepsilon_i\) on virtermi (ajoittain myös jäännöstermi) ja sen satunnainen ja ei-havaittu arvo havaintoyksikölle \(i\)
+  \end{itemize}
+\item
+  Yhden selittäjän lineaarisessa regressiomallissa on seuraavat regressiokertoimet:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\beta_0\) on vakioselittäjän regressiokerroin; \(\beta_0\) on ei-satunnainen ja tuntematon vakio. Kerrointa \(\beta_0\) kutsutaan myös vakioselittäjän regressiokertoimeksi. Nimitys johtuu siitä, että kerrointa \(\beta_0\) vastaa keinotekoinen selittäjä, joka saa kaikille havaintoyksiköille \(i=1, 2, \ldots, n\) vakioarvon 1.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Huomautus: Jatkossa esitettävät kaavat eivät välttämättä päde esitettävässä muodossa, jos mallissa ei ole vakiota (vakioselittäjää), joka yleensä automaattisesti lisätään mukaan malliin.
+    \item
+      Oletamme jatkossa, että mallissa on aina vakioselittäjä.
+    \end{itemize}
+  \item
+    \(\beta_1\) on selittäjän \(x\) regressiokerroin; \(\beta_1\) on ei-satunnainen ja tuntematon vakio
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Huomautus: Regressiokertoimet \(\beta_0\) ja \(\beta_1\) on oletettu samoiksi kaikille havaintoyksiköille \(i\).
+    \end{itemize}
+  \end{itemize}
+\item
+  Virhetermeistä \(\varepsilon_i\) tehtävät ns. standardioletukset ovat seuraavat:
+
+  \begin{enumerate}
+  \def\labelenumi{\roman{enumi})}
+  \tightlist
+  \item
+    \(\text{E}(\varepsilon_i) = 0, \, i=1,2,\ldots,n\)
+  \item
+    Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia: \(\mathrm{Var}(\varepsilon_i)= \sigma^2, \, i=1,\ldots,n\). Virhetermien \(\varepsilon_i\) tässä yhteiseksi oletettua varianssia kutsutaan ajoittain jäännösvarianssiksi.
+  \item
+    Virhetermit ovat korreloimattomia: \(\mathrm{Cov}(\varepsilon_i, \varepsilon_l)=0, \, i \neq l\)
+  \item
+    Lisäksi tehdään ajoittain normaalisuusoletus eli että virhetermit ovat normaalisti jakautuneita: \(\varepsilon_i \thicksim \text{N}(0, \sigma^2), \, i=1,2,\ldots,n\).
+  \end{enumerate}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Huomautus: Oletus (iv) sisältää oletukset (i) ja (ii).
+  \end{itemize}
+\item
+  Lineaarisen regressiomallin perusoletuksiin kuuluu se, että selittävien muuttujien arvot ovat ei-satunnaisia. On kuitenkin syytä korostaa (jo tässä vaiheessa), että selittävän muuttujan arvojen satunnaisuus ei kuitenkaan vaikuta mallin estimoinnissa ja testauksessa käytettäviin menetelmiin seuraavissa tilanteissa:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tavanomaiset mallista tehdyt oletukset pätevät (sopivasti modifioituina), kun siirrytään tarkastelemaan selittävän muuttujan ehdollista odotusarvoa selittäjien suhteen.
+  \item
+    Voidaan (ajoittain) olettaa, että selitettävä muuttuja ja selittäjät noudattavat yhdessä \textbf{multinormaalijakaumaa} eli aiemmin esitellyn yksiulotteisen normaalijakauman moniulotteista laajennusta.
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Regressioanalyysille voidaan esittää kaksi asialoogisesti varsin erilaista lähtökohtaa, joilla on kuitenkin myös monia yhtymäkohtia:
+
+  \begin{enumerate}
+  \def\labelenumi{\roman{enumi})}
+  \tightlist
+  \item
+    Ongelmat determinististen mallien sovittamisessa havaintoihin: Havainnoille esitetty malli ei sovi täsmällisesti kaikkiin havaintoihin. Tämä onkin osaltaan tilastollisen mallinnuksen yksi ominaispiirteistä: Täydellistä sopivuutta aineiston kanssa ei käytännössä koskaan saavuteta.
+  \item
+    Tavoitteena on moniulotteisen todennäköisyysjakauman regressiofunktion parametrien estimointi.
+  \end{enumerate}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vaikka moniulotteisten todennäköisyysjakaumien regressiofunktiot ovat yleisesti epälineaarisia, lineaariset regressiomallit muodostavat tärkeän ja paljon sovelletun malliluokan.
+  \end{itemize}
+\item
+  Koska regressiokertoimet \(\beta_0\) ja \(\beta_1\) sekä jäännösvarianssi \(\sigma^2\) ovat tavallisesti tuntemattomia, niiden arvot on \textbf{estimoitava} muuttujien \(x\) ja \(Y\) havaittuja arvoja \(x_i\) ja \(y_i\), \(i=1,2, \ldots, n\) käyttäen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Regressiomallien parametrien estimointiin käytetään tavallisesti \textbf{pienimmän neliösumman (PNS) menetelmää}. Tämän estimointimenetelmän tarkemmat yksityiskohdat ovat myöhempien tilastotieteen kurssien asioita, mutta seuraavassa kuitenkin muutamia lähtökohtia mihin PNS-menetelmä perustuu yhden selittäjän mallin tapauksessa.
+  \item
+    Edellä esitellyn yhden selittäjän lineaarisen regressiomallin regressiokertoimien \(\beta_0\) ja \(\beta_1\) estimaattorit määrätään minimoimalla virhetermien \(\varepsilon_i\) neliösummaa
+  \end{itemize}
+\end{itemize}
+
+\[
+S(\beta_0,\beta_1) = \sum_{i=1}^{n} \varepsilon^2_i = \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i)^2 
+\]
+regressiokertoimien \(\beta_0\) ja \(\beta_1\) suhteen.
+
+\begin{itemize}
+\item
+  Tämä minimointi tapahtuu tavanomaiseen tapaan derivoimalla funktio \(S(\beta_0,\beta_1)\) kertoimien \(\beta_0\) ja \(\beta_1\) suhteen ja merkitsemällä derivaatat nolliksi:
+  \begin{align*}
+  \frac{\partial S(\beta_0,\beta_1)}{\partial \beta_0} &= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) = 0 \\
+  \frac{\partial S(\beta_0,\beta_1)}{\partial \beta_1} &= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) x_i = 0. 
+  \end{align*}
+\item
+  Nämä ns. normaaliyhtälöt johtavat lopulta pienen sieventämisen jälkeen regressiokertoimien \(\beta_0\) ja \(\beta_1\) pienimmän neliösumman (PNS-) estimaattoreihin (ja lopulta käytännössä analysoitavasta aineistosta laskettaviin PNS-estimaatteihin)
+  \begin{align*}
+  \widehat{\beta}_0 &= \bar{y} - \widehat{\beta}_1 \bar{x} \\
+  \widehat{\beta}_1 &= \frac{s_{xy}}{s^2_x} = r_{xy} \frac{s_y}{s_x}.
+  \end{align*}
+\item
+  Huomaa siis yhteys aiemmin keskusteltuihin \(x\):n ja \(y\):n otoskeskiarvioihin, keskihajontoihin sekä otoskovarianssiin ja korrelaatioon \(x\):n ja \(y\):n välillä.
+\item
+  PNS-estimaattorit (estimaatit) \(\widehat{\beta}_0\) ja \(\widehat{\beta}_1\) määrittelevät suoran (matemaattisesti katsoen avaruudessa \(\mathbb{R}^2\)):
+  \[
+  \widehat{y} = \widehat{\beta}_0 + \widehat{\beta}_1 x,
+  \]
+  jossa
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(\widehat{\beta}_0\) on estimoidun regressiosuoran ja pistekuvion y-akselin leikkauspiste
+  \item
+    \(\widehat{\beta}_1\) on estimoidun regressiosuoran kulmakerroin
+  \end{itemize}
+\item
+  Tämän suoran tuottamat arvot \(\widehat{y}_i\) ovat käytännössä eri havainnoille \(y\) saatavat \textbf{sovitteet} lineaariseen malliin perustuen.
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\item
+  Sijoitetaan regressiokertoimien \(\beta_0\) ja \(\beta_1\) PNS-estimaattoreiden lausekkeet estimoidun regressiosuoran lausekkeeseen. Tällöin estimoidun regressiosuoran yhtälö voidaan kirjoittaa muodossa:
+  \[
+  y = \bar{y} + r_{xy} \frac{s_y}{s_x} (x-\bar{x})
+  \]
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yhtälöstä nähdään, että estimoitu regressiosuora kulkee havaintopisteiden \((x_i , y_i), i = 1,2, \ldots, n\) painopisteen kautta. Voidaan siis nähdä, että estimoidulla regressiosuoralla on seuraavat ominaisuudet:
+
+    \begin{itemize}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \tightlist
+      \item
+        Jos \(r_{xy} > 0\), suora on nouseva.
+      \end{enumerate}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \setcounter{enumi}{1}
+      \tightlist
+      \item
+        Jos \(r_{xy} < 0\), suora on laskeva.
+      \end{enumerate}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \setcounter{enumi}{2}
+      \tightlist
+      \item
+        Jos \(r_{xy} = 0\), suora on vaakasuorassa.
+      \end{enumerate}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \setcounter{enumi}{3}
+      \tightlist
+      \item
+        Suora jyrkkenee (loivenee), jos
+      \end{enumerate}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        korrelaation itseisarvo \(|r_{xy}|\) kasvaa (pienenee)
+      \item
+        keskihajonta \(s_y\) kasvaa (pienenee)
+      \item
+        keskihajonta \(s_x\) pienenee (kasvaa)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Tarkastellaan vielä estimoituun lineaariseen malliin liittyviä sovitteita ja residuaaleja.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Estimoidun mallin \textbf{sovitteet} saadaan siis kaavalla
+  \end{itemize}
+\end{itemize}
+
+\[
+\widehat{y}_i = \widehat{\beta}_0 + \widehat{\beta}_1 x_i, \quad i=1,2,\ldots,n.
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Vastaavasti \textbf{residuaalit} saadaan havaintojen ja sovitteiden erotuksena
+\end{itemize}
+
+\[
+\widehat{\varepsilon}_i = y_i - \widehat{y}_i = y_i - \widehat{\beta}_0 - \widehat{\beta}_1 x_i, \quad i=1,2,\ldots,n.
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Sovite on estimoidun regressiosuoran yhtälön selitettävälle muuttujalle antama arvo havaintopisteessä \(x_i\). Vastaaavasti residuaali on selitettävän muuttujan havaitun arvon \(y_i\) ja sovitteen \(\widehat{y}_i\) eli estimoidun regressiosuoran yhtälön selitettävälle muuttujalle havaintopisteessä \(x_i\) antaman arvon erotus.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Estimoitu regressiomalli selittää selitettävän muuttujan havaittujen arvojen vaihtelua sitä paremmin mitä lähempänä estimoidun mallin sovitteet \(\widehat{y}_i\) ovat selitettävän muuttujan havaittuja arvoja \(y_i\).
+  \item
+    Yhtäpitävästi edellisen kanssa: Estimoitu regressiomalli selittää selitettävän muuttujan havaittujen arvojen \(y_i\) vaihtelua sitä paremmin mitä pienempiä ovat estimoidun mallin residuaalit \(\widehat{\varepsilon}_i\).
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Liittyen vielä estimoidun mallin sopivuuden tarkasteluun, estimoidun regressiomallin hyvyyttä mitataan (tavanomaisesti) mm. \textbf{selitysasteella} (\(R^2)\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Selitysasteen määritelmä perustuu ns. varianssianalyysihajotelmaan, jossa selitettävän muuttujan havaittujen arvojen vaihtelua kuvaava neliösumma on jaettu kahdeksi neliösummaksi, joista toinen kuvaa mallin ja havaintojen yhteensopivuutta ja toinen mallin ja havaintojen yhteensopimattomuutta.
+  \item
+    Selitysaste saa arvoja nollan ja ykkösen väliltä (kun lineaarisessa regressiomallissa on mukana vakiotermi). Arvo 0 tarkoittaa, että malli (yhden selittäjän mallissa käytännössä siis selittäjä \(x\)) ei selitä \(y\):n lineaarista vaihtelua yhtään (yli vakiotermin). Ts. määritelty malli ei ollenkaan selitä selitettävän muuttujan havaittujen arvojen vaihtelua.
+  \item
+    Vastaavasti arvo \(R^2 = 1\) tarkoittaa, että malli sopii täydellisesti aineistoon. Ts. selitysaste mittaa regressiomallin selittämää osuutta selitettävän muuttujan havaittujen arvojen kokonaisvaihtelusta.
+  \item
+    Korkea selitysasteen arvo on siis sinänsä usein toivottava lopputulos lineaarisen mallin käytön yhteydessä. Tämän liian mekaaninen tavoittelu johtaa kuitenkin ajoittain muihin ongelmiin, kuten \textbf{ylisovittamiseen} usean selittäjän lineaarisia malleja käsiteltäessä.
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{eblock}{}
+\textbf{Esimerkki: isän ja poikien pituus, tarkemmin}
+
+Jatketaan isän ja heidän poikiensa pituutta koskevan aineiston tarkastelua. Periytyykö isän pituus heidän pojilleen? Käytännössä jo aiemmin tarkastelimme 300 havainnon havaintoaineistoa isän ja heidän poikiensa pituuksien muodostamista lukupareista.
+
+Estimoidun regressiosuoran yhtälö on (ks. oheinen kuva \ref{fig:isatjapojat2})
+\[
+y = 97.391+ 0.4707 x
+\]
+Suoran kulmakertoimen \(\widehat{\beta}_1\) = 0.4707 tulkinta on siis, että jos isä A on 1 cm pitempi kuin isä B, isä A:n poika on keskimäärin 0.4707 cm pitempi kuin isä B:n poika.
+
+\end{eblock}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/Sovite-isien-poikien-pituudet-Mellin} 
+
+}
+
+\caption{Isien ja poikien pituudet: regressiosuoran sovite}\label{fig:isatjapojat2}
+\end{figure}
+
+\hfill\break
+
 \hypertarget{alaluku83}{%
 \section{Muita regressiomalleja}\label{alaluku83}}
+
+\begin{itemize}
+\item
+  Yksinkertaista lineaarista regressiomallia voidaan laajentaa monin tavoin monenlaisiin erilaisiin tilanteisiin.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Usean selittäjän lineaarinen regressiomalli: Yhden selittäjän sijaan käytetään useita selittäviä muuttujia.
+  \item
+    Lineaarisen mallin sijaan malli voi olla myös epälineaarinen (epälineaarinen regressiofunktio).
+  \end{itemize}
+\item
+  Erityisen tärkeitä laajennuksia ilmenee kun \textbf{vastemuuttuja on muuta muotoa} mitä edellä oletetaan lineaarisissa regressiomalleissa, joissa käytännössä oletetaan että vaste on reaaliarvoinen (jokin reaaliluku).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vaste voi olla myös \textbf{diskreettiarvoinen}, kuten \textbf{binäärinen} (\(Y_i=0\) tai \(Y_i=1\)) tai \textbf{lukumäärä} \(Y_i \in \{0,1,2,3,\ldots\}\)
+  \item
+    Mikäli vaste on binäärinen, niin tällöin tyypillinen tarkasteltava ja täsmennettävä tilastollinen malli on \textbf{logistinen regressiomalli} (tunnetaan myös \textbf{logistisena regressiomallina} tai \textbf{logit-mallina}).
+  \item
+    Jos vaste on lukumäärä, niin tällöin yksi mahdollinen malliluokka on ns. \textbf{Poisson-regressiomalli}. Tässä yhteydessä oletetaan siis, että sm. \(Y\) noudattaa Poisson-jakaumaa ja regressiomalli rakennetaan tämän oletuksen ympärille.
+  \end{itemize}
+\item
+  \textbf{Vastemuuttujan roolin/luonteen selvittäminen on hyvin keskeistä tilastollista mallia rakennettaessa}. Tässä pätee samat eroavaisuudet mitkä tulevat tutuiksi todennäköisyyslaskennan kursseilla kun käsitellään diskreettien ja jatkuva-arvoisten satunnaismuuttujien jakaumia ja näihin liittyviä yksityiskohtia.
+\item
+  Pitemmälle meneviä regressioanalyysin kysymyksiä käsitellään useilla myöhemmillä tilastotieteen kursseilla.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Erityisesti aineopintojen kurssien \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3561/5069}{TILM3561 Tilastollinen päättely I} ja \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3562/5070}{TILM3562 Tilastollinen päättely II} jälkeisellä \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3588/5071}{TILM3588 Lineaariset ja yleistetyt lineaariset mallit -kurssilla}, jossa tarvitaan myös lineaarialgebran ja matriisilaskennan tietoja, joita tilastotieteen yhteydessä käydään läpi \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3574/5082}{TILM3574 Matriisilaskenta tilastotieteessä -kurssilla}.
+  \item
+    Tämän jälkeen regressiomallien käsittely jatkuu useilla eri aineopintojen ja syventävien opintojen erikoiskursseilla.
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{luku9}{%
 \chapter{Tilastotieteen rooli uuden tiedon tuottamisessa}\label{luku9}}
 
+Tilastotieteen yhteiskunnallisesta roolista keskusteltiin luvuissa 2 ja 3. Tilastotieteen keskeinen yhteiskunnallinen rooli liittyy keskeisesti juuri uuden tieteellisen tiedon tuottamiseen: tilastotiede liittyy olennaisesti kaikkeen tieteeseen, joten ei liene yllätys että tilastotiede on jossain määrin tuttua kaikille tieteentekijöille. Tilastotiede tarjoaa pohjan uuden tiedon tuottamiselle, mutta toisaalta voitaisiin myös ajatella teoreettisen tilastotieteen ja siellä luotujen menetelmien ylipäätään mahdollistaneen uskottavan tieteenteon. Tässä luvussa emme kuitenkaan takerru tähän ``muna vai kana?''-ongelmaan, vaan tarkastelemme yleisemmällä tasolla tilastotieteen roolia tieteenteossa.
+
+Ensiksi tarkastelemme kaikista tilastollisia menetelmiä hyödyntävistä ongelmanasetteluista löydettäviä yhteisiä elementtejä. Nämä elementit ovat niin yleisiä että niitä voidaan tarkastella ja kuvata ilman yhteyttä mihinkään yksittäiseen ongelmaan. Tämän jälkeen tarkastelemme tilastollisia menetelmiä hyödyntävän tieteellisen tutkimusprosessin eri vaiheita yleisesti. On kuitenkin mahdotonta koostaa yleisiä ``tee se näin''-listoja tilastollisen tutkimuksen toteuttamiseksi, joten tarkastelemme tähän asti kurssilla käsiteltyjä asioita ja yleisiä elementtejä, jotka jokaisen tieteentekijän tulee hallita.
+
 \hypertarget{alaluku91}{%
 \section{Tilastollisen tutkimuksen yhteisiä elementtejä}\label{alaluku91}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Satunnaisvaihtelu}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Satunnaisilmiöiden generoima havaintoaineisto on aina tilastollisen tutkimuksen tutkimuskohde. Täten kaikki tieteellinen tutkimus, joka koskee satunnaisvaihtelua ilmentävää aineistoa on (tai tulisi olla) tilastotieteellistä.
+\item
+  Tilastollisen tutkimuksen tavoitteena on (useimmiten) pyrkiä erottamaan satunnaisilmiön systemaattinen ja satunnainen vaihtelu. Tämä vaatii substanssiosaamisen lisäksi menetelmäosaamista sekä hyvää tilastotieteellistä intuitiota.
+\item
+  Satunnaisvaihtelun ``välttämättömyys'' satunnaisilmiöiden tutkimuksessa on tiedostettava ja ymmärrettävä. Tämä on tärkeää niin luotettavan tiedontuotannon kuin tutkijan oman uskottavuuden vuoksi. Tilastollisten menetelmien huonon osaamisen vuoksi tehty (ja mahdollisesti julkaistu) tutkimus voi pahimmillaan asettaa kyseisen \href{https://www.nbcnews.com/science/science-news/alzheimers-theory-undermined-accusations-fabricated-research-rcna39843}{aiheen tutkimuksen vuosiksi väärille raiteille}!
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Ilmiön ja ongelman hahmottaminen järjestelmäksi}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutkimusongelman substanssiosaaminen on erityisen tärkeää tilastollisessa tutkimuksessa: on osattava tunnistaa kaikki satunnaisilmiöön mahdollisesti vaikuttavat osatekijät, jotka muodostavat satunnaisen järjestelmän.
+\item
+  Järjestelmä on joukko toisiinsa liittyviä asioita tai osia, jotka toimivat yhdessä tai ovat
+  jonkinlaisessa yhteydessä siten, että niiden voidaan ajatella muodostavan eriteltävissä olevan kokonaisuuden.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tarvitaan kuvaus järjestelmään liittyvistä olioista, ilmiöistä ja toisaalta myös rajoituksista.
+  \item
+    Lisäksi tutkimusongelman holistinen käsittely on tilastollisen tutkimuksen kannalta tärkeää: ilmiöön liittyvien tärkeiden ominaisuuksien unohtuminen tarkastelusta saattaa johtaa esimerkiksi puuttuvan muuttujan harhaan!
+  \end{itemize}
+\item
+  Tilastolliset menetelmät auttavat tutkijaa vastaamaan kysymyksiin siitä, mitkä tilastolliset muuttujat ovat tutkimuskysymyksen kannalta oleellisia.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Varsinkin nykypäivänä kun datan määrä kasvaa alati kiihtyvällä tahdilla, olemme ihmiskuntana ahdistavan informaatiotulvan edessä paikoin aseettomia: mitkä ympäröivistä ilmiöistä liittyvät toisiinsa ja miten?
+  \item
+    Erityisesti teoreettisen tilastotieteen kentällä on viimeisten vuosikymmenien aikana kehitetty lukuisia edistyksellisiä menetelmiä nk. dimension pienennyksen alalla. Nämä menetelmät pyrkivät löytämään yhdenmukaisuuksia hyvin korkeaulotteisesta aineistosta, eli aineistosta jossa jokaiselta tutkimusyksiköltä mitataan jopa miljoonia eri muuttujia, kuten DNA-tutkimuksessa genomitietoa.\footnote{Tilastotieteessä näitä menetelmiä kutsutaan monimuuttujamenetelmiksi ja niitä käsitellään tarkemmin kursseilla \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3704/90801}{TILM3704 Monimuuttujamenetelmät} sekä \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3611/91182}{TILM3611 Monimuuttujamenetelmien jatkokurssi}}
+  \end{itemize}
+\item
+  \textbf{Hahmottamisen vaiheet:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ``Todellisen'' järjestelmän operationalisointi kvantitatiiviseksi kuvaukseksi järjestelmästä.
+  \item
+    Tilastollisen mallin ja järjestelmästä mitattavissa olevan aineiston yhteensovittaminen.
+  \item
+    Mallin antamien tulosten muotoilu sellaiseen muotoon, että ne auttavat ymmärtämään mitä aineisto kertoo todellisesta ilmiöstä.
+  \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Tilastollisen mallin muodostaminen ja siihen perustuva päättely}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Muistetaan aiempi George Boxin sitaatti: Kaikki mallit ovat vääriä, mutta jotkut ovat käyttökelpoisia.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tilastollinen malli on ``vain'' kuvaus aineiston sisältämästä vaihtelusta: se ei käytännössä ikinä täydellisesti ja tyhjentävästi vastaa aineiston generoinutta prosessia, mutta sitä voidaan silti käyttää kyseisen ilmiön kuvaamiseen.\\
+  \end{itemize}
+\item
+  Kuinka saada malliin mukaan kaikki ongelmanasettelun kannalta keskeiset tekijät sellaisella tavalla, ettei oletuksiin ja abstraktioihin liittyvä informaation häviäminen kyseenalaista saatavia tuloksia?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimuskysymyksen kohteena olevan ilmiön taustateoria ja aiheen aiemman tutkimuskirjallisuuden hyvä osaaminen auttaa tässä.
+  \end{itemize}
+\item
+  Vaikutusten eritteleminen on vaikeata, mutta tilastollinen malli on yksi tapa ajatella, kuinka erittely voidaan tehdä. Esimerkkinä tällaisesta mallista on mm. edellä käsitelty yksinkertainen lineaarinen regressiomalli.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \textbf{Synteesi}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Tilastollisia tarkasteluja tehdään, koska substanssitietous ei aina riitä haluttuun käyttöön. Yhdistämällä tilastotieteen keinoja sekä substanssitietoutta saadaan ongelma ratkaistua vakuuttavalla ja perustellulla tavalla.
+\item
+  Tilastollisen (soveltavan) tutkimuksen tavoitteena on tuottaa substanssitietoon perustuen ja tilastotieteen menetelmiä hyödyntäen uutta tietoa: lopputulos on menetelmä- ja substanssiosaamisen synteesi, joka tuottaa uutta substanssitietoutta (sekä joskus myös uusia ongelmia teoreettisen tilastotieteen menetelmäkehitykselle).
+\item
+  \textbf{Jokaisen tutkijan tulisi olla tilastotieteilijä ja jokaisen tilastotieteilijän tutkija}. Järkevä yhteistyö!
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{Muita osatekijöitä:}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Rikas mielikuvitus. Ilman mielikuvitusta uusia yhteyksiä ei keksi etsiä.
+\item
+  Kriittinen ajattelu: Miksi tämä olisi nyt se oikea vastaus?
+\end{itemize}
 
 \hypertarget{alaluku92}{%
 \section{Tutkimusprosessi}\label{alaluku92}}
 
+\begin{itemize}
+\tightlist
+\item
+  Soveltavassa tilastotieteessä tutkimusongelman asettelulla on erityisen tärkeä rooli.\footnote{Yksi soveltavan tilastotieteen osa-alue onkin \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3579/5081}{TILM3579 Kokeiden suunnittelu ja analyysi!}}
+\item
+  Tutkimusta ei yleensä ole mahdollista jakaa täysin selvästi erillisiin ja ajallisesti tosiaan seuraaviin vaiheisiin.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimusprosessin vaiheet toistuvat vuorotellen ja limittäin, sillä tutkimuksen aikana tehdyt havainnot muokkaavat tutkimuksen kulkua.
+  \item
+    Tutkimuksen tekeminen vaikuttaa lopulta saataviin johtopäätelmiin. Aineiston ja itse ilmiön tuntemus kasvaa tutkimuksen kuluessa.
+  \item
+    Päätelmien tieteellisyyden (periaatteellinen) tarkistusmahdollisuus, ja nykyään yhä useammin jo toistettavuus, on tärkeää.
+  \end{itemize}
+\item
+  Usein saattaa kuitenkin olla järkevää jäsentää tutkimuksessa kohdattavia tehtäviä ja vaiheita sekä niiden välisiä suhteita osana tutkimusprosessia.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimuksen lähtökohtana on jokin ongelma, johon tutkimuksen avulla etsitään vastausta.
+  \item
+    Ilmiön ymmärtäminen:
+  \item
+    Tieto ei voi ylittää historiallisia rajojaan, joten tieteelliset teoriat ovat vain loogisia apuvälineitä, joita voidaan käyttää ilmiön tutkimuksen välineenä tai keinona sillä ehdolla, että sekä ilmiö että teoria asemoidaan ja tulkitaan suhteessa vallitseviin olosuhteisiin ja tieteelliseen keskusteluun.
+  \end{itemize}
+\item
+  Määritelmät:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ilmiöitä ei voida tutkia sellaisenaan, vaan vain niiden ilmentymien kautta käsitteiden avulla
+  \item
+    Tutkimus edellyttää arkikieltä täsmällisempää kommunikaatiota, joten ongelmaan liittyvien käsitteiden huolellinen määritteleminen ja erittely on tarpeellista.
+  \item
+    Määritelmät eivät korvaa empiiristä tietoa, mutta ne vaikuttavat tiedon järjestymiseen ja sen perusteella tehtävien päätelmien tekemiseen.
+  \end{itemize}
+\item
+  Havaittava tieto
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yleensä ajatellaan, että todellisuudesta saadaan tietoa tavalla taikka toisella havaintoja tekemällä.
+  \item
+    Havaittava tieto ei mitenkään pysty kattamaan kaikkea tutkimuskohteeseen liittyvää ja toisaalta ymmärtämiseen tarvittava havaintomaailman hahmotus tuottaa ideologisesti ja historiallisesti sitoutuneita yksinkertaistavia sekä luonteeltaan usein hyvin teoreettisia abstraktioita.
+  \end{itemize}
+\item
+  Operationalisointi: Siirrytään teoriasta empiriaan
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Havainnoiminen ja mittaaminen joudutaan suhteuttaamaan valittuun käsitejärjestelmään.
+  \item
+    Joudutaan tekemään kompromisseja mittauksen eksaktisuus- ja systemaattisuusvaatimusten ja arkielen monimerkityksellisyyden välillä.
+  \item
+    On operationalisoitava tutkimusasetelma sellaiseksi, että tutkittavasta ilmiöstä pystytään tuottamaan ongelmaratkaisun kannalta tarkoituksenmukaista tietoa.
+  \item
+    Aineiston käsittely on tavallaan operationalisoinnin II vaihe. Tiedon (aineiston) muuttaminen hyödylliseksi.
+  \item
+    Näkökulman kiinnittäminen:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Operationalisoinnin avulla siirrytään teorian tasolta empirian tasolle ja samalla tulee määritellyksi näkökulma, josta ongelmaa tarkastellaan.
+    \item
+      Käsitteet ja niiden yhteyksistä esitettävät näkemykset voivat vaihtua tutkimuksen kuluessa, kunnes lopulta saavutetaan käsitteiden kyllääntymispiste
+    \end{itemize}
+  \item
+    Numeerinen mittaus
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Numeerisen mittauksen onnistumiseksi käsitteen muotoilu on kiinnitettävä mittariksi.
+    \item
+      Numeeristen mittaustenkin tulkita edellyttää, että niitä on tulkittava siinä kontekstissa, josta ne ovat peräisin.
+    \item
+      On esim. mahdollista, että esitetty kysymys ei välttämättä vastaa tutkimuskohteen ominaisuuksia.
+    \end{itemize}
+  \end{itemize}
+\item
+  Aineisto
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aineisto edustaa tutkimuksessa empiiristä maailmaa ja se valitaan ongelmanasettelun perusteella
+  \item
+    Tarvitaan systemaattinen aineisto, jonka avulla on mahdollista vastata tutkimuskysymyksiin.
+  \item
+    Aineiston tuottamiseen liittyy useita valintoja, jotka implisiittisesti määräävät myös mahdolliset analyysimenetelmät.
+  \item
+    Aineiston esikäsittely:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Aineisto ei ole keräämiseen jälkeen yleensä koskaan suoraan käytettävissä vaan vaatii erinäistä käsittelyä
+    \item
+      Esikäsittely on operationalisoinnin II vaihe, jossa aikaisemmin tehtyjen valintojen aineistossa esiintyvät ilmentyvät sovitetaan vastaamaan ongelmankäsittelyä.
+    \end{itemize}
+  \end{itemize}
+\item
+  Analyysi ja tulkinta
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Analyysivaiheessa sopivasti käsitelty aineisto ja ongelma pyritään sovittamaan yhteen siten, että ongelmaan saataisiin perusteltu ratkaisu (selitys ja lopulta tulkinta).
+  \item
+    Keskeistä on, että tehtävät oletukset sisältävät ongelmanratkaisun kannalta keskeiset tekijät sellaisella tavalla, ettei oletuksiin liittyvä informaation häviäminen kyseenalaista saatavia tuloksia.
+  \item
+    Analyysien tulokset on tulkittava eli käännettävä ne takaisin empiirian kieletä teorian kielelle. Tavoitteena on siis substanssitietouteen perustuen tuottaaa uutta tietoa siten, että se lisää myös substanssitietoutta
+  \item
+    Tulkinnan voi ajatella olevan operationalisoinnin käänteistapahtuma: Tutkimuksen läpiviennin sekä tulkinnan kannalta onnistunut operationalisointi ovat loppujen lopuksi yksi ja sama asia.
+  \end{itemize}
+\item
+  Raportointi
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Parhaimmillaan tutkimusraportti on vakuuttava, ja periaatteessa (ja toivottavasti) toiston mahdollistava, kuvaus tutkimusprosessin kaikista vaiheista, jolloin tutkija voi itse päättää haluaako uskoa saatuihin tuloksiin vai ei.
+  \item
+    Keskeistä on tuoda esille, mitä uutta kyseessä oleva tutkimus on paljastunut ilmiöstä ja suhteuttaa se olemassa olevaan tietoon.
+  \item
+    Tulosten perustelu: Tutkimuksen pätevyyttä ja yleistettävyyttä ja analyysin arvioitavuutta ja uskottavuutta tulisi pohtia raportissa. Tutkimuksen kuluessa tehdyt valinnat tulisi perustella tiedostaen mukaan myös omat arvopainoitteiset valinnat (ja ehkä oletuksetkin).
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\textbf{Esimerkkejä tilastollisista tutkimusasetelmista}: Näitä käsitellään vielä tarkemmin myöhemmin luvussa \ref{luku10}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Kyselytutkimukset}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Päätöksentekijät ja tiedotusvälineet kartoittavat säännöllisin välein suomalaisten mielipiteet erilaisista yhteiskuntaa koskevista kysymyksistä.
+  \item
+    Esimerkkejä:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Miten suomalaiset suhtautuvat NATO-jäsenyyteen?
+    \item
+      Miten suomalaiset suhtautuvat ydinvoiman lisärakentamiseen (osana vihreää siirtymää)?
+    \item
+      Mitkä ovat poliittisten puolueiden kannatusosuudet?
+    \end{itemize}
+  \item
+    Mielipiteet selvitetään kyselytutkimuksilla, joiden kohteeksi poimitaan tyypillisesti esim. noin 1000-2000 suomalaista.
+  \item
+    Kyselytutkimuksen tavoitteena on tehdä kyselyn tulosten perusteella johtopäätöksiä mielipiteiden jakautumisesta kaikkien suomalaisten joukossa.
+  \item
+    Miten 1000-2000 suomalaiseen kohdistetun kyselyn tulokset voidaan yleistää koskemaan kaikkia suomalaisia?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Kyselyn tulokset voidaan yleistää, jos kyselyn kohteiksi poimittujen suomalaisten joukko muodostaa edustavan pienoiskuvan Suomen kansasta (onnistuneen otannan idea)
+    \item
+      Pienoiskuva on edustava, jos mielipiteet jakautuvat kyselyn kohteiksi poimittujen joukossa samalla tavalla kuin kaikkien suomalaisten muodostamassa perusjoukossa
+    \item
+      Kyselyn kohteiden poiminta arpomalla on ainoa menetelmä, joka mahdollistaa edustavan pienoiskuvan saamisen
+    \item
+      Kyselyn kohteiden poimintaa kaikkien suomalaisten muodostamasta perusjoukosta arpomalla voidaan nähdä satunnaisotantana ja tutkimuksen kohteeksi poimittua perusjoukon osa on tässä tapauksessa (satunnais)otos
+    \end{itemize}
+  \item
+    Arvonnan käyttö kyselyn kohteiden poiminnassa merkitsee sitä, että kyselyn tulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kysely tuottaisi (suurella todennäköisyydellä) joka kerran (ainakin jonkin verran) erilaiset tulokset, koska eri arvonnoissa kyselyyn poimittaisiin (suurella todennäköisyydellä) eri henkilöt.
+  \item
+    Kysymyksiä:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Miten yhdestä otoksesta saadut ja satunnaiset kyselytulokset voidaan yleistää koskemaan koko sitä perusjoukkoa, josta otos poimitaan?
+    \item
+      Miten luotettava tällainen yleistys on?
+    \end{itemize}
+  \item
+    Vastauksia:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Jos kyselyn kohteiden poiminnassa on käytetty satunnaisotantaa, kyselyn tuloksiin sisältyvälle epävarmuudelle ja satunnaisuudelle voidaan muodostaa tilastollinen malli, joka mahdollistaa sekä kyselyn tulosten yleistämisen että yleistyksen luotettavuuden arvioimisen.
+    \item
+      Yleistyksen luotettavuutta ei pystytä arvioimaan, ellei otoksen poiminnassa ole käytetty satunnaisotantaa.
+    \item
+      Kyselytutkimusten suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: otanta, estimointi ja testaus.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Laadunvalvonta
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tehdas valmistaa korkealuokkaisia sulkimia kameroihin. Tehdas pyrkii siihen, että yli 90 \% sulkimista kestää vähintään 100 000 kameran laukaisua.
+  \item
+    Sulkimien laadun valvonta on toteutettu seuraavalla tavalla:
+
+    \begin{itemize}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \tightlist
+      \item
+        Tuotantolinjalta poimitaan arpomalla joukko sulkimia rasituskokeeseen.
+      \end{enumerate}
+    \item
+      \begin{enumerate}
+      \def\labelenumi{(\roman{enumi})}
+      \setcounter{enumi}{1}
+      \tightlist
+      \item
+        Rasituskokeessa määrätään vähintään 100 000 laukaisua kestävien sulkimien suhteellinen osuus.
+      \end{enumerate}
+    \end{itemize}
+  \item
+    Kokeen tavoitteena on tehdä kokeen tulosten perusteella yleisiä johtopäätöksiä sulkimien kestävyydestä.
+  \item
+    Miten vain osaan sulkimista kohdistetun rasituskokeen tulokset voidaan yleistää koskemaan kaikkia sulkimia?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Kokeen tulokset voidaan yleistää, jos rasituskokeen kohteiksi poimittujen sulkimien joukko muodostaa edustavan pienoiskuvan kaikista valmistetuista sulkimista.
+    \item
+      Pienoiskuva on edustava, jos sulkimien kesto jakautuu rasituskokeeseen poimittujen sulkimien joukossa samalla tavalla kuin kaikkien valmistettujen sulkimien muodostamassa perusjoukossa.
+    \item
+      Rasituskokeen kohteiden poiminta arpomalla on ainoa menetelmä, joka mahdollistaa edustavan pienoiskuvan saamisen.
+    \item
+      Rasituskokeen kohteiden poiminta kaikkien valmistettujen sulkimien muodostamasta perusjoukosta arpomalla merkitsee satunnaisotannan soveltamista ja tutkimuksen kohteeksi poimittua perusjoukon osa toimii muodostettavana (satunnais)otokseksena.
+    \end{itemize}
+  \item
+    Arvonnan käyttö rasituskokeen kohteiden poiminnassa merkitsee sitä, että koetulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kokeesta saataisiin (suurella todennäköisyydellä) joka kerran (ainakin jonkin verran) erilaiset tulokset, koska eri arvonnoissa kokeeseen poimittaisiin (suurella todennäköisyydellä) eri sulkimet.
+  \item
+    Kysymyksiä:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Miten yhdestä kokeesta saadut ja satunnaiset koetulokset voidaan yleistää koskemaan kaikkia sulkimia?
+    \item
+      Miten luotettava tällainen yleistys on?
+    \end{itemize}
+  \item
+    Vastauksia:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Jos rasituskokeen kohteiden poiminnassa on käytetty satunnaisotantaa, kokeen tuloksiin sisältyvälle epävarmuudelle ja satunnaisuudelle voidaan muodostaa tilastollinen malli, joka mahdollistaa sekä koetulosten yleistämisen että yleistyksen luotettavuuden arvioimisen.
+    \item
+      Yleistyksen luotettavuutta ei pystytä arvioimaan, ellei kokeen kohteiden poiminnassa ole käytetty satunnaisotantaa.
+    \item
+      Kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, otanta, estimointi ja testaus.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
 \hypertarget{luku10}{%
 \chapter{Aineisto- ja tutkimustyypit ja koeasetelmat}\label{luku10}}
+
+Tässä luvussa käsitellään erilaisia tapoja toteuttaa tilastollista tutkimusta. Empiirisen tutkimuksen lähtökohtana on aina tutkimusongelma, joka sisältää kysymyksen tai kysymyksiä, joihin tutkimuksella haetaan vastauksia. Tilastotieteen näkökulmasta tutkimusongelman keskiössä on kuitenkin \textbf{aineisto} ja se, miten käytettävissä olevasta aineistosta saadaan vastauksia tutkimuskysymyksiin. Tarkastelemme tässä luvussa myös tutkimuksenteon käytäntöä käsittelemällä erilaisia aineistotyyppejä. Käymme läpi eri alojen ja tutkimusongelmien käytännön tutkimustyössä kohdattavia aineistoja ja erittelemme pidemmälle eri tutkimuskysymysten käytännön haasteita aineistojen osalta sekä sitä, minkälaisia ongelmia erilaisiin tutkimusykysymyksiin käytännössä liittyy ja miten eri tutkimusasetelmat pyrkivät niitä ratkomaan.
+
+Aineistotarpeen ja sen analysoinnin lähtökohdat määrää tutkimusongelma. Tutkimus voi olla esimerkiksi kuvailevaa, vertailevaa, selittävää tai kokeellista ja aineistolle sekä menetelmille asetetaan kussakin tapauksessa erilaiset vaatimukset ja odotukset. Erilaisiin tutkimuskysymyksiin ja niihin vastausta etsiviin \textbf{koeasetelmiin} liittyvien esimerkkien avulla pyrimme löytämään vastauksia esimerkiksi seuraaviin kysymyksiin:
+
+\begin{itemize}
+\tightlist
+\item
+  Miten tilastotiede liittyy tiedon keruuseen?
+\item
+  Miten aineisto generoituu?
+\item
+  Millaisiin kysymyksiin saadaan kussakin asetelmassa vastauksia?
+\item
+  Tarkemmat asetelmiin ja analyyseihin liittyvät yksityiskohdat käsitellään \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3579/5081}{TILM3579 Kokeiden suunnittelu ja analyysi -kurssilla.}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/tutkimusasetelma} 
+
+}
+
+\caption{Tutkimusasetelma}\label{fig:tutkimusasetelma}
+\end{figure}
+
+Luvussa käsiteltävät asiat kuuluvat tilastotieteelle ominaisesti kvantitatiivisen tutkimussuuntauksen alaisuuteen (ks. luku \ref{luku3}). Luvussa esiteltävät karkeat tutkimustyyppien- strategioiden ja aineistojen jaot ovat vain yksi jaottelutapa ja todennäköisesti poikkeaa eri oppikirjoissa ja lähteissä esitetyistä.
 
 \hypertarget{alaluku101}{%
 \section{Tutkimustyypit}\label{alaluku101}}
 
+Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tutkimukset voidaan karkeasti jakaa neljään eri luokkaan: \textbf{kuvaileva}, \textbf{vertaileva}, \textbf{kokeellinen} ja \textbf{havainnoiva} tutkimus.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Kuvaileva tutkimus}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tarkoituksena on kuvata jonkin ilmiön, tilanteen tai tapahtuman luonnetta, yleisyyttä, historiallista kehitystä tai muita tunnuspiirteitä mahdollisimman todenmukaisesti ja tarkasti.
+  \item
+    Keskeistä \textbf{tiedon lisääminen} ja pyrkimys vastata kysymyksiin \textbf{mitä}, \textbf{millainen} tai \textbf{miten}.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Yleisesti ottaen kuvaileva tilastollinen tutkimus perustuu aineistosta lasketuille tunnusluvuille, jotka kuvaavat aineiston ominaisuuksia. Esimerkkeinä toimivat keskiarvon lisäksi sen kaltaiset keskimääräistä havaintoa mittaavat suureet kuten mediaani ja moodi tai vaihtelua kuvaavat eri muuttujien vaihteluvälit ja keskihajonnat.
+    \end{itemize}
+  \item
+    Saadakseen luotettavia tunnuslukuja, tulee otoksen olla edustava ja havaintojen luotettavia ja päteviä eli saatujen mittausten pitää kuvata kohteena olevaa ilmiötä ilman virheitä.
+  \item
+    Kuvailevassa tutkimuksessa ei tutkita muuttujien välisiä yhteyksiä tai riippuvuksia eikä täten yleensä tehdä jakoa selittäviin ja selitettäviin muuttujiin vaan muuttujat ovat asetelmallisesti samantasoisia.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Vastaavasti kuvailevassa tutkimuksessa ei välttämättä testata hypoteeseja, ei tehdä ennusteita, ei anneta selityksiä tai pohdita seurauksia: kyseessä on vain aineiston kuvailua ilman sen merkityksellisempää sisältöä kuten havaintojen taustalla olevien ilmiöiden tutkimista tai perusjoukon ominaisuuksien päättelyä otoksen perusteella.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Vertaileva tutkimus}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vertaileva tutkimus voidaan jakaa kahteen luokkaan
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \tightlist
+    \item
+      Ryhmäeroja selittävään tutkimukseen
+    \item
+      Korrelaatiotutkimukseen
+    \end{enumerate}
+  \item
+    \textbf{Ryhmäeroja selittävässä tutkimuksessa} pyritään selvittämään, mitkä tekijät liittyvät tutkittaviin ilmiöihin, jotka aiheuttavat ryhmissä ilmeneviä eroja.
+  \item
+    \textbf{Korrelaatiotutkimuksissa} pyritään löytämään ilmiöiden välisiä yhteyksiä tutkimalla kohdejoukkoa kokonaisuutena, jolloin mitattavien muuttujien joukkoon otetaan selittäviä muuttujia.
+  \item
+    Selittäviä muuttujia hyödynnetään molemmissa luokissa. Niiden avulla pyritään löytämään yhteyksiä verrattavien kohteiden välillä ja niiden voidaan ajatella olevan myös mahdollisia syitä selitettäville muuttujille, seurauksille.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Syy-seuraussuhteita ei kuitenkaan vertailevassa tutkimuksessa pohdita, ts. vertaileva tutkimus ei ole suoranaisesti kiinnostunut kohteena olevien ilmiöiden/ryhmien vertailussa löydettyjen erojen syistä vaan mielenkiinnon kohteena on kys. erot itsessään.
+    \end{itemize}
+  \item
+    Vertailevaa tutkimusta tehdessä on tarpeen pohtia:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Miksi jotakin tutkimuskohdetta vertaillaan eli mitä tutkimuskohteesta halutaan nimenomaan saada selville.
+    \item
+      Mitkä ja minkälaisia tilastoyksiköitä vertailuun kannattaa ottaa mukaan, jotta tutkimuksen tavoitteet saavutetaan.
+    \item
+      Tyypillistä se, että kontrolli on puutteellista ja ns. väliin tulevia muuttujia ei voida aina eliminoida.
+    \item
+      Tutkimuksessa on hyväksyttävä myös muuttujiin liittyvä luonnollinen vaihtelu.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Kokeellinen tutkimus}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tarkastellaan syy-seuraussuhteita sellaisissa olosuhteissa, joissa tutkija pystyy kontrolloimaan tutkimusyksikköihin vaikuttavia tekijöitä, eli nk. ``\textbf{käsittelytekijöitä}''.
+  \item
+    Tavallisesti kokeellisella tutkimuksella viitataan sellaiseen tutkimukseen, jossa aineiston on kerätty valvotussa ja kontrolloidussa ympäristössä, kuten laboratoriossa tai sairaalan koehuoneissa, jotta mittaukset ja käsittelytekijät on tutkimuksen tekijän puolesta kontrolloitu ja täten halutunlaisia.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tutkimusasetelman kontrollointi vähentää mittauksiin ja käsittelytekijöihin liittyvien virhelähteiden mahdollisuuksia ja täten jättää vähemmän sijaa epäilyksille.
+    \item
+      Lisäksi tutkimuksen toistettavuus ja objektiivisuus paranevat, kun koejärjestelyt tehdään tarkasti ja huolellisesti.
+    \end{itemize}
+  \item
+    Kokeelliset tutkimukset tuottavat yleensä nopeammin riittävään näyttöön perustuvaa evidenssiä kuin havainnoivat tutkimukset.
+  \item
+    Kokeellinen tutkimusasetelma ei kuitenkaan ole mahdollinen kaikissa tilanteissa.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi erilaisten politiikkatoimien arvioimisessa olisi hyödyllistä, mikäli se voitaisiin satunnaisesti kohdistaa esimerkiksi vain osaan kansasta tai kunnista. Tällaisten kokeilujen ehdotukset ovat kuitenkin usein kaatuneet joko perustuslaillisiin ongelmiin tasavertaisesta kohtelusta tai muihin lainsäädännöllisiin ongelmiin tai niitä ei ole toteutettu riittävän hyvin, jotta asetelma riittäisi kokeelliseen analyysiin.\footnote{Esimerkki: \href{https://labore.fi/julkaisu/kuntakokeilut-kolmas-kerta-samat-ongelmat/}{Jeremias Nieminen avaa vuonna 2020 alkaneesta työllisyyden kuntakokeilusta koeasetelman tärkeydestä politiikkatoimien arvioinnissa.}}
+    \end{itemize}
+  \item
+    Kontrolloitujen kokeiden yleisenä kritiikkinä ja heikkoutena voidaan kuitenkin pitää niiden vähäistä yleistettävyyttä: liian pitkälle kontrolloidut ja pelkistetyt koeolosuhteet eivät toimi kaikkien tutkimuskysymysten kannalta yleistettävyyden osalta.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Ihmiset käyttäytyvät eri tavalla laboratorio-olosuhteissa kuin normaalissa ympäristössä!
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: kasvien kasvatus eri hiilidioksidipitoisuuksissa}
+
+\begin{itemize}
+\tightlist
+\item
+  Hiilidioksidipitoisuuden kasvu tehostaa kasvien yhteyttämistä
+\item
+  Kasvit eroavat toisistaan siinä, millä tavalla ne sitovat hiilidioksidia ilmasta yhteyttämistä varten \(\rightarrow\) muutokset vaikuttavat eri tavalla eri kasveihin
+\item
+  Vaikuttaako ilmastonmuutos sadonmuodostukseen? Onko vaikutus suurempi joillain tietyillä kasveilla?
+\end{itemize}
+
+\end{eblock}
+
+\FloatBarrier
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/co2} 
+
+}
+
+\caption{Hiilidioksidipitoisuuden kasvun vaikutus satomääriin.}\label{fig:co2}
+\end{figure}
+
+\FloatBarrier
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: Lääketieteelliset kokeet}
+
+\begin{itemize}
+\tightlist
+\item
+  Erään tappavan taudin hoitoon on kehitetty uusi lääke, jonka toivotaan parantavan enemmän potilaita kuin kauan käytössä ollut vanha lääke. Miten saadaan varmuus siitä, että uusi lääke on parempi kuin vanha lääke?
+\item
+  Paranemistulosten vertailemiseksi järjestetään tilastollinen koe:
+
+  \begin{itemize}
+  \item
+    \begin{enumerate}
+    \def\labelenumi{(\roman{enumi})}
+    \tightlist
+    \item
+      Jaetaan joukko potilaita arpomalla kahteen ryhmään:
+    \end{enumerate}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Ryhmälle 1 annetaan uutta lääkettä.
+    \item
+      Ryhmälle 2 annetaan vanhaa lääkettä.
+    \end{itemize}
+  \item
+    \begin{enumerate}
+    \def\labelenumi{(\roman{enumi})}
+    \setcounter{enumi}{1}
+    \tightlist
+    \item
+      Verrataan parantuneiden suhteellisia osuuksia ryhmissä 1 ja 2.
+    \end{enumerate}
+  \end{itemize}
+\item
+  Kokeen tavoitteena on tehdä kokeen tulosten perusteella yleisiä johtopäätöksiä uuden lääkkeen tehokkuudesta. Miten yhdestä kokeesta saadut tulokset voidaan yleistää koskemaan kaikkia tautia sairastavia potilaita?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kokeen tulokset voidaan yleistää, jos kokeessa uutta ja vanhaa lääkettä saavien potilaiden ryhmät ovat samankaltaisia kaikissa muissa suhteissa paitsi siinä, että niihin kohdistetaan kokeessa erilainen käsittely.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tällöin mahdolliset erot parantuneiden suhteellisissa osuuksissa on oltava seurausta erilaisista käsittelyistä.
+    \item
+      Kokeen kohteiden jakaminen ryhmiin arpomalla on ainoa menetelmä, joka mahdollistaa samankaltaisten ryhmien saamisen.
+    \item
+      Kokeen kohteiden jakamista erilaisen käsittelyn kohteiksi joutuviin ryhmiin arpomalla kutsutaan siis \textbf{satunnaistamiseksi}.
+    \end{itemize}
+  \item
+    Arvonnan käyttö ryhmiin jaossa merkitsee sitä, että koetulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kokeesta saataisiin (suurella todennäköisyydellä) erilaiset ryhmäjaot.
+  \end{itemize}
+\item
+  Kysymyksiä:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Miten yhdestä kokeesta saadut ja satunnaiset koetulokset voidaan yleistää koskemaan kaikkia ko. tautia sairastavia potilaita?
+  \item
+    Miten luotettava tällainen yleistys on?
+  \end{itemize}
+\item
+  Vastauksia:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Jos potilaiden jaossa ryhmiin on käytetty satunnaistamista, kokeen tuloksiin sisältyvälle epävarmuudelle ja satunnaisuudelle voidaan muodostaa tilastollinen malli, joka mahdollistaa sekä koetulosten yleistämisen että yleistyksen luotettavuuden arvioimisen.
+  \end{itemize}
+\item
+  Yleistyksen luotettavuutta ei pystytä arvioimaan, ellei ryhmiin jaossa ole käytetty satunnaistamista.
+\item
+  Tilastollisen kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, estimointi ja testaus.
+\end{itemize}
+
+\end{eblock}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Havainnoiva tutkimus}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kuten edellä mainittiin, kokeellisia tutkimusasetelmia ei useinkaan ole mahdollista järjestää. Tällaisia kysymyksiä voidaan kuitenkin tutkia havainnoivassa tutkimuksessa, jossa syy-seuraussuhteita tarkastellaan tilanteissa, joissa tutkijalla ei ole välttämättä mitään kontrollia (tai syytä sille) tutkimusyksikköihin tai heihin vaikuttaviin muuttujiin (käsittelytekijöihin).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi tutkimusasetelmat, joissa tutkimuksen kohteena olevia yksiköitä (esim. ihmiset, kunnat, valtiot) ei voida satunnaistaa kuuluvaksi osaksi joukkoa, joka altistetaan jollekin käsittelylle.
+    \end{itemize}
+  \item
+    Tällöin tutkijan on tyydyttävä havainnoimaan sitä mitä tapahtuu luonnostaan tietyssä (mahdollisesti satunnaisesti poimitussa) tutkimusjoukossa tietyssä tilanteessa.
+  \item
+    Havainnoivan tutkimuksen aineistoa voidaan analysoida samoin menetelmin kuin kokeellisen tutkimuksenkin, mutta mitattujen tekijöiden vaikutusta ei voida erottaa kokonaisuudesta samalla tarkkuudella kuin kokeellisessa tutkimuksessa
+  \item
+    Havainnoivan tutkimuksen tilastollinen teoria muodostuu periaatteista ja menetelmistä, joiden avulla aineiston tuottaman evidenssin painoarvoa voidaan arvioida mahdollisimman ``puhtaasti''
+  \item
+    \textbf{Havainnoivan tutkimuksen edut}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Saadaan välitöntä ja suoraa tietoa yksilöiden, ryhmien ja organisaatioiden toiminnasta ja käyttäytymisestä.
+    \item
+      Tutkija voi havainnoida tutkittavia luonnollisessa ympäristössä.
+    \item
+      Sopii sekä määrällisen että laadullisen aineiston hankkimiseen.
+    \item
+      Erinomainen menetelmä muun muassa vuorovaikutuksen tutkimisessa, ja silloin kun tilanteet ovat vaikeasti ennakoitavia ja nopeasti muuttuvia.
+    \item
+      Sopii myös silloin, kun tutkittavilla on kielellisiä vaikeuksia (kuten lapset) tai kun halutaan saada selville sellaista tietoa, jota tutkittavat eivät halua suoraan kertoa tutkijalle.
+    \end{itemize}
+  \item
+    \textbf{Havainnoivan tutkimuksen haitat}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      tutkija saattaa häiritä tilannetta tai muuttaa sen kulkua.
+    \item
+      Tutkija saattaa sitoutua emotionaalisesti tutkittavaan ryhmään tai tilanteeseen.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: raskauden keskeytyksen ja rintasyövän välinen kausaaliyhteys}
+
+\begin{itemize}
+\tightlist
+\item
+  Kokeellinen asetelma: Poimitaan satunnaisesti \(n\) kappaletta raskaana olevia naisia ja heistä \(n_1\) kappaletta satunnaistetaan käsittelyryhmään (raskauden keskeytys) ja \(n_2\) kontrolliryhmään. Kaikki naiset käyvät muutaman seuraavan vuoden ajan syöpäseulonnoissa.
+\item
+  Kokeelliseen asetelma ei selvästikään ole eettisistä syistä mahdollinen, eikä sitä olisi mahdollista suorittaa sokkoutettuna kokeena
+\item
+  Aiheesta julkaistut tutkimukset aloittavat yleensä naisista, joille on jo tehty raskauden keskeytys
+\item
+  Käsittelyryhmään kuuluminen ei siis ole tutkijan kontrollissa
+\end{itemize}
+
+\end{eblock}
+
+\hfill\break
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: Lääkityksen aiheuttama harvinainen sivuvaikutus}
+
+\begin{itemize}
+\tightlist
+\item
+  Harvinaisen ilmiön tarkastelu satunnaistetulla kokeella on epäkäytännöllistä, sillä saattaa olla, että isossakaan tutkimusjoukossa sivuvaikutusta ei esiinny yhdelläkään tutkittavalla
+\item
+  Havainnoiva tutkimus aloittaisi tässä tapauksessa etsimällä ensin sivuvaikutuksesta kärsivät potilaat ja sen jälkeen selvittäisi ketkä heistä ovat saaneet kyseistä lääkettä (ja saaneet sivuoireet lääkityksen aloittamisen jälkeen)
+\end{itemize}
+
+\end{eblock}
+
 \hypertarget{alaluku102}{%
 \section{Tutkimusstrategiat}\label{alaluku102}}
+
+\begin{itemize}
+\tightlist
+\item
+  Erilaiset tutkimusasetelmat voidaan jakaa edelleen kahteen \textbf{tutkimusstrategiaan} sen mukaan, miten niissä ryhmitellään tilastoyksiköitä: \textbf{poikkileikkaus}- ja \textbf{pitkittäistutkimuksiin}. Tilastoyksikköjen erilainen ryhmittely tuottaa erilaisia aineistotyyppejä, jotka voidaan jaotella karkeasti kolmeen eri tyyppiin
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Poikkileikkausaineistot: havaintoaineisto kattaa yhden ajankohdan ja mahdollisesti useita tilastollisia muuttujia
+  \item
+    Aikasarja-aineistot: havaintoaineisto kattaa vain yhden tilastollisen muuttujan mitattuna useana ajanhetkenä
+  \item
+    Paneeliaineistot: havaintoaineisto kattaa mahdollisesti useita tilastollisia muuttujia mitattuna useana ajanhetkenä
+  \end{itemize}
+\item
+  Eri tutkimusstrategiat hyödyntävät eri aineistotyyppejä sen mukaan, miten ne sopivat tutkimuskysymykseen ja valittuun menetelmään. Tarkastellaan seuraavaksi mitä em. kaksi tutkimusttrategiaa tarkoittavat, miten ne eroavat ja minkälaisia tutkimustyyppejä-, asetelmia- ja aineistoja kumpaankin kuuluu.
+\end{itemize}
+
+\hypertarget{poikittaistutkimus-tai-poikkileikkaustutkimus}{%
+\subsection{\texorpdfstring{\textbf{Poikittaistutkimus} tai \textbf{poikkileikkaustutkimus}}{Poikittaistutkimus tai poikkileikkaustutkimus}}\label{poikittaistutkimus-tai-poikkileikkaustutkimus}}
+
+\begin{itemize}
+\tightlist
+\item
+  Poikittaistutkimukseksi kutsutaan tutkimusstrategiaa, jossa tarkoituksena on tutkia kohdetta tai ilmiötä laaja-alaisesti tiettynä ajankohtana käyttäen poikkileikkausaineistoja.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Voidaan tarkastella useita ryhmiä, joissa on esimerkiksi eri-ikäisiä henkilöitä ja ryhmistä saatua tietoa vertaillaan toisiinsa.
+  \item
+    Voidaan käyttää kuvailemaan riskisuhteita (odds ratio) tai kuvailemaan tiettyyn populaation osaan kohdistuvaa ilmiötä tai riskiä (esimerkiksi sydän- ja verisuonitaudit).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkiksi tutkittaessa sydän- ja verisuonitauteja binäärisellä vastemuuttujalla käyttäen aineistoa, joka koostuu eri ikäisistä ja kuntoisista ihmisistä voidaan arvioida iän ja muiden muuttujien vaikutuksia sydän- ja verisuonitauteihin sairastumisen riskitekijöinä.
+    \end{itemize}
+  \item
+    Poikittaistutkimuksessa ei saada tietoa tilastoyksikön mielenkiinnon kohteena olevien muuttujien arvojen muutoksesta yli ajan mutta tutkimuksessa voidaan kuitenkin kerätä tietoa menneisyyteen liittyen.
+  \item
+    Eri ikäryhmiä vertailtaessa ongelmana on myös niin sanottu kohorttivaikutus: tiettynä aikana syntyneiden, eli tietyn kohortin, elinolosuhteet saattavat olla täysin erilaiset kuin jonakin toisena aikana syntyneiden, minkä vuoksi ikäryhmien väliset erot saattavat johtua esimerkiksi yhteiskunnallisista olosuhteista.
+  \item
+    Poikittaistutkimukseen osallistutaan vain yhden kerran, jolloin tietoa saadaan kerralla paljon.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tämä on kuitenkin usein työlästä ja suuren poikkileikkausaineston kerääminen voi olla kallista.
+    \item
+      Poikittaistutkimuksessa hyödynnetäänkin usein rutiinitoimenpiteinä kerättyjä aineistoja (esimerkiksi tietyn ikävuoden terveystarkastuksista)
+    \item
+      Näin voidaan selvittää korrelaatioita ilmiöiden välillä (esimerkiksi alkoholin käyttö ja maksakirroosi) ja siten luoda hypoteeseja tarkemmille jatkotutkimuksille
+    \item
+      Tällöin on kuitenkin taas vaara sekoittavista tekijöistä, jos aineistoa ei ole kerätty varta vasten tätä tarkoitusta varten
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/cross} 
+
+}
+
+\caption{Esimerkki poikkileikkaustutkimuksesta}\label{fig:cross}
+\end{figure}
+
+\hfill\break
+
+\hypertarget{pitkittuxe4istutkimus}{%
+\subsection{\texorpdfstring{\textbf{Pitkittäistutkimus}}{Pitkittäistutkimus}}\label{pitkittuxe4istutkimus}}
+
+\begin{itemize}
+\tightlist
+\item
+  Pitkttäistutkimuksessa seurataan usein samoja tilastoyksiköitä ``yli ajan'', eli mittauspisteitä on useita ja pitkältä aikaväliltä.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hyödyntää poikkileikkausdimension lisäksi myös aikasarjadimensiota.
+  \item
+    Yleinen tutkimuskysymys pitkittäistutkimuksessa on jonkin \textbf{käsittelyn vaikutuksen arviointi}. Tällaisia ovat esimerkiksi lääkeainetutkimus, poliittisten päätösten arviointi tai markkinointitutkimus.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Pitkittäistutkimuksessa voidaan siis tarkastella \textbf{muutosta} mutta on tärkeä muistaa, että pitkittäistutkimuksen eri mittauskerrat eivät ole toisistaan \textbf{riippumattomia} ja tämä tulee ottaa tilastollisessa mallissa huomioon!
+    \end{itemize}
+  \item
+    Pitkittäistutkimuksen hyvänä puolena on \textbf{ryhmien homogeenisyys}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tutkittavan ryhmän henkilöt ovat eläneet saman historiallisen ajan sekä käyneet läpi samat yhteiskunnalliset muutokset, jolloin muutoksen tutkiminen on luotettavaa, sillä tutkimusta vääristävät tilastoyksiköiden ominaisuuksista erilliset ympäristön haittamuuttujat ovat kaikille samat.
+    \item
+      Pitkittäistutkimuksen pitkän keston vuoksi tutkittavien määrää kuitenkin yleensä vähenee ja tutkimuksen valmistumisessa kestää kauan, jopa vuosikymmeniä.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/long} 
+
+}
+
+\caption{Esimerkki pitkittäistutkimuksesta}\label{fig:long}
+\end{figure}
+
+\hfill\break
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: poikittais- ja pitkittäistutkimus epidemiologiassa}
+
+\begin{itemize}
+\tightlist
+\item
+  Epäkokeelliset epidemiologiset tutkimukset voivat olla joko poikittaistutkimuksia tai pitkittäistutkimuksia
+\item
+  Poikittaistutkimus on tiettyyn ajankohtaan rajoittuva tutkimus, jossa mitataan sairauksien vallitsevuutta eli prevalenssia
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Prevalenssi kuvaa sairauden tai haitan omaavien henkilöiden määrää tarkasteltavasta väestöstä tiettynä ajankohtana
+  \item
+    Usein mitataan vallitsevuustiheyttä eli sairaiden lukumäärää tiettynä ajanhetkenä / väkiluku samana ajankohtana
+  \end{itemize}
+\item
+  Pitkittäistutkimuksessa mitataan sairauksien ilmaantuvuutta eli insidenssiä
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimuksessa seurataan väestössä ilmaantuvien uusien sairaustapausten lukumäärää tietyn ajanjakson aikana
+  \item
+    Useimmiten mitataan ilmaantuvuustiheyttä, joka ilmoittaa uusien sairastapausten määrän henkilöaikaa kohden
+  \item
+    Henkilöaika muodostuu tarkasteltavan henkilöryhmän yhteenlasketusta seuranta-ajasta ennen sairastumista, esimerkiksi 100 henkilövuotta muodostuu seurattaessa 100 henkilöä vuoden ajan tai 10 henkilöä 10 vuoden ajan
+  \end{itemize}
+\end{itemize}
+
+\end{eblock}
+
+\hfill\break
+
+\hypertarget{kohorttitutkimus}{%
+\subsection{\texorpdfstring{\textbf{Kohorttitutkimus}}{Kohorttitutkimus}}\label{kohorttitutkimus}}
+
+\begin{itemize}
+\tightlist
+\item
+  Kohorttitutkimus on altistelähtöinen tapa toteuttaa pitkittäistutkimus.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kohortti on suljettu väestö (syntymäkohortti, tietyn työpaikan työntekijät, yms.), jota tutkimuksessa seurataan ja joka on valittu jonkin yhteisen ominaisuuden perusteella (syntymävuosi, työpaikka, yms.).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Kohortti voidaan jakaa myös alakohortteihin, mikäli se on alkujaankin riittävän suuri.
+    \item
+      Valitun kohortin tilastoyksiköst pyritään pitämään täysin samana koko tutkimuksen ajan, ts. kohortit ovat kiinteitä.
+    \end{itemize}
+  \item
+    Tutkimuksessa voidaan valita esimerkiksi jollekkin käsittelymuuttujalle altistunut ja altistumattomien ryhmä.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Kohortin seuranta-aikana tutkitaan ryhmien välillä ilmeneviä eroja mielenkiinnon kohteena olevassa muuttujassa.
+    \item
+      Näitä voi olla esimerkiksi ryhmien väliset erot sairastuvuudessa, kun käsittely on ollut jokin lääke kuten rokote tms. Vastaava esimerkki olisi em. työllisyyden kuntakokeilun osalta työllisyysaste eri kunnissa ja erojen tutkiminen kuntakokeiluun osallistuvien ja osallistumattomien välillä.
+    \end{itemize}
+  \item
+    Kohorttitukimus voi olla \textbf{taannehtiva}: tutkija määrittelee kohortin menneisyydessä, ja seuraa olemassaolevien rekisterien avulla, mitä kohortin jäsenille on tapahtunut myöhemmin.
+  \item
+    Kohorttitutkimuksessa voidaan yleensä tutkia kerrallaan vain \textbf{yhtä altistetta/käsittelyä}, mutta \textbf{useita tilastollisia muuttujia}.
+  \item
+    Tutkimukset saattavat olla hyvin pitkäkestoisia, jos tutkitaan ilmiötä, joka ilmenee vasta pitkä ajan kuluttua altistuksesta (kuten sairaus tai työllisyyden paraneminen)
+  \item
+    Kohorttitutkimus voi vastata kysymykseen: ``Mitkä ilmiöt johtuvat tästä altisteesta?''
+  \end{itemize}
+\end{itemize}
+
+\begin{eblock}{}
+\textbf{Esimerkki kohorttitutkimuksesta}
+
+Toisen maailmansodan aikana räjäytettiin Japanissa kaksi atomipommia. Tämän traagisen tapahtuman jälkeen tutkijat alkoivat selvittää, mitä terveysvaikutuksia ionisoiva säteily aiheuttaisi altistuneille. Tutkimuksessa seurattiin altistuneiden ja altistumattomien sairastumista vuodesta 1945 vuoteen 1970. Tutkimuksen mukaan ionisoiva säteily aiheutti etupäässä monenlaisia kasvaimia; mm. keuhkosyöpää, rintasyöpää ja kilpirauhasen syöpää.
+
+\end{eblock}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/hiroshima} 
+
+}
+
+\caption{Yhdysvaltain räjäyttämä atomipommi Japanin Hiroshimassa aiheutti mittaamattomia tuhoja.}\label{fig:hiroshima}
+\end{figure}
+
+\hfill\break
+
+\hypertarget{tapaus-verrokkitutkimus}{%
+\subsection{\texorpdfstring{\textbf{Tapaus-verrokkitutkimus}}{Tapaus-verrokkitutkimus}}\label{tapaus-verrokkitutkimus}}
+
+\begin{itemize}
+\tightlist
+\item
+  On \textbf{retrospektiivinen havainnoiva} pitkittäistutkimusmenetelmä, jossa tutkimukseen valitaan esimerkiksi tutkittavaan sairauteen (tai muulle altisteelle/käsittelylle altistuneita) potilaita (\textbf{tapaukset}) ja lisäksi henkilöitä, jotka eivät ole sairastuneita tähän sairauteen (\textbf{verrokit}) (tai altistuneet altisteelle/käsittelylle).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tavoitteena on tutkia miten tutkimusyksiköt reagoivat altistuttuaan jollekin altisteelle tai käsittelylle. Soveltuu erityisesti harvinaisten ilmiöiden aiheuttajien selvittämiseen.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Esimerkkinä altistuminen Covid-19 virukselle: retrospektiivisesti (jälkikäteen) voidaan tarkastella viruksen kantajan kanssa samassa tilassa olleita (virukselle altistuneita (virus on altiste)) kyseisessä tilassa olleet olisivat tapauksia ja hypoteettinen toinen tila ilman virusta toimisi verrokkina (ts. ei yhtäkään tartuntatapausta). Mielenkiinnon kohteena olisi tarkastella kuinka monta henkilöä sai tartunnan (ja minkälaiset olosuhteet olivat).
+    \item
+      Toisena esimerkkinä voitaisiin jälleen pitää em. työllisyyden kuntakokeilua: ne kunnat jotka (satunnaisesti) valikoituisivat työllisyyskokeiluun tulisivat altistetuksi politiikkamuutokselle eli olisivat tapauskuntia. Näitä kuntia voidaan sitten verrata verrokkikuntiin, joissa kys. politiikkamuutosta ei toteutettaisi. Mielenkiinnon kohteena olisi työllisyyden kehitys altistumisen jälkeen.
+    \end{itemize}
+  \item
+    Käsittelyn tai altistuksen seurauksia, esimerkiksi sairauden, syitä etsitään vertaamalla tapausten ja verrokkien aikaisempaa altistumista erityisesti mielenkiinnon kohteena oleville altisteille.
+  \item
+    Tapaus-verrokkitutkimus eroaa kohorttitutkimuksesta siten että siinä voidaan tutkia \textbf{yhtä tilastollista muuttujaa} (kuten sairastumista), mutta \textbf{useita altisteita}: mistä altisteesta sairaus on seuraus, ts. mikä on taudinaiheuttaja?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Altistumishistoriaa voidaan selvitettää mm. mittauksilla, malleilla tai kyselylomakkeilla.
+    \item
+      Esimerkki: tapauksien ja verrokkien altistumiseroista saadaan epäsuora arvio altistuneiden riskistä sairastua kyseiseen sairauteen suhteessa altistumattomien riskiin.
+    \end{itemize}
+  \item
+    Tapaus-verrokkitutkimukset ovat yleensä suhteellisen yksinkertaisia ja halpoja toteuttaa niiden retrospektiivisestä luonteesta johtuen: tutkimuskysymys määrittelee aineistotarpeen, jonka jälkeen se tarvitsee vain kerätä.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Verrokien valinta kuitenkin kriittinen, sillä valitsemalla verrokit/kontrollitapaukset väärin mikään tilastollinen testi tai menetelmä ei korjaa tai kvantifioi tätä virhettä!
+    \item
+      Esimerkki verrokkiryhmän epäkelvosta valinnasta on huonosti mitattu aiempi altistuminen ja/tai jos jokin tutkimuksen kannalta keskeinen taustamuuttuja sivuutetaan: mitä jos tauti tai sen vakavuus riippuukin sairastuneen muusta terveydentilasta?
+    \end{itemize}
+  \item
+    Eroaa poikittaistutkimuksesta siinä, että poikittaistutkimus pyrkii yleistämään tulokset koko kohdepopulaatioon, kun taas tapaus-verrokkitutkimus keskittyy hyvin spesifiin populaation osaan
+  \end{itemize}
+\end{itemize}
+
+\begin{eblock}{}
+\textbf{Esimerkki tapaus-verrokkitutkimuksesta}
+
+Länsi-Saksassa tuotiin 50-luvun lopulla markkinoille talidomidi-niminen uni- ja rauhoittava lääke. Varsin pian markkinoille tulon jälkeen tietyntyyppisten synnynnäisten epämuodostumien määrä alkoi lisääntyä rajusti. Talidomidin ja lasten raajojen muodostumishäiriöiden yhteys paljastettiin tapaus-verrokkitutkimuksilla. Tutkimuksissa selvitettiin sekä sairaiden lasten (tapaukset) että terveiden lasten (verrokkien) äitien altistuminen talidomidille raskauden kriittisten viikkojen aikana. Melkein kaikki sairaiden lasten äidit olivat saaneet talidomidia ensimmäisten raskausviikkojen aikana (talidomidin oli myös havaittu helpottavan odottavien äitien raskauspahoinvointia). Talidomidi poistettiin markkinoilta ja epämuodostumatapausten määrä putosi jyrkästi.
+
+\end{eblock}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/tali} 
+
+}
+
+\caption{Esimerkki tapaus-verrokkitutkimuksesta}\label{fig:tali}
+\end{figure}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lohkot/osittaminen}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Lohkomisella / osittamisella tarkoitetaan tutkimusyksiköiden järjestämistä ryhmiin niin, että ryhmät ovat mahdollisten sekoittavien tekijöiden suhteen mahdollisimman samankaltaiset
+  \item
+    Lohkotekijä on yleensä muuttuja, jonka aiheuttama vaihtelu vasteeseen ei ole tutkijan päämielenkiinnon kohteena
+  \item
+    Lohkotekijän kontrollointi johtaa usein tarkkuudeltaan parempiin tuloksiin
+  \item
+    ``Block what you can, randomize what you cannot.''
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/block} 
+
+}
+
+\caption{Esimerkki ositetusta koeasetelmasta}\label{fig:block}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Sokkouttaminen}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimushoitojen sokkoutuksen tavoitteena on vähentää sekä potilaan että tutkimushenkilökunnan mahdollisten ennakkokäsitysten vaikutusta tutkimuksen tuloksiin.
+  \item
+    Yksöissokkotutkimuksessa (single-blind) tutkittava ei tiedä, mihin hoitoryhmään hän kuuluu.
+  \item
+    Kaksoissokkotutkimuksessa (double-blind) ei tutkittava eikä tutkija ja muukaan tutkimushenkilökunta saa tutkimuksen aikana tietää mihin hoitoryhmään tutkittava kuuluu.
+  \item
+    Kolmoissokkoutetussa tutkimuksessa edes havaintojen analysoija (esim. tilastotutkija) ei tiedä, miten kokeellisen tutkimuksen käsittely on koodattu.
+  \item
+    Avoimessa tutkimuksessa (open) sekä tutkittava että tutkimushenkilökunta tietävät, mihin hoitoryhmään tutkittava kuuluu. Myös avoimessa tutkimuksessa tulisi yleensä käyttää satunnaistamista.
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{alaluku103}{%
 \section{Erilaisia aineistoja ja aineistolähteitä}\label{alaluku103}}
 
+Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tutkimuksissa Suomessa (ja maailmalla) usein käytetään. Emme käsittele tässä erikseen itse otannalla koottavia aineistoja tai otannan järjestämistä, ks. luku \ref{luku5}.
+
+\hypertarget{rekisteriaineistot}{%
+\subsection{Rekisteriaineistot}\label{rekisteriaineistot}}
+
+\begin{itemize}
+\item
+  Rekisteriperusteinen tutkimus hyödyntää aineistoinaan valmiiksi kerättyjä \textbf{tietokantoihin} tallennettuja aineistoja, joita kutsutaan rekisteriaineistoiksi.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yleensä \textbf{hallinnollisia tarpeita} varten kerättyjä tietoja.
+  \end{itemize}
+\item
+  Rekisteriaineistojen eduiksi voidaan lukea mm. seuraavat seikat
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aineiston muodostaminen/kerääminen on verrattain helppoa ja Suomessa on paljon korkealaatuisia rekisteriaineistoja. Tätä edesauttaa tietotekniikan nopea kehittyminen, joka on mahdollistanut erittäin suurten aineistojen rutiininomaisen keräämisen.
+  \item
+    Ei tarvetta erikseen tuottaa tutkimusaineistoa: vältetään mahdollisesti kallis aineiston keräysvaihe.
+  \item
+    Suomalainen henkilötunnusjärjestelmä mahdollistaa tietojen tehokkaan käytön ja laadukkaan tutkimuksen.
+  \item
+    Rekisteriaineistoissa on paljon potentiaalia ja niiden tarjoamia tutkimusmahdollisuuksia ei vielä täysimääräisesti tunneta tai ole hyödynnetty tutkijoiden toimesta.
+  \end{itemize}
+\item
+  Rekisteriaineistojen ongelmina ja haittoina voidaan pitää mm. seuraavia
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Mikäli tutkimuksessa lähtökohtaisesti käytetään rekisteriaineistoja, määräävät ne välillisesti myös mahdolliset tutkimuskohteet: rekisteriaineistot kerätään eri tarkoitusta varten eivätkä ne täten välttämättä sisällä kaikkea haluttua informaatiota.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tutkimuksen ongelmalähtöisyys saattaa unohtua helpommin, kun tutkimusongelman aihiota asetellaan sopimaan rekisteriaineistojen tarjoamiin mahdollisuuksiin.
+    \item
+      Rekisteriaineistoilla on myös omat rajansa: tutkimuskysymysten kannalta väärin mitattua muuttujaa ei useinkaan voida millään tavalla muuntaa täydellisesti haluttuun muotoon.
+    \end{itemize}
+  \item
+    Rekisteriaineisto pitää usein esikäsitellä sopivaan muotoon laadullista tutkimusta muistuttavalla tavalla.
+  \item
+    Rekisteriaineistojen analyysista ja niihin soveltuvista tilastollisista menetelmistä on vähänlaisesti metodologisia oppikirjoja ja/tai esimerkkitutkimuksia.
+  \item
+    ``Ulkopuolisille'' tutkijoille aineistojen käyttö saattaa olla hankalaa mm. korkeiden pääsykustannusten (rekisterien ylläpitäjien, viranomaisten ja tutkimuslaitosten ulkopuolella), tietosuojakysymysten tai teknisten hankaluuksien takia.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Rekisteriaineiston käyttö vaatii tutkimussuunnitelman ja tutkimussuunnitelman perusteella myönnetyn käyttöluvan rekisterin ylläpitäjältä.
+    \end{itemize}
+  \item
+    Tietotekniikan kehittymisen vuoksi kasvaneet rekisteriaineistot tekevät käyttökelpoisen tiedon esiin seulomisesta haastavaa. Tämä näyttäytyy esimerkiksi eri rekistereiden tietojen linkkaamista yhteen, jolla saattaa olla tutkimuksen kannalta ratkaiseva merkitys ja joka edelleen korostaa substanssitietoutta.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Eri rekisterejä ei aina saadakaan linkattua tehokkaasti yhteen esimerkiksi jos ne ovat mitanneet mielenkiinnon kohteina olevia muuttujia eri tilastoyksikön tasolla (vrt. kunnan vs kaupunginosan työllisyys)
+    \end{itemize}
+  \end{itemize}
+\item
+  Erilaisia rekisterejä Suomessa:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Verorekisterit (Verohallinnon rekisterit)
+  \item
+    Kuolemansyyrekisterit
+  \item
+    Eläkerekisterit
+  \item
+    Väestölaskennat (väestörekisteri)
+  \item
+    Syöpärekisteri
+  \item
+    Lääkeostorekisteri
+  \item
+    Sosiaali- ja terveydenhuollon rekisterit
+  \item
+    Kelan etuusrekisterit
+  \item
+    Osoiterekisterit
+  \item
+    Etukorttirekisterit
+  \item
+    Opintosuoritusrekisteri
+  \end{itemize}
+\item
+  Näiden lisäksi tulevat myös aikaisempien tutkimusten aineistot.
+\item
+  Rekisteriaineiston käyttämisen \textbf{tilastollisia haasteita} tutkimuksessa
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Rekisteriaineistot ovat usein kokonaisaineistoja, joten otantavirheeseen perustuvan tilastollisen päättelyn oletukset eivät välttämättä päde.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Isoissa aineistoissa käytännössä merkityksettömistäkin eroista tulee helposti tilastollisesti merkitseviä!
+    \end{itemize}
+  \end{itemize}
+\item
+  Rekisteriaineistoja saadaan ``valmiina'' ja niiden kokonaistutkimukseen soveltuvasta luonteesta huolimatta niitä on arvioitava samojen periaatteiden mukaisesti kuin itse kerättäviäkin aineistoja.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tutkimusongelman pitäisi aina olla keskeinen lähtökohta myös rekisteriaineiston käytössä.
+  \item
+    Itse kerätessä aineisto on mahdollista räätälöiden tuottaa vastamaan juuri tutkimuskysymykseen kun taas rekisteriaineisto on ``toisen käden'' aineistoa ja ohjaa täten tutkimusta niin käsitteiden määrittelystä kuin tutkimuskysymysten asettelusta lähtien.
+  \end{itemize}
+\item
+  \textbf{Tietosuojalaki}: Lain mukaan henkilötietoja voidaan kerätä ja tallettaa vain, jos rekisterinpitäjän ja rekisteröitävän henkilön välillä on asiallinen yhteys. Olennaista lain soveltamisessa on, voidaanko käytössä olevan aineiston tiedot tosiasiassa tavalla tai toisella liitää tiettyyn tunnistettavissa olevaan henkilöön.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Lain merkitys on paljolti siinä, että se ohjaa suunnitelmallisuuteen ja huolellisuuteen henkilötietojen käsittelyssä.
+  \item
+    Sääntelyjen yleisenä tavoitteena on ettei tarpeettomasti kerätä ja talleteta henkilötietoja ettei rekisteröityjen yksityisyyttä ja oikeuksia perusteettomasti loukata ja että rekisteri, siihen liittyvät tiedot ja niiden käsittely suojataan kaikissa vaiheissa.
+  \end{itemize}
+\item
+  Rekisteriaineistot tietosuojalain takaaman yksityisyydensuojan näkökulmasta
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Suomessa rekisteriaineistot pyritään luovuttamaan käyttöön vain tunnisteettomina yksityisyydensuojan säilyttämiseksi.
+  \item
+    Tieteellinen tutkimustarkoitus luokitellaan kuitenkin poikkeustapaukseksi tietosuojalaissa ja ensisijaisena tavoitteena on aina se että tietoja, joista henkilö voidaan tunnistaa käytetään ainoastaan silloin kun tutkimusta ei voida muutoin toteuttaa.
+  \item
+    Tiedot tulee ensisijaisesti kerätä tutkimusyksiköiden suostumuksella ja siten, että henkilö saa halutessaan riittävästi informaatiota tietojen käyttötarkoituksesta ja -tavasta.
+  \item
+    Rekisteritietojen hyödyntäjien etujen mukaista on, että tietosuojaa koskevat säännökset ovat niin selkeitä ja kattavia, että yleisössä ei synny epäilyksiä tietojen väärinkäytön mahdollisuuksista.
+  \item
+    Rekisteritietojen käyttöön on aina haettava lupaa. Erityisesti eri rekistereitä yhdistettäessä on hankittava myös tietosuojavaltuutetun lausunto suunnitteilla olevan tutkimuksen laillisuudesta ja käyttöehdoista.
+  \end{itemize}
+\item
+  Rekisteriaineiston ymmärtämisessä ja käyttämisessä kannattaa huomioida ainakin seuraavat seikat:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Mitkä tekijät ovat johtaneet alkuperäisen aineiston ja sen koonneen/tuottaneen informaatiojärjestelmän syntymiseen?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Nimellisesti oikealta kuulostava muuttuja ei aina vastaa tutkijan käsitystä siitä muuttujasta, mitä kyseisen rekisteriaineiston ylläpitäjä/tuottaja on ajatellut.
+    \end{itemize}
+  \item
+    Miten järjestelmän sisältämät tiedot on mitattu ja miten tämä ilmoitetaan eli miten tietojärjestelmän sisältämien tietojen informaatioarvo on dokumentoitu?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Rekisterin tuottajan ja sen käyttäjien näkemykset mitatuista muuttujista ja niistä johdetut tulkinnat eivät välttämättä aina kohtaa.
+    \end{itemize}
+  \item
+    Minkälaisia tietorakenteita aineistossa käytetään ja miten se vaikuttaa eri muuttujien tallentamiseen tietojärjestelmään?
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Tutkimuskysymyksen kannalta on voi olla merkitystä esimerkiksi sillä, onko rekisterinpitäjä kerännyt henkilöiden ikätietoa vuoden vai kymmenen vuoden tarkkuudella.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\FloatBarrier
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: Diabeteksen ja sen lisäsairauksien esiintyvyyden ja ilmaantuvuuden rekisteriperusteinen mittaaminen}
+
+\begin{itemize}
+\item
+  Vaihe 1: Diabeteskohtortin identifiointi (Tilastokeskus: kuolinsyyt, THL: diagnoosit, Kela: erityiskorvaukset, reseptit)
+\item
+  Vaihe 2: Seurantatiedot (syöpärekisteri, sairaspäivärahat, eläkerekisteri\ldots)
+\item
+  Ongelma: kuinka monta henkilöä diabeteskohortista on kuollut seuranta-aikana?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kuolema on vakaa käsite, johon ei liity mittausvirhettä tai subjektiivisuutta
+  \item
+    Katsotaan aineistosta ``yhden rivin säännöllä'' kuinka monelle löytyy tieto kuolemasta
+  \end{itemize}
+\item
+  Kysymys: Kuinka moni diabeteskohorttiin kuuluvista sairastaa tyypin 1 diabetesta?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tyypin 1 diabetes johtuu insuliinia tuottavien beetasolujen tuhoutumisesta autoimmuuniprosessin seurauksena
+  \item
+    Tyypin 1 diabeetikko tarvitsee jatkuvasti insuliinia, mutta ei hyödy haiman omaa insuliinineritystä tehostavista lääkkeistä
+  \item
+    Rakennetaan algoritmi, jolla identifioidaan tyypin 1 diabeetikot lääkeostojen luokkien ja säännöllisyyden perusteella
+  \end{itemize}
+\end{itemize}
+
+\end{eblock}
+
+\FloatBarrier
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/diab} 
+
+}
+
+\caption{Vaihe 1: Diabeteskohortin identifiointi}\label{fig:diab}
+\end{figure}
+
+\FloatBarrier
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: rekisteritutkimus pitkäaikaisen laitoshoivan käytöstä}
+
+\begin{itemize}
+\tightlist
+\item
+  Miten sosiaaliset tekijät, kuten sosioekonominen asema ja perherakenne, vaikuttavat laitoshoivan käyttöön?
+\item
+  Kolme erityistä tutkimusintressiä
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Laitoshoivaan siirtymisen riskit
+  \item
+    Laitoksissa vietetty aika
+  \item
+    Laitoshoivan käyttö elämän loppupäässä
+  \end{itemize}
+\item
+  Aiemmat tutkimukset samasta aiheesta
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Perustuvat potilasaineistoihin
+  \item
+    Eivät sisällä laitostumis- ja poistumistietoja samassa aineistossa
+  \item
+    Kärsivät vastauskadosta
+  \item
+    Kärsivät seurantakadosta ja seurannan puutteellisuudesta
+  \item
+    Perustuvat pieniin aineistoihin
+  \item
+    Eivät mahdollista perhevaikutusten tutkimista
+  \end{itemize}
+\end{itemize}
+
+\end{eblock}
+
+\FloatBarrier
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/rekist} 
+
+}
+
+\caption{Vaihe 1: Diabeteskohortin identifiointi}\label{fig:rekist}
+\end{figure}
+
+\FloatBarrier
+
+\hypertarget{aikasarjat-ja-paneeliaineistot}{%
+\subsection{Aikasarjat ja paneeliaineistot}\label{aikasarjat-ja-paneeliaineistot}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Aikasarjat}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aikasarjaksi kutsutaan havaintojen jonoa, jossa aika
+    määrää jostain tilastollisesta muuttujasta tehtyjen havaintojen järjestyksen.
+  \item
+    Havainnot ovat tavallisesti peräkkäisiä, ja mittaukset on tehty tasaisin aikavälein, mutta väliaikojen tasaisuus ei kuitenkaan ole välttämätöntä ja monissa tutkimusasetelmissa kohdeaikasarjasta voidaan poimia havaintoja jatkuvasti tai mielivaltaisen pienin aikavälein.
+  \item
+    Yksittäinen aikasarja on pitkittäisaineiston erikoistapaus, jossa tarkastellaan vain yhtä aikasarjaa. Pitkittäisaineistoon nähden toistot eivät välttämättä ole suunniteltuja, vaan niitä havaitaan jatkuvasti ajassa.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Vuotuinen bruttokansantuote Suomessa
+    \item
+      Suomalaisten lukumäärä kunkin vuoden lopussa
+    \item
+      Vuorokautinen sademäärä Helsingin Kaisaniemessä
+    \end{itemize}
+  \end{itemize}
+\item
+  Jotkut aikasarjat ovat suunnitelmallisesti muodostettu tiettyjen laskennallisten menetelmien avulla muista aikasarjoista. Tälläisiä tilastollisia suureita kutsutaan \textbf{indekseiksi} ja ne sisältävät tiivistettyä tietoa yhteiskunnasta, kuten esimerkiksi inflaation mittarina käytetty kuluttajahintaindeksi.
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: kuluttajahintaindeksit}
+
+\begin{itemize}
+\tightlist
+\item
+  Hintaindeksi on normalisoitu keskiarvo tarkasteltavan tuote- tai palvelukorin hinnoista, joka lasketaan säännöllisin väliajoin tavoitteena helpottaa hintojen muutosten seurantaa eri ajankohtien tai alueiden välillä. Laajimmat indeksit mittaavat hintojen kehitystä koko talouden tasolla ja niitä hyödynnetään monin tavoin talouspolitiikassa.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tilastokeskuksen haastattelijat keräävät indeksiä varten kaiken kaikkiaan noin 50 000 hintatietoa lähes 500 hyödykkeestä noin 2 700 (näin joitain vuosia sitten) liikkeestä aina kuukauden puolivälissä, lisäksi noin 1 000 hintatietoa kerätään keskitetysti.
+  \item
+    Tilastokeskuksen laskema kuluttajahintojen vuosimuutos oli marraskuussa 2014 oli 1,0 prosenttia
+  \item
+    Marraskuussa kuluttajahintoja nostivat viime vuodesta eniten vuokrankorotukset, tupakkatuotteiden ja alkoholijuomien vähittäishintojen ja ravintola- ja kahvilapalvelujen sekä kerrostalojen kunnossapitopalvelujen kallistuminen
+  \item
+    Kuluttajahintojen nousua vuoden takaisesta hillitsi marraskuussa eniten elintarvikkeiden, polttonesteiden ja viihde-elektroniikan halpeneminen
+  \end{itemize}
+\end{itemize}
+
+\end{eblock}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/kuluttaja} 
+
+}
+
+\caption{Esimerkki: kuluttajahintaindeksi}\label{fig:kuluttaja}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Aikasarjojen tilastollinen analyysi} perustuu siihen, että sarja tulkitaan jonkin \textbf{stokastisen prosessin} eli satunnaisprosessin realisaatioksi
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Jos aikasarjan generoinut prosessi saadaan selville, voidaan tietoja prosessista käyttää aikasarjan käyttäytymisen kuvaamiseen ja selittämiseen sekä aikasarjan tulevan käyttäytymisen ennustamiseen.
+  \item
+    Aikasarja-aineistot ilmentävät ilmiöstä riippuen ns. autokorrelaatiota, eli ajallisesti toisiaan lähellä olevat havainnot ovat korreloituneempia kuin ajallisesti kaukana toisistaan olevat.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Aikasarja-analyysi on yksi tilastotieteen osa-alue, jolla on rikas ja pitkälle kehittynyt teoriapohja.
+    \item
+      Aikasarja-analyysia opetetaan tarkemmin kursseilla \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3541/5076}{TILM3541 Aikasarja-analyysi}, \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3589/8393}{TILM3589 Epälineaarinen aikasarja-analyysi} ja \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3586/6973}{TILM3586 Moniulotteinen aikasarja-analyysi}.
+    \end{itemize}
+  \end{itemize}
+\item
+  Aikasarjoja analysoimalla voidaan selvittää esimerkiksi
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Onko aikasarjassa \textbf{trendejä} eli aikasarjan tason systemaattisia muutoksia?
+  \item
+    Onko aikasarjassa \textbf{syklistä vaihtelua} kuten \textbf{suhdanne}- ja/tai \textbf{kausivaihtelua}?
+  \item
+    Ks. esimerkiksi kuva \ref{fig:time}.
+  \end{itemize}
+\end{itemize}
+
+\FloatBarrier
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/time} 
+
+}
+
+\caption{Esimerkki: Kansainvälisten lentomatkustajien lkm vuosina 1949-1960}\label{fig:time}
+\end{figure}
+
+\hfill\break
+
+\FloatBarrier
+
+\begin{itemize}
+\item
+  \textbf{Paneeli- eli pitkittäisaineisto}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Paneeliaineistolla tarkoitetaan aineistoa, jossa tilastoyksiköistä on useita havaintoja ja aika määrää havaintojen järjestyksen (kuten aikasarjoissa) ja lisäksi jokaisena ajanhetkenä mitataan useampi kuin yksi tilastollinen muuttuja (kuten poikkileikkausaineistossa).
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Paneeliaineisto on terminä käytetympi yhteiskuntatieteissä kun taas pitkittäisaineisto esimerkiksi lääketieteessä.
+    \item
+      Havaintoyksiköt voivat olla esimerkiksi yrityksiä, ihmisiä, kuntia tai kouluja. Ns. ``täydellisessä'' paneeliaineistossa kaikista havaintoyksiköistä on havaittu kaikki muuttujat kaikkina ajanhetkinä. ``Kiertävä'' paneeli on vastaavasti sellainen, jossa osa havaintoyksiköistä vaihtuu ajan kuluessa.
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Tyypillisesti havaintoja kerätään tasaisin väliajoin, kuten kuukausittain tai vuosittain, ja yksittäisen ajanhetken havainto on poikkileikkausaineisto ja kustakin havaintoyksiköstä on oma usean muuttujan aikasarjansa.
+      \end{itemize}
+    \end{itemize}
+  \item
+    Paneeliaineisto mahdollistaa vastaamisen kysymykseen miksi? Yleisesti ottaen paneeliaineistoja käytetäänkin erityisesti ns. kausaalipäättelyyn tähtäävissä malleissa.\footnote{Kausaalimalleja opetetaan kurssilla \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3529/5080}{TILM3529 Kausaalipäättely havainnoivissa tutkimuksissa}}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{survey--eli-haastattelu--tai-kyselytutkimus}{%
+\subsection{Survey- eli haastattelu- tai kyselytutkimus}\label{survey--eli-haastattelu--tai-kyselytutkimus}}
+
+\begin{itemize}
+\tightlist
+\item
+  Survey-tutkimus on ei-kokeellinen tutkimus, jonka lähtökohtana on tiettyjen ilmiöiden, ominaisuuksien tai tapahtumien yleisyyden tai jakautumisen selvittäminen, joka toteutetaan kysely- tai haastattelumenetelmällä.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Havaintoyksiköt pyritään valitsemaan satunnaisotannalla, sillä myös survey-tutkimuksessa pyritään yleistämään tulokset otoksesta koko perusjoukkoon.
+  \item
+    Kyselytutkimukset muodostava kokonaan oman tutkimustapansa, joka mahdollistaa hyvin erilaisen informaation keräämisen kuin tavallisesti kvantitatiivissa aineistoissa.
+  \end{itemize}
+\item
+  Survey-tutkimus koostuu seuraavista vaiheista:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kohdepopulaation määrittely ja otannan suunnittelu
+  \item
+    Kyselylomakkeen rankentaminen ja testaaminen
+  \item
+    Kyselymetodin määrittely (puhelinhaastattelu, elektroninen kysely\ldots)
+  \item
+    Mahdollisten haastattelijoiden koulutus
+  \item
+    Aineiston keräys
+  \item
+    Aineiston yhteneväisyyden tarkistaminen (muuttujat tallennettu oikein jne)
+  \item
+    Tulosten adjustointi mahdollisten identifioitujen virhelähteiden mukaan
+  \end{itemize}
+\item
+  Survey-tutkimusta käytetään erityisesti asenteiden, mielipiteiden ja käyttäytymisen tutkimiseen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Esimerkkejä ovat mm. poliittiset mielipidekyselyt, markkinointitutkimukset, alkoholinkulutustottumukset ja terveyspalveluiden tyytyväisyyskyselyt, joihin voi kaikkiin uskoa liittyvän vastausharhaa eri syistä.
+  \item
+    Esimerkiksi vastausharhaa arkaluontoisiin kysymyksiin voidaan vähentää avoimilla kysymyksillä tai alustamalla kysymystä johdannolla, jossa suvaitaan / ymmärretään kaikenlaiset vastaukset.
+  \item
+    ``Randomized response'': vastaukseen lisätään jonkin todennäköisyysmallin mukaisesti harhaa todellisen vastauksen salaamiseksi.
+  \end{itemize}
+\item
+  Kerätty aineisto on siten altisteinen tehdylle kyselylle ja täten sen käyttökelpoisuus perustuu hyvin pitkälti etukäteissuunnitteluun, kunnolliseen toteutukseen ja kyselylomakkeen oikeaoppiseen rakentamiseen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Lisäksi aineiston käyttökelpoisuus riippuu myös vastaajaotoksen poiminnasta (edustavuudesta) ja siitä, kuinka totuudenmukaista informaatiota vastaajat ovat kyselyssä antaneet. Tässäkin hyvä etukäteissuunnitelu on keskeistä.
+  \item
+    Tilastollisten menetelmien avulla pyritään arvioivaan otoksen, kyselyn suunnittelun ja kerätyn vastaajaotoksen sisältämää (tai aiheuttamaa) harhaa.
+  \end{itemize}
+\end{itemize}
+
 \hypertarget{luku11}{%
 \chapter{Tilastollisesta ennustamisesta}\label{luku11}}
+
+Kuten olemme jo tähän menneessä nähneet, tilastollinen analyysi ja sen erottamattomana osana tilastollinen päättely on keskeinen vaihe tieteellistä tutkimusta. Vielä ennen tilastollisen selittämisen ja ennustamisen välisiä eroja koskevia pohdintoja muistutetaan jo aiemmin käsitellystä \textbf{kuvailevasta tilastotieteestä}. Tämä voidaan nähdä vielä (ainakin) kolmantena yleisenä tilastotieteen tavoitteena mallintamisen/selittämisen ja ennustamisen lisäksi. Yksinkertaisin tilastollisen päättelyn muoto on hyödyntää aineistoa kuvailevia tunnuslukuja, kuten keskiarvoja ja keskihajontalukuja. Niistä voidaan kuitenkin tehdä vain melko rajoittuneita päätelmiä. Varsinkin havainnoivassa tutkimuksessa sen selvittämiseksi, miten selittävät muuttujat ovat yhteydessä selitettävään vastemuuttujaan, käytetään esim. lineaarista tai logistista regressiota (ja niiden monenmonia laajennuksia) tai esim. aikasarja-analyysiä aikasarjoja analysoitaessa. Näiden pohjalta voidaan arvioida muuttujien yhteyksiä ja riippuvuussuhteita.
+
+Käytännössä tilastotieteen ja sen sovellusalueiden tutkimuksessa tulisi osata erottaa (tilastollinen) \textbf{selittäminen} ja \textbf{ennustaminen}. Tätä eroa koskevat tarkemmat yksityiskohdat ovat jälleen selvästi tämän kurssin ulkopuolella myöhemmissä tilastotieteen opinnoissa, mutta seuraavassa kuitenkin tähän liittyviä keskeisiä huomioita.
 
 \hypertarget{alaluku111}{%
 \section{Tilastollinen selittäminen vs.~ennustaminen}\label{alaluku111}}
 
+\begin{itemize}
+\tightlist
+\item
+  (Tilastollinen) \textbf{selittäminen} tarkoittaa esim. kahden muuttujan välisen yhteyden tutkimista (tämän kurssin yksinkertainen tilanne lineaarisen regressiomallin yhteydessä, jota voidaan laajentaa useisiin muuttujiin). Tutkijaa saattaa kiinnostaa esimerkiksi tupakoinnin vaikutus sepelvaltimotautikuolleisuuteen tai ylipainon vaikutus leikkauksen jälkeisiin infektioihin.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tällöin \textbf{pyrkimyksenä} on rakentaa ``\textbf{selitysmalli}'', jossa on perustellut syy-seuraussuhteet selittävästä (selittävistä) muuttujista selitettävään muuttujaan.
+  \end{itemize}
+\item
+  (Tilastollinen) \textbf{ennustaminen} tarkoittaa, että tietyillä selittävän tai selittävien (tai ``ennustavien'') muuttujien yhdistelmillä voidaan ennustaa ennustettavan muuttujan arvoa.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ts. siis ennustettavana muuttujana toimii tilastollisen mallin näkökulmasta katsoen vastemuuttujan arvo, jota pyritään ennustemallin avulla ennustamaan.
+  \item
+    Ennustemalleja tutkittaessa varsinaisilla selityssuhteilla ei välttämättä ole merkitystä. Tärkeintä on mallin ennustekyky, ei niinkään esim. yksittäisen regressiokertoimen arvo ja siihen liittyvät tarkemmat tulkinnat. Tilastollisesti merkitsevä regressiokerroin ei tarkoita, että muuttujalla olisi välttämättä ennustekykyä.
+  \item
+    Ennustekyky tutkittava erikseen. Esimerkiksi lineaarisen mallin perinteiset tunnusluvut, kuten selitysaste, eivät vielä kerro mallin todellisesta ennustekyvystä paljoakaan. Tästä huolimatta melko usein ennustemallin rakentaminen perustetaan pitkälle samoihin tilastollisen päättelyn ja estimointiteorian lähtökohtiin mitä olemme jo sivunneet tällä kurssilla.
+  \item
+    Hyvin usein tutkimuksissa raportoidaan, että tietty muuttuja ``ennustaa'' (predicts) toista. Usein kuitenkin taustalla on tällöin usean muuttujan selitysmalli, jonka regressiokertoimien tilastollista merkitsevyyttä on tulkittu. Yleensä tässä yhteydessä on kuitenkin siis kyse selittämisestä, ja kuten todettua, mallin ennustekyky pitää tutkia erikseen.
+  \end{itemize}
+\item
+  Erityisesti aikasarja-analyysissä ennustaminen on perinteisesti ollut yksi kaikkein keskeisimmistä tavoitteista.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Nyt kuitenkin koneoppimisen (tilastollisen oppimisen) kasvatettua hurjasti suosioitaan viime vuosina ennustaminen on levinnyt, ja leviää jatkossakin, voimaakkasti myös hyvin keskeiseksi osaksi muutakin tilastollista analyysiä.
+  \end{itemize}
+\end{itemize}
+
 \hypertarget{alaluku112}{%
 \section{Tilastolliseen ennustamiseen liittyviä huomioita}\label{alaluku112}}
 
+\begin{itemize}
+\item
+  Ennustamista on kaikkialla! Sen rooli on paljon keskeisempi osa meidän kaikkien arkea mitä ensiajatukselta saattaa tulla mieleen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ennustaminen on elämässämme korvaamatonta.\footnote{Tämän alaluvun pohdinnat, kuten tämä lainaus, perustuvat pitkälle Silverin kirjan Signaali ja kohina (suom. Kimmo Pietiläinen) huomioihin.}
+  \item
+    Kun valitsemme reitin työmatkalle, päätämmekö menemmekö toisille treffeille tai säästämme huonompia aikoja varten, teemme ennusteen tulevaisuuden kehityksestä ja siitä, miten suunnitelmamme vaikuttavat suotuisan tuloksen todennäköisyyteen.
+  \end{itemize}
+\item
+  Arkiset ongelmat eivät aina vaadi ankaraa ajattelua ja pohdiskelua erilaisten vaihtoehtojen välillä niihin käytettävissä olevan ajan ollessa rajallinen. Tästä huolimatta teet ennusteita tiedostaen ja useimmiten tiedostamatta monta kertaa päivässä!
+\item
+  \textbf{Ennustevirhe}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ennusteita verrataan toteutuneeseen kehitykseen. Näiden erotuksena muodostuu ennustevirhe.
+  \item
+    Lähtökohtana on (luonnollisesti) minimoida ennustevirheet. Käytännössä useinmiten mm. vastemuuttujan luonteen perusteella valitaan sopiva ennustevirheitä summarisoiva tunnusluku, kuten keskineliöennustevirhe (jatkuvat vastemuuttujat) tai luokitteluvasteiden tapauksessa väärin (tai oikein) ennustettujen luokitteluiden suhteellinen osuus.
+  \item
+    Ajoittain ennustetarkkuutta on helpompi ja toisaalta sitten vaikeampi tarkkailla. Esim. taloustieteessä on paljon helpompi arvioida työttömyyttä koskevaa ennustetta kuin esimerkiksi ennustetta (jopa väitettä) velkaelvytyksen tehokkuudesta. Toisaalta valtio-opissa voidaan arvioida vaalitulosta koskevia ennusteita suoraviivaisesti, mutta saattaa kulua vuosikymmeniä nähdä miten poliittisten instituutioiden ennusteisiin perustuvat ennakoidut muutokset vaikuttavat poliittisten päätösten tuloksiin.
+  \end{itemize}
+\end{itemize}
+
+\begin{eblock}{}
+
+\textbf{Esimerkki: Silverin kirjan luvun 1 pohdintaa ennustevirheestä \emph{finanssikriisiin} (\emph{rahoituskriisiin}) vuoden 2008 aikana (finanssikriisin voidaan katsoa koskeneen lopulta vuosia 2007-2009).}
+
+Pörssikurssien voimakas lasku, Lehman Brothersin kaltaisia aikoinaan arvostettuja yhtiöitä meni vararikkoon, luottomarkkinat olivat käytännössä ``jäätyneet'', Las Vegasissa asuntojen hinnat laskivat 40 prosenttia (osoittaen osaltaan vallinnutta laajempaakin ``\textbf{asuntokuplaa}'' (perusteettoman korkeita asuntojen hintoja), työttömyys kasvoi räjähdysmäisesti jne.
+
+\hfill\break
+
+\textbf{Ennustevirheen yhteisiä ja tyypillisiä piirteitä} (tässä tapauksessa), jotka laajentuvat moniin muihinkin tilanteisiin ja sovelluksiin:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Asunnonomistajat ja sijoittajat ajattelivat, että nousevat hinnat viittasivat siihen, että asuntojen hinnat jatkaisivat nousuaan, kun todellisuudessa historia viittasi siihen, että sen takia niillä oli taipumus laskea (näissä olosuhteissa).
+\item
+  Luottoluokistuslaitokset (samoin kuin Lehman Brothersin kaltaiset pankit) eivät ymmärtäneet, miten riskialtiita asuntovakuudelliset arvopaperit olivat. Ongelma ei varsinaisesti ollut siinä, että luokituslaitokset eivät nähneet asuntokuplaa. Sen sijaan niiden ennustemallit olivat täynnä huonoja oletuksia ja väärää ``itseluottamusta'' mahdollisten asuntojen hintojen romahduksen riskeistä.
+\item
+  Laajasti ei ennakoitu, miten asuntokriisi laukaisee globaalin rahoituskriisin. Se johtui suurelta osin liiallisesta velkaantumisesta markkinoilla, jossa lyötiin erinäisten instrumenttien myötä vetoa yhdysvaltalaisten halukkuuden puolesta sijoittaa uuteen kotiin.
+\item
+  Rahoituskriisin välittömissä jälkimainingeissa ei osattu ennustaa, miten laajoja taloudellisia ongelmia se aiheuttaa. Rahoituskriisit tyypillisesti tuottavat erittäin syviä ja pitkäkestoisia taloudellisia taantumajaksoja.
+\end{enumerate}
+
+Näissä ennustamisen epäonnistumisissa on \textbf{yhteinen piirre}. Kussakin tapauksessa aineistoa arvioidessaan ihmiset jättivät keskeisen asiayhteyden palan huomiotta:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Asunnonomistajien luottamus asuntojen hintoihin johtui ehkä siitä, että lähimenneisyydessä Yhdysvalloissa asuntojen hinnat eivät olleet laskeneet merkittävästi. \textbf{\emph{Kuitenkaan}} koskaan aikaisemmin Yhdysvaltojen asuntojen hinnat eivät olleet nousseet niin laajalla alueella kuin romahdusta edeltävällä kaudella.
+\item
+  Pankkien luottamus luottoluokituslaitosten (kuten Moody'siin ja S\&P'siin) kykyyn luokittaa asuntovakuudellisia arvopapereita ehkä perustui siihen, että laitoksina ne olivat onnistuneet pätevästi luokittamaan muunlaista rahoitusomaisuutta. \textbf{\emph{Kuitenkaan}} luottoluokituslaitokset eivät olleet koskaan aikaisemmin luokittaneet yhtä uusia ja monimutkaisia arvopapereita mitä tuolloin (kuten ns. luotonvaihto-optioita).
+\item
+  (Taloustietelijöiden) luottamus rahoitusjärjestelmän kykyyn kestää asuntokriisi syntyi ehkä siitä, että aikaisemmin asuntojen hintojen heilahtelulla ei yleensä ollut suuria vaikutuksia rahoitusjärjestelmässä. \textbf{\emph{Kuitenkaan}} rahoitusjärjestelmä ei luultavasti koskaan aikaisemmin ole ollut yhtä vekkaantunut eikä vedonlyöntiä asuntojen hinnoista ollut tehty vastaavassa mittaluokassa.
+\item
+  Poliittisten päättäjien luottamus siihen, että talous toipuu nopeasti rahoituskriiseistä syntyi ehkä viime vuosikymmenten taantumista saaduista kokemuksista. Useampia niitä oli seurannut nopea ``V-muotoinen'\,' toipuminen (kuten nyt myös myöhemmin mm. koronapandemian aikaan). \textbf{\emph{Kuitenkaan}} nämä taantumat eivät olleet liittyneet rahoituskriiseihin ja rahoituskriisit ovat (yleensä) erilaisia.
+\end{enumerate}
+
+Jokaista edellistä kohtaa yhdistää ennustamiseen hyvin keskeisesti liittyvä termi: Ennustajien pohtimat ilmiöt olivat ns. \textbf{otoksen ulkopuolella} (engl. \textbf{out-of-sample}). Kun ennustaminen epäonnistuu merkittävällä tavalla, tämä ongelma jättää yleensä runsaasti sormenjälkiä rikospaikalle. Miten tämä ongelma näyttäytyy siis oheisen esimerkin tapauksessa?
+
+\begin{itemize}
+\tightlist
+\item
+  Luottoluokituslaitos (kuten Moody's) arvioi, missä määrin asuntolainojen hoitamatta jättämiset liittyivät toisiinsa, rakentamalla (luultavasti ainakin osin) tilastollisen mallin menneisyyden aineiston perusteella. Oletettavasti he käyttivät mallin rakentamiseen noin 1980-luvulle ulottuvaa Yhdysvaltain asuntomarkkina-aineistoa.
+\item
+  Ongelmana oli, että 1980-luvulta 2000-luvun alkuvuosiin saakka asuntojen hinnat olivat aina vakaat tai nousevat Yhdysvalloissa. Tässä tilanteessa oletus, että asunnonomistajien asuntolainat eivät juurikaan liittyneet toisiinsa oli luultavasti perusteltu ja riittävän hyvä tilastollisen mallintamisen pohjaksi.
+\item
+  Kuitenkaan menneessä aineistossa mikään ei olisi kuvannut mitä tapahtuu kun asuntojen hinnat alkavat laskea kauttaaltaan samanaikaisesti. Ts. asuntoromahdus oli \textbf{otoksen ulkopuolinen tapahtuma} ja tässä tilanteessa luottoluokituslaitosten mallit olivat arvottomia (huonoja) lainojen hoitamatta jättämisen riskiä arvioitaessa.
+\end{itemize}
+
+\end{eblock}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Rahoituskriisiä koskevan esimerkin tilanteessa otoksen ulkopuolisiä ilmiöitä koskeva ongelma realisoitui siten, että muodostettu tilastollinen malli, kuten vaikkapa lineaarisen regressiomallin sopiva laajennus, \textbf{estimoitiin}, tai koneoppimisesta tutussa kielenkäytössä \textbf{opetettiin}, aineistolla, joka ei lopulta ollut relevantti juuri myöhemmin tapahtunutta kriisivaihetta ajatellen.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Onkin tärkeää ymmärtää, että ``todellisessa'' ennustetilanteessa joudumme käyttämään aiempaa aineistoa mallien ja algoritmien rakentamiseen. Näin ollen näiden ennustekykyä arvioitaessa onkin mentävä otoksen ulkopuolelle, koska ``otoksen sisällä'' voimme opettaa kyseisiä malleja (ääritilanteessa) niin, että ne ovat periaatteessa äärettömän tarkkoja. Ne eivät kuitenkaan takaa missään mielessä hyvää ennustekykyä tulevia tapahtumia ennustettaessa.
+  \end{itemize}
+\item
+  Vastaavalla tavalla karakterisoidaan nykyään hyvin suosittujen koneoppimismenetelmien keskeinen piirre: Ne ja tarkasteltavat sovellukset perustuvat käytännössä (vielä) yksinomaan ennustesovelluksiin. Tällöin mallien ja algoritmien opettaminen ns. \textbf{opetusaineistolla} (edellä olevassa esimerkissä aiemmalla asuntomarkkina-aineistolla) ja ennustekyvyn arviointi \textbf{ennusteotoksen} avulla pitää erottaa toisistaan.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Otoksen sisäiseen sovittamiseen} (engl. \textbf{in-sample} tai \textbf{training sample} estimation, ajoittain prediction) liittyy siis (ennustamisen näkökulmasta) katsoen ns. \textbf{ylisovittamisen} vaara. On mahdollista, että yritämme puristaa lähes puhtaasta kohinasta signaaleja, jotka eivät missään mielessä tule olemaan valideja otoksen ulkopuolisessa ennustamistilanteessa.
+  \item
+    Jälleen kerran näistä teemoista keskustellaan tarkemmin myöhemmin tilastotieteen aine- ja syventävien opintojen erikoiskursseilla, kuten \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3587/6975}{TILM3587 Regressioanalyysi ja tilastollinen oppiminen} ja \href{https://opas.peppi.utu.fi/fi/opintojakso/TILM3592/13413}{TILM3592 Tilastollisen oppimisen jatkokurssi}.
+  \end{itemize}
+\item
+  Huolimatta edellä käydystä, kriittisestäkin, keskustelusta ennustamiseen liittyen, monet ennusteet ovat varsin tarkkoja ja samalla vapaita ylisovittamisen vaaroista!
+\end{itemize}
+
 \hypertarget{luku12}{%
 \chapter{Tilastotieteen kehityksen nykytrendejä}\label{luku12}}
+
+Seuraavassa vielä joitain tilastotiedettä parhaillaan koskevia kehitystrendejä, joita olemme myös osaltaan sivunneet tämän kurssimateriaalin myötä:
+
+\begin{itemize}
+\item
+  \textbf{Aineistot kasvavat ja monimutkaistuvat}. Näin ollen tilastotietedettä ja tilastollisten menetelmien kehitystyötä tullaan tarvitsemaan (yhä suuremmin) jatkossakin.
+\item
+  Informaatiota on tarjolla (paljon) enemmän kuin osaamme sitä hyödyntää. \textbf{Informaatio ei ole enää niukka hyödyke}. Keskeistä on kuitenkin, että (useimmiten) suhteellisen pieni osa informaatiosta on hyödyllistä.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Havaitsemme informaatiota (osin) ja valikoivasti subjektiivisesti. Luulemme haluavamme lisää informaatiota, kun todellisuudessa haluamme tietoa (ts. signaaleja kun vastaavasti kasvava määrä kohinaa yrittää vaikeuttaa tätä signaalin erottamista kohinasta).
+  \end{itemize}
+\item
+  \textbf{Laskennallisuus} kasvaa. Tietokoneiden laskentakapasiteetti nousee vaikkakin suhteellinen kasvu ei ehkä olekaan enää niin suurta mitä muutamat viime vuosikymmenet.
+\item
+  Osin laskennallisuuteen liittyvä \textbf{koneoppimisen} kehittyminen ja sen ``rajatieteiden'' yhteyteen integroituneet käytännöt ja menetelmäkehitystyö tulee jatkumaan.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Toisaalta ``perinteiselle'' tilastotieteelle on edelleen myöskin vahva oma roolinsa monilla eri tieteenaloilla.
+  \end{itemize}
+\item
+  \textbf{Analyysien automatisointi}: Tilastolliset ohjelmat alkanevat jatkossa tulkita tuloksia osin automaattisesti. Mihin tarvitaan tilastotieteilijää? Kokonaisvaltaiseen tutkimusprosessin valvontaan(?)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Osin edelliseen liittyen jo nyt ja jatkossa luultavasti yhä enemmän korostuu se, että melkein kuka vaan voi tehdä tilastollisia analyysejä. Niin valmiita paketteja jne. on jo saatavilla. ``Tilastotieteellinen faktantsekkaus'' noussee vahvemmin esille eli tilastollisten menetelmien käyttäjän on sittenkin edelleen kyettävät arvioimaan ovatko tulokset uskottavia ja vapaita ilmeisistä hankaluuksista.
+  \end{itemize}
+\item
+  \textbf{Poikkitieteellisyys} tulee entisestäänkin vahvistumaan. Ts. substanttitietouden ja tilastotieteen yhdistäminen ja sen tärkeys ei tule ainakaan vähenemään. Sivuaineopintoja kannattaa siis käydä ja ottaa opinto-ohjelmaan.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tämän lisäksi kokonaisvaltaisesti tilastotieteen ytimen osaajien osaamista tulla kysymään jatkossakin.
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Oheisten huomioiden ohella lopuksi on syytä korostaa tilastotieteen opiskelun näkökulmasta, että oikotietä ei ole! \textbf{Oikaista siis ei voi}: Ensin on rakennettava vahva tilastollisen ajattelun ja menetelmien perusta (\textbf{alkaen todennäköisyyslaskennasta ja tilastollisesta päättelystä}), jotta myöhemmin voi kehittyä ja omata todellisia kykyjä ottaa vastaan monia jo varsin monimutkaisia tilastollisia menetelmiä!
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 

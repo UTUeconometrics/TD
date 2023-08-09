@@ -1,22 +1,21 @@
 # Aineisto- ja tutkimustyypit ja koeasetelmat {#luku10}
 
-Tässä luvussa käsitellään erilaisia tapoja toteuttaa tilastollista tutkimusta. Empiirisen tutkimuksen lähtökohtana on aina tutkimusongelma, joka sisältää kysymyksen tai kysymyksiä, joihin tutkimuksella haetaan vastauksia. Tilastotieteen näkökulmasta tutkimusongelman keskiössä on kuitenkin aineisto ja se, miten käytettävissä olevasta aineistosta saadaan vastauksia tutkimuskysymyksiin - täten tarkastelemme tässä luvussa myös tutkimuksenteon käytäntöä käsittelemällä erilaisia aineistotyyppejä. Käymme läpi eri alojen ja tutkimusongelmien käytännön tutkimustyössä kohdattavia aineistoja ja erittelemme pidemmälle eri tutkimuskysymysten käytännön haasteita aineistojen osalta sekä sitä, minkälaisia ongelmia erilaisiin tutkimusykysymyksiin käytännössä liittyy ja miten eri tutkimusasetelmat pyrkivät niitä ratkomaan. 
+Tässä luvussa käsitellään erilaisia tapoja toteuttaa tilastollista tutkimusta. Empiirisen tutkimuksen lähtökohtana on aina tutkimusongelma, joka sisältää kysymyksen tai kysymyksiä, joihin tutkimuksella haetaan vastauksia. Tilastotieteen näkökulmasta tutkimusongelman keskiössä on kuitenkin __aineisto__ ja se, miten käytettävissä olevasta aineistosta saadaan vastauksia tutkimuskysymyksiin. Tarkastelemme tässä luvussa myös tutkimuksenteon käytäntöä käsittelemällä erilaisia aineistotyyppejä. Käymme läpi eri alojen ja tutkimusongelmien käytännön tutkimustyössä kohdattavia aineistoja ja erittelemme pidemmälle eri tutkimuskysymysten käytännön haasteita aineistojen osalta sekä sitä, minkälaisia ongelmia erilaisiin tutkimusykysymyksiin käytännössä liittyy ja miten eri tutkimusasetelmat pyrkivät niitä ratkomaan. 
 
 Aineistotarpeen ja sen analysoinnin lähtökohdat määrää tutkimusongelma. Tutkimus voi olla esimerkiksi kuvailevaa, vertailevaa, selittävää tai kokeellista ja aineistolle sekä menetelmille asetetaan kussakin tapauksessa erilaiset vaatimukset ja odotukset. Erilaisiin tutkimuskysymyksiin ja niihin vastausta etsiviin __koeasetelmiin__ liittyvien esimerkkien avulla pyrimme löytämään vastauksia esimerkiksi seuraaviin kysymyksiin:
 
 - Miten tilastotiede liittyy tiedon keruuseen?
 - Miten aineisto generoituu?
 - Millaisiin kysymyksiin saadaan kussakin asetelmassa vastauksia?
-- Tarkemmat asetelmiin ja analyyseihin liittyvät yksityiskohdat käsitellään Kokeen suunnittelu ja analyysi -kurssilla
+- Tarkemmat asetelmiin ja analyyseihin liittyvät yksityiskohdat käsitellään [TILM3579 Kokeiden suunnittelu ja analyysi -kurssilla.](https://opas.peppi.utu.fi/fi/opintojakso/TILM3579/5081) 
 
 ```{r tutkimusasetelma, echo=FALSE, fig.cap="Tutkimusasetelma", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/tutkimusasetelma.jpg")
 ```
 
-Luvussa käsiteltävät asiat kuuluvat tilastotieteelle ominaisesti kvantitatiivisen tutkimussuuntauksen alaisuuteen (ks. luku 3). Luvussa esiteltävät karkeat tutkimustyyppien- strategioiden ja aineistojen jaot ovat vain yksi jaottelutapa ja todennäköisesti poikkeaa eri oppikirjoissa ja lähteissä esitetyistä. 
+Luvussa käsiteltävät asiat kuuluvat tilastotieteelle ominaisesti kvantitatiivisen tutkimussuuntauksen alaisuuteen (ks. luku \@ref(luku3)). Luvussa esiteltävät karkeat tutkimustyyppien- strategioiden ja aineistojen jaot ovat vain yksi jaottelutapa ja todennäköisesti poikkeaa eri oppikirjoissa ja lähteissä esitetyistä. 
 
 ## Tutkimustyypit {#alaluku101}
-
 
 Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tutkimukset voidaan karkeasti jakaa neljään eri luokkaan: __kuvaileva__, __vertaileva__, __kokeellinen__ ja __havainnoiva__ tutkimus. 
 
@@ -28,7 +27,6 @@ Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tu
   - Kuvailevassa tutkimuksessa ei tutkita muuttujien välisiä yhteyksiä tai riippuvuksia eikä täten yleensä tehdä jakoa selittäviin ja selitettäviin muuttujiin vaan muuttujat ovat asetelmallisesti samantasoisia.
     - Vastaavasti kuvailevassa tutkimuksessa ei välttämättä testata hypoteeseja, ei tehdä ennusteita, ei anneta selityksiä tai pohdita seurauksia: kyseessä on vain aineiston kuvailua ilman sen merkityksellisempää sisältöä kuten havaintojen taustalla olevien ilmiöiden tutkimista tai perusjoukon ominaisuuksien päättelyä otoksen perusteella.
 
-\
 \
 
 - __Vertaileva tutkimus__
@@ -47,7 +45,7 @@ Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tu
     - Tutkimuksessa on hyväksyttävä myös muuttujiin liittyvä luonnollinen vaihtelu.
 
 - __Kokeellinen tutkimus__
-  - Tarkastellaan syy-seuraussuhteita sellaisissa olosuhteissa, joissa tutkija pystyy kontrolloimaan tutkimusyksikköihin vaikuttavia tekijöitä, eli nk. " __käsittelytekijöitä__".
+  - Tarkastellaan syy-seuraussuhteita sellaisissa olosuhteissa, joissa tutkija pystyy kontrolloimaan tutkimusyksikköihin vaikuttavia tekijöitä, eli nk. "__käsittelytekijöitä__".
   - Tavallisesti kokeellisella tutkimuksella viitataan sellaiseen tutkimukseen, jossa aineiston on kerätty valvotussa ja kontrolloidussa ympäristössä, kuten laboratoriossa tai sairaalan koehuoneissa, jotta mittaukset ja käsittelytekijät on tutkimuksen tekijän puolesta kontrolloitu ja täten halutunlaisia.
     - Tutkimusasetelman kontrollointi vähentää mittauksiin ja käsittelytekijöihin liittyvien virhelähteiden mahdollisuuksia ja täten jättää vähemmän sijaa epäilyksille.
     - Lisäksi tutkimuksen toistettavuus ja objektiivisuus paranevat, kun koejärjestelyt tehdään tarkasti ja huolellisesti.
@@ -65,9 +63,13 @@ Tarkastellaan ensin erilaisia tutkimustyyppejä yleisellä tasolla. Erilaiset tu
 - Vaikuttaako ilmastonmuutos sadonmuodostukseen? Onko vaikutus suurempi joillain tietyillä kasveilla?
 :::
 
+\FloatBarrier
+
 ```{r co2, echo=FALSE, fig.cap="Hiilidioksidipitoisuuden kasvun vaikutus satomääriin.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/co2.jpg")
 ```
+
+\FloatBarrier
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Lääketieteelliset kokeet**  
@@ -83,7 +85,7 @@ knitr::include_graphics("images/co2.jpg")
   - Kokeen tulokset voidaan yleistää, jos kokeessa uutta ja vanhaa lääkettä saavien potilaiden ryhmät ovat samankaltaisia kaikissa muissa suhteissa paitsi siinä, että niihin kohdistetaan kokeessa erilainen käsittely.
     - Tällöin mahdolliset erot parantuneiden suhteellisissa osuuksissa on oltava seurausta erilaisista käsittelyistä.
     - Kokeen kohteiden jakaminen ryhmiin arpomalla on ainoa menetelmä, joka mahdollistaa samankaltaisten ryhmien saamisen.
-    - Kokeen kohteiden jakamista erilaisen käsittelyn kohteiksi joutuviin ryhmiin arpomalla kutsutaan tilastotieteessä __satunnaistamiseksi__.
+    - Kokeen kohteiden jakamista erilaisen käsittelyn kohteiksi joutuviin ryhmiin arpomalla kutsutaan siis __satunnaistamiseksi__.
   - Arvonnan käyttö ryhmiin jaossa merkitsee sitä, että koetulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kokeesta saataisiin (suurella todennäköisyydellä) erilaiset ryhmäjaot.
 - Kysymyksiä:
   - Miten yhdestä kokeesta saadut ja satunnaiset koetulokset voidaan yleistää koskemaan kaikkia ko. tautia sairastavia potilaita?
@@ -94,7 +96,6 @@ knitr::include_graphics("images/co2.jpg")
 - Tilastollisen kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, estimointi ja testaus.
 :::
 
-\
 \
 
 - __Havainnoiva tutkimus__
@@ -123,7 +124,6 @@ knitr::include_graphics("images/co2.jpg")
 :::
 
 \
-\
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Lääkityksen aiheuttama harvinainen sivuvaikutus**  
@@ -134,12 +134,12 @@ knitr::include_graphics("images/co2.jpg")
 
 ## Tutkimusstrategiat {#alaluku102}
 
-Erilaiset tutkimusasetelmat voidaan jakaa edelleen kahteen __tutkimusstrategiaan__ sen mukaan, miten niissä ryhmitellään tilastoyksiköitä: __poikkileikkaus__- ja __pitkittäistutkimuksiin__. Tilastoyksikköjen erilainen ryhmittely tuottaa erilaisia aineistotyyppejä, jotka voidaan jaotella karkeasti kolmeen eri tyyppiin
+- Erilaiset tutkimusasetelmat voidaan jakaa edelleen kahteen __tutkimusstrategiaan__ sen mukaan, miten niissä ryhmitellään tilastoyksiköitä: __poikkileikkaus__- ja __pitkittäistutkimuksiin__. Tilastoyksikköjen erilainen ryhmittely tuottaa erilaisia aineistotyyppejä, jotka voidaan jaotella karkeasti kolmeen eri tyyppiin
   - Poikkileikkausaineistot: havaintoaineisto kattaa yhden ajankohdan ja mahdollisesti useita tilastollisia muuttujia
   - Aikasarja-aineistot: havaintoaineisto kattaa vain yhden tilastollisen muuttujan mitattuna useana ajanhetkenä
   - Paneeliaineistot: havaintoaineisto kattaa mahdollisesti useita tilastollisia muuttujia mitattuna useana ajanhetkenä
 
-Eri tutkimusstrategiat hyödyntävät eri aineistotyyppejä sen mukaan, miten ne sopivat tutkimuskysymykseen ja valittuun menetelmään. Tarkastellaan seuraavaksi mitä em. kaksi tutkimusttrategiaa tarkoittavat, miten ne eroavat ja minkälaisia tutkimustyyppejä-, asetelmia- ja aineistoja kumpaankin kuuluu.
+- Eri tutkimusstrategiat hyödyntävät eri aineistotyyppejä sen mukaan, miten ne sopivat tutkimuskysymykseen ja valittuun menetelmään. Tarkastellaan seuraavaksi mitä em. kaksi tutkimusttrategiaa tarkoittavat, miten ne eroavat ja minkälaisia tutkimustyyppejä-, asetelmia- ja aineistoja kumpaankin kuuluu.
 
 ### __Poikittaistutkimus__ tai __poikkileikkaustutkimus__ 
 - Poikittaistutkimukseksi kutsutaan tutkimusstrategiaa, jossa tarkoituksena on tutkia kohdetta tai ilmiötä laaja-alaisesti tiettynä ajankohtana käyttäen poikkileikkausaineistoja.
@@ -159,11 +159,10 @@ knitr::include_graphics("images/cross.jpg")
 ```
 
 \
-\
 
 ### __Pitkittäistutkimus__ 
 - Pitkttäistutkimuksessa seurataan usein samoja tilastoyksiköitä "yli ajan", eli mittauspisteitä on useita ja pitkältä aikaväliltä.
-  - Hyödyntää niin aikasarja- kuin paneeliaineistojakin.
+  - Hyödyntää poikkileikkausdimension lisäksi myös aikasarjadimensiota.
   - Yleinen tutkimuskysymys pitkittäistutkimuksessa on jonkin __käsittelyn vaikutuksen arviointi__. Tällaisia ovat esimerkiksi lääkeainetutkimus, poliittisten päätösten arviointi tai markkinointitutkimus.
     - Pitkittäistutkimuksessa voidaan siis tarkastella __muutosta__ mutta on tärkeä muistaa, että pitkittäistutkimuksen eri mittauskerrat eivät ole toisistaan __riippumattomia__ ja tämä tulee ottaa tilastollisessa mallissa huomioon!
   - Pitkittäistutkimuksen hyvänä puolena on __ryhmien homogeenisyys__
@@ -175,14 +174,13 @@ knitr::include_graphics("images/long.jpg")
 ```
 
 \
-\
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: poikittais- ja pitkittäistutkimus epidemiologiassa**  
 
 - Epäkokeelliset epidemiologiset tutkimukset voivat olla joko poikittaistutkimuksia tai pitkittäistutkimuksia
 - Poikittaistutkimus on tiettyyn ajankohtaan rajoittuva tutkimus, jossa mitataan sairauksien vallitsevuutta eli prevalenssia
-  - Vallitsevuus eli prevalenssi kuvaa sairauden tai haitan omaavien henkilöiden määrää tarkasteltavasta väestöstä tiettynä ajankohtana
+  - Prevalenssi kuvaa sairauden tai haitan omaavien henkilöiden määrää tarkasteltavasta väestöstä tiettynä ajankohtana
   - Usein mitataan vallitsevuustiheyttä eli sairaiden lukumäärää tiettynä ajanhetkenä / väkiluku samana ajankohtana
 - Pitkittäistutkimuksessa mitataan sairauksien ilmaantuvuutta eli insidenssiä
   - Tutkimuksessa seurataan väestössä ilmaantuvien uusien sairaustapausten lukumäärää tietyn ajanjakson aikana
@@ -190,7 +188,6 @@ knitr::include_graphics("images/long.jpg")
   - Henkilöaika muodostuu tarkasteltavan henkilöryhmän yhteenlasketusta seuranta-ajasta ennen sairastumista, esimerkiksi 100 henkilövuotta muodostuu seurattaessa 100 henkilöä vuoden ajan tai 10 henkilöä 10 vuoden ajan
 :::
 
-\
 \
 
 ### __Kohorttitutkimus__ 
@@ -217,11 +214,10 @@ knitr::include_graphics("images/hiroshima.jpg")
 ```
 
 \
-\
 
 ### __Tapaus-verrokkitutkimus__ 
 
-- On __retrospektiivinen havainnoiva__ pitkittäistutkimusmenetelmä, jossa tutkimukseen valitaan esimerkiksi tutkittavaan sairauteen (tai muulle altisteelle/käsittelylle altistuneita) potilaita ( __tapaukset__) ja lisäksi henkilöitä, jotka eivät ole sairastuneita tähän sairauteen ( __verrokit__) (tai altistuneet altisteelle/käsittelylle).
+- On __retrospektiivinen havainnoiva__ pitkittäistutkimusmenetelmä, jossa tutkimukseen valitaan esimerkiksi tutkittavaan sairauteen (tai muulle altisteelle/käsittelylle altistuneita) potilaita (__tapaukset__) ja lisäksi henkilöitä, jotka eivät ole sairastuneita tähän sairauteen (__verrokit__) (tai altistuneet altisteelle/käsittelylle).
   - Tavoitteena on tutkia miten tutkimusyksiköt reagoivat altistuttuaan jollekin altisteelle tai käsittelylle. Soveltuu erityisesti harvinaisten ilmiöiden aiheuttajien selvittämiseen.
     - Esimerkkinä altistuminen Covid-19 virukselle: retrospektiivisesti (jälkikäteen) voidaan tarkastella viruksen kantajan kanssa samassa tilassa olleita (virukselle altistuneita (virus on altiste)) kyseisessä tilassa olleet olisivat tapauksia ja hypoteettinen toinen tila ilman virusta toimisi verrokkina (ts. ei yhtäkään tartuntatapausta). Mielenkiinnon kohteena olisi tarkastella kuinka monta henkilöä sai tartunnan (ja minkälaiset olosuhteet olivat). 
     - Toisena esimerkkinä voitaisiin jälleen pitää em. työllisyyden kuntakokeilua: ne kunnat jotka (satunnaisesti) valikoituisivat työllisyyskokeiluun tulisivat altistetuksi politiikkamuutokselle eli olisivat tapauskuntia. Näitä kuntia voidaan sitten verrata verrokkikuntiin, joissa kys. politiikkamuutosta ei toteutettaisi. Mielenkiinnon kohteena olisi työllisyyden kehitys altistumisen jälkeen.
@@ -245,13 +241,12 @@ knitr::include_graphics("images/tali.jpg")
 ```
 
 \
-\
 
 - __Lohkot/osittaminen__
   - Lohkomisella / osittamisella tarkoitetaan tutkimusyksiköiden järjestämistä ryhmiin niin, että ryhmät ovat mahdollisten sekoittavien tekijöiden suhteen mahdollisimman samankaltaiset
   - Lohkotekijä on yleensä muuttuja, jonka aiheuttama vaihtelu vasteeseen ei ole tutkijan päämielenkiinnon kohteena
   - Lohkotekijän kontrollointi johtaa usein tarkkuudeltaan parempiin tuloksiin
-  - ``Block what you can, randomize what you cannot.''
+  - "Block what you can, randomize what you cannot."
 
 ```{r block, echo=FALSE, fig.cap="Esimerkki ositetusta koeasetelmasta", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/block.jpg")
@@ -290,14 +285,15 @@ Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tut
   - Tietotekniikan kehittymisen vuoksi kasvaneet rekisteriaineistot tekevät käyttökelpoisen tiedon esiin seulomisesta haastavaa. Tämä näyttäytyy esimerkiksi eri rekistereiden tietojen linkkaamista yhteen, jolla saattaa olla tutkimuksen kannalta ratkaiseva merkitys ja joka edelleen korostaa substanssitietoutta. 
     - Eri rekisterejä ei aina saadakaan linkattua tehokkaasti yhteen esimerkiksi jos ne ovat mitanneet mielenkiinnon kohteina olevia muuttujia eri tilastoyksikön tasolla (vrt. kunnan vs kaupunginosan työllisyys)
 
-- Erilaisia rekisterejä Suomessa
+- Erilaisia rekisterejä Suomessa:
   - Verorekisterit (Verohallinnon rekisterit)
   - Kuolemansyyrekisterit
   - Eläkerekisterit
   - Väestölaskennat (väestörekisteri)
   - Syöpärekisteri
   - Lääkeostorekisteri
-  - Sosiaali- ja terveydenhuollon rekisterit Kelan etuusrekisterit
+  - Sosiaali- ja terveydenhuollon rekisterit 
+  - Kelan etuusrekisterit
   - Osoiterekisterit
   - Etukorttirekisterit
   - Opintosuoritusrekisteri
@@ -311,23 +307,25 @@ Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tut
   - Itse kerätessä aineisto on mahdollista räätälöiden tuottaa vastamaan juuri tutkimuskysymykseen kun taas rekisteriaineisto on "toisen käden" aineistoa ja ohjaa täten tutkimusta niin käsitteiden määrittelystä kuin tutkimuskysymysten asettelusta lähtien.
 
 - __Tietosuojalaki__: Lain mukaan henkilötietoja voidaan kerätä ja tallettaa vain, jos rekisterinpitäjän ja rekisteröitävän henkilön välillä on asiallinen yhteys. Olennaista lain soveltamisessa on, voidaanko käytössä olevan aineiston tiedot tosiasiassa tavalla tai toisella liitää tiettyyn tunnistettavissa olevaan henkilöön.
-  - Lain merkitys on paljolti siina, että se ohjaa suunnitelmallisuuteen ja huolellisuuteen henkilötietojen käsittelyssä.
+  - Lain merkitys on paljolti siinä, että se ohjaa suunnitelmallisuuteen ja huolellisuuteen henkilötietojen käsittelyssä.
   - Sääntelyjen yleisenä tavoitteena on ettei tarpeettomasti kerätä ja talleteta henkilötietoja ettei rekisteröityjen yksityisyyttä ja oikeuksia perusteettomasti loukata ja että rekisteri, siihen liittyvät tiedot ja niiden käsittely suojataan kaikissa vaiheissa.
 
 - Rekisteriaineistot tietosuojalain takaaman yksityisyydensuojan näkökulmasta 
   - Suomessa rekisteriaineistot pyritään luovuttamaan käyttöön vain tunnisteettomina yksityisyydensuojan säilyttämiseksi.
   - Tieteellinen tutkimustarkoitus luokitellaan kuitenkin poikkeustapaukseksi tietosuojalaissa ja ensisijaisena tavoitteena on aina se että tietoja, joista henkilö voidaan tunnistaa käytetään ainoastaan silloin kun tutkimusta ei voida muutoin toteuttaa. 
-  - Tiedot tulee ensisijaisesti kerätä tutkimusyksiköiden suostumuksella ja siten, että henkilö saa halutessaa riittävästi informaatiota tietojen käyttötarkoituksesta ja -tavasta.
+  - Tiedot tulee ensisijaisesti kerätä tutkimusyksiköiden suostumuksella ja siten, että henkilö saa halutessaan riittävästi informaatiota tietojen käyttötarkoituksesta ja -tavasta.
   - Rekisteritietojen hyödyntäjien etujen mukaista on, että tietosuojaa koskevat säännökset ovat niin selkeitä ja kattavia, että yleisössä ei synny epäilyksiä tietojen väärinkäytön mahdollisuuksista.
   - Rekisteritietojen käyttöön on aina haettava lupaa. Erityisesti eri rekistereitä yhdistettäessä on hankittava myös tietosuojavaltuutetun lausunto suunnitteilla olevan tutkimuksen laillisuudesta ja käyttöehdoista.
 
-- Rekisteriaineiston ymmärtämisessä ja käyttämisessä kannattaa huomioida ainakin seuraavat seikat
+- Rekisteriaineiston ymmärtämisessä ja käyttämisessä kannattaa huomioida ainakin seuraavat seikat:
   - Mitkä tekijät ovat johtaneet alkuperäisen aineiston ja sen koonneen/tuottaneen informaatiojärjestelmän syntymiseen?
     - Nimellisesti oikealta kuulostava muuttuja ei aina vastaa tutkijan käsitystä siitä muuttujasta, mitä kyseisen rekisteriaineiston ylläpitäjä/tuottaja on ajatellut.
   - Miten järjestelmän sisältämät tiedot on mitattu ja miten tämä ilmoitetaan eli miten tietojärjestelmän sisältämien tietojen informaatioarvo on dokumentoitu?
-    - Rekisterin tuottajan ja sen käyttäjien näkemykset mitatuista muuttujista ja niistä johdetut tulkinnat eivät välttämättä aina kohtaa: [esimerkki?]
+    - Rekisterin tuottajan ja sen käyttäjien näkemykset mitatuista muuttujista ja niistä johdetut tulkinnat eivät välttämättä aina kohtaa.
   - Minkälaisia tietorakenteita aineistossa käytetään ja miten se vaikuttaa eri muuttujien tallentamiseen tietojärjestelmään?
     - Tutkimuskysymyksen kannalta on voi olla merkitystä esimerkiksi sillä, onko rekisterinpitäjä kerännyt henkilöiden ikätietoa vuoden vai kymmenen vuoden tarkkuudella.  
+
+\FloatBarrier
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Diabeteksen ja sen lisäsairauksien esiintyvyyden ja ilmaantuvuuden rekisteriperusteinen mittaaminen**  
@@ -335,8 +333,6 @@ Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tut
 - Vaihe 1: Diabeteskohtortin identifiointi (Tilastokeskus: kuolinsyyt, THL: diagnoosit, Kela: erityiskorvaukset, reseptit)
 
 - Vaihe 2: Seurantatiedot (syöpärekisteri, sairaspäivärahat,  eläkerekisteri...)
-
-\
 
 - Ongelma: kuinka monta henkilöä diabeteskohortista on kuollut seuranta-aikana?
   - Kuolema on vakaa käsite, johon ei liity mittausvirhettä tai subjektiivisuutta
@@ -348,9 +344,13 @@ Käydään seuraavaksi läpi erilaisia aineistotyyppejä, joita käytännön tut
   - Rakennetaan algoritmi, jolla identifioidaan tyypin 1 diabeetikot lääkeostojen luokkien ja säännöllisyyden perusteella
 :::
 
+\FloatBarrier
+
 ```{r diab, echo=FALSE, fig.cap="Vaihe 1: Diabeteskohortin identifiointi", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/diab.jpg")
 ```
+
+\FloatBarrier
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: rekisteritutkimus pitkäaikaisen laitoshoivan käytöstä**  
@@ -370,9 +370,13 @@ knitr::include_graphics("images/diab.jpg")
   - Eivät mahdollista perhevaikutusten tutkimista
 :::
 
+\FloatBarrier
+
 ```{r rekist, echo=FALSE, fig.cap="Vaihe 1: Diabeteskohortin identifiointi", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/rekist.jpg")
 ```
+
+\FloatBarrier
 
 ### Aikasarjat ja paneeliaineistot
 
@@ -390,31 +394,35 @@ knitr::include_graphics("images/rekist.jpg")
 **Esimerkki: kuluttajahintaindeksit**  
 
 - Hintaindeksi on normalisoitu keskiarvo tarkasteltavan tuote- tai palvelukorin hinnoista, joka lasketaan säännöllisin väliajoin tavoitteena helpottaa hintojen muutosten seurantaa eri ajankohtien tai alueiden välillä. Laajimmat indeksit mittaavat hintojen kehitystä koko talouden tasolla ja niitä hyödynnetään monin tavoin talouspolitiikassa.
-  - Tilastokeskuksen haastattelijat keräävät indeksiä varten kaiken kaikkiaan noin $50 000$ hintatietoa lähes $500$ hyödykkeestä noin $2 700$ (näin joitain vuosia sitten) liikkeestä aina kuukauden puolivälissä, lisäksi noin $1 000$ hintatietoa kerätään keskitetysti.
+  - Tilastokeskuksen haastattelijat keräävät indeksiä varten kaiken kaikkiaan noin 50 000 hintatietoa lähes 500 hyödykkeestä noin 2 700 (näin joitain vuosia sitten) liikkeestä aina kuukauden puolivälissä, lisäksi noin 1 000 hintatietoa kerätään keskitetysti.
   - Tilastokeskuksen laskema kuluttajahintojen vuosimuutos oli marraskuussa 2014 oli 1,0 prosenttia
   - Marraskuussa kuluttajahintoja nostivat viime vuodesta eniten vuokrankorotukset, tupakkatuotteiden ja alkoholijuomien vähittäishintojen ja ravintola- ja kahvilapalvelujen sekä kerrostalojen kunnossapitopalvelujen kallistuminen
   -  Kuluttajahintojen nousua vuoden takaisesta hillitsi marraskuussa eniten elintarvikkeiden, polttonesteiden ja viihde-elektroniikan halpeneminen
 :::
 
-```{r kuluttaja, echo=FALSE, fig.cap="Esimerkki: kuluttajahintaindeksit", fig.align='center', out.width = "100%"}
+```{r kuluttaja, echo=FALSE, fig.cap="Esimerkki: kuluttajahintaindeksi", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/kuluttaja.jpg")
 ```
 
 - __Aikasarjojen tilastollinen analyysi__ perustuu siihen, että sarja tulkitaan jonkin __stokastisen prosessin__ eli satunnaisprosessin realisaatioksi
   - Jos aikasarjan generoinut prosessi saadaan selville, voidaan tietoja prosessista käyttää aikasarjan käyttäytymisen kuvaamiseen ja selittämiseen sekä aikasarjan tulevan käyttäytymisen ennustamiseen.
   - Aikasarja-aineistot ilmentävät ilmiöstä riippuen ns. autokorrelaatiota, eli ajallisesti toisiaan lähellä olevat havainnot ovat korreloituneempia kuin ajallisesti kaukana toisistaan olevat.
-    - Aikasarja-analyysi on yksi tilastotieteen osa-alue, jossa on rikas ja pitkälle kehittynyt teoriapohja.
+    - Aikasarja-analyysi on yksi tilastotieteen osa-alue, jolla on rikas ja pitkälle kehittynyt teoriapohja.
     - Aikasarja-analyysia opetetaan tarkemmin kursseilla [TILM3541 Aikasarja-analyysi](https://opas.peppi.utu.fi/fi/opintojakso/TILM3541/5076), [TILM3589 Epälineaarinen aikasarja-analyysi](https://opas.peppi.utu.fi/fi/opintojakso/TILM3589/8393) ja [TILM3586 Moniulotteinen aikasarja-analyysi](https://opas.peppi.utu.fi/fi/opintojakso/TILM3586/6973).
 - Aikasarjoja analysoimalla voidaan selvittää esimerkiksi
   - Onko aikasarjassa __trendejä__ eli aikasarjan tason systemaattisia muutoksia?
   - Onko aikasarjassa __syklistä vaihtelua__ kuten  __suhdanne__- ja/tai __kausivaihtelua__?
+  - Ks. esimerkiksi kuva \@ref(fig:time).
+
+\FloatBarrier
 
 ```{r time, echo=FALSE, fig.cap="Esimerkki: Kansainvälisten lentomatkustajien lkm vuosina 1949-1960", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/time.jpg")
 ```
 
 \
-\
+
+\FloatBarrier
 
 - __Paneeli- eli pitkittäisaineisto__
   
@@ -431,7 +439,7 @@ knitr::include_graphics("images/time.jpg")
   - Havaintoyksiköt pyritään valitsemaan satunnaisotannalla, sillä myös survey-tutkimuksessa pyritään yleistämään tulokset otoksesta koko perusjoukkoon.
   - Kyselytutkimukset muodostava kokonaan oman tutkimustapansa, joka mahdollistaa hyvin erilaisen informaation keräämisen kuin tavallisesti kvantitatiivissa aineistoissa.
 
-- Survey-tutkimus koostuu seuraavista vaiheista
+- Survey-tutkimus koostuu seuraavista vaiheista:
   - Kohdepopulaation määrittely ja otannan suunnittelu
   - Kyselylomakkeen rankentaminen ja testaaminen
   - Kyselymetodin määrittely (puhelinhaastattelu, elektroninen kysely...)
@@ -450,14 +458,14 @@ knitr::include_graphics("images/time.jpg")
   - Tilastollisten menetelmien avulla pyritään arvioivaan otoksen, kyselyn suunnittelun ja kerätyn vastaajaotoksen sisältämää (tai aiheuttamaa) harhaa. 
 
 
-```{r survey, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta. (Kuva 1)", fig.align='center', out.width = "100%"}
+```{r survey, include=FALSE, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/survey.jpg")
 ```
 
-```{r survey2, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta. (Kuva 2)", fig.align='center', out.width = "100%"}
+```{r survey2, include=FALSE, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta.", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/survey2.jpg")
 ```
 
-```{r survey3, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta. (Kuva 3)", fig.align='center', out.width = "100%"}
+```{r survey3, include=FALSE, echo=FALSE, fig.cap="Esimerkki survey-tutkimuksesta. (Kuva 3)", fig.align='center', out.width = "100%"}
 knitr::include_graphics("images/survey3.jpg")
 ```

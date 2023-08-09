@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.4 Satunnaismuuttujien kovarianssi ja korrelaatio | TILM3701 - Tilastotiede ja data 2022</title>
   <meta name="description" content="Tilastotieteen ensimmäinen kurssi." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.4 Satunnaismuuttujien kovarianssi ja korrelaatio | TILM3701 - Tilastotiede ja data 2022" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Roope Rihtamo" />
 
 
-<meta name="date" content="2022-09-22" />
+<meta name="date" content="2022-09-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -165,8 +165,19 @@
 <li class="chapter" data-level="10" data-path="luku10.html"><a href="luku10.html"><i class="fa fa-check"></i><b>10</b> Aineisto- ja tutkimustyypit ja koeasetelmat</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="alaluku101.html"><a href="alaluku101.html"><i class="fa fa-check"></i><b>10.1</b> Tutkimustyypit</a></li>
-<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a></li>
-<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a></li>
+<li class="chapter" data-level="10.2" data-path="alaluku102.html"><a href="alaluku102.html"><i class="fa fa-check"></i><b>10.2</b> Tutkimusstrategiat</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="alaluku102.html"><a href="alaluku102.html#poikittaistutkimus-tai-poikkileikkaustutkimus"><i class="fa fa-check"></i><b>10.2.1</b> <strong>Poikittaistutkimus</strong> tai <strong>poikkileikkaustutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.2" data-path="alaluku102.html"><a href="alaluku102.html#pitkittäistutkimus"><i class="fa fa-check"></i><b>10.2.2</b> <strong>Pitkittäistutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.3" data-path="alaluku102.html"><a href="alaluku102.html#kohorttitutkimus"><i class="fa fa-check"></i><b>10.2.3</b> <strong>Kohorttitutkimus</strong></a></li>
+<li class="chapter" data-level="10.2.4" data-path="alaluku102.html"><a href="alaluku102.html#tapaus-verrokkitutkimus"><i class="fa fa-check"></i><b>10.2.4</b> <strong>Tapaus-verrokkitutkimus</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="alaluku103.html"><a href="alaluku103.html"><i class="fa fa-check"></i><b>10.3</b> Erilaisia aineistoja ja aineistolähteitä</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="alaluku103.html"><a href="alaluku103.html#rekisteriaineistot"><i class="fa fa-check"></i><b>10.3.1</b> Rekisteriaineistot</a></li>
+<li class="chapter" data-level="10.3.2" data-path="alaluku103.html"><a href="alaluku103.html#aikasarjat-ja-paneeliaineistot"><i class="fa fa-check"></i><b>10.3.2</b> Aikasarjat ja paneeliaineistot</a></li>
+<li class="chapter" data-level="10.3.3" data-path="alaluku103.html"><a href="alaluku103.html#survey--eli-haastattelu--tai-kyselytutkimus"><i class="fa fa-check"></i><b>10.3.3</b> Survey- eli haastattelu- tai kyselytutkimus</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="luku11.html"><a href="luku11.html"><i class="fa fa-check"></i><b>11</b> Tilastollisesta ennustamisesta</a>
 <ul>
@@ -198,10 +209,12 @@
 <h2><span class="header-section-number">7.4</span> Satunnaismuuttujien kovarianssi ja korrelaatio<a href="alaluku74.html#alaluku74" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p>Tarkastellaan välimatka- tai suhdeasteikollisten satunnaismuuttujien <span class="math inline">\(X\)</span> ja <span class="math inline">\(Y\)</span> (Pearsonin tulomomentti-) korrelaatiokerrointa <span class="math inline">\(\rho_{XY}\)</span> ja sen estimointia.</p></li>
-<li><p>Tällä kurssilla emme tarkastele tarkemmin tilastollisia testejä korrelaatiokertoimelle <span class="math inline">\(\rho_{XY}\)</span>, kuten:
--Yhden otoksen testi korrelaatiokertoimelle
--Korrelaatiokertoimien vertailutesti
--Korreloimattomuuden testaaminen</p></li>
+<li><p>Tällä kurssilla emme tarkastele tarkemmin tilastollisia testejä korrelaatiokertoimelle <span class="math inline">\(\rho_{XY}\)</span>, kuten:</p>
+<ul>
+<li>Yhden otoksen testi korrelaatiokertoimelle</li>
+<li>Korrelaatiokertoimien vertailutesti</li>
+<li>Korreloimattomuuden testaaminen</li>
+</ul></li>
 <li><p>Jälleen kerran, lisätietoja ja tarkempia yksityiskohtia moniulotteisista satunnaismuuttujista ja jakaumista tarkastellaan todennäköisyyslaskennan kursseilla.</p></li>
 </ul>
 <div class="defblock miko">
@@ -237,14 +250,7 @@ kutsutaan ajoittain siis <strong>Pearsonin korrelaatiokertoimeksi</strong> (tulo
 <ul>
 <li>Pearsonin korrelaatiokerroin <span class="math inline">\(\rho_{XY}\)</span> mittaa satunnaismuuttujien <span class="math inline">\(X\)</span> ja <span class="math inline">\(Y\)</span> lineaarisen riippuvuuden voimakkuutta. Ts. sm:jien välistä (lineaarista) yhteyttä.</li>
 </ul></li>
-<li>Pearsonin (tulomomentti-) korrelaatiokerrointa
-<span class="math display">\[
-r_{XY} = \frac{s_{XY}}{s_X s_Y}
-\]</span>
-voidaan estimoida Pearsonin <strong>otoskorrelaatiokertoimella</strong> (ks. alla).
-<ul>
-<li>Estimaattori <span class="math inline">\(r_{XY}\)</span> voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.</li>
-</ul></li>
+<li>Pearsonin korrelaatiokerrointa voidaan estimoida Pearsonin <strong>otoskorrelaatiokertoimella</strong>.</li>
 </ul>
 <div class="defblock miko">
 <p><strong>Pearsonin otoskorrelaatiokerroin</strong></p>
@@ -256,49 +262,52 @@ jossa <span class="math inline">\(\bar{x}\)</span> ja <span class="math inline">
 Otoskovarianssin <span class="math inline">\(s_{xy}\)</span> avulla voidaan määritellä <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuuden mittari, jota kutsutaan Pearsonin otoskorrelaatiokertoimeksi. Pearsonin otoskorrelaatiokerroin <span class="math inline">\(r_{xy}\)</span> saadaan otoskovarianssista <span class="math inline">\(s_{xy}\)</span> <strong>normeerausoperaatiolla</strong>, jossa otoskovarianssi <span class="math inline">\(s_{xy}\)</span> jaetaan <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen keskihajonnoilla <span class="math inline">\(s_x\)</span> ja <span class="math inline">\(s_y\)</span>.<br />
 Ts. havaintoarvojen pareista <span class="math inline">\((x_i, y_i), i = 1, 2, \ldots, n\)</span> laskettu Pearsonin otoskorrelaatiokerroin on siis
 <span class="math display">\[
-r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}} , 
+r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}} ,
 \]</span>
 jossa <span class="math inline">\(s_{xy}\)</span> on <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen otoskovarianssi, <span class="math inline">\(s_x\)</span> on <span class="math inline">\(x\)</span>-havaintoarvojen keskihajonta ja <span class="math inline">\(s_y\)</span> on y-havaintoarvojen keskihajonta.</p>
 </div>
 <ul>
-<li>Otoskovarianssi:
+<li><p>Otoskorrelaatiokertoimen estimaattori voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.</p></li>
+<li><p>Otoskovarianssi:</p>
 <ul>
 <li>Huomaa, että <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen otoskovarianssit niiden itsensä kanssa ovat niiden variansseja.</li>
 <li>Otoskovarianssi <span class="math inline">\(s_{xy}\)</span> mittaa <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen yhteisvaihtelua niiden aritmeettisten keskiarvojen ympärillä.</li>
 <li>Otoskovarianssilla on taipumus saada positiivisia (negatiivisia) arvoja, jos havaintopisteiden muodostama “pistepilvi (pisteparvi)” näyttää nousevalta (laskevalta) oikealle mentäessä; ks. pistediagrammin ilmeen ja Pearsonin otoskorrelaatiokertoimen yhteys, jota käsitellään seuraavaksi.</li>
 </ul></li>
-<li>Pearsonin otoskorrelaatiokertoimella <span class="math inline">\(r_{xy}\)</span> on seuraavat ominaisuudet:
+<li><p>Pearsonin otoskorrelaatiokertoimella <span class="math inline">\(r_{xy}\)</span> on seuraavat ominaisuudet:</p>
 <ol style="list-style-type: lower-roman">
 <li><span class="math inline">\(-1 \le r_{xy} \le 1\)</span></li>
 <li><span class="math inline">\(r_{xy} = \pm 1\)</span>, jos ja vain jos <span class="math inline">\(y_i = \alpha \beta x_i\)</span>, jossa <span class="math inline">\(\alpha\)</span> ja <span class="math inline">\(\beta\)</span> ovat reaalisia vakiota ja <span class="math inline">\(\beta \neq 0\)</span></li>
 <li>Korrelaatiokertoimella <span class="math inline">\(r_{xy}\)</span> ja kovarianssilla <span class="math inline">\(s_{xy}\)</span> on aina sama etumerkki</li>
 </ol></li>
-<li>Pearsonin otoskorrelaatiokerroin <span class="math inline">\(r_{xy}\)</span>: Tulkinta/tulkintoja:
+<li><p>Pearsonin otoskorrelaatiokerroin <span class="math inline">\(r_{xy}\)</span>: Tulkinta/tulkintoja:</p>
 <ul>
 <li>Havaintoarvojen pareista <span class="math inline">\((x_i, y_i), i = 1,2, \ldots, n\)</span> laskettu Pearsonin otoskorrelaatiokerroin <span class="math inline">\(r_{xy}\)</span> mittaa <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuutta.</li>
 <li>Jos <span class="math inline">\(r_{xy} = \pm 1\)</span>, niin <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen välillä on eksakti eli funktionaalinen lineaarinen riippuvuus, mikä merkitsee sitä, että kaikki havaintopisteet <span class="math inline">\((x_i, y_i)\)</span> asettuvat samalle suoralle.</li>
 <li>Jos <span class="math inline">\(r_{xy} = 0\)</span>, niin <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen välillä ei voi olla eksaktia lineaarista riippuvuutta.</li>
 <li>Vaikka <span class="math inline">\(r_{xy} = 0\)</span>, <span class="math inline">\(x\)</span>- ja <span class="math inline">\(y\)</span>-havaintoarvojen välillä saattaa silti olla jopa eksakti epälineaarinen riippuvuus.</li>
 </ul></li>
-<li><strong>Havainnollistus</strong>: Alapuolella esitettävät kuviot havainnollistavat kahden muuttujan havaittujen arvojen (<span class="math inline">\(n = 30\)</span>) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.</li>
+<li><p><strong>Havainnollistus</strong>: Alapuolella esitettävät kuviot (Kuva <a href="alaluku74.html#fig:korrelaatioMellin">7.2</a>) havainnollistavat kahden muuttujan havaittujen arvojen (<span class="math inline">\(n = 30\)</span>) pistediagrammin ilmeen ja korrelaation välistä yhteyttä.</p></li>
 </ul>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:korrelaatioMellin"></span>
-<img src="images/Pearson-korr-Mellin.jpg" alt="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006)." width="75%" />
+<img src="images/Pearson-korr-Mellin.jpg" alt="Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista $xy$-pisteparvista. Lähde: Mellin (2006)." width="90%" />
 <p class="caption">
 Kuvio 7.2: Havainnollistuksia Pearsonin otoskorrelaatiokertoimen arvosta ja erilaisista <span class="math inline">\(xy\)</span>-pisteparvista. Lähde: Mellin (2006).
 </p>
 </div>
 <ul>
-<li><p>Toinen havainnollistus: Ks. seuraavasta <a href="http://guessthecorrelation.com/">linkistä</a> lisää havainnollistuksia.</p>
+<li>Ks. seuraavasta <a href="http://guessthecorrelation.com/">linkistä</a> lisää havainnollistuksia.
 <ul>
 <li><em>Guess the correlation</em> pelissä pääset arvioimaan esitettävän pisteparven korrelaation voimakkuutta erilaisissa simuloiduissa tilanteissa: <a href="http://guessthecorrelation.com/" class="uri">http://guessthecorrelation.com/</a></li>
 </ul></li>
+</ul>
+<ul>
 <li><p><strong>Kausaalisuus</strong></p>
 <ul>
 <li>Muuttujan <span class="math inline">\(x\)</span> arvojen muutos vaikuttaaa muuttujan <span class="math inline">\(y\)</span> arvoihin (syy-vaikutussuhde), jos seuraavat kolme ehtoa täyttyvät:
 <ul>
 <li>muuttujan <span class="math inline">\(x\)</span> muutos esiintyy ajallisesti ennen y:n muutosta</li>
-<li>muuttujissa <span class="math inline">\(x\)</span> ja <span class="math inline">\(y\)</span> tapahtuvien muuttujien välillä on riippuvuutta</li>
+<li>muuttujissa <span class="math inline">\(x\)</span> ja <span class="math inline">\(y\)</span> tapahtuvien muutosten välillä on riippuvuutta</li>
 <li>muuttujassa <span class="math inline">\(y\)</span> tapahtunutta muutosta ei voida selittää millään muilla tekjöillä</li>
 </ul></li>
 </ul></li>
@@ -551,7 +560,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
