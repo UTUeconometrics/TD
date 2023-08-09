@@ -69,7 +69,7 @@ Kurssin sisältöä on listattu opinto-oppaassa ja laajemmin alla. Tämä listau
   - Otannan perusteet
   - Tilastotieteen sovellusten ja sovellusalueiden esittelyä
 
-Materiaalin seassa on eritelty väärikoodatuin tietolaatikoin erinäisiä tärkeitä tilastotieteellisiä konsepteja ja termejä sekä esimerkkejä tilastotieteen sovelluksista. Näistä ensin mainitut löytyvät Deltan violeteista laatikoista ja jälkimmäiset Statistikan oransseista.^[Toim. Huom. värit eivät täysin alkuperäisten värien kanssa yhteneväisiä.] Alla esimerkkilaatikot.
+Materiaalin seassa on eritelty väärikoodatuin tietolaatikoin erinäisiä tärkeitä tilastotieteellisiä konsepteja ja termejä sekä esimerkkejä tilastotieteen sovelluksista. Näistä ensin mainitut löytyvät Deltan (Turun yliopiston matemaattisten ja fysikaalisten tieteiden opiskelijoiden yhdistys) violeteista laatikoista ja jälkimmäiset Statistikan (Turun yliopiston tilastotieteen opiskelijoiden ja alumnien yhdistys) oransseista.^[Toim. Huom. värit eivät täysin alkuperäisten värien kanssa yhteneväisiä.] Alla esimerkkilaatikot.
 
 ::: {.defblock data-latex="{}"}
 **Konsepti tai termi**

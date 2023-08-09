@@ -181,7 +181,7 @@ testaamisen avulla. Päättely perustuu tilastotieteen teoriaan, joka mahdollist
   - Otoskoolla, eli sillä kuinka monta tutkimishenkilöä tutkitaan, on keskeinen rooli tutkimuksen luotettavuudelle. Mitä suurempi otos, sitä pienemmäksi sattuman osuus käy ja vastaavasti mitä pienempi otos, sitä suurempi on yksittäisten sattumien vaikutus. 
     - Tilastolliset mallit turvautuvat todennäköisyyksiin erottaakseen sattuman vaikutuksen: kun aineisto on kerätty, halutaan tietää kuinka todennäkoistä on, että uskomus pitää paikkaansa.
 
-- Palataan takaisin esimerkkiimme: Yleisen uskomuksen mukaan naiset puhuvat enemmän kuin miehet.
+- Palataan takaisin esimerkkiimme: väitteen mukaan naiset puhuvat enemmän kuin miehet.
   - Tutkimuksen mukaan miehet vaikuttavat kuitenkin puhuvan yhtä paljon kuin naisetkin.
   - Laajemmat tutkimukset osoittavat, että __tilanteella__ on puheen määrään paljon suurempi vaikutus kuin sukupuolella.
 - Kiitos tilastotieteen, väärä uskomus on korvautunut tiedolla!
@@ -282,3 +282,6 @@ knitr::kable(
 )
 # you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 ```
+
+## Termejä
+
