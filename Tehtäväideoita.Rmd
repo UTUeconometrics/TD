@@ -1,0 +1,13 @@
+---
+title: "Tehtäväideoita"
+author: "Roope Rihtamo"
+date: "2023-08-09"
+output: html_document
+---
+
+## Luku 2
+
+Hypoteesi:
+
+Suoritat tieteellisen kokeen ja käykin ilmi että sen mukaan nollahypoteesi jää voimaan (esimerkki vaikka jokin hoito?). Onko nyt niin, että nollahypoteesi on totta/todistettu?
+
