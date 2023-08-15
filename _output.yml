@@ -8,7 +8,7 @@ bookdown::gitbook:
         <li><a href="./">TILM3701 - Tilastotiede ja data 2022</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    download: [["TD2022.pdf", "PDF"]]
+    download: [["TD2023.pdf", "PDF"]]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
