@@ -10,7 +10,7 @@
   - Mikä on korrelaation ja riippuvuuden suhde?
   - Miten korrelaatiota ja sen voimakkuutta voidaan estimoida?
 
-- Käsittelemme myös jatkossa regressioanalyysia yhden selittäjän lineaarisen regressiomallin tapauksessa. Pitemmälle meneviä regressioanalyysin kysymyksiä käsitellään koko tilastotieteen opinto-ohjelman lävitse, kuten perusteellisesti Lineaariset ja yleistetyt lineaariset mallit -kurssin myötä.
+- Käsittelemme myös jatkossa regressioanalyysia yhden selittäjän lineaarisen regressiomallin tapauksessa. Pitemmälle meneviä regressioanalyysin kysymyksiä käsitellään koko tilastotieteen opinto-ohjelman lävitse, kuten perusteellisesti [Lineaariset ja yleistetyt lineaariset mallit -kurssin](https://opas.peppi.utu.fi/fi/opintojakso/TILM3588/5071?period=2022-2024) myötä.
 
 ## Muuttujien väliset riippuvuudet {#alaluku71}
 
@@ -43,7 +43,7 @@
   - Korrelaation eli (lineaarisen) tilastollisen riippuvuuden voimakkuutta mittaavia tilastollisia tunnuslukuja kutsutaan korrelaatiokertoimiksi.
   - Korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle.
   - Vaikka korrelaatiot muodostavat perustan muuttujien välisten riippuvuuksien ymmärtämiselle, riippuvuuksia halutaan tavallisesti analysoida myös tarkemmin.
-  - __Regressioanalyysi__ on tilastollinen menetelmä, jossa jonkin, ns. selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, ns. selittävistä muuttujista pyritään mallintamaan regressiomalliksi kutsuttavalla tilastollisella mallilla. Käsittelemme johdatusta regressioanalyysiin vielä myöhemmin luvussa \@ref(luku8).
+  - __Regressioanalyysi__ on tilastollinen menetelmä, jossa jonkin, ns. selitettävän muuttujan tilastollista riippuvuutta joistakin toisista, ns. selittävistä muuttujista pyritään mallintamaan regressiomalliksi kutsuttavalla tilastollisella mallilla. Käsittelemme johdantoa regressioanalyysiin vielä myöhemmin luvussa \@ref(luku8).
 
 ## Kahden muuttujan havaintoaineiston kuvaaminen {#alaluku72}
 
@@ -53,7 +53,7 @@
   - Havaintoarvojen jakaumaa kokonaisuutena voidaan kuvata sopivasti valituilla graafisilla esityksillä.
   - Havaintoarvojen jakauman karakteristisia ominaisuuksia voidaan kuvata sopivasti valituilla otostunnusluvuilla (ks. otostunnusluvut ja otosjakaumat luvussa \@ref(luku6)).
 
-- Koska useampi- kuin kaksiulotteisten kuvioiden tekeminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.
+- Koska useampiulotteisten kuvioiden kuin kaksiulotteisten muodostaminen ei ole usein kovin mielekästä, kolmen tai useamman muuttujan havaintoaineistoja havainnollistetaan tavallisesti niin, että muuttujia tarkastellaan pareittain.
 
 - Kahden järjestys-, välimatka- tai suhdeasteikoillisen muuttujan havaittujen arvojen pareja havainnollistetaan tavallisesti graafisella esityksellä, jota kutsutaan hajontakuvioksi tai pistediagrammiksi ("pistekaavio" engl. scatter plot). Ks. esimerkiksi kuva \@ref(fig:isatjapojat1). 
 
@@ -79,7 +79,7 @@ __Pistediagrammi (hajontakuvio)__
 Olkoot $X$ ja $Y$ järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joiden havaitut arvot ovat $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$. Havaintoarvojen parien $(x_i, y_i)$ pistediagrammi saadaan esittämällä lukuparit niiden määrittelemien pisteiden tasokoordinaatistossa.
 :::
 
-\
+\newpage
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Isän ja pojan pituus**  
@@ -103,7 +103,7 @@ knitr::include_graphics("images/Isien-poikien-pituudet-Mellin.jpg")
   - Havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä kuvataan keskihajonnoilla tai (otos-) variansseilla.
   - Havaintoarvojen (lineaarista) riippuvuutta kuvataan otoskovarianssilla ja otoskorrelaatiokertoimella.
 
-- Ts. oletetaan seuraavassa, että meillä on käytettävissä välimatka- tai suhdeasteikollisten muuttujien x ja y havaittuja arvoja $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$ muodostaen havaintoyksikkökohtaisia havaintoarvojen pareja $(x_i, y_i)$.
+- Ts. oletetaan seuraavassa, että meillä on käytettävissä välimatka- tai suhdeasteikollisten muuttujien $x$ ja $y$ havaittuja arvoja $x_1, x_2, \ldots, x_n$ ja $y_1, y_2, \ldots, y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i = 1, 2, \ldots, n$ muodostaen havaintoyksikkökohtaisia havaintoarvojen pareja $(x_i, y_i)$.
 
 - Käsitellään seuraavassa otoskeskiarvoa ja otosvarianssia. Olemme käsitelleet vastaavia estimaattoreita jo aiemmin luvussa \@ref(luku6).
 
@@ -112,17 +112,17 @@ $$
     \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i.
 $$
 Vastaavalla tavalla voidaan määritellä havaintojen $x_1, x_2, \ldots, x_n$ (aritmeettinen) keskiarvo $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i$.
-  - Havaintoarvojen pareista $(x_i, y_i ), \, i = 1, 2,\ldots,n$ laskettujen aritmeettisten keskiarvojen, otoskeskiarvojen, $\bar{x}$ ka $\bar{y}$ muodostama lukupari ($\bar{x}, \bar{y})$ on havaintoarvojen parien muodostamien pisteiden painopiste.
+  - Havaintoarvojen pareista $(x_i, y_i ), \, i = 1, 2,\ldots,n,$ laskettujen aritmeettisten keskiarvojen, otoskeskiarvojen, $\bar{x}$ ka $\bar{y}$ muodostama lukupari ($\bar{x}, \bar{y})$ on havaintoarvojen parien muodostamien pisteiden painopiste.
   - Havaintoarvojen aritmeettinen keskiarvo kuvaa havaintoarvojen keskimääräistä sijaintia.
   - Osoittautuu, että (aritmeettinen) keskiarvo toimii tilastollisessa mielessä hyvänä estimaattorina satunnaismuuttujan $Y$ odotusarvolle. 
 
 \
 
-__Otosvarianssi__: Havaintoarvojen $y_1, y_2,\ldots, y_n$ (otos-) varianssi (on todettu jo aiemmin) on muotoa
+- __Otosvarianssi__: Havaintoarvojen $y_1, y_2,\ldots, y_n$ (otos-) varianssi (on todettu jo aiemmin) on muotoa
 $$
-    S^2_y = \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2,
+    s^2_y = \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2,
 $$
-jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. 
+jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo.  
   - Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) varianssi $S^2_x$.
   - Havaintoarvojen varianssi mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.
     
@@ -130,7 +130,7 @@ jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo.
 $$
     s_y = \sqrt{s^2_y} = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2},
 $$
-jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde (otosvarianssiin.
+jossa $\bar{y}$ on on y-havaintoarvojen aritmeettinen keskiarvo. Huomaa suhde otosvarianssiin.
   - Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen (otos-) keskihajonta $s_x$.
   - Havaintoarvojen keskihajonta mittaa havaintoarvojen hajaantuneisuutta tai keskittyneisyyttä havaintoarvojen aritmeettisen keskiarvon suhteen.
 
@@ -196,11 +196,11 @@ jossa $\bar{x}$ ja $\bar{y}$ ovat havaintoarvojen $x$ ja $y$ aritmeettiset keski
 \
 Otoskovarianssin $s_{xy}$ avulla voidaan määritellä $x$- ja $y$-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuuden mittari, jota kutsutaan Pearsonin otoskorrelaatiokertoimeksi. Pearsonin otoskorrelaatiokerroin $r_{xy}$ saadaan otoskovarianssista $s_{xy}$ __normeerausoperaatiolla__, jossa otoskovarianssi $s_{xy}$ jaetaan $x$- ja $y$-havaintoarvojen keskihajonnoilla $s_x$ ja $s_y$. 
 \
-Ts. havaintoarvojen pareista $(x_i, y_i), i = 1, 2, \ldots, n$ laskettu Pearsonin otoskorrelaatiokerroin on siis
+Ts. havaintoarvojen pareista $(x_i, y_i), i = 1, 2, \ldots, n,$ laskettu Pearsonin otoskorrelaatiokerroin on siis
 $$
 r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}} , 
 $$
-jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-havaintoarvojen keskihajonta ja $s_y$ on y-havaintoarvojen keskihajonta. 
+jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-havaintoarvojen keskihajonta ja $s_y$ on $y$-havaintoarvojen keskihajonta. 
 :::
 
 - Otoskorrelaatiokertoimen estimaattori voidaan johtaa sekä momenttimenetelmällä että suurimman uskottavuuden menetelmällä, jotka ovat tyypillisiä estimointimenetelmiä tilastotieteessä ja tarkemmin tilastollisessa päättelyssä.
@@ -212,11 +212,11 @@ jossa $s_{xy}$ on $x$- ja $y$-havaintoarvojen otoskovarianssi, $s_x$ on $x$-hava
 
 - Pearsonin otoskorrelaatiokertoimella $r_{xy}$ on seuraavat ominaisuudet:
   i) $-1 \le r_{xy} \le 1$
-  ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$  ovat reaalisia vakiota ja $\beta \neq 0$
+  ii) $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$  ovat reaalisia vakiota ja $\alpha,\beta \neq 0$
   iii)	Korrelaatiokertoimella $r_{xy}$ ja kovarianssilla $s_{xy}$ on aina sama etumerkki
 
 - Pearsonin otoskorrelaatiokerroin $r_{xy}$: Tulkinta/tulkintoja:
-  - Havaintoarvojen pareista $(x_i, y_i), i = 1,2, \ldots, n$ laskettu Pearsonin otoskorrelaatiokerroin $r_{xy}$ mittaa $x$- ja $y$-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuutta.
+  - Havaintoarvojen pareista $(x_i, y_i), i = 1,2, \ldots, n,$ laskettu Pearsonin otoskorrelaatiokerroin $r_{xy}$ mittaa $x$- ja $y$-havaintoarvojen lineaarisen tilastollisen riippuvuuden voimakkuutta.
   - Jos $r_{xy} = \pm 1$, niin $x$- ja $y$-havaintoarvojen välillä on eksakti eli funktionaalinen lineaarinen riippuvuus, mikä merkitsee sitä, että kaikki havaintopisteet $(x_i, y_i)$ asettuvat samalle suoralle.
   - Jos $r_{xy} = 0$, niin $x$- ja $y$-havaintoarvojen välillä ei voi olla eksaktia lineaarista riippuvuutta.
   - Vaikka $r_{xy} = 0$, $x$- ja $y$-havaintoarvojen välillä saattaa silti olla jopa eksakti epälineaarinen riippuvuus.
@@ -235,10 +235,10 @@ knitr::include_graphics("images/Pearson-korr-Mellin.jpg")
 \FloatBarrier
 
 - __Kausaalisuus__
-  - Muuttujan $x$ arvojen muutos vaikuttaaa muuttujan $y$ arvoihin (syy-vaikutussuhde), jos seuraavat kolme ehtoa täyttyvät:
-    - muuttujan $x$ muutos esiintyy ajallisesti ennen y:n muutosta
-    - muuttujissa $x$ ja $y$ tapahtuvien muutosten välillä on riippuvuutta
-    - muuttujassa $y$ tapahtunutta muutosta ei voida selittää millään muilla tekjöillä
+  - Muuttujan $x$ arvojen muutos vaikuttaa muuttujan $y$ arvoihin (syy-vaikutussuhde), jos seuraavat kolme ehtoa täyttyvät:
+    - muuttujan $x$ muutos esiintyy ajallisesti ennen $y$:n muutosta.
+    - muuttujissa $x$ ja $y$ tapahtuvien muutosten välillä on riippuvuutta.
+    - muuttujassa $y$ tapahtunutta muutosta ei voida selittää millään muilla tekjöillä.
 
 - Kausaalisuhteita selvitettäessä on tunnettava etukäteen ilmiötä koskevat aiemmat teoriat ja tutkimukset tarkasti, jotta voidaan ottaa huomioon ilmiöön vaikuttavat tekijät
 
@@ -263,6 +263,7 @@ knitr::include_graphics("images/simpson.jpg")
 
 \FloatBarrier
 
+\newpage
 ::: {.defblock .mikko data-latex="{}"}
 **Esimerkki: Berkeleyn sukupuolisyrjintä**
 
@@ -297,3 +298,12 @@ kable(taulukko, booktabs = TRUE) %>%
 - Puutteita: Korrelaatiokertoimella on kaksi puutetta:
   - Se mittaa vain lineaarista riippuvutta.
   - Se ei ole (tilastollinen) malli, jonka avulla nähtäisiin, miten toinen muuttuja vaikuttaa toiseen muuttujaan. 
+  
+## Keskeisiä termejä ja kokonaisuuksia
+
+- Eksakti ja tilastollinen riippuvuus
+- Korrelaatio
+- Kovarianssi
+- Pearsoninkin korrelaatiokerroin ja otoskorrelaatiokerroin
+- Pistediagrammi
+- Kausalisuus vs. korrelaatio

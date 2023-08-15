@@ -67,6 +67,7 @@ Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, mi
 :::
 
 \
+\
 
 - Tieteilijät yleensä perustavat hypoteesinsa aikaisemmin tehtyihin havaintoihin, joita ei voida selittää olemassa olevilla tieteellisillä teorioilla tyydyttävästi.
 - Uuden tieteellisen tiedon tuottaminen ja jo tuotetun tiedon ymmärtäminen vaatii **tieteellisen ajattelutavan** omaksumista, jonka **perustana on lähes aina tilastollinen päättely**.
@@ -155,7 +156,7 @@ testaamisen avulla. Päättely perustuu tilastotieteen teoriaan, joka mahdollist
   - (Tilasto)tietojen saatavuutta voidaan pitää jopa toimivan demokratian edellytyksenä.
 \
 \
-- Koska todellisuutta kuvaaviin (tilasto)tietoihin sisältyy (lähes) aina epävarmuutta ja satunnaisuutta, tilastotiede ja tilastolliset menetelmät luovat perustan tilastojen tuotannolle, jalostukselle ja analysoinnille. 
+- Koska todellisuutta kuvaaviin (tilasto)tietoihin sisältyy (lähes) aina **epävarmuutta** ja **satunnaisuutta**, tilastotiede ja tilastolliset menetelmät luovat perustan tilastojen tuotannolle, jalostukselle ja analysoinnille. 
   - Niinpä tilastojen tuotannon, jalostuksen ja analysoinnin menetelmien kehittäminen on keskeinen osa tilastotieteen tehtäväkenttää.
   - Samoin tilastotieteen menetelmien ymmärtämisellä on keskeinen rooli tietoyhteiskunnassa toimimisessa ja vaikuttamisessa. 
 \
@@ -196,8 +197,8 @@ knitr::include_graphics("images/Are-women-really-more-talkative.jpg")
 - Tiede tavoittelee tietoa, mutta mistä? 
   - Jokaisen tutkimuksen lähtökohtana on (tai ainakin pitäisi useimmiten olla) tiedollisen uteliaisuuden, käytännön tarpeiden tai teorian kehittämispyrkimyksen herättämä ongelma, johon tutkimuksen avulla etsitään vastausta. Tutkimus yrittää käsittää sekä tulkitun ilmiön, että sen tajunnassa synnyttämät spontaanit mielikuvat tai arkipäivän tiedot.
   - Tutkimus siis pyrkii löytämään täysin uutta tietoa, varmentamaan (mahd. aiempien tutkimusten myötä) syntyneitä vallitsevia mutta epävarmoja käsityksiä sekä tarkistamaan vakiintuneen tiedon paikkansapitävyyttä.
-  - Valtaosa tieteestä asemoituu erityisesti kahden viimeisen kohdan alaisuuteen vaikka tieteen popularisoinnissa (mm. median toimesta) usein keskitytäänkin uusiin tiedemaailmaa ja joskus "käytännön" elämää järisyttäviin löydöksiin, jotka tosin voivat usein olla hyvin epävarmoja!
-    - Lisää tieteen popularisoinnista jaksossa \@ref(alaluku46).
+  - Valtaosa tieteestä asemoituu kahden viimeisen kohdan alaisuuteen vaikka tieteen popularisoinnissa (mm. median toimesta) usein keskitytäänkin uusiin tiedemaailmaa ja joskus "käytännön" elämää järisyttäviin löydöksiin, jotka tosin voivat olla hyvin epävarmoja!
+  - Lisää tieteen popularisoinnista jaksossa \@ref(alaluku46).
 \
 \
 - Millaisia kysymyksiä **tutkimuksessa** asetetaan (voidaan asettaa)?
@@ -261,15 +262,14 @@ Tieteellinen tutkimus ja asiantuntijatyö tuottavat valtavan määrän perustelt
 
   [https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/](https://blogs.uef.fi/tiedonhaku-yhteiskuntatiede/tieteelliset-julkaisut/)
 \
-
+\newpage
 Vastuullisen tieteen 
 
   [https://vastuullinentiede.fi/fi/julkaiseminen](https://vastuullinentiede.fi/fi/julkaiseminen)
   
 artikkelit tarjoavat tietoa siitä, kuinka tutkittua tietoa tuotetaan, julkaistaan ja arvioidaan luotettavasti ja yhteisesti hyväksytyllä tavalla. Jotta tiede vaikuttaa koko yhteiskunnan hyväksi, toiminnan on oltava vastuullista tutkimuksen jokaisessa vaiheessa.
 
-Helsingin Yliopisto tarjoaa lisäksi [Tiedelukutaidon perusteet -kurssia](https://tiedelukutaito.mooc.fi/) MOOC-toteutuksena (Massive Open Onlince Course). Keskustelethan ennen kurssin käymistä oman alasi koulutussuunnittelijan (tai vastaavan vastuuhenkilön) kanssa siitä, soveltuuko kyseinen kurssi sisällytettäväksi johonkin omaan opintokokonaisuuteesi.    
-\
+Helsingin yliopisto tarjoaa lisäksi [Tiedelukutaidon perusteet -kurssia](https://tiedelukutaito.mooc.fi/) MOOC-toteutuksena (Massive Open Online Course). Keskustelethan ennen kurssin käymistä oman alasi koulutussuunnittelijan (tai vastaavan vastuuhenkilön) kanssa siitä, soveltuuko kyseinen kurssi sisällytettäväksi johonkin omaan opintokokonaisuuteesi.    
 
 - Julkisuus ja avoimuus tekevät tutkimuksesta tiedettä. 
 - Tiedeviestintä on tiedeyhteisöjen sisäistä ja ulkoista tiedonvälitystä ja vuorovaikutusta. Tutkimuksesta viestiminen ei ole vain tutkimustuloksista viestimistä. Vastuullinen tiedeviestintä lisää luottamusta tieteelliseen tietoon. 
@@ -282,3 +282,12 @@ knitr::kable(
 )
 # you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 ```
+
+## Keskeisiä termejä ja kokonaisuuksia
+
+- Tieteellinen teoria
+- Hypoteesi
+- Tieteellinen menetelmä ja hyvän tieteellisen menetelmän kriteerit
+- Epävarmuus
+- Mitä on tutkimus
+

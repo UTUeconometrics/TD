@@ -11,9 +11,20 @@ Seuraavassa vielä joitain tilastotiedettä parhaillaan koskevia kehitystrendej�
   - Toisaalta "perinteiselle" tilastotieteelle on edelleen myöskin vahva oma roolinsa monilla eri tieteenaloilla.
 - __Analyysien automatisointi__: Tilastolliset ohjelmat alkanevat jatkossa tulkita tuloksia osin automaattisesti. Mihin tarvitaan tilastotieteilijää? Kokonaisvaltaiseen tutkimusprosessin valvontaan(?)
   - Osin edelliseen liittyen jo nyt ja jatkossa luultavasti yhä enemmän korostuu se, että melkein kuka vaan voi tehdä tilastollisia analyysejä. Niin valmiita paketteja jne. on jo saatavilla. "Tilastotieteellinen faktantsekkaus" noussee vahvemmin esille eli tilastollisten menetelmien käyttäjän on sittenkin edelleen kyettävät arvioimaan ovatko tulokset uskottavia ja vapaita ilmeisistä hankaluuksista.
+  - Näiltä osin yksi keskeinen kehityssuunta on jo vahvasti yleistyneet laajat tekoälymallit kuten OpenAI:n toteuttama [ChatGPT](https://chat.openai.com/).
+    - ChatGPT:tä käytetäänkin jo laajalti mm. tilastollisen ohjelmoinnin apuvälineenä. Nopeasta kehityksestä huolimatta ChatGPT:n antamat vastaukset ovat kuitenkin paikoin epäluotettavia tai suorastaan väärin, joten sen käytössä korostaa edelleen vahvan tilastotieteellisen osaamisen lisäksi substanssiosaaminen.
 - __Poikkitieteellisyys__ tulee entisestäänkin vahvistumaan. Ts. substanttitietouden ja tilastotieteen yhdistäminen ja sen tärkeys ei tule ainakaan vähenemään. Sivuaineopintoja kannattaa siis käydä ja ottaa opinto-ohjelmaan.
   - Tämän lisäksi kokonaisvaltaisesti tilastotieteen ytimen osaajien osaamista tulla kysymään jatkossakin.
 
 \
 
 - Oheisten huomioiden ohella lopuksi on syytä korostaa tilastotieteen opiskelun näkökulmasta, että oikotietä ei ole! __Oikaista siis ei voi__: Ensin on rakennettava vahva tilastollisen ajattelun ja menetelmien perusta (__alkaen todennäköisyyslaskennasta ja tilastollisesta päättelystä__), jotta myöhemmin voi kehittyä ja omata todellisia kykyjä ottaa vastaan monia jo varsin monimutkaisia tilastollisia menetelmiä!
+
+## Keskeisiä termejä ja kokonaisuuksia
+
+- Aineistot kasvavat ja monimutkaistuvat
+- Informaatio ei ole enää niukkaa
+- Laskennallisuus kasvaa
+- Koneoppimisen vahvistuminen ja kehittyminen
+- Analyysien automatisoituminen
+- Poikkitieteellisyys

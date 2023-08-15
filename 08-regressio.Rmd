@@ -70,9 +70,9 @@ $$
 Y_i = \beta_0 + \beta_1 x_i + \varepsilon_i, \quad i=1,\ldots, n.
 $$
 - Tämä yhtälö määrittelee yhden selittäjän lineaarisen regressiomallin, jossa
-  - $y_i$ on selitettävän muuttujan $Y$ satunnainen ja havaittu arvo havaintoyksikölle $i$
-  - $x_i$ selittävän muuttujan eli selittäjän $x$ ei-satunnainen ja havaittu arvo havaintoyksikölle $i$
-  - $\varepsilon_i$ on virtermi (ajoittain myös jäännöstermi) ja sen satunnainen ja ei-havaittu arvo havaintoyksikölle $i$
+  - $y_i$ on selitettävän muuttujan $Y$ satunnainen ja havaittu arvo havaintoyksikölle $i$.
+  - $x_i$ selittävän muuttujan eli selittäjän $x$ ei-satunnainen ja havaittu arvo havaintoyksikölle $i$.
+  - $\varepsilon_i$ on virhetermi (ajoittain myös jäännöstermi) ja sen satunnainen ja ei-havaittu arvo havaintoyksikölle $i$.
 - Yhden selittäjän lineaarisessa regressiomallissa on seuraavat regressiokertoimet:
   - $\beta_0$ on vakioselittäjän regressiokerroin; $\beta_0$ on ei-satunnainen ja tuntematon vakio. Kerrointa $\beta_0$ kutsutaan myös vakioselittäjän regressiokertoimeksi. Nimitys johtuu siitä, että kerrointa $\beta_0$ vastaa keinotekoinen selittäjä, joka saa kaikille havaintoyksiköille $i=1, 2, \ldots, n$ vakioarvon 1.
     - Huomautus: Jatkossa esitettävät kaavat eivät välttämättä päde esitettävässä muodossa, jos mallissa ei ole vakiota (vakioselittäjää), joka yleensä automaattisesti lisätään mukaan malliin.
@@ -81,9 +81,9 @@ $$
     - Huomautus: Regressiokertoimet $\beta_0$ ja $\beta_1$ on oletettu samoiksi kaikille havaintoyksiköille $i$. 
 
 - Virhetermeistä $\varepsilon_i$ tehtävät ns. standardioletukset ovat seuraavat:
-  i) $\text{E}(\varepsilon_i) = 0, \, i=1,2,\ldots,n$
+  i) $\text{E}(\varepsilon_i) = 0, \, i=1,2,\ldots,n$.
   ii) Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia: $\mathrm{Var}(\varepsilon_i)= \sigma^2, \, i=1,\ldots,n$. Virhetermien $\varepsilon_i$ tässä yhteiseksi oletettua varianssia kutsutaan ajoittain jäännösvarianssiksi.
-  iii) Virhetermit ovat korreloimattomia: $\mathrm{Cov}(\varepsilon_i, \varepsilon_l)=0, \, i \neq l$
+  iii) Virhetermit ovat korreloimattomia: $\mathrm{Cov}(\varepsilon_i, \varepsilon_l)=0, \, i \neq l$.
   iv) Lisäksi tehdään ajoittain normaalisuusoletus eli että virhetermit ovat normaalisti jakautuneita: $\varepsilon_i \thicksim \text{N}(0, \sigma^2), \, i=1,2,\ldots,n$.
     - Huomautus: Oletus (iv) sisältää oletukset (i) ja (ii).
 
@@ -112,7 +112,7 @@ regressiokertoimien $\beta_0$ ja $\beta_1$ suhteen.
 \frac{\partial S(\beta_0,\beta_1)}{\partial \beta_0} &= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) = 0 \\
 \frac{\partial S(\beta_0,\beta_1)}{\partial \beta_1} &= -2 \sum_{i=1}^{n} (y_i - \beta_0 - \beta_1 x_i) x_i = 0. 
 \end{align*}
-- Nämä ns. normaaliyhtälöt johtavat lopulta pienen sieventämisen jälkeen regressiokertoimien $\beta_0$ ja $\beta_1$ pienimmän neliösumman (PNS-) estimaattoreihin (ja lopulta käytännössä analysoitavasta aineistosta laskettaviin PNS-estimaatteihin)
+- Nämä ns. **normaaliyhtälöt** johtavat lopulta pienen sieventämisen jälkeen regressiokertoimien $\beta_0$ ja $\beta_1$ pienimmän neliösumman (PNS-) estimaattoreihin (ja lopulta käytännössä analysoitavasta aineistosta laskettaviin PNS-estimaatteihin)
 \begin{align*}
 \widehat{\beta}_0 &= \bar{y} - \widehat{\beta}_1 \bar{x} \\
 \widehat{\beta}_1 &= \frac{s_{xy}}{s^2_x} = r_{xy} \frac{s_y}{s_x}.
@@ -136,7 +136,7 @@ $$
 y = \bar{y} + r_{xy} \frac{s_y}{s_x} (x-\bar{x})
 $$
 
-  - Yhtälöstä nähdään, että estimoitu regressiosuora kulkee havaintopisteiden $(x_i , y_i), i = 1,2, \ldots, n$ painopisteen kautta. Voidaan siis nähdä, että estimoidulla regressiosuoralla on seuraavat ominaisuudet:
+  - Yhtälöstä nähdään, että estimoitu regressiosuora kulkee havaintopisteiden $(x_i , y_i), i = 1,2, \ldots, n,$ painopisteen kautta. Voidaan siis nähdä, että estimoidulla regressiosuoralla on seuraavat ominaisuudet:
     - (i) Jos $r_{xy} > 0$, suora on nouseva.
     - (ii) Jos $r_{xy} < 0$, suora on laskeva.
     - (iii) Jos $r_{xy} = 0$, suora on vaakasuorassa.
@@ -207,3 +207,15 @@ knitr::include_graphics("images/Sovite-isien-poikien-pituudet-Mellin.jpg")
 - Pitemmälle meneviä regressioanalyysin kysymyksiä käsitellään useilla myöhemmillä tilastotieteen kursseilla.
   - Erityisesti aineopintojen kurssien [TILM3561 Tilastollinen päättely I](https://opas.peppi.utu.fi/fi/opintojakso/TILM3561/5069) ja  [TILM3562 Tilastollinen päättely II](https://opas.peppi.utu.fi/fi/opintojakso/TILM3562/5070) jälkeisellä [TILM3588 Lineaariset ja yleistetyt lineaariset mallit -kurssilla](https://opas.peppi.utu.fi/fi/opintojakso/TILM3588/5071), jossa tarvitaan myös lineaarialgebran ja matriisilaskennan tietoja, joita tilastotieteen yhteydessä käydään läpi [TILM3574 Matriisilaskenta tilastotieteessä -kurssilla](https://opas.peppi.utu.fi/fi/opintojakso/TILM3574/5082).
   - Tämän jälkeen regressiomallien käsittely jatkuu useilla eri aineopintojen ja syventävien opintojen erikoiskursseilla.
+
+## Keskeisiä termejä ja kokonaisuuksia
+
+- Lineaarinen regressioanalyysi
+- Yhden selittäjän lineaarinen regressiomalli
+- Selitettävä muuttuja
+- Selittävä muuttuja/selittävät muuttujat
+- Virhetermi
+- Pienimmän neliösumman (PNS) menetelmä
+- PNS-estimaattorit ja PNS-estimaatit
+- Sovitteet ja residuaalit
+- Selitysaste

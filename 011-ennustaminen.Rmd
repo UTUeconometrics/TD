@@ -15,7 +15,7 @@ Käytännössä tilastotieteen ja sen sovellusalueiden tutkimuksessa tulisi osat
   - Hyvin usein tutkimuksissa raportoidaan, että tietty muuttuja "ennustaa" (predicts) toista. Usein kuitenkin taustalla on tällöin usean muuttujan selitysmalli, jonka regressiokertoimien tilastollista merkitsevyyttä on tulkittu. Yleensä tässä yhteydessä on kuitenkin siis kyse selittämisestä, ja kuten todettua, mallin ennustekyky pitää tutkia erikseen.
 
 - Erityisesti aikasarja-analyysissä ennustaminen on perinteisesti ollut yksi kaikkein keskeisimmistä tavoitteista. 
-  - Nyt kuitenkin koneoppimisen (tilastollisen oppimisen) kasvatettua hurjasti suosioitaan viime vuosina ennustaminen on levinnyt, ja leviää jatkossakin, voimaakkasti myös hyvin keskeiseksi osaksi muutakin tilastollista analyysiä.
+  - Nyt kuitenkin **koneoppimisen (tilastollisen oppimisen)** kasvatettua hurjasti suosioitaan viime vuosina ennustaminen on levinnyt, ja leviää jatkossakin, voimakkaasti myös hyvin keskeiseksi osaksi muutakin tilastollista analyysiä.
 
 ## Tilastolliseen ennustamiseen liittyviä huomioita {#alaluku112}
 
@@ -62,10 +62,16 @@ Jokaista edellistä kohtaa yhdistää ennustamiseen hyvin keskeisesti liittyvä 
 - Rahoituskriisiä koskevan esimerkin tilanteessa otoksen ulkopuolisiä ilmiöitä koskeva ongelma realisoitui siten, että muodostettu tilastollinen malli, kuten vaikkapa lineaarisen regressiomallin sopiva laajennus, __estimoitiin__, tai koneoppimisesta tutussa kielenkäytössä __opetettiin__, aineistolla, joka ei lopulta ollut relevantti juuri myöhemmin tapahtunutta kriisivaihetta ajatellen. 
   - Onkin tärkeää ymmärtää, että "todellisessa" ennustetilanteessa joudumme käyttämään aiempaa aineistoa mallien ja algoritmien rakentamiseen. Näin ollen näiden ennustekykyä arvioitaessa onkin mentävä otoksen ulkopuolelle, koska "otoksen sisällä" voimme opettaa kyseisiä malleja (ääritilanteessa) niin, että ne ovat periaatteessa äärettömän tarkkoja. Ne eivät kuitenkaan takaa missään mielessä hyvää ennustekykyä tulevia tapahtumia ennustettaessa.
 
-- Vastaavalla tavalla karakterisoidaan nykyään hyvin suosittujen koneoppimismenetelmien keskeinen piirre: Ne ja tarkasteltavat sovellukset perustuvat käytännössä (vielä) yksinomaan ennustesovelluksiin. Tällöin mallien ja algoritmien opettaminen ns. __opetusaineistolla__ (edellä olevassa esimerkissä aiemmalla asuntomarkkina-aineistolla) ja ennustekyvyn arviointi __ennusteotoksen__ avulla pitää erottaa toisistaan. 
+- Vastaavalla tavalla karakterisoidaan nykyään hyvin suosittujen koneoppimismenetelmien keskeinen piirre: ne ja tarkasteltavat sovellukset perustuvat käytännössä (vielä) lähes yksinomaan ennustesovelluksiin. Tällöin mallien ja algoritmien opettaminen ns. __opetusaineistolla__ (edellä olevassa esimerkissä aiemmalla asuntomarkkina-aineistolla) ja ennustekyvyn arviointi __ennusteotoksen__ avulla pitää erottaa toisistaan. 
   - __Otoksen sisäiseen sovittamiseen__ (engl. __in-sample__ tai __training sample__ estimation, ajoittain prediction) liittyy siis (ennustamisen näkökulmasta) katsoen ns. __ylisovittamisen__ vaara. On mahdollista, että yritämme puristaa lähes puhtaasta kohinasta signaaleja, jotka eivät missään mielessä tule olemaan valideja otoksen ulkopuolisessa ennustamistilanteessa.
   - Jälleen kerran näistä teemoista keskustellaan tarkemmin myöhemmin tilastotieteen aine- ja syventävien opintojen erikoiskursseilla, kuten [TILM3587 Regressioanalyysi ja tilastollinen oppiminen](https://opas.peppi.utu.fi/fi/opintojakso/TILM3587/6975) ja [TILM3592 Tilastollisen oppimisen jatkokurssi](https://opas.peppi.utu.fi/fi/opintojakso/TILM3592/13413).
 
 - Huolimatta edellä käydystä, kriittisestäkin, keskustelusta ennustamiseen liittyen, monet ennusteet ovat varsin tarkkoja ja samalla vapaita ylisovittamisen vaaroista!
 
+## Keskeisiä termejä ja kokonaisuuksia
 
+- Tilastollinen ennustaminen
+- Selitysmalli vs. ennustemalli
+- Ennuste ja ennustevirhe
+- Opetusaineisto vs. ennusteotos
+- In-sample/training sample vs. out-of-sample (forecasting)

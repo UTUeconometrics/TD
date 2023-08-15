@@ -1,5 +1,5 @@
 --- 
-title: "TILM3701 - Tilastotiede ja data 2022"
+title: "TILM3701 - Tilastotiede ja data 2023"
 author:
   - Koonneet
   - Henri Nyberg^[Turun yliopisto, matematiikan ja tilastotieteen laitos, henri.nyberg@utu.fi]
@@ -60,6 +60,8 @@ Kurssin materiaali on koostettu em. lähteistä ja pyrkii paikoin pelkistettyyn 
   - Pystyy erottamaan edustavan otoksen ja näytteen
 
 Kurssin sisältöä on listattu opinto-oppaassa ja laajemmin alla. Tämä listaus toimii hyvänä luettelona kurssin keskeisistä teemoista.
+
+\newpage
 
 - Kurssin sisältöä:
   - Tilastotiede tieteenalana ja sen suhde lähitieteisiin, kuten datatieteeseen (data science)

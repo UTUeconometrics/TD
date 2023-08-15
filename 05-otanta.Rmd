@@ -16,12 +16,11 @@ knitr::include_graphics("images/populaatiostahavaintoon.jpg")
 - Havaintoaineisto voidaan koota taulukoksi, johon listataan tilastoyksiköt riveille ja tilastomuuttujat sarakkeisiin. Jos havaintoaineisto koostuu $n$ tilastoyksiköstä, joista jokaisesta on kerätty esim. $m$:stä tilastomuuttujasta havainnot, niin aineisto voidaan kirjoittaa taulukon muotoon:
 
 | |tilastomuuttuja 1 |tilastomuuttuja 2 | $\dots$ |tilastomuuttuja $m$ |
-|------------------|------------------|--------------------|------|--------------------|
+|--------------------|--------------------|--------------------|------|--------------------|
 | tilastoyksikkö  1 | $x_{1,1}$ | $x_{1,2}$ | $\dots$ | $x_{1,m}$ |
 | tilastoyksikkö  2 | $x_{2,2}$ | $x_{2,2}$ | $\dots$ | $x_{2,m}$ |
 | $\vdots$ | $\vdots$ | $\vdots$ | | $\vdots$ |
 | tilastoyksikkö $n$| $x_{n,1}$ | $x_{1,2}$ | $\dots$ | $x_{n,m}$ |
-
 
 Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja sarakkeessa $j$ on $j$. tilastollisesta muuttujasta havaitut arvot $x_{i,j}$. Ts. yhdellä rivillä on yhden tilastoyksikön tiedot kaikista tilastomuuttujista ja yksi sarake on kaikkien tilastoyksiköiden tiedot yhdestä tilastomuuttujasta.
 
@@ -51,14 +50,14 @@ Tässä siis rivillä $i$ on $i$. __tilastoyksikön__ havainto ja sarakkeessa $j
 Kokonaistutkimus on tutkimus, jossa tutkitaan kaikki tutkimuksen kohteena olevan perusjoukon alkiot, ts. kaikki ajateltavissa olevat kohteet tutkitaan. 
 
 - Kokonaistutkimus on yleinen tutkimustapa silloin, kun kohdeperusjoukko on selvästi määritelty ja sen alkioita koskevat tilastolliset muuttujat ovat helposti mitattavissa.
-- Esimerkiksi jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat. Kunnista on useimmissa tilanteissa mahdollista kerätä mielenkiinnon kohteena olevia tilastollisia muuttujia.
-- Toisaalta jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin kokonaistutkimuksessa tutkittaisiin jokainen ihminen erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa. 
+- Esimerkiksi, jos tutkitaan Suomen kuntia, niin kokonaistutkimuksessa tutkitaan kaikki kunnat. Kunnista on useimmissa tilanteissa mahdollista kerätä mielenkiinnon kohteena olevia tilastollisia muuttujia.
+- Toisaalta, jos tutkitaan jonkin lääkeaineen vaikutuksia ihmisiin, niin kokonaistutkimuksessa tutkittaisiin jokainen ihminen erikseen. Selvää on, että tällainen kokonaistutkimus olisi liian vaikeaa toteuttaa. 
 :::
 
 ::: {.defblock .mikko data-latex="{}"}
 **Otantatutkimus**  
 
-__Otantatutkimuksessa__ tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon, joka pooimitaan sopivaa __otantamenetelmää__ käyttäen (ks. alaluku \@ref(alaluku55)) ja populaatiota/perusjoukkoa koskevat johtopäätelmät tehdään tähän otokseen perustuen.
+Otantatutkimuksessa tutkimus kohdistetaan johonkin (populaation/perusjoukon) osajoukkoon, joka poimitaan sopivaa __otantamenetelmää__ käyttäen (ks. alaluku \@ref(alaluku55)) ja populaatiota/perusjoukkoa koskevat johtopäätelmät tehdään tähän otokseen perustuen.
 
 - Otantatutkimus on usein luonnollinen valinta, sillä koko populaation tutkiminen ei useinkaan ole mahdollista tai kannattavaa.
   - Esimerkiksi aseiden patruunoita valmistava tehtailija ei voi tutkia toimivatko kaikki ammukset. Myöskään valaisimien valmistaja tuskin tekee kokonaistutkimuksia valmistamiensa tuotteiden kestoajan selvittämiseksi.   
@@ -69,10 +68,6 @@ __Otantatutkimuksessa__ tutkimus kohdistetaan johonkin (populaation/perusjoukon)
 :::
 
 \
-
-```{r, eval=FALSE, include=FALSE}
-#Jos perusjoukko on ääretön, kokonaistutkimuksen tekeminen on periaatteessa mahdotonta.
-```
 
 - Otantatutkimuksessa keskitytään siis perusjoukkoa edustavan pienemmän, mieluusti satunnaisesti valitun otoksen tutkimiseen.
   - Otantatutkimuksissa tiedot kerätään useimmiten haastattelemella, kirjallisella/sähköisellä kyselyllä tai suoraan tietorekistereistä. Tiedonkeruun toteuttaminen (eri sovelluksissa) määrää osaltaan käytettävän otantamenetelmän.
@@ -116,16 +111,16 @@ Tutkimukseen valitut yksiköt edustavat koko populaatiota, ts. tutkimukseen vali
 :::
 
 - Keskeistä tutkimuksen ja sen edustavuuden kannalta on, että tutkija osaa kerätä sisällöllisesti ja määrällisesti __sopivan kokoisen__ aineiston. 
-- Tietyn otoksen edustavuutta arvioidessa voi käyttää apuna seuraavia kysymyksiä:
+- Tietyn otoksen edustavuutta arvioidessa voidaan käyttää apuna seuraavia kysymyksiä:
   - Miksi päädyttiin tämän kokoiseen otokseen?
-    - __Otoskoko__ vaikuttaa siihen miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa, ts. kuinka luotettavia ne ovat. Tämä johtuu siitä että yksittäisten otosyksiköiden ominaisuudet saattavat vaihdella suuresti ja kasvattamalla otoskokoa perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa yhä paremmin esille. Kun otoskoko vastaa populaation kokoa, on kyseessä tietenkin kokonaistutkimus, joka kertoo kaiken perusjoukosta. Otoskoon valintaan ja määräämiseen palataan myöhemmin luvussa \@ref(luku6).
-  - Käytettiinkö apuna tilastotieteellisesti vankkaa suunnittelua otoskoon määrittämiseksi ja/tai miten pyrittiin varmistamaan tutkimuksen kannalta tärkeisiin analyysiryhmiin kuuluvien riittävä määrä aineistossa? 
+    - __Otoskoko__ vaikuttaa siihen miten hyvin otoksesta tehdyt johtopäätökset voidaan yleistää koskemaan koko perusjoukkoa, ts. kuinka luotettavia ne ovat. Tämä johtuu siitä, että yksittäisten otosyksiköiden ominaisuudet saattavat vaihdella suuresti ja kasvattamalla otoskokoa perusjoukon systemaattiset piirteet tulevat otoskoon kasvaessa yhä paremmin esille. Kun otoskoko vastaa populaation kokoa, on kyseessä tietenkin kokonaistutkimus, joka kertoo kaiken perusjoukosta. Otoskoon valintaan ja määräämiseen palataan myöhemmin luvussa \@ref(luku6).
+  - Käytettiinkö apuna tilastotieteellisesti vankkaa suunnittelua otoskoon määrittämiseksi ja/tai miten pyrittiin varmistamaan tärkeisiin analyysiryhmiin kuuluvien riittävä määrä aineistossa? 
   - Harkittiinko muita otantamenetelmiä ja miksi päädyttiin juuri käytössä olleeseen menetelmään?
 
 - Edustavuuteen vaikuttaa keskeisesti se, millä tavoin otanta pystytään suorittamaan, ts. mihin kohdeperusjoukkoon otanta kohdistetaan.
   - __Kehikkoperusjoukko__ on rekisterin, luettelon tms. peittämä osa kohdeperusjoukkoa. Kyseessä on siis se osa kohdeperusjoukkoa, josta otanta ylipäänsä pystytään suorittamaan eli __otantakehikko__.
   - __Otantakehikon alipeitto__ esiintyy, kun otantakehikosta puuttuu osa kohdeperusjoukon alkioista (esim. tutkimus suoritetaan puhelinhaastattelulla, mutta osa aiottuun otokseen kuuluvista haastateltavista ei omista puhelinta). Vastaavasti __otantakehikon ylipeittoa__ esiintyy, kun otantakehikkoon kuuluu kohdeperusjoukkoon kuulumattomia alkioita.
-    - Nämä ovat nk. __kehikkovirheitä__. Lisäki esimerkiksi kyselytutkimuksissa tai rekisteriaineistoissa saattaa esiintyä __katoa__, eli osa vastauksista jää uupumaan tai niitä ei jostain syystä mitata.
+    - Nämä ovat nk. __kehikkovirheitä__. Lisäksi esimerkiksi kyselytutkimuksissa tai rekisteriaineistoissa saattaa esiintyä __katoa__, eli osa vastauksista jää uupumaan tai niitä ei jostain syystä mitata.
     - __Otantavirhe__ taas on satunnaisuudesta johtuvaa tilastollisten muuttujien vaihtelua otoksesta toiseen ja se onkin ainoa virhelaji, jonka suuruutta voidaan tilastollisin menetelmin arvioida. 
 
 ```{r otanta, echo=FALSE, fig.cap="Otannan idea.", fig.align='center', out.width="100%"}
@@ -153,9 +148,8 @@ knitr::include_graphics("images/tuloerot.jpg")
 
 __Mittaaminen__ 
 
+- Kumpaa tahansa tutkimusotetta (kokonais- tai otantatutkimus) noudatettaessa tietojen keräämisessä on olennaisena osana kohteiden ominaisuuksien __mittaaminen__. 
 - Tilastotieteellinen tutkimus perustuu aina mitattaviin satunnaisilmiöihin: tavoitteena on mittaamalla liittää jokin luku ilmiötä kuvaavaan ominaisuuteen, ts. mitata kyseisen satunnaismuuttujan havaittua arvoa.
-
-- Kumpaa tahansa tutkimusotetta (kokonais- tai otantatutkimus) noudatettaessa tietojen keräämisessä on olennaisena osana kohteiden ominaisuuksien __mittaaminen__.
     - Mittaaminen vaatii aina mittauksen kohteen, hyvin määritellyn mitattavan ominaisuuden ja __mittarin__, joka liittää mielekkäät lukuarvot mitattavaan ominaisuuteen.
     - Erilaiset mittarit heijastavat ilmiön ominaisuuksia eri tavoin ja eri tarkkuudella
         - Esimerkiksi, jos tutkitaan opiskelijoiden pituuden kehitystä, niin mitataan pituutta eri aikoina. Pituudet voidaan mitata senttimetreissä, metreissä, kilometreissä tai vaikkapa tuumissa.
@@ -183,7 +177,7 @@ Mittari on toistettava, jos se tuottaa keskimäärin samanlaisia mittauksia sama
 - Huonosti toistettava mittari antaa tilastoyksiköiden samankaltaisille ominaisuuksille hyvin erilaisia arvoja riippuen otoksesta.
 
 - __Mittausten reliabiliteettia/luotettavuutta__ arvioidessa voidaan pohtia esimerkiksi seuraavia kysymyksiä:
-  - Kuinka hyvin mittaustulokset ovat toistettavissa, kuinka paljon niissä on ei-sattumanvaraisuutta?
+  - Kuinka hyvin mittaustulokset ovat toistettavissa? Kuinka paljon niissä on ei-sattumanvaraisuutta?
   - Mittausten validiteetti: kuinka hyvin pystyttiin mittaamaan sitä, mitä oli tarkoitus mitata?
 
 - Kun mittaaminen on luotettavaa ja validia, tutkimusaineisto on __sisäisesti luotettavaa__.
@@ -287,7 +281,7 @@ __Aineistotyyppejä__
 
 - Lisäksi usein tehdään hoito/käsittelyvastetta koskevia vertailuja erilaisissa olosuhteissa, joka osaltaan vaikuttaa tulosten uskottavuuteen, sillä tutkittaviin tilastoyksiköihin voi vaikuttaa olosuhteiden muutosten lisäksi muut ulkopuoliset tekijät.
   - Näiden __selittävien__ ja __sekoittavien tekijöiden__ vaikutusten kontrollointi on suoria havaintoja tehtäessä vaativa tehtävä.
-  - Mikäli ulkopuolisia tekijöitä ei havaita ja/tai pystytä mittaamaan, tai muuten jostain syystä olla lisätty ja käytetty käytettävässä tilastollisessa mallissa, voi kyseeseen tulla ns. __puuttuvien selittäjien harha__, joka tarkoittaa sitä että havaittuihin tuloksiin vaikuttaa jokin havaitsematon tekijä, mutta jonka vaikutusta ei kyetä kvantifioimaan puutteellisten havaintoarvojen vuoksi.
+  - Mikäli ulkopuolisia tekijöitä ei havaita ja/tai pystytä mittaamaan, tai muuten jostain syystä olla lisätty ja käytetty käytettävässä tilastollisessa mallissa, voi kyseeseen tulla ns. __puuttuvien selittäjien harha__, joka tarkoittaa sitä että havaittuihin tuloksiin vaikuttaa jokin havaitsematon tekijä, jonka vaikutusta ei kyetä kvantifioimaan puutteellisten havaintoarvojen vuoksi.
 
 - Suoria havaintoja tehtäessä ei voida (usein) selvittää vasteen ja olosuhteiden __kausaalista__ yhteyttä. Suorilla havainnoilla voidaan lähinnä saada selville onko vasteella ja olosuhteilla jokin yhteys (korrelaatio) (ks. luku \@ref(luku7)).
 
@@ -334,7 +328,7 @@ Tilastoyksiköiden poimimista populaatiosta otokseen riippumatta muiden yksiköi
   - Otantamenetelmän, joskus myös __otanta-asetelman__, valinta on tietenkin vahvasti sovellusalakohtainen: käytettävät aineistot ja täten otantamenetelmät määräytyvät pitkälti tehtävän tutkimuksen luonteen perusteella. Ts. käytännön tilanteet poikkeavat toisistaan lopulta varsin paljon ja eri tilanteisiin tarvitaan omat menetelmänsä.
   - Otanta-asetelmalla tarkoitetaan erityisesti otoksen poimintaan käytettyä __satunnaistuksen menetelmää__.
 
-- Otannan tavoitteena on tietenkin edustava otos. Otoksen edustavuuteen vaikuttaa käytännön otannassa se, miten todennäköistä kullakin perusjoukon alkiolla (populaation tilastoyksiköllä) on tulla poimituksi otokseen. Tätä kutsutaan __sisältymistodennäköisyydeksi__.
+- Otannan tavoitteena on tietenkin **edustava otos**. Otoksen edustavuuteen vaikuttaa käytännön otannassa se, miten todennäköistä kullakin perusjoukon alkiolla (populaation tilastoyksiköllä) on tulla poimituksi otokseen. Tätä kutsutaan __sisältymistodennäköisyydeksi__.
 
 ::: {.defblock .mikko data-latex="{}"}
 **Sisältymistodennäköisyys**  
@@ -361,15 +355,15 @@ jossa siis $N$ on perusjoukon alkioiden lukumäärä. Toisin sanoen, kaikilla pe
 
 - __Yksinkertaisessa satunnaisotannassa__ (YSO) jokaisella tilastoyksiköllä (perusjoukon alkiolla) on nollasta poikkeava todennäköisyys tulla valituksi otokseen. 
   - Otannan satunnaisuus tulee siis siitä, että jokainen tilastoyksikkö poimitaan otokseen _satunnaisesti_! (Ks. luku \@ref(luku4))
-  - YSOa pidetään otannan perusmuotona, jossa jokaisella perusjoukon alkiolla on lähtökohtaisesti yhtä suuri todennäköisyys tulla valituksi otokseen.
-    - Yksinkertainen satunnaisotanta on periaatteiltaan intuitiivinen ja helppo ymmärtää. Lisäksi se on tietyissä tilanteissa usein helppo toteuttaa.
+  - YSOaa pidetään otannan perusmuotona, jossa jokaisella perusjoukon alkiolla on lähtökohtaisesti yhtä suuri todennäköisyys tulla valituksi otokseen.
+    - YSO on periaatteiltaan intuitiivinen ja helppo ymmärtää. Lisäksi se on tietyissä tilanteissa usein helppo toteuttaa.
   - Tällöin on selvää että myös jokaisella perusjoukon samankokoisella osajoukolla on sama todennäköisyys tulla valituksi. 
   - Toisin sanoen, todennäköisyys tulla poimituksi ei riipu tilastoyksikön ominaisuuksista tai siitä minkälaisia ominaisuuksia jo poimituilla otosyksiköillä on. 
   - Satunnaisotanta siis selvästi korjaa valikoitumisharhaa (ks. aiempi luku \@ref(alaluku54)) satunnaistamalla otokseen valikoitumisen täysin! YSO voidaankin aina tulkita arvonnaksi. Käytännön työssä arvonta onkin oiva satunnaistamisen keino.
 
 - __YSO:n toteuttaminen__
   - Käytännössä yksinkertainen satunnaisotanta etenee vaiheittain:
-    - Tutkimuksen alussa tutkijalla tulisi olla käytettävänään (ts. tulisi koostaa) lista kaikista perusjoukon havaintoyksiköistä (alkioista). Tämä muodostaa tutkimuksen __otantakehikon__.
+    - Tutkimuksen alussa tutkijalla tulisi olla käytettävänään (ts. tulisi koostaa) lista kaikista perusjoukon havaintoyksiköistä **(alkioista)**. Tämä muodostaa tutkimuksen __otantakehikon__.
     - Tämän jälkeen jokaiseen perusjoukon alkioon voidaan liittää numeeriset tunnukset.
     - Sitten valitaan haluttu otoksen koko. Otoskoon määrittäminen on keskeinen osa koesuunnittelua, ks. luku \@ref(alaluku66)
     - Otantakehikosta arvotaan perusjoukon alkiot otokseen yksi kerrallaan.
@@ -408,6 +402,8 @@ $$
     - Ilman takaisinpanoa populaatiosta voidaan poimia ${N \choose n}$ erilaista otosta.^[Kun otosyksiköiden järjestyksellä ei ole merkitystä. ${N \choose n}$ on ns. binomikerroin, joka saadaan kaavasta ${N \choose n} = \frac{N!}{n!(N-n)!},$ jossa $N! = N \cdot (N-1) \cdot (N-2) \cdots 1$ on $N$:n kertoma.] 
     - Otantaan palauttamatta liittyviä todennäköisyyksiä hallitaan __hypergeometrisen jakauman__ avulla, joka johtaa (melko) yksinkertaiseen __tilastolliseen malliin__ YSO:a käytettäessä.
 
+\newpage
+
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkki: Yksinkertaisen satunnaisotannan poimintastrategiat**  
 
@@ -433,7 +429,7 @@ __YSO: Potentiaaliset ongelmat__
 ### Systemaattinen otanta
 
 - Systemaattisessa, eli tasavälisessä, otannassa poimintakehikkoon (perusjoukkoon) kuuluvat alkiot järjestetään jonoon ja siitä poimitaan otokseen joka $k$. alkio.
-    - Esimerkiksi jos oletetaan että perusjoukkoon kuuluu 1000 tilastoyksikköä ja valittu otoskoko on 100, niin otos voidaan poimia perusjoukon alkioiden järjestetystä listasta poimimalla siitä joka kymmenes yksikkö.
+    - Esimerkiksi, jos oletetaan että perusjoukkoon kuuluu 1000 tilastoyksikköä ja valittu otoskoko on 100, niin otos voidaan poimia perusjoukon alkioiden järjestetystä listasta poimimalla siitä joka kymmenes yksikkö.
     - Systemaattinen otanta ei oikeastaan kuulu satunnaisotannaksi laskettaviin menetelmiin, koska siinä ei sovelleta arvontaa.
     - Yksinkertainen satunnaisotanta voidaan kuitenkin nähdä systemaattisen otannan erikoistapauksena (eli systemaattinen otanta voidaan toteuttaa satunnaisotantana), missä perusjoukon alkiot järjestetään jonoon __satunnaistamalla__.         
       - Ts. jonon järjestys on satunnainen, eli joka $k$. jonon alkio on "satunnaisotos" otantakehikosta. 
@@ -477,6 +473,8 @@ __YSO: Potentiaaliset ongelmat__
 - Ryväsotantaa käytetään usein suuria haastattelututkimuksia tehtäessä. Erityisesti, ryväsotantaa voidaan hyödyntää myös silloin, kun tutkijalla ei ole käytettävissään kattavaa listaa kaikista havaintoyksiköistä, mutta näiden muodostamat rypäät on määritettävissä.
 
 - Ryväsotannan heikkoutena pidetään sitä, ettei aina ole helppoa muodostaa rypäitä, jotka ovat toistensa kaltaisia. Tulosten tarkkuus myös riippuu moninpaikoin siitä, kuinka hyvin rypäisiin jako onnistuu.
+
+\newpage
 
 ::: {.eblock .kimmo data-latex="{}"}
 **Esimerkkejä ryväsotannasta**  
@@ -537,4 +535,45 @@ __YSO: Potentiaaliset ongelmat__
 
 - __Vastausharha__: Kysymykset voivat olla huonosti muotoiltuja tai vastaajat voivat antaa vääriä tietoja.
 
+## Keskeisiä termejä ja kokonaisuuksia
 
+**Termejä**
+- Otanta
+- Perusjoukko/populaatio
+- Otos/otosaineisto/data
+- Havainto/havaintoarvo
+- Edustavuus ja edustava otos
+- Tilastoyksikkö ja tilastomuuttuja
+- Tutkimusmuuttuja ja taustamuuttuja(t)
+- Kokonaistutkimus vs. otantatutkimus
+- Otoskoko 
+- Otantakehikko
+- Mittaaminen
+- Harhattomuus
+- Toistettavuus
+- Kontrolloidut kokeet vs. suorat havainnot
+- Selittävät ja sekoittavat tekijät
+- Puuttuvien selittäjien harha
+- Valikoituminen
+- Satunnaistaminen
+- Käsittely- ja kontrolliryhmät
+
+**Mitta-asteikot**
+-	Laatueroasteikko/luokitteluasteikko (nominaaliasteikko)
+-	Järjestysasteikko (ordinaaliasteikko)
+-	Välimatka-asteikko (intervalliasteikko)
+-	Suhdeasteikko
+- Kvalitatiiviset ja kvantitatiiviset muuttujat
+
+**Otantamenetelmät**
+-	Yksinkertainen satunnaisotanta (YSO)
+-	Systemaattinen otanta (SYS)
+-	Ositettu otanta
+-	Ryväsotanta
+- Sisältymistodennäköisyys
+- YSO takaisinpalauttaen ja YSO takaisin palauttamatta
+- Poimintaharha
+- Vajaapeittävyys
+- Vastauskato
+- Vastausharha
+- Näyte
