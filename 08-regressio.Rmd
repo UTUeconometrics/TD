@@ -208,7 +208,7 @@ knitr::include_graphics("images/Sovite-isien-poikien-pituudet-Mellin.jpg")
   - Erityisesti aineopintojen kurssien [TILM3561 Tilastollinen päättely I](https://opas.peppi.utu.fi/fi/opintojakso/TILM3561/5069) ja  [TILM3562 Tilastollinen päättely II](https://opas.peppi.utu.fi/fi/opintojakso/TILM3562/5070) jälkeisellä [TILM3588 Lineaariset ja yleistetyt lineaariset mallit -kurssilla](https://opas.peppi.utu.fi/fi/opintojakso/TILM3588/5071), jossa tarvitaan myös lineaarialgebran ja matriisilaskennan tietoja, joita tilastotieteen yhteydessä käydään läpi [TILM3574 Matriisilaskenta tilastotieteessä -kurssilla](https://opas.peppi.utu.fi/fi/opintojakso/TILM3574/5082).
   - Tämän jälkeen regressiomallien käsittely jatkuu useilla eri aineopintojen ja syventävien opintojen erikoiskursseilla.
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 8 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Lineaarinen regressioanalyysi
 - Yhden selittäjän lineaarinen regressiomalli

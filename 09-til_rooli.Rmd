@@ -147,7 +147,7 @@ Tehdas valmistaa korkealuokkaisia sulkimia kameroihin. Tehdas pyrkii siihen, ett
     - Kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, otanta, estimointi ja testaus.
 :::
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 9 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Tässä luvussa vedetään yhteen paljon mm. otantaan liittyviä seikkoja ja laajennetaan niiden merkitystä tilastotieteellisen tutkimuksen osana.
 - Satunnaisvaihtelun merkitys

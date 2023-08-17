@@ -469,7 +469,7 @@ knitr::include_graphics("images/survey2.jpg")
 knitr::include_graphics("images/survey3.jpg")
 ```
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 10 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Kuvaileva tutkimus
 - Vertaileva tutkimus

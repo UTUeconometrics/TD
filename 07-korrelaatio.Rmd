@@ -299,7 +299,7 @@ kable(taulukko, booktabs = TRUE) %>%
   - Se mittaa vain lineaarista riippuvutta.
   - Se ei ole (tilastollinen) malli, jonka avulla nähtäisiin, miten toinen muuttuja vaikuttaa toiseen muuttujaan. 
   
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 7 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Eksakti ja tilastollinen riippuvuus
 - Korrelaatio

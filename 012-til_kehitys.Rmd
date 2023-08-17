@@ -1,5 +1,7 @@
 # Tilastotieteen kehityksen nykytrendejä {#luku12}
 
+## Modernin tilastotieteen suuntaviivoja
+
 Seuraavassa vielä joitain tilastotiedettä parhaillaan koskevia kehitystrendejä, joita olemme myös osaltaan sivunneet tämän kurssimateriaalin myötä:
 
 - __Aineistot kasvavat ja monimutkaistuvat__. Näin ollen tilastotietedettä ja tilastollisten menetelmien kehitystyötä tullaan tarvitsemaan (yhä suuremmin) jatkossakin.
@@ -20,7 +22,7 @@ Seuraavassa vielä joitain tilastotiedettä parhaillaan koskevia kehitystrendej�
 
 - Oheisten huomioiden ohella lopuksi on syytä korostaa tilastotieteen opiskelun näkökulmasta, että oikotietä ei ole! __Oikaista siis ei voi__: Ensin on rakennettava vahva tilastollisen ajattelun ja menetelmien perusta (__alkaen todennäköisyyslaskennasta ja tilastollisesta päättelystä__), jotta myöhemmin voi kehittyä ja omata todellisia kykyjä ottaa vastaan monia jo varsin monimutkaisia tilastollisia menetelmiä!
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 12 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Aineistot kasvavat ja monimutkaistuvat
 - Informaatio ei ole enää niukkaa

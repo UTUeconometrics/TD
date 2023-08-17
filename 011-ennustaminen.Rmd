@@ -68,7 +68,7 @@ Jokaista edellistä kohtaa yhdistää ennustamiseen hyvin keskeisesti liittyvä 
 
 - Huolimatta edellä käydystä, kriittisestäkin, keskustelusta ennustamiseen liittyen, monet ennusteet ovat varsin tarkkoja ja samalla vapaita ylisovittamisen vaaroista!
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 11 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 - Tilastollinen ennustaminen
 - Selitysmalli vs. ennustemalli

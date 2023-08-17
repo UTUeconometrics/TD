@@ -442,7 +442,7 @@ __Tilastotieteen väärinkäyttö__
       - [Koneoppiminen](https://en.wikipedia.org/wiki/Machine_learning)
 - Ja paljon muita!
 
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 3 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 Tilastotieteen perustermejä:
 - Populaatio

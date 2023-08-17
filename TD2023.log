@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.15)  15 AUG 2023 23:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.15)  17 AUG 2023 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,7 +1452,12 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 28 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
  []
 
-[28] [29]
+[28]
+Overfull \hbox (30.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 2.6.  LUVUN 2 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 29
+ []
+
+[29]
 Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 30 \TU/lmr/m/sl/10 LUKU 2.  TIETEELLINEN TIETO, TILASTOT JA ARKITIETO YHTEISKUNNASSA
  []
@@ -1669,7 +1674,12 @@ Underfull \hbox (badness 1436) in paragraph at lines 2183--2184
 []\TU/lmr/m/n/10 Sovellusaloja, joilla tilastotieteen soveltaminen on muodostunut
  []
 
-[54] [55] [56
+[54]
+Overfull \hbox (30.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.7.  LUVUN 3 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 55
+ []
+
+[55] [56
 
 ]
 Luku 4.
@@ -1775,7 +1785,12 @@ Overfull \hbox (4.48442pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 4.6.  SATTUMAN ROOLI TIETEENTEOSSA: VALE-EMÄVALE-TILASTO? \TU/lmr/m/n/10 73
  []
 
-[73] [74] [75] [76
+[73] [74]
+Overfull \hbox (30.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.7.  LUVUN 4 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 75
+ []
+
+[75] [76
 
 ]
 Luku 5.
@@ -2174,7 +2189,12 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 128 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
  []
 
-[128] [129]
+[128]
+Overfull \hbox (35.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 6.8.  LUVUN 6 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 129
+ []
+
+[129]
 Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 130 \TU/lmr/m/sl/10 LUKU 6.  OTOKSET JA OTOSJAKAUMAT: TILASTOLLISEN PÄÄTTELYN NÄKÖKULMA
  []
@@ -2272,7 +2292,12 @@ File: images/causality2.jpg Graphic file (type bmp)
 <images/causality2.jpg>
 File: images/simpson.jpg Graphic file (type bmp)
 <images/simpson.jpg>
-[141] [142] [143] [144
+[141] [142]
+Overfull \hbox (35.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 7.5.  LUVUN 7 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 143
+ []
+
+[143] [144
 
 ]
 Luku 8.
@@ -2326,7 +2351,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 6555--6556
 
 Underfull \vbox (badness 6078) has occurred while \output is active []
 
-[152] [153] [154] [155] [156
+[152] [153] [154]
+Overfull \hbox (35.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 8.4.  LUVUN 8 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 155
+ []
+
+[155] [156
 
 ]
 Luku 9.
@@ -2360,7 +2390,12 @@ Overfull \hbox (10.86224pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 164 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
  []
 
-[164] [165]
+[164]
+Overfull \hbox (35.19225pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.3.  LUVUN 9 YHTEENVETO, KESKEISIÄ TERMEJÄ JA KOKONAISUUKSIA. \TU/lmr/m/n/10 165
+ []
+
+[165]
 Overfull \hbox (10.86224pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 166 \TU/lmr/m/sl/10 LUKU 9.  TILASTOTIETEEN ROOLI UUDEN TIEDON TUOTTAMISESSA
  []
@@ -2512,7 +2547,7 @@ Luku 12.
 [201
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 8412--8413
+Underfull \hbox (badness 10000) in paragraph at lines 8415--8416
 
  []
 
@@ -2523,13 +2558,13 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
  ***********
 Package rerunfilecheck Info: File `TD2023.out' has not changed.
-(rerunfilecheck)             Checksum: 4309FBE2B21EA658466E9CCD98219E12;16853.
+(rerunfilecheck)             Checksum: 24E267E589FAA4C5FCB968C97AB101EF;18370.
  ) 
 Here is how much of TeX's memory you used:
- 42421 strings out of 477826
- 858877 string characters out of 5820118
+ 42422 strings out of 477826
+ 859118 string characters out of 5820118
  1935888 words of memory out of 5000000
- 62598 multiletter control sequences out of 15000+600000
+ 62599 multiletter control sequences out of 15000+600000
  590869 words of font info for 128 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  91i,12n,120p,1061b,1024s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -409,7 +409,7 @@ Erityisesti nykypäivänä ei-tieteellinen tieto ja tarkoituksellinen disinforma
 - Kun tuntee ja tunnistaa sattuman voiman ja ymmärtää kaikki mahdolliset satunnaisuuden lähteet, jotka altistavat tutkimusprosessin virheille, tulee samalla ymmärtäneeksi että eri tavoin koeteltu, useassa tutkimuksessa kumuloitunut tieto tulisi olla kaiken tieteen popularisoinnin keskiössä yksittäisten, mahdollisesti uusien ja yllättävien tutkimustulosten sijaan.
   - Tähän mennessä olemme jo oppineet, että tälle on myös vahvat tilastolliset perustelut: satunnaisen tiedon maailmassa mikään ei ole täysin varmaa, ei edes kaikkein edistyneimpien tilastomenetelmien avulla!
   
-## Keskeisiä termejä ja kokonaisuuksia
+## Luvun 4 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 -	Satunnaisilmiö
 -	Satunnaismuuttuja
