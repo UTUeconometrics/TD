@@ -1,19 +1,18 @@
 ---
-title: "Tiivistelmä Tilastotiede ja data -kurssin luvuista 2 ja 3"
-author: "Roope Rihtamo"
+title: "Luku 2 - Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa"
+subtitle: "Tiivistelmä"
+author: ""
 format: 
   beamer:
     include-in-header: preamble.tex
 editor: visual
 ---
 
-# Luku 2 - tiivistelmä
-
 ## Luvun ydinviesti
 
-Luku käsittelee tieteen yhteiskunnallista merkitystä ja sitä, miten tiedettä tehdään.
+Luku käsittelee tieteen yhteiskunnallista merkitystä ja sitä, mitä tiede on ja miten sitä tehdään.
 
-Tilastotiede näyttelee keskeistä roolia lähes kaikessa tutkimuksessa, sillä se tarjoaa yleisenä menetelmätieteenä keinoja erilaisten tutkimuskysymysten ja niihin liitettävien hypoteesien testaamiseen.
+Tilastotiede näyttelee keskeistä roolia lähes kaikessa tieteellisessä tutkimuksessa, sillä se tarjoaa yleisenä menetelmätieteenä keinoja erilaisten tutkimuskysymysten ja niihin liitettävien hypoteesien testaamiseen.
 
 **Tämän luvun ytimessä on siis tilastotieteen rooli uuden tutkitun tiedon tuottamisessa!**
 
@@ -27,50 +26,68 @@ Tieteessä uuden tiedon hankintaa ohjaa tieteellinen menetelmä, joka varmistaa 
 
 Tiede on (ainakin):
 
--    **järjestelmällistä:** tieteellinen tiedonhankinta on yhteiskunnallisesti organisoitu tutkimusta tekevien instituutioiden tehtäväksi.
+-   **Järjestelmällistä:** tieteellinen tiedonhankinta on yhteiskunnallisesti organisoitu tutkimusinstituutioiden tehtäväksi.
 
 -   **Järkiperäistä:** tieteellinen tiedonhankinta on kumulatiivinen prosessi, jossa tiedonhankinnan menetelmät ovat muokkantuneet tarkoituksenmukaisiksi, luotettaviksi ja järkeviksi.
 
 ## Keskeiset termit
 
-:::{.defblock .mikko data-latex="{}"}
+Seuraavaksi käsitellään luvun 2 keskeiset termit. Nämä kannattaa sisäistää hyvin, ei pelkästään tämän kurssin läpipääsyn vaan myös loppuopintojen sujuvuuden takia. Alasta riippumatta!
 
+## Tieteellinen teoria
+
+::: {.defblock .mikko data-latex="{}"}
 **Tieteellinen teoria**
 
--   Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä siitä, miten ympäröivä maailmamme toimii tai esimerkiksi siitä miten eri ilmiöt ovat yhteyksissä toisiinsa.
+-   Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä, ympäröivän maailmamme toiminnasta tai siellä esiintyvien ilmiöiden välisistä yhteyksistä.
 
     -   Ne ovat luotetuin, täsmällisin ja kattavin tieteellisen tiedon muoto.
 
--   Tieteellisen teorian pyrkimys on selittää ja ennustaa sen kohteena olevaa ilmiötä tyylikkäästi sekä yksinkertaisesti.
+-   Tieteellisen teorian pyrkimys on selittää ja ennustaa sen kohteena olevaa ilmiötä.
 
-    -   Se on luonteeltaan induktiivinen ja alisteinen muutoksille tai jopa hylkäämiselle empiirisen todistusaineiston ("evidenssin") osoittaessa sen olevan puutteellinen tai väärä.
-
+    -   Se on luonteeltaan induktiivinen ja alisteinen muutoksille tai jopa hylkäämiselle (*falsifikaatiolle*) empiirisen todistusaineiston niin osoittaessa.
 :::
 
 ## Hypoteesi
 
-:::{.defblock .mikko data-latex="{}"}
-
+::: {.defblock .mikko data-latex="{}"}
 **Hypoteesi**
 
--   Hypoteesi tarkoittaa teorioista johdettua tai aikaisemman tutkimuksen perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan ongelmaan. Ilmaistaan usein teoriaa koskevana väitteenä!
+-   Hypoteesi tarkoittaa teorioista johdettua tai aikaisemman tutkimuksen perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan ongelmaan.
+
+-   Hypoteesi ilmaistaan teoriaa koskevana väitteenä, jonka paikkansapitävyyttä halutaan tutkia.
 
 -   **Nollahypoteesiksi** asetetaan usein jokin tyypillinen ja odotettavissa oleva tulos, esimerkiksi ettei kahden mitatun ilmiön välillä ole yhteyttä. Nollahypoteesia *ei todisteta tai hyväksytä*!
 
-    -   Voidaan vain sanoa ettei aineisto tarjoa todistusaineistoa nollahypoteesin hylkäämiselle.
-
 -   Sopivalla nollahypoteesin valinnalla voidaan testata väitteitä, jotka ovat teorian ennustusten kanssa yhteneviä tai siitä poikkeavia.
-
-    -   Jos tutkimuksen tulokset ovat linjassa teorian tekemien ennustusten kanssa, teoria vahvistuu eli se "*verifioidaan".*
-
-    -   Jos tutkimuksen tulokset poikkeavat teorian tekemistä ennustuksista, ne tulkitaan teorian empiiriseksi vastaväitteeksi eli "*falsifikaatioksi*".
-
 :::
-
-## Paradigma
 
 ## Tieteellinen menetelmä
 
-Teoria muodostuu tieteellistä menetelmää käyttämällä ja se on kehittynyt ajassa kumulatiivisesti kertyneen tiedon myötä. Teoria muodostuu siis toistuvien sitä vahvistavien uusien havaintojen ja tutkimuksen myötä.
+::: {.defblock .mikko data-latex="{}"}
+**Tieteellinen menetelmä**
 
-Tieteellisen teorian tulee siis olla empiirisesti testattavissa ja sen tekemät ennusteet falsifioitavissa: teoriaan liittyvät ennustukset määrittelevät sen hyödyllisyyden, sillä teoria joka ei tee testattavia ennustuksia on hyödytön.
+-   Tieteenalan vallitseva sekä yleisesti hyväksytty ja hyväksi todettu tapa hankkia tietoa, joka on mm.
+
+    -   **Objektiivinen ja looginen**: tutkimuskohde tutkijan mielipiteistä riippumaton, tieto syntyy näiden vuorovaikutuksen tuloksena.
+
+    -   **Kriittinen:** asetettavien ja testattavien hypoteesien tulee olla avoimia tieteelliselle kritiikille, mm. julkisen tarkastamisen kautta.
+
+    -   **Autonominen:** tieteellisen tutkimuksen tuloksia arvioidaan tiedeyhteisön sisällä, ei niiden ulkopuolisen vaikuttavuuden kontekstissa.
+
+    -   **Edistyvä:** tieteelliset teoriat kehittyvät yhä tarkemmiksi kuvauksiksi tai selityksiksi.
+
+    -   **Toistettava:** tieteellinen tutkimus voidaan toistaa tai uusintaa.
+:::
+
+## Mitä on tutkimus?
+
+Tutkimus on kumulatiivinen ja itseään korjaava prosessi, jossa uutta tietoa hankitaan tieteellistä menetelmää käyttämällä.
+
+Ympäröivää maailmaa kuvaava teoria on aina yksinkertaistus ja tutkimustuloksiin vaikuttaa menetelmän ohella tutkittavan ilmiön luontainen satunnaisuus.
+
+Uusi tieto on siis aina epävarmaa ja tarvitsee vahvistusta, joka tekee teorioiden kehityksestä hidasta.
+
+-   Mikäli tutkimuksen tulokset ovat linjassa teorian tekemien ennustusten kanssa, teoria vahvistuu eli se "*verifioidaan".*
+
+-   Jos taas tutkimuksen tulokset poikkeavat teorian tekemistä ennustuksista, ne tulkitaan teorian empiiriseksi vastaväitteeksi eli "*falsifikaatioksi*".
