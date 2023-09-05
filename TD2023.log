@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.15)  17 AUG 2023 14:39
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.4)  5 SEP 2023 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **TD2023.tex
 (./TD2023.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-11>
+L3 programming layer <2023-08-29>
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
@@ -95,7 +95,56 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+)) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-08-29 L3 programming layer (loader) 
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
+\g__graphics_track_int=\count268
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count269
+\g__pdf_backend_annotation_int=\count270
+\g__pdf_backend_link_int=\count271
+))
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-08-29 L3 Experimental document command parser
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-08-29 LaTeX2e option processing using LaTeX3 keys
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count272
+\l__fontspec_language_int=\count273
+\l__fontspec_strnum_int=\count274
+\l__fontspec_tmp_int=\count275
+\l__fontspec_tmpa_int=\count276
+\l__fontspec_tmpb_int=\count277
+\l__fontspec_tmpc_int=\count278
+\l__fontspec_em_int=\count279
+\l__fontspec_emdef_int=\count280
+\l__fontspec_strong_int=\count281
+\l__fontspec_strongdef_int=\count282
+\l__fontspec_tmpa_dim=\dimen150
+\l__fontspec_tmpb_dim=\dimen151
+\l__fontspec_tmpc_dim=\dimen152
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count283
+\g__um_fonts_used_int=\count284
+\l__um_primecount_int=\count285
+\g__um_primekern_muskip=\muskip17
+(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -129,56 +178,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-08-11 L3 programming layer (loader) 
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
-\g__graphics_track_int=\count268
-\l__pdf_internal_box=\box53
-\g__pdf_backend_object_int=\count269
-\g__pdf_backend_annotation_int=\count270
-\g__pdf_backend_link_int=\count271
-))
-Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
-Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-02-02 L3 Experimental document command parser
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count272
-\l__fontspec_language_int=\count273
-\l__fontspec_strnum_int=\count274
-\l__fontspec_tmp_int=\count275
-\l__fontspec_tmpa_int=\count276
-\l__fontspec_tmpb_int=\count277
-\l__fontspec_tmpc_int=\count278
-\l__fontspec_em_int=\count279
-\l__fontspec_emdef_int=\count280
-\l__fontspec_strong_int=\count281
-\l__fontspec_strongdef_int=\count282
-\l__fontspec_tmpa_dim=\dimen150
-\l__fontspec_tmpb_dim=\dimen151
-\l__fontspec_tmpc_dim=\dimen152
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
-Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-))
-\g__um_fam_int=\count283
-\g__um_fonts_used_int=\count284
-\l__um_primecount_int=\count285
-\g__um_primekern_muskip=\muskip17
-(c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -716,7 +716,7 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2023/07/15 v3.92 The Babel package
+Package: babel 2023/08/29 v3.93 The Babel package
 \babel@savecnt=\count360
 \U@D=\dimen306
 \l@unhyphenated=\language5
@@ -756,10 +756,10 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen313
 \epsfysize=\dimen314
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count370
-\decimalpart=\count371
+\xs_counta=\count370
+\xs_countb=\count371
 )
-Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip73
@@ -943,44 +943,44 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip81
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 188.
+Package hyperref Info: Option `colorlinks' set `true' on input line 191.
 (./TD2023.aux)
 \openout1 = `TD2023.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 197.
+LaTeX Font Info:    ... okay on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 194.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 194.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 194.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 194.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 194.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 194.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 197.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 194.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 197.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1006,7 +1006,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 194.
+(Font)              scaled to size 10.0pt on input line 197.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1038,15 +1038,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 194.
+(Font)              scaled to size 10.0pt on input line 197.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 194.
+(Font)              `operators' in the math version `normal' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 194.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 197.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 194.
+(Font)              `operators' in the math version `bold' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 194.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 197.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1125,13 +1125,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 194.
+(Font)              `symbols' in the math version `normal' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 194.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 197.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 194.
+(Font)              `symbols' in the math version `bold' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 194.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 197.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1192,19 +1192,19 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 194.
+(Font)              `largesymbols' in the math version `normal' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 194.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 197.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 194.
+(Font)              `largesymbols' in the math version `bold' on input line 197.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 194.
-LaTeX Info: Redefining \microtypecontext on input line 194.
-Package microtype Info: Applying patch `item' on input line 194.
-Package microtype Info: Applying patch `toc' on input line 194.
-Package microtype Info: Applying patch `eqnum' on input line 194.
-Package microtype Info: Applying patch `footnote' on input line 194.
-Package microtype Info: Applying patch `verbatim' on input line 194.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 197.
+LaTeX Info: Redefining \microtypecontext on input line 197.
+Package microtype Info: Applying patch `item' on input line 197.
+Package microtype Info: Applying patch `toc' on input line 197.
+Package microtype Info: Applying patch `eqnum' on input line 197.
+Package microtype Info: Applying patch `footnote' on input line 197.
+Package microtype Info: Applying patch `verbatim' on input line 197.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -1214,65 +1214,65 @@ Package microtype Info: No adjustment of kerning.
 File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
 )
 \c@lstlisting=\count398
-Package hyperref Info: Link coloring ON on input line 194.
+Package hyperref Info: Link coloring ON on input line 197.
 (./TD2023.out) (./TD2023.out)
 \@outlinefile=\write4
 \openout4 = `TD2023.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 196.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 196.
+(Font)              scaled to size 8.0pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 196.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 196.
+(Font)              scaled to size 6.0pt on input line 199.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 199.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 196.
+(Font)              scaled to size 12.0011pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 196.
+(Font)              scaled to size 8.00073pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 196.
+(Font)              scaled to size 6.00055pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 196.
+(Font)              scaled to size 11.99872pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 196.
+(Font)              scaled to size 7.99915pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 196.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 196.
+(Font)              scaled to size 5.99936pt on input line 199.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 199.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 196.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 199.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 196.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 199.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 196.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 199.
 (c:/Users/Admin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 196.
+(Font)              scaled to size 9.0pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 196.
+(Font)              scaled to size 5.0pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00082pt on input line 196.
+(Font)              scaled to size 9.00082pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 196.
+(Font)              scaled to size 5.00046pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 196.
+(Font)              scaled to size 8.99904pt on input line 199.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 196.
+(Font)              scaled to size 4.99947pt on input line 199.
 [1
 
 
@@ -1300,7 +1300,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ]
 Luku 1.
 [11]
-Underfull \hbox (badness 1715) in paragraph at lines 378--380
+Underfull \hbox (badness 1715) in paragraph at lines 381--383
 \TU/lmr/m/n/10 mallintamisessa ja päättelyssä. Tilastolliseen malliin liittyy
  []
 
@@ -1314,12 +1314,12 @@ Luku 2.
 [15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 491--493
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--524
+Underfull \hbox (badness 10000) in paragraph at lines 525--527
 
  []
 
@@ -1329,22 +1329,22 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 553--555
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 603--604
+Underfull \hbox (badness 10000) in paragraph at lines 606--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--639
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--639
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
@@ -1365,12 +1365,12 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
  []
 
 [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
+Underfull \hbox (badness 10000) in paragraph at lines 807--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
+Underfull \hbox (badness 10000) in paragraph at lines 807--809
 
  []
 
@@ -1380,17 +1380,17 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 840--843
+Underfull \hbox (badness 10000) in paragraph at lines 843--846
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--860
+Underfull \hbox (badness 10000) in paragraph at lines 861--863
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--871
+Underfull \hbox (badness 10000) in paragraph at lines 872--874
 
  []
 
@@ -1403,12 +1403,12 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 File: images/Are-women-really-more-talkative.jpg Graphic file (type bmp)
 <images/Are-women-really-more-talkative.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--968
+Underfull \hbox (badness 10000) in paragraph at lines 969--971
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 986--989
+Underfull \hbox (badness 10000) in paragraph at lines 989--992
 
  []
 
@@ -1418,32 +1418,32 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1122
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
 
  []
 
@@ -1467,52 +1467,52 @@ Overfull \hbox (49.88225pt too wide) has occurred while \output is active
 ]
 Luku 3.
 [31] [32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1346
+Underfull \hbox (badness 10000) in paragraph at lines 1346--1347
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1371--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1372--1374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1391
 
  []
 
 [35]
-Underfull \hbox (badness 2261) in paragraph at lines 1415--1416
+Underfull \hbox (badness 2261) in paragraph at lines 1416--1417
 \TU/lmr/m/n/10 tietojenkäsittelyn rooli tilastollisissa analyyseissä on jatkuvasti
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1433--1435
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1433--1435
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1436
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1487
 
  []
 
@@ -1520,59 +1520,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 1484--1486
 File: images/data_science.jpg Graphic file (type bmp)
 <images/data_science.jpg>
 [38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1575
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1575
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1596--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1599
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1596--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1599
 
  []
 
 [40]
-Underfull \hbox (badness 2189) in paragraph at lines 1632--1633
+Underfull \hbox (badness 2189) in paragraph at lines 1633--1634
 []\TU/lmr/m/n/10 Tästä huolimatta datatieteilijöiden käyttämät mallinnusme-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
+Underfull \hbox (badness 10000) in paragraph at lines 1633--1634
 
  []
 
 File: images/datarevolution.jpg Graphic file (type bmp)
 <images/datarevolution.jpg>
 [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1711--1712
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1713
 
  []
 
 [43]
-Underfull \hbox (badness 1675) in paragraph at lines 1721--1723
+Underfull \hbox (badness 1675) in paragraph at lines 1722--1724
 \TU/lmr/m/n/10 kimuksen edetessä ja sille tyypillistä on hypoteesittomuus,
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 1721--1723
+Underfull \hbox (badness 3323) in paragraph at lines 1722--1724
 \TU/lmr/m/n/10 eli tutkimus on tarkoitus aloittaa mahdollisimman vähin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1734--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1737
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1734--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1737
 
  []
 
@@ -1580,12 +1580,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1734--1736
 File: images/soveltava.jpg Graphic file (type bmp)
 <images/soveltava.jpg>
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1820
+Underfull \hbox (badness 10000) in paragraph at lines 1820--1822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1820
+Underfull \hbox (badness 10000) in paragraph at lines 1820--1822
 
  []
 
@@ -1593,84 +1593,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 1818--1820
 File: images/perustuu.jpg Graphic file (type bmp)
 <images/perustuu.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1866--1868
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1866--1868
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1870
 
  []
 
 
-Overfull \hbox (0.20998pt too wide) in paragraph at lines 1877--1878
+Overfull \hbox (0.20998pt too wide) in paragraph at lines 1879--1880
 \TU/lmr/m/n/10 villa) kursseilla [][]TILM3553 Todennäköisyyslaskennan peruskurssi pää-
  []
 
 File: images/teoreettinen.jpg Graphic file (type bmp)
 <images/teoreettinen.jpg>
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1909--1911
+Underfull \hbox (badness 10000) in paragraph at lines 1911--1913
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1909--1911
+Underfull \hbox (badness 10000) in paragraph at lines 1911--1913
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1944--1946
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1948
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1944--1946
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1948
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1993--1995
+Underfull \hbox (badness 10000) in paragraph at lines 1995--1997
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1993--1995
+Underfull \hbox (badness 10000) in paragraph at lines 1995--1997
 
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 2013--2014
+Underfull \hbox (badness 3514) in paragraph at lines 2015--2016
 []\TU/lmr/m/n/10 Tämä kysymys on kuitenkin pitkälti tieteenfilosofinen ja
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 2013--2014
+Underfull \hbox (badness 2486) in paragraph at lines 2015--2016
 \TU/lmr/m/n/10 palautuu lopulta sovellusalaan sekä tutkimusongelmaan ja
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2013--2014
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2016
 
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 2040--2042
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2040--2042
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2044
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 2135--2136
+Underfull \hbox (badness 10000) in paragraph at lines 2137--2138
 
  []
 
 [52] [53]
-Underfull \hbox (badness 1436) in paragraph at lines 2183--2184
+Underfull \hbox (badness 1436) in paragraph at lines 2185--2186
 []\TU/lmr/m/n/10 Sovellusaloja, joilla tilastotieteen soveltaminen on muodostunut
  []
 
@@ -1691,81 +1691,81 @@ Overfull \hbox (26.56335pt too wide) has occurred while \output is active
  []
 
 [59]
-Underfull \hbox (badness 10000) in paragraph at lines 2388--2389
+Underfull \hbox (badness 10000) in paragraph at lines 2390--2391
 
  []
 
 [60] [61]
-Underfull \hbox (badness 10000) in paragraph at lines 2494--2495
+Underfull \hbox (badness 10000) in paragraph at lines 2496--2497
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 2533--2534
+Underfull \hbox (badness 10000) in paragraph at lines 2535--2536
 
  []
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 2542--2543
+Underfull \hbox (badness 6944) in paragraph at lines 2544--2545
 []\TU/lmr/m/n/10 Bayesilainen tilastotiede ulottaa todennäköisyyskäsityksen, eli tn-
  []
 
 [63]
-Underfull \hbox (badness 1917) in paragraph at lines 2588--2589
+Underfull \hbox (badness 1917) in paragraph at lines 2590--2591
 []\TU/lmr/m/n/10 Vastaavasti esimerkiksi potilaan jonotusaika päivystyksessä voi
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 2596--2598
+Underfull \hbox (badness 1057) in paragraph at lines 2598--2600
 []\TU/lmr/bx/n/10 Diskreetin satunnaismuuttujan \TU/lmr/m/n/10 jakauma voidaan usein esit-
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 2596--2598
+Underfull \hbox (badness 2698) in paragraph at lines 2598--2600
 \TU/lmr/m/n/10 kyseisen satunnaismuuttujan todennäköisyysjakauman, \TU/lmr/bx/n/10 pisteto-
  []
 
 [64]
-Underfull \hbox (badness 1783) in paragraph at lines 2612--2613
+Underfull \hbox (badness 1783) in paragraph at lines 2614--2615
 []\TU/lmr/m/n/10 Kuviossa [][]4.2[][] on kuvattu Poisson-jakauman sovelluskohteita ja
  []
 
 File: images/poisson.jpg Graphic file (type bmp)
 <images/poisson.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2625--2626
+Underfull \hbox (badness 10000) in paragraph at lines 2627--2628
 
  []
 
 [65]
-Underfull \hbox (badness 1783) in paragraph at lines 2675--2676
+Underfull \hbox (badness 1783) in paragraph at lines 2677--2678
 \TU/lmr/m/n/10 tunnuslukuihin, joista keskeisimpiä ovat \TU/lmr/bx/n/10 odotusarvo\TU/lmr/m/n/10 , \TU/lmr/bx/n/10 varianssi \TU/lmr/m/n/10 ja
  []
 
 [66]
-Underfull \hbox (badness 10000) in paragraph at lines 2707--2708
+Underfull \hbox (badness 10000) in paragraph at lines 2709--2710
 
  []
 
 [67]
-Underfull \hbox (badness 2285) in paragraph at lines 2754--2756
+Underfull \hbox (badness 2285) in paragraph at lines 2756--2758
 []\TU/lmr/m/n/10 Jos satunnaismuuttuja $[]$ noudattaa \TU/lmr/bx/n/10 normaalijakaumaa \TU/lmr/m/n/10 odotusar-
  []
 
 File: TD2023_files/figure-latex/normaalijakauma-1.pdf Graphic file (type pdf)
 <use TD2023_files/figure-latex/normaalijakauma-1.pdf>
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 2815--2816
+Underfull \hbox (badness 10000) in paragraph at lines 2817--2818
 
  []
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 2844--2845
+Underfull \hbox (badness 10000) in paragraph at lines 2846--2847
 
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 2854--2856
+Underfull \hbox (badness 1735) in paragraph at lines 2856--2858
 []\TU/lmr/m/n/10 Olkoon $[][][] [] [] [][]$ riippumattomia satunnaismuuttujia ja $[][] \U/msb/m/n/10 s
  []
 
@@ -1773,7 +1773,7 @@ Underfull \hbox (badness 1735) in paragraph at lines 2854--2856
 File: images/Miesten_lkm.jpg Graphic file (type bmp)
 <images/Miesten_lkm.jpg>
 
-Underfull \hbox (badness 2050) in paragraph at lines 2926--2927
+Underfull \hbox (badness 2050) in paragraph at lines 2928--2929
 []\TU/lmr/m/n/10 Odotusarvo ja varianssi ovat Poisson-jakauman tapauksessa samat:
  []
 
@@ -1801,7 +1801,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/populaatiostahavaintoon.jpg Graphic file (type bmp)
 <images/populaatiostahavaintoon.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3115--3117
+Underfull \hbox (badness 10000) in paragraph at lines 3118--3120
 
  []
 
@@ -1811,62 +1811,62 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [78]
-Underfull \hbox (badness 10000) in paragraph at lines 3117--3119
+Underfull \hbox (badness 10000) in paragraph at lines 3120--3122
 
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 3119--3121
+Underfull \hbox (badness 1097) in paragraph at lines 3122--3124
 \TU/lmr/m/n/10 Kun aineistoa luokitellaan, aineiston luettavuus paranee mutta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3119--3121
+Underfull \hbox (badness 10000) in paragraph at lines 3122--3124
 
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 3121--3122
+Underfull \hbox (badness 3260) in paragraph at lines 3124--3125
 []\TU/lmr/m/n/10 Emme vielä tällä kurssilla käsittele tilastografiikan esittämis-
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 3121--3122
+Underfull \hbox (badness 1014) in paragraph at lines 3124--3125
 \TU/lmr/m/n/10 tä tarkemmin. Muun muassa tilastollisen päättelyn peruskurssi
  []
 
 
-Underfull \hbox (badness 5077) in paragraph at lines 3121--3122
+Underfull \hbox (badness 5077) in paragraph at lines 3124--3125
 \TU/lmr/m/n/10 (TILM3555) vastaa näihin kysymyksiin tarkemmin. Graafiset
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 3121--3122
+Underfull \hbox (badness 5756) in paragraph at lines 3124--3125
 \TU/lmr/m/n/10 havainnollistamista. Kuvat helpottavat aineiston tulkitsemista
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3125--3126
+Underfull \hbox (badness 10000) in paragraph at lines 3128--3129
 
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 3142--3144
+Underfull \hbox (badness 2012) in paragraph at lines 3145--3147
 []\TU/lmr/m/n/10 Esimerkiksi, jos tutkimuksella halutaan tietoa suomalaisen
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 3142--3144
+Underfull \hbox (badness 4673) in paragraph at lines 3145--3147
 \TU/lmr/m/n/10 aikuisväestön mielipiteistä, havaintoyksikköinä ovat aikuis-
  []
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 3157--3158
+Underfull \hbox (badness 10000) in paragraph at lines 3160--3161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3197--3198
+Underfull \hbox (badness 10000) in paragraph at lines 3200--3201
 
  []
 
@@ -1876,7 +1876,7 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [80]
-Underfull \hbox (badness 10000) in paragraph at lines 3215--3216
+Underfull \hbox (badness 10000) in paragraph at lines 3218--3219
 
  []
 
@@ -1907,12 +1907,12 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [86] [87]
-Underfull \hbox (badness 10000) in paragraph at lines 3581--3582
+Underfull \hbox (badness 10000) in paragraph at lines 3584--3585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3600--3601
+Underfull \hbox (badness 10000) in paragraph at lines 3603--3604
 []\TU/lmr/bx/n/10 Laatueroasteikko/luokitteluasteikko \TU/lmr/m/n/10 (nominaaliasteikko):
  []
 
@@ -1922,22 +1922,22 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [88]
-Underfull \hbox (badness 1394) in paragraph at lines 3629--3631
+Underfull \hbox (badness 1394) in paragraph at lines 3632--3634
 \TU/lmr/m/n/10 kien tai havaintoarvojen ero. Esimerkiksi: Lämpötilan mit-
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 3629--3631
+Underfull \hbox (badness 6775) in paragraph at lines 3632--3634
 \TU/lmr/m/n/10 taaminen esim. celcius-asteina. Pystymme numeroarvoina
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 3629--3631
+Underfull \hbox (badness 2302) in paragraph at lines 3632--3634
 \TU/lmr/m/n/10 ilmoittamaan onko tänään lämpimämpi, yhtä lämmin vai
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 3633--3635
+Underfull \hbox (badness 3568) in paragraph at lines 3636--3638
 \TU/lmr/m/n/10 valittavissa. Samoin voidaan valita käytettävä mittayksik-
  []
 
@@ -1960,7 +1960,7 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 3970.
+(amsmath)                 on input line 3973.
 
 
 Overfull \hbox (57.11224pt too wide) has occurred while \output is active
@@ -1976,12 +1976,12 @@ Overfull \hbox (57.11224pt too wide) has occurred while \output is active
  []
 
 [98] [99]
-Overfull \hbox (55.04pt too wide) in paragraph at lines 4129--4130
+Overfull \hbox (55.04pt too wide) in paragraph at lines 4132--4133
 []\TU/lmr/m/n/10 Ryväsotannan voi suorittaa \TU/lmr/bx/n/10 yksi\TU/lmr/m/n/10 - tai \TU/lmr/bx/n/10 kaksivaiheisena \TU/lmr/m/n/10 (\TU/lmr/bx/n/10 yksiasteinen/kaksiasteinen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4139--4141
+Underfull \hbox (badness 10000) in paragraph at lines 4142--4144
 
  []
 
@@ -1991,12 +1991,12 @@ Overfull \hbox (62.11224pt too wide) has occurred while \output is active
  []
 
 [100] [101]
-Underfull \hbox (badness 10000) in paragraph at lines 4233--4235
+Underfull \hbox (badness 10000) in paragraph at lines 4236--4238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4233--4235
+Underfull \hbox (badness 10000) in paragraph at lines 4236--4238
 
  []
 
@@ -2016,24 +2016,24 @@ Overfull \hbox (62.11224pt too wide) has occurred while \output is active
 [104]
 Luku 6.
 
-Underfull \hbox (badness 2253) in paragraph at lines 4343--4344
+Underfull \hbox (badness 2253) in paragraph at lines 4346--4347
 []\TU/lmr/m/n/10 Luvusta 4 muistamme, että tilastollisen tutkimuksen kohteena on
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 4343--4344
+Underfull \hbox (badness 3679) in paragraph at lines 4346--4347
 \TU/lmr/m/n/10 todennäköisyys- eli tiheysfunktion (tai pistetodennäköisyysfunktion)
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 4348--4350
+Underfull \hbox (badness 2875) in paragraph at lines 4351--4353
 []\TU/lmr/m/n/10 Merkitään satunnaismuuttujaa isolla kirjaimella, $[]$, ja satun-
  []
 
 [105
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 4365--4366
+Underfull \hbox (badness 10000) in paragraph at lines 4368--4369
 
  []
 
@@ -2043,7 +2043,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [106]
-Underfull \hbox (badness 1418) in paragraph at lines 4397--4398
+Underfull \hbox (badness 1418) in paragraph at lines 4400--4401
 \TU/lmr/m/n/10 ennustamisen ja viime vuosikymmeninä yleistyneen tilastollisen
  []
 
@@ -2058,7 +2058,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [108]
-Underfull \hbox (badness 10000) in paragraph at lines 4523--4524
+Underfull \hbox (badness 10000) in paragraph at lines 4526--4527
 
  []
 
@@ -2074,7 +2074,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [110]
-Underfull \hbox (badness 7081) in paragraph at lines 4589--4590
+Underfull \hbox (badness 7081) in paragraph at lines 4592--4593
 []\TU/lmr/m/n/10 Estimaattoreiden kehittäminen erilaisten tilastollisten mallien
  []
 
@@ -2084,7 +2084,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [112]
-Underfull \hbox (badness 10000) in paragraph at lines 4728--4729
+Underfull \hbox (badness 10000) in paragraph at lines 4731--4732
 
  []
 
@@ -2094,7 +2094,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [114] [115]
-Underfull \hbox (badness 10000) in paragraph at lines 4856--4857
+Underfull \hbox (badness 10000) in paragraph at lines 4859--4860
 []\TU/lmr/m/n/10 Suhteellisen frekvenssin otosjakauman perusteella kyllä-
  []
 
@@ -2112,12 +2112,12 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 File: images/gaussian-distribution.jpg Graphic file (type bmp)
 <images/gaussian-distribution.jpg>
 
-Overfull \hbox (56.51125pt too wide) in paragraph at lines 5078--5079
+Overfull \hbox (56.51125pt too wide) in paragraph at lines 5081--5082
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5085--5086
+Underfull \hbox (badness 10000) in paragraph at lines 5088--5089
 
  []
 
@@ -2130,7 +2130,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
 File: images/NjaT-jakauma.jpg Graphic file (type bmp)
 <images/NjaT-jakauma.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 5120--5121
+Underfull \hbox (badness 10000) in paragraph at lines 5123--5124
 
  []
 
@@ -2140,12 +2140,12 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [122]
-Underfull \hbox (badness 1436) in paragraph at lines 5137--5141
+Underfull \hbox (badness 1436) in paragraph at lines 5140--5144
 []\TU/lmr/m/n/10 Bernoulli-jakauman (vrt. binomijakauma) ominaisuuksien perusteella
  []
 
 [123]
-Underfull \hbox (badness 10000) in paragraph at lines 5216--5217
+Underfull \hbox (badness 10000) in paragraph at lines 5219--5220
 
  []
 
@@ -2155,7 +2155,7 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [124]
-Underfull \hbox (badness 10000) in paragraph at lines 5298--5299
+Underfull \hbox (badness 10000) in paragraph at lines 5301--5302
 
  []
 
@@ -2165,22 +2165,22 @@ Overfull \hbox (88.38228pt too wide) has occurred while \output is active
  []
 
 [126]
-Underfull \hbox (badness 10000) in paragraph at lines 5392--5393
+Underfull \hbox (badness 10000) in paragraph at lines 5395--5396
 
  []
 
 [127]
-Underfull \hbox (badness 10000) in paragraph at lines 5412--5413
+Underfull \hbox (badness 10000) in paragraph at lines 5415--5416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5436--5438
+Underfull \hbox (badness 10000) in paragraph at lines 5439--5441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5436--5438
+Underfull \hbox (badness 10000) in paragraph at lines 5439--5441
 
  []
 
@@ -2204,47 +2204,47 @@ Luku 7.
 [131
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 5579--5581
+Underfull \hbox (badness 10000) in paragraph at lines 5582--5584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5581--5583
+Underfull \hbox (badness 10000) in paragraph at lines 5584--5586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5583--5585
+Underfull \hbox (badness 10000) in paragraph at lines 5586--5588
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5585--5587
+Underfull \hbox (badness 10000) in paragraph at lines 5588--5590
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5587--5589
+Underfull \hbox (badness 10000) in paragraph at lines 5590--5592
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5594--5595
+Underfull \hbox (badness 10000) in paragraph at lines 5597--5598
 
  []
 
 [132]
-Underfull \hbox (badness 1237) in paragraph at lines 5643--5643
+Underfull \hbox (badness 1237) in paragraph at lines 5646--5646
 []\TU/lmr/bx/n/14.4 Kahden muuttujan havaintoaineiston ku-
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 5647--5649
+Underfull \hbox (badness 3189) in paragraph at lines 5650--5652
 []\TU/lmr/m/n/10 Kuten yhden muuttujan havaintoaineistojen tapauksessa, lähtökoh-
  []
 
 [133]
-Underfull \hbox (badness 10000) in paragraph at lines 5670--5671
+Underfull \hbox (badness 10000) in paragraph at lines 5673--5674
 
  []
 
@@ -2255,32 +2255,32 @@ File: images/Isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [135]
-Underfull \hbox (badness 10000) in paragraph at lines 5761--5762
+Underfull \hbox (badness 10000) in paragraph at lines 5764--5765
 
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 5775--5777
+Underfull \hbox (badness 1259) in paragraph at lines 5778--5780
 []\TU/lmr/m/n/10 Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen
  []
 
 [136]
-Underfull \hbox (badness 1259) in paragraph at lines 5789--5791
+Underfull \hbox (badness 1259) in paragraph at lines 5792--5794
 []\TU/lmr/m/n/10 Jälleen vastaavalla tavalla voidaan määritellä x-havaintoarvojen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5795--5796
+Underfull \hbox (badness 10000) in paragraph at lines 5798--5799
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5834--5835
+Underfull \hbox (badness 10000) in paragraph at lines 5837--5838
 
  []
 
 [137]
-Underfull \hbox (badness 3260) in paragraph at lines 5879--5881
+Underfull \hbox (badness 3260) in paragraph at lines 5882--5884
 \TU/lmr/m/n/10 jossa $[][]$ on $[]$- ja $[]$-havaintoarvojen otoskovarianssi, $[][]$ on $[]$-
  []
 
@@ -2302,49 +2302,49 @@ Overfull \hbox (35.19225pt too wide) has occurred while \output is active
 ]
 Luku 8.
 [145]
-Underfull \hbox (badness 6575) in paragraph at lines 6158--6159
+Underfull \hbox (badness 6575) in paragraph at lines 6161--6162
 []\TU/lmr/m/n/10 Epälineaariset regressiomallit muodostavat oman tilastollisten
  []
 
 [146] [147]
-Underfull \hbox (badness 4391) in paragraph at lines 6314--6316
+Underfull \hbox (badness 4391) in paragraph at lines 6317--6319
 []\TU/lmr/m/n/10 Virhetermeillä on vakiovarianssi eli ne ovat homoskedastisia:
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 6327--6328
+Underfull \hbox (badness 1320) in paragraph at lines 6330--6331
 \TU/lmr/m/n/10 tässä vaiheessa), että selittävän muuttujan arvojen satunnaisuus ei
  []
 
 [148]
-Underfull \hbox (badness 10000) in paragraph at lines 6338--6339
+Underfull \hbox (badness 10000) in paragraph at lines 6341--6342
 
  []
 
 [149]
-Underfull \hbox (badness 10000) in paragraph at lines 6409--6410
+Underfull \hbox (badness 10000) in paragraph at lines 6412--6413
 
  []
 
 [150]
-Underfull \hbox (badness 10000) in paragraph at lines 6469--6470
+Underfull \hbox (badness 10000) in paragraph at lines 6472--6473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6511--6512
+Underfull \hbox (badness 10000) in paragraph at lines 6514--6515
 
  []
 
 [151]
-Underfull \hbox (badness 10000) in paragraph at lines 6531--6532
+Underfull \hbox (badness 10000) in paragraph at lines 6534--6535
 
  []
 
 File: images/Sovite-isien-poikien-pituudet-Mellin.jpg Graphic file (type bmp)
 <images/Sovite-isien-poikien-pituudet-Mellin.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 6555--6556
+Underfull \hbox (badness 10000) in paragraph at lines 6558--6559
 
  []
 
@@ -2366,7 +2366,7 @@ Overfull \hbox (10.86224pt too wide) has occurred while \output is active
  []
 
 [158]
-Underfull \hbox (badness 10000) in paragraph at lines 6712--6713
+Underfull \hbox (badness 10000) in paragraph at lines 6715--6716
 
  []
 
@@ -2376,7 +2376,7 @@ Overfull \hbox (10.86224pt too wide) has occurred while \output is active
  []
 
 [160] [161]
-Underfull \hbox (badness 10000) in paragraph at lines 6897--6898
+Underfull \hbox (badness 10000) in paragraph at lines 6900--6901
 
  []
 
@@ -2407,17 +2407,17 @@ Luku 10.
 File: images/tutkimusasetelma.jpg Graphic file (type bmp)
 <images/tutkimusasetelma.jpg>
 [167] [168]
-Underfull \hbox (badness 10000) in paragraph at lines 7074--7075
+Underfull \hbox (badness 10000) in paragraph at lines 7077--7078
 
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 7097--7099
+Underfull \hbox (badness 2617) in paragraph at lines 7100--7102
 []\TU/lmr/bx/n/10 Korrelaatiotutkimuksissa \TU/lmr/m/n/10 pyritään löytämään ilmiöiden väli-
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 7097--7099
+Underfull \hbox (badness 3281) in paragraph at lines 7100--7102
 \TU/lmr/m/n/10 siä yhteyksiä tutkimalla kohdejoukkoa kokonaisuutena, jolloin
  []
 
@@ -2425,27 +2425,27 @@ Underfull \hbox (badness 3281) in paragraph at lines 7097--7099
 File: images/co2.jpg Graphic file (type bmp)
 <images/co2.jpg>
 [170] [171]
-Underfull \hbox (badness 2237) in paragraph at lines 7235--7237
+Underfull \hbox (badness 2237) in paragraph at lines 7238--7240
 []\TU/lmr/m/n/10 Tällöin mahdolliset erot parantuneiden suhteellisissa
  []
 
 [172]
-Underfull \hbox (badness 10000) in paragraph at lines 7270--7271
+Underfull \hbox (badness 10000) in paragraph at lines 7273--7274
 
  []
 
 [173]
-Underfull \hbox (badness 1436) in paragraph at lines 7324--7325
+Underfull \hbox (badness 1436) in paragraph at lines 7327--7328
 []\TU/lmr/bx/n/10 Esimerkki: raskauden keskeytyksen ja rintasyövän välinen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7340--7341
+Underfull \hbox (badness 10000) in paragraph at lines 7343--7344
 
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 7362--7363
+Underfull \hbox (badness 1009) in paragraph at lines 7365--7366
 \TU/lmr/bx/n/10 strategiaan \TU/lmr/m/n/10 sen mukaan, miten niissä ryhmitellään tilastoyksiköitä:
  []
 
@@ -2453,7 +2453,7 @@ Underfull \hbox (badness 1009) in paragraph at lines 7362--7363
 File: images/cross.jpg Graphic file (type bmp)
 <images/cross.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 7427--7428
+Underfull \hbox (badness 10000) in paragraph at lines 7430--7431
 
  []
 
@@ -2461,7 +2461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7427--7428
 File: images/long.jpg Graphic file (type bmp)
 <images/long.jpg>
 [177]
-Underfull \hbox (badness 10000) in paragraph at lines 7507--7508
+Underfull \hbox (badness 10000) in paragraph at lines 7510--7511
 
  []
 
@@ -2469,7 +2469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7507--7508
 File: images/hiroshima.jpg Graphic file (type bmp)
 <images/hiroshima.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 7566--7567
+Underfull \hbox (badness 10000) in paragraph at lines 7569--7570
 
  []
 
@@ -2477,14 +2477,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7566--7567
 File: images/tali.jpg Graphic file (type bmp)
 <images/tali.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 7631--7632
+Underfull \hbox (badness 10000) in paragraph at lines 7634--7635
 
  []
 
 File: images/block.jpg Graphic file (type bmp)
 <images/block.jpg>
 [182] [183] [184] [185]
-Underfull \hbox (badness 1292) in paragraph at lines 7817--7819
+Underfull \hbox (badness 1292) in paragraph at lines 7820--7822
 []\TU/lmr/m/n/10 Tieteellinen tutkimustarkoitus luokitellaan kuitenkin poikkeusta-
  []
 
@@ -2498,7 +2498,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/rekist.jpg Graphic file (type bmp)
 <images/rekist.jpg>
 [188] [189]
-Underfull \hbox (badness 1184) in paragraph at lines 8012--8013
+Underfull \hbox (badness 1184) in paragraph at lines 8015--8016
 \TU/lmr/m/n/10 kuussa eniten elintarvikkeiden, polttonesteiden ja viihde-
  []
 
@@ -2509,36 +2509,36 @@ File: images/kuluttaja.jpg Graphic file (type bmp)
 File: images/time.jpg Graphic file (type bmp)
 <images/time.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 8072--8073
+Underfull \hbox (badness 10000) in paragraph at lines 8075--8076
 
  []
 
 [192]
-Underfull \hbox (badness 2635) in paragraph at lines 8095--8096
+Underfull \hbox (badness 2635) in paragraph at lines 8098--8099
 \TU/lmr/m/n/10 kuukausittain tai vuosittain, ja yksittäisen ajanhetken
  []
 
 [193] [194]
 Luku 11.
 
-Underfull \hbox (badness 2119) in paragraph at lines 8204--8205
+Underfull \hbox (badness 2119) in paragraph at lines 8207--8208
 \TU/lmr/m/n/10 timotautikuolleisuuteen tai ylipainon vaikutus leikkauksen jälkeisiin
  []
 
 [195
 
 ] [196]
-Underfull \hbox (badness 2582) in paragraph at lines 8259--8261
+Underfull \hbox (badness 2582) in paragraph at lines 8262--8264
 \TU/lmr/m/n/10 tännössä useinmiten mm. vastemuuttujan luonteen perusteella
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8271--8272
+Underfull \hbox (badness 10000) in paragraph at lines 8274--8275
 
  []
 
 [197] [198]
-Underfull \hbox (badness 10000) in paragraph at lines 8317--8318
+Underfull \hbox (badness 10000) in paragraph at lines 8320--8321
 
  []
 
@@ -2547,7 +2547,7 @@ Luku 12.
 [201
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 8415--8416
+Underfull \hbox (badness 10000) in paragraph at lines 8418--8419
 
  []
 
@@ -2555,16 +2555,16 @@ No file TD2023.bbl.
 [202] (./TD2023.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-11>
+L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `TD2023.out' has not changed.
 (rerunfilecheck)             Checksum: 24E267E589FAA4C5FCB968C97AB101EF;18370.
  ) 
 Here is how much of TeX's memory you used:
- 42422 strings out of 477826
- 859118 string characters out of 5820118
- 1935888 words of memory out of 5000000
- 62599 multiletter control sequences out of 15000+600000
+ 42417 strings out of 477571
+ 859028 string characters out of 5816098
+ 1937441 words of memory out of 5000000
+ 62849 multiletter control sequences out of 15000+600000
  590869 words of font info for 128 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  91i,12n,120p,1061b,1024s stack positions out of 10000i,1000n,20000p,200000b,200000s
