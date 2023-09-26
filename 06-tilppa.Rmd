@@ -191,7 +191,7 @@ __Otosvarianssi__
 
 - Aineiston sisältämää vaihtelua kuvataan __otosvarianssilla__
 $$
-S^2= \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2.
+S^2= \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2.
 $$
 
   - Vastaavasti sm:jien vaihtelua perusjoukon tasolla kuvataan __populaatiovarianssilla__
@@ -360,7 +360,7 @@ Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsema
 
 - Valittua luottamustasoa merkitään usein $1-\alpha$:lla, jossa __merkitsevyystaso__ (__riskitaso__) $\alpha$ on esimerkiksi $\alpha=0.05$.
 
-- Tulkinta: Jos __otantaa__ jakaumasta $f(y;\theta)$ toistetaan, niin keskimäärin $100 \times (1-\alpha)\%$ otoksista kontstruloiduista luottamusväleistä peittää parametrin $\theta$ todellisen arvon.
+- Tulkinta: Jos __otantaa__ jakaumasta $f(y;\theta)$ toistetaan, niin keskimäärin $100 \times (1-\alpha)\%$ otoksista konstruloiduista luottamusväleistä peittää parametrin $\theta$ todellisen arvon.
 
 - Oletetaan, että olemme tehneet johtopäätöksen, että konstruloitu luottamusväli peittää parametrin $\theta$ tuntemattoman todellisen arvon. 
   - Tällöin otantaa toistettaessa luottamusvälin konstruktiosta seuraa, että tehty johtopäätös on oikea keskimäärin $100 \times (1-\alpha)\%$ tapauksista.

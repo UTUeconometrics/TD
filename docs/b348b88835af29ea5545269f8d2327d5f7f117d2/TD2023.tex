@@ -192,7 +192,7 @@
 
 \title{TILM3701 - Tilastotiede ja data 2023}
 \author{Koonneet \and Henri Nyberg\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:henri.nyberg@utu.fi}{\nolinkurl{henri.nyberg@utu.fi}}} \and Roope Rihtamo\footnote{Turun yliopisto, matematiikan ja tilastotieteen laitos, \href{mailto:roope.rihtamo@utu.fi}{\nolinkurl{roope.rihtamo@utu.fi}}}}
-\date{2023-09-12}
+\date{2023-09-26}
 
 \begin{document}
 \maketitle
@@ -4292,44 +4292,44 @@ Sisältymistodennäköisyys kuvaa sitä (tunnettua) todennäköisyyttä, jolla p
 \section{Luvun 5 yhteenveto, keskeisiä termejä ja kokonaisuuksia.}\label{luvun-5-yhteenveto-keskeisiuxe4-termejuxe4-ja-kokonaisuuksia.}}
 
 \textbf{Termejä}
-- Otanta
-- Perusjoukko/populaatio
-- Otos/otosaineisto/data
-- Havainto/havaintoarvo
-- Edustavuus ja edustava otos
-- Tilastoyksikkö ja tilastomuuttuja
-- Tutkimusmuuttuja ja taustamuuttuja(t)
-- Kokonaistutkimus vs.~otantatutkimus
-- Otoskoko
-- Otantakehikko
-- Mittaaminen
-- Harhattomuus
-- Toistettavuus
-- Kontrolloidut kokeet vs.~suorat havainnot
-- Selittävät ja sekoittavat tekijät
-- Puuttuvien selittäjien harha
-- Valikoituminen
-- Satunnaistaminen
+- Otanta\\
+- Perusjoukko/populaatio\\
+- Otos/otosaineisto/data\\
+- Havainto/havaintoarvo\\
+- Edustavuus ja edustava otos\\
+- Tilastoyksikkö ja tilastomuuttuja\\
+- Tutkimusmuuttuja ja taustamuuttuja(t)\\
+- Kokonaistutkimus vs.~otantatutkimus\\
+- Otoskoko\\
+- Otantakehikko\\
+- Mittaaminen\\
+- Harhattomuus\\
+- Toistettavuus\\
+- Kontrolloidut kokeet vs.~suorat havainnot\\
+- Selittävät ja sekoittavat tekijät\\
+- Puuttuvien selittäjien harha\\
+- Valikoituminen\\
+- Satunnaistaminen\\
 - Käsittely- ja kontrolliryhmät
 
 \textbf{Mitta-asteikot}
-- Laatueroasteikko/luokitteluasteikko (nominaaliasteikko)
-- Järjestysasteikko (ordinaaliasteikko)
-- Välimatka-asteikko (intervalliasteikko)
-- Suhdeasteikko
+- Laatueroasteikko/luokitteluasteikko (nominaaliasteikko)\\
+- Järjestysasteikko (ordinaaliasteikko)\\
+- Välimatka-asteikko (intervalliasteikko)\\
+- Suhdeasteikko\\
 - Kvalitatiiviset ja kvantitatiiviset muuttujat
 
 \textbf{Otantamenetelmät}
-- Yksinkertainen satunnaisotanta (YSO)
-- Systemaattinen otanta (SYS)
-- Ositettu otanta
-- Ryväsotanta
-- Sisältymistodennäköisyys
-- YSO takaisinpalauttaen ja YSO takaisin palauttamatta
-- Poimintaharha
-- Vajaapeittävyys
-- Vastauskato
-- Vastausharha
+- Yksinkertainen satunnaisotanta (YSO)\\
+- Systemaattinen otanta (SYS)\\
+- Ositettu otanta\\
+- Ryväsotanta\\
+- Sisältymistodennäköisyys\\
+- YSO takaisinpalauttaen ja YSO takaisin palauttamatta\\
+- Poimintaharha\\
+- Vajaapeittävyys\\
+- Vastauskato\\
+- Vastausharha\\
 - Näyte
 
 \hypertarget{luku6}{%
@@ -4686,7 +4686,7 @@ Tarkentuvan estimaattorin \(\widehat{\theta}\) arvot lähestyvät parametrin \(\
 \item
   Aineiston sisältämää vaihtelua kuvataan \textbf{otosvarianssilla}
   \[
-  S^2= \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2.
+  S^2= \frac{1}{n-1} \sum_{i=1}^{n} (y_i - \bar{y})^2.
   \]
 
   \begin{itemize}
@@ -4935,7 +4935,7 @@ Luottamusväli on otoksen perusteella määrätty väli, joka tutkijan valitsema
 \item
   Valittua luottamustasoa merkitään usein \(1-\alpha\):lla, jossa \textbf{merkitsevyystaso} (\textbf{riskitaso}) \(\alpha\) on esimerkiksi \(\alpha=0.05\).
 \item
-  Tulkinta: Jos \textbf{otantaa} jakaumasta \(f(y;\theta)\) toistetaan, niin keskimäärin \(100 \times (1-\alpha)\%\) otoksista kontstruloiduista luottamusväleistä peittää parametrin \(\theta\) todellisen arvon.
+  Tulkinta: Jos \textbf{otantaa} jakaumasta \(f(y;\theta)\) toistetaan, niin keskimäärin \(100 \times (1-\alpha)\%\) otoksista konstruloiduista luottamusväleistä peittää parametrin \(\theta\) todellisen arvon.
 \item
   Oletetaan, että olemme tehneet johtopäätöksen, että konstruloitu luottamusväli peittää parametrin \(\theta\) tuntemattoman todellisen arvon.
 
@@ -6972,25 +6972,76 @@ Ensiksi tarkastelemme kaikista tilastollisia menetelmiä hyödyntävistä ongelm
 \newpage
 
 \begin{eblock}{}
+
 \textbf{Esimerkki: laadunvalvonta (Mellin, 2006)}
 
 Tehdas valmistaa korkealuokkaisia sulkimia kameroihin. Tehdas pyrkii siihen, että yli 90 \% sulkimista kestää vähintään 100 000 kameran laukaisua.
-- Sulkimien laadunvalvonta on toteutettu seuraavalla tavalla:
-- (i) Tuotantolinjalta poimitaan arpomalla joukko sulkimia rasituskokeeseen.
-- (ii) Rasituskokeessa määrätään vähintään 100 000 laukaisua kestävien sulkimien suhteellinen osuus.
-- Kokeen tavoitteena on tehdä kokeen tulosten perusteella yleisiä johtopäätöksiä sulkimien kestävyydestä. Miten vain osaan sulkimista kohdistetun rasituskokeen tulokset voidaan yleistää koskemaan kaikkia sulkimia?
-- Kokeen tulokset voidaan yleistää, jos rasituskokeen kohteiksi poimittujen sulkimien joukko muodostaa edustavan pienoiskuvan kaikista valmistetuista sulkimista.
-- Pienoiskuva on edustava, jos sulkimien kesto jakautuu rasituskokeeseen poimittujen sulkimien joukossa samalla tavalla kuin kaikkien valmistettujen sulkimien muodostamassa perusjoukossa.
-- Rasituskokeen kohteiden poiminta arpomalla on ainoa menetelmä, joka mahdollistaa edustavan pienoiskuvan saamisen.
-- Rasituskokeen kohteiden poiminta kaikkien valmistettujen sulkimien muodostamasta perusjoukosta arpomalla merkitsee satunnaisotannan soveltamista ja tutkimuksen kohteeksi poimittu perusjoukon osa toimii muodostettavana (satunnais)otokseksena.
-- Arvonnan käyttö rasituskokeen kohteiden poiminnassa merkitsee sitä, että koetulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kokeesta saataisiin (suurella todennäköisyydellä) joka kerran (ainakin jonkin verran) erilaiset tulokset, koska eri arvonnoissa kokeeseen poimittaisiin (suurella todennäköisyydellä) eri sulkimet.
-- Kysymyksiä:
-- Miten yhdestä kokeesta saadut ja satunnaiset koetulokset voidaan yleistää koskemaan kaikkia sulkimia?
-- Miten luotettava tällainen yleistys on?
-- Vastauksia:
-- Jos rasituskokeen kohteiden poiminnassa on käytetty satunnaisotantaa, kokeen tuloksiin sisältyvälle epävarmuudelle ja satunnaisuudelle voidaan muodostaa tilastollinen malli, joka mahdollistaa sekä koetulosten yleistämisen että yleistyksen luotettavuuden arvioimisen.
-- Yleistyksen luotettavuutta ei pystytä arvioimaan, ellei kokeen kohteiden poiminnassa ole käytetty satunnaisotantaa.
-- Kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, otanta, estimointi ja testaus.
+
+\begin{itemize}
+\tightlist
+\item
+  Sulkimien laadunvalvonta on toteutettu seuraavalla tavalla:
+
+  \begin{itemize}
+  \item
+    \begin{enumerate}
+    \def\labelenumi{(\roman{enumi})}
+    \tightlist
+    \item
+      Tuotantolinjalta poimitaan arpomalla joukko sulkimia rasituskokeeseen.\\
+    \end{enumerate}
+  \item
+    \begin{enumerate}
+    \def\labelenumi{(\roman{enumi})}
+    \setcounter{enumi}{1}
+    \tightlist
+    \item
+      Rasituskokeessa määrätään vähintään 100 000 laukaisua kestävien sulkimien suhteellinen osuus.\\
+    \end{enumerate}
+  \end{itemize}
+\item
+  Kokeen tavoitteena on tehdä kokeen tulosten perusteella yleisiä johtopäätöksiä sulkimien kestävyydestä. Miten vain osaan sulkimista kohdistetun rasituskokeen tulokset voidaan yleistää koskemaan kaikkia sulkimia?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kokeen tulokset voidaan yleistää, jos rasituskokeen kohteiksi poimittujen sulkimien joukko muodostaa edustavan pienoiskuvan kaikista valmistetuista sulkimista.\\
+  \item
+    Pienoiskuva on edustava, jos sulkimien kesto jakautuu rasituskokeeseen poimittujen sulkimien joukossa samalla tavalla kuin kaikkien valmistettujen sulkimien muodostamassa perusjoukossa.\\
+  \item
+    Rasituskokeen kohteiden poiminta arpomalla on ainoa menetelmä, joka mahdollistaa edustavan pienoiskuvan saamisen.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Rasituskokeen kohteiden poiminta kaikkien valmistettujen sulkimien muodostamasta perusjoukosta arpomalla merkitsee satunnaisotannan soveltamista ja tutkimuksen kohteeksi poimittu perusjoukon osa toimii muodostettavana (satunnais)otokseksena.\\
+    \end{itemize}
+  \item
+    Arvonnan käyttö rasituskokeen kohteiden poiminnassa merkitsee sitä, että koetulokset ovat satunnaisia seuraavassa mielessä: Jos arvontaa toistettaisiin, kokeesta saataisiin (suurella todennäköisyydellä) joka kerran (ainakin jonkin verran) erilaiset tulokset, koska eri arvonnoissa kokeeseen poimittaisiin (suurella todennäköisyydellä) eri sulkimet.\\
+  \item
+    Kysymyksiä:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Miten yhdestä kokeesta saadut ja satunnaiset koetulokset voidaan yleistää koskemaan kaikkia sulkimia?\\
+    \item
+      Miten luotettava tällainen yleistys on?\\
+    \end{itemize}
+  \item
+    Vastauksia:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Jos rasituskokeen kohteiden poiminnassa on käytetty satunnaisotantaa, kokeen tuloksiin sisältyvälle epävarmuudelle ja satunnaisuudelle voidaan muodostaa tilastollinen malli, joka mahdollistaa sekä koetulosten yleistämisen että yleistyksen luotettavuuden arvioimisen.\\
+    \item
+      Yleistyksen luotettavuutta ei pystytä arvioimaan, ellei kokeen kohteiden poiminnassa ole käytetty satunnaisotantaa.\\
+    \item
+      Kokeen suunnittelussa, toteutuksessa ja tulosten analysoinnissa sovelletaan mm. seuraavia tilastollisia menetelmiä: koesuunnittelu, otanta, estimointi ja testaus.\\
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 \end{eblock}
 

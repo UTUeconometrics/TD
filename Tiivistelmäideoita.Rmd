@@ -30,3 +30,6 @@ death. This owed to the more aggressive treatment these
 patients received. But if the model were deployed to aid
 in triage, these patients would then receive less aggressive
 treatment, invalidating the model.
+
+Statistics is the most important science in the whole world: for upon it depends the practical application of every other science and of every art: the one science essential to all political and social administration, all education, all organization based on experience, for it only gives results of our experience.
+~Florence Nightingale

@@ -538,42 +538,42 @@ __YSO: Potentiaaliset ongelmat__
 ## Luvun 5 yhteenveto, keskeisiä termejä ja kokonaisuuksia.
 
 **Termejä**
-- Otanta
-- Perusjoukko/populaatio
-- Otos/otosaineisto/data
-- Havainto/havaintoarvo
-- Edustavuus ja edustava otos
-- Tilastoyksikkö ja tilastomuuttuja
-- Tutkimusmuuttuja ja taustamuuttuja(t)
-- Kokonaistutkimus vs. otantatutkimus
-- Otoskoko 
-- Otantakehikko
-- Mittaaminen
-- Harhattomuus
-- Toistettavuus
-- Kontrolloidut kokeet vs. suorat havainnot
-- Selittävät ja sekoittavat tekijät
-- Puuttuvien selittäjien harha
-- Valikoituminen
-- Satunnaistaminen
-- Käsittely- ja kontrolliryhmät
+- Otanta  
+- Perusjoukko/populaatio  
+- Otos/otosaineisto/data  
+- Havainto/havaintoarvo  
+- Edustavuus ja edustava otos  
+- Tilastoyksikkö ja tilastomuuttuja  
+- Tutkimusmuuttuja ja taustamuuttuja(t)  
+- Kokonaistutkimus vs. otantatutkimus  
+- Otoskoko   
+- Otantakehikko  
+- Mittaaminen  
+- Harhattomuus  
+- Toistettavuus  
+- Kontrolloidut kokeet vs. suorat havainnot  
+- Selittävät ja sekoittavat tekijät  
+- Puuttuvien selittäjien harha  
+- Valikoituminen  
+- Satunnaistaminen  
+- Käsittely- ja kontrolliryhmät  
 
 **Mitta-asteikot**
--	Laatueroasteikko/luokitteluasteikko (nominaaliasteikko)
--	Järjestysasteikko (ordinaaliasteikko)
--	Välimatka-asteikko (intervalliasteikko)
--	Suhdeasteikko
-- Kvalitatiiviset ja kvantitatiiviset muuttujat
+-	Laatueroasteikko/luokitteluasteikko (nominaaliasteikko)  
+-	Järjestysasteikko (ordinaaliasteikko)  
+-	Välimatka-asteikko (intervalliasteikko)  
+-	Suhdeasteikko  
+- Kvalitatiiviset ja kvantitatiiviset muuttujat  
 
 **Otantamenetelmät**
--	Yksinkertainen satunnaisotanta (YSO)
--	Systemaattinen otanta (SYS)
--	Ositettu otanta
--	Ryväsotanta
-- Sisältymistodennäköisyys
-- YSO takaisinpalauttaen ja YSO takaisin palauttamatta
-- Poimintaharha
-- Vajaapeittävyys
-- Vastauskato
-- Vastausharha
-- Näyte
+-	Yksinkertainen satunnaisotanta (YSO)  
+-	Systemaattinen otanta (SYS)  
+-	Ositettu otanta  
+-	Ryväsotanta  
+- Sisältymistodennäköisyys  
+- YSO takaisinpalauttaen ja YSO takaisin palauttamatta  
+- Poimintaharha  
+- Vajaapeittävyys  
+- Vastauskato  
+- Vastausharha  
+- Näyte  
