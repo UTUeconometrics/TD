@@ -264,7 +264,7 @@ knitr::include_graphics("images/simpson.jpg")
 \FloatBarrier
 
 \newpage
-::: {.defblock .mikko data-latex="{}"}
+::: {.defblock .kimmo data-latex="{}"}
 **Esimerkki: Berkeleyn sukupuolisyrjintä**
 
 Yksi tunnetuimmista esimerkeistä Simpsonin paradoksista on Berkeleyn yliopiston sukupuolisyrjintätapaus. Yliopisto haastettiin oikeuteen vuonna 1973 sukupuolisyrjinnästä. Väitettiin, että yliopistoon olisi miesten helpompi päästä kuin naisten, sillä yhteensä 8442:sta mieshakijasta 44 % hyväksyttiin kun samat luvut olivat naisilla 4321 ja 35 %. Mieshakijoista pääsi siis 9 prosenttiyksikköä enemmän sisälle kuin naisista.
