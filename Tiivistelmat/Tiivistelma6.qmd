@@ -1,0 +1,126 @@
+---
+title: "Luku 7 - Tilastollinen riippuvuus ja korrelaatio"
+subtitle: "Tiivistelmä" 
+author: "" 
+format:    
+  beamer:     
+    include-in-header: preamble.tex 
+editor: visual 
+---
+
+## Luvun ydinviesti
+
+Tähän mennessä kurssilla käsitellyt tilastolliset tunnusluvut ja niihin perustuva päättely (luku 6) on keskittynyt yhden tilastollisen muuttujan havaittujen arvojen tutkimiseen.
+
+Kuten aiemmista luvuista kuitenkin tiedetään, niin usein tutkimuksen mielenkiinnon kohteena on useammat tilastoyksikön tilastolliset muuttujat.
+
+Tässä luvussa tarkastellaan tilastollisia tutkimusasetelmia, joissa on mukana kaksi tai useampia muuttujia. Erityisesti tarkastellaan sitä, miten kahden tai useamman muuttujan samanaikainen tarkastelu vaikuttaa tilastolliseen analyysiin.
+
+Keskeistä on erottaa toisistaan tilastollinen riippuvuus ja eksakti riippuvuus sekä korrelaatio ja kausaalisuus!
+
+## Muuttujien väliset riippuvuudet
+
+Tieteellisen tutkimuksen tärkeimmät ja mielenkiintoisimmat kysymykset liittyvät tavallisesti **tutkimuksen kohteena olevaa ilmiötä kuvaavien muuttujien välisiin riippuvuuksiin.**
+
+Tällöin tarvitaan menetelmiä, jotka mahdollistavat kahden tai useamman muuttujan välisten riippuvuuksien kuvaamisen ja mallintamisen. Tärkeää on kuitenkin erottaa muuttujien **eksakti** ja **tilastollinen riippuvuus.**
+
+-   **Eksakti riippuvuus** on sellaista riippuvuutta, joka mahdollistaa yhden muuttujan arvojen tarkan (täydellisen) ennustamisen kun tiedetään toisen muuttujan saamat arvot.
+
+-   **Tilastollinen riippuvuus** on sellaista riippuvuutta, jossa muuttujien välillä ei ole eksaktia riippuvuutta, mutta toisen muuttujan arvoja voidaan käyttää apuna toisen muuttujan arvojen mallintamisesssa ja mahdollisesti myös ennustamisessa.
+
+## Kahden muuttujan havaintoaineiston kuvaaminen
+
+Samoin kuin yhden muuttujan tapauksessa, lähtökohta kahden tai useamman muuttujan havaintoaineistojen kuvaamiselle on tutustua niiden jakaumaan.
+
+-   **Graafiset esitykset** kuvaavat ja esittelevät havaintoaineistojen jakaumaa kokonaisuuten erilaisten kuvaajien avulla.
+
+    -   Usein mielekästä vain kaksiulotteisten kuvaajien avulla.
+
+    -   **Kahden muuttujan havaittujen arvojen pareja havainnollistetaan tavallisesti hajontakuviolla eli pistediagrammilla**.
+
+-   **Otostunnusluvut** kuvaavat havaintoaineistojen jakauman ominaisuuksia tilastollisin tunnusluvuin.
+
+    -   Muuttujakohtaiset otostunnusluvut, kuten otoskeskiarvo tai otosvarianssi (ks. luku 6), eivät kuitenkaan kerro muuttujien välisestä riippuvuudesta! **Tarvitaan siis tilastollista riippuvuutta kuvaavia otostunnuslukuja**.
+
+## Pistediagrammi
+
+::: {.defblock .mikko data-latex="{}"}
+**Pistediagrammi**
+
+Olkoot $X$ ja $Y$ järjestys-, välimatka- tai suhdeasteikollisia muuttujia, joiden havaitut arvot ovat $x_1, x_2,\dots,x_n$ ja $y_1,y_2,\dots,y_n$. Oletetaan lisäksi, että havaintoarvot $x_i$ ja $y_i$ liittyvät samaan havaintoyksikköön kaikille $i=1,2,\dots,n$. Havaintoarvojen parien $(x_i,y_i)$ pistediagrammi saadaan esittämällä lukuparit niiden määrittelemien pisteiden tasokoordinaatistossa.
+:::
+
+## Pistediagrammi: kuva
+
+![Isien ja poikien pituudet. Lähde: Mellin (2006).](Isien-poikien-pituudet-Mellin.jpg){width="465"}
+
+## Tunnusluvut
+
+Kahden välimatka- tai suhdeasteikollisen muuttujan havaintoarvjen parien muodostamaa jakaumaa voidaan karakterisoida jo tunnetuilla keskiarvoilla (jakaumien keskimääräiset sijainnit) sekä otosvariansseilla (jakaumien hajonta).
+
+-   Nämä eivät kuitenkaan kuvaa muuttujien välistä (lineaarista) riippuvuutta!
+
+Kahden satunnaismuuttujan $X$ ja $Y$ havaittujen arvojen $x_1,x_2,\dots,x_n$ ja $y_1, y_2,\dots,y_n$ muodostamista pareista $(x_i, y_i)$ (havaitut arvot liittyvät samaan havaintoyksikköön $i=1,2,\dots,n$) voidaan laskea muuttujakohtaiset otoskeskiarvot $\bar{x} = \frac{1}{n}\sum_{i=1}^n y_i$ ja $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$.
+
+Koska $\bar{x}$ kuvaa satunnaismuuttujan $X$ havaittujen arvojen painopistettä ja $\bar{y}$ kuvaa satunnaismuuttujan $Y$ painopistettä, niin lukupari $(\bar{x},\bar{y})$ on havaintoarvojen parien muodostamien pisteiden painopiste.
+
+## Tunnusluvut: riippumaton tapaus
+
+```{r, echo = FALSE, warning=F,message=F}
+library(tidyverse); library(ggplot2); library(MASS)
+```
+
+```{r}
+plotdata = data.frame(MASS::mvrnorm(n = 1000, mu = c(150, 180), Sigma = matrix(c(15, 0, 0, 15), nrow = 2, byrow = T)))
+theme_set(theme_bw())
+ggplot2::ggplot(plotdata) + ggplot2::geom_point(aes(x = X1, y = X2)) + xlab("Muuttujan X havaitut arvot x") + ylab("Muuttujan Y havaitut arvot y")
+```
+
+## Tunnusluvut: muuttujat riippuvaisia
+
+```{r}
+plotdata = data.frame(MASS::mvrnorm(n = 1000, mu = c(150, 180), Sigma = matrix(c(15, 10, 10, 15), nrow = 2, byrow = T)))
+ggplot2::ggplot(plotdata) + ggplot2::geom_point(aes(x = X1, y = X2)) + xlab("Muuttujan X havaitut arvot x") + ylab("Muuttujan Y havaitut arvot y")
+```
+
+## Satunnaismuuttujien kovarianssi ja korrelaatio
+
+::: {.defblock .mikko data-latex="{}"}
+**Satunnaismuuttujien kovarianssi ja korrelaatio**
+
+Olkoon $(X,Y)$ satunnaismuuttujien $X$ ja $Y$ muodostama järjestetty pari. Olkoot satunnaismuuttujien $X$ ja $Y$ odotusarvot $$\mu_X = E(X) \quad \text{ja} \quad \mu_Y = E(Y)$$ ja varianssit $$\sigma^2_X = E[(X-\mu_X)^2] \quad \text{ja} \quad \sigma_Y^2 = E[(Y-\mu_Y)^2].$$
+
+Satunnaismuuttujien $X$ ja $Y$ kovarianssi $\sigma_{XY}$ ja korrelaatio $\rho_{XY}$ määritellään kaavoilla \begin{align*}
+\sigma_{XY} &= \text{Cov}(X,Y) = E[(X-\mu_X)(Y-\mu_Y)] \\
+\rho_{XY} &= \text{Cor}(X,Y) = \frac{\sigma_{XY}}{\sigma_X \sigma_Y}
+\end{align*}
+:::
+
+## Pearsonin otoskorrelaatiokerroin
+
+::: {.defblock .mikko data-latex="{}"}
+**Pearsonin otoskorrelaatiokerroin**
+
+Havaintoarvojen pareista $(x_i, y_i)$ laskettu otoskovarianssi on $$s_{xy} = \frac{1}{n-1}\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}),$$ jossa $\bar{x}$ ja $\bar{y}$ ovat havaintoarvojen $x$ ja $y$ otoskeskiarvot. Havaintoarvojen pareista $(x_i, y_i), i = 1,2,\dots,n$ laskettu Pearsonin otoskorrelaatiokerroin on $$r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n (x_i -\bar{x})^2} \sqrt{\sum_{i=1}^n (y_i -\bar{y})^2}},$$ jossa $s_x$ sekä $s_y$ ovat $x$ ja $y$ otoskeskihajonnat. 
+
+Pearsonin otoskorrelaatiokerroin mittaa kahden muuttujan havaintoarvojen __lineaarista tilastollista riippuvuutta__!
+:::
+
+## Satunnaismuuttujien kovarianssi ja korrelaatio, lisähuomiot
+
+Otoskovarianssin ominaisuuksia
+
+  - $x$- ja $y$-havaintoarvojen otoskovarianssit niiden itsensä kanssa ovat niiden variansseja.
+  - Otoskovarianssi $s_{xy}$ mittaa $x$- ja $y$-havaintoarvojen yhteisvaihtelua niiden aritmeettisten keskiarvojen ympärillä.
+
+Pearsonin otoskorrelaatiokertoimen $r_{xy}$ ominaisuudet
+
+  - $-1 < r_{xy} < 1$.
+    - Jos $r_{xy} = \pm 1$, niin $x$- ja $y$-havaintoarvojen välillä on eksakti riippuvuus (funktionaalinen lineaarinen riippuvuus).
+    - Jos $r_{xy} = 0$, niin $x$- ja $y$-havaintoarvojen välillä ei voi olla eksaktia lineaarista riippuvuutta, mutta epälineaarinen riippuvuus voi hyvinkin olla mahdollinen!
+  - $r_{xy} = \pm 1$, jos ja vain jos $y_i = \alpha \beta x_i$, jossa $\alpha$ ja $\beta$ ovat reaalisia vakioita ja $\alpha,\beta \neq 0.$
+  - $r_{xy}$_n etumerkki on aina sama kuin otoskovarianssilla.
+
+
+## Kausaalisuus
+
