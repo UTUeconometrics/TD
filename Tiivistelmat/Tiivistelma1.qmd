@@ -2,9 +2,9 @@
 title: "Luku 2 - Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa"
 subtitle: "Tiivistelmä"
 author: ""
-format: 
-  beamer:
-    include-in-header: preamble.tex
+format:    
+  beamer:     
+    include-in-header: preamble.tex 
 editor: visual
 ---
 

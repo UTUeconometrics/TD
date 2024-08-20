@@ -1,0 +1,420 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{report}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{placeins}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage{adjustbox}
+\usepackage{awesomebox}
+\usepackage{color}
+\usepackage{framed}
+\setlength{\fboxsep}{.8em}
+\usepackage[most]{tcolorbox}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[finnish]{babel}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{overpic}
+\usepackage{lmodern}
+\usepackage{epsfig}
+\usepackage{placeins}
+\usepackage{xstring}     % Used for \IfEqCase
+
+
+\definecolor{myboxcolor}{named}{blue} % Default box color
+
+\definecolor{my-purple}{RGB}{204,180,225}
+\newtcolorbox{defblock}[1]{%
+    breakable,
+    enhanced,
+    coltext=black,
+    colback=my-purple,      % Box color is used here
+    colframe=myboxcolor!25!my-purple,     % Box color is used here
+    detach title,
+    after upper={\par\hfill\tcbtitle}        % Box title is used here 
+}
+
+\definecolor{my-orange}{RGB}{255,205,138}
+\newtcolorbox{eblock}[1]{%
+    breakable,
+    enhanced,
+    coltext=black,
+    colback=my-orange,      % Box color is used here
+    colframe=myboxcolor!25!my-orange,     % Box color is used here
+    detach title,
+    after upper={\par\hfill\tcbtitle}        % Box title is used here 
+}
+
+
+\newcommand{\Rspace}{\mathcal{R}}
+
+\newcommand{\N}{\mathsf{N}}
+\newcommand{\Cov}{\mathsf{Cov}}
+
+\newcommand{\Prob}{\mathsf{P}}
+
+\newcommand{\X}{\textbf{X}} 
+\newcommand{\Y}{\textbf{Y}} 
+\newcommand{\x}{\textbf{x}}                                   
+\newcommand{\y}{\textbf{y}}  
+\newcommand{\boldc}{\textbf{c}} 
+\newcommand{\boldd}{\textbf{d}}  
+\newcommand{\bolda}{\textbf{a}}  
+\newcommand{\THETA}{\mx{\theta}}
+\newcommand{\PHI}{\mx{\phi}}                                   
+\newcommand{\VAREPSILON}{\mx{\varepsilon}}                                   
+\newcommand{\hatVAREPSILON}{\mx{\hat{\VAREPSILON}}}
+\newcommand{\boldP}{\textbf{P}}
+\newcommand{\boldM}{\textbf{M}}
+\newcommand{\z}{\mx{z}}
+\newcommand{\A}{\textbf{A}}
+\newcommand{\C}{\textbf{C}}
+\newcommand{\hatMU}{\mx{\hat{\mu}}}
+\newcommand{\SIGMA}{\mx{\Sigma}}
+\newcommand{\ZERO}{\mx{0}}
+\newcommand{\ONE}{\mx{1}}
+\newcommand{\diag}{\textbf{I}}
+
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+\newcommand{\rd}[1]{\textcolor{red}{#1}}
+\newcommand{\gr}[1]{\textcolor{darkgreenx}{#1}}
+
+
+%\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+%\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Luku 2 - Tieteellinen tieto, tilastot ja arkitieto yhteiskunnassa},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Luku 2 - Tieteellinen tieto, tilastot ja arkitieto
+yhteiskunnassa}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Tiivistelmä}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, boxrule=0pt, frame hidden, interior hidden, breakable, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+
+\hypertarget{luvun-ydinviesti}{%
+\section{Luvun ydinviesti}\label{luvun-ydinviesti}}
+
+Luku käsittelee tieteen yhteiskunnallista merkitystä ja sitä, mitä tiede
+on ja miten sitä tehdään.
+
+Tilastotiede näyttelee keskeistä roolia lähes kaikessa tieteellisessä
+tutkimuksessa, sillä se tarjoaa yleisenä menetelmätieteenä keinoja
+erilaisten tutkimuskysymysten ja niihin liitettävien hypoteesien
+testaamiseen.
+
+\textbf{Tämän luvun ytimessä on siis tilastotieteen rooli uuden tutkitun
+tiedon tuottamisessa!}
+
+\hypertarget{mituxe4-on-tiede}{%
+\section{Mitä on tiede?}\label{mituxe4-on-tiede}}
+
+Tiede on tiedonhankintaa ympäröivästä maailmasta ja sen ilmiöistä.
+
+Tietoa voidaan hankkia monin eri tavoin mutta milloin siitä tulee
+tiedettä?
+
+Tieteessä uuden tiedon hankintaa ohjaa tieteellinen menetelmä, joka
+varmistaa hankitun tiedon oikeellisuuden ja luotettavuuden niin hyvin
+kuin se suinkin on mahdollista!
+
+Tiede on (ainakin):
+
+\begin{itemize}
+\item
+  \textbf{Järjestelmällistä:} tieteellinen tiedonhankinta on
+  yhteiskunnallisesti organisoitu tutkimusinstituutioiden tehtäväksi.
+\item
+  \textbf{Järkiperäistä:} tieteellinen tiedonhankinta on kumulatiivinen
+  prosessi, jossa tiedonhankinnan menetelmät ovat muokkantuneet
+  tarkoituksenmukaisiksi, luotettaviksi ja järkeviksi.
+\end{itemize}
+
+\hypertarget{keskeiset-termit}{%
+\section{Keskeiset termit}\label{keskeiset-termit}}
+
+Seuraavaksi käsitellään luvun 2 keskeiset termit. Nämä kannattaa
+sisäistää hyvin, ei pelkästään tämän kurssin läpipääsyn vaan myös
+loppuopintojen sujuvuuden takia. Alasta riippumatta!
+
+\hypertarget{tieteellinen-teoria}{%
+\section{Tieteellinen teoria}\label{tieteellinen-teoria}}
+
+\begin{defblock}{}
+
+\textbf{Tieteellinen teoria}
+
+\begin{itemize}
+\item
+  Tieteelliset teoriat ovat hyvin perusteltuja kuvauksia ja selityksiä,
+  ympäröivän maailmamme toiminnasta tai siellä esiintyvien ilmiöiden
+  välisistä yhteyksistä.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ne ovat luotetuin, täsmällisin ja kattavin tieteellisen tiedon
+    muoto.
+  \end{itemize}
+\item
+  Tieteellisen teorian pyrkimys on selittää ja ennustaa sen kohteena
+  olevaa ilmiötä.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Se on luonteeltaan induktiivinen ja alisteinen muutoksille tai jopa
+    hylkäämiselle (\emph{falsifikaatiolle}) empiirisen todistusaineiston
+    niin osoittaessa.
+  \end{itemize}
+\end{itemize}
+
+\end{defblock}
+
+\hypertarget{hypoteesi}{%
+\section{Hypoteesi}\label{hypoteesi}}
+
+\begin{defblock}{}
+
+\textbf{Hypoteesi}
+
+\begin{itemize}
+\item
+  Hypoteesi tarkoittaa teorioista johdettua tai aikaisemman tutkimuksen
+  perusteella esitettyä ennakoitua ratkaisua tai selitystä tutkittavaan
+  ongelmaan.
+\item
+  Hypoteesi ilmaistaan teoriaa koskevana väitteenä, jonka
+  paikkansapitävyyttä halutaan tutkia.
+\item
+  \textbf{Nollahypoteesiksi} asetetaan usein jokin tyypillinen ja
+  odotettavissa oleva tulos, esimerkiksi ettei kahden mitatun ilmiön
+  välillä ole yhteyttä. Nollahypoteesia \emph{ei todisteta tai
+  hyväksytä}!
+\item
+  Sopivalla nollahypoteesin valinnalla voidaan testata väitteitä, jotka
+  ovat teorian ennustusten kanssa yhteneviä tai siitä poikkeavia.
+\end{itemize}
+
+\end{defblock}
+
+\hypertarget{tieteellinen-menetelmuxe4}{%
+\section{Tieteellinen menetelmä}\label{tieteellinen-menetelmuxe4}}
+
+\begin{defblock}{}
+
+\textbf{Tieteellinen menetelmä}
+
+\begin{itemize}
+\item
+  Tieteenalan vallitseva sekä yleisesti hyväksytty ja hyväksi todettu
+  tapa hankkia tietoa, joka on mm.
+
+  \begin{itemize}
+  \item
+    \textbf{Objektiivinen ja looginen}: tutkimuskohde tutkijan
+    mielipiteistä riippumaton, tieto syntyy näiden vuorovaikutuksen
+    tuloksena.
+  \item
+    \textbf{Kriittinen:} asetettavien ja testattavien hypoteesien tulee
+    olla avoimia tieteelliselle kritiikille, mm. julkisen tarkastamisen
+    kautta.
+  \item
+    \textbf{Autonominen:} tieteellisen tutkimuksen tuloksia arvioidaan
+    tiedeyhteisön sisällä, ei niiden ulkopuolisen vaikuttavuuden
+    kontekstissa.
+  \item
+    \textbf{Edistyvä:} tieteelliset teoriat kehittyvät yhä tarkemmiksi
+    kuvauksiksi tai selityksiksi.
+  \item
+    \textbf{Toistettava:} tieteellinen tutkimus voidaan toistaa tai
+    uusintaa.
+  \end{itemize}
+\end{itemize}
+
+\end{defblock}
+
+\hypertarget{mituxe4-on-tutkimus}{%
+\section{Mitä on tutkimus?}\label{mituxe4-on-tutkimus}}
+
+Tutkimus on kumulatiivinen ja itseään korjaava prosessi, jossa uutta
+tietoa hankitaan tieteellistä menetelmää käyttämällä.
+
+Ympäröivää maailmaa kuvaava teoria on aina yksinkertaistus ja
+tutkimustuloksiin vaikuttaa menetelmän ohella tutkittavan ilmiön
+luontainen satunnaisuus.
+
+Uusi tieto on siis aina epävarmaa ja tarvitsee vahvistusta, joka tekee
+teorioiden kehityksestä hidasta.
+
+\begin{itemize}
+\item
+  Mikäli tutkimuksen tulokset ovat linjassa teorian tekemien ennustusten
+  kanssa, teoria vahvistuu eli se ``\emph{verifioidaan''.}
+\item
+  Jos taas tutkimuksen tulokset poikkeavat teorian tekemistä
+  ennustuksista, ne tulkitaan teorian empiiriseksi vastaväitteeksi eli
+  ``\emph{falsifikaatioksi}''.
+\end{itemize}
+
+
+
+\end{document}

@@ -2,9 +2,9 @@
 title: "Luku 3 - Tilastotiede tieteenalana"
 subtitle: "Tiivistelmä"
 author: "Roope Rihtamo"
-format: 
-  beamer:
-    include-in-header: preamble.tex
+format:    
+  beamer:     
+    include-in-header: preamble.tex 
 editor: visual
 ---
 
